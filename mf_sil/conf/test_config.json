@@ -1,0 +1,6 @@
+{
+    "disable_all_tests" : false,
+    "disable_entry_tests" : false,
+    "disable_base_tests" : false,
+    "disable_performance_tests" : false
+}

@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="TSF v2.8.5">
+
+    <title>Report MF SIL</title>
+
+    <script src="static/runtime.js"></script>
+    <script src="static/index.js"></script>
+
+    <style>
+body    {overflow-y:scroll;}
+
+
+.passed {
+    color: #0ba14e;
+}
+.failed {
+    color: #FF0000;
+}
+
+.high_confidence {
+    color: #0ba14e;
+}
+.middle_confidence {
+    color: #ffcc3a;
+}
+.low_confidence {
+    color: #FF0000;
+    font-weight: bold;
+}
+#watermark {
+    font-size: 2000%;
+    position: fixed;
+    color: #880808;
+    text-align: center;
+	left: 20%;
+	top: 30%;
+    opacity: 0.05;
+    z-index: -1;
+    transform: rotate(-25deg);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.fast-tooltip {
+  position: relative;
+}
+.fast-tooltip:hover::after {
+  position: absolute;
+  content: attr(data-tooltip);
+  background-color: black;
+  color: white;
+  width: 300px;
+  top: 100%;
+  right: 50%;
+  white-space: pre-wrap;
+  text-align: left;
+  padding: 3px 3px;
+}
+
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+   <header class="navbar py-0  navbar-expand-md navbar-light bg-primary tsf-navbar sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="Overview.html"><img src="static/assets//horse.svg" width="24" height="24" class="d-inline-block align-top" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a class="nav-link" href="Overview.html">Overview<span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Detailes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item"  href="static/graphs.html">Graphs</a>
+                          <a class="dropdown-item"  href="static/failed_meas.html">Failed measurements</a>
+                      </div>
+              </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            
+        </div>
+
+    </header>     
+<main role="main" class="flex-shrink-0">
+    <script>
+        $( document ).ready(function() {
+            localStorageUi.buildUi($("#settings"));
+        });
+    </script>
+    <div id="settings"></div>
+
+   
+<!-- Block Content: START -->
+    <br><br><br>
+  <h1>Overview</h1>
+  <br><br>
+  <style>
+    #my_table {
+        max-width: 600px;  /* Set your desired max-width */
+    }
+    table {
+        width: 100%;
+    }
+    </style>
+
+            {{ block_content }}
+  
+<style>
+    .table-container {
+    max-height: 600px; /* Set a maximum height for scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    }
+    
+    th {
+    background-color: #f2f2f2;
+    }
+    
+    thead {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2; /* Optional: Set background color for the sticky header */
+    z-index: 0; /* Ensure the header stays above the table body */
+    }
+    </style>
+    <!-- Block Content: END -->
+            </div>
+        </div>
+    
+    </main>
+    
+    
+    </body>
+    </html>

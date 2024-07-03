@@ -1,0 +1,218 @@
+<!-- This file is no longer used, due to switching from STET to TSF framework for evaluation -->
+<Summary><Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__L1_L3_AUP_Core\Report.html</Link>
+<Passed>14 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__PARKSM\Report.html</Link>
+<Passed>14 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__TAPOSD\Report.html</Link>
+<Passed>14 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__TRAJPLA\Report.html</Link>
+<Passed>14 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__TRJCTL_LoDMC\Report.html</Link>
+<Passed>13 = 92.86 %</Passed>
+<Failed>1 = 7.14 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpRight_NoGraphs\PerpRight__VEDODO\Report.html</Link>
+<Passed>14 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>14</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__L1_L3_AUP_Core\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__PARKSM\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__TAPOSD\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__TRAJPLA\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__TRJCTL_LoDMC\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\PerpLeft_NoGraphs\PerpLeft__VEDODO\Report.html</Link>
+<Passed>7 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>7</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__L1_L3_AUP_Core\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__PARKSM\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__TAPOSD\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__TRAJPLA\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__TRJCTL_LoDMC\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParRight_NoGraphs\ParRight__VEDODO\Report.html</Link>
+<Passed>6 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>6</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__L1_L3_AUP_Core\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__PARKSM\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__TAPOSD\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__TRAJPLA\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__TRJCTL_LoDMC\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\ParLeft_NoGraphs\ParLeft__VEDODO\Report_TC_AUPSim_UC_ParLeft_ST-1_04_02_B_SI_On_WithoutCurb.html</Link>
+<Passed>1 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>1</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__L1_L3_AUP_Core\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__PARKSM\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__TAPOSD\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__TRAJPLA\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__TRJCTL_LoDMC\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngRight_NoGraphs\AngRight__VEDODO\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__L1_L3_AUP_Core\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__PARKSM\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__TAPOSD\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__TRAJPLA\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__TRJCTL_LoDMC\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ <Report><Link>\Small_Regr_AUP\LastReport\AngLeft_NoGraphs\AngLeft__VEDODO\Report.html</Link>
+<Passed>2 = 100.0 %</Passed>
+<Failed>0 = 0.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>2</Total>
+</Report>
+ </Summary>

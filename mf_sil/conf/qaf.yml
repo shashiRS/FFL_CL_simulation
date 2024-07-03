@@ -1,0 +1,38 @@
+
+# For details about structure of this file, press on https://confluence-adas.zone2.agileci.conti.de/display/public/department0034/122.+UD+-+Helix+QAC%3A+Structure+of+qaf.yml
+ 
+version: 2.0.0 # Version of the yaml interface, NOT the cip_service_qaf version
+
+qac_rulesets_version: 1.2.3 # go to https://github.geo.conti.de/ADAS/qac_rulesets/tags to see available versions
+ 
+Globals:
+    BASEDIR : &basedir .
+ 
+## Definition when Host OS is Linux
+Linux:
+  Project:
+    SOURCE_DIR : !join [*basedir, src]
+ 
+    BUILD_PLATFORM:
+      linux64:
+        # The C and CPP section can be configured independently
+        C:
+          Compliance: MISRA_C_2012_AMD1
+        CPP:
+          Compliance: AUTOSAR_RS_C++_14
+    exclude:
+      - '/tests/'
+ 
+## Definition when Host OS is Windows
+Windows:
+  Project:
+    ProjectName : mf_sil
+    BUILD_DIR : D:\cip_tmp
+    SOURCE_DIR : &source_dir !join [*basedir]
+ 
+    BUILD_PLATFORM:
+      vs2017:
+        CPP:
+          Compliance: AUTOSAR_RS_C++_14
+    exclude:
+      - '\tests\'

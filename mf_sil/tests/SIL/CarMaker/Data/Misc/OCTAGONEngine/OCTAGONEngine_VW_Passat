@@ -1,0 +1,53 @@
+FileIdent = CarMaker-PTEngine-OCTAGONEngine 1
+
+# Engine Model Parameters for VW Passat
+# https://confluence-adas.zone2.agileci.conti.de/display/VSP/Powertrain+Model+Description
+
+PowerTrain.Engine.rotv_idle = 670.82
+PowerTrain.Engine.rotv_off = 500
+PowerTrain.Engine.rotv_max = 6500
+PowerTrain.Engine.rotv_min = 403
+PowerTrain.Engine.TrqKl15Off = -50.0
+PowerTrain.Engine.DeadTime = 0.25
+PowerTrain.Engine.rotv_opt = 2100
+PowerTrain.Engine.BuildUpTime = 0.25
+PowerTrain.Engine.I = 0.07
+PowerTrain.Engine.TrqFull:
+	402.49 0.0
+	536.66 40.0
+	670.82 60.0
+	860.41 110.0
+	1000.0 160.0
+	1200.0 240.
+	1500.0 350.0
+	3000.0 350.0
+	4000.0 350.0
+	4400.0 350.0
+	6200 249.64
+	6400 100
+	6500 0
+PowerTrain.Engine.TrqDrag:
+	402.49 -9.224
+	536.66 -9.224
+	670.82 -9.224
+	860.41 -13
+	1050.0 -20
+	2000.0 -25
+	3000.0 -30
+	4000.0 -40
+	5000.0 -50
+	6500.0 -65
+
+
+
+
+
+
+
+
+
+
+
+
+
+

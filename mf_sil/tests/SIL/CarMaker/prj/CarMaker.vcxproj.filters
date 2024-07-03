@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\EnvironmentPerception.cpp" />
+    <ClCompile Include="..\src\TestEvaluation.cpp" />
+    <ClCompile Include="..\src\lowSpeedLongDMC.cpp" />
+    <ClCompile Include="..\src\mdl_APCtrl.cpp" />
+    <ClCompile Include="..\src\lowSpeedLateralDMC.cpp" />
+    <ClCompile Include="..\src\CM_Vehicle.c" />
+    <ClCompile Include="..\src\CM_Main.c" />
+    <ClCompile Include="..\src\app_tmp.c" />
+    <ClCompile Include="..\..\..\..\..\swfw_base\src\component\vec\vec_matrix.cpp" />
+    <ClCompile Include="..\src\VehTurnCntr.c" />
+    <ClCompile Include="..\src\wheelSpeedSensorSim.cpp" />
+    <ClCompile Include="..\..\..\..\..\swfw_base\src\component\dbg\dbg_assert.cpp">
+      <Filter>si\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\geoml\src\component\LSM_Math.cpp">
+      <Filter>geoml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\geoml\src\component\LSM_LookupTable.cpp">
+      <Filter>geoml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\geoml\src\component\LineSegment.cpp">
+      <Filter>geoml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VectorCMInterface.c">
+      <Filter>hmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PRIVATE_CAN.c">
+      <Filter>hmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PRIVATE_CAN_User.c">
+      <Filter>hmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\geoml\src\component\Ellipse.cpp">
+      <Filter>geoml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_common\src\component\HelperFunctions.cpp">
+      <Filter>mf_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CarMakerLogger.cpp" />
+    <ClCompile Include="..\..\..\..\..\geoml\src\component\AxisAlignedRectangular2D.cpp">
+      <Filter>geoml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowDataProvider.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowMiniEmManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowSlotPostprocessor.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiWrapper.cpp">
+      <Filter>si</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreDynEnvManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreInternalEmTypes.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreOutputHandler.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreParkingSpaceTrack.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCorePoseManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreRectShiftManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreReporter.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotBlowUpManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotCollisionManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotCostFunctionManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotDetector.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotOpeningProcessor.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotOptimizer.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotPositionManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotScenarioEstimator.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighDataProvider.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighDataProviderEnvObjDyn.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighInputObjects.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighMiniEmManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighOutputHandler.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighSlotPostprocessor.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighStatEnvManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighVirtualLineGenerator.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SiLowWrapper.cpp">
+      <Filter>si_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SiHighWrapper.cpp">
+      <Filter>si_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SiUtility.cpp">
+      <Filter>si_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SICoordinateTransformer.cpp">
+      <Filter>si_wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CemSurrogate.cpp">
+      <Filter>vCem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PmdConfigReader.cpp">
+      <Filter>vCem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PmdSurrogate.cpp">
+      <Filter>vCem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EpDelimiterManager.cpp" />
+    <ClCompile Include="..\src\OdometryDataManager.cpp" />
+    <ClCompile Include="..\src\mdl_RearSteering.c" />
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreOptimizationPostprocessing.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighObjectClustering.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreDataProvider.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreVirtualLineGenerator.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSplitObjectsWrapper.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighTriangleExpansionManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighExpansionAngleGenerator.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowLeftRightDelimiterManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowMiniEmClusterManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowInsideAndCurbDelimiterManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreHelper.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighSlotCostFunctionManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowSlotCostFunctionManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreExtendedAxisAlignedRectangular2D.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreMemoryParkingManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighHelper.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighCnnBasedSlotManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighDataProviderCnnBasedSlot.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\ecal_calls\CEM_Call.cpp">
+      <Filter>ecal_node\ecal_calls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\ecal_calls\cem_carmaker_user.cpp">
+      <Filter>ecal_node\ecal_calls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\subscriptions\SCP\Subscribe_Share.cpp">
+      <Filter>ecal_node\subscriptions\scp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\ecal_calls\Utils.cpp">
+      <Filter>ecal_node\ecal_calls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\scheduler\cls_scheduler.cpp">
+      <Filter>ecal_node\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\User.cpp" />
+    <ClCompile Include="..\src\ecal_node\cem_mapping\LSMO_mapping.cpp">
+      <Filter>ecal_node\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\simulation_log\sim_logger.cpp">
+      <Filter>ecal_node\sim_logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\ecal_calls\MF_publishers.cpp">
+      <Filter>ecal_node\ecal_calls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighWheelStopperManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighDataProviderEnvObjStat.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighDynEnvManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\VSP_SEF_Brake\src\package\OCTAGONBrake\OCTAGONBrake.cpp">
+      <Filter>moco_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MocoWrapper.cpp">
+      <Filter>moco_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\VSP_SEF_Powertrain\src\package\OCTAGONEngine\OCTAGONEngine.cpp">
+      <Filter>moco_adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_common\src\component\EgoVehicle.cpp">
+      <Filter>mf_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_memory_parking\src\component\MemParkModule.cpp">
+      <Filter>si\mf_memory_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_memory_parking\src\component\RelocalizationModule.cpp">
+      <Filter>si\mf_memory_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_memory_parking\src\component\RelocalizationIcp.cpp">
+      <Filter>si\mf_memory_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_memory_parking\src\component\MemParkReporter.cpp">
+      <Filter>si\mf_memory_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SvcModelWrapper.cpp">
+      <Filter>vSVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SvcModelUtils.cpp">
+      <Filter>vSVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SICoreStatEnvManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiCoreSlotObjectCollisionManager.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiHighSlotLineCollisionManager.cpp">
+      <Filter>si\high</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SiLowSlotLineCollisionManager.cpp">
+      <Filter>si\low</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\mf_memory_parking\src\component\IcpMath.cpp">
+      <Filter>si\mf_memory_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Init_Clean.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Reflection_Generator.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\ReflectionFunc.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Sensor_Mapping.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\vCUS_Main.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\vCUS_Utils.cpp">
+      <Filter>vCUS\pheno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\cem_mapping\USS_mapping.cpp">
+      <Filter>ecal_node\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\ecal_calls\CarmakerNode_Control.cpp">
+      <Filter>ecal_node\ecal_calls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SvcModelWrapper.cpp">
+      <Filter>vSVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SvcModelUtils.cpp">
+      <Filter>vSVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\subscriptions\SCP\CEM_subs.cpp">
+      <Filter>ecal_node\subscriptions\scp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\subscriptions\visualization\CEM_disp.cpp">
+      <Filter>ecal_node\subscriptions\visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\subscriptions\visualization\disp_calls.cpp">
+      <Filter>ecal_node\subscriptions\visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\cem_mapping\SVC_mapping.cpp">
+      <Filter>ecal_node\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ecal_node\cem_mapping\EMF_mapping.cpp">
+      <Filter>ecal_node\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\User.cpp" />
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SICoreShrinker.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\si_core\src\component\SICoreInternalStaticObject.cpp">
+      <Filter>si\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\plp_log\src\component\log_config.cpp">
+      <Filter>si\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\plp_log\src\component\log_filteredconsoleadapter.cpp">
+      <Filter>si\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\plp_log\src\component\log_logger.cpp">
+      <Filter>si\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\plp_log\src\component\log_logif.cpp">
+      <Filter>si\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TestRunWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="si">
+      <UniqueIdentifier>{79c2d94f-9083-4b40-b028-a613c10687df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\dbg">
+      <UniqueIdentifier>{8c5f1d8c-3a8e-4dc6-95b9-6206d4331026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\log">
+      <UniqueIdentifier>{0e31f701-96a7-45d6-baec-ae524cb91387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="geoml">
+      <UniqueIdentifier>{60cce0e2-5d87-403a-adf6-5d908015995a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hmi">
+      <UniqueIdentifier>{bf5643ee-26fe-480d-8c9f-fd3c705e44d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mf_common">
+      <UniqueIdentifier>{0b2060b3-93e8-41c6-9074-528a425a8678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{c31cabfe-71ee-4c27-b59b-9724ea2cf887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\core">
+      <UniqueIdentifier>{bcb20f62-5940-4031-a2e3-c7ca80d77e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\high">
+      <UniqueIdentifier>{ab47dcdd-d662-4720-8e27-235ab423abd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\low">
+      <UniqueIdentifier>{60d0f9cc-6c5a-4f85-9c1d-3e325e5a5426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si_wrapper">
+      <UniqueIdentifier>{26fccc70-07a0-4669-8f37-01b0a2d1d7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vCem">
+      <UniqueIdentifier>{3c1b50dd-de1b-4747-a37a-670dc2aafe2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node">
+      <UniqueIdentifier>{14d5c6b5-e396-46c3-a38b-cd04e8dedf33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\ecal_calls">
+      <UniqueIdentifier>{5185040d-ee38-46b4-8d2f-0e4d67de65e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\subscriptions">
+      <UniqueIdentifier>{6a0ddda1-816f-4a98-a3d3-ea1aab6b1562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\subscriptions\scp">
+      <UniqueIdentifier>{5324cef8-ac57-4649-8b91-4a4642120022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\scheduler">
+      <UniqueIdentifier>{37078d8d-75cd-4ec6-bfdc-9fe41beceeff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\mapping">
+      <UniqueIdentifier>{192d20d6-fc03-4c4c-a65e-f505b31c29d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\sim_logger">
+      <UniqueIdentifier>{d45553ce-20f7-46a7-aca9-6af6410c1e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moco_adapter">
+      <UniqueIdentifier>{57390345-4a9e-40ca-a6cf-ac27f9c2aabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="si\mf_memory_parking">
+      <UniqueIdentifier>{401d092d-7ee5-4878-8bae-5c82b0af8353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vCUS">
+      <UniqueIdentifier>{a90b0a2f-8f4a-45fb-8601-33c3ca49d066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vCUS\pheno">
+      <UniqueIdentifier>{cc79c863-8f78-42ef-98a4-93866115fb4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vSVC">
+      <UniqueIdentifier>{35c57658-0c3e-44aa-b398-3228ffdb51c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ecal_node\subscriptions\visualization">
+      <UniqueIdentifier>{90f40c79-3ac4-4c09-9022-28e63e273873}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="pragmatic.natvis" />
+  </ItemGroup>
+</Project>
