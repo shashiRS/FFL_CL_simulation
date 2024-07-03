@@ -513,6 +513,9 @@ namespace ap_common {
         mfControlConfig.mfcParams = &fc_mfControl_params;
         mfControlConfig.vehicleParams = &vehicle_Params;
         ap_trjctl::MF_Control_Interface::getInstance().init(mfControlConfig, &carMakerSystemServices);
+        carMakerInterface.mfControlConfigMfcParamsSigHeader = mfControlConfig.mfcParams->sSigHeader;
+        carMakerInterface.mfControlConfigSysFuncParamsSigHeader = mfControlConfig.sysFuncParams->sSigHeader;
+        carMakerInterface.mfControlConfigVehicleParamsSigHeader = mfControlConfig.vehicleParams->sSigHeader;
 
         //Init MFHMIH
         mfhmihConfig.fc_MFHMIH_Params = &fc_MFHMIH_Params;
@@ -1149,6 +1152,7 @@ namespace ap_common {
 
     void stepMFControl(
         const ap_commonvehsigprovider::GearboxCtrlStatusPort& gearboxCtrlStatusPort,
+        ap_commonvehsigprovider::TRJCTLGeneralInputPort& trjctrlGeneralInputPort,
         const ap_ladmc::LaDMCStatusPort& laDMCStatusPort,
 #ifdef MOCO_REPLACES_LODMC
         const TRATCO_t_CpldTratcoStatus& tratcoStatusPort,
@@ -1187,11 +1191,10 @@ namespace ap_common {
         trjctlInData.laCtrlRequestPort = &laCtrlRequestPort;
         trjctlInData.loCtrlRequestPort = &loCtrlRequestPort;
         // Determine trjctlGeneralInputPort
-        ap_commonvehsigprovider::TRJCTLGeneralInputPort trjctrlGeneralInputPortLocal{};
-        trjctrlGeneralInputPortLocal.trjctlSampleTime_s = (float)TRJCTL_SAMPLE_TIME_MS / 1000.0f;
-        trjctrlGeneralInputPortLocal.sSigHeader.eSigStatus = eco::AlgoSignalState::AL_SIG_STATE_OK;
-        trjctrlGeneralInputPortLocal.sSigHeader.uiTimeStamp = odoEstimationOutputPort.sSigHeader.uiTimeStamp;
-        trjctlInData.trjctlGeneralInputPort = &trjctrlGeneralInputPortLocal;
+        trjctrlGeneralInputPort.trjctlSampleTime_s = (float)TRJCTL_SAMPLE_TIME_MS / 1000.0f;
+        trjctrlGeneralInputPort.sSigHeader.eSigStatus = eco::AlgoSignalState::AL_SIG_STATE_OK;
+        trjctrlGeneralInputPort.sSigHeader.uiTimeStamp = odoEstimationOutputPort.sSigHeader.uiTimeStamp;
+        trjctlInData.trjctlGeneralInputPort = &trjctrlGeneralInputPort;
 
         //OutData
         ap_trjctl::MF_Control_Output trjctlOutData{};
@@ -1532,6 +1535,7 @@ namespace ap_common {
         const ap_commonvehsigprovider::WheelSpeedPort& wheelSpeedPort,
         const ap_commonvehsigprovider::VehDynamicsPort& vehDynamicsPort,
         const ap_commonvehsigprovider::SteerCtrlStatusPort& steerCtrlStatusPort,
+        ap_commonvehsigprovider::TRJCTLGeneralInputPort& trjctrlGeneralInputPort,
         const ap_hmitoap::HMIOutputPort& hmiOutputPort,
         const ap_hmitoap::RemoteHMIOutputPort& remoteHMIOutputPort,
         const ap_hmitoap::VisuInputData& visuInputData,
@@ -2015,6 +2019,7 @@ namespace ap_common {
         if(timeStamp_ms % TRJCTL_SAMPLE_TIME_MS == 0){
             stepMFControl(
                 gearboxCtrlStatusPort,
+                trjctrlGeneralInputPort,
                 laDMCStatusPort,
 #ifdef MOCO_REPLACES_LODMC
                 tratcoStatusPort,

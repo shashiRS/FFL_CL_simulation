@@ -81,7 +81,10 @@
 #  include <RTGuard.h>
 #endif
 
+#pragma warning( push )
+#pragma warning ( disable: 4201 ) // disable  nameless struct/union warning in road.h
 #include <CarMaker.h>
+#pragma warning( pop )
 #include <ModelManager.h>
 #include <Vehicle/Sensor_Inertial.h>
 #include <Vehicle/Sensor_SAngle.h>
@@ -125,10 +128,10 @@ int  IO_Init_First    (void)        { return 0; }
 int  IO_Init          (void)        { return 0; }
 int  IO_Init_Finalize (void)        { return 0; }
 
-int  IO_Param_Get     (tInfos *inf) { return 0; }
+int  IO_Param_Get(tInfos *inf) { inf;/*silence unreferenced warning*/ return 0; }
 void IO_BeginCycle (void) { }
-void IO_In      (unsigned CycleNo) { }
-void IO_Out     (unsigned CycleNo) { }
+void IO_In      (unsigned CycleNo) { CycleNo;/*silence unreferenced warning*/ }
+void IO_Out     (unsigned CycleNo) { CycleNo;/*silence unreferenced warning*/ }
 void IO_Cleanup (void)             { }
 #endif /* !CM_HIL */
 
@@ -398,6 +401,7 @@ App_TestRun_Start_StaticCond_Calc (void)
 static void *
 App_TestRun_Start (void *arg)
 {
+    arg; /*silence unreferenced warning*/
     int rv = 0;
     int nError = Log_nError;
 
@@ -857,6 +861,7 @@ App_TestRun_Calc (double dt)
 static void *
 App_TestRun_End (void *arg)
 {
+    arg; /*silence unreferenced warning*/
     /* Remark: Not called if reconfiguration of the vehicle during
        the simulation is active (SimCore.Reconfig.Active=1) */
 
@@ -1176,6 +1181,7 @@ MainThread_BeginCycle (unsigned long long CycleNo64)
 static int
 MainThread_DoCycle (unsigned long long CycleNo64)
 {
+    CycleNo64;/*silence unreferenced warning*/
     static int RampingDone;
     int rv;
 

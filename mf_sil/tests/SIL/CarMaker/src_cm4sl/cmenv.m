@@ -83,7 +83,8 @@ function bestreldir = match_matlab_release (cminstdir)
 % Search cminstdir for the directory best matching the current Matlab version.
 % Currently an exact version match is required.
 
-    thisrel = ['R', version('-release')];
+    % thisrel = ['R', version('-release')];
+    thisrel = 'R2019b';
     [v,n] = sscanf(version, '%d.%d.%d.%d');
     if v(3) > 0
 	thisrel = sprintf('%sSP%d', thisrel, v(3));

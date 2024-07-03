@@ -72,16 +72,48 @@ AP.headUnitVisualizationPort.message_nu
 AP.headUnitVisualizationPort.screen_nu AP_VISU_screen_nu
 AP.hmiOutputPort.userActionHeadUnit_nu AP_HMI_userActionHeadUnit_nu
 AP.LaDMCStatusPort.driverIntervention_nu
+AP.LaDMCStatusPort.sSigHeader.eSigStatus
 AP.LoDMC.velocityRequestLoDMCIntern_mps
+AP.laCtrlRequestPort.activateLaCtrl
+AP.laCtrlRequestPort.laCtrlRequestType
+AP.laCtrlRequestPort.sSigHeader.eSigStatus
+AP.loCtrlRequestPort.activateLoCtrl
+AP.loCtrlRequestPort.loCtrlRequestType
+AP.loCtrlRequestPort.comfortStopRequest
+AP.loCtrlRequestPort.secureInStandstill
+AP.loCtrlRequestPort.accelerationReq_mps2.drivingDirRequest
+AP.loCtrlRequestPort.distanceToStopReq_m.drivingDirRequest
+AP.loCtrlRequestPort.distanceToStopReq_m.requestedValue
+AP.loCtrlRequestPort.velocityReq_mps.drivingDirRequest
+AP.loCtrlRequestPort.sSigHeader.eSigStatus
+AP.trajRequestPort.trajValid_nu
+AP.trajRequestPort.drivingForwardReq_nu
+AP.trajRequestPort.numValidCtrlPoints_nu
+AP.trajRequestPort.sSigHeader.eSigStatus
+AP.trjctlGeneralInputPort.sSigHeader.eSigStatus
+AP.mfControlConfig.mfcParams.sSigHeader.eSigStatus
+AP.mfControlConfig.sysFuncParams.sSigHeader.eSigStatus
+AP.mfControlConfig.vehicleParams.sSigHeader.eSigStatus
+AP.gearboxCtrlStatusPort.gearInformation.gearCur_nu
+AP.gearboxCtrlStatusPort.sSigHeader.eSigStatus
+AP.gearBoxCtrlRequestPort.gearboxCtrlRequest_nu
+AP.gearBoxCtrlRequestPort.sSigHeader.eSigStatus
+AP.laDMCCtrlRequestPort.laDMCCtrlRequest_nu
+AP.laDMCCtrlRequestPort.frontSteerAngReq_rad
+AP.laDMCCtrlRequestPort.steerWheelAngReq_rad
+AP.laDMCCtrlRequestPort.sSigHeader.eSigStatus
 AP.LoDMCCtrlRequestPort.distanceToStopReq_m
 AP.LoDMCCtrlRequestPort.holdReq_nu
 AP.LoDMCCtrlRequestPort.loDMCCtrlRequest_nu
 AP.LoDMCCtrlRequestPort.secureReq_nu
 AP.LoDMCCtrlRequestPort.velocityLimitReq_mps
+AP.LoDMCCtrlRequestPort.sSigHeader.eSigStatus
+AP.DrivingResistancePort.sSigHeader.eSigStatus
 AP.LoDMCStatusPort.loDMCSystemState_nu
 AP.LoDMCStatusPort.maneuveringFinished_nu
 AP.LoDMCStatusPort.standstillHoldCur_nu
 AP.LoDMCStatusPort.standstillSecureCur_nu
+AP.LoDMCStatusPort.sSigHeader.eSigStatus
 AP.mfControlStatusPort.driverSteerIntervDetected_nu
 AP.mfControlStatusPort.numUsedCtrlPoints_nu
 AP.mfControlStatusPort.lateralControlFailed_nu
@@ -91,6 +123,7 @@ AP.mfControlStatusPort.longitudinalControlFailed_nu
 AP.mfControlStatusPort.longitudinalControlFinished_nu
 AP.mfControlStatusPort.vehStandstillHold_nu
 AP.mfControlStatusPort.vehStandstillSecured_nu
+AP.mfControlStatusPort.sSigHeader.eSigStatus
 AP.lscaDisabled_nu
 AP.odoDebugPort.distanceFA_m
 AP.odoDebugPort.distancePerStepFA_m
@@ -116,6 +149,7 @@ AP.odoDebugPort.yawRateOffset_radps
 AP.odoDebugPort.yawRateOffsetCalibrated_radps
 AP.odoEstimationPort.motionStatus_nu
 AP.odoEstimationPort.overwriteVehVelocityCur_nu
+AP.odoEstimationPort.steerAngFrontAxle_rad
 AP.odoEstimationPort.longiVelocity_mps
 AP.odoEstimationPort.xPosition_m
 AP.odoEstimationPort.yawAngle_rad
@@ -127,6 +161,7 @@ AP.odoEstimationPortCM.xPosition_m
 AP.odoEstimationPortCM.yawAngle_rad
 AP.odoEstimationPortCM.yPosition_m
 AP.odoEstimationPort.pitchAngle_rad
+AP.odoEstimationPort.sSigHeader.eSigStatus
 AP.odoInputPort.odoExtCtrlPort.resetPoseEstimation_nu
 AP.odoInputPort.odoSystemTimePort.timestamp_us
 AP.odoInputPort.odoSigFcanPort.gearboxCtrlStatus.gearCur_nu
@@ -183,13 +218,18 @@ AP.steerCtrlRequestPort.steerAngReqLaDmcOUT_rad
 AP.taposdDebugPort.latDistToTarget_m
 AP.taposdDebugPort.longDistToTarget_m
 AP.taposdDebugPort.yawDiffToTarget_rad
+AP.trajCtrlDebugPort.currentTrajectoryIndex_nu
 AP.trajCtrlDebugPort.currentDeviation_m
 AP.trajCtrlDebugPort.curvatureInterpolTraj_1pm
 AP.trajCtrlDebugPort.gearCorrect_nu
+AP.trajCtrlDebugPort.trajIntermediateValueRaw_perc
 AP.trajCtrlDebugPort.orientationError_rad
+AP.trajCtrlDebugPort.outsideTrajectoryEnd_nu
+AP.trajCtrlDebugPort.outsideTrajectoryStart_nu
 AP.trajCtrlDebugPort.velocityLimitReqInterpolTraj_mps
 AP.trajCtrlDebugPort.xInterpolTraj_m
 AP.trajCtrlDebugPort.yInterpolTraj_m
+AP.trajCtrlDebugPort.sSigHeader.eSigStatus
 AP.trajCtrlRequestPort.drivingModeReq_nu AP.drivingMoveReq
 AP.trajCtrlRequestPort.trajCtrlActive_nu AP.trajCtrlActive
 AP.trajCtrlRequestPort.remoteReq_nu

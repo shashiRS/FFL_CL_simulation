@@ -40,8 +40,10 @@
 #include <string.h>
 #include <math.h>
 
+#pragma warning( push )
+#pragma warning ( disable: 4201 ) // disable  nameless struct/union warning in road.h
 #include <CarMaker.h>
-
+#pragma warning( pop )
 
 # include <Car/Vehicle_Car.h>
 

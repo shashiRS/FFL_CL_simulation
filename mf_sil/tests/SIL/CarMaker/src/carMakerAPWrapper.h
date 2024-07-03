@@ -102,6 +102,9 @@ namespace ap_common {
         unsigned char whpDisabled_nu;
         unsigned char pdwFailure_nu;
         struct ap_common::FC_TRJPLA_Sys_Func_Params trajplaSysFuncParams;
+        ::eco::SignalHeader mfControlConfigMfcParamsSigHeader;
+        ::eco::SignalHeader mfControlConfigSysFuncParamsSigHeader;
+        ::eco::SignalHeader mfControlConfigVehicleParamsSigHeader;
         unsigned char resetCemSurrogate_nu{ 0U }; // Reset CemSurrogate history and reconfigure CemSurrogate
         unsigned char resetParkingComponents_nu{ 0U }; // Reset the parking software components
     };
@@ -134,6 +137,7 @@ namespace ap_common {
         const ap_commonvehsigprovider::WheelSpeedPort& wheelSpeedPort,
         const ap_commonvehsigprovider::VehDynamicsPort& vehDynamicsPort,
         const ap_commonvehsigprovider::SteerCtrlStatusPort& steerCtrlStatusPort,
+        ap_commonvehsigprovider::TRJCTLGeneralInputPort& trjctrlGeneralInputPort,
         const ap_hmitoap::HMIOutputPort& hmiOutputPort,
         const ap_hmitoap::RemoteHMIOutputPort& remoteHMIOutputPort,
         const ap_hmitoap::VisuInputData& visuInputData,
