@@ -1,9 +1,0 @@
-release/RC_Parking
-release/RC_Maintenance
-feature/LSM200-1239/MoCo_InterfaceAdaptions
-feature/LSM200-1239/PrepMoco
-feature/PLP-3952/WheelstopperAndAxisMode
-feature/VDE-5182/newOctagonEngine
-feature/PLP-2601/memory_parking_preparation
-feature/PLP-1291/linearMotionPed
-feature/PI-1550/wheelStopperHackBranch
