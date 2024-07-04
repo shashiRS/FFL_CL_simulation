@@ -7,7 +7,6 @@ mf_common
 mf_drvwarnsm_core
 mf_lsca
 mf_manager
-mf_memory_parking
 mf_parksm_core
 mf_pdwarnproc
 mf_trjctl

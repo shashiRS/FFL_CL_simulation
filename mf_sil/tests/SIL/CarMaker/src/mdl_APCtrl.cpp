@@ -376,7 +376,6 @@ static ap_commonvehsigprovider::WheelSpeedPort wheelSpeedPort;
 static ap_commonvehsigprovider::MotionStatePort motionStatePort;
 static ap_commonvehsigprovider::VehDynamicsPort vehDynamicsPort;
 static ap_commonvehsigprovider::SteerCtrlStatusPort steerCtrlStatusPort;
-static ap_commonvehsigprovider::TRJCTLGeneralInputPort trjctlGeneralInputPort;
 static ap_commonvehsigprovider::DdsPort ddsPort;
 static ap_commonvehsigprovider::BrakeCtrlStatusPort brakeCtrlStatusPort;
 static si::ApEnvModelPort envModelPort;
@@ -3324,10 +3323,6 @@ mdl_APCtrl_DeclQuants(void *MP)
     DDefFloat(NULL, "AP.escInformationPort->brakePressureDriver_bar", "", &escInformationPort.brakePressureDriver_bar, DVA_IO_In);
     registerSignalHeaderToDVA("AP.escInformationPort.sSigHeader", escInformationPort.sSigHeader);
 
-    //GearboxCtrlRequestPort
-    DDefUChar(NULL, "AP.gearBoxCtrlRequestPort.gearboxCtrlRequest_nu", "", (uint8_t*)&gearBoxCtrlRequestPort.gearboxCtrlRequest_nu, DVA_None);
-    registerSignalHeaderToDVA("AP.gearBoxCtrlRequestPort.sSigHeader", gearBoxCtrlRequestPort.sSigHeader);
-
     //LaDMCStatusPort
     DDefUChar(NULL, "AP.LaDMCStatusPort.driverIntervention_nu", "", (uint8_t*)&laDMCStatusPort.driverIntervention_nu, DVA_IO_In);
     registerSignalHeaderToDVA("AP.LaDMCStatusPort.sSigHeader", laDMCStatusPort.sSigHeader);
@@ -3345,29 +3340,6 @@ mdl_APCtrl_DeclQuants(void *MP)
     DDefFloat(NULL, "AP.steerCtrlRequestPort.frontSteerTorqueReq_Nm", "Nm", &laDMCCtrlRequestPort.frontSteerTorqueReq_Nm, DVA_None);
     DDefFloat(NULL, "AP.steerCtrlRequestPort.rearSteerTorqueReq_Nm", "Nm", &laDMCCtrlRequestPort.rearSteerTorqueReq_Nm, DVA_None);
     registerSignalHeaderToDVA("AP.steerCtrlRequestPort.sSigHeader", laDMCCtrlRequestPort.sSigHeader);
-
-    //TRJCTLGeneralInputPort
-    DDefFloat(NULL, "AP.trjctlGeneralInputPort.trjctlSampleTime_s", "s", &trjctlGeneralInputPort.trjctlSampleTime_s, DVA_None);
-    registerSignalHeaderToDVA("AP.trjctlGeneralInputPort.sSigHeader", trjctlGeneralInputPort.sSigHeader);
-
-    //mfControlConfig
-    registerSignalHeaderToDVA("AP.mfControlConfig.mfcParams.sSigHeader", carMakerInterface.mfControlConfigMfcParamsSigHeader);
-    registerSignalHeaderToDVA("AP.mfControlConfig.sysFuncParams.sSigHeader", carMakerInterface.mfControlConfigSysFuncParamsSigHeader);
-    registerSignalHeaderToDVA("AP.mfControlConfig.vehicleParams.sSigHeader", carMakerInterface.mfControlConfigVehicleParamsSigHeader);
-
-    //LaDMCCtrlRequestPort
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.frontSteerAngReq_rad", "rad", &laDMCCtrlRequestPort.frontSteerAngReq_rad, DVA_IO_In);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.steerWheelAngReq_rad", "rad", &laDMCCtrlRequestPort.steerWheelAngReq_rad, DVA_IO_In);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.steerAngReqLaDmcIN_rad", "rad", &steerAngReqIn, DVA_None);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.steerAngReqLaDmcOUT_rad", "rad", &steerAngReqOut, DVA_None);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.rearSteerAngReq_rad", "rad", &laDMCCtrlRequestPort.rearSteerAngReq_rad, DVA_None);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.curvatureReq_1pm", "1/m", &laDMCCtrlRequestPort.curvatureReq_1pm, DVA_None);
-    DDefUChar(NULL, "AP.laDMCCtrlRequestPort.laDMCCtrlRequestInterface_nu", "", (uint8_t*)&laDMCCtrlRequestPort.laDMCCtrlRequestInterface_nu, DVA_None);
-    DDefUChar(NULL, "AP.laDMCCtrlRequestPort.laDMCCtrlRequestSource_nu", "", (uint8_t*)&laDMCCtrlRequestPort.laDMCCtrlRequestSource_nu, DVA_None);
-    DDefUChar(NULL, "AP.laDMCCtrlRequestPort.laDMCCtrlRequest_nu", "", (uint8_t*)&laDMCCtrlRequestPort.laDMCCtrlRequest_nu, DVA_None);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.frontSteerTorqueReq_Nm", "Nm", &laDMCCtrlRequestPort.frontSteerTorqueReq_Nm, DVA_None);
-    DDefFloat(NULL, "AP.laDMCCtrlRequestPort.rearSteerTorqueReq_Nm", "Nm", &laDMCCtrlRequestPort.rearSteerTorqueReq_Nm, DVA_None);
-    registerSignalHeaderToDVA("AP.laDMCCtrlRequestPort.sSigHeader", laDMCCtrlRequestPort.sSigHeader);
 
     //LoDMCCtrlRequestPort
     DDefFloat(NULL, "AP.LoDMC.velocityRequestLoDMCIntern_mps", "m/s", &velocityRequestIntern_mps, DVA_None);
@@ -4520,20 +4492,17 @@ mdl_APCtrl_DeclQuants(void *MP)
     DDefFloat(NULL, "AP.odoInputPort.odoSigFcanPort.wheelMeasurements.wheelSpeed.wheelSpeedRR_radps", "rad/s", &wheelSpeedPort.wheelRotSpeedRR_radps, DVA_None);
     registerSignalHeaderToDVA("AP.odoInputPort.odoSigFcanPort.wheelMeasurements.wheelSpeed.sSigHeader", wheelSpeedPort.sSigHeader);
 
-    //gearboxCtrlStatusPort
-    DDefUChar(NULL, "AP.gearboxCtrlStatusPort.gearInformation.gearCur_nu", "", (unsigned char*)&gearboxCtrlStatusPort.gearInformation.gearCur_nu, DVA_None);
-
     //odoEstimationPort
     DDefFloat(NULL, "AP.odoEstimationPort.longiVelocity_mps", "m/s", &odoEstimationOutputPort.odoEstimation.longiVelocity_mps, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.longiAcceleration_mps2", "m/s^2", &odoEstimationOutputPort.odoEstimation.longiAcceleration_mps2, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.lateralAcceleration_mps2", "m/s^2", &odoEstimationOutputPort.odoEstimation.lateralAcceleration_mps2, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.xPosition_m", "m", &odoEstimationOutputPort.odoEstimation.xPosition_m, DVA_None);
-    DDefFloat(NULL, "AP.odoEstimationPort.yPosition_m", "m", &odoEstimationOutputPort.odoEstimation.yPosition_m, DVA_IO_In);
+    DDefFloat(NULL, "AP.odoEstimationPort.yPosition_m", "m", &odoEstimationOutputPort.odoEstimation.yPosition_m, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.xVelocity_mps", "m/s", &odoEstimationOutputPort.odoEstimation.xVelocity_mps, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.yVelocity_mps", "m/s", &odoEstimationOutputPort.odoEstimation.yVelocity_mps, DVA_IO_In);
     DDefFloat(NULL, "AP.odoEstimationPort.yawAngle_rad", "rad", &odoEstimationOutputPort.odoEstimation.yawAngle_rad, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.yawRate_radps", "rad/s", &odoEstimationOutputPort.odoEstimation.yawRate_radps, DVA_None);
-    DDefFloat(NULL, "AP.odoEstimationPort.steerAngFrontAxle_rad", "rad", &odoEstimationOutputPort.odoEstimation.steerAngFrontAxle_rad, DVA_IO_In);
+    DDefFloat(NULL, "AP.odoEstimationPort.steerAngFrontAxle_rad", "rad", &odoEstimationOutputPort.odoEstimation.steerAngFrontAxle_rad, DVA_None);
     DDefFloat(NULL, "AP.odoEstimationPort.drivenDistance_m", "m", &odoEstimationOutputPort.odoEstimation.drivenDistance_m, DVA_IO_In);
     DDefFloat(NULL, "AP.odoEstimationPort.rollAngle_rad", "rad", &odoEstimationOutputPort.odoEstimation.rollAngle_rad, DVA_IO_In);
     DDefFloat(NULL, "AP.odoEstimationPort.rollRate_radps", "rad/s", &odoEstimationOutputPort.odoEstimation.rollRate_radps, DVA_IO_In);
@@ -6920,7 +6889,6 @@ static int mdl_APCtrl_Calc(void *MP, double dt)
         wheelSpeedPort,
         vehDynamicsPort,
         steerCtrlStatusPort,
-        trjctlGeneralInputPort,
         gHMIOutputPort,
         remoteHMIOutputPort,
         visuInputData,

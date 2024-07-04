@@ -47,9 +47,7 @@ if selectedVariant == 'entry':
                                    '2021_G2_03_04_MisalingmentScanning',
                                    '2021_G2_03_04_MisalingmentShiftOnRoad'
                                    ]   # not active: 'DynamicReplanning'
-    TestCaseFolders_SmallRegres = ['SmallRegression_Base','SmallRegression_Cus',
-                                   #'MoCo_Functional_Testing'
-                                  ]
+    TestCaseFolders_SmallRegres = ['SmallRegression_Base','SmallRegression_Cus']
 elif selectedVariant == 'performance':
     TestCaseFolders_Regression  = [#'ScanOn_Prem',           NOT active because covered by according tests with SI; will be activated for full regression tests
                                    'ScanOnSI_Base',
@@ -73,9 +71,7 @@ elif selectedVariant == 'performance':
                                    'SI_SmallObject',
                                    'FirstStrokeFwd',
                                    ]   # not active: 'DynamicReplanning'
-    TestCaseFolders_SmallRegres = ['SmallRegression_Base','SmallRegression_Prem','SmallRegression_Perf',
-                                   #'MoCo_Functional_Testing'
-                                  ]
+    TestCaseFolders_SmallRegres = ['SmallRegression_Base','SmallRegression_Prem','SmallRegression_Perf']
 else:
     TestCaseFolders_Regression  = [#'ScanOn_Prem',          NOT active because covered by according tests with SI; will be activated for full regression tests
                                    'ScanOnSI_Base',
@@ -93,9 +89,7 @@ else:
                                    'AngledParking_SI_Prem',
                                    'FirstStrokeFwd'
                                    ]   # not active: 'DynamicReplanning', #'MemoryParking'
-    TestCaseFolders_SmallRegres =   ['SmallRegression_Base','SmallRegression_Prem',
-                                   #'MoCo_Functional_Testing'
-                                  ] # ['SmallRegression_MemPark','SmallRegression_Base','SmallRegression_Prem']
+    TestCaseFolders_SmallRegres =   ['SmallRegression_Base','SmallRegression_Prem'] # ['SmallRegression_MemPark','SmallRegression_Base','SmallRegression_Prem']
 # MemoryParking
 TestCaseFolders_MP_SmallRegres = ['SmallRegression_MemPark']
 
