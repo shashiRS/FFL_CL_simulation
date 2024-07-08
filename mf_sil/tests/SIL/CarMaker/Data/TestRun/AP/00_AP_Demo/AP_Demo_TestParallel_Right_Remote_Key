@@ -1,0 +1,379 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-TestRun 8
+FileCreator = CarMaker 8.1.1 2019-12-19
+Description:
+Vehicle = VW_PassatVariant_20TSI_DSG_LLVW_AP_C_GenSteerAng.car
+Trailer =
+Tire.0 =
+Tire.1 =
+Tire.2 =
+Tire.3 =
+Snapshot.TimeLimit =
+Snapshot.DistLimit =
+VehicleLoad.0.mass = 0
+VehicleLoad.0.pos = 0 0 0
+VehicleLoad.1.mass = 0
+VehicleLoad.1.pos = 0 0 0
+VehicleLoad.2.mass = 0
+VehicleLoad.2.pos = 0 0 0
+VehicleLoad.3.mass = 0
+VehicleLoad.3.pos = 0 0 0
+TrailerLoad.0.mass = 0
+TrailerLoad.0.pos = 0 0 0
+TrailerLoad.1.mass = 0
+TrailerLoad.1.pos = 0 0 0
+TrailerLoad.2.mass = 0
+TrailerLoad.2.pos = 0 0 0
+DrivMan.Init.Velocity = 0
+DrivMan.Init.GearNo = 0
+DrivMan.Init.SteerAng = 0
+DrivMan.Init.LaneOffset = 0
+DrivMan.Init.OperatorActive = 1
+DrivMan.Init.OperatorState = drive
+DrivMan.VhclOperator.Kind = IPGOperator 1
+DrivMan.nDMan = 3
+DrivMan.0.Info = HMI input and shift to R
+DrivMan.0.Label = HMI In + R
+DrivMan.0.TimeLimit = 15.1
+DrivMan.0.Cmds:
+	# Activate VEDODO
+	Eval first() ? AP.vedodoActive_nu=($OdometryActive=1)
+	Eval first() ? AP.lscaDisabled_nu=($LscaDisabled=0)
+	Eval first() ? AP.lscaSteeringProposalDisabled_nu=($LscaSPDisabled=1)
+	Eval first() ? AP.lscaVirtualWallDisabled_nu=($LscaVWDisabled=1)
+	""
+	# Shift to R
+	Eval Time > 0.001 ? DM.SelectorCtrl =-1
+	""
+	# HMI UserInput
+	Eval first() ? AP.hmiOutputPort.userActionHeadUnit_nu=0
+	Eval Time > 1.001 ? AP.hmiOutputPort.userActionHeadUnit_nu=28
+	Eval Time > 1.1 ? AP.hmiOutputPort.userActionHeadUnit_nu=0
+	Eval Time > 1.3 ? AP.hmiOutputPort.userActionHeadUnit_nu=17
+	Eval Time > 1.6 ? AP.hmiOutputPort.userActionHeadUnit_nu=0
+	Eval Time > 1.7 ? AP.hmiOutputPort.userActionHeadUnit_nu=32
+	Eval Time > 1.8 ? AP.hmiOutputPort.userActionHeadUnit_nu=0
+	""
+	# REM Key UserInput
+	Eval Time > 1.9 ? AP.fakeKeyFonAliveCounterFlag = 1
+	Eval Time > 1.9 ? AP.keylessStatusPort.keyFobUserAction=10
+	Eval Time > 2.0 ? AP.keylessStatusPort.keyFobUserAction=7
+	Eval Time > 2.0 ? AP.keylessStatusPort.keyFobInRange = 2
+	""
+	# pause because dead man switch released
+	Eval Time > 7.0 ? AP.keylessStatusPort.keyFobUserAction=9
+	Eval Time > 9.0 ? AP.keylessStatusPort.keyFobUserAction=7
+	""
+	# pause because of range
+	Eval Time > 10.0 ? AP.keylessStatusPort.keyFobInRange = 0
+	Eval Time > 12.0 ? AP.keylessStatusPort.keyFobInRange = 2
+	""
+	# abort because of key signal
+	#Eval Time > 7.0 ? AP.keylessStatusPort.keyFobUserAction=8
+	#Eval Time > 7.1 ? AP.keylessStatusPort.keyFobUserAction=0
+	# abort because of key died
+	#Eval Time > 7.0 ? AP.fakeKeyFonAliveCounterFlag = 0
+	""
+	# Overwrite speed inputs of Parking State Machine to enable scanning
+	Eval Time > 1.001 ? AP.odoEstimationPort.overwriteVehVelocityCur_nu = 1
+	Eval Time > 1.2 ? AP.odoEstimationPort.overwriteVehVelocityCur_nu = 0
+DrivMan.0.Clutch = 0 0 0.2 abs
+DrivMan.0.Gas = 0 0 0.2 abs
+DrivMan.0.Brake = 0 0 0.2 abs
+DrivMan.0.BrakePark = 0 0 0.2 abs
+DrivMan.0.LongDyn = Manual
+DrivMan.0.LatDyn = Step 0.0 0.0 1.0 abs 1
+DrivMan.0.SteerMode = Angle
+DrivMan.1.Info = AP_Ctrl
+DrivMan.1.Label = AP_Ctrl
+DrivMan.1.Cmds:
+	# Move odometry arrow to visualize odometry error
+	Eval AP.vedodoActive_nu==1 ? Traffic.Odo.tx = AP.odoEstimationPort.xPosition_m
+	Eval AP.vedodoActive_nu==1 ? Traffic.Odo.ty = AP.odoEstimationPort.yPosition_m
+	Eval AP.vedodoActive_nu==1 ? Traffic.Odo.rz = AP.odoEstimationPort.yawAngle_rad
+	""
+	# Stop testrun if no steering angle was requested in first xx seconds (default: 10)
+	Eval first() ? Qu::steeringFlag_nu=0
+	Eval (abs(AP.steerCtrlRequestPort.steerAngReq_rad) > 0.1) ? Qu::steeringFlag_nu=1
+	Eval (Time > 30) & steeringFlag_nu==0 ? ManJump("END")
+	""
+	# Stop testrun after xx seconds (default: 200)
+	Eval (Time > 200) ? ManJump("END")
+DrivMan.1.LongDyn = Manual
+DrivMan.1.LatDyn = Step 0.0001 0.0 30 abs 1
+DrivMan.1.SteerMode = Angle
+DrivMan.2.Info = End testrun
+DrivMan.2.Label = END
+DrivMan.2.TimeLimit = 0
+DrivMan.2.LongDyn = Stop 10 0
+DrivMan.2.LatDyn = Step 0.0001 0.0 30 abs 1
+DrivMan.2.SteerMode = Angle
+Traffic.IFF.FName =
+Traffic.IFF.Time.Name =
+Traffic.N = 5
+Traffic.SpeedUnit = ms
+Traffic.0.ObjectKind = StatWithName
+Traffic.0.ObjectClass = Unknown
+Traffic.0.Name = PB00
+Traffic.0.Info = ParkingBox00
+Traffic.0.Movie.Geometry =
+Traffic.0.Color = 1.0 0 0
+Traffic.0.Basics.Dimension = 6.0 2.1 0.01
+Traffic.0.Basics.Offset = 0.04 0.0
+Traffic.0.Basics.Fr12CoM = 3.0
+Traffic.0.Basics.Contour.Mirror = 0
+Traffic.0.Basics.Contour:
+	0.0 0.0
+	0.0 $PBoxWidth=2.1
+	$PBoxLength=6 $PBoxWidth=2.1
+	$PBoxLength=6 0.0
+	0.0 0.0
+Traffic.0.Init.Orientation = 0.0 0.0 $PBoxAng=0
+Traffic.0.RCSClass = RCS_Car
+Traffic.0.DetectMask = 0 0
+Traffic.0.Route = 0 0
+Traffic.0.Init.Road = $PBoxX=25.65 $PBoxY=-5.984
+Traffic.1.ObjectKind = StatWithName
+Traffic.1.ObjectClass = Unknown
+Traffic.1.Name = T01
+Traffic.1.Info = UNNAMED Object 5
+Traffic.1.Movie.Geometry = VW_Golf_7_blue.mobj
+Traffic.1.Color = 1.0 1.0 1.0
+Traffic.1.Basics.Dimension = 4.317 1.832 1.2
+Traffic.1.Basics.Offset = 0.2 0.0
+Traffic.1.Basics.Fr12CoM = 2.1585
+Traffic.1.Basics.Contour.Mirror = 1
+Traffic.1.Basics.Contour:
+	0.000 0.000
+	0.060 0.450
+	0.200 0.685
+	0.320 0.820
+	0.560 0.900
+	0.760 0.900
+	3.800 0.900
+	4.000 0.800
+	4.120 0.700
+	4.230 0.520
+	4.250 0.500
+	4.300 0.000
+Traffic.1.Init.Orientation = 0.0 0.0 180
+Traffic.1.Attrib = 3 0
+Traffic.1.RCSClass = RCS_Car
+Traffic.1.DetectMask = 1 1
+Traffic.1.Route = 0 0
+Traffic.1.Init.Road = $GolfX=35.967 $GolfY=-4.8
+Traffic.2.ObjectKind = StatWithName
+Traffic.2.ObjectClass = Unknown
+Traffic.2.Name = T00
+Traffic.2.Info = UNNAMED Object 6
+Traffic.2.Movie.Geometry = VW_Passat_B8_Variant_noWheels_rotated_black.obj
+Traffic.2.Color = 1.0 1.0 1.0
+Traffic.2.Basics.Dimension = 4.767 1.832 1.2
+Traffic.2.Basics.Offset = 0.2 0.0
+Traffic.2.Basics.Fr12CoM = 2.3835
+Traffic.2.Basics.Contour.Mirror = 1
+Traffic.2.Basics.Contour:
+	0.000 0.000
+	0.050 0.500
+	0.120 0.685
+	0.250 0.770
+	0.740 0.916
+	4.350 0.916
+	4.500 0.850
+	4.767 0.500
+	4.767 0.000
+Traffic.2.Init.Orientation = 0.0 0.0 180
+Traffic.2.Attrib = 3 0
+Traffic.2.RCSClass = RCS_Car
+Traffic.2.DetectMask = 1 1
+Traffic.2.Route = 0 0
+Traffic.2.Init.Road = $PassatX=25.6 $PassatY=-4.8
+Traffic.3.ObjectKind = StatNoName
+Traffic.3.ObjectClass = Unknown
+Traffic.3.Info = UNNAMED Object 9
+Traffic.3.Movie.Geometry =
+Traffic.3.Color = 1.0 1.0 1.0
+Traffic.3.Basics.Dimension = 16.5 0.1 0.2
+Traffic.3.Basics.Offset = 00 0.0
+Traffic.3.Basics.Fr12CoM = 8.25
+Traffic.3.Init.Orientation = 0.0 0.0 0.0
+Traffic.3.RCSClass = RCS_Car
+Traffic.3.DetectMask = 1 0
+Traffic.3.Route = 0 0
+Traffic.3.Init.Road = 020.5 -6.3
+Traffic.4.ObjectKind = Movable
+Traffic.4.ObjectClass = Unknown
+Traffic.4.Name = Odo
+Traffic.4.Info = UNNAMED Object 4
+Traffic.4.Movie.Geometry =
+Traffic.4.Color = 1.0 1.0 1.0
+Traffic.4.Basics.Dimension = 0.1 0.2 1.5
+Traffic.4.Basics.Offset = 0.2 0.0
+Traffic.4.Basics.Fr12CoM = 0.05
+Traffic.4.Basics.Contour.Mirror = 1
+Traffic.4.Basics.Contour:
+	0 0
+	0.0 0.1
+	0.1 0.0
+Traffic.4.Init.Orientation = 0.0 0.0 0.0
+Traffic.4.RCSClass = RCS_Car
+Traffic.4.DetectMask = 0 0
+Traffic.4.Route = 0 0
+Traffic.4.Init.Road = 0 0
+Traffic.4.Init.v = 0.0
+Traffic.4.FreeMotion = 1
+Traffic.4.UpdRate = 200
+Traffic.4.IFF.FM_tx.Name =
+Traffic.4.IFF.FM_tx.Factor = 1.0
+Traffic.4.IFF.FM_tx.Offset = 0.0
+Traffic.4.IFF.FM_ty.Name =
+Traffic.4.IFF.FM_ty.Factor = 1.0
+Traffic.4.IFF.FM_ty.Offset = 0.0
+Traffic.4.IFF.FM_tz.Name =
+Traffic.4.IFF.FM_tz.Factor = 1.0
+Traffic.4.IFF.FM_tz.Offset = 0.0
+Traffic.4.IFF.FM_rx.Name =
+Traffic.4.IFF.FM_rx.Factor = 1.0
+Traffic.4.IFF.FM_rx.Offset = 0.0
+Traffic.4.IFF.FM_ry.Name =
+Traffic.4.IFF.FM_ry.Factor = 1.0
+Traffic.4.IFF.FM_ry.Offset = 0.0
+Traffic.4.IFF.FM_rz.Name =
+Traffic.4.IFF.FM_rz.Factor = 1.0
+Traffic.4.IFF.FM_rz.Offset = 0.0
+DrivMan.OW.Active = 0
+DrivMan.OW.Quantities =
+DrivMan.OW.StartGearNo = 1
+DrivMan.OW.StartVelocity =
+DrivMan.OW.GasMax = 0.5
+DrivMan.OW.RefCh = Time
+DrivMan.OW.ConsiderRoadSigns = 0
+DrivMan.OW.sRoute.Offset = 0
+ErrorClass.0.Action = abort
+ErrorClass.0.Save = 0
+ErrorClass.0.WarningLimit = 3 5
+ErrorClass.1.Action = abort
+ErrorClass.1.Save = 0
+ErrorClass.1.WarningLimit = 3 5
+ErrorClass.2.Action = abort
+ErrorClass.2.Save = 0
+ErrorClass.2.WarningLimit = 3 5
+ErrorClass.3.Action = abort
+ErrorClass.3.Save = 0
+ErrorClass.3.WarningLimit = 3 5
+ErrorClass.4.Action = abort
+ErrorClass.4.Save = 0
+ErrorClass.4.WarningLimit = 3 5
+ErrorClass.5.Action = abort
+ErrorClass.5.Save = 0
+ErrorClass.5.WarningLimit = 3 5
+ErrorClass.6.Action = abort
+ErrorClass.6.Save = 0
+ErrorClass.6.WarningLimit = 10 5
+ErrorClass.7.Action = abort
+ErrorClass.7.Save = 0
+ErrorClass.7.WarningLimit = 3 5
+ErrorClass.10.Action = abort
+ErrorClass.10.Save = 0
+ErrorClass.10.WarningLimit = 3 5
+ErrorClass.11.Action = abort
+ErrorClass.11.Save = 0
+ErrorClass.11.WarningLimit = 3 5
+Road.FName = CEM200Sim_ParkingSlots/CEM200Sim_ParkingSlots_Inverse.road
+Road.VhclStartPos = $LongOffset=33 $LatOffset=0 $YawOffset=0
+Road.VhclRoute = default
+Road.RouteId = 0
+Env.StartTime.Year = 2014
+Env.StartTime.Month = 1
+Env.StartTime.Day = 1
+Env.StartTime.Hour = 12
+Env.StartTime.Min = 0
+Env.StartTime.Sec = 0
+Env.StartTime.DeltaUTC = 0.0
+Env.GNav.Active = 0
+Env.Temperature = 20.0
+Env.AirDensity = 1.205
+Env.AirPressure = 1.013
+Env.AirHumidity = 60
+Env.SolarRadiation = 400.0
+Env.RainRate = 0.0
+Env.VisRangeInFog = 1000.0
+Env.Wind.Kind = none
+Env.Wind.Velocity = 0.0
+Env.Wind.Angle = 0.0
+Env.Sun.Position = geographicDefinition
+Env.Sun.Azimuth = 180.0
+Env.Sun.Elevation = 45.0
+Env.Kind = Generic
+Env.Temp.Offset_Elev = -0.0065
+Env.Temp.Offset_sRoad.Amplify = 1.0
+Env.Temp.Offset_sRoad.On = 0
+Env.Temp.Offset_Time.Amplify = 1.0
+Env.Temp.Offset_Time.On = 1
+Env.Temp.Offset_Time:
+	0.0 -2.0
+	3.0 -2.5
+	6.0 -2.7
+	7.5 -2.7
+	9.0 -2.5
+	10.0 -2.3
+	11.0 -1.6
+	12.0 0.0
+	13.0 1.4
+	14.0 2.1
+	15.5 2.5
+	17.0 2.2
+	18.0 1.7
+	19.0 1.1
+	20.0 0.2
+	21.0 -0.6
+	22.0 -1.1
+	23.0 -1.6
+	24.0 -2.0
+Driver.ParamIdent = IPGDriver 5
+Driver.Mode = std
+Driver.Long.DrivMaxSpeed = 0
+Driver.Long.CruisingSpeed = 150
+Driver.CornerCutCoef = 0.5
+Driver.ConsiderTraffic = 1
+Driver.Traffic.TimeGapMin = 1.8
+Driver.Traffic.TimeGapMax = 5.0
+Driver.Traffic.DistMin = 6
+Driver.Traffic.DistMax = 250
+Driver.Traffic.EcoCoef = 0.75
+Driver.Traffic.Overtake = 0
+Driver.Traffic.Overtake_Rate = 1
+Driver.Traffic.Overtake_dSpeedMin = 10
+Driver.Long.dtAccBrake = 0.5
+Driver.Long.axMax = 3.0
+Driver.Long.axMin = -4.0
+Driver.Long.ayMax = 4.0
+Driver.Long.GGExp:
+	50 1.0 1.0
+Driver.Long.DevMax = 0.0
+Driver.Long.tReact = 0.0
+Driver.Long.TractionControl = 1
+Driver.DecShift.UseBrakePark = 0
+Driver.DecShift.tSwitchGear = 1.0
+Driver.DecShift.nEngine.Limits:
+	1500 4000
+Driver.DecShift.nEngine.Shift:
+	2000 3000
+Driver.Lat.DevMax = 0.0
+Driver.Lat.tReact = 0.0
+Driver.Knowl.Long.tActionMin = 4
+Driver.Knowl.Lat.StWhlAngleMax = 630
+Driver.Knowl.Lat.StWhlAngleVelMax = 500
+Driver.Knowl.Lat.StWhlAngleAccMax = 3000
+Driver.Learn.VehicleLimits.TestRun =
+Driver.Learn.VehicleLimits.Date = 0
+Driver.Learn.ControllerDyn.TestRun =
+Driver.Learn.ControllerDyn.Date = 0
+Driver.Learn.MaxSpeed.TestRun =
+Driver.Learn.MaxSpeed.Date = 0
+Driver.Learn.Remember = 0
+Driver.Learn.Friction = 1.0
+Driver.Knowl.Long.tPreviewBra = 0.6
+Driver.Knowl.Long.tPreviewAcc = 1.5
+Driver.Knowl.Lat.tPreview = 0.8
+Driver.Learn.NEng_S = 1

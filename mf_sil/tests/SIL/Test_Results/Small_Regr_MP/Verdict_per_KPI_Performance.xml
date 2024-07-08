@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Summary>
+    <Memory_Parking_End_Maneuver_evaluation>
+        <MP_NoHMI_Implicit_AngRight_Unit_Manual_Scanning.erg>PASSED</MP_NoHMI_Implicit_AngRight_Unit_Manual_Scanning.erg>
+        <MP_NoHMI_Implicit_Backward_Perpendicular_Right_1_Unit_Manual_Scanning.erg>PASSED</MP_NoHMI_Implicit_Backward_Perpendicular_Right_1_Unit_Manual_Scanning.erg>
+        <MP_NoHMI_Implicit_Parallel_Left_1_Unit_Manual_Scanning_working.erg>PASSED</MP_NoHMI_Implicit_Parallel_Left_1_Unit_Manual_Scanning_working.erg>
+        <MP_NoHMI_Implicit_Parallel_Right_1_Unit_Manual_Scanning_working.erg>PASSED</MP_NoHMI_Implicit_Parallel_Right_1_Unit_Manual_Scanning_working.erg>
+        <MP_NoHMI_Parallel_Left_No_userUpdate.erg>PASSED</MP_NoHMI_Parallel_Left_No_userUpdate.erg>
+        <MP_NoHMI_Parallel_Left_userUpdate.erg>PASSED</MP_NoHMI_Parallel_Left_userUpdate.erg>
+        <MP_NoHMI_Parallel_Right_No_userUpdate.erg>PASSED</MP_NoHMI_Parallel_Right_No_userUpdate.erg>
+        <MP_NoHMI_Parallel_Right_userUpdate.erg>PASSED</MP_NoHMI_Parallel_Right_userUpdate.erg>
+        <MP_NoHMI_Perpendicullar_Left_No_userUpdate.erg>PASSED</MP_NoHMI_Perpendicullar_Left_No_userUpdate.erg>
+        <MP_NoHMI_Perpendicullar_Left_userUpdate.erg>PASSED</MP_NoHMI_Perpendicullar_Left_userUpdate.erg>
+        <MP_NoHMI_Perpendicullar_Right_No_userUpdate.erg>PASSED</MP_NoHMI_Perpendicullar_Right_No_userUpdate.erg>
+        <MP_NoHMI_Perpendicullar_Right_userUpdate.erg>PASSED</MP_NoHMI_Perpendicullar_Right_userUpdate.erg>
+    </Memory_Parking_End_Maneuver_evaluation>
+</Summary>

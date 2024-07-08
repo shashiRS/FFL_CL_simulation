@@ -1,0 +1,80 @@
+<!-- This file is no longer used, due to switching from STET to TSF framework for evaluation -->
+<Summary><Report><Link>\Reports_AUP\LastReport\L3T_ALGO139\PerpRight_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>228 = 90.48 %</Failed>
+<Unknown>24 = 9.52 %</Unknown>
+<Total>252</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO142\PerpRight_NoGraphs\Report.html</Link>
+<Passed>178 = 70.63 %</Passed>
+<Failed>52 = 20.63 %</Failed>
+<Unknown>22 = 8.73 %</Unknown>
+<Total>252</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO146\PerpRight_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>229 = 90.87 %</Failed>
+<Unknown>23 = 9.13 %</Unknown>
+<Total>252</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO139\PerpLeft_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>51 = 94.44 %</Failed>
+<Unknown>3 = 5.56 %</Unknown>
+<Total>54</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO142\PerpLeft_NoGraphs\Report.html</Link>
+<Passed>41 = 75.93 %</Passed>
+<Failed>6 = 11.11 %</Failed>
+<Unknown>7 = 12.96 %</Unknown>
+<Total>54</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO146\PerpLeft_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>51 = 94.44 %</Failed>
+<Unknown>3 = 5.56 %</Unknown>
+<Total>54</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO139\ParRight_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>149 = 94.3 %</Failed>
+<Unknown>9 = 5.7 %</Unknown>
+<Total>158</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO142\ParRight_NoGraphs\Report.html</Link>
+<Passed>121 = 76.58 %</Passed>
+<Failed>28 = 17.72 %</Failed>
+<Unknown>9 = 5.7 %</Unknown>
+<Total>158</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO145\ParRight_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>149 = 94.3 %</Failed>
+<Unknown>9 = 5.7 %</Unknown>
+<Total>158</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO139\ParLeft_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>25 = 100.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>25</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO142\ParLeft_NoGraphs\Report.html</Link>
+<Passed>18 = 72.0 %</Passed>
+<Failed>7 = 28.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>25</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO145\ParLeft_NoGraphs\Report.html</Link>
+<Passed>0 = 0.0 %</Passed>
+<Failed>25 = 100.0 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>25</Total>
+</Report>
+ <Report><Link>\Reports_AUP\LastReport\L3T_ALGO154\ParRight_NoGraphs\Report.html</Link>
+<Passed>8 = 72.73 %</Passed>
+<Failed>3 = 27.27 %</Failed>
+<Unknown>0 = 0.0 %</Unknown>
+<Total>11</Total>
+</Report>
+ </Summary>

@@ -1,0 +1,75 @@
+# Ignore file for git
+
+# Build environment
+venv/
+.project
+/.pydevproject
+.bricks
+__system
+*.config
+*.creator
+*.files
+*.includes
+
+# Build artifacts
+conan_workarea/
+packages/
+reports/
+prqa_reports/
+cip_lastbuild.log
+conaninfo.txt
+conanmanifest.txt
+deploy_manifest.txt
+qaf_metrics.json
+contrib/cip/
+
+# Python cache
+scripts/__pycache__/
+
+## Visual Studio Build files
+*.aps
+*.pch
+*.vspscc
+*.ncb
+*.suo
+*.bak
+*.cache
+*.dll
+*.ilk
+*.log
+*.lib
+*.exe
+*.out
+[Bb]in
+[Dd]ebug*/
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+*.slo
+*.lo
+*.o
+*.obj
+ice/
+.vs
+.vscode
+UpgradeLog.htm
+*.rc
+
+## Eclipse, Netbeans, QtCreator Generated files
+.project
+.cproject
+
+# Qt creator / dev env. files
+*.pro.user
+.qmake.stash
+
+# Build system outputs
+Makefile*
+/build*
+build
+dbg
+.vs
+
+# Generated files
+tests/SIL/CarMaker/storedData.json

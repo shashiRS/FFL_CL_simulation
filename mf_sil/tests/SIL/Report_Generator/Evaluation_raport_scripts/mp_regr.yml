@@ -1,0 +1,43 @@
+{
+#====================================================================
+# TestRun Configuration
+#====================================================================
+
+MAX_FILES : 400,
+IS_REGRESSION_TEST : False,
+FILE_EXTENSION : ".erg",
+PLATFORM : "Simulation",
+PROJECT : "PAR230",
+THRESHOLD : {
+"Small_Regr_MP_base": "Test_Thresholds_Small_MP.xml",
+"Small_Regr_MP_entry": "Test_Thresholds_Small_MP.xml",
+"Small_Regr_MP_performance": "Test_Thresholds_Small_MP.xml",
+},
+CATEGORIES_FOR_XML_CHARTS : {
+    "Small_Regr_MP_base":[
+        "ParLeft",
+        "ParRight",
+        "PerpLeft",
+        "PerpRight",
+        "AngLeft",
+        "AngRight",],
+    "Small_Regr_MP_entry":[
+        "ParLeft",
+        "ParRight",
+        "PerpLeft",
+        "PerpRight",
+        "AngLeft",
+        "AngRight",],
+    "Small_Regr_MP_performance":[
+        "ParLeft",
+        "ParRight",
+        "PerpLeft",
+        "PerpRight",
+        "AngLeft",
+        "AngRight",],
+},
+"TestCollection_base":[pl_parking.PLP.MF.MEMPARK.MP_POS_EVAL.MPCheckManeuver],
+"TestCollection_entry":[pl_parking.PLP.MF.MEMPARK.MP_POS_EVAL.MPCheckManeuver],
+"TestCollection_performance":[pl_parking.PLP.MF.MEMPARK.MP_POS_EVAL.MPCheckManeuver],
+
+}

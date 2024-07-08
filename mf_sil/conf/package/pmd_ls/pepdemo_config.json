@@ -1,0 +1,38 @@
+{
+    // Note: Run time configuration for algo demo purpose.
+        "enableAlgo"  : {
+
+            // Important note:
+            //----------------
+            // Supported algorithm options [0 - Disable 1 - Enable]:
+            //    "pmd_fv"
+            //    "pmd_rv"
+            //    "pmd_mr"
+            //    "pmd_ml"
+            //    "sfm"
+            //    "uss"
+            //    "cem"
+            //    "si"
+            //    "trailer" ["trailer::sense" + "trailer::drive"] - currently not supported in LSM501
+
+            // For Fusion Demo
+            "pmd_mr"              :   1,
+            "pmd_ml"              :   1,
+            "pmd_fv"              :   0,
+            "pmd_rv"              :   0,
+            "sfm"                 :   1,
+            "uss"                 :   1,
+            "cem"                 :   1,
+            "si"                  :   1,
+
+            // For Trailer Demo
+            // Note: Only Sense function is currently available
+            //"trailer::sense"               :   1
+
+            // For logger level
+            // Logging below the min logging level shall disabled
+            "minlogLevel"        : 2
+
+        }
+
+}

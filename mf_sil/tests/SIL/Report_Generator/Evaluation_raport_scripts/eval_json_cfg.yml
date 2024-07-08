@@ -1,0 +1,78 @@
+{
+"fun": {
+"tableData": [],
+"testType": "tsf",
+"reportPath": ,
+"usePlugins": True,
+"nonInteractivePlots": True,
+"platform": ,
+"includeInfo": False,
+"infoFile": "",
+"project": ,
+"textInfo": [],
+"runError": {
+    "reportPath": False,
+    "projectName": False,
+    "tableSelect": False,
+},
+"selectedPlugins": {
+    "statistics": []
+},
+"pluginTree": [
+    {
+        "value": "pl_parking",
+        "label": "pl_parking",
+        "children": [
+            {
+                "value": "pl_parking_statistics",
+                "label": "pl_parking_statistics",
+                "children": [
+                    {
+                        "value": "pl_parking.statistics.common_ft_helper.RootCause",
+                        "label": "common_ft_helper.RootCause",
+                    },
+                    {
+                        "value": "pl_parking.statistics.common_ft_helper.StatisticsForRootCause",
+                        "label": "common_ft_helper.StatisticsForRootCause",
+                    },
+                    {
+                        "value": "pl_parking.statistics.common_ft_helper.StatisticsReport",
+                        "label": "common_ft_helper.StatisticsReport",
+                    },
+                    {
+                        "value": "pl_parking.statistics.parking_rewrite_example.StatisticsExample",
+                        "label": "parking_rewrite_example.StatisticsExample",
+                    },
+                ],
+            },
+            {
+                "value": "pl_parking_overviews",
+                "label": "pl_parking_overviews",
+                "children": [
+                    {
+                        "value": "pl_parking.overviews.minimal_example.CustomOverview",
+                        "label": "minimal_example.CustomOverview",
+                    }
+                ],
+            },
+        ],
+    }
+],
+"checked": [],
+"expanded": [
+    "pl_parking",
+    "pl_parking_statistics",
+    "pl_parking_overviews",
+],},
+"general":{  "useStkReader": False,
+            "openReport": True,
+            "createSubfolders": True,
+            "add3DView": False,
+            "correlateBsigs": True,
+            "createExcelReport": True,
+            "shortRecordingName": False,
+            "numThreads": "1",
+            "logLevel": "Warning",
+            "showSteps": False,
+}
+}

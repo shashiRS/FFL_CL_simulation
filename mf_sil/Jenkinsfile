@@ -1,0 +1,154 @@
+@Library('bricks_pipeline_lib') _
+
+// for Bricks parameter options see
+// https://readthedocs.cmo.conti.de/docs/cip-pipeline-lib-user/en/latest/3_getting_started/bricks.html
+
+bricks(
+  bbsVersion: '4.29.0',
+  FEATURE_CUSTOM_CHECKOUT:false,
+  bbsDebug: true, {
+  bricksManager.generateTasks()
+
+  // remove all documentation builds in Jenkins
+  bricksManager.removeBricksTask(
+    placement: 'build',
+    target: 'doc'
+  )
+
+  bricksManager.generateToolTasks()
+  bricksManager.applyGeneratedTasks()
+
+  def test_config = readJSON file: 'conf/test_config.json'
+
+  if (!test_config.disable_all_tests) {
+    if (!test_config.disable_base_tests) {
+      addTask(
+        name: "mf_sil-base-test",
+        onSameNode: true, 
+        match: [
+            platform: "vs2017",
+            variant: "base",
+            tags: [
+            "production"
+            ]
+        ]
+      ) {
+          try {
+            powershell """ 
+              gci env:* | sort-object name
+              ipconfig
+              ./tests/SIL/Report_Generator/Bricks_CI/run_regression_tests.bat base
+            """
+            zip zipFile: 'mf_sil-base-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-base-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-base-test_results.zip'
+          } catch (Exception err) {
+            zip zipFile: 'mf_sil-base-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-base-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-base-test_results.zip'
+            unstable('mf_sil-base-test failed!')
+          } 
+        }
+    }
+
+    if (!test_config.disable_entry_tests) {
+      addTask(
+        name: "mf_sil-entry-test",
+        onSameNode: true, 
+        match: [
+            platform: "vs2017",
+            variant: "entry",
+            tags: [
+            "production"
+            ]
+        ]
+      ) {
+          try {
+            powershell """ 
+              gci env:* | sort-object name
+              ipconfig
+              ./tests/SIL/Report_Generator/Bricks_CI/run_regression_tests.bat entry
+            """
+            zip zipFile: 'mf_sil-entry-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-entry-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-entry-test_results.zip'
+          } catch (Exception err) {
+            zip zipFile: 'mf_sil-entry-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-entry-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-entry-test_results.zip'
+            unstable('mf_sil-entry-test failed!')
+          } 
+        }
+    }
+
+    if (!test_config.disable_performance_tests) {
+      addTask(
+        name: "mf_sil-performance-test",
+        onSameNode: true, 
+        match: [
+            platform: "vs2017",
+            variant: "performance",
+            tags: [
+            "production"
+            ]
+        ]
+      ) {
+          try {
+            powershell """ 
+              gci env:* | sort-object name
+              ipconfig
+              ./tests/SIL/Report_Generator/Bricks_CI/run_regression_tests.bat performance
+            """
+            zip zipFile: 'mf_sil-performance-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-performance-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-performance-test_results.zip'
+          } catch (Exception err) {
+            zip zipFile: 'mf_sil-performance-test_results.zip', archive: false, glob: 'conan_workarea/mf_sil-performance-test_results/**'
+            artifactoryManager.upload_artifacts filePattern: 'mf_sil-performance-test_results.zip'
+            unstable('mf_sil-performance-test failed!')
+          } 
+        }
+    }
+  }
+  if (env.TAG_NAME) {  
+    addTask(
+      name: "mf_sil-entry-container-upload",
+      onSameNode: true, 
+      match: [
+        platform: "vs2017",
+        variant: "entry",
+        tags: [
+          "production"
+        ]
+      ]
+    ) {
+      try {
+        zip zipFile: "CLS_containers/package.mf_sil.container.entry.${env.VERSION_TAG}.vs2017.zip", archive: false, dir: "conan_workarea/package.mf_sil.entry.${env.VERSION_TAG}.vs2017"
+      } catch (Exception err) {
+        unstable('zip mf_sil-entry-container-upload zip failed!')
+      } 
+      try {
+        bat "python scripts/upload_sim_container.py entry.${env.VERSION_TAG}"
+      } catch (Exception err) {
+        unstable('mf_sil-entry-container-upload failed!')
+      } 
+    }
+    addTask(
+      name: "mf_sil-performance-container-upload",
+      onSameNode: true, 
+      match: [
+        platform: "vs2017",
+        variant: "performance",
+        tags: [
+          "production"
+        ]
+      ]
+    ) {
+      try {
+        zip zipFile: "CLS_containers/package.mf_sil.container.performance.${env.VERSION_TAG}.vs2017.zip", archive: false, dir: "conan_workarea/package.mf_sil.performance.${env.VERSION_TAG}.vs2017"
+      } catch (Exception err) {
+        unstable('zip mf_sil-performance-container-upload failed!')
+      } 
+      try {
+        bat "python scripts/upload_sim_container.py performance.${env.VERSION_TAG }"
+      } catch (Exception err) {
+        unstable('mf_sil-performance-container-upload failed!')
+      } 
+    }
+  }
+})
