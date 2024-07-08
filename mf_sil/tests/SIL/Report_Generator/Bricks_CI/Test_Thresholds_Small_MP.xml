@@ -1,7 +1,0 @@
-<Thresholds>
-    <Report>
-        <Name>Memory_Parking_End_Maneuver_evaluation</Name>
-        <Threshold>75.0</Threshold>
-    </Report>
-</Thresholds>
-

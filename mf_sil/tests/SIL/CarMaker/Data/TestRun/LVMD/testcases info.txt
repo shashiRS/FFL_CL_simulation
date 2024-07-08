@@ -1,8 +1,0 @@
-LVMD_Demo_Testcase_001: Ego is standstill for more than 5 sec, Lead vehicle detected within ROI (1- 5m distance) with 100% overlap and lead vehicle is standstill for more than x seconds and lead vehicle moves with xx velocity for 4m
-(Our Algo should provide an alert in this case)
-LVMD_Demo_Testcase_002: Ego is standstill for more than 5 sec, Lead vehicle detected outside ROI (5.5- 7m distance) with 100% overlap and lead vehicle is standstill for more than x seconds and lead vehicle moves with xx velocity for 4m
-(Our Algo should not provide an alert in this case)
-LVMD_Demo_Testcase_003: Ego is standstill for more than 5 sec, Lead vehicle detected within ROI (1- 5m distance) with 100% overlap and lead vehicle is standstill for more than x seconds and lead vehicle moves with xx velocity for 2m and stopped
-(Our Algo should not provide an alert in this case)
-LVMD_Demo_Testcase_004: Ego is standstill for more than 5 sec, 2 Lead vehicles detected within ROI (1- 5m distance) with 50% overlap of each vehicle and lead vehicle is standstill for more than x seconds and 1 lead vehicle moves with xx velocity for 4m and other stays standstill
-(Our Algo should not provide an alert in this case)
