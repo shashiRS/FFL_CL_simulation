@@ -1,0 +1,1349 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-TestRun 8
+FileCreator = CarMaker 8.1.1 2019-12-19
+Description:
+Vehicle = VW_PassatVariant_B8__USS
+Trailer =
+Tire.0 =
+Tire.1 =
+Tire.2 =
+Tire.3 =
+Snapshot.TimeLimit =
+Snapshot.DistLimit =
+VehicleLoad.0.mass = 0
+VehicleLoad.0.pos = 0 0 0
+VehicleLoad.1.mass = 0
+VehicleLoad.1.pos = 0 0 0
+VehicleLoad.2.mass = 0
+VehicleLoad.2.pos = 0 0 0
+VehicleLoad.3.mass = 0
+VehicleLoad.3.pos = 0 0 0
+TrailerLoad.0.mass = 0
+TrailerLoad.0.pos = 0 0 0
+TrailerLoad.1.mass = 0
+TrailerLoad.1.pos = 0 0 0
+TrailerLoad.2.mass = 0
+TrailerLoad.2.pos = 0 0 0
+DrivMan.Cmds:
+	first() ? Qu::xPos = 0
+	first() ? Qu::yPos = 0
+DrivMan.Init.Velocity = 0
+DrivMan.Init.GearNo = 0
+DrivMan.Init.SteerAng = 0
+DrivMan.Init.LaneOffset = 0
+DrivMan.Init.OperatorActive = 1
+DrivMan.Init.OperatorState = drive
+DrivMan.VhclOperator.Kind = IPGOperator 1
+DrivMan.nDMan = 2
+DrivMan.0.TimeLimit = 2.0
+DrivMan.0.Clutch = 1 0 0.2 abs
+DrivMan.0.Gas = 0 0 0.2 abs
+DrivMan.0.Brake = 1 0 0.2 abs
+DrivMan.0.BrakePark = 1 0 0.2 abs
+DrivMan.0.Gear = 0 0 0.0 abs
+DrivMan.0.LongDyn = Manual
+DrivMan.0.LatDyn = Driver 0
+DrivMan.1.TimeLimit = 0
+DrivMan.1.Cmds:
+	DVArel *
+DrivMan.1.LongDyn = Driver 1 1
+DrivMan.1.LatDyn = Driver
+Traffic.IFF.FName =
+Traffic.IFF.Time.Name =
+Traffic.N = 1
+Traffic.SpeedUnit = ms
+Traffic.0.ObjectKind = Movable
+Traffic.0.ObjectClass = Unknown
+Traffic.0.Name = T00
+Traffic.0.Info = UNNAMED Object 0
+Traffic.0.Movie.Geometry = Tube_75mm_100Poly/Pipe_75_100.mobj
+Traffic.0.Color = 1.0 0.0 0.0
+Traffic.0.Basics.Dimension = 0.075 0.075 1
+Traffic.0.Basics.Offset = 0.0 0.075
+Traffic.0.Basics.Fr12CoM = 0
+Traffic.0.Basics.Contour.Mirror = 1
+Traffic.0.Basics.Contour:
+	0 0
+	0.000142698821559539 0.00326834035303718
+	0.000569709262042202 0.00651180666250990
+	0.00127778151415994 0.00970571419134454
+	0.00226152672052844 0.0128257553747126
+	0.00351345798612563 0.0158481848152762
+	0.00502404735808355 0.0187500000000000
+	0.00678179833916280 0.0215091163631642
+	0.00877333338303833 0.0241045353632452
+	0.0109834957055045 0.0265165042944955
+	0.0133954646367548 0.0287266666169617
+	0.0159908836368358 0.0307182016608372
+	0.0187500000000000 0.0324759526419165
+	0.0216518151847238 0.0339865420138744
+	0.0246742446252874 0.0352384732794716
+	0.0277942858086555 0.0362222184858401
+	0.0309881933374901 0.0369302907379578
+	0.0342316596469628 0.0373573011784405
+	0.0375000000000000 0.0375000000000000
+	0.0407683403530372 0.0373573011784405
+	0.0440118066625099 0.0369302907379578
+	0.0472057141913445 0.0362222184858401
+	0.0503257553747126 0.0352384732794716
+	0.0533481848152762 0.0339865420138744
+	0.0562500000000000 0.0324759526419164
+	0.0590091163631642 0.0307182016608372
+	0.0616045353632452 0.0287266666169617
+	0.0640165042944955 0.0265165042944955
+	0.0662266666169617 0.0241045353632452
+	0.0682182016608372 0.0215091163631642
+	0.0699759526419164 0.0187500000000000
+	0.0714865420138744 0.0158481848152762
+	0.0727384732794716 0.0128257553747126
+	0.0737222184858401 0.00970571419134453
+	0.0744302907379578 0.00651180666250989
+	0.0748573011784405 0.00326834035303718
+	0.0750000000000000 0
+Traffic.0.Init.Orientation = 0.0 0.0 0.0
+Traffic.0.RCSClass = RCS_Unknown
+Traffic.0.DetectMask = 1 0
+Traffic.0.Route = 0 0
+Traffic.0.Init.Road = $TubeDist=16 $TubeLat=-7
+Traffic.0.Init.v = 0.0
+Traffic.0.FreeMotion = 0
+Traffic.0.UpdRate = 200
+Traffic.0.Motion.Kind = Course
+Traffic.0.Motion.mass = 1300.0
+Traffic.0.Man.TreatAtEnd = FreezePos
+Traffic.0.Man.N = 0
+DrivMan.OW.Active = 0
+DrivMan.OW.Quantities =
+DrivMan.OW.StartGearNo = 1
+DrivMan.OW.StartVelocity =
+DrivMan.OW.GasMax = 0.5
+DrivMan.OW.RefCh = Time
+DrivMan.OW.ConsiderRoadSigns = 0
+DrivMan.OW.sRoute.Offset = 0
+ErrorClass.0.Action = abort
+ErrorClass.0.Save = 0
+ErrorClass.0.WarningLimit = 3 5
+ErrorClass.1.Action = abort
+ErrorClass.1.Save = 0
+ErrorClass.1.WarningLimit = 3 5
+ErrorClass.2.Action = abort
+ErrorClass.2.Save = 0
+ErrorClass.2.WarningLimit = 3 5
+ErrorClass.3.Action = abort
+ErrorClass.3.Save = 0
+ErrorClass.3.WarningLimit = 3 5
+ErrorClass.4.Action = abort
+ErrorClass.4.Save = 0
+ErrorClass.4.WarningLimit = 3 5
+ErrorClass.5.Action = abort
+ErrorClass.5.Save = 0
+ErrorClass.5.WarningLimit = 3 5
+ErrorClass.6.Action = abort
+ErrorClass.6.Save = 0
+ErrorClass.6.WarningLimit = 10 5
+ErrorClass.7.Action = abort
+ErrorClass.7.Save = 0
+ErrorClass.7.WarningLimit = 3 5
+ErrorClass.10.Action = abort
+ErrorClass.10.Save = 0
+ErrorClass.10.WarningLimit = 3 5
+ErrorClass.11.Action = abort
+ErrorClass.11.Save = 0
+ErrorClass.11.WarningLimit = 3 5
+Road.FileIdent = IPGRoad 8.0
+Road.LibVersion = 8.1.1
+Road.Country = DEU
+Road.nLinks = 1
+Road.nJunctions = 0
+Road.nObjects = 231
+Road.nRoutes = 1
+Road.RoadNetworkLength = 50
+Road.BBox = -10 60 -38.5 38.5 -11 11
+Road.Route.0.Length = 50
+Road.RST.Unit = kmh
+Road.RST = 50 100 130 30 70 30 0 -1
+Road.Movie = 0.2 1 0.01 1.5 1.5 1 1
+Road.PathMode = -1
+Road.Link.0.ID = 0
+Road.Link.0.Junctions = -1 -1 -2 -1
+Road.Link.0.Node0 = 0 0 0 0
+Road.Link.0.RST = countryroad
+Road.Link.0.RL.ID = 1
+Road.Link.0.Seg.0.ID = 5
+Road.Link.0.Seg.0.Type = Straight
+Road.Link.0.Seg.0.Param = 50 0 0 0 0 0 0 0
+Road.Link.0.LaneSection.0.ID = 6
+Road.Link.0.LaneSection.0.Start = 0
+Road.Link.0.LaneSection.0.LaneL.0.ID = 7
+Road.Link.0.LaneSection.0.LaneL.0 = 0 25 25 0 0 0 0
+Road.Link.0.LaneSection.0.LaneL.0.ARP = 10 11 12 13 14 15
+Road.Link.0.LaneSection.0.LaneL.1.ID = 18
+Road.Link.0.LaneSection.0.LaneL.1 = 0 1 1 4 0 0 0
+Road.Link.0.LaneSection.0.LaneL.1.ARP = 21 22 23 24 25 26
+Road.Link.0.LaneSection.0.LaneL.2.ID = 28
+Road.Link.0.LaneSection.0.LaneL.2 = 0 2.5 2.5 5 0 0 0
+Road.Link.0.LaneSection.0.LaneR.0.ID = 31
+Road.Link.0.LaneSection.0.LaneR.0 = 0 25 25 0 0 0 0
+Road.Link.0.LaneSection.0.LaneR.0.ARP = 34 35 36 37 38 39
+Road.Link.0.LaneSection.0.LaneR.1.ID = 42
+Road.Link.0.LaneSection.0.LaneR.1 = 0 1 1 4 0 0 0
+Road.Link.0.LaneSection.0.LaneR.1.ARP = 45 46 47 48 49 50
+Road.Link.0.LaneSection.0.LaneR.2.ID = 52
+Road.Link.0.LaneSection.0.LaneR.2 = 0 2.5 2.5 5 0 0 0
+Road.LanePath.0 = 16 7 2 10 0.1 0.1
+Road.LanePath.1 = 27 18 0.25 10 0.1 0.1
+Road.LanePath.2 = 40 31 2 10 0.1 0.1
+Road.LanePath.3 = 51 42 0.25 10 0.1 0.1
+Route.0.ID = 55
+Route.0.Name = Route_0
+Route.0.DrvPath.ID = 56
+Route.0.DrvPath:
+	40
+Road.RL.1.RoadMarking.0.ID = 41 31
+Road.RL.1.RoadMarking.0 = 0 0 0 1 0 -1 0.15 0 1 0 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.0.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.1.ID = 136 1
+Road.RL.1.RoadMarking.1 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.1.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.1.PointList:
+	0 -9.75
+	45 -9.75
+Road.RL.1.RoadMarking.2.ID = 134 1
+Road.RL.1.RoadMarking.2 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.2.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.2.PointList:
+	0 -9.25
+	45 -9.25
+Road.RL.1.RoadMarking.3.ID = 132 1
+Road.RL.1.RoadMarking.3 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.3.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.3.PointList:
+	0 -8.75
+	45 -8.75
+Road.RL.1.RoadMarking.4.ID = 130 1
+Road.RL.1.RoadMarking.4 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.4.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.4.PointList:
+	0 -8.25
+	45 -8.25
+Road.RL.1.RoadMarking.5.ID = 128 1
+Road.RL.1.RoadMarking.5 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.5.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.5.PointList:
+	0 -7.75
+	45 -7.75
+Road.RL.1.RoadMarking.6.ID = 126 1
+Road.RL.1.RoadMarking.6 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.6.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.6.PointList:
+	0 -7.25
+	45 -7.25
+Road.RL.1.RoadMarking.7.ID = 124 1
+Road.RL.1.RoadMarking.7 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.7.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.7.PointList:
+	0 -6.75
+	45 -6.75
+Road.RL.1.RoadMarking.8.ID = 107 1
+Road.RL.1.RoadMarking.8 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.8.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.8.PointList:
+	0 -6.25
+	45 -6.25
+Road.RL.1.RoadMarking.9.ID = 54 1
+Road.RL.1.RoadMarking.9 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.9.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.9.PointList:
+	0 -5.75
+	45 -5.75
+Road.RL.1.RoadMarking.10.ID = 44 1
+Road.RL.1.RoadMarking.10 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.10.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.10.PointList:
+	0 -5.25
+	45 -5.25
+Road.RL.1.RoadMarking.11.ID = 33 1
+Road.RL.1.RoadMarking.11 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.11.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.11.PointList:
+	0 -4.75
+	45 -4.75
+Road.RL.1.RoadMarking.12.ID = 30 1
+Road.RL.1.RoadMarking.12 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.12.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.12.PointList:
+	0 -4.25
+	45 -4.25
+Road.RL.1.RoadMarking.13.ID = 20 1
+Road.RL.1.RoadMarking.13 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.13.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.13.PointList:
+	0 9.75
+	45 9.75
+Road.RL.1.RoadMarking.14.ID = 9 1
+Road.RL.1.RoadMarking.14 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.14.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.14.PointList:
+	0 9.25
+	45 9.25
+Road.RL.1.RoadMarking.15.ID = 4 1
+Road.RL.1.RoadMarking.15 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.15.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.15.PointList:
+	0 8.75
+	45 8.75
+Road.RL.1.RoadMarking.16.ID = 2 1
+Road.RL.1.RoadMarking.16 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.16.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.16.PointList:
+	0 8.25
+	45 8.25
+Road.RL.1.RoadMarking.17.ID = 104 1
+Road.RL.1.RoadMarking.17 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.17.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.17.PointList:
+	0 -3.75
+	45 -3.75
+Road.RL.1.RoadMarking.18.ID = 102 1
+Road.RL.1.RoadMarking.18 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.18.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.18.PointList:
+	0 -3.25
+	45 -3.25
+Road.RL.1.RoadMarking.19.ID = 100 1
+Road.RL.1.RoadMarking.19 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.19.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.19.PointList:
+	0 -2.75
+	45 -2.75
+Road.RL.1.RoadMarking.20.ID = 98 1
+Road.RL.1.RoadMarking.20 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.20.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.20.PointList:
+	0 -2.25
+	45 -2.25
+Road.RL.1.RoadMarking.21.ID = 96 1
+Road.RL.1.RoadMarking.21 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.21.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.21.PointList:
+	0 -1.75
+	45 -1.75
+Road.RL.1.RoadMarking.22.ID = 94 1
+Road.RL.1.RoadMarking.22 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.22.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.22.PointList:
+	0 -1.25
+	45 -1.25
+Road.RL.1.RoadMarking.23.ID = 92 1
+Road.RL.1.RoadMarking.23 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.23.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.23.PointList:
+	0 -0.75
+	45 -0.75
+Road.RL.1.RoadMarking.24.ID = 90 1
+Road.RL.1.RoadMarking.24 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.24.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.24.PointList:
+	0 -0.25
+	45 -0.25
+Road.RL.1.RoadMarking.25.ID = 88 1
+Road.RL.1.RoadMarking.25 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.25.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.25.PointList:
+	0 7.75
+	45 7.75
+Road.RL.1.RoadMarking.26.ID = 86 1
+Road.RL.1.RoadMarking.26 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.26.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.26.PointList:
+	0 7.25
+	45 7.25
+Road.RL.1.RoadMarking.27.ID = 84 1
+Road.RL.1.RoadMarking.27 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.27.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.27.PointList:
+	0 6.75
+	45 6.75
+Road.RL.1.RoadMarking.28.ID = 82 1
+Road.RL.1.RoadMarking.28 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.28.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.28.PointList:
+	0 6.25
+	45 6.25
+Road.RL.1.RoadMarking.29.ID = 80 1
+Road.RL.1.RoadMarking.29 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.29.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.29.PointList:
+	0 5.75
+	45 5.75
+Road.RL.1.RoadMarking.30.ID = 78 1
+Road.RL.1.RoadMarking.30 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.30.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.30.PointList:
+	0 5.25
+	45 5.25
+Road.RL.1.RoadMarking.31.ID = 76 1
+Road.RL.1.RoadMarking.31 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.31.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.31.PointList:
+	0 4.75
+	45 4.75
+Road.RL.1.RoadMarking.32.ID = 74 1
+Road.RL.1.RoadMarking.32 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.32.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.32.PointList:
+	0 4.25
+	45 4.25
+Road.RL.1.RoadMarking.33.ID = 72 1
+Road.RL.1.RoadMarking.33 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.33.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.33.PointList:
+	0 3.75
+	45 3.75
+Road.RL.1.RoadMarking.34.ID = 70 1
+Road.RL.1.RoadMarking.34 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.34.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.34.PointList:
+	0 3.25
+	45 3.25
+Road.RL.1.RoadMarking.35.ID = 68 1
+Road.RL.1.RoadMarking.35 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.35.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.35.PointList:
+	0 2.75
+	45 2.75
+Road.RL.1.RoadMarking.36.ID = 67 1
+Road.RL.1.RoadMarking.36 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.36.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.36.PointList:
+	0 2.5
+	45 2.5
+Road.RL.1.RoadMarking.37.ID = 64 1
+Road.RL.1.RoadMarking.37 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.37.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.37.PointList:
+	0 1.75
+	45 1.75
+Road.RL.1.RoadMarking.38.ID = 62 1
+Road.RL.1.RoadMarking.38 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.38.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.38.PointList:
+	0 1
+	45 1
+Road.RL.1.RoadMarking.39.ID = 60 1
+Road.RL.1.RoadMarking.39 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.39.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.39.PointList:
+	0 0.75
+	45 0.75
+Road.RL.1.RoadMarking.40.ID = 58 1
+Road.RL.1.RoadMarking.40 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.40.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.40.PointList:
+	0 0.25
+	45 0.25
+Road.RL.1.RoadMarking.41.ID = 17 7
+Road.RL.1.RoadMarking.41 = 0 0 0 1 0 1 0.15 0 1 0 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.41.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.42.ID = 57 1
+Road.RL.1.RoadMarking.42 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.42.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.42.PointList:
+	0 0
+	45 0
+Road.RL.1.RoadMarking.43.ID = 59 1
+Road.RL.1.RoadMarking.43 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.43.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.43.PointList:
+	0 0.5
+	45 0.5
+Road.RL.1.RoadMarking.44.ID = 61 1
+Road.RL.1.RoadMarking.44 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.44.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.44.PointList:
+	0 1.25
+	45 1.25
+Road.RL.1.RoadMarking.45.ID = 63 1
+Road.RL.1.RoadMarking.45 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.45.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.45.PointList:
+	0 1.5
+	45 1.5
+Road.RL.1.RoadMarking.46.ID = 65 1
+Road.RL.1.RoadMarking.46 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.46.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.46.PointList:
+	0 2
+	45 2
+Road.RL.1.RoadMarking.47.ID = 66 1
+Road.RL.1.RoadMarking.47 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.47.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.47.PointList:
+	0 2.25
+	45 2.25
+Road.RL.1.RoadMarking.48.ID = 69 1
+Road.RL.1.RoadMarking.48 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.48.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.48.PointList:
+	0 3
+	45 3
+Road.RL.1.RoadMarking.49.ID = 71 1
+Road.RL.1.RoadMarking.49 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.49.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.49.PointList:
+	0 3.5
+	45 3.5
+Road.RL.1.RoadMarking.50.ID = 73 1
+Road.RL.1.RoadMarking.50 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.50.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.50.PointList:
+	0 4
+	45 4
+Road.RL.1.RoadMarking.51.ID = 75 1
+Road.RL.1.RoadMarking.51 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.51.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.51.PointList:
+	0 4.5
+	45 4.5
+Road.RL.1.RoadMarking.52.ID = 77 1
+Road.RL.1.RoadMarking.52 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.52.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.52.PointList:
+	0 5
+	45 5
+Road.RL.1.RoadMarking.53.ID = 79 1
+Road.RL.1.RoadMarking.53 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.53.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.53.PointList:
+	0 5.5
+	45 5.5
+Road.RL.1.RoadMarking.54.ID = 81 1
+Road.RL.1.RoadMarking.54 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.54.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.54.PointList:
+	0 6
+	45 6
+Road.RL.1.RoadMarking.55.ID = 83 1
+Road.RL.1.RoadMarking.55 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.55.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.55.PointList:
+	0 6.5
+	45 6.5
+Road.RL.1.RoadMarking.56.ID = 85 1
+Road.RL.1.RoadMarking.56 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.56.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.56.PointList:
+	0 7
+	45 7
+Road.RL.1.RoadMarking.57.ID = 87 1
+Road.RL.1.RoadMarking.57 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.57.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.57.PointList:
+	0 7.5
+	45 7.5
+Road.RL.1.RoadMarking.58.ID = 89 1
+Road.RL.1.RoadMarking.58 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.58.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.58.PointList:
+	0 8
+	45 8
+Road.RL.1.RoadMarking.59.ID = 91 1
+Road.RL.1.RoadMarking.59 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.59.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.59.PointList:
+	0 -0.5
+	45 -0.5
+Road.RL.1.RoadMarking.60.ID = 93 1
+Road.RL.1.RoadMarking.60 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.60.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.60.PointList:
+	0 -1
+	45 -1
+Road.RL.1.RoadMarking.61.ID = 95 1
+Road.RL.1.RoadMarking.61 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.61.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.61.PointList:
+	0 -1.5
+	45 -1.5
+Road.RL.1.RoadMarking.62.ID = 97 1
+Road.RL.1.RoadMarking.62 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.62.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.62.PointList:
+	0 -2
+	45 -2
+Road.RL.1.RoadMarking.63.ID = 99 1
+Road.RL.1.RoadMarking.63 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.63.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.63.PointList:
+	0 -2.5
+	45 -2.5
+Road.RL.1.RoadMarking.64.ID = 101 1
+Road.RL.1.RoadMarking.64 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.64.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.64.PointList:
+	0 -3
+	45 -3
+Road.RL.1.RoadMarking.65.ID = 103 1
+Road.RL.1.RoadMarking.65 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.65.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.65.PointList:
+	0 -3.5
+	45 -3.5
+Road.RL.1.RoadMarking.66.ID = 105 1
+Road.RL.1.RoadMarking.66 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.66.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.66.PointList:
+	0 -4
+	45 -4
+Road.RL.1.RoadMarking.67.ID = 3 1
+Road.RL.1.RoadMarking.67 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.67.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.67.PointList:
+	0 8.5
+	45 8.5
+Road.RL.1.RoadMarking.68.ID = 8 1
+Road.RL.1.RoadMarking.68 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.68.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.68.PointList:
+	0 9
+	45 9
+Road.RL.1.RoadMarking.69.ID = 19 1
+Road.RL.1.RoadMarking.69 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.69.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.69.PointList:
+	0 9.5
+	45 9.5
+Road.RL.1.RoadMarking.70.ID = 29 1
+Road.RL.1.RoadMarking.70 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.70.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.70.PointList:
+	0 10
+	45 10
+Road.RL.1.RoadMarking.71.ID = 32 1
+Road.RL.1.RoadMarking.71 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.71.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.71.PointList:
+	0 -4.5
+	45 -4.5
+Road.RL.1.RoadMarking.72.ID = 43 1
+Road.RL.1.RoadMarking.72 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.72.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.72.PointList:
+	0 -5
+	45 -5
+Road.RL.1.RoadMarking.73.ID = 53 1
+Road.RL.1.RoadMarking.73 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.73.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.73.PointList:
+	0 -5.5
+	45 -5.5
+Road.RL.1.RoadMarking.74.ID = 106 1
+Road.RL.1.RoadMarking.74 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.74.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.74.PointList:
+	0 -6
+	45 -6
+Road.RL.1.RoadMarking.75.ID = 123 1
+Road.RL.1.RoadMarking.75 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.75.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.75.PointList:
+	0 -6.5
+	45 -6.5
+Road.RL.1.RoadMarking.76.ID = 125 1
+Road.RL.1.RoadMarking.76 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.76.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.76.PointList:
+	0 -7
+	45 -7
+Road.RL.1.RoadMarking.77.ID = 127 1
+Road.RL.1.RoadMarking.77 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.77.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.77.PointList:
+	0 -7.5
+	45 -7.5
+Road.RL.1.RoadMarking.78.ID = 129 1
+Road.RL.1.RoadMarking.78 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.78.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.78.PointList:
+	0 -8
+	45 -8
+Road.RL.1.RoadMarking.79.ID = 131 1
+Road.RL.1.RoadMarking.79 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.79.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.79.PointList:
+	0 -8.5
+	45 -8.5
+Road.RL.1.RoadMarking.80.ID = 133 1
+Road.RL.1.RoadMarking.80 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.80.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.80.PointList:
+	0 -9
+	45 -9
+Road.RL.1.RoadMarking.81.ID = 135 1
+Road.RL.1.RoadMarking.81 = 0 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.81.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.81.PointList:
+	0 -9.5
+	45 -9.5
+Road.RL.1.RoadMarking.82.ID = 137 1
+Road.RL.1.RoadMarking.82 = 0 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.82.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.82.PointList:
+	0 -10
+	45 -10
+Road.RL.1.RoadMarking.83.ID = 226 1
+Road.RL.1.RoadMarking.83 = 14 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.83.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.83.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.84.ID = 225 1
+Road.RL.1.RoadMarking.84 = 14.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.84.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.84.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.85.ID = 224 1
+Road.RL.1.RoadMarking.85 = 14.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.85.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.85.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.86.ID = 223 1
+Road.RL.1.RoadMarking.86 = 14.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.86.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.86.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.87.ID = 222 1
+Road.RL.1.RoadMarking.87 = 15 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.87.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.87.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.88.ID = 221 1
+Road.RL.1.RoadMarking.88 = 15.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.88.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.88.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.89.ID = 220 1
+Road.RL.1.RoadMarking.89 = 15.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.89.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.89.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.90.ID = 219 1
+Road.RL.1.RoadMarking.90 = 15.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.90.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.90.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.91.ID = 218 1
+Road.RL.1.RoadMarking.91 = 16 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.91.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.91.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.92.ID = 217 1
+Road.RL.1.RoadMarking.92 = 16.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.92.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.92.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.93.ID = 216 1
+Road.RL.1.RoadMarking.93 = 16.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.93.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.93.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.94.ID = 215 1
+Road.RL.1.RoadMarking.94 = 16.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.94.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.94.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.95.ID = 214 1
+Road.RL.1.RoadMarking.95 = 17 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.95.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.95.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.96.ID = 213 1
+Road.RL.1.RoadMarking.96 = 17.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.96.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.96.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.97.ID = 212 1
+Road.RL.1.RoadMarking.97 = 17.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.97.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.97.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.98.ID = 211 1
+Road.RL.1.RoadMarking.98 = 17.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.98.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.98.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.99.ID = 210 1
+Road.RL.1.RoadMarking.99 = 18 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.99.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.99.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.100.ID = 209 1
+Road.RL.1.RoadMarking.100 = 18.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.100.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.100.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.101.ID = 208 1
+Road.RL.1.RoadMarking.101 = 18.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.101.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.101.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.102.ID = 207 1
+Road.RL.1.RoadMarking.102 = 18.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.102.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.102.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.103.ID = 206 1
+Road.RL.1.RoadMarking.103 = 19 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.103.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.103.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.104.ID = 205 1
+Road.RL.1.RoadMarking.104 = 19.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.104.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.104.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.105.ID = 204 1
+Road.RL.1.RoadMarking.105 = 19.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.105.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.105.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.106.ID = 203 1
+Road.RL.1.RoadMarking.106 = 19.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.106.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.106.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.107.ID = 202 1
+Road.RL.1.RoadMarking.107 = 20 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.107.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.107.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.108.ID = 201 1
+Road.RL.1.RoadMarking.108 = 20.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.108.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.108.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.109.ID = 200 1
+Road.RL.1.RoadMarking.109 = 20.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.109.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.109.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.110.ID = 199 1
+Road.RL.1.RoadMarking.110 = 20.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.110.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.110.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.111.ID = 198 1
+Road.RL.1.RoadMarking.111 = 21 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.111.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.111.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.112.ID = 197 1
+Road.RL.1.RoadMarking.112 = 21.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.112.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.112.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.113.ID = 196 1
+Road.RL.1.RoadMarking.113 = 21.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.113.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.113.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.114.ID = 195 1
+Road.RL.1.RoadMarking.114 = 21.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.114.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.114.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.115.ID = 194 1
+Road.RL.1.RoadMarking.115 = 22 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.115.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.115.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.116.ID = 193 1
+Road.RL.1.RoadMarking.116 = 22.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.116.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.116.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.117.ID = 192 1
+Road.RL.1.RoadMarking.117 = 22.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.117.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.117.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.118.ID = 191 1
+Road.RL.1.RoadMarking.118 = 22.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.118.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.118.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.119.ID = 190 1
+Road.RL.1.RoadMarking.119 = 23 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.119.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.119.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.120.ID = 189 1
+Road.RL.1.RoadMarking.120 = 23.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.120.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.120.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.121.ID = 188 1
+Road.RL.1.RoadMarking.121 = 23.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.121.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.121.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.122.ID = 187 1
+Road.RL.1.RoadMarking.122 = 23.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.122.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.122.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.123.ID = 186 1
+Road.RL.1.RoadMarking.123 = 24 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.123.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.123.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.124.ID = 185 1
+Road.RL.1.RoadMarking.124 = 24.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.124.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.124.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.125.ID = 184 1
+Road.RL.1.RoadMarking.125 = 24.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.125.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.125.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.126.ID = 183 1
+Road.RL.1.RoadMarking.126 = 24.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.126.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.126.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.127.ID = 182 1
+Road.RL.1.RoadMarking.127 = 25 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.127.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.127.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.128.ID = 181 1
+Road.RL.1.RoadMarking.128 = 25.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.128.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.128.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.129.ID = 180 1
+Road.RL.1.RoadMarking.129 = 25.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.129.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.129.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.130.ID = 179 1
+Road.RL.1.RoadMarking.130 = 25.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.130.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.130.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.131.ID = 178 1
+Road.RL.1.RoadMarking.131 = 26 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.131.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.131.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.132.ID = 177 1
+Road.RL.1.RoadMarking.132 = 26.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.132.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.132.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.133.ID = 176 1
+Road.RL.1.RoadMarking.133 = 26.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.133.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.133.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.134.ID = 175 1
+Road.RL.1.RoadMarking.134 = 26.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.134.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.134.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.135.ID = 174 1
+Road.RL.1.RoadMarking.135 = 27 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.135.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.135.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.136.ID = 173 1
+Road.RL.1.RoadMarking.136 = 27.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.136.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.136.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.137.ID = 172 1
+Road.RL.1.RoadMarking.137 = 27.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.137.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.137.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.138.ID = 171 1
+Road.RL.1.RoadMarking.138 = 27.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.138.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.138.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.139.ID = 138 1
+Road.RL.1.RoadMarking.139 = 28 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.139.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.139.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.140.ID = 139 1
+Road.RL.1.RoadMarking.140 = 28.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.140.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.140.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.141.ID = 140 1
+Road.RL.1.RoadMarking.141 = 28.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.141.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.141.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.142.ID = 141 1
+Road.RL.1.RoadMarking.142 = 28.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.142.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.142.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.143.ID = 142 1
+Road.RL.1.RoadMarking.143 = 29 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.143.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.143.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.144.ID = 143 1
+Road.RL.1.RoadMarking.144 = 29.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.144.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.144.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.145.ID = 144 1
+Road.RL.1.RoadMarking.145 = 29.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.145.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.145.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.146.ID = 145 1
+Road.RL.1.RoadMarking.146 = 29.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.146.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.146.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.147.ID = 146 1
+Road.RL.1.RoadMarking.147 = 30 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.147.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.147.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.148.ID = 147 1
+Road.RL.1.RoadMarking.148 = 30.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.148.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.148.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.149.ID = 148 1
+Road.RL.1.RoadMarking.149 = 30.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.149.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.149.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.150.ID = 149 1
+Road.RL.1.RoadMarking.150 = 30.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.150.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.150.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.151.ID = 150 1
+Road.RL.1.RoadMarking.151 = 31 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.151.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.151.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.152.ID = 151 1
+Road.RL.1.RoadMarking.152 = 31.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.152.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.152.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.153.ID = 152 1
+Road.RL.1.RoadMarking.153 = 31.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.153.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.153.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.154.ID = 153 1
+Road.RL.1.RoadMarking.154 = 31.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.154.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.154.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.155.ID = 154 1
+Road.RL.1.RoadMarking.155 = 32 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.155.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.155.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.156.ID = 155 1
+Road.RL.1.RoadMarking.156 = 32.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.156.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.156.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.157.ID = 156 1
+Road.RL.1.RoadMarking.157 = 32.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.157.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.157.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.158.ID = 157 1
+Road.RL.1.RoadMarking.158 = 32.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.158.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.158.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.159.ID = 158 1
+Road.RL.1.RoadMarking.159 = 33 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.159.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.159.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.160.ID = 159 1
+Road.RL.1.RoadMarking.160 = 33.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.160.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.160.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.161.ID = 160 1
+Road.RL.1.RoadMarking.161 = 33.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.161.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.161.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.162.ID = 161 1
+Road.RL.1.RoadMarking.162 = 33.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.162.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.162.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.163.ID = 162 1
+Road.RL.1.RoadMarking.163 = 34 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.163.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.163.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.164.ID = 163 1
+Road.RL.1.RoadMarking.164 = 34.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.164.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.164.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.165.ID = 164 1
+Road.RL.1.RoadMarking.165 = 34.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.165.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.165.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.166.ID = 165 1
+Road.RL.1.RoadMarking.166 = 34.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.166.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.166.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.167.ID = 166 1
+Road.RL.1.RoadMarking.167 = 35 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.167.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.167.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.168.ID = 167 1
+Road.RL.1.RoadMarking.168 = 35.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.168.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.168.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.169.ID = 168 1
+Road.RL.1.RoadMarking.169 = 35.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.169.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.169.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.170.ID = 169 1
+Road.RL.1.RoadMarking.170 = 35.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.170.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.170.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.171.ID = 170 1
+Road.RL.1.RoadMarking.171 = 36 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.171.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.171.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.172.ID = 235 1
+Road.RL.1.RoadMarking.172 = 36.25 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.172.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.172.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.173.ID = 236 1
+Road.RL.1.RoadMarking.173 = 36.5 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.173.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.173.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.174.ID = 237 1
+Road.RL.1.RoadMarking.174 = 36.75 0 0 1 0 100 0.02 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.174.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.174.PointList:
+	0 -20
+	0 20
+Road.RL.1.RoadMarking.175.ID = 238 1
+Road.RL.1.RoadMarking.175 = 37 0 0 1 0 100 0.05 0 1 1 0 2 4 1 1 0 ""
+Road.RL.1.RoadMarking.175.Material.0 = 1.0,1.0,1.0 0 0 0 0 0 0 0 0 0 0 0
+Road.RL.1.RoadMarking.175.PointList:
+	0 -20
+	0 20
+Road.MaxUsedObjId = 238
+Road.VhclStartPos = 22 12.5 0
+Road.VhclRoute = Route_0
+Road.RouteId = 0
+Env.StartTime.Year = 2019
+Env.StartTime.Month = 7
+Env.StartTime.Day = 1
+Env.StartTime.Hour = 12
+Env.StartTime.Min = 0
+Env.StartTime.Sec = 0
+Env.StartTime.DeltaUTC = 0.0
+Env.GNav.Active = 0
+Env.Temperature = 20.0
+Env.AirDensity = 1.205
+Env.AirPressure = 1.013
+Env.AirHumidity = 60
+Env.SolarRadiation = 400.0
+Env.RainRate = 0.0
+Env.VisRangeInFog = 10000.0
+Env.Wind.Kind = none
+Env.Wind.Velocity = 0.0
+Env.Wind.Angle = 0.0
+Env.Sun.Position = geographicDefinition
+Env.Sun.Azimuth = 180.0
+Env.Sun.Elevation = 45.0
+Env.Kind = Generic
+Env.Temp.Offset_Elev = -0.0065
+Env.Temp.Offset_sRoad.Amplify = 1.0
+Env.Temp.Offset_sRoad.On = 0
+Env.Temp.Offset_Time.Amplify = 1.0
+Env.Temp.Offset_Time.On = 1
+Env.Temp.Offset_Time:
+	0.0 -2.0
+	3.0 -2.5
+	6.0 -2.7
+	7.5 -2.7
+	9.0 -2.5
+	10.0 -2.3
+	11.0 -1.6
+	12.0 0.0
+	13.0 1.4
+	14.0 2.1
+	15.5 2.5
+	17.0 2.2
+	18.0 1.7
+	19.0 1.1
+	20.0 0.2
+	21.0 -0.6
+	22.0 -1.1
+	23.0 -1.6
+	24.0 -2.0
+Driver.ParamIdent = IPGDriver 5
+Driver.Mode = std
+Driver.Long.DrivMaxSpeed = 0
+Driver.Long.CruisingSpeed = 150
+Driver.CornerCutCoef = 0.5
+Driver.ConsiderTraffic = 1
+Driver.Traffic.TimeGapMin = 1.8
+Driver.Traffic.TimeGapMax = 5.0
+Driver.Traffic.DistMin = 6
+Driver.Traffic.DistMax = 250
+Driver.Traffic.EcoCoef = 0.75
+Driver.Traffic.Overtake = 0
+Driver.Traffic.Overtake_Rate = 1
+Driver.Traffic.Overtake_dSpeedMin = 10
+Driver.Long.dtAccBrake = 0.5
+Driver.Long.axMax = 3.0
+Driver.Long.axMin = -4.0
+Driver.Long.ayMax = 4.0
+Driver.Long.GGExp:
+	50 1.0 1.0
+Driver.Long.DevMax = 0.0
+Driver.Long.tReact = 0.0
+Driver.Long.TractionControl = 1
+Driver.DecShift.UseBrakePark = 0
+Driver.DecShift.tSwitchGear = 1.0
+Driver.DecShift.nEngine.Limits:
+	1500 4000
+Driver.DecShift.nEngine.Shift:
+	2000 3000
+Driver.Lat.DevMax = 0.0
+Driver.Lat.tReact = 0.0
+Driver.Knowl.Long.tActionMin = 4
+Driver.Knowl.Lat.StWhlAngleMax = 630
+Driver.Knowl.Lat.StWhlAngleVelMax = 500
+Driver.Knowl.Lat.StWhlAngleAccMax = 3000
+Driver.Learn.VehicleLimits.TestRun =
+Driver.Learn.VehicleLimits.Date = 0
+Driver.Learn.ControllerDyn.TestRun =
+Driver.Learn.ControllerDyn.Date = 0
+Driver.Learn.MaxSpeed.TestRun =
+Driver.Learn.MaxSpeed.Date = 0
+Driver.Learn.Remember = 0
+Driver.Learn.Friction = 1.0
+Driver.Knowl.Long.tPreviewBra = 0.6
+Driver.Knowl.Long.tPreviewAcc = 1.5
+Driver.Knowl.Lat.tPreview = 0.8
+Driver.Learn.NEng_S = 1

@@ -1,0 +1,29 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-TASS_MF 1
+FileCreator = CarMaker/HIL 10.2.2
+
+Description:
+
+
+## General ###############################################################
+
+
+## Visualization #########################################################
+FLoadMax = 10000.0
+
+
+## Parameter File ########################################################
+AdamsPropertyFile = MF62_Tire/Continental_ContiPremiumContact5_215_55R17_94W_MF-Tyre_62.tir
+
+
+## TASS_MF ###############################################################
+TyreSide = auto
+ContactMethod = smooth_road
+Dynamics = non_linear
+SlipForces = combined
+TemperatureAndVelocityMode = disabled
+SolverMode = Default_MF-Tyre_MF-Swift
+OSRate = 5
+
+
+## Additional ############################################################

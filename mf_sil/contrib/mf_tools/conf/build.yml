@@ -1,0 +1,123 @@
+name: mf_tools
+type: component
+license: ADAS GmbH; all rights reserved
+major_version: 4
+description: Automated Parking trajectory visualization tool
+
+variants:
+    generic:
+        build_platforms:
+            - vs2017
+            - vs2017_debug
+        groups:
+            - TARGET_COMPONENT
+        uses:
+            eco: &eco_package
+                variant: generic
+                release: "10.4.1-rc6"
+            mf_common: &mf_common_generic
+                variant: generic
+                release: &mf_common_version "6.4.0-cyc25b"
+            mf_common_types: &mf_common_types_generic
+                variant: generic
+                release: &mf_common_types_version "6.0.1-cyc25"
+            mf_parksm_core: &mf_parksm_core_generic
+                variant: generic
+                release: &mf_parksm_core_version "8.1.0-cyc25si"
+            mf_parksm_core_types: &mf_parksm_core_types_generic
+                variant: generic
+                release: &mf_parksm_core_types_version "7.0.1-cyc25"
+            mf_taposd: &mf_taposd_generic
+                variant: generic
+                release: &mf_taposd_version "11.1.0"
+            mf_trjpla: &mf_trjpla_generic
+                variant: generic
+                release: &mf_trjpla_version "7.0.2"
+            mf_trjpla_types: &mf_trjpla_types_generic
+                variant: generic
+                release: &mf_trjpla_types_version "12.0.0-cyc25"
+            mf_trjctl: &mf_trjctl_generic
+                variant: generic
+                release: &mf_trjctl_version "8.3.1-sil"
+            mf_trjctl_types: &mf_trjctl_types_generic
+                variant: generic
+                release: &mf_trjctl_types_version "8.0.2-cyc25"
+            mf_vedodo: &mf_vedodo_generic
+                variant: generic
+                release: &mf_vedodo_version "6.0.11"
+            mf_vedodo_types: &mf_vedodo_types_generic
+                variant: generic
+                release: &mf_vedodo_types_version "6.0.0-cyc25"
+            mf_manager_types: &mf_manager_types_generic
+                variant: generic
+                release: &mf_manager_types_version "7.0.1-cyc25"
+            geoml: &geoml_package
+                variant: generic
+                release: "4.1.1-cyc25b" 
+            si_types: &si_types_generic
+                variant: generic
+                release: &si_types_version "12.1.0-cyc25si1"
+            vehicle_types: &vehicle_types_package
+                variant: generic
+                release: "7.0.1-cyc25"
+            plp_log: &plp_log_generic
+                variant: generic
+                release: &plp_log_release_generic "1.0.4-cycqnx2"
+            appl_srv_layer_types: &appl_srv_layer_types_package
+                variant: generic
+                release: "5.0.1-cyc25"
+            jsoncpp: &jsoncpp_package
+                variant: generic
+                release: "1.9.7"
+
+    cus_only:
+        build_platforms:
+            - vs2017
+            - vs2017_debug
+        groups:
+            - TARGET_COMPONENT
+        uses:
+            mf_common: &mf_common_cus_only
+                variant: cus_only
+                release: *mf_common_version
+            mf_common_types: &mf_common_types_cus_only
+                variant: cus_only
+                release: *mf_common_types_version
+            mf_parksm_core: &mf_parksm_core_cus_only
+                variant: cus_only
+                release: *mf_parksm_core_version
+            mf_parksm_core_types: &mf_parkscm_core_types_cus_only
+                variant: cus_only
+                release: *mf_parksm_core_types_version
+            mf_taposd: &mf_taposd_cus_only
+                variant: cus_only
+                release: *mf_taposd_version
+            mf_trjpla: &mf_trjpla_cus_only
+                variant: cus_only
+                release: *mf_trjpla_version
+            mf_trjpla_types: &mf_trjpla_types_cus_only
+                variant: cus_only
+                release: *mf_trjpla_types_version
+            mf_trjctl: &mf_trjctl_cus_only
+                variant: cus_only
+                release: *mf_trjctl_version
+            mf_trjctl_types: &mf_trjctl_types_cus_only
+                variant: cus_only
+                release: *mf_trjctl_types_version
+            mf_vedodo: &mf_vedodo_cus_only
+                variant: cus_only
+                release: *mf_vedodo_version
+            mf_vedodo_types: &mf_vedodo_types_cus_only
+                variant: cus_only
+                release: *mf_vedodo_types_version
+            mf_manager_types: &mf_manager_types_cus_only
+                variant: generic
+                release: *mf_manager_types_version
+            si_types: &si_types_cus_only
+                variant: cus_only
+                release: *si_types_version
+            geoml: *geoml_package
+            jsoncpp: *jsoncpp_package
+            plp_log: *plp_log_generic
+            appl_srv_layer_types: *appl_srv_layer_types_package
+            vehicle_types: *vehicle_types_package

@@ -1,0 +1,5 @@
+@Library('cip_jenkins_lib') _
+yaml = """
+bbs_version: 4.8.0
+"""
+startBricksJob.call(yaml)

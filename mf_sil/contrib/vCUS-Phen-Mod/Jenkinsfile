@@ -1,0 +1,6 @@
+// this is the minimal setup required for jenkins build
+//add library
+@Library('bricks_pipeline_lib') _ 
+
+//To get a default CI build for a Bricks package, we use
+bricks()

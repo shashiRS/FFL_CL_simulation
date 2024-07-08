@@ -1,0 +1,81 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = vCUS-ParamSet
+FileCreator = Continental
+Description:
+	Continental Ultrasonic Sensor Parameter Set File incl. parameters for
+	- Debuging
+	- Parametrization
+	- Log-Outputs
+	- Fire Scheme Map depending on number of sensor and number of sample points
+	- DebugOpt
+
+## Internal Developement Switches (DO NOT EDIT) ##
+DebugOpt = 0
+DebugOpt_Amp = 0
+DebugOpt_USP = 0
+DebugPDCM_Frame = 1
+
+## Software Switches (SWSwitch_)
+SWSwitch_SFSPon = 1
+SWSwitch_CrossEchoes = 1
+SWSwitch_DirectEchoes = 1
+SWSwitch_CountryCode = 0
+SWSwitch_CustomInRange = 1
+SWSwitch_RxCorection_ToF = 1
+
+## Detection parameters
+##if TO < min_height_TO, TO ignored in occlusion 
+min_height_TO = 0.02
+
+## Sensor Characterisitc
+SensorCharacteristicFileName = "vCUS_SensorCharacteristic_default"
+
+## SENSOR BURST CONFIG ##
+# x-values
+nFire_Samples = 8
+# y-values
+nSensor_No = 12
+
+#Map Information
+MapNo = 0
+FireSchemeMap0:
+	13	25	35	17	28	40	46	31
+	50	21	47	41	30	50	24	12
+	37	19	31	23	16	40	33	12
+	31	46	23	16	49	40	49	24
+	30	46	22	34	23	11	26	43
+	22	34	13	38	15	49	17	40
+	16	41	45	29	24	15	19	31
+	32	21	14	29	46	40	29	49
+	40	15	33	40	45	17	49	31
+	15	27	33	11	44	48	10	33
+	29	15	36	18	40	46	28	37
+	19	28	50	43	37	23	13	26
+
+FireSchemeMap1:
+	44	16	10	17	49	37	14	25
+	34	29	33	40	46	35	42	49
+	36	17	22	26	36	23	15	19
+	50	27	11	40	36	14	34	44
+	35	22	48	16	25	49	11	48
+	26	41	16	46	30	36	14	36
+	41	15	33	11	33	41	17	35
+	15	24	15	48	24	38	12	35
+	14	49	12	33	22	31	19	41
+	35	15	25	33	23	46	36	25
+	31	16	42	33	22	32	23	18
+	18	33	26	11	45	38	23	50
+
+FireSchemeMap2:
+	41	15	33	11	33	41	17	35
+	15	24	15	48	24	38	12	35
+	14	49	12	33	22	31	19	41
+	35	15	25	33	23	46	36	25
+	31	16	42	33	22	32	23	18
+	18	33	26	11	45	38	23	50
+	27	17	41	37	16	33	23	18
+	14	31	49	16	49	17	36	26
+	22	35	16	20	39	26	49	37
+	21	16	42	31	36	10	22	34
+	42	36	41	29	40	21	45	28
+	41	22	31	40	29	19	37	47

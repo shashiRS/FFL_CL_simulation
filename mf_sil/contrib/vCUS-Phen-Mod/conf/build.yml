@@ -1,0 +1,29 @@
+name: vcus_phen_mod
+type: component
+license: ADAS GmbH; all rights reserved
+major_version: 1
+description: Phenomenological ultrasonic sensor model library
+
+variants:
+    generic:
+        build_platforms:
+            - vs2017
+            - vs2017_debug
+        groups:
+            - TARGET_COMPONENT
+        uses:
+            appl_srv_layer_types: &appl_srv_layer_types_package
+                variant: generic
+                release: "3.0.6-simenRC2"
+            us_drv_types:
+                variant: generic
+                release: "3.0.0-simenRC2"
+        build_uses:
+            carmaker_build_dep:
+                variant: external
+                release: "8.1.1"
+                user: 3rdparty
+                channel: release
+                platforms:
+                    - vs2017
+                    - vs2017_debug

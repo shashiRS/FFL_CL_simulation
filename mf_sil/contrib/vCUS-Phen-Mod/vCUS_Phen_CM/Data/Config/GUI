@@ -1,0 +1,10 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = GUI-Config 8.0
+CM.Exe = src_PhenDevel/CarMaker.win64.exe
+CM.Args =
+CM.Exe.History:
+	src_PhenDevel/CarMaker.win64.exe
+	CarMaker.win64.exe
+CM.Args.History:
+	""
+GPUParameters.FName =

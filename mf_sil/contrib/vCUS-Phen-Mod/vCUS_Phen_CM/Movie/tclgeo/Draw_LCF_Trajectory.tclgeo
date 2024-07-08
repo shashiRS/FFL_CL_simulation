@@ -1,0 +1,117 @@
+
+### @Thomas Golas thomas.golas@continental-corporation.com
+### BEGIN IPG-MOVIE-INFO
+#Subscribe Vhcl.YawRate Vhcl.PoI.vx_1 Vhcl.FL.tx
+#Subscribe LD.DistanceLeft LD.LookAheadDistanceLeft  LD.YawLeft LD.CurvatureRateLeft LD.CurvatureLeft
+#Subscribe LD.DistanceRight LD.LookAheadDistanceRight  LD.YawRight LD.CurvatureRateRight LD.CurvatureRight
+#Subscribe Car.CFL.P.t_0.x Car.CFL.P.t_0.y Car.CFL.P.t_0.z Car.CFR.P.t_0.x Car.CFR.P.t_0.y Car.CFR.P.t_0.z
+### END IPG-MOVIE-INFO
+
+proc DrawPathLCF {prevdist y h c cp} {
+	global Qu
+	
+	# Use and limit vehicle yaw rate and longitudinal velocity to calculate the vehicle curvature.
+	if {abs($Qu(Vhcl.PoI.vx_1)) < 0.1} {set Qu(Vhcl.PoI.vx_1) 0.1}
+	if {abs($Qu(Vhcl.YawRate)) < 0.001} {set Qu(Vhcl.YawRate) 0}
+
+	# This is the formula which calculates the y-position of the trajectory in vehicle frame Fr1 based on LaneDetection algorithms clothoid asumption.
+    set x_Fr1 $prevdist
+	set y_Fr1 [expr {$y + $prevdist * $h + 0.5 * $prevdist * $prevdist * $c + 1/6 * $prevdist * $prevdist * $prevdist * $cp}]
+	
+	# Gives the z-offset of the trajectory in vehicle frame Fr1.
+	set z_Fr1 [expr {0.1}]
+	
+	# Calculating the preview point in Fr0 (global frame) using coordinates transformation Fr1->Fr0. Rotation sequence is ZY'X''.
+	set x_Fr0 [expr {($Qu(Car.CFL.P.t_0.x)-$Qu(Car.CFR.P.t_0.x))/2+$Qu(Car.CFR.P.t_0.x) + cos($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) * $x_Fr1\
+				+ (sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) - cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Yaw))) * $y_Fr1\
+				+ (cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) + sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Yaw))) * $z_Fr1}]
+	set y_Fr0 [expr {($Qu(Car.CFL.P.t_0.y)-$Qu(Car.CFR.P.t_0.y))/2+$Qu(Car.CFR.P.t_0.y) + cos($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) * $x_Fr1\
+				+ (sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) + cos($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Yaw))) * $y_Fr1\
+				+ (cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) - sin($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Yaw))) * $z_Fr1}]
+	set z_Fr0 [expr {$Qu(Vhcl.Fr1.z) - sin($Qu(Vhcl.Pitch)) * $x_Fr1\
+				  + sin($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Pitch)) * $y_Fr1\
+				  + cos($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Pitch)) * $z_Fr1}]
+
+	return [list $x_Fr0 $y_Fr0 $z_Fr0]
+}
+
+proc DrawPath {y0 prevdist} {
+	global Qu
+	
+    if {abs($Qu(Vhcl.PoI.vx_1)) < 0.1} {set Qu(Vhcl.PoI.vx_1) 0.1}
+	if {abs($Qu(Vhcl.YawRate)) < 0.001} {set Qu(Vhcl.YawRate) 0}
+    
+	# This calculates the x-position of the trajectory in vehicle frame Fr1. Usually the preview point on the x-axis.
+	set x_Fr1 [expr {$prevdist * $Qu(Vhcl.PoI.vx_1)/abs($Qu(Vhcl.PoI.vx_1))}]
+	
+	# This is the formula which calculates the y-position of the trajectory in vehicle frame Fr1.
+	set y_Fr1 [expr {$y0 + $prevdist * 0 + 0.5 * $prevdist * $prevdist * $Qu(Vhcl.YawRate) / $Qu(Vhcl.PoI.vx_1)}]
+	
+	# Gives the z-offset of the trajectory in vehicle frame Fr1.
+	set z_Fr1 [expr {0.1}]
+	
+	# Calculating the preview point in Fr0 (global frame) using coordinates transformation Fr1->Fr0. Rotation sequence is ZY'X''.
+	set x_Fr0 [expr {($Qu(Car.CFL.P.t_0.x)-$Qu(Car.CFR.P.t_0.x))/2+$Qu(Car.CFR.P.t_0.x) + cos($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) * $x_Fr1\
+				+ (sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) - cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Yaw))) * $y_Fr1\
+				+ (cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * cos($Qu(Vhcl.Yaw)) + sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Yaw))) * $z_Fr1}]
+	set y_Fr0 [expr {($Qu(Car.CFL.P.t_0.y)-$Qu(Car.CFR.P.t_0.y))/2+$Qu(Car.CFR.P.t_0.y) + cos($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) * $x_Fr1\
+				+ (sin($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) + cos($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Yaw))) * $y_Fr1\
+				+ (cos($Qu(Vhcl.Roll)) * sin($Qu(Vhcl.Pitch)) * sin($Qu(Vhcl.Yaw)) - sin($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Yaw))) * $z_Fr1}]
+	set z_Fr0 [expr {$Qu(Vhcl.Fr1.z) - sin($Qu(Vhcl.Pitch)) * $x_Fr1\
+				  + sin($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Pitch)) * $y_Fr1\
+				  + cos($Qu(Vhcl.Roll)) * cos($Qu(Vhcl.Pitch)) * $z_Fr1}]
+
+	return [list $x_Fr0 $y_Fr0 $z_Fr0]
+}
+
+proc DrawBackground {} {
+    global Qu
+        
+    set ContiOrange 	{1 0.647 0 2}
+
+    glDisableLighting
+    gl color {*}$ContiOrange; #choose the color of trajectory
+    gl linewidth 1; #change the width of trajectory
+    gl begin line_strip
+    
+	foreach element [list 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0 8.5 9.0 9.5 10.0 10.5 11.0 11.5 12.0 12.5 13.0 13.5 14.0 14.5 15.0 15.5 16.0 16.5 17.0 17.5 18.0 18.5 19.0 19.5 20.0] {
+		gl vertex [lindex [DrawPath 0 $element] 0] [lindex [DrawPath 0 $element] 1] [lindex [DrawPath 0 $element] 2]
+	}
+   
+    set y_l $Qu(LD.DistanceLeft)
+    set h_l $Qu(LD.YawLeft)
+    set c_l $Qu(LD.CurvatureLeft)
+    set cp_l $Qu(LD.CurvatureRateLeft)
+    set y_r $Qu(LD.DistanceRight)
+    set h_r $Qu(LD.YawRight)
+    set c_r $Qu(LD.CurvatureRight)
+    set cp_r $Qu(LD.CurvatureRateRight)
+    
+    gl end
+    glEnableLighting	
+    
+    glDisableLighting
+    gl color {*}$ContiOrange; #choose the color of trajectory
+    gl linewidth 6; #change the width of trajectory
+    gl begin line_strip
+
+    foreach element [list 0 2.0 4.0 6.0 8.0 10.0 12.0 14.0 16.0 18.0 20.0 21 22 23 24 25 26 27 28 30 32 34 36 38 40 45 50 55 60] {
+		gl vertex [lindex [DrawPathLCF $element $y_l $h_l $c_l $cp_l] 0] [lindex [DrawPathLCF $element $y_l $h_l $c_l $cp_l] 1] [lindex [DrawPathLCF $element $y_l $h_l $c_l $cp_l] 2]
+	}
+
+    gl end
+
+    gl color {*}$ContiOrange; #choose the color of trajectory
+    gl linewidth 6; #change the width of trajectory
+    gl begin line_strip
+
+    foreach element [list 0 2.0 4.0 6.0 8.0 10.0 12.0 14.0 16.0 18.0 20.0 21 22 23 24 25 26 27 28 30 32 34 36 38 40 45 50 55 60] {
+		gl vertex [lindex [DrawPathLCF $element $y_r $h_r $c_r $cp_r] 0] [lindex [DrawPathLCF $element $y_r $h_r $c_r $cp_r] 1] [lindex [DrawPathLCF $element $y_r $h_r $c_r $cp_r] 2]
+	}
+
+    gl end
+    glEnableLighting
+    
+}
+
+return -1

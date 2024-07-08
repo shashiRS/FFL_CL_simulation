@@ -1,0 +1,62 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+FileCreator = CarMaker/HIL 11.1.2
+
+Description:
+	Created with IPG Tire Data Set Generator - Version Date: 2021-04-06
+	Generated - not validated - Tire data
+	Based on 'RT_215_55R17_p2.10.tdx'
+	""
+	#   Load:      32 points [ 0 N  to  9625 N ]
+	#   Slip:     128 points [ -0.15   to  0.15 ]
+	#   Alpha:    128 points [ -12 deg  to  12 deg ]
+
+
+## General ###############################################################
+Side = left
+StandStill.cLong = 0.01
+StandStill.cSide = 0.2
+StandStill.vMax = 2.0
+
+
+## Visualization #########################################################
+FLoadMax = 7700
+NomWidth = 0.215
+AspectRatio = 0.55
+
+
+## RT-Tire ###############################################################
+muRoad = 1
+KinRollRadius = 0.32461
+NomRadius = 0.334
+Radial.Stiffness = 357959
+Radial.Damping = 4646
+
+RollResist.Kind = TrqLoadVel
+RollResist.TrqLoadVel.Press = 220.0
+RollResist.TrqLoadVel.alpha = -0.5
+RollResist.TrqLoadVel.beta = 1.04
+RollResist.TrqLoadVel.a = 1.0e-1
+RollResist.TrqLoadVel.b = 2.0e-4
+RollResist.TrqLoadVel.c = 4.0e-7
+
+LongFrc.Length = 0.05
+SideFrc.Length = 0.1
+AlignTrq.Length = 0.1
+LongFrc.Stiffness = 1.0
+SideFrc.Stiffness = 1.0
+AlignTrq.Stiffness = 1.0
+
+InclinAngle2OffsetFy = 0.0
+InclinAngle2OffsetMz = 0.0
+InclinAngle2Alpha = 0.0
+
+TurnSlip.MzMax = 0.0
+TurnSlip.cMz = 0.0
+TurnSlip.Alpha2Mz = 0.0
+
+BinFName = RT_215_55R17_p2.10.bin
+
+
+## Additional ############################################################
+CreateArgs = -if Data/Tire/Examples/RT_215_55R17_p2.10.tdx -of Data/Tire/Examples/RT_215_55R17_p2.10

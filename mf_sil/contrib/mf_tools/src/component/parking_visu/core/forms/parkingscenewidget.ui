@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ParkingSceneWidget</class>
+ <widget class="QWidget" name="ParkingSceneWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <action name="actionMeasure_Distance">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../app/resources.qrc">
+     <normaloff>:/icons/IconMeasure.png</normaloff>:/icons/IconMeasure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Measure Distance</string>
+   </property>
+   <property name="toolTip">
+    <string>Measure Distance (M)</string>
+   </property>
+   <property name="shortcut">
+    <string>M</string>
+   </property>
+  </action>
+  <action name="actionSave_Screenshot">
+   <property name="icon">
+    <iconset resource="../../app/resources.qrc">
+     <normaloff>:/icons/IconScreenshot.png</normaloff>:/icons/IconScreenshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Grab Screenshot</string>
+   </property>
+   <property name="toolTip">
+    <string>Grab Screenshot (G)</string>
+   </property>
+   <property name="shortcut">
+    <string>G</string>
+   </property>
+  </action>
+  <action name="actionSave_Environment_Model">
+   <property name="icon">
+    <iconset resource="../../app/resources.qrc">
+     <normaloff>:/icons/IconSave.png</normaloff>:/icons/IconSave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save EM</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../app/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

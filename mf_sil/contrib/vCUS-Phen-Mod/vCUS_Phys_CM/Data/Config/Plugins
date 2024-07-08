@@ -1,0 +1,21 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Plugins 1
+FileCreator = CarMaker 11.1.2
+Environment.Generic =
+Environment.Generic.Info =
+Environment.Generic.Tags =
+VhclOperator.IPGOperator =
+VhclOperator.IPGOperator.Info =
+VhclOperator.IPGOperator.Tags =
+VehicleControl.VhclTurnCntr = 1
+VehicleControl.VhclTurnCntr.Info = VhclTurnCntr
+VehicleControl.VhclTurnCntr.Tags =
+VehicleControl.mdl_APCtrl = 1
+VehicleControl.mdl_APCtrl.Info = mdl_APCtrl
+VehicleControl.mdl_APCtrl.Tags =
+VehicleControl.mdl_apctrl = 1
+VehicleControl.mdl_apctrl.Info = mdl_apctrl
+VehicleControl.mdl_apctrl.Tags =
+HydBrakeSystem.HydESP = 3
+HydBrakeSystem.HydESP.Info =
+HydBrakeSystem.HydESP.Tags =

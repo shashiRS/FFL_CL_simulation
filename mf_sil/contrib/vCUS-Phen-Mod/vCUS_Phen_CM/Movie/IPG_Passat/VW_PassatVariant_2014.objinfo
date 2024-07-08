@@ -1,0 +1,36 @@
+#INFOFILE1.1 - Do not remove this line!
+FileClass.New = 9.0
+Geometry.Bbox = 0.00 4.77 -1.04 1.04 -0.02 1.48
+Object.Class = Car
+
+# Traffic object parameters
+
+Traffic.ObjectKind		= Movable
+Traffic.ObjectClass		= Car
+
+Traffic.Basics.Dimension	= 4.767  1.832  1.285
+Traffic.Basics.Offset		= 0.185 0.0
+Traffic.Basics.Fr12CoM		= 2.833
+Traffic.DetectMask		= 1 1
+Traffic.RCSClass		= RCS_Car
+
+Traffic.Motion.Kind		= 4Wheel
+Traffic.Motion.mass		= 1429
+Traffic.Motion.Overhang		= 0.857  1.13
+Traffic.Motion.Cf		= 1.6e5
+Traffic.Motion.Cr		= 1.1e5
+Traffic.Motion.I		= 599	2191	24160
+Traffic.Motion.C_roll		= 1.3e5
+Traffic.Motion.D_roll		= 1.3e4
+Traffic.Motion.C_pitch		= 3.1e5
+Traffic.Motion.D_pitch		= 3.1e4
+
+Traffic.LVD.vMax		= 218
+Traffic.LVD.Pmax		= 110
+Traffic.LVD.AxMax		= 5.1
+Traffic.LVD.tBuildUp		= 0.20
+
+
+# Parameters for Assistant of stochastically distributed traffic
+
+Traffic.SD.pWeight		= 0.70

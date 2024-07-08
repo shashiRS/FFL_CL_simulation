@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/IconPlan.png</file>
+        <file>icons/IconStep.png</file>
+        <file>icons/IconMeasure.png</file>
+        <file>icons/IconScreenshot.png</file>
+        <file>icons/IconUndo.png</file>
+        <file>icons/IconRedo.png</file>
+        <file>icons/IconReplan.png</file>
+        <file>icons/IconDebug.png</file>
+        <file>icons/IconHourglass.png</file>
+        <file>icons/IconHourglass.gif</file>
+        <file>icons/IconLoad.png</file>
+        <file>icons/IconSave.png</file>
+        <file>icons/IconReload.png</file>
+        <file>icons/IconSettings.png</file>
+        <file>icons/IconGeometric.png</file>
+        <file>icons/IconScanning.png</file>
+        <file>icons/IconAdd.png</file>
+        <file>icons/IconRemove.png</file>
+        <file>icons/IconTaposd.png</file>
+        <file>icons/IconDefine.png</file>
+        <file>icons/IconDraw2D.png</file>
+        <file>icons/IconDraw3D.png</file>
+        <file>icons/IconPlanGeomWithRe.png</file>
+        <file>icons/IconConRe.png</file>
+        <file>icons/IconGaragePark.png</file>
+        <file>icons/IconJump.png</file>
+    </qresource>
+</RCC>
