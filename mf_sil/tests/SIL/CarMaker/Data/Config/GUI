@@ -1,0 +1,15 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = GUI-Config 8.0
+CM.Exe = D:/FFL_Closed_loop/mf_sil/conan_workarea/package.mf_sil.entry.6.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe
+CM.Args =
+CM.Exe.History:
+	D:/FFL_Closed_loop/mf_sil/conan_workarea/package.mf_sil.entry.6.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe
+	C:/LegacyApp/IPG/carmaker/win64-8.1.1/bin/CarMaker.win64.exe
+	C:/LegacyApp/IPG/carmaker/win64-8.1.1/GUI/HIL.win64.exe
+	bin/CarMaker.win64.exe
+	../../../conan_workarea/package.mf_sil.generic.4.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe
+	../../../conan_workarea/package.mf_sil.cus_only.4.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe
+	CarMaker.win64.exe
+CM.Args.History:
+	""
+GPUParameters.FName =
