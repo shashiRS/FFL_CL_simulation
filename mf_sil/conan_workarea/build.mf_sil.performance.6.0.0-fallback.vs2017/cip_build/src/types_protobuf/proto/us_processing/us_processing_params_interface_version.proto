@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_params_interface_version;
+
+message UsProcessingParams_InterfaceVersion{
+  optional uint32 UsProcessingParams_VERSION = 1957;
+}
+
+message UsProcessingParams_InterfaceVersion_array_port{
+   repeated pb.us_processing.us_processing_params_interface_version.UsProcessingParams_InterfaceVersion data = 1042;
+}

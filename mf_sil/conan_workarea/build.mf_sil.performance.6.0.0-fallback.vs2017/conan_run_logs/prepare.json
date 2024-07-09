@@ -1,0 +1,3577 @@
+{
+    "error": false,
+    "installed": [
+        {
+            "recipe": {
+                "id": "appdemo_tonh_types.generic/6.1.1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:45.593882",
+                "dependency": true,
+                "name": "appdemo_tonh_types.generic",
+                "version": "6.1.1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:49.232665",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\986724\\1",
+                        "version": "6.1.1",
+                        "description": "Tone handler types repo",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_plot.cus_only/4.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:46.371218",
+                "dependency": true,
+                "name": "mf_plot.cus_only",
+                "version": "4.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "f1de2cfd73837a1354afa8ca9dc35c7f9eff1fea",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:24.577878",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\d0a5c3\\1",
+                        "version": "4.1.0",
+                        "description": "Plotter for MF function/measurement analysis and customer presentation",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_drvwarnsm_types.generic/6.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:46.984862",
+                "dependency": true,
+                "name": "appdemo_drvwarnsm_types.generic",
+                "version": "6.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:54.807076",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\90cb95\\1",
+                        "version": "6.1.0",
+                        "description": "Customer specific state machine _types of Driver Warnining Functions",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appl_srv_layer_types.generic/5.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:47.656415",
+                "dependency": true,
+                "name": "appl_srv_layer_types.generic",
+                "version": "5.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:50.062540",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\388cda\\1",
+                        "version": "5.1.0",
+                        "description": "Types of the Application Service Layer",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "vehicle_types.generic/7.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:48.304962",
+                "dependency": true,
+                "name": "vehicle_types.generic",
+                "version": "7.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:54.016036",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\db9c90\\1",
+                        "version": "7.1.0",
+                        "description": "Library containing definitions of data types related to vehicle network signals.",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:48.984491",
+                "dependency": true,
+                "name": "appdemo_hmih_types.cus_only",
+                "version": "8.2.0-rc1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:07.866079",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\7a2262\\1",
+                        "version": "8.2.0-rc1",
+                        "description": "Types of the application demo HMI handler",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_parksm_types.cus_only/7.2.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:49.657058",
+                "dependency": true,
+                "name": "appdemo_parksm_types.cus_only",
+                "version": "7.2.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:55.594413",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\7e3b03\\1",
+                        "version": "7.2.2",
+                        "description": "Types of the automated parking core state machine",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "mf_common_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_common_types.cus_only/6.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:50.313003",
+                "dependency": true,
+                "name": "mf_common_types.cus_only",
+                "version": "6.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:37.422483",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\a327d1\\1",
+                        "version": "6.1.0",
+                        "description": "Automated Parking core state machine component",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_lsca_types.cus_only/6.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:50.984882",
+                "dependency": true,
+                "name": "mf_lsca_types.cus_only",
+                "version": "6.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:57.488258",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\509a7a\\1",
+                        "version": "6.1.0",
+                        "description": "Types of the low speed collision avoidance function",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "mf_common_types.cus_only"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_lvmd_types.generic/3.0.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:51.656765",
+                "dependency": true,
+                "name": "mf_lvmd_types.generic",
+                "version": "3.0.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:39.000531",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\69f023\\1",
+                        "version": "3.0.3",
+                        "description": "Alorithm for Lead vehicle movemen detection for algorithm of parking",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_memory_parking_types.generic/4.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:52.299947",
+                "dependency": true,
+                "name": "mf_memory_parking_types.generic",
+                "version": "4.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:58.293291",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\b19af5\\1",
+                        "version": "4.1.0",
+                        "description": "memory parking types",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_pdwarnproc_types.generic/7.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:52.968884",
+                "dependency": true,
+                "name": "mf_pdwarnproc_types.generic",
+                "version": "7.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:40.594189",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\327338\\1",
+                        "version": "7.1.0",
+                        "description": "Types of Parking Distance Warning Processing",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_trjpla_types.cus_only/12.2.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:53.640784",
+                "dependency": true,
+                "name": "mf_trjpla_types.cus_only",
+                "version": "12.2.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:00.674291",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\563a8a\\1",
+                        "version": "12.2.2",
+                        "description": "Types of the automated parking trajectory planning component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "mf_common_types.cus_only"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_whlprotectproc_types.generic/5.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:54.297662",
+                "dependency": true,
+                "name": "mf_whlprotectproc_types.generic",
+                "version": "5.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:42.199562",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\0b0c71\\1",
+                        "version": "5.1.0",
+                        "description": "Wheel protection processing types repo",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "parking_hmi_types.generic/1.1.4@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:54.921060",
+                "dependency": true,
+                "name": "parking_hmi_types.generic",
+                "version": "1.1.4",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:43.000578",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\17675f\\1",
+                        "version": "1.1.4",
+                        "description": "Library containing definitions of data types related to HMI communication signals.",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "eco.generic/10.4.1-rc9@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:55.562647",
+                "dependency": true,
+                "name": "eco.generic",
+                "version": "10.4.1-rc9",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:33.734667",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\c029a0\\1",
+                        "version": "10.4.1-rc9",
+                        "description": "Ecosystem package containing code generator tooling",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "geoml.generic/4.2.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:56.234995",
+                "dependency": true,
+                "name": "geoml.generic",
+                "version": "4.2.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "b466582dfd8730a54c280dafc04cf95d87211337",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:34.691323",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\57783c\\1",
+                        "version": "4.2.3",
+                        "description": "a geometric and math library",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_common.cus_only/6.6.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:56.907463",
+                "dependency": true,
+                "name": "mf_common.cus_only",
+                "version": "6.6.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "acca07d2c1f1ef51d266fadfaca3969e7a26b673",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:56.656587",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\98d06f\\1",
+                        "version": "6.6.0",
+                        "description": "Automated Parking core state machine component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "jsoncpp.generic/1.9.7@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:57.559594",
+                "dependency": true,
+                "name": "jsoncpp.generic",
+                "version": "1.9.7",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "b466582dfd8730a54c280dafc04cf95d87211337",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:35.703360",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\86a2a6\\1",
+                        "version": "1.9.7",
+                        "description": "JsonCpp library",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_parksm_core_types.generic/7.1.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:58.203664",
+                "dependency": true,
+                "name": "mf_parksm_core_types.generic",
+                "version": "7.1.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:59.094122",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\107d41\\1",
+                        "version": "7.1.2",
+                        "description": "Types of the automated parking core state machine",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "si_types.cus_only/12.2.1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:58.862078",
+                "dependency": true,
+                "name": "si_types.cus_only",
+                "version": "12.2.1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:03.453750",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\ba3e12\\1",
+                        "version": "12.2.1",
+                        "description": "SI types",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "mf_common_types.cus_only"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_whlprotectproc.cus_only/4.0.4@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:17:59.530291",
+                "dependency": true,
+                "name": "mf_whlprotectproc.cus_only",
+                "version": "4.0.4",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "0827cf9ed157a17b76e272b7d19e9049d524df23",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:19.609573",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\05c5de\\1",
+                        "version": "4.0.4",
+                        "description": "Wheel protection processing repo",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "plp_log.generic/1.0.7@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:00.166145",
+                "dependency": true,
+                "name": "plp_log.generic",
+                "version": "1.0.7",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "b466582dfd8730a54c280dafc04cf95d87211337",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:44.628783",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\7321b6\\1",
+                        "version": "1.0.7",
+                        "description": "The Brilliant Arithmetic Adder Implementation",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "relocalization_types.generic/3.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:00.938203",
+                "dependency": true,
+                "name": "relocalization_types.generic",
+                "version": "3.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:02.688595",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\416f46\\1",
+                        "version": "3.1.0",
+                        "description": "Types of the relocalization module",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_pdwarnproc.cus_only/7.1.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:01.640943",
+                "dependency": true,
+                "name": "mf_pdwarnproc.cus_only",
+                "version": "7.1.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "f8a0da4cf50dbae5cb984eca1012d2f703675cad",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:15.158138",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\110f7b\\1",
+                        "version": "7.1.3",
+                        "description": "Parking Distance Warning Processing component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_pdwarnproc_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_parksm_core.cus_only/9.3.0-rc1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:02.359783",
+                "dependency": true,
+                "name": "mf_parksm_core.cus_only",
+                "version": "9.3.0-rc1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "50498ffeaf77d636397d6a690a1301e79f077771",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:14.281717",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\46cf33\\1",
+                        "version": "9.3.0-rc1",
+                        "description": "Automated Parking core state machine component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_parksm_core_types.generic",
+                            "mf_trjctl_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_trjctl_types.generic/8.1.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:03.016671",
+                "dependency": true,
+                "name": "mf_trjctl_types.generic",
+                "version": "8.1.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:59.889993",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\0d4361\\1",
+                        "version": "8.1.2",
+                        "description": "Types of the Maneuvering Functions Control component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "plp_hpsd_types.generic/1.0.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:03.674892",
+                "dependency": true,
+                "name": "plp_hpsd_types.generic",
+                "version": "1.0.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:43.791267",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\c1028e\\1",
+                        "version": "1.0.0",
+                        "description": "Repository that contains the defininition of the health vector used for deciding on degradation",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_drvwarnsm.cus_only/5.1.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:04.328424",
+                "dependency": true,
+                "name": "appdemo_drvwarnsm.cus_only",
+                "version": "5.1.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "f2c7c1c95fed864b91224cd264bd71de969cb102",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:20.485007",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\8e961b\\1",
+                        "version": "5.1.3",
+                        "description": "Driver Warning State Machine Customer specific component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "dmc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "dmc_types.generic/2.0.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:04.984940",
+                "dependency": true,
+                "name": "dmc_types.generic",
+                "version": "2.0.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:23.690032",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\5d0049\\1",
+                        "version": "2.0.0",
+                        "description": "Library containing definitions of data types related to HMI communication signals.",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_trjpla.cus_only/8.0.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:05.654965",
+                "dependency": true,
+                "name": "mf_trjpla.cus_only",
+                "version": "8.0.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "3b2c285b22e9e1cc25db1c5d2a960769451f5ef4",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:28.064266",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\28f71c\\1",
+                        "version": "8.0.2",
+                        "description": "Automated Parking trajectory planning component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_manager_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_taposd.cus_only",
+                            "mf_trjctl_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "plp_log.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_manager_types.generic/7.1.1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:06.309073",
+                "dependency": true,
+                "name": "mf_manager_types.generic",
+                "version": "7.1.1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:39.781716",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\f84ef4\\1",
+                        "version": "7.1.1",
+                        "description": "Types of the mf manager",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_taposd.cus_only/12.0.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:07.063617",
+                "dependency": true,
+                "name": "mf_taposd.cus_only",
+                "version": "12.0.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "4bb2c65c367db4bf2354c21be70ca8f41d3a218d",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:17.396546",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\570adc\\1",
+                        "version": "12.0.3",
+                        "description": "Target Pose Definition Component for Automated Parking",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_parksm_core_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "plp_log.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "avga_swc_types.generic/2.0.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:07.713291",
+                "dependency": true,
+                "name": "avga_swc_types.generic",
+                "version": "2.0.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:50.844366",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\d32790\\1",
+                        "version": "2.0.3",
+                        "description": "Types of the automated_vehicle_guidance_arbiter swc",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_vedodo_types.generic/6.2.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:08.343945",
+                "dependency": true,
+                "name": "mf_vedodo_types.generic",
+                "version": "6.2.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:41.406560",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\2f5451\\1",
+                        "version": "6.2.2",
+                        "description": "Types of vehicle dynamic odometry",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_hmih.cus_only/8.0.3-pre6@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:09.031708",
+                "dependency": true,
+                "name": "appdemo_hmih.cus_only",
+                "version": "8.0.3-pre6",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "98d9c5aa5871d29a983f7a69293910bdde0f3e2e",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:34.937993",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\6bb422\\1",
+                        "version": "8.0.3-pre6",
+                        "description": "The application demo HMI handler component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_drvwarnsm_core_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjctl_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_vedodo_types.generic",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic",
+                            "viewcontroller_types.cus_only"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:09.686277",
+                "dependency": true,
+                "name": "mf_drvwarnsm_core_types.cus_only",
+                "version": "6.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:38.221019",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\9e16b7\\1",
+                        "version": "6.1.0",
+                        "description": "Types of the Driver Warning State Machine Core",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "viewcontroller_types.cus_only/8.2.7@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:10.343197",
+                "dependency": true,
+                "name": "viewcontroller_types.cus_only",
+                "version": "8.2.7",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:32.798492",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\a49663\\1",
+                        "version": "8.2.7",
+                        "description": "Types of the viewcontroller for automated parking",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_vedodo.cus_only/6.1.8-pre1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:11.008718",
+                "dependency": true,
+                "name": "mf_vedodo.cus_only",
+                "version": "6.1.8-pre1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "e6b834f78bec2228105e5c4173d3f5cbe9f45427",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:01.875244",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\61b547\\1",
+                        "version": "6.1.8-pre1",
+                        "description": "Vehicle dynamic odometry core component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_vedodo_types.generic",
+                            "tce_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "tce_types.generic/5.1.1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:11.656532",
+                "dependency": true,
+                "name": "tce_types.generic",
+                "version": "5.1.1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:50.803919",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\48db9d\\1",
+                        "version": "5.1.1",
+                        "description": "types for tce component",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "us_em_types.generic/4.1.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:12.313485",
+                "dependency": true,
+                "name": "us_em_types.generic",
+                "version": "4.1.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:52.422782",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\65cc1b\\1",
+                        "version": "4.1.0",
+                        "description": "Ultrasonic Environment Map - Interface Definitions",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_parksm.cus_only/7.1.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:12.974851",
+                "dependency": true,
+                "name": "appdemo_parksm.cus_only",
+                "version": "7.1.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "c4bcc024659cb8439a1af181b9d35e3503024b29",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:22.800975",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\b60548\\1",
+                        "version": "7.1.3",
+                        "description": "Automated Parking core state machine component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "dmc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_drvwarnsm_core_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_parksm_core.cus_only",
+                            "mf_parksm_core_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjctl_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "plp_hpsd_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_trjctl.cus_only/9.2.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:13.640821",
+                "dependency": true,
+                "name": "mf_trjctl.cus_only",
+                "version": "9.2.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "d049e2bccfc93193e2b5cc8c1b8230ed525d4a34",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:18.734771",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\482479\\1",
+                        "version": "9.2.0",
+                        "description": "Maneuvering Functions Control component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "dmc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_manager_types.generic",
+                            "mf_trjctl_types.generic",
+                            "mf_vedodo_types.generic",
+                            "plp_log.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "si_core.cus_only/14.2.0-jd1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:14.312929",
+                "dependency": true,
+                "name": "si_core.cus_only",
+                "version": "14.2.0-jd1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "875d0adc21ce486a77b839849bf0ca4fb05a2551",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:32.016334",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\f7ff21\\1",
+                        "version": "14.2.0-jd1",
+                        "description": "Scene Interpretation core module",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_hmih_types.cus_only",
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_memory_parking_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "mf_vedodo_types.generic",
+                            "mf_whlprotectproc_types.generic",
+                            "parking_hmi_types.generic",
+                            "plp_log.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "appdemo_tonh.cus_only/5.0.3-pre5@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:14.984534",
+                "dependency": true,
+                "name": "appdemo_tonh.cus_only",
+                "version": "5.0.3-pre5",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "3a8967d65f001cd6256b25753a639beb85a5e241",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:08.703444",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\ec48d2\\1",
+                        "version": "5.0.3-pre5",
+                        "description": "Tone handler repo",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appdemo_tonh_types.generic",
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_drvwarnsm_core_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_lvmd_types.generic",
+                            "mf_pdwarnproc_types.generic",
+                            "mf_whlprotectproc_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "tce.cus_only/5.1.4@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:15.672156",
+                "dependency": true,
+                "name": "tce.cus_only",
+                "version": "5.1.4",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "db2f53afd40e9f2816bb7380e6b2a9f5725e8612",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:04.329182",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\5408c8\\1",
+                        "version": "5.1.4",
+                        "description": "tire circumference estimation core component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "eco.generic",
+                            "geoml.generic",
+                            "tce_types.generic",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "us_drv_types.generic/3.6.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:16.343901",
+                "dependency": true,
+                "name": "us_drv_types.generic",
+                "version": "3.6.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:51.609693",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\48c906\\1",
+                        "version": "3.6.0",
+                        "description": "Ultrasonic Sensors Device Driver - Interface Definitions",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "avga_swc.cus_only/2.0.3-dev1@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:17.012255",
+                "dependency": true,
+                "name": "avga_swc.cus_only",
+                "version": "2.0.3-dev1",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "391a3d22af93397b4aa9a32adaf523193ed0188e",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:09.553881",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\7143b1\\1",
+                        "version": "2.0.3-dev1",
+                        "description": "Automated Vehicle Guidance Arbiter component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "appl_srv_layer_types.generic",
+                            "avga_swc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_lsca.cus_only/4.0.2-rc3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:17.680098",
+                "dependency": true,
+                "name": "mf_lsca.cus_only",
+                "version": "4.0.2-rc3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "1a2af81c38c6f4c75e1193ed89166dcff07333b8",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:12.139810",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\6676fd\\1",
+                        "version": "4.0.2-rc3",
+                        "description": "Low Speed Collision Avoidance Function",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_parksm_types.cus_only",
+                            "appl_srv_layer_types.generic",
+                            "dmc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_parksm_core_types.generic",
+                            "mf_trjctl_types.generic",
+                            "plp_hpsd_types.generic",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "us_processing.cus_only/9.7.8-pre@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:18.328504",
+                "dependency": true,
+                "name": "us_processing.cus_only",
+                "version": "9.7.8-pre",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "93e7af87af84a6ef21c0648ad23be69a0bc75338",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:07.074415",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\3511c8\\1",
+                        "version": "9.7.8-pre",
+                        "description": "Ultrasonic Data Processing Component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_vedodo_types.generic",
+                            "us_drv_types.generic",
+                            "us_processing_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "us_processing_types.cus_only/8.5.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:18.984571",
+                "dependency": true,
+                "name": "us_processing_types.cus_only",
+                "version": "8.5.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:53.245658",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\e60f01\\1",
+                        "version": "8.5.0",
+                        "description": "Ultrasonic Data Processing - Interface Definitions",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_manager.cus_only/5.0.6-dev2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:19.649587",
+                "dependency": true,
+                "name": "mf_manager.cus_only",
+                "version": "5.0.6-dev2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "ed56449255f924797c236a500b54b8e4387b4777",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:13.438012",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\4d323d\\1",
+                        "version": "5.0.6-dev2",
+                        "description": "MF Manager component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "avga_swc_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_lsca_types.cus_only",
+                            "mf_manager_types.generic",
+                            "mf_parksm_core_types.generic",
+                            "mf_trjpla_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "mf_drvwarnsm_core.cus_only/5.1.3@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:20.284857",
+                "dependency": true,
+                "name": "mf_drvwarnsm_core.cus_only",
+                "version": "5.1.3",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "d7f09512077b39c533a3ca3a1a98431eaf127cf6",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:10.396880",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\b2dfb9\\1",
+                        "version": "5.1.3",
+                        "description": "Driver Warning State Machine Core component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appdemo_drvwarnsm_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "jsoncpp.generic",
+                            "mf_common.cus_only",
+                            "mf_common_types.cus_only",
+                            "mf_drvwarnsm_core_types.cus_only",
+                            "si_types.cus_only",
+                            "vehicle_types.generic"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "us_em.generic/6.3.5-pre@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:20.922408",
+                "dependency": true,
+                "name": "us_em.generic",
+                "version": "6.3.5-pre",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "92299af56cf5765f214b927531be852c7521f642",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:20:05.453644",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\016fe0\\1",
+                        "version": "6.3.5-pre",
+                        "description": "Ultrasonic Environment Model Component",
+                        "filter_empty": true,
+                        "public_deps": [
+                            "appl_srv_layer_types.generic",
+                            "eco.generic",
+                            "geoml.generic",
+                            "mf_vedodo_types.generic",
+                            "us_em_types.generic",
+                            "us_processing_types.cus_only"
+                        ],
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "adas_platforms.generic/6.0.54@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:41.031810",
+                "dependency": true,
+                "name": "adas_platforms.generic",
+                "version": "6.0.54",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "b466582dfd8730a54c280dafc04cf95d87211337",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:48.454792",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\28fe39\\1",
+                        "version": "6.0.54",
+                        "description": "ADAS platforms package",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "protobuf/3.11.4-tb1@3rdparty/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:41.547992",
+                "dependency": true,
+                "name": "protobuf",
+                "version": "3.11.4-tb1",
+                "user": "3rdparty",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "b466582dfd8730a54c280dafc04cf95d87211337",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:50.015866",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "libs": [
+                            "libprotobuf-lited",
+                            "libprotobufd",
+                            "libprotocd"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\fb64d9\\1",
+                        "version": "3.11.4-tb1",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "carmaker_build_dep/8.1.1@3rdparty/release",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:42.046103",
+                "dependency": true,
+                "name": "carmaker_build_dep",
+                "version": "8.1.1",
+                "user": "3rdparty",
+                "channel": "release"
+            },
+            "packages": [
+                {
+                    "id": "ca33edce272a279b24f87dc0d4cf5bbdcffbc187",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:00.797330",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\c3aba2\\1",
+                        "version": "8.1.1",
+                        "description": "A build dependency package for custom-fit sumulations based on IPG Automotive CarMaker",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "cmake/3.25.0@3rdparty/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:42.539218",
+                "dependency": true,
+                "name": "cmake",
+                "version": "3.25.0",
+                "user": "3rdparty",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "60b04a80ac4dd5c23f1acffacc679e9902e636e5",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:22.906816",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\1e35b5\\1",
+                        "version": "3.25.0",
+                        "description": "cmake 3.25.0 for Windows and Linux",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "bricks_cmake_groups.__system/1.12.2@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:43.172312",
+                "dependency": true,
+                "name": "bricks_cmake_groups.__system",
+                "version": "1.12.2",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:53.266364",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\33193c\\1",
+                        "version": "1.12.2",
+                        "description": "Bricks system package for grouping targets",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "cip_build_system_platforms.__system/3.55.14@cip/releases",
+                "downloaded": false,
+                "exported": false,
+                "error": null,
+                "remote": null,
+                "time": "2024-07-02T04:18:43.202995",
+                "dependency": true,
+                "name": "cip_build_system_platforms.__system",
+                "version": "3.55.14",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": false,
+                    "exported": false,
+                    "error": null,
+                    "remote": null,
+                    "time": "2024-07-02T04:20:34.955048",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\43c208\\1",
+                        "version": "3.55.14",
+                        "description": "Platforms for cip build system",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "make/4.4.1@3rdparty/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:43.734676",
+                "dependency": true,
+                "name": "make",
+                "version": "4.4.1",
+                "user": "3rdparty",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "60b04a80ac4dd5c23f1acffacc679e9902e636e5",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:19:36.629858",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\ed40e4\\1",
+                        "version": "4.4.1",
+                        "description": "Make 4.4.1",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "bricks_cmake_checks.__system/1.8.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:44.359576",
+                "dependency": true,
+                "name": "bricks_cmake_checks.__system",
+                "version": "1.8.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:51.594302",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\c77abb\\1",
+                        "version": "1.8.0",
+                        "description": "Bricks CMake Sanity Checks",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        },
+        {
+            "recipe": {
+                "id": "bricks_cmake_core.__system/1.4.0@cip/releases",
+                "downloaded": true,
+                "exported": false,
+                "error": null,
+                "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                "time": "2024-07-02T04:18:45.020862",
+                "dependency": true,
+                "name": "bricks_cmake_core.__system",
+                "version": "1.4.0",
+                "user": "cip",
+                "channel": "releases"
+            },
+            "packages": [
+                {
+                    "id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+                    "downloaded": true,
+                    "exported": false,
+                    "error": null,
+                    "remote": "https://eu.artifactory.conti.de/artifactory/api/conan/c_adas_cip_conan_I",
+                    "time": "2024-07-02T04:18:52.390866",
+                    "built": false,
+                    "cpp_info": {
+                        "includedirs": [
+                            "include"
+                        ],
+                        "libdirs": [
+                            "lib"
+                        ],
+                        "resdirs": [
+                            "res"
+                        ],
+                        "bindirs": [
+                            "bin"
+                        ],
+                        "builddirs": [
+                            ""
+                        ],
+                        "frameworkdirs": [
+                            "Frameworks"
+                        ],
+                        "rootpath": "D:\\.bbs_conan\\94a71d\\1",
+                        "version": "1.4.0",
+                        "description": "Bricks CMake decorator core package",
+                        "filter_empty": true,
+                        "configs": {}
+                    }
+                }
+            ]
+        }
+    ]
+}

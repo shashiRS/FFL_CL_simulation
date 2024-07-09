@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_ladmc/la_dmcsystem_state.proto";
+
+package pb.ap_ladmc.la_dmcstatus_port;
+
+message LaDMCStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float handSteeringTorque_Nm = 56;
+  optional bool handSteeringTorque_QF_nu = 2891;
+  optional pb.ap_ladmc.la_dmcsystem_state.LaDMCSystemState laDMCSystemState_nu = 8304796;
+  optional bool driverIntervention_nu = 98;
+}
+
+message LaDMCStatusPort_array_port{
+   repeated pb.ap_ladmc.la_dmcstatus_port.LaDMCStatusPort data = 4052;
+}

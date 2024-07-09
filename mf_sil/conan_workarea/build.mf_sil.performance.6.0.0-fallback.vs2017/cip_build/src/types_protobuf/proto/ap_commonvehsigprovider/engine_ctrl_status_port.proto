@@ -1,0 +1,24 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_commonvehsigprovider/start_stop_status.proto";
+
+package pb.ap_commonvehsigprovider.engine_ctrl_status_port;
+
+message EngineCtrlStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float throttlePos_perc = 1516;
+  optional float throttleGradient_percps = 347;
+  optional float axleTorque_nm = 1445;
+  optional bool engineOn_nu = 538;
+  optional pb.ap_commonvehsigprovider.start_stop_status.StartStopStatus startStopStatus_nu = 668;
+  optional bool remoteStartPossible_nu = 528;
+  optional bool throttlePos_QF_nu = 3705;
+  optional bool throttleGradient_QF_nu = 576;
+}
+
+message EngineCtrlStatusPort_array_port{
+   repeated pb.ap_commonvehsigprovider.engine_ctrl_status_port.EngineCtrlStatusPort data = 1282;
+}

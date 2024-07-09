@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.ignition_source_status;
+
+enum IgnitionSourceStatus {
+  DRIVER = 0;
+  REMOTE = 1;
+  RESERVED = 2;
+  INVALID = 3;
+}

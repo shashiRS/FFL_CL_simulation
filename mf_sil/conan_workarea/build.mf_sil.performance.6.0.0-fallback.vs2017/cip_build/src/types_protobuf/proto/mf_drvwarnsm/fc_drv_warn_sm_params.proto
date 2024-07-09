@@ -1,0 +1,58 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.mf_drvwarnsm.fc_drv_warn_sm_params;
+
+message FC_DrvWarnSM_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float DWF_L_SPEED_HYSTERESIS_MPS = 1092;
+  optional float PDW_L_INIT_TIME_S = 667;
+  optional float PDW_L_STABILIZATON_WAIT_TIME_S = 2598;
+  optional float PDW_L_STANDSTILL_TIME_S = 46;
+  optional float PDW_L_REV_GEAR_DEB_TIME_MAN_S = 1195;
+  optional float PDW_L_REV_GEAR_DEB_TIME_AUT_S = 2676;
+  optional float PDW_L_VEL_THRESH_OFF_MPS = 3112;
+  optional float WHP_L_MAX_SPEED_MPS = 3576;
+  optional float WHP_L_MIN_WHL_ANGLE_DIFF_RAD = 3500;
+  optional float PDW_L_ROLLBACK_W_OBST_DIST_M = 3486;
+  optional float PDW_L_ROLLBACK_WO_OBST_DIST_M = 1113;
+  optional float PDW_L_MAX_DIST_CONT_TONE_M = 273;
+  optional float PDW_L_MIN_DIST_REAR_SENSORS_M = 3927;
+  optional uint32 DWF_C_OPS_VARIANT_NU = 3619;
+  optional bool DWF_C_TRANSMISSION_TYPE_NU = 3700;
+  optional bool PDW_L_DRIVING_TUBE_NU = 2320;
+  optional bool PDW_L_AUTOMATIC_ACTIVATION_NU = 2442;
+  optional bool PDW_L_AUTO_ACT_BUTTON_NU = 1931;
+  optional bool PDW_L_AUTOM_ACTIV_STANDSTILL_NU = 2635;
+  optional bool PDW_L_ROLLBACK_ACTIVATION_NU = 632;
+  optional bool PDW_L_DEACTIV_BY_P_GEAR_NU = 3865;
+  optional bool PDW_L_DEACTIV_BY_EPB_NU = 2199;
+  optional bool PDW_L_P_GEAR_RESET_AUTO_ACT_NU = 1378;
+  optional bool PDW_L_EPB_RESET_AUTO_ACT_NU = 2257;
+  optional bool PDW_L_ROLLBACK_FULL_VIEW_NU = 3707;
+  optional bool PDW_L_ROLLBACK_TRAILER_NU = 3745;
+  optional bool PDW_L_ACT_PDW_BY_AP_NU = 486;
+  optional bool WHP_L_DEACT_WHP_BY_AP_NU = 17;
+  optional bool DWF_L_TONE_SUPPRESS_BY_AP_NU = 1775;
+  optional bool DWF_L_TONE_REDUCT_INTER_STANDSTILL_NU = 1803;
+  optional bool DWF_L_TONE_REDUCT_CONT_STANDSTILL_NU = 2254;
+  optional float PDW_L_STANDSTILL_INTER_TIME_S = 3514;
+  optional float PDW_L_STANDSTILL_CONT_TIME_S = 3975;
+  optional bool PDW_L_AUTO_ACTIV_CRITICAL_NU = 277;
+  optional float PDW_L_MAX_DIST_CONT_TONE_FWD_M = 3887;
+  optional float PDW_L_MAX_DIST_CONT_TONE_REAR_M = 1580;
+  optional float PDW_L_MAX_DIST_CONT_TONE_LAT_M = 1756;
+  optional bool PDW_L_CONT_DIST_EXTEND_NU = 1731;
+  optional float PDW_AUTO_ACTIV_THRESHOLD = 2347;
+  optional bool PDW_L_CRIT_ACT_PDW_BY_AP_NU = 3169;
+  optional bool PDW_L_FRONT_SECT_ACTIV_NU = 263;
+  optional bool PDW_L_LAT_SECT_ACTIV_NU = 1676;
+  optional bool PDW_L_REAR_SECT_ACTIV_NU = 3832;
+}
+
+message FC_DrvWarnSM_Params_array_port{
+   repeated pb.mf_drvwarnsm.fc_drv_warn_sm_params.FC_DrvWarnSM_Params data = 3981;
+}

@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_trjctl.moco_te_mot_req;
+
+enum MOCO_te_MotReq {
+  MOCO_MOT_REQ_SUPPRESS_STANDSTILL = 0;
+  MOCO_MOT_REQ_STANDSTILL = 1;
+  MOCO_MOT_REQ_DRIVEOFF = 2;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lsca.lsca_debug_data_port_interface_version;
+
+message LscaDebugDataPort_InterfaceVersion{
+  optional uint32 LscaDebugDataPort_VERSION = 263;
+}
+
+message LscaDebugDataPort_InterfaceVersion_array_port{
+   repeated pb.mf_lsca.lsca_debug_data_port_interface_version.LscaDebugDataPort_InterfaceVersion data = 2186;
+}

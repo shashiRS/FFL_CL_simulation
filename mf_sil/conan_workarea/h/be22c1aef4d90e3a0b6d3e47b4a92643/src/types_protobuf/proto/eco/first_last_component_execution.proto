@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "eco/op_mode.proto";
+
+package pb.eco.first_last_component_execution;
+
+message FirstLastComponentExecution{
+  optional pb.eco.op_mode.OpMode firstExecutionOpMode = 2700;
+  optional pb.eco.op_mode.OpMode lastExecutionOpMode = 2005;
+}
+
+message FirstLastComponentExecution_array_port{
+   repeated pb.eco.first_last_component_execution.FirstLastComponentExecution data = 1359;
+}

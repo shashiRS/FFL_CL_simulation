@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_manager.lo_ctrl_request_port_interface_version;
+
+message LoCtrlRequestPort_InterfaceVersion{
+  optional uint32 LoCtrlRequestPort_VERSION = 3065;
+}
+
+message LoCtrlRequestPort_InterfaceVersion_array_port{
+   repeated pb.mf_manager.lo_ctrl_request_port_interface_version.LoCtrlRequestPort_InterfaceVersion data = 610;
+}

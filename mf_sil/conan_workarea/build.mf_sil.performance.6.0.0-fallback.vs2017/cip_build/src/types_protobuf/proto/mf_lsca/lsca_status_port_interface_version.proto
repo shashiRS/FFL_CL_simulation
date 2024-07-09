@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lsca.lsca_status_port_interface_version;
+
+message LscaStatusPort_InterfaceVersion{
+  optional uint32 LscaStatusPort_VERSION = 3505;
+}
+
+message LscaStatusPort_InterfaceVersion_array_port{
+   repeated pb.mf_lsca.lsca_status_port_interface_version.LscaStatusPort_InterfaceVersion data = 3953;
+}

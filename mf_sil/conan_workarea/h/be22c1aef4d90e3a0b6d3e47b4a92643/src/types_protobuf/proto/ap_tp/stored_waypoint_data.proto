@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "lsm_geoml/pose_pod.proto";
+
+package pb.ap_tp.stored_waypoint_data;
+
+message StoredWaypointData{
+  optional pb.lsm_geoml.pose_pod.Pose_POD pose = 1513;
+  optional float crv_1pm = 1895;
+}
+
+message StoredWaypointData_array_port{
+   repeated pb.ap_tp.stored_waypoint_data.StoredWaypointData data = 2000;
+}

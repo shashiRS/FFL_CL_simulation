@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_trjctl.lo_dmcctrl_request_port_interface_version;
+
+message LoDMCCtrlRequestPort_InterfaceVersion{
+  optional uint32 LoDMCCtrlRequestPort_VERSION = 537;
+}
+
+message LoDMCCtrlRequestPort_InterfaceVersion_array_port{
+   repeated pb.ap_trjctl.lo_dmcctrl_request_port_interface_version.LoDMCCtrlRequestPort_InterfaceVersion data = 582;
+}

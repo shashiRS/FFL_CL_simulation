@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_drvwarnsm/request_mode.proto";
+
+package pb.mf_drvwarnsm.app_to_core_smport;
+
+message AppToCoreSMPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.mf_drvwarnsm.request_mode.RequestMode pdwRequestMode_nu = 2130;
+  optional pb.mf_drvwarnsm.request_mode.RequestMode whpRequestMode_nu = 828;
+}
+
+message AppToCoreSMPort_array_port{
+   repeated pb.mf_drvwarnsm.app_to_core_smport.AppToCoreSMPort data = 2058;
+}

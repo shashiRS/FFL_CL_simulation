@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.mf_lsca.lsca_brake_mode;
+
+enum LSCA_BRAKE_MODE {
+  BRAKE_MODE_NONE = 0;
+  BRAKE_MODE_COMFORT = 1;
+  BRAKE_MODE_EMERGENCY = 2;
+}

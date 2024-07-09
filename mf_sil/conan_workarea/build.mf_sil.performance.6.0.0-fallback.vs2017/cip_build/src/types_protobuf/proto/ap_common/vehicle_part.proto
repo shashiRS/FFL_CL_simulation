@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.ap_common.vehicle_part;
+
+enum VehiclePart {
+  WHEEL_FRONT_LEFT = 0;
+  WHEEL_REAR_LEFT = 1;
+  WHEEL_REAR_RIGHT = 2;
+  WHEEL_FRONT_RIGHT = 3;
+  CAR_BODY = 4;
+  MIRROR_LEFT = 5;
+  MIRROR_RIGHT = 6;
+  TRAILER_HITCH = 7;
+  MAX_NUM_VEH_PARTS = 8;
+}

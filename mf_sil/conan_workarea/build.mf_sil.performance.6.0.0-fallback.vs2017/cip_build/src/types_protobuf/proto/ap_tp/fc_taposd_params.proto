@@ -1,0 +1,94 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_tp/pos_def_approach.proto";
+
+package pb.ap_tp.fc_taposd_params;
+
+message FC_TAPOSD_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float AP_T_MAX_DEV_UPDATE_LAT_PAR_M = 3347;
+  optional float AP_T_MAX_DEV_UPDATE_LONG_PAR_M = 2420;
+  optional float AP_T_MAX_DEV_UPD_YAW_PAR_RAD = 2204;
+  optional uint32 AP_T_MIN_OBJ_EXIST_PERC = 3389;
+  optional pb.ap_tp.pos_def_approach.PosDefApproach AP_T_POS_DEF_APPROACH = 2556;
+  optional float AP_T_POUT_PAR_POSE_X_M = 952;
+  optional float AP_T_POUT_PAR_POSE_Y_M = 1160;
+  optional float AP_T_POUT_PAR_POSE_YAW_RAD = 2435;
+  optional float AP_T_POUT_PERP_POSE_RIGHT_M = 1813;
+  optional float AP_T_POUT_PERP_POSE_Y_LEFT_M = 3035;
+  optional float AP_T_POUT_PERP_POSE_Y_RIGHT_M = 1590;
+  optional float AP_T_POUT_PERP_POSE_Y_R_BWD_M = 3630;
+  optional float AP_T_POUT_PERP_DEV_LAT_M = 2928;
+  optional float AP_T_POUT_PERP_DEV_YAW_RAD = 871;
+  optional float AP_T_POUT_PAR_SAFETY_DIST_M = 3545;
+  optional float AP_T_LEN_IRRELEVANT_AREA_X_M = 3009;
+  optional float AP_T_LEN_IRRELEVANT_AREA_Y_M = 3313;
+  optional float AP_T_PIN_PAR_POSE_X_M = 2082;
+  optional float AP_T_PIN_PAR_POSE_Y_M = 3858;
+  optional float AP_T_PIN_PAR_POSE_YAW_RAD = 1165;
+  optional float AP_T_PIN_PERP_POSE_X_M = 1231;
+  optional float AP_T_PIN_PERP_POSE_Y_M = 1023;
+  optional float AP_T_PIN_PERP_POSE_YAW_RAD = 632;
+  optional uint32 AP_T_MIN_PBOX_EXIST_PERC = 1255;
+  optional bool AP_T_UPDATE_POSE_LAST_STROKE_NU = 3327;
+  optional float AP_T_MAX_DEV_UPDATE_LAT_PERP_M = 3592;
+  optional float AP_T_MAX_DEV_UPDATE_LONG_PERP_M = 1683;
+  optional float AP_T_MAX_DEV_UPD_YAW_PERP_RAD = 3263;
+  optional bool AP_T_UPDATE_LONG_ONLY_PAR_NU = 1977;
+  optional float AP_T_POUT_PERP_POSE_LEFT_M = 3138;
+  optional float AP_T_MAXCOMFPOS_INT_TOL_M = 866;
+  optional float AP_T_MAX_LATERAL_DEVIATION_M = 610;
+  optional bool AP_T_YAW_ANG_PBOX_ORI_NU = 898;
+  optional float AP_T_POUT_PERP_COR_OFFS_FRONT_M = 1543;
+  optional float AP_T_POUT_PERP_COR_OFFS_REAR_M = 288;
+  optional float AP_T_POUT_PERP_COR_OFFS_SLOTS_M = 1120;
+  optional float AP_T_POUT_PERP_COR_OFFS_OPPOS_M = 1036;
+  optional float AP_T_MIN_LATERAL_DEVIATION_M = 3706;
+  optional float AP_T_MAX_MARKING_ANG_DEV_RAD = 1679;
+  optional float AP_T_MIN_LENGTH_MARKING_M = 3687;
+  optional float AP_T_EXTENT_MAX_BOX_ROADSIDE_M = 860;
+  optional float AP_T_MAX_DELIM_DIST_TO_BOX_M = 2147;
+  optional float AP_T_GP_POSE_FREEZE_RADIUS_M = 3381;
+  optional float AP_T_MAX_DEV_UPDATE_LAT_GP_M = 869;
+  optional float AP_T_MAX_DEV_UPDATE_LONG_GP_M = 1723759;
+  optional float AP_T_MAX_DEV_UPD_YAW_GP_RAD = 2263;
+  optional float AP_T_GP_OUT_GAP_ENTRANCE_M = 208;
+  optional float AP_T_GP_OUT_REACHED_M = 590;
+  optional float AP_T_GP_REACHED_DEV_BOX_M = 3129;
+  optional float AP_T_GP_REACHED_DEV_LONG_M = 3508;
+  optional bool AP_T_GP_INSIDE_LAT_CENTER_ONLY = 3710;
+  optional float AP_T_AXIS_MIN_OUTSIDE_GARAGE_M = 2904;
+  optional uint32 AP_T_ACTUAL_LENGTH_POSE_HISTORY = 575;
+  optional float AP_T_MAX_VIRTUALLINE_ANG_DEV_RAD = 3565;
+  optional float AP_T_ORI_CATEG_WEIGHT_SHORTSIDE_PARKMARKING_NU = 2409;
+  optional float AP_T_ORI_CATEG_WEIGHT_LONGSIDE_PARKMARKING_NU = 2565;
+  optional float AP_T_ORI_CATEG_WEIGHT_SHORTSIDE_CURB_NU = 3846;
+  optional float AP_T_ORI_CATEG_WEIGHT_LONGSIDE_CURB_NU = 3084;
+  optional float AP_T_ORI_CATEG_WEIGHT_SHORTSIDE_VIRTUALLINE_NU = 3598;
+  optional float AP_T_ORI_CATEG_WEIGHT_LONGSIDE_VIRTUALLINE_NU = 3426;
+  optional float AP_T_ORI_CATEG_WEIGHT_SHORTSIDE_LANEBOUND_NU = 3576;
+  optional float AP_T_ORI_CATEG_WEIGHT_LONGSIDE_LANEBOUND_NU = 2793;
+  optional float AP_T_ORI_CATEG_WEIGHT_FALLBACK_NU = 3820;
+  optional float AP_T_ORI_CATEG_SCORE_FALLBACK_M = 1511;
+  optional float AP_T_DEL_REL_OTHERW_CURB_ASSIGNMENT_RATIO_NU = 1889;
+  optional float AP_T_MIN_ANG_TRESH_CMF_BOX_LIMIT_PA_PER_DEG = 204;
+  optional float AP_T_MAX_ANG_TRESH_CMF_BOX_LIMIT_PA_PER_DEG = 423;
+  optional float AP_T_MIN_ANG_TRESH_CMF_BOX_LIMIT_ANGLED_DEG = 3306;
+  optional float AP_T_MAX_ANG_TRESH_CMF_BOX_LIMIT_ANGLED_DEG = 3457;
+  optional float AP_T_WHEEL_DIST_TO_WHEELSTOPPER_M = 1883;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PERP_LONG_NU = 3714;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PERP_LAT_NU = 3784;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PERP_ANG_NU = 1289;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PAR_LONG_NU = 3748;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PAR_LAT_NU = 1748;
+  optional float AP_T_URGENT_UPDATE_DEV_FACTOR_PAR_ANG_NU = 3349;
+  optional float AP_T_MAX_CURB_DEL_DIST_TO_ROADSIDE_PAR_M = 78;
+  optional float AP_T_POUT_PERP_MAX_PULL_OUT_DIST_IN_ROAD_DIR_M = 2142;
+}
+
+message FC_TAPOSD_Params_array_port{
+   repeated pb.ap_tp.fc_taposd_params.FC_TAPOSD_Params data = 1995;
+}

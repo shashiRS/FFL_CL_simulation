@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "cml/vec2_df_pod.proto";
+import "si/pb_side.proto";
+import "si/slot_status.proto";
+
+package pb.si.new_detected_slot_candidate;
+
+message NewDetectedSlotCandidate{
+  optional pb.cml.vec2_df_pod.Vec2Df_POD start = 2139;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD end = 3449;
+  optional pb.si.pb_side.PB_Side side = 3978;
+  optional pb.si.slot_status.SlotStatus status = 505;
+}
+
+message NewDetectedSlotCandidate_array_port{
+   repeated pb.si.new_detected_slot_candidate.NewDetectedSlotCandidate data = 3221;
+}

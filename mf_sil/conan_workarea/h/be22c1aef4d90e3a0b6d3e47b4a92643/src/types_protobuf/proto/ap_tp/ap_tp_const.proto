@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.ap_tp_const;
+
+message AP_TP_Const{
+  optional uint32 AP_P_MAX_NUM_TRAJ_CTRL_POINTS = 2628;
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_TP = 3275;
+  optional uint32 AP_T_MAX_NUM_SMPL_PBOX_VERT_NU = 3770;
+  optional uint32 AP_T_MAX_NUM_POSE_BOX_DATA_NU = 3471;
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_TPD = 373;
+  optional uint32 AP_P_MAX_NUM_POSES_IN_PATH_NU = 2955;
+  optional uint32 AP_P_MAX_NUM_SEGMENTS_IN_PATH_NU = 1732;
+  optional uint32 AP_P_MAX_NUM_SAMPLES_IN_DRIVEN_PATH = 1015;
+  optional uint32 AP_P_MAX_NUM_SAMPLES_IN_DRIVEN_PATH_BUFFER = 2524;
+}
+
+message AP_TP_Const_array_port{
+   repeated pb.ap_tp.ap_tp_const.AP_TP_Const data = 4066;
+}

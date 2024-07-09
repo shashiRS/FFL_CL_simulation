@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.ego_motion_port_interface_version;
+
+message EgoMotionPort_InterfaceVersion{
+  optional uint32 EgoMotionPort_VERSION = 3698;
+}
+
+message EgoMotionPort_InterfaceVersion_array_port{
+   repeated pb.si.ego_motion_port_interface_version.EgoMotionPort_InterfaceVersion data = 2092;
+}

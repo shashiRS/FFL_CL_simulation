@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "us_em/us_em_position.proto";
+
+package pb.us_em.us_em_point;
+
+message UsEmPoint{
+  optional pb.us_em.us_em_position.UsEmPosition pointPos = 1494;
+  optional float probHigh = 2484;
+}
+
+message UsEmPoint_array_port{
+   repeated pb.us_em.us_em_point.UsEmPoint data = 966;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Please note that this file must respect a schema to be accepted by Cobolt -->
+<EBRobinosConfig Version="0.1" TraceLevel="Info"> <!-- Possible trace levels: Verbose, Debug, Info, Warning, Error, Exception, Off -->
+  <WorkStep Type="Merge" Description="Merging input files">
+    <Input>
+      ${CONFIG_XMI_INPUT_FILE_ELEMENTS}
+      <File XSD="${CONFIG_SCHEMA}" />
+    </Input>
+    <Output>
+      <File XML="${CONFIG_AGGREGATE_XMI}" />
+    </Output>
+  </WorkStep>
+  <WorkStep Type="Generate" Description="Generating files" IncludePath="${CONFIG_TEMPLATE_DIR}/include${CONFIG_SDL_INFO_DIR}">
+    <Input>
+      <File XML="${CONFIG_AGGREGATE_XMI}" />
+      <File XSD="${CONFIG_SCHEMA}" />
+      <!-- Beginning of templates -->
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/adapter.template"                               OutDir="${CONFIG_OUTPUT_DIR}/src" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/callback.h.template"                            OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/interface.h.template"                           OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/dynamic_configuration.h.template"               OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/execution_configuration.h.template"             OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/inter_cycle_memory.h.template"                  OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/debug_callback.h.template"                      OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/debug_interface.h.template"                     OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/debug_info.h.template"                          OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/buffer_access.h.template"                       OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/custom_callback.h.template"                     OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/custom_interface.h.template"                    OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface_c/interface_c.h.template"                       OutDir="${CONFIG_OUTPUT_DIR}/src/interface_c" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface_c/interface_array_struct_c.template"            OutDir="${CONFIG_OUTPUT_DIR}/src/interface_c" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface_c/inter_cycle_memory_c.h.template"              OutDir="${CONFIG_OUTPUT_DIR}/src/interface_c" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/arguments/arguments_mock.h.template"                 OutDir="${CONFIG_OUTPUT_DIR}/src/mock/arguments" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/callback/callback_mock.h.template"                   OutDir="${CONFIG_OUTPUT_DIR}/src/mock/callback" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/callback/callback_mock.h.adapter.template"           OutDir="${CONFIG_OUTPUT_DIR}/src/mock/callback" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/debug/debug.template"                                OutDir="${CONFIG_OUTPUT_DIR}/src/mock/debug" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/legacy/CMakeLists.txt.template"                      OutDir="${CONFIG_OUTPUT_DIR}/src/mock/legacy" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/mock/legacy/interface_mock.h.template"                    OutDir="${CONFIG_OUTPUT_DIR}/src/mock/legacy" />
+      <File TMP="${CONFIG_TEMPLATE_DIR}/interface/static_configuration.h.template"                OutDir="${CONFIG_OUTPUT_DIR}/src/interface" />
+      <!-- End of templates -->
+    </Input>
+    <Output>
+      <Code SortIncludes="NotAtAll" />
+    </Output>
+  </WorkStep>
+</EBRobinosConfig>

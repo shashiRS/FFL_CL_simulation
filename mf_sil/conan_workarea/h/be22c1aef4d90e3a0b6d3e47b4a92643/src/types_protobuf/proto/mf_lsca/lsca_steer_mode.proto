@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.mf_lsca.lsca_steer_mode;
+
+enum LSCA_STEER_MODE {
+  STEER_MODE_NONE = 0;
+  STEER_MODE_ANGLE_FRONT = 1;
+  STEER_MODE_ANGLE_REAR = 2;
+  STEER_MODE_ANGLE_FRONT_AND_REAR = 3;
+  STEER_MODE_TORQUE = 4;
+}

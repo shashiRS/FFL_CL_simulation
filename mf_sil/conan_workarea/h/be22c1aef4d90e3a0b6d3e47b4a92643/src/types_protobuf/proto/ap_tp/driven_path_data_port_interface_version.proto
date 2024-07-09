@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.driven_path_data_port_interface_version;
+
+message DrivenPathDataPort_InterfaceVersion{
+  optional uint32 DrivenPathDataPort_VERSION = 378;
+}
+
+message DrivenPathDataPort_InterfaceVersion_array_port{
+   repeated pb.ap_tp.driven_path_data_port_interface_version.DrivenPathDataPort_InterfaceVersion data = 968;
+}

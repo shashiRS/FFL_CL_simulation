@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.fc_mfhmih_params_interface_version;
+
+message FC_MFHMIH_Params_InterfaceVersion{
+  optional uint32 FC_MFHMIH_Params_VERSION = 4052;
+}
+
+message FC_MFHMIH_Params_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.fc_mfhmih_params_interface_version.FC_MFHMIH_Params_InterfaceVersion data = 726;
+}

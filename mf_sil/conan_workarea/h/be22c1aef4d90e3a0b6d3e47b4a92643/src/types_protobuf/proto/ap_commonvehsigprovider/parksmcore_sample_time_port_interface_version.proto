@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.parksmcore_sample_time_port_interface_version;
+
+message PARKSMCoreSampleTimePort_InterfaceVersion{
+  optional uint32 PARKSMCoreSampleTimePort_VERSION = 3081;
+}
+
+message PARKSMCoreSampleTimePort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.parksmcore_sample_time_port_interface_version.PARKSMCoreSampleTimePort_InterfaceVersion data = 692;
+}

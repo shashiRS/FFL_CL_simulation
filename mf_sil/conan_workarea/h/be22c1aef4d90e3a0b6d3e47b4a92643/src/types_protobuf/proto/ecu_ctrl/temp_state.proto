@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ecu_ctrl.temp_state;
+
+enum TempState {
+  TEMP_STATE_INIT = 0;
+  TEMP_STATE_NORMAL = 1;
+  TEMP_STATE_OVER_TEMP = 2;
+  TEMP_STATE_UNDER_TEMP = 3;
+  TEMP_STATE_UNKNOWN = 128;
+}

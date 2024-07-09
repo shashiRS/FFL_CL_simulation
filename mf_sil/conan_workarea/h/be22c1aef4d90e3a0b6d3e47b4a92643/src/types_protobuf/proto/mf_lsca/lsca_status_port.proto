@@ -1,0 +1,24 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_lsca/lsca_state.proto";
+import "mf_lsca/lsca_mode.proto";
+
+package pb.mf_lsca.lsca_status_port;
+
+message LscaStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE brakingModuleState_nu = 3551;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE doorProtectionModuleState_nu = 2526;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE rctaModuleState_nu = 2236;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE PmpModuleState_nu = 1273;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE steeringResistanceModuleState_nu = 1272;
+  optional pb.mf_lsca.lsca_state.LSCA_STATE steeringProposalModuleState_nu = 3481;
+  optional pb.mf_lsca.lsca_mode.LSCA_MODE lscaOverallMode_nu = 3249;
+}
+
+message LscaStatusPort_array_port{
+   repeated pb.mf_lsca.lsca_status_port.LscaStatusPort data = 607;
+}

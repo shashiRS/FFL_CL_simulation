@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_manager.active_maneuvering_function_port_interface_version;
+
+message ActiveManeuveringFunctionPort_InterfaceVersion{
+  optional uint32 ActiveManeuveringFunctionPort_VERSION = 226;
+}
+
+message ActiveManeuveringFunctionPort_InterfaceVersion_array_port{
+   repeated pb.mf_manager.active_maneuvering_function_port_interface_version.ActiveManeuveringFunctionPort_InterfaceVersion data = 1361;
+}

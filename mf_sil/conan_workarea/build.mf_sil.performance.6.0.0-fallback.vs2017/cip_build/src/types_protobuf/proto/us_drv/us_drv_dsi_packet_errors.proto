@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_dsi_packet_errors;
+
+message UsDrvDsiPacketErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus symbolCountErr = 1887;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus symbolCodingErr = 1147;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsiPinUndervoltage = 764;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus clkrefErr = 795;
+}
+
+message UsDrvDsiPacketErrors_array_port{
+   repeated pb.us_drv.us_drv_dsi_packet_errors.UsDrvDsiPacketErrors data = 1342;
+}

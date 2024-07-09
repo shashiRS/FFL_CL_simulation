@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.avga_swc.automated_vehicle_guidance_request_type;
+
+enum AutomatedVehicleGuidanceRequestType {
+  AVGA_NONE = 0;
+  AVGA_BRAKING_SUPERVISION = 1;
+  AVGA_BRAKING_VISUAL_SUPERVISION = 2;
+  AVGA_BRAKING_AUDIO_VISUAL_SUPERVISION = 3;
+}

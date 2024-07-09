@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_drvwarnsm.app_to_core_smport_interface_version;
+
+message AppToCoreSMPort_InterfaceVersion{
+  optional uint32 AppToCoreSMPort_VERSION = 2494;
+}
+
+message AppToCoreSMPort_InterfaceVersion_array_port{
+   repeated pb.mf_drvwarnsm.app_to_core_smport_interface_version.AppToCoreSMPort_InterfaceVersion data = 2215;
+}

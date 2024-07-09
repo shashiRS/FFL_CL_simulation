@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.ap_commonvehsigprovider.gps_receiver_status;
+
+enum GpsReceiverStatus {
+  ODO_GPS_INVALID = 0;
+  ODO_GPS_VALID = 1;
+}

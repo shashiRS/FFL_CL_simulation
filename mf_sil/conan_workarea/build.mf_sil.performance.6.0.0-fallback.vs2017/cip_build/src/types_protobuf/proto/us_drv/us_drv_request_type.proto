@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.us_drv.us_drv_request_type;
+
+enum UsDrvRequestType {
+  US_REQUEST_TYPE_NONE = 0;
+  US_REQUEST_TYPE_RESET = 1;
+  US_REQUEST_TYPE_SLEEP = 2;
+  US_REQUEST_TYPE_SAFESTATE = 3;
+  US_REQUEST_TYPE_UMM = 4;
+}

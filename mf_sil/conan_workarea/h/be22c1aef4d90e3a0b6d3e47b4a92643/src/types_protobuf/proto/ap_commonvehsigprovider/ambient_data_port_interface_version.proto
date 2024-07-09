@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.ambient_data_port_interface_version;
+
+message AmbientDataPort_InterfaceVersion{
+  optional uint32 AmbientDataPort_VERSION = 1664;
+}
+
+message AmbientDataPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.ambient_data_port_interface_version.AmbientDataPort_InterfaceVersion data = 3575;
+}

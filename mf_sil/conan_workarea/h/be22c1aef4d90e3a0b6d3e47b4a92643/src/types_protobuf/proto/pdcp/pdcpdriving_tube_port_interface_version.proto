@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.pdcp.pdcpdriving_tube_port_interface_version;
+
+message PDCPDrivingTubePort_InterfaceVersion{
+  optional uint32 PDCPDrivingTubePort_VERSION = 1076;
+}
+
+message PDCPDrivingTubePort_InterfaceVersion_array_port{
+   repeated pb.pdcp.pdcpdriving_tube_port_interface_version.PDCPDrivingTubePort_InterfaceVersion data = 4058;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_drvwarnsm.logic_to_proc_port_interface_version;
+
+message LogicToProcPort_InterfaceVersion{
+  optional uint32 LogicToProcPort_VERSION = 2293;
+}
+
+message LogicToProcPort_InterfaceVersion_array_port{
+   repeated pb.mf_drvwarnsm.logic_to_proc_port_interface_version.LogicToProcPort_InterfaceVersion data = 242;
+}

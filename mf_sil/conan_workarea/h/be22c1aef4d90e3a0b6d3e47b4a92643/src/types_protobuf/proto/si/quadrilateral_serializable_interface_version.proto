@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.quadrilateral_serializable_interface_version;
+
+message QuadrilateralSerializable_InterfaceVersion{
+  optional uint32 QuadrilateralSerializable_VERSION = 956;
+}
+
+message QuadrilateralSerializable_InterfaceVersion_array_port{
+   repeated pb.si.quadrilateral_serializable_interface_version.QuadrilateralSerializable_InterfaceVersion data = 2284;
+}

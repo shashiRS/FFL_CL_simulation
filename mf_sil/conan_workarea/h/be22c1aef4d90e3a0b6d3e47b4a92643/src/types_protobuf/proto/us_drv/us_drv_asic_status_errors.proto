@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_asic_status_errors;
+
+message UsDrvAsicStatusErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus asicInitFailure = 1997;
+  optional uint32 asicInitFailureDetails = 1316;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus asicInitTimeout = 2115;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus asicCommTimeout = 3433;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus ramBistFailed = 1881;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus overTemperature = 535;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus vccUnderVoltage = 3942;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus clkrefFailure = 138;
+}
+
+message UsDrvAsicStatusErrors_array_port{
+   repeated pb.us_drv.us_drv_asic_status_errors.UsDrvAsicStatusErrors data = 1398;
+}

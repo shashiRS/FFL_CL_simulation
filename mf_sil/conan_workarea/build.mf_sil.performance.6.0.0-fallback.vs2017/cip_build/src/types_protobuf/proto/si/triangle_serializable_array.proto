@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/triangle_serializable.proto";
+
+package pb.si.triangle_serializable_array;
+
+message TriangleSerializableArray{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.triangle_serializable.TriangleSerializable array = 1417;
+}
+
+message TriangleSerializableArray_array_port{
+   repeated pb.si.triangle_serializable_array.TriangleSerializableArray data = 1244;
+}

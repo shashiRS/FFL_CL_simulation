@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.avga_swc.avga_automated_vehicle_guidance_request_interface_version;
+
+message AVGA_AutomatedVehicleGuidanceRequest_InterfaceVersion{
+  optional uint32 AVGA_AutomatedVehicleGuidanceRequest_VERSION = 2966;
+}
+
+message AVGA_AutomatedVehicleGuidanceRequest_InterfaceVersion_array_port{
+   repeated pb.avga_swc.avga_automated_vehicle_guidance_request_interface_version.AVGA_AutomatedVehicleGuidanceRequest_InterfaceVersion data = 1830;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.wheel_pulse_port_interface_version;
+
+message WheelPulsePort_InterfaceVersion{
+  optional uint32 WheelPulsePort_VERSION = 950;
+}
+
+message WheelPulsePort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_pulse_port_interface_version.WheelPulsePort_InterfaceVersion data = 3532;
+}

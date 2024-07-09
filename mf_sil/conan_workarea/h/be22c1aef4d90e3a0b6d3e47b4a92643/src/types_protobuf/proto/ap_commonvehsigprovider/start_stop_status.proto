@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_commonvehsigprovider.start_stop_status;
+
+enum StartStopStatus {
+  STOP_GRANTED = 0;
+  STOP_PROHIBITED = 1;
+  START_REQUESTED = 2;
+  START_STOP_ERROR = 3;
+}

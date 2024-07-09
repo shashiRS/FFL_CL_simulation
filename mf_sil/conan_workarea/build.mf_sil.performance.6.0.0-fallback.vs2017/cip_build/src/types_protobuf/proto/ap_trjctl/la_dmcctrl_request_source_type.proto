@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_trjctl.la_dmcctrl_request_source_type;
+
+enum LaDMCCtrlRequestSourceType {
+  LADMC_REQ_SRC_NO_REQEUESTER = 0;
+  LADMC_REQ_SRC_AUP = 1;
+  LADMC_REQ_SRC_LSCA = 2;
+  LADMC_REQ_SRC_REMOTE = 3;
+  LADMC_REQ_SRC_MSP = 4;
+  LADMC_REQ_SRC_SAFBAR = 5;
+}

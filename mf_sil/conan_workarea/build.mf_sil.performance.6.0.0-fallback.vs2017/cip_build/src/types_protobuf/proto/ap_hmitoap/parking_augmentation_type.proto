@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_hmitoap.parking_augmentation_type;
+
+enum ParkingAugmentationType {
+  PARKING_AUGMENTATION_OFF = 0;
+  PARKING_IN_ON = 1;
+  PARKING_OUT_ON = 2;
+}

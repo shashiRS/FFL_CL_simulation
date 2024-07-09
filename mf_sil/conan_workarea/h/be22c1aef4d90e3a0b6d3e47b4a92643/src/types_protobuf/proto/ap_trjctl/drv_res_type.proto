@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.ap_trjctl.drv_res_type;
+
+enum DrvResType {
+  DRVRES_NONE = 0;
+  DRVRES_FALLING_LOW = 1;
+  DRVRES_FALLING_MEDIUM = 2;
+  DRVRES_FALLING_HIGH = 3;
+  DRVRES_RISING_LOW = 4;
+  DRVRES_RISING_MEDIUM = 5;
+  DRVRES_RISING_HIGH = 6;
+  DRVRES_WHEEL_STOPPER = 7;
+  MAX_NUM_DRVRES_TYPE = 8;
+}

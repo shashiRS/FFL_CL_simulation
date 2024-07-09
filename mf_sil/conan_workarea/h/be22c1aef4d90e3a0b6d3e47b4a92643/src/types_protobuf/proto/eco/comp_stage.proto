@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.eco.comp_stage;
+
+enum CompStage {
+  STAGE_INIT = 0;
+  STAGE_SUSPEND = 1;
+  STAGE_RESUME = 2;
+  STAGE_SHUTDOWN = 3;
+  STAGE_UNDEFINED = 255;
+}

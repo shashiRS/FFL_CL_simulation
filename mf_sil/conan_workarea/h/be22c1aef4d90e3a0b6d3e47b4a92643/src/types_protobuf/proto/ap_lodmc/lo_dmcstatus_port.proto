@@ -1,0 +1,26 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_lodmc/slope_accuracy.proto";
+import "ap_lodmc/lo_dmcsystem_state.proto";
+import "ap_lodmc/maneuvering_finished.proto";
+import "ap_lodmc/longitudinal_control_active_status.proto";
+
+package pb.ap_lodmc.lo_dmcstatus_port;
+
+message LoDMCStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float dynamicSlope_perc = 686;
+  optional pb.ap_lodmc.slope_accuracy.SlopeAccuracy dynamicSlopeAccuracy_nu = 3475;
+  optional pb.ap_lodmc.lo_dmcsystem_state.LoDMCSystemState loDMCSystemState_nu = 1351;
+  optional pb.ap_lodmc.maneuvering_finished.maneuveringFinished maneuveringFinished_nu = 3275;
+  optional pb.ap_lodmc.longitudinal_control_active_status.longitudinalControlActiveStatus longitudinalControlActiveStatus_nu = 3558;
+  optional bool standstillHoldCur_nu = 2401;
+  optional bool standstillSecureCur_nu = 3299;
+}
+
+message LoDMCStatusPort_array_port{
+   repeated pb.ap_lodmc.lo_dmcstatus_port.LoDMCStatusPort data = 2947;
+}

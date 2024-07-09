@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "ap_vehstatesigprovider/seat_occupancy.proto";
+
+package pb.ap_vehstatesigprovider.seat_occupancy_status;
+
+message SeatOccupancyStatus{
+  optional pb.ap_vehstatesigprovider.seat_occupancy.SeatOccupancy frontPsgr_nu = 356;
+  optional pb.ap_vehstatesigprovider.seat_occupancy.SeatOccupancy driver_nu = 1645;
+  optional pb.ap_vehstatesigprovider.seat_occupancy.SeatOccupancy backrowRight_nu = 548;
+  optional pb.ap_vehstatesigprovider.seat_occupancy.SeatOccupancy backrowLeft_nu = 2139;
+}
+
+message SeatOccupancyStatus_array_port{
+   repeated pb.ap_vehstatesigprovider.seat_occupancy_status.SeatOccupancyStatus data = 3286;
+}

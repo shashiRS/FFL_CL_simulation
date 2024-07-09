@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.taposddebug_port_interface_version;
+
+message TAPOSDDebugPort_InterfaceVersion{
+  optional uint32 TAPOSDDebugPort_VERSION = 3072;
+}
+
+message TAPOSDDebugPort_InterfaceVersion_array_port{
+   repeated pb.ap_tp.taposddebug_port_interface_version.TAPOSDDebugPort_InterfaceVersion data = 1877;
+}

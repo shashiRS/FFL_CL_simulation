@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.pdcp.pdcpdebug_port_interface_version;
+
+message PDCPDebugPort_InterfaceVersion{
+  optional uint32 PDCPDebugPort_VERSION = 257;
+}
+
+message PDCPDebugPort_InterfaceVersion_array_port{
+   repeated pb.pdcp.pdcpdebug_port_interface_version.PDCPDebugPort_InterfaceVersion data = 2902;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_lodmc.maneuvering_finished;
+
+enum maneuveringFinished {
+  MANEUVERING_NOT_STARTED = 0;
+  MANEUVERING_IN_PROGRESS = 1;
+  MANEUVERING_FINISHED = 2;
+  MANEUVERING_SATURATED = 3;
+  MANEUVERING_FAULT = 4;
+  RESERVED = 5;
+}

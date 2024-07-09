@@ -1,0 +1,277 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-15c20e9c43fb2528e079.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						6
+					]
+				},
+				{
+					"build" : "tests/SIL/CarMaker/src",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tests.SIL.CarMaker.src-Debug-7d2c3ea89c67fda688f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests/SIL/CarMaker/src",
+					"targetIndexes" : 
+					[
+						1,
+						5,
+						7
+					]
+				},
+				{
+					"build" : "cobolt/codegen_types",
+					"jsonFile" : "directory-cobolt.codegen_types-Debug-84223be5ad83fcad5c52.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/types"
+				},
+				{
+					"build" : "cobolt/codegen_types_c",
+					"jsonFile" : "directory-cobolt.codegen_types_c-Debug-3b2b5fcc1e92219f543b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/types_c"
+				},
+				{
+					"build" : "cobolt/codegen_types_14",
+					"jsonFile" : "directory-cobolt.codegen_types_14-Debug-27ba57fef757482ba1b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/types_14"
+				},
+				{
+					"build" : "cobolt/codegen_interface",
+					"jsonFile" : "directory-cobolt.codegen_interface-Debug-f9f73d3bd6263d81d15c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/interface"
+				},
+				{
+					"build" : "cobolt/codegen_interface_c",
+					"jsonFile" : "directory-cobolt.codegen_interface_c-Debug-f381706bf37772f71cb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/interface_c"
+				},
+				{
+					"build" : "cobolt/codegen_mock_arguments",
+					"jsonFile" : "directory-cobolt.codegen_mock_arguments-Debug-f4fe8cff6487e6ad833e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/mock/arguments"
+				},
+				{
+					"build" : "cobolt/codegen_mock_callback",
+					"jsonFile" : "directory-cobolt.codegen_mock_callback-Debug-daccba22015daf318f5e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/mock/callback"
+				},
+				{
+					"build" : "cobolt/codegen_mock_debug",
+					"jsonFile" : "directory-cobolt.codegen_mock_debug-Debug-2ae7d0228e13375fd583.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/mock/debug"
+				},
+				{
+					"build" : "cobolt/codegen_test",
+					"jsonFile" : "directory-cobolt.codegen_test-Debug-f3b9d174645585c01e9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/mock/legacy"
+				},
+				{
+					"build" : "conf/package",
+					"jsonFile" : "directory-conf.package-Debug-eee30e1dba34332e710a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "conf/package"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					],
+					"name" : "mf_sil",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-dfe6836e468df2b471df.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CarMaker.win64::@63a4a0152aac854526a0",
+					"jsonFile" : "target-CarMaker.win64-Debug-f2137137ef075943f6b4.json",
+					"name" : "CarMaker.win64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DOCUMENTATION::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DOCUMENTATION-Debug-61d9c3d095638576c3e2.json",
+					"name" : "DOCUMENTATION",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DOCUMENTATION_mf_sil::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DOCUMENTATION_mf_sil-Debug-833291b43d73379525f6.json",
+					"name" : "DOCUMENTATION_mf_sil",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PACKAGE_INFO::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PACKAGE_INFO-Debug-639df38a0ce8624a6130.json",
+					"name" : "PACKAGE_INFO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TARGET_COMPONENT::@63a4a0152aac854526a0",
+					"jsonFile" : "target-TARGET_COMPONENT-Debug-5e81f45ffd09471d98c7.json",
+					"name" : "TARGET_COMPONENT",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-4edbddfeada3ebfabfd8.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ap_wrapper::@63a4a0152aac854526a0",
+					"jsonFile" : "target-ap_wrapper-Debug-f611837cb40cf72196d9.json",
+					"name" : "ap_wrapper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/FFL_Closed_loop/mf_sil/conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643",
+		"source" : "D:/FFL_Closed_loop/mf_sil"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.ap_trjctl.fc_trjctl_sys_func_params;
+
+message FC_TRJCTL_Sys_Func_Params{
+  optional float AP_G_MAX_AVG_LAT_ACCEL_MPS2 = 3206;
+  optional float AP_G_MAX_AVG_YAW_RATE_RADPS = 3299;
+}
+
+message FC_TRJCTL_Sys_Func_Params_array_port{
+   repeated pb.ap_trjctl.fc_trjctl_sys_func_params.FC_TRJCTL_Sys_Func_Params data = 2046;
+}

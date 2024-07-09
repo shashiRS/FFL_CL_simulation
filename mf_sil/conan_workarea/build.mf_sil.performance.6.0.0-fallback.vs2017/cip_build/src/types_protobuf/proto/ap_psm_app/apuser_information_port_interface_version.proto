@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_psm_app.apuser_information_port_interface_version;
+
+message APUserInformationPort_InterfaceVersion{
+  optional uint32 APUserInformationPort_VERSION = 1585;
+}
+
+message APUserInformationPort_InterfaceVersion_array_port{
+   repeated pb.ap_psm_app.apuser_information_port_interface_version.APUserInformationPort_InterfaceVersion data = 472;
+}

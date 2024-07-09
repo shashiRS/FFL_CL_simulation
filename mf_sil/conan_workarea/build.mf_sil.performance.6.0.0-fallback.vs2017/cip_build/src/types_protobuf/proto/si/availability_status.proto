@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.si.availability_status;
+
+enum AvailabilityStatus {
+  ITEM_IN_DEGREADED_STATE = 0;
+  ITEM_IN_ERROR_STATE = 1;
+  ITEM_NOT_AVAILABLE = 2;
+  ITEM_AVAILABLE = 3;
+  MAX_NUM_AVAILABILITY_STATES = 4;
+}

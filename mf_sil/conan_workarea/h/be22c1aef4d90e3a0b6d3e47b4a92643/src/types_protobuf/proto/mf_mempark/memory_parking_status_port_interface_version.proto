@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_mempark.memory_parking_status_port_interface_version;
+
+message MemoryParkingStatusPort_InterfaceVersion{
+  optional uint32 MemoryParkingStatusPort_VERSION = 3811;
+}
+
+message MemoryParkingStatusPort_InterfaceVersion_array_port{
+   repeated pb.mf_mempark.memory_parking_status_port_interface_version.MemoryParkingStatusPort_InterfaceVersion data = 2340;
+}

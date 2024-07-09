@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package pb.mf_manager.lo_ctrl_request_source;
+
+enum loCtrlRequestSource {
+  LODMC_REQ_SRC_NO_REQEUESTER = 0;
+  LODMC_REQ_SRC_AUP = 1;
+  LODMC_REQ_SRC_AUP_WITH_REMOTE = 6;
+  LODMC_REQ_SRC_LSCA = 2;
+  LODMC_REQ_SRC_REMOTE_MANEUVERING = 3;
+  LODMC_REQ_SRC_MSP = 4;
+  LODMC_REQ_SRC_SAFBAR = 5;
+}

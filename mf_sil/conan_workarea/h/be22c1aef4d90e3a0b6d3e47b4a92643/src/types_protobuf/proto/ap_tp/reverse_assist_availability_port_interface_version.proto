@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.reverse_assist_availability_port_interface_version;
+
+message ReverseAssistAvailabilityPort_InterfaceVersion{
+  optional uint32 ReverseAssistAvailabilityPort_VERSION = 1445;
+}
+
+message ReverseAssistAvailabilityPort_InterfaceVersion_array_port{
+   repeated pb.ap_tp.reverse_assist_availability_port_interface_version.ReverseAssistAvailabilityPort_InterfaceVersion data = 2730;
+}

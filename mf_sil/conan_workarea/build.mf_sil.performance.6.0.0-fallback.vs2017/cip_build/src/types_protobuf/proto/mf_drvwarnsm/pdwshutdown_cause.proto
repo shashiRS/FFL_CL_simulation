@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.mf_drvwarnsm.pdwshutdown_cause;
+
+enum PDWShutdownCause {
+  PDW_NONE_SYS_ACTIVE = 0;
+  PDW_SHUTDOWN_BY_BUTTON = 1;
+  PDW_SHUTDOWN_BY_DISENGAGED_R_GEAR = 2;
+  PDW_SHUTDOWN_BY_SPEED = 3;
+}

@@ -1,0 +1,28 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_commonvehsigprovider/gpsdata.proto";
+import "lsm_geoml/pose_pod.proto";
+import "mf_mempark/system_defined_pose_side.proto";
+import "mf_mempark/system_defined_pose_type.proto";
+import "mf_mempark/slot_meta_data.proto";
+
+package pb.mf_mempark.parking_slot;
+
+message ParkingSlot{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 slotID = 208;
+  optional pb.ap_commonvehsigprovider.gpsdata.GPSData slotGNSS = 1442;
+  optional pb.lsm_geoml.pose_pod.Pose_POD slotPose = 767;
+  optional pb.lsm_geoml.pose_pod.Pose_POD startPose = 3278;
+  optional pb.mf_mempark.system_defined_pose_side.SystemDefinedPoseSide slotSide = 2042;
+  optional pb.mf_mempark.system_defined_pose_type.SystemDefinedPoseType slotType = 3592;
+  optional uint32 correspondingMapId = 3720;
+  optional pb.mf_mempark.slot_meta_data.SlotMetaData metaData = 1876;
+}
+
+message ParkingSlot_array_port{
+   repeated pb.mf_mempark.parking_slot.ParkingSlot data = 3870;
+}

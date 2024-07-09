@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "mf_mempark/mem_park_date_t.proto";
+
+package pb.mf_mempark.trajectory_meta_data;
+
+message TrajectoryMetaData{
+  optional pb.mf_mempark.mem_park_date_t.MemParkDate_t trajectorySaveDate = 1601;
+  optional uint32 egoVehicle = 645;
+}
+
+message TrajectoryMetaData_array_port{
+   repeated pb.mf_mempark.trajectory_meta_data.TrajectoryMetaData data = 2587;
+}

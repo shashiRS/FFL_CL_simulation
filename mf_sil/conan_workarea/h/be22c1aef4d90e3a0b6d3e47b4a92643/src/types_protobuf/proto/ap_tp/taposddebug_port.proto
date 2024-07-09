@@ -1,0 +1,25 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_tp/parking_box_debug_info.proto";
+import "ap_tp/pose_box_dataset.proto";
+
+package pb.ap_tp.taposddebug_port;
+
+message TAPOSDDebugPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated pb.ap_tp.parking_box_debug_info.ParkingBoxDebugInfo pbDebugBackwards = 1098;
+  repeated pb.ap_tp.parking_box_debug_info.ParkingBoxDebugInfo pbDebugForwards = 2491;
+  optional pb.ap_tp.pose_box_dataset.PoseBoxDataset poseBoxDataset = 3459;
+  optional float latDistToTarget_m = 2823;
+  optional float longDistToTarget_m = 1867;
+  optional float yawDiffToTarget_rad = 3903;
+  repeated sint32 debugInt = 1230;
+  repeated float debugFloat = 2041;
+}
+
+message TAPOSDDebugPort_array_port{
+   repeated pb.ap_tp.taposddebug_port.TAPOSDDebugPort data = 4076;
+}

@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.absstate;
+
+enum ABSState {
+  ABS_INACTIVE = 0;
+  ABS_ACTIVE = 1;
+  ABS_ERROR = 2;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_whlprotectproc.whpconstants;
+
+message WHPConstants{
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_WHPP = 245;
+}
+
+message WHPConstants_array_port{
+   repeated pb.mf_whlprotectproc.whpconstants.WHPConstants data = 3185;
+}

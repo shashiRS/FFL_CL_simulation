@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package pb.ap_tp.pose_reachable_status;
+
+enum PoseReachableStatus {
+  TP_NOT_VALID = 0;
+  TP_NOT_REACHABLE = 1;
+  TP_FULLY_REACHABLE = 2;
+  TP_SAFE_ZONE_REACHABLE = 3;
+  TP_MANUAL_FWD_REACHABLE = 4;
+  TP_MANUAL_BWD_REACHABLE = 5;
+  MAX_NUM_POSE_REACHABLE_STATUS = 6;
+}

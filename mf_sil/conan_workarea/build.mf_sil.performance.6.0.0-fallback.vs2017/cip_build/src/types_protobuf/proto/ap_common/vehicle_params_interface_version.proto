@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_common.vehicle_params_interface_version;
+
+message Vehicle_Params_InterfaceVersion{
+  optional uint32 Vehicle_Params_VERSION = 3167;
+}
+
+message Vehicle_Params_InterfaceVersion_array_port{
+   repeated pb.ap_common.vehicle_params_interface_version.Vehicle_Params_InterfaceVersion data = 1890;
+}

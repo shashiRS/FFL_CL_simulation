@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_params_interface_version;
+
+message UsEmParams_InterfaceVersion{
+  optional uint32 UsEmParams_VERSION = 3695;
+}
+
+message UsEmParams_InterfaceVersion_array_port{
+   repeated pb.us_em.us_em_params_interface_version.UsEmParams_InterfaceVersion data = 1414;
+}

@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.possible_direction;
+
+enum PossibleDirection {
+  POSS_DIR_ONE_DIRECTION = 0;
+  POSS_DIR_BOTH_DIRECTIONS = 1;
+}

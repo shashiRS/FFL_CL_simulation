@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hucurrent_feature_state;
+
+enum HUCurrentFeatureState {
+  NOT_USED = 0;
+  NO_FEATURE_ACTIVE = 1;
+  PRE_CONDITION_NOT_MET = 2;
+  PARK_IN = 3;
+  PARK_OUT = 4;
+  GARAGE_PARK_IN = 5;
+  SVS = 6;
+  REVERSE_ASSIST = 7;
+}

@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.mf_lsca.lsca_state;
+
+enum LSCA_STATE {
+  LSCA_STATE_DEACTIVATED = 0;
+  LSCA_STATE_ACTIVATED = 1;
+  LSCA_STATE_INTERVENTION = 2;
+  LSCA_STATE_ERROR = 3;
+}

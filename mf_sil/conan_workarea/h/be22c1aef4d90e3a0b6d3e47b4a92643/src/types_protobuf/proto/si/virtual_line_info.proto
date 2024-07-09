@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.si.virtual_line_info;
+
+message VirtualLineInfo{
+  optional uint32 parkingSlotId_nu = 2350;
+  optional uint32 delimiterId_nu = 1837;
+  optional uint32 staticStructureId_nu = 2899;
+  optional uint32 virtualLineId_nu = 3324;
+  optional uint32 startVertex_nu = 2870;
+  optional uint32 endVertex_nu = 3487;
+}
+
+message VirtualLineInfo_array_port{
+   repeated pb.si.virtual_line_info.VirtualLineInfo data = 470;
+}

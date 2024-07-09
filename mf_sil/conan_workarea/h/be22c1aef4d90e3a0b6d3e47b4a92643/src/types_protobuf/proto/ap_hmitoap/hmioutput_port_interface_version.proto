@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_hmitoap.hmioutput_port_interface_version;
+
+message HMIOutputPort_InterfaceVersion{
+  optional uint32 HMIOutputPort_VERSION = 1113;
+}
+
+message HMIOutputPort_InterfaceVersion_array_port{
+   repeated pb.ap_hmitoap.hmioutput_port_interface_version.HMIOutputPort_InterfaceVersion data = 3611;
+}

@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_vertex;
+
+message UsProcessingVertex{
+  optional float posX_m = 287;
+  optional float posY_m = 1583;
+  optional float posXVar_m = 38;
+  optional float posYVar_m = 1414;
+}
+
+message UsProcessingVertex_array_port{
+   repeated pb.us_processing.us_processing_vertex.UsProcessingVertex data = 1893;
+}

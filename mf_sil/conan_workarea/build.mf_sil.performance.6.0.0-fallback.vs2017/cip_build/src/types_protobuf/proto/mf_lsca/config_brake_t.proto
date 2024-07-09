@@ -1,0 +1,64 @@
+
+syntax = "proto2";
+
+import "mf_lsca/brake_set_t.proto";
+import "cml/vec2_df_pod.proto";
+
+package pb.mf_lsca.config_brake_t;
+
+message configBrake_t{
+  optional pb.mf_lsca.brake_set_t.brakeSet_t brakeModel = 1669;
+  optional uint32 bodyAdjustmentActualSize_nu = 1782;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD bodyAdjustment = 675;
+  optional uint32 protectedMirrorShapeLeftActualSize_nu = 2581;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD protectedMirrorShapeLeft = 1271;
+  optional uint32 protectedMirrorShapeRightActualSize_nu = 1049;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD protectedMirrorShapeRight = 3569;
+  optional float enlargementFront_m = 3610;
+  optional float enlargementRear_m = 1339;
+  optional float enlargementSide_m = 262;
+  optional float warnTime_s = 170;
+  optional float lowerActivationSpeedForwards_ms = 1858;
+  optional float upperActivationSpeedForwards_ms = 3994;
+  optional float lowerDeactivationSpeedForwards_ms = 885;
+  optional float upperDeactivationSpeedForwards_ms = 1789;
+  optional float lowerActivationSpeedBackwards_ms = 2600;
+  optional float upperActivationSpeedBackwards_ms = 2668;
+  optional float lowerDeactivationSpeedBackwards_ms = 827;
+  optional float upperDeactivationSpeedBackwards_ms = 227;
+  optional float maximumOverrideDistance_m = 611;
+  optional float autoContinueOverrideDistance_m = 840;
+  optional float marginDelay_s = 663;
+  optional float standStillTime_s = 3330;
+  optional float ignoreTrailerX_m = 3508;
+  optional float rimProtectionSpeed_mps = 1451;
+  optional float rimProtectionAngle_deg = 357;
+  optional uint32 minTriggerCountStaticBrake_nu = 2944;
+  optional uint32 minHeightConfidence_perc = 1297;
+  optional uint32 minClassConfidence_perc = 1041;
+  optional uint32 minStaticObjectProbability_perc = 3245;
+  optional bool protectBody_nu = 964;
+  optional bool protectWheel_nu = 781;
+  optional bool protectRim_nu = 5;
+  optional bool protectMirror_nu = 1005;
+  optional bool protectHitch_nu = 1866;
+  optional bool comfortInManual_nu = 2766;
+  optional bool autoContinue_nu = 1844;
+  optional bool warnHigh_nu = 2879;
+  optional bool warnLow_nu = 536;
+  optional bool enableBrakeLow_nu = 1003;
+  optional bool enableBrakeHigh_nu = 2983;
+  optional bool drivingTubeEnabled_nu = 2003;
+  optional bool checkDoors_nu = 2707;
+  optional bool checkDriverSeatbelt_nu = 1677;
+  optional bool checkTrunk_nu = 1989;
+  optional bool forwardBrakeEnabledIfTrunkOpen_nu = 312;
+  optional bool checkHood_nu = 360;
+  optional bool checkPedalOverrideGas_nu = 2733;
+  optional bool checkPedalOverrideBrake_nu = 3222;
+  optional bool checkDriverSeatOccupied_nu = 3025;
+}
+
+message configBrake_t_array_port{
+   repeated pb.mf_lsca.config_brake_t.configBrake_t data = 3940;
+}

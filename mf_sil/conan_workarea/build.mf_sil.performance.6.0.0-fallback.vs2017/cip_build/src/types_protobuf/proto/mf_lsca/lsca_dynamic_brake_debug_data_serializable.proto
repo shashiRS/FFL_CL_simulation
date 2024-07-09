@@ -1,0 +1,22 @@
+
+syntax = "proto2";
+
+import "mf_lsca/lsca_dynamic_object_list_brake_serializable.proto";
+import "mf_lsca/lsca_dynamic_object_prediction_list_brake_serializable.proto";
+import "mf_lsca/lsca_ego_dynamic_roi_shape_serializable.proto";
+import "mf_lsca/lsca_ego_simple_body_shape_serializable.proto";
+
+package pb.mf_lsca.lsca_dynamic_brake_debug_data_serializable;
+
+message LscaDynamicBrakeDebugDataSerializable{
+  optional pb.mf_lsca.lsca_dynamic_object_list_brake_serializable.LscaDynamicObjectListBrakeSerializable currentPositions = 3687;
+  optional pb.mf_lsca.lsca_dynamic_object_list_brake_serializable.LscaDynamicObjectListBrakeSerializable endPositions = 1246;
+  optional pb.mf_lsca.lsca_dynamic_object_list_brake_serializable.LscaDynamicObjectListBrakeSerializable collisionMomentPositions = 5;
+  optional pb.mf_lsca.lsca_dynamic_object_prediction_list_brake_serializable.LscaDynamicObjectPredictionListBrakeSerializable objectRois = 431;
+  optional pb.mf_lsca.lsca_ego_dynamic_roi_shape_serializable.LscaEgoDynamicRoiShapeSerializable roi = 3794;
+  optional pb.mf_lsca.lsca_ego_simple_body_shape_serializable.LscaEgoSimpleBodyShapeSerializable bodyShape = 783;
+}
+
+message LscaDynamicBrakeDebugDataSerializable_array_port{
+   repeated pb.mf_lsca.lsca_dynamic_brake_debug_data_serializable.LscaDynamicBrakeDebugDataSerializable data = 3584;
+}

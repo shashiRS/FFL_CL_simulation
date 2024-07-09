@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_debug_output_port_interface_version;
+
+message UsEmDebugOutputPort_InterfaceVersion{
+  optional uint32 UsEmDebugOutputPort_VERSION = 3492;
+}
+
+message UsEmDebugOutputPort_InterfaceVersion_array_port{
+   repeated pb.us_em.us_em_debug_output_port_interface_version.UsEmDebugOutputPort_InterfaceVersion data = 1460;
+}

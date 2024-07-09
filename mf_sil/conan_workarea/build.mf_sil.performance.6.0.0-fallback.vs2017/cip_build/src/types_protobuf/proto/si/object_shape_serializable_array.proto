@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/object_shape_serializable.proto";
+
+package pb.si.object_shape_serializable_array;
+
+message ObjectShapeSerializableArray{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.object_shape_serializable.ObjectShapeSerializable array = 643;
+}
+
+message ObjectShapeSerializableArray_array_port{
+   repeated pb.si.object_shape_serializable_array.ObjectShapeSerializableArray data = 3192;
+}

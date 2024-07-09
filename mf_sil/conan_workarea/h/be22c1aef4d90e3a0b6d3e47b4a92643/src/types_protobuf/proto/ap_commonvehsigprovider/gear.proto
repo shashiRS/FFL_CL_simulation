@@ -1,0 +1,23 @@
+
+syntax = "proto2";
+
+package pb.ap_commonvehsigprovider.gear;
+
+enum Gear {
+  GEAR_N = 0;
+  GEAR_1 = 1;
+  GEAR_2 = 2;
+  GEAR_3 = 3;
+  GEAR_4 = 4;
+  GEAR_5 = 5;
+  GEAR_6 = 6;
+  GEAR_7 = 7;
+  GEAR_8 = 8;
+  GEAR_P = 9;
+  GEAR_S = 10;
+  GEAR_D = 11;
+  GEAR_INTERMEDIATE_POS = 12;
+  GEAR_R = 13;
+  GEAR_NOT_DEFINED = 14;
+  GEAR_ERROR = 15;
+}

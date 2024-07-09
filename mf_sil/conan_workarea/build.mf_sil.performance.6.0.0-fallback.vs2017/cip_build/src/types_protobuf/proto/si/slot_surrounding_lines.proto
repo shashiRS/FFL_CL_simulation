@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "si/line_segment_serializable.proto";
+
+package pb.si.slot_surrounding_lines;
+
+message SlotSurroundingLines{
+  optional pb.si.line_segment_serializable.LineSegmentSerializable leftLine = 1956;
+  optional pb.si.line_segment_serializable.LineSegmentSerializable rightLine = 3663;
+  optional pb.si.line_segment_serializable.LineSegmentSerializable roadLine = 2900;
+  optional pb.si.line_segment_serializable.LineSegmentSerializable curbLine = 3303;
+}
+
+message SlotSurroundingLines_array_port{
+   repeated pb.si.slot_surrounding_lines.SlotSurroundingLines data = 2725;
+}

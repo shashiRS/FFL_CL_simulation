@@ -1,0 +1,770 @@
+{
+    "all": [
+        {
+            "key": "adas_platforms.generic",
+            "path": "D:/.bbs_conan/28fe39/1"
+        },
+        {
+            "key": "appdemo_drvwarnsm.cus_only",
+            "path": "D:/.bbs_conan/8e961b/1"
+        },
+        {
+            "key": "appdemo_drvwarnsm_types.generic",
+            "path": "D:/.bbs_conan/90cb95/1"
+        },
+        {
+            "key": "appdemo_hmih.cus_only",
+            "path": "D:/.bbs_conan/6bb422/1"
+        },
+        {
+            "key": "appdemo_hmih_types.cus_only",
+            "path": "D:/.bbs_conan/7a2262/1"
+        },
+        {
+            "key": "appdemo_parksm.cus_only",
+            "path": "D:/.bbs_conan/b60548/1"
+        },
+        {
+            "key": "appdemo_parksm_types.cus_only",
+            "path": "D:/.bbs_conan/7e3b03/1"
+        },
+        {
+            "key": "appdemo_tonh.cus_only",
+            "path": "D:/.bbs_conan/ec48d2/1"
+        },
+        {
+            "key": "appdemo_tonh_types.generic",
+            "path": "D:/.bbs_conan/986724/1"
+        },
+        {
+            "key": "appl_srv_layer_types.generic",
+            "path": "D:/.bbs_conan/388cda/1"
+        },
+        {
+            "key": "avga_swc.cus_only",
+            "path": "D:/.bbs_conan/7143b1/1"
+        },
+        {
+            "key": "avga_swc_types.generic",
+            "path": "D:/.bbs_conan/d32790/1"
+        },
+        {
+            "key": "bricks_cmake_checks.__system",
+            "path": "D:/.bbs_conan/c77abb/1"
+        },
+        {
+            "key": "bricks_cmake_core.__system",
+            "path": "D:/.bbs_conan/94a71d/1"
+        },
+        {
+            "key": "bricks_cmake_groups.__system",
+            "path": "D:/.bbs_conan/33193c/1"
+        },
+        {
+            "key": "carmaker_build_dep",
+            "path": "D:/.bbs_conan/c3aba2/1"
+        },
+        {
+            "key": "cip_build_system_platforms.__system",
+            "path": "D:/.bbs_conan/43c208/1"
+        },
+        {
+            "key": "cmake",
+            "path": "D:/.bbs_conan/1e35b5/1"
+        },
+        {
+            "key": "dmc_types.generic",
+            "path": "D:/.bbs_conan/5d0049/1"
+        },
+        {
+            "key": "eco.generic",
+            "path": "D:/.bbs_conan/c029a0/1"
+        },
+        {
+            "key": "geoml.generic",
+            "path": "D:/.bbs_conan/57783c/1"
+        },
+        {
+            "key": "jsoncpp.generic",
+            "path": "D:/.bbs_conan/86a2a6/1"
+        },
+        {
+            "key": "make",
+            "path": "D:/.bbs_conan/ed40e4/1"
+        },
+        {
+            "key": "mf_common.cus_only",
+            "path": "D:/.bbs_conan/98d06f/1"
+        },
+        {
+            "key": "mf_common_types.cus_only",
+            "path": "D:/.bbs_conan/a327d1/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core.cus_only",
+            "path": "D:/.bbs_conan/b2dfb9/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core_types.cus_only",
+            "path": "D:/.bbs_conan/9e16b7/1"
+        },
+        {
+            "key": "mf_lsca.cus_only",
+            "path": "D:/.bbs_conan/6676fd/1"
+        },
+        {
+            "key": "mf_lsca_types.cus_only",
+            "path": "D:/.bbs_conan/509a7a/1"
+        },
+        {
+            "key": "mf_lvmd_types.generic",
+            "path": "D:/.bbs_conan/69f023/1"
+        },
+        {
+            "key": "mf_manager.cus_only",
+            "path": "D:/.bbs_conan/4d323d/1"
+        },
+        {
+            "key": "mf_manager_types.generic",
+            "path": "D:/.bbs_conan/f84ef4/1"
+        },
+        {
+            "key": "mf_memory_parking_types.generic",
+            "path": "D:/.bbs_conan/b19af5/1"
+        },
+        {
+            "key": "mf_parksm_core.cus_only",
+            "path": "D:/.bbs_conan/46cf33/1"
+        },
+        {
+            "key": "mf_parksm_core_types.generic",
+            "path": "D:/.bbs_conan/107d41/1"
+        },
+        {
+            "key": "mf_pdwarnproc.cus_only",
+            "path": "D:/.bbs_conan/110f7b/1"
+        },
+        {
+            "key": "mf_pdwarnproc_types.generic",
+            "path": "D:/.bbs_conan/327338/1"
+        },
+        {
+            "key": "mf_plot.cus_only",
+            "path": "D:/.bbs_conan/d0a5c3/1"
+        },
+        {
+            "key": "mf_taposd.cus_only",
+            "path": "D:/.bbs_conan/570adc/1"
+        },
+        {
+            "key": "mf_trjctl.cus_only",
+            "path": "D:/.bbs_conan/482479/1"
+        },
+        {
+            "key": "mf_trjctl_types.generic",
+            "path": "D:/.bbs_conan/0d4361/1"
+        },
+        {
+            "key": "mf_trjpla.cus_only",
+            "path": "D:/.bbs_conan/28f71c/1"
+        },
+        {
+            "key": "mf_trjpla_types.cus_only",
+            "path": "D:/.bbs_conan/563a8a/1"
+        },
+        {
+            "key": "mf_vedodo.cus_only",
+            "path": "D:/.bbs_conan/61b547/1"
+        },
+        {
+            "key": "mf_vedodo_types.generic",
+            "path": "D:/.bbs_conan/2f5451/1"
+        },
+        {
+            "key": "mf_whlprotectproc.cus_only",
+            "path": "D:/.bbs_conan/05c5de/1"
+        },
+        {
+            "key": "mf_whlprotectproc_types.generic",
+            "path": "D:/.bbs_conan/0b0c71/1"
+        },
+        {
+            "key": "parking_hmi_types.generic",
+            "path": "D:/.bbs_conan/17675f/1"
+        },
+        {
+            "key": "plp_hpsd_types.generic",
+            "path": "D:/.bbs_conan/c1028e/1"
+        },
+        {
+            "key": "plp_log.generic",
+            "path": "D:/.bbs_conan/7321b6/1"
+        },
+        {
+            "key": "protobuf",
+            "path": "D:/.bbs_conan/fb64d9/1"
+        },
+        {
+            "key": "relocalization_types.generic",
+            "path": "D:/.bbs_conan/416f46/1"
+        },
+        {
+            "key": "si_core.cus_only",
+            "path": "D:/.bbs_conan/f7ff21/1"
+        },
+        {
+            "key": "si_types.cus_only",
+            "path": "D:/.bbs_conan/ba3e12/1"
+        },
+        {
+            "key": "tce.cus_only",
+            "path": "D:/.bbs_conan/5408c8/1"
+        },
+        {
+            "key": "tce_types.generic",
+            "path": "D:/.bbs_conan/48db9d/1"
+        },
+        {
+            "key": "us_drv_types.generic",
+            "path": "D:/.bbs_conan/48c906/1"
+        },
+        {
+            "key": "us_em.generic",
+            "path": "D:/.bbs_conan/016fe0/1"
+        },
+        {
+            "key": "us_em_types.generic",
+            "path": "D:/.bbs_conan/65cc1b/1"
+        },
+        {
+            "key": "us_processing.cus_only",
+            "path": "D:/.bbs_conan/3511c8/1"
+        },
+        {
+            "key": "us_processing_types.cus_only",
+            "path": "D:/.bbs_conan/e60f01/1"
+        },
+        {
+            "key": "vehicle_types.generic",
+            "path": "D:/.bbs_conan/db9c90/1"
+        },
+        {
+            "key": "viewcontroller_types.cus_only",
+            "path": "D:/.bbs_conan/a49663/1"
+        }
+    ],
+    "build": [
+        {
+            "key": "adas_platforms.generic",
+            "path": "D:/.bbs_conan/28fe39/1"
+        },
+        {
+            "key": "appl_srv_layer_types.generic",
+            "path": "D:/.bbs_conan/388cda/1"
+        },
+        {
+            "key": "bricks_cmake_checks.__system",
+            "path": "D:/.bbs_conan/c77abb/1"
+        },
+        {
+            "key": "bricks_cmake_core.__system",
+            "path": "D:/.bbs_conan/94a71d/1"
+        },
+        {
+            "key": "bricks_cmake_groups.__system",
+            "path": "D:/.bbs_conan/33193c/1"
+        },
+        {
+            "key": "carmaker_build_dep",
+            "path": "D:/.bbs_conan/c3aba2/1"
+        },
+        {
+            "key": "cip_build_system_platforms.__system",
+            "path": "D:/.bbs_conan/43c208/1"
+        },
+        {
+            "key": "cmake",
+            "path": "D:/.bbs_conan/1e35b5/1"
+        },
+        {
+            "key": "jsoncpp.generic",
+            "path": "D:/.bbs_conan/86a2a6/1"
+        },
+        {
+            "key": "make",
+            "path": "D:/.bbs_conan/ed40e4/1"
+        },
+        {
+            "key": "protobuf",
+            "path": "D:/.bbs_conan/fb64d9/1"
+        }
+    ],
+    "deploy": [
+        {
+            "key": "appdemo_drvwarnsm.cus_only",
+            "path": "D:/.bbs_conan/8e961b/1"
+        },
+        {
+            "key": "appdemo_drvwarnsm_types.generic",
+            "path": "D:/.bbs_conan/90cb95/1"
+        },
+        {
+            "key": "appdemo_hmih.cus_only",
+            "path": "D:/.bbs_conan/6bb422/1"
+        },
+        {
+            "key": "appdemo_hmih_types.cus_only",
+            "path": "D:/.bbs_conan/7a2262/1"
+        },
+        {
+            "key": "appdemo_parksm.cus_only",
+            "path": "D:/.bbs_conan/b60548/1"
+        },
+        {
+            "key": "appdemo_parksm_types.cus_only",
+            "path": "D:/.bbs_conan/7e3b03/1"
+        },
+        {
+            "key": "appdemo_tonh.cus_only",
+            "path": "D:/.bbs_conan/ec48d2/1"
+        },
+        {
+            "key": "appdemo_tonh_types.generic",
+            "path": "D:/.bbs_conan/986724/1"
+        },
+        {
+            "key": "avga_swc.cus_only",
+            "path": "D:/.bbs_conan/7143b1/1"
+        },
+        {
+            "key": "avga_swc_types.generic",
+            "path": "D:/.bbs_conan/d32790/1"
+        },
+        {
+            "key": "dmc_types.generic",
+            "path": "D:/.bbs_conan/5d0049/1"
+        },
+        {
+            "key": "eco.generic",
+            "path": "D:/.bbs_conan/c029a0/1"
+        },
+        {
+            "key": "geoml.generic",
+            "path": "D:/.bbs_conan/57783c/1"
+        },
+        {
+            "key": "mf_common.cus_only",
+            "path": "D:/.bbs_conan/98d06f/1"
+        },
+        {
+            "key": "mf_common_types.cus_only",
+            "path": "D:/.bbs_conan/a327d1/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core.cus_only",
+            "path": "D:/.bbs_conan/b2dfb9/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core_types.cus_only",
+            "path": "D:/.bbs_conan/9e16b7/1"
+        },
+        {
+            "key": "mf_lsca.cus_only",
+            "path": "D:/.bbs_conan/6676fd/1"
+        },
+        {
+            "key": "mf_lsca_types.cus_only",
+            "path": "D:/.bbs_conan/509a7a/1"
+        },
+        {
+            "key": "mf_lvmd_types.generic",
+            "path": "D:/.bbs_conan/69f023/1"
+        },
+        {
+            "key": "mf_manager.cus_only",
+            "path": "D:/.bbs_conan/4d323d/1"
+        },
+        {
+            "key": "mf_manager_types.generic",
+            "path": "D:/.bbs_conan/f84ef4/1"
+        },
+        {
+            "key": "mf_memory_parking_types.generic",
+            "path": "D:/.bbs_conan/b19af5/1"
+        },
+        {
+            "key": "mf_parksm_core.cus_only",
+            "path": "D:/.bbs_conan/46cf33/1"
+        },
+        {
+            "key": "mf_parksm_core_types.generic",
+            "path": "D:/.bbs_conan/107d41/1"
+        },
+        {
+            "key": "mf_pdwarnproc.cus_only",
+            "path": "D:/.bbs_conan/110f7b/1"
+        },
+        {
+            "key": "mf_pdwarnproc_types.generic",
+            "path": "D:/.bbs_conan/327338/1"
+        },
+        {
+            "key": "mf_plot.cus_only",
+            "path": "D:/.bbs_conan/d0a5c3/1"
+        },
+        {
+            "key": "mf_taposd.cus_only",
+            "path": "D:/.bbs_conan/570adc/1"
+        },
+        {
+            "key": "mf_trjctl.cus_only",
+            "path": "D:/.bbs_conan/482479/1"
+        },
+        {
+            "key": "mf_trjctl_types.generic",
+            "path": "D:/.bbs_conan/0d4361/1"
+        },
+        {
+            "key": "mf_trjpla.cus_only",
+            "path": "D:/.bbs_conan/28f71c/1"
+        },
+        {
+            "key": "mf_trjpla_types.cus_only",
+            "path": "D:/.bbs_conan/563a8a/1"
+        },
+        {
+            "key": "mf_vedodo.cus_only",
+            "path": "D:/.bbs_conan/61b547/1"
+        },
+        {
+            "key": "mf_vedodo_types.generic",
+            "path": "D:/.bbs_conan/2f5451/1"
+        },
+        {
+            "key": "mf_whlprotectproc.cus_only",
+            "path": "D:/.bbs_conan/05c5de/1"
+        },
+        {
+            "key": "mf_whlprotectproc_types.generic",
+            "path": "D:/.bbs_conan/0b0c71/1"
+        },
+        {
+            "key": "parking_hmi_types.generic",
+            "path": "D:/.bbs_conan/17675f/1"
+        },
+        {
+            "key": "plp_hpsd_types.generic",
+            "path": "D:/.bbs_conan/c1028e/1"
+        },
+        {
+            "key": "plp_log.generic",
+            "path": "D:/.bbs_conan/7321b6/1"
+        },
+        {
+            "key": "relocalization_types.generic",
+            "path": "D:/.bbs_conan/416f46/1"
+        },
+        {
+            "key": "si_core.cus_only",
+            "path": "D:/.bbs_conan/f7ff21/1"
+        },
+        {
+            "key": "si_types.cus_only",
+            "path": "D:/.bbs_conan/ba3e12/1"
+        },
+        {
+            "key": "tce.cus_only",
+            "path": "D:/.bbs_conan/5408c8/1"
+        },
+        {
+            "key": "tce_types.generic",
+            "path": "D:/.bbs_conan/48db9d/1"
+        },
+        {
+            "key": "us_drv_types.generic",
+            "path": "D:/.bbs_conan/48c906/1"
+        },
+        {
+            "key": "us_em.generic",
+            "path": "D:/.bbs_conan/016fe0/1"
+        },
+        {
+            "key": "us_em_types.generic",
+            "path": "D:/.bbs_conan/65cc1b/1"
+        },
+        {
+            "key": "us_processing.cus_only",
+            "path": "D:/.bbs_conan/3511c8/1"
+        },
+        {
+            "key": "us_processing_types.cus_only",
+            "path": "D:/.bbs_conan/e60f01/1"
+        },
+        {
+            "key": "vehicle_types.generic",
+            "path": "D:/.bbs_conan/db9c90/1"
+        },
+        {
+            "key": "viewcontroller_types.cus_only",
+            "path": "D:/.bbs_conan/a49663/1"
+        }
+    ],
+    "platform": [
+        {
+            "key": "cip_build_system_platforms.__system",
+            "path": "D:/.bbs_conan/43c208/1"
+        }
+    ],
+    "production": [
+        {
+            "key": "adas_platforms.generic",
+            "path": "D:/.bbs_conan/28fe39/1"
+        },
+        {
+            "key": "appdemo_drvwarnsm.cus_only",
+            "path": "D:/.bbs_conan/8e961b/1"
+        },
+        {
+            "key": "appdemo_drvwarnsm_types.generic",
+            "path": "D:/.bbs_conan/90cb95/1"
+        },
+        {
+            "key": "appdemo_hmih.cus_only",
+            "path": "D:/.bbs_conan/6bb422/1"
+        },
+        {
+            "key": "appdemo_hmih_types.cus_only",
+            "path": "D:/.bbs_conan/7a2262/1"
+        },
+        {
+            "key": "appdemo_parksm.cus_only",
+            "path": "D:/.bbs_conan/b60548/1"
+        },
+        {
+            "key": "appdemo_parksm_types.cus_only",
+            "path": "D:/.bbs_conan/7e3b03/1"
+        },
+        {
+            "key": "appdemo_tonh.cus_only",
+            "path": "D:/.bbs_conan/ec48d2/1"
+        },
+        {
+            "key": "appdemo_tonh_types.generic",
+            "path": "D:/.bbs_conan/986724/1"
+        },
+        {
+            "key": "appl_srv_layer_types.generic",
+            "path": "D:/.bbs_conan/388cda/1"
+        },
+        {
+            "key": "avga_swc.cus_only",
+            "path": "D:/.bbs_conan/7143b1/1"
+        },
+        {
+            "key": "avga_swc_types.generic",
+            "path": "D:/.bbs_conan/d32790/1"
+        },
+        {
+            "key": "carmaker_build_dep",
+            "path": "D:/.bbs_conan/c3aba2/1"
+        },
+        {
+            "key": "cmake",
+            "path": "D:/.bbs_conan/1e35b5/1"
+        },
+        {
+            "key": "dmc_types.generic",
+            "path": "D:/.bbs_conan/5d0049/1"
+        },
+        {
+            "key": "eco.generic",
+            "path": "D:/.bbs_conan/c029a0/1"
+        },
+        {
+            "key": "geoml.generic",
+            "path": "D:/.bbs_conan/57783c/1"
+        },
+        {
+            "key": "jsoncpp.generic",
+            "path": "D:/.bbs_conan/86a2a6/1"
+        },
+        {
+            "key": "make",
+            "path": "D:/.bbs_conan/ed40e4/1"
+        },
+        {
+            "key": "mf_common.cus_only",
+            "path": "D:/.bbs_conan/98d06f/1"
+        },
+        {
+            "key": "mf_common_types.cus_only",
+            "path": "D:/.bbs_conan/a327d1/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core.cus_only",
+            "path": "D:/.bbs_conan/b2dfb9/1"
+        },
+        {
+            "key": "mf_drvwarnsm_core_types.cus_only",
+            "path": "D:/.bbs_conan/9e16b7/1"
+        },
+        {
+            "key": "mf_lsca.cus_only",
+            "path": "D:/.bbs_conan/6676fd/1"
+        },
+        {
+            "key": "mf_lsca_types.cus_only",
+            "path": "D:/.bbs_conan/509a7a/1"
+        },
+        {
+            "key": "mf_lvmd_types.generic",
+            "path": "D:/.bbs_conan/69f023/1"
+        },
+        {
+            "key": "mf_manager.cus_only",
+            "path": "D:/.bbs_conan/4d323d/1"
+        },
+        {
+            "key": "mf_manager_types.generic",
+            "path": "D:/.bbs_conan/f84ef4/1"
+        },
+        {
+            "key": "mf_memory_parking_types.generic",
+            "path": "D:/.bbs_conan/b19af5/1"
+        },
+        {
+            "key": "mf_parksm_core.cus_only",
+            "path": "D:/.bbs_conan/46cf33/1"
+        },
+        {
+            "key": "mf_parksm_core_types.generic",
+            "path": "D:/.bbs_conan/107d41/1"
+        },
+        {
+            "key": "mf_pdwarnproc.cus_only",
+            "path": "D:/.bbs_conan/110f7b/1"
+        },
+        {
+            "key": "mf_pdwarnproc_types.generic",
+            "path": "D:/.bbs_conan/327338/1"
+        },
+        {
+            "key": "mf_plot.cus_only",
+            "path": "D:/.bbs_conan/d0a5c3/1"
+        },
+        {
+            "key": "mf_taposd.cus_only",
+            "path": "D:/.bbs_conan/570adc/1"
+        },
+        {
+            "key": "mf_trjctl.cus_only",
+            "path": "D:/.bbs_conan/482479/1"
+        },
+        {
+            "key": "mf_trjctl_types.generic",
+            "path": "D:/.bbs_conan/0d4361/1"
+        },
+        {
+            "key": "mf_trjpla.cus_only",
+            "path": "D:/.bbs_conan/28f71c/1"
+        },
+        {
+            "key": "mf_trjpla_types.cus_only",
+            "path": "D:/.bbs_conan/563a8a/1"
+        },
+        {
+            "key": "mf_vedodo.cus_only",
+            "path": "D:/.bbs_conan/61b547/1"
+        },
+        {
+            "key": "mf_vedodo_types.generic",
+            "path": "D:/.bbs_conan/2f5451/1"
+        },
+        {
+            "key": "mf_whlprotectproc.cus_only",
+            "path": "D:/.bbs_conan/05c5de/1"
+        },
+        {
+            "key": "mf_whlprotectproc_types.generic",
+            "path": "D:/.bbs_conan/0b0c71/1"
+        },
+        {
+            "key": "parking_hmi_types.generic",
+            "path": "D:/.bbs_conan/17675f/1"
+        },
+        {
+            "key": "plp_hpsd_types.generic",
+            "path": "D:/.bbs_conan/c1028e/1"
+        },
+        {
+            "key": "plp_log.generic",
+            "path": "D:/.bbs_conan/7321b6/1"
+        },
+        {
+            "key": "protobuf",
+            "path": "D:/.bbs_conan/fb64d9/1"
+        },
+        {
+            "key": "relocalization_types.generic",
+            "path": "D:/.bbs_conan/416f46/1"
+        },
+        {
+            "key": "si_core.cus_only",
+            "path": "D:/.bbs_conan/f7ff21/1"
+        },
+        {
+            "key": "si_types.cus_only",
+            "path": "D:/.bbs_conan/ba3e12/1"
+        },
+        {
+            "key": "tce.cus_only",
+            "path": "D:/.bbs_conan/5408c8/1"
+        },
+        {
+            "key": "tce_types.generic",
+            "path": "D:/.bbs_conan/48db9d/1"
+        },
+        {
+            "key": "us_drv_types.generic",
+            "path": "D:/.bbs_conan/48c906/1"
+        },
+        {
+            "key": "us_em.generic",
+            "path": "D:/.bbs_conan/016fe0/1"
+        },
+        {
+            "key": "us_em_types.generic",
+            "path": "D:/.bbs_conan/65cc1b/1"
+        },
+        {
+            "key": "us_processing.cus_only",
+            "path": "D:/.bbs_conan/3511c8/1"
+        },
+        {
+            "key": "us_processing_types.cus_only",
+            "path": "D:/.bbs_conan/e60f01/1"
+        },
+        {
+            "key": "vehicle_types.generic",
+            "path": "D:/.bbs_conan/db9c90/1"
+        },
+        {
+            "key": "viewcontroller_types.cus_only",
+            "path": "D:/.bbs_conan/a49663/1"
+        }
+    ],
+    "system": [
+        {
+            "key": "bricks_cmake_checks.__system",
+            "path": "D:/.bbs_conan/c77abb/1"
+        },
+        {
+            "key": "bricks_cmake_core.__system",
+            "path": "D:/.bbs_conan/94a71d/1"
+        },
+        {
+            "key": "bricks_cmake_groups.__system",
+            "path": "D:/.bbs_conan/33193c/1"
+        }
+    ]
+}

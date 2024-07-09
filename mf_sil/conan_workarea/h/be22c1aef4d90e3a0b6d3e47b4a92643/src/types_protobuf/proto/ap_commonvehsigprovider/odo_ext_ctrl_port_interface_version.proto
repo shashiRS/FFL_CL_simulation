@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.odo_ext_ctrl_port_interface_version;
+
+message OdoExtCtrlPort_InterfaceVersion{
+  optional uint32 OdoExtCtrlPort_VERSION = 2587;
+}
+
+message OdoExtCtrlPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.odo_ext_ctrl_port_interface_version.OdoExtCtrlPort_InterfaceVersion data = 3475;
+}

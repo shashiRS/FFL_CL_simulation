@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.si.sint32_serializable;
+
+message Sint32Serializable{
+  optional uint32 actualSize = 3009;
+  repeated sint32 array = 1289;
+}
+
+message Sint32Serializable_array_port{
+   repeated pb.si.sint32_serializable.Sint32Serializable data = 3255;
+}

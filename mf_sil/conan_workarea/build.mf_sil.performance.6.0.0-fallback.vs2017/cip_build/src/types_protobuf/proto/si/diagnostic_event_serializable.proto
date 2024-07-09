@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/diagnostic_event.proto";
+
+package pb.si.diagnostic_event_serializable;
+
+message DiagnosticEventSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.diagnostic_event.DiagnosticEvent array = 2244;
+}
+
+message DiagnosticEventSerializable_array_port{
+   repeated pb.si.diagnostic_event_serializable.DiagnosticEventSerializable data = 230;
+}

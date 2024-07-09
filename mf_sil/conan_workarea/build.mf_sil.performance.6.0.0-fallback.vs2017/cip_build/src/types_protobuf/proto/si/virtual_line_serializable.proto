@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+import "si/virt_line_vertices_m_serializable.proto";
+
+package pb.si.virtual_line_serializable;
+
+message VirtualLineSerializable{
+  optional pb.si.virt_line_vertices_m_serializable.VirtLineVertices_mSerializable virtLineVertices_m = 3517;
+}
+
+message VirtualLineSerializable_array_port{
+   repeated pb.si.virtual_line_serializable.VirtualLineSerializable data = 876;
+}

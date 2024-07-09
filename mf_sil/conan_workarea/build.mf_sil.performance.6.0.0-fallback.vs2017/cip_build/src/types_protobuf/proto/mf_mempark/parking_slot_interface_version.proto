@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_mempark.parking_slot_interface_version;
+
+message ParkingSlot_InterfaceVersion{
+  optional uint32 ParkingSlot_VERSION = 1559;
+}
+
+message ParkingSlot_InterfaceVersion_array_port{
+   repeated pb.mf_mempark.parking_slot_interface_version.ParkingSlot_InterfaceVersion data = 2219;
+}

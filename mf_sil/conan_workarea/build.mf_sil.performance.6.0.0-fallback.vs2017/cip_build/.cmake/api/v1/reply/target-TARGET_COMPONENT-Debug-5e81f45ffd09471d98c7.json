@@ -1,0 +1,114 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"__bricks_install_add_dependencies_with_components",
+			"install",
+			"installTypes",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"D:/.bbs_conan/33193c/1/cmake/pre/decorators/install_add_dependencies.cmake",
+			"conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/.bricks/decorated_install.cmake",
+			"D:/.bbs_conan/c029a0/1/cmake/eco_generation/install_types.cmake",
+			"tests/SIL/CarMaker/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 81,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 207,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 488,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 9
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "ap_wrapper::@63a4a0152aac854526a0"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "CarMaker.win64::@63a4a0152aac854526a0"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "bricks"
+	},
+	"id" : "TARGET_COMPONENT::@63a4a0152aac854526a0",
+	"name" : "TARGET_COMPONENT",
+	"paths" : 
+	{
+		"build" : "tests/SIL/CarMaker/src",
+		"source" : "tests/SIL/CarMaker/src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

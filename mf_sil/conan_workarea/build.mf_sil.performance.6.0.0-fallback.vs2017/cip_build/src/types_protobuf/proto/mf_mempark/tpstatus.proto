@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+import "mf_mempark/trained_path.proto";
+import "mf_mempark/memorized_parking_status.proto";
+import "mf_mempark/training_status.proto";
+import "mf_mempark/localization_status.proto";
+
+package pb.mf_mempark.tpstatus;
+
+message TPStatus{
+  optional uint32 numberStoredTrainedParkingPaths = 2792;
+  repeated pb.mf_mempark.trained_path.TrainedPath trainedPaths = 2787;
+  optional pb.mf_mempark.memorized_parking_status.MemorizedParkingStatus memoryParkingState = 866;
+  optional pb.mf_mempark.training_status.TrainingStatus trainingStatus = 612;
+  optional pb.mf_mempark.localization_status.LocalizationStatus localizationStatus = 1648;
+}
+
+message TPStatus_array_port{
+   repeated pb.mf_mempark.tpstatus.TPStatus data = 436;
+}

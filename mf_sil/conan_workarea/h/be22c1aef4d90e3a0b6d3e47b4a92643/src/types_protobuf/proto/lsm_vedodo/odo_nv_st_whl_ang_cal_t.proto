@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_vedodo.odo_nv_st_whl_ang_cal_t;
+
+message OdoNvStWhlAngCal_t{
+  optional float ZeroAngle = 2223;
+  optional uint32 CalStatus = 735;
+}
+
+message OdoNvStWhlAngCal_t_array_port{
+   repeated pb.lsm_vedodo.odo_nv_st_whl_ang_cal_t.OdoNvStWhlAngCal_t data = 2706;
+}

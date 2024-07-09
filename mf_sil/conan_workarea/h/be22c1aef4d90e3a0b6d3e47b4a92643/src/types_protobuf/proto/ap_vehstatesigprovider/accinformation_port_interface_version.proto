@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.accinformation_port_interface_version;
+
+message ACCInformationPort_InterfaceVersion{
+  optional uint32 ACCInformationPort_VERSION = 2781;
+}
+
+message ACCInformationPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.accinformation_port_interface_version.ACCInformationPort_InterfaceVersion data = 973;
+}

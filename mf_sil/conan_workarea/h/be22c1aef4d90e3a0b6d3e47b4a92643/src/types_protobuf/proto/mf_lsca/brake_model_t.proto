@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "mf_lsca/brake_model_params_t.proto";
+
+package pb.mf_lsca.brake_model_t;
+
+message brakeModel_t{
+  optional pb.mf_lsca.brake_model_params_t.brakeModelParams_t forwards = 4076;
+  optional pb.mf_lsca.brake_model_params_t.brakeModelParams_t backwards = 516;
+}
+
+message brakeModel_t_array_port{
+   repeated pb.mf_lsca.brake_model_t.brakeModel_t data = 2035;
+}

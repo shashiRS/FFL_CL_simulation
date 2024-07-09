@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.lvmduser_interaction_port_interface_version;
+
+message LVMDUserInteractionPort_InterfaceVersion{
+  optional uint32 LVMDUserInteractionPort_VERSION = 1872;
+}
+
+message LVMDUserInteractionPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.lvmduser_interaction_port_interface_version.LVMDUserInteractionPort_InterfaceVersion data = 2277;
+}

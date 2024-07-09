@@ -1,0 +1,8 @@
+#INFOFILE1.1 - Do not remove this line!
+
+VECTOR.XLDriver.dll        = ./bin/vxlapi.dll
+VECTOR.Channel.Count       = 1
+VECTOR.Channel.1.Channel   = 1
+VECTOR.Channel.1.IsCanFD   = 0
+VECTOR.Channel.1.BitrateFD = arbitrationBitRate=500000, sjwAbr=32, tseg1Abr=127, tseg2Abr=32, dataBitRate=2000000, sjwDbr=12, tseg1Dbr=27, tseg2Dbr=12
+VECTOR.Channel.1.Baudrate  = 500000

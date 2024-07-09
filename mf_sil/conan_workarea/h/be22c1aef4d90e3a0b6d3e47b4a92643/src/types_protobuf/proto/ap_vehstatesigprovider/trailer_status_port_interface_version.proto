@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.trailer_status_port_interface_version;
+
+message TrailerStatusPort_InterfaceVersion{
+  optional uint32 TrailerStatusPort_VERSION = 3630;
+}
+
+message TrailerStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.trailer_status_port_interface_version.TrailerStatusPort_InterfaceVersion data = 1717;
+}

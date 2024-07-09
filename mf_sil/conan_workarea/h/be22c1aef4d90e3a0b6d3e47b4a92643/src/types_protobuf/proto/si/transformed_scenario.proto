@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "si/quadrilateral_serializable.proto";
+import "si/object_shape_serializable_array.proto";
+
+package pb.si.transformed_scenario;
+
+message TransformedScenario{
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable parkingSlotBefore = 3767;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable parkingSlotEnlarged = 2637;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable parkingSlotAfter = 18;
+  optional pb.si.object_shape_serializable_array.ObjectShapeSerializableArray objects = 3402;
+}
+
+message TransformedScenario_array_port{
+   repeated pb.si.transformed_scenario.TransformedScenario data = 1223;
+}

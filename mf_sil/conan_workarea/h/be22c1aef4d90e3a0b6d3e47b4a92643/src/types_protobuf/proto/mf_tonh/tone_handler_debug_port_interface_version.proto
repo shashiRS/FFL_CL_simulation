@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_tonh.tone_handler_debug_port_interface_version;
+
+message ToneHandlerDebugPort_InterfaceVersion{
+  optional uint32 ToneHandlerDebugPort_VERSION = 370;
+}
+
+message ToneHandlerDebugPort_InterfaceVersion_array_port{
+   repeated pb.mf_tonh.tone_handler_debug_port_interface_version.ToneHandlerDebugPort_InterfaceVersion data = 372;
+}

@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_trjctl.mf_control_te_long_ctrl_mode;
+
+enum MF_CONTROL_te_LongCtrlMode {
+  MF_LONG_CTRL_MODE_NO_CONTROL = 0;
+  MF_LONG_CTRL_MODE_DIST_VELO_MAX = 1;
+  MF_LONG_CTRL_MODE_ACCEL = 2;
+  MF_LONG_CTRL_MODE_VELO_LIMITATION = 3;
+}

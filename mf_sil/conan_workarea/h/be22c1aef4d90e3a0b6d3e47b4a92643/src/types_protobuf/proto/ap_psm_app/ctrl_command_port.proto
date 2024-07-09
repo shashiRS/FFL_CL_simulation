@@ -1,0 +1,30 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_psm_app/std_request.proto";
+import "ap_psm_app/ppcparking_mode.proto";
+import "ap_psm_app/degrade_type.proto";
+import "ap_psm_app/motion_control_request_type.proto";
+import "ap_psm_app/driver_in_out_request_type.proto";
+
+package pb.ap_psm_app.ctrl_command_port;
+
+message CtrlCommandPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.ap_psm_app.std_request.StdRequest stdRequest_nu = 3751;
+  optional pb.ap_psm_app.ppcparking_mode.PPCParkingMode ppcParkingMode_nu = 1343;
+  optional pb.ap_psm_app.degrade_type.DegradeType degradeType_nu = 1693;
+  optional uint32 selectedTargetPoseId_nu = 1006;
+  optional bool emergencyBrake_nu = 673;
+  optional uint32 currentSelectedMpSlotId = 2956;
+  optional bool deleteMemorizedParkingData = 1243;
+  optional bool storeMemorizedParkingData = 54;
+  optional pb.ap_psm_app.motion_control_request_type.MotionControlRequestType motionControlRequestType_nu = 1708;
+  optional pb.ap_psm_app.driver_in_out_request_type.DriverInOutRequestType driverInOutRequestType_nu = 1292;
+}
+
+message CtrlCommandPort_array_port{
+   repeated pb.ap_psm_app.ctrl_command_port.CtrlCommandPort data = 2238;
+}

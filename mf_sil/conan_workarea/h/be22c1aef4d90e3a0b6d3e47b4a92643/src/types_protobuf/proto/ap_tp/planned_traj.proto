@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.planned_traj;
+
+message PlannedTraj{
+  optional float xTrajRAReq_m = 1809;
+  optional float yTrajRAReq_m = 1124;
+  optional float yawReq_rad = 1379;
+  optional float crvRAReq_1pm = 1716;
+  optional float distanceToStopReq_m = 3322;
+  optional float velocityLimitReq_mps = 2513;
+}
+
+message PlannedTraj_array_port{
+   repeated pb.ap_tp.planned_traj.PlannedTraj data = 2411;
+}

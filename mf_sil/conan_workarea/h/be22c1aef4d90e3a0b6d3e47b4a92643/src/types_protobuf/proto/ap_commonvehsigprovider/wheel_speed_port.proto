@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_commonvehsigprovider.wheel_speed_port;
+
+message WheelSpeedPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float wheelRotSpeedFL_radps = 703;
+  optional float wheelRotSpeedFR_radps = 1868;
+  optional float wheelRotSpeedRL_radps = 102;
+  optional float wheelRotSpeedRR_radps = 1429;
+}
+
+message WheelSpeedPort_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_speed_port.WheelSpeedPort data = 1707;
+}

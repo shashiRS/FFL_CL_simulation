@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lvmd.lvmd_params_interface_version;
+
+message LvmdParams_InterfaceVersion{
+  optional uint32 LvmdParams_VERSION = 140;
+}
+
+message LvmdParams_InterfaceVersion_array_port{
+   repeated pb.mf_lvmd.lvmd_params_interface_version.LvmdParams_InterfaceVersion data = 3905;
+}

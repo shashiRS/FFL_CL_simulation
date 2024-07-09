@@ -1,0 +1,523 @@
+
+### BEGIN IPG-MOVIE-INFO
+#Subscribe SensData.0.Target.NPPos.x.0 SensData.0.Target.NPPos.y.0 SensData.0.Target.NPPos.z.0
+#Subscribe SensData.0.Target.NPPos.x.1 SensData.0.Target.NPPos.y.1 SensData.0.Target.NPPos.z.1
+#Subscribe SensData.0.Target.NPPos.x.2 SensData.0.Target.NPPos.y.2 SensData.0.Target.NPPos.z.2
+#Subscribe SensData.0.Target.NPPos.x.3 SensData.0.Target.NPPos.y.3 SensData.0.Target.NPPos.z.3
+#Subscribe SensData.0.Target.NPPos.x.4 SensData.0.Target.NPPos.y.4 SensData.0.Target.NPPos.z.4
+#Subscribe SensData.0.Target.NPPos.x.5 SensData.0.Target.NPPos.y.5 SensData.0.Target.NPPos.z.5
+#Subscribe SensData.0.Target.NPPos.x.6 SensData.0.Target.NPPos.y.6 SensData.0.Target.NPPos.z.6
+#Subscribe SensData.0.Target.NPPos.x.7 SensData.0.Target.NPPos.y.7 SensData.0.Target.NPPos.z.7
+#Subscribe SensData.0.Target.NPPos.x.8 SensData.0.Target.NPPos.y.8 SensData.0.Target.NPPos.z.8
+#Subscribe SensData.0.Target.NPPos.x.9 SensData.0.Target.NPPos.y.9 SensData.0.Target.NPPos.z.9
+#Subscribe SensData.0.Target.NPPos.x.10 SensData.0.Target.NPPos.y.10 SensData.0.Target.NPPos.z.10
+#Subscribe SensData.0.Target.NPPos.x.11 SensData.0.Target.NPPos.y.11 SensData.0.Target.NPPos.z.11
+#Subscribe SensData.0.Target.NPPos.x.12 SensData.0.Target.NPPos.y.12 SensData.0.Target.NPPos.z.12
+#Subscribe SensData.0.Target.NPPos.x.13 SensData.0.Target.NPPos.y.13 SensData.0.Target.NPPos.z.13
+#Subscribe SensData.0.Target.NPPos.x.14 SensData.0.Target.NPPos.y.14 SensData.0.Target.NPPos.z.14
+#Subscribe SensData.0.Target.NPPos.x.15 SensData.0.Target.NPPos.y.15 SensData.0.Target.NPPos.z.15
+#Subscribe SensData.0.Target.NPPos.x.16 SensData.0.Target.NPPos.y.16 SensData.0.Target.NPPos.z.16
+#Subscribe SensData.0.Target.NPPos.x.17 SensData.0.Target.NPPos.y.17 SensData.0.Target.NPPos.z.17
+#Subscribe SensData.0.Target.NPPos.x.18 SensData.0.Target.NPPos.y.18 SensData.0.Target.NPPos.z.18
+#Subscribe SensData.0.Target.NPPos.x.19 SensData.0.Target.NPPos.y.19 SensData.0.Target.NPPos.z.19
+#Subscribe SensData.0.Target.NPPos.x.20 SensData.0.Target.NPPos.y.20 SensData.0.Target.NPPos.z.20
+#Subscribe SensData.0.Target.NPPos.x.21 SensData.0.Target.NPPos.y.21 SensData.0.Target.NPPos.z.21
+#Subscribe SensData.0.Target.NPPos.x.22 SensData.0.Target.NPPos.y.22 SensData.0.Target.NPPos.z.22
+#Subscribe SensData.0.Target.NPPos.x.23 SensData.0.Target.NPPos.y.23 SensData.0.Target.NPPos.z.23
+#Subscribe SensData.0.Target.NPPos.x.24 SensData.0.Target.NPPos.y.24 SensData.0.Target.NPPos.z.24
+#Subscribe SensData.1.Target.NPPos.x.0 SensData.1.Target.NPPos.y.0 SensData.1.Target.NPPos.z.0
+#Subscribe SensData.1.Target.NPPos.x.1 SensData.1.Target.NPPos.y.1 SensData.1.Target.NPPos.z.1
+#Subscribe SensData.1.Target.NPPos.x.2 SensData.1.Target.NPPos.y.2 SensData.1.Target.NPPos.z.2
+#Subscribe SensData.1.Target.NPPos.x.3 SensData.1.Target.NPPos.y.3 SensData.1.Target.NPPos.z.3
+#Subscribe SensData.1.Target.NPPos.x.4 SensData.1.Target.NPPos.y.4 SensData.1.Target.NPPos.z.4
+#Subscribe SensData.1.Target.NPPos.x.5 SensData.1.Target.NPPos.y.5 SensData.1.Target.NPPos.z.5
+#Subscribe SensData.1.Target.NPPos.x.6 SensData.1.Target.NPPos.y.6 SensData.1.Target.NPPos.z.6
+#Subscribe SensData.1.Target.NPPos.x.7 SensData.1.Target.NPPos.y.7 SensData.1.Target.NPPos.z.7
+#Subscribe SensData.1.Target.NPPos.x.8 SensData.1.Target.NPPos.y.8 SensData.1.Target.NPPos.z.8
+#Subscribe SensData.1.Target.NPPos.x.9 SensData.1.Target.NPPos.y.9 SensData.1.Target.NPPos.z.9
+#Subscribe SensData.1.Target.NPPos.x.10 SensData.1.Target.NPPos.y.10 SensData.1.Target.NPPos.z.10
+#Subscribe SensData.1.Target.NPPos.x.11 SensData.1.Target.NPPos.y.11 SensData.1.Target.NPPos.z.11
+#Subscribe SensData.1.Target.NPPos.x.12 SensData.1.Target.NPPos.y.12 SensData.1.Target.NPPos.z.12
+#Subscribe SensData.1.Target.NPPos.x.13 SensData.1.Target.NPPos.y.13 SensData.1.Target.NPPos.z.13
+#Subscribe SensData.1.Target.NPPos.x.14 SensData.1.Target.NPPos.y.14 SensData.1.Target.NPPos.z.14
+#Subscribe SensData.1.Target.NPPos.x.15 SensData.1.Target.NPPos.y.15 SensData.1.Target.NPPos.z.15
+#Subscribe SensData.1.Target.NPPos.x.16 SensData.1.Target.NPPos.y.16 SensData.1.Target.NPPos.z.16
+#Subscribe SensData.1.Target.NPPos.x.17 SensData.1.Target.NPPos.y.17 SensData.1.Target.NPPos.z.17
+#Subscribe SensData.1.Target.NPPos.x.18 SensData.1.Target.NPPos.y.18 SensData.1.Target.NPPos.z.18
+#Subscribe SensData.1.Target.NPPos.x.19 SensData.1.Target.NPPos.y.19 SensData.1.Target.NPPos.z.19
+#Subscribe SensData.1.Target.NPPos.x.20 SensData.1.Target.NPPos.y.20 SensData.1.Target.NPPos.z.20
+#Subscribe SensData.1.Target.NPPos.x.21 SensData.1.Target.NPPos.y.21 SensData.1.Target.NPPos.z.21
+#Subscribe SensData.1.Target.NPPos.x.22 SensData.1.Target.NPPos.y.22 SensData.1.Target.NPPos.z.22
+#Subscribe SensData.1.Target.NPPos.x.23 SensData.1.Target.NPPos.y.23 SensData.1.Target.NPPos.z.23
+#Subscribe SensData.1.Target.NPPos.x.24 SensData.1.Target.NPPos.y.24 SensData.1.Target.NPPos.z.24
+#Subscribe SensData.2.Target.NPPos.x.0 SensData.2.Target.NPPos.y.0 SensData.2.Target.NPPos.z.0
+#Subscribe SensData.2.Target.NPPos.x.1 SensData.2.Target.NPPos.y.1 SensData.2.Target.NPPos.z.1
+#Subscribe SensData.2.Target.NPPos.x.2 SensData.2.Target.NPPos.y.2 SensData.2.Target.NPPos.z.2
+#Subscribe SensData.2.Target.NPPos.x.3 SensData.2.Target.NPPos.y.3 SensData.2.Target.NPPos.z.3
+#Subscribe SensData.2.Target.NPPos.x.4 SensData.2.Target.NPPos.y.4 SensData.2.Target.NPPos.z.4
+#Subscribe SensData.2.Target.NPPos.x.5 SensData.2.Target.NPPos.y.5 SensData.2.Target.NPPos.z.5
+#Subscribe SensData.2.Target.NPPos.x.6 SensData.2.Target.NPPos.y.6 SensData.2.Target.NPPos.z.6
+#Subscribe SensData.2.Target.NPPos.x.7 SensData.2.Target.NPPos.y.7 SensData.2.Target.NPPos.z.7
+#Subscribe SensData.2.Target.NPPos.x.8 SensData.2.Target.NPPos.y.8 SensData.2.Target.NPPos.z.8
+#Subscribe SensData.2.Target.NPPos.x.9 SensData.2.Target.NPPos.y.9 SensData.2.Target.NPPos.z.9
+#Subscribe SensData.2.Target.NPPos.x.10 SensData.2.Target.NPPos.y.10 SensData.2.Target.NPPos.z.10
+#Subscribe SensData.2.Target.NPPos.x.11 SensData.2.Target.NPPos.y.11 SensData.2.Target.NPPos.z.11
+#Subscribe SensData.2.Target.NPPos.x.12 SensData.2.Target.NPPos.y.12 SensData.2.Target.NPPos.z.12
+#Subscribe SensData.2.Target.NPPos.x.13 SensData.2.Target.NPPos.y.13 SensData.2.Target.NPPos.z.13
+#Subscribe SensData.2.Target.NPPos.x.14 SensData.2.Target.NPPos.y.14 SensData.2.Target.NPPos.z.14
+#Subscribe SensData.2.Target.NPPos.x.15 SensData.2.Target.NPPos.y.15 SensData.2.Target.NPPos.z.15
+#Subscribe SensData.2.Target.NPPos.x.16 SensData.2.Target.NPPos.y.16 SensData.2.Target.NPPos.z.16
+#Subscribe SensData.2.Target.NPPos.x.17 SensData.2.Target.NPPos.y.17 SensData.2.Target.NPPos.z.17
+#Subscribe SensData.2.Target.NPPos.x.18 SensData.2.Target.NPPos.y.18 SensData.2.Target.NPPos.z.18
+#Subscribe SensData.2.Target.NPPos.x.19 SensData.2.Target.NPPos.y.19 SensData.2.Target.NPPos.z.19
+#Subscribe SensData.2.Target.NPPos.x.20 SensData.2.Target.NPPos.y.20 SensData.2.Target.NPPos.z.20
+#Subscribe SensData.2.Target.NPPos.x.21 SensData.2.Target.NPPos.y.21 SensData.2.Target.NPPos.z.21
+#Subscribe SensData.2.Target.NPPos.x.22 SensData.2.Target.NPPos.y.22 SensData.2.Target.NPPos.z.22
+#Subscribe SensData.2.Target.NPPos.x.23 SensData.2.Target.NPPos.y.23 SensData.2.Target.NPPos.z.23
+#Subscribe SensData.2.Target.NPPos.x.24 SensData.2.Target.NPPos.y.24 SensData.2.Target.NPPos.z.24
+#Subscribe SensData.3.Target.NPPos.x.0 SensData.3.Target.NPPos.y.0 SensData.3.Target.NPPos.z.0
+#Subscribe SensData.3.Target.NPPos.x.1 SensData.3.Target.NPPos.y.1 SensData.3.Target.NPPos.z.1
+#Subscribe SensData.3.Target.NPPos.x.2 SensData.3.Target.NPPos.y.2 SensData.3.Target.NPPos.z.2
+#Subscribe SensData.3.Target.NPPos.x.3 SensData.3.Target.NPPos.y.3 SensData.3.Target.NPPos.z.3
+#Subscribe SensData.3.Target.NPPos.x.4 SensData.3.Target.NPPos.y.4 SensData.3.Target.NPPos.z.4
+#Subscribe SensData.3.Target.NPPos.x.5 SensData.3.Target.NPPos.y.5 SensData.3.Target.NPPos.z.5
+#Subscribe SensData.3.Target.NPPos.x.6 SensData.3.Target.NPPos.y.6 SensData.3.Target.NPPos.z.6
+#Subscribe SensData.3.Target.NPPos.x.7 SensData.3.Target.NPPos.y.7 SensData.3.Target.NPPos.z.7
+#Subscribe SensData.3.Target.NPPos.x.8 SensData.3.Target.NPPos.y.8 SensData.3.Target.NPPos.z.8
+#Subscribe SensData.3.Target.NPPos.x.9 SensData.3.Target.NPPos.y.9 SensData.3.Target.NPPos.z.9
+#Subscribe SensData.3.Target.NPPos.x.10 SensData.3.Target.NPPos.y.10 SensData.3.Target.NPPos.z.10
+#Subscribe SensData.3.Target.NPPos.x.11 SensData.3.Target.NPPos.y.11 SensData.3.Target.NPPos.z.11
+#Subscribe SensData.3.Target.NPPos.x.12 SensData.3.Target.NPPos.y.12 SensData.3.Target.NPPos.z.12
+#Subscribe SensData.3.Target.NPPos.x.13 SensData.3.Target.NPPos.y.13 SensData.3.Target.NPPos.z.13
+#Subscribe SensData.3.Target.NPPos.x.14 SensData.3.Target.NPPos.y.14 SensData.3.Target.NPPos.z.14
+#Subscribe SensData.3.Target.NPPos.x.15 SensData.3.Target.NPPos.y.15 SensData.3.Target.NPPos.z.15
+#Subscribe SensData.3.Target.NPPos.x.16 SensData.3.Target.NPPos.y.16 SensData.3.Target.NPPos.z.16
+#Subscribe SensData.3.Target.NPPos.x.17 SensData.3.Target.NPPos.y.17 SensData.3.Target.NPPos.z.17
+#Subscribe SensData.3.Target.NPPos.x.18 SensData.3.Target.NPPos.y.18 SensData.3.Target.NPPos.z.18
+#Subscribe SensData.3.Target.NPPos.x.19 SensData.3.Target.NPPos.y.19 SensData.3.Target.NPPos.z.19
+#Subscribe SensData.3.Target.NPPos.x.20 SensData.3.Target.NPPos.y.20 SensData.3.Target.NPPos.z.20
+#Subscribe SensData.3.Target.NPPos.x.21 SensData.3.Target.NPPos.y.21 SensData.3.Target.NPPos.z.21
+#Subscribe SensData.3.Target.NPPos.x.22 SensData.3.Target.NPPos.y.22 SensData.3.Target.NPPos.z.22
+#Subscribe SensData.3.Target.NPPos.x.23 SensData.3.Target.NPPos.y.23 SensData.3.Target.NPPos.z.23
+#Subscribe SensData.3.Target.NPPos.x.24 SensData.3.Target.NPPos.y.24 SensData.3.Target.NPPos.z.24
+#Subscribe SensData.4.Target.NPPos.x.0 SensData.4.Target.NPPos.y.0 SensData.4.Target.NPPos.z.0
+#Subscribe SensData.4.Target.NPPos.x.1 SensData.4.Target.NPPos.y.1 SensData.4.Target.NPPos.z.1
+#Subscribe SensData.4.Target.NPPos.x.2 SensData.4.Target.NPPos.y.2 SensData.4.Target.NPPos.z.2
+#Subscribe SensData.4.Target.NPPos.x.3 SensData.4.Target.NPPos.y.3 SensData.4.Target.NPPos.z.3
+#Subscribe SensData.4.Target.NPPos.x.4 SensData.4.Target.NPPos.y.4 SensData.4.Target.NPPos.z.4
+#Subscribe SensData.4.Target.NPPos.x.5 SensData.4.Target.NPPos.y.5 SensData.4.Target.NPPos.z.5
+#Subscribe SensData.4.Target.NPPos.x.6 SensData.4.Target.NPPos.y.6 SensData.4.Target.NPPos.z.6
+#Subscribe SensData.4.Target.NPPos.x.7 SensData.4.Target.NPPos.y.7 SensData.4.Target.NPPos.z.7
+#Subscribe SensData.4.Target.NPPos.x.8 SensData.4.Target.NPPos.y.8 SensData.4.Target.NPPos.z.8
+#Subscribe SensData.4.Target.NPPos.x.9 SensData.4.Target.NPPos.y.9 SensData.4.Target.NPPos.z.9
+#Subscribe SensData.4.Target.NPPos.x.10 SensData.4.Target.NPPos.y.10 SensData.4.Target.NPPos.z.10
+#Subscribe SensData.4.Target.NPPos.x.11 SensData.4.Target.NPPos.y.11 SensData.4.Target.NPPos.z.11
+#Subscribe SensData.4.Target.NPPos.x.12 SensData.4.Target.NPPos.y.12 SensData.4.Target.NPPos.z.12
+#Subscribe SensData.4.Target.NPPos.x.13 SensData.4.Target.NPPos.y.13 SensData.4.Target.NPPos.z.13
+#Subscribe SensData.4.Target.NPPos.x.14 SensData.4.Target.NPPos.y.14 SensData.4.Target.NPPos.z.14
+#Subscribe SensData.4.Target.NPPos.x.15 SensData.4.Target.NPPos.y.15 SensData.4.Target.NPPos.z.15
+#Subscribe SensData.4.Target.NPPos.x.16 SensData.4.Target.NPPos.y.16 SensData.4.Target.NPPos.z.16
+#Subscribe SensData.4.Target.NPPos.x.17 SensData.4.Target.NPPos.y.17 SensData.4.Target.NPPos.z.17
+#Subscribe SensData.4.Target.NPPos.x.18 SensData.4.Target.NPPos.y.18 SensData.4.Target.NPPos.z.18
+#Subscribe SensData.4.Target.NPPos.x.19 SensData.4.Target.NPPos.y.19 SensData.4.Target.NPPos.z.19
+#Subscribe SensData.4.Target.NPPos.x.20 SensData.4.Target.NPPos.y.20 SensData.4.Target.NPPos.z.20
+#Subscribe SensData.4.Target.NPPos.x.21 SensData.4.Target.NPPos.y.21 SensData.4.Target.NPPos.z.21
+#Subscribe SensData.4.Target.NPPos.x.22 SensData.4.Target.NPPos.y.22 SensData.4.Target.NPPos.z.22
+#Subscribe SensData.4.Target.NPPos.x.23 SensData.4.Target.NPPos.y.23 SensData.4.Target.NPPos.z.23
+#Subscribe SensData.4.Target.NPPos.x.24 SensData.4.Target.NPPos.y.24 SensData.4.Target.NPPos.z.24
+#Subscribe SensData.5.Target.NPPos.x.0 SensData.5.Target.NPPos.y.0 SensData.5.Target.NPPos.z.0
+#Subscribe SensData.5.Target.NPPos.x.1 SensData.5.Target.NPPos.y.1 SensData.5.Target.NPPos.z.1
+#Subscribe SensData.5.Target.NPPos.x.2 SensData.5.Target.NPPos.y.2 SensData.5.Target.NPPos.z.2
+#Subscribe SensData.5.Target.NPPos.x.3 SensData.5.Target.NPPos.y.3 SensData.5.Target.NPPos.z.3
+#Subscribe SensData.5.Target.NPPos.x.4 SensData.5.Target.NPPos.y.4 SensData.5.Target.NPPos.z.4
+#Subscribe SensData.5.Target.NPPos.x.5 SensData.5.Target.NPPos.y.5 SensData.5.Target.NPPos.z.5
+#Subscribe SensData.5.Target.NPPos.x.6 SensData.5.Target.NPPos.y.6 SensData.5.Target.NPPos.z.6
+#Subscribe SensData.5.Target.NPPos.x.7 SensData.5.Target.NPPos.y.7 SensData.5.Target.NPPos.z.7
+#Subscribe SensData.5.Target.NPPos.x.8 SensData.5.Target.NPPos.y.8 SensData.5.Target.NPPos.z.8
+#Subscribe SensData.5.Target.NPPos.x.9 SensData.5.Target.NPPos.y.9 SensData.5.Target.NPPos.z.9
+#Subscribe SensData.5.Target.NPPos.x.10 SensData.5.Target.NPPos.y.10 SensData.5.Target.NPPos.z.10
+#Subscribe SensData.5.Target.NPPos.x.11 SensData.5.Target.NPPos.y.11 SensData.5.Target.NPPos.z.11
+#Subscribe SensData.5.Target.NPPos.x.12 SensData.5.Target.NPPos.y.12 SensData.5.Target.NPPos.z.12
+#Subscribe SensData.5.Target.NPPos.x.13 SensData.5.Target.NPPos.y.13 SensData.5.Target.NPPos.z.13
+#Subscribe SensData.5.Target.NPPos.x.14 SensData.5.Target.NPPos.y.14 SensData.5.Target.NPPos.z.14
+#Subscribe SensData.5.Target.NPPos.x.15 SensData.5.Target.NPPos.y.15 SensData.5.Target.NPPos.z.15
+#Subscribe SensData.5.Target.NPPos.x.16 SensData.5.Target.NPPos.y.16 SensData.5.Target.NPPos.z.16
+#Subscribe SensData.5.Target.NPPos.x.17 SensData.5.Target.NPPos.y.17 SensData.5.Target.NPPos.z.17
+#Subscribe SensData.5.Target.NPPos.x.18 SensData.5.Target.NPPos.y.18 SensData.5.Target.NPPos.z.18
+#Subscribe SensData.5.Target.NPPos.x.19 SensData.5.Target.NPPos.y.19 SensData.5.Target.NPPos.z.19
+#Subscribe SensData.5.Target.NPPos.x.20 SensData.5.Target.NPPos.y.20 SensData.5.Target.NPPos.z.20
+#Subscribe SensData.5.Target.NPPos.x.21 SensData.5.Target.NPPos.y.21 SensData.5.Target.NPPos.z.21
+#Subscribe SensData.5.Target.NPPos.x.22 SensData.5.Target.NPPos.y.22 SensData.5.Target.NPPos.z.22
+#Subscribe SensData.5.Target.NPPos.x.23 SensData.5.Target.NPPos.y.23 SensData.5.Target.NPPos.z.23
+#Subscribe SensData.5.Target.NPPos.x.24 SensData.5.Target.NPPos.y.24 SensData.5.Target.NPPos.z.24
+#Subscribe SensData.6.Target.NPPos.x.0 SensData.6.Target.NPPos.y.0 SensData.6.Target.NPPos.z.0
+#Subscribe SensData.6.Target.NPPos.x.1 SensData.6.Target.NPPos.y.1 SensData.6.Target.NPPos.z.1
+#Subscribe SensData.6.Target.NPPos.x.2 SensData.6.Target.NPPos.y.2 SensData.6.Target.NPPos.z.2
+#Subscribe SensData.6.Target.NPPos.x.3 SensData.6.Target.NPPos.y.3 SensData.6.Target.NPPos.z.3
+#Subscribe SensData.6.Target.NPPos.x.4 SensData.6.Target.NPPos.y.4 SensData.6.Target.NPPos.z.4
+#Subscribe SensData.6.Target.NPPos.x.5 SensData.6.Target.NPPos.y.5 SensData.6.Target.NPPos.z.5
+#Subscribe SensData.6.Target.NPPos.x.6 SensData.6.Target.NPPos.y.6 SensData.6.Target.NPPos.z.6
+#Subscribe SensData.6.Target.NPPos.x.7 SensData.6.Target.NPPos.y.7 SensData.6.Target.NPPos.z.7
+#Subscribe SensData.6.Target.NPPos.x.8 SensData.6.Target.NPPos.y.8 SensData.6.Target.NPPos.z.8
+#Subscribe SensData.6.Target.NPPos.x.9 SensData.6.Target.NPPos.y.9 SensData.6.Target.NPPos.z.9
+#Subscribe SensData.6.Target.NPPos.x.10 SensData.6.Target.NPPos.y.10 SensData.6.Target.NPPos.z.10
+#Subscribe SensData.6.Target.NPPos.x.11 SensData.6.Target.NPPos.y.11 SensData.6.Target.NPPos.z.11
+#Subscribe SensData.6.Target.NPPos.x.12 SensData.6.Target.NPPos.y.12 SensData.6.Target.NPPos.z.12
+#Subscribe SensData.6.Target.NPPos.x.13 SensData.6.Target.NPPos.y.13 SensData.6.Target.NPPos.z.13
+#Subscribe SensData.6.Target.NPPos.x.14 SensData.6.Target.NPPos.y.14 SensData.6.Target.NPPos.z.14
+#Subscribe SensData.6.Target.NPPos.x.15 SensData.6.Target.NPPos.y.15 SensData.6.Target.NPPos.z.15
+#Subscribe SensData.6.Target.NPPos.x.16 SensData.6.Target.NPPos.y.16 SensData.6.Target.NPPos.z.16
+#Subscribe SensData.6.Target.NPPos.x.17 SensData.6.Target.NPPos.y.17 SensData.6.Target.NPPos.z.17
+#Subscribe SensData.6.Target.NPPos.x.18 SensData.6.Target.NPPos.y.18 SensData.6.Target.NPPos.z.18
+#Subscribe SensData.6.Target.NPPos.x.19 SensData.6.Target.NPPos.y.19 SensData.6.Target.NPPos.z.19
+#Subscribe SensData.6.Target.NPPos.x.20 SensData.6.Target.NPPos.y.20 SensData.6.Target.NPPos.z.20
+#Subscribe SensData.6.Target.NPPos.x.21 SensData.6.Target.NPPos.y.21 SensData.6.Target.NPPos.z.21
+#Subscribe SensData.6.Target.NPPos.x.22 SensData.6.Target.NPPos.y.22 SensData.6.Target.NPPos.z.22
+#Subscribe SensData.6.Target.NPPos.x.23 SensData.6.Target.NPPos.y.23 SensData.6.Target.NPPos.z.23
+#Subscribe SensData.6.Target.NPPos.x.24 SensData.6.Target.NPPos.y.24 SensData.6.Target.NPPos.z.24
+#Subscribe SensData.7.Target.NPPos.x.0 SensData.7.Target.NPPos.y.0 SensData.7.Target.NPPos.z.0
+#Subscribe SensData.7.Target.NPPos.x.1 SensData.7.Target.NPPos.y.1 SensData.7.Target.NPPos.z.1
+#Subscribe SensData.7.Target.NPPos.x.2 SensData.7.Target.NPPos.y.2 SensData.7.Target.NPPos.z.2
+#Subscribe SensData.7.Target.NPPos.x.3 SensData.7.Target.NPPos.y.3 SensData.7.Target.NPPos.z.3
+#Subscribe SensData.7.Target.NPPos.x.4 SensData.7.Target.NPPos.y.4 SensData.7.Target.NPPos.z.4
+#Subscribe SensData.7.Target.NPPos.x.5 SensData.7.Target.NPPos.y.5 SensData.7.Target.NPPos.z.5
+#Subscribe SensData.7.Target.NPPos.x.6 SensData.7.Target.NPPos.y.6 SensData.7.Target.NPPos.z.6
+#Subscribe SensData.7.Target.NPPos.x.7 SensData.7.Target.NPPos.y.7 SensData.7.Target.NPPos.z.7
+#Subscribe SensData.7.Target.NPPos.x.8 SensData.7.Target.NPPos.y.8 SensData.7.Target.NPPos.z.8
+#Subscribe SensData.7.Target.NPPos.x.9 SensData.7.Target.NPPos.y.9 SensData.7.Target.NPPos.z.9
+#Subscribe SensData.7.Target.NPPos.x.10 SensData.7.Target.NPPos.y.10 SensData.7.Target.NPPos.z.10
+#Subscribe SensData.7.Target.NPPos.x.11 SensData.7.Target.NPPos.y.11 SensData.7.Target.NPPos.z.11
+#Subscribe SensData.7.Target.NPPos.x.12 SensData.7.Target.NPPos.y.12 SensData.7.Target.NPPos.z.12
+#Subscribe SensData.7.Target.NPPos.x.13 SensData.7.Target.NPPos.y.13 SensData.7.Target.NPPos.z.13
+#Subscribe SensData.7.Target.NPPos.x.14 SensData.7.Target.NPPos.y.14 SensData.7.Target.NPPos.z.14
+#Subscribe SensData.7.Target.NPPos.x.15 SensData.7.Target.NPPos.y.15 SensData.7.Target.NPPos.z.15
+#Subscribe SensData.7.Target.NPPos.x.16 SensData.7.Target.NPPos.y.16 SensData.7.Target.NPPos.z.16
+#Subscribe SensData.7.Target.NPPos.x.17 SensData.7.Target.NPPos.y.17 SensData.7.Target.NPPos.z.17
+#Subscribe SensData.7.Target.NPPos.x.18 SensData.7.Target.NPPos.y.18 SensData.7.Target.NPPos.z.18
+#Subscribe SensData.7.Target.NPPos.x.19 SensData.7.Target.NPPos.y.19 SensData.7.Target.NPPos.z.19
+#Subscribe SensData.7.Target.NPPos.x.20 SensData.7.Target.NPPos.y.20 SensData.7.Target.NPPos.z.20
+#Subscribe SensData.7.Target.NPPos.x.21 SensData.7.Target.NPPos.y.21 SensData.7.Target.NPPos.z.21
+#Subscribe SensData.7.Target.NPPos.x.22 SensData.7.Target.NPPos.y.22 SensData.7.Target.NPPos.z.22
+#Subscribe SensData.7.Target.NPPos.x.23 SensData.7.Target.NPPos.y.23 SensData.7.Target.NPPos.z.23
+#Subscribe SensData.7.Target.NPPos.x.24 SensData.7.Target.NPPos.y.24 SensData.7.Target.NPPos.z.24
+#Subscribe SensData.8.Target.NPPos.x.0 SensData.8.Target.NPPos.y.0 SensData.8.Target.NPPos.z.0
+#Subscribe SensData.8.Target.NPPos.x.1 SensData.8.Target.NPPos.y.1 SensData.8.Target.NPPos.z.1
+#Subscribe SensData.8.Target.NPPos.x.2 SensData.8.Target.NPPos.y.2 SensData.8.Target.NPPos.z.2
+#Subscribe SensData.8.Target.NPPos.x.3 SensData.8.Target.NPPos.y.3 SensData.8.Target.NPPos.z.3
+#Subscribe SensData.8.Target.NPPos.x.4 SensData.8.Target.NPPos.y.4 SensData.8.Target.NPPos.z.4
+#Subscribe SensData.8.Target.NPPos.x.5 SensData.8.Target.NPPos.y.5 SensData.8.Target.NPPos.z.5
+#Subscribe SensData.8.Target.NPPos.x.6 SensData.8.Target.NPPos.y.6 SensData.8.Target.NPPos.z.6
+#Subscribe SensData.8.Target.NPPos.x.7 SensData.8.Target.NPPos.y.7 SensData.8.Target.NPPos.z.7
+#Subscribe SensData.8.Target.NPPos.x.8 SensData.8.Target.NPPos.y.8 SensData.8.Target.NPPos.z.8
+#Subscribe SensData.8.Target.NPPos.x.9 SensData.8.Target.NPPos.y.9 SensData.8.Target.NPPos.z.9
+#Subscribe SensData.8.Target.NPPos.x.10 SensData.8.Target.NPPos.y.10 SensData.8.Target.NPPos.z.10
+#Subscribe SensData.8.Target.NPPos.x.11 SensData.8.Target.NPPos.y.11 SensData.8.Target.NPPos.z.11
+#Subscribe SensData.8.Target.NPPos.x.12 SensData.8.Target.NPPos.y.12 SensData.8.Target.NPPos.z.12
+#Subscribe SensData.8.Target.NPPos.x.13 SensData.8.Target.NPPos.y.13 SensData.8.Target.NPPos.z.13
+#Subscribe SensData.8.Target.NPPos.x.14 SensData.8.Target.NPPos.y.14 SensData.8.Target.NPPos.z.14
+#Subscribe SensData.8.Target.NPPos.x.15 SensData.8.Target.NPPos.y.15 SensData.8.Target.NPPos.z.15
+#Subscribe SensData.8.Target.NPPos.x.16 SensData.8.Target.NPPos.y.16 SensData.8.Target.NPPos.z.16
+#Subscribe SensData.8.Target.NPPos.x.17 SensData.8.Target.NPPos.y.17 SensData.8.Target.NPPos.z.17
+#Subscribe SensData.8.Target.NPPos.x.18 SensData.8.Target.NPPos.y.18 SensData.8.Target.NPPos.z.18
+#Subscribe SensData.8.Target.NPPos.x.19 SensData.8.Target.NPPos.y.19 SensData.8.Target.NPPos.z.19
+#Subscribe SensData.8.Target.NPPos.x.20 SensData.8.Target.NPPos.y.20 SensData.8.Target.NPPos.z.20
+#Subscribe SensData.8.Target.NPPos.x.21 SensData.8.Target.NPPos.y.21 SensData.8.Target.NPPos.z.21
+#Subscribe SensData.8.Target.NPPos.x.22 SensData.8.Target.NPPos.y.22 SensData.8.Target.NPPos.z.22
+#Subscribe SensData.8.Target.NPPos.x.23 SensData.8.Target.NPPos.y.23 SensData.8.Target.NPPos.z.23
+#Subscribe SensData.8.Target.NPPos.x.24 SensData.8.Target.NPPos.y.24 SensData.8.Target.NPPos.z.24
+#Subscribe SensData.9.Target.NPPos.x.0 SensData.9.Target.NPPos.y.0 SensData.9.Target.NPPos.z.0
+#Subscribe SensData.9.Target.NPPos.x.1 SensData.9.Target.NPPos.y.1 SensData.9.Target.NPPos.z.1
+#Subscribe SensData.9.Target.NPPos.x.2 SensData.9.Target.NPPos.y.2 SensData.9.Target.NPPos.z.2
+#Subscribe SensData.9.Target.NPPos.x.3 SensData.9.Target.NPPos.y.3 SensData.9.Target.NPPos.z.3
+#Subscribe SensData.9.Target.NPPos.x.4 SensData.9.Target.NPPos.y.4 SensData.9.Target.NPPos.z.4
+#Subscribe SensData.9.Target.NPPos.x.5 SensData.9.Target.NPPos.y.5 SensData.9.Target.NPPos.z.5
+#Subscribe SensData.9.Target.NPPos.x.6 SensData.9.Target.NPPos.y.6 SensData.9.Target.NPPos.z.6
+#Subscribe SensData.9.Target.NPPos.x.7 SensData.9.Target.NPPos.y.7 SensData.9.Target.NPPos.z.7
+#Subscribe SensData.9.Target.NPPos.x.8 SensData.9.Target.NPPos.y.8 SensData.9.Target.NPPos.z.8
+#Subscribe SensData.9.Target.NPPos.x.9 SensData.9.Target.NPPos.y.9 SensData.9.Target.NPPos.z.9
+#Subscribe SensData.9.Target.NPPos.x.10 SensData.9.Target.NPPos.y.10 SensData.9.Target.NPPos.z.10
+#Subscribe SensData.9.Target.NPPos.x.11 SensData.9.Target.NPPos.y.11 SensData.9.Target.NPPos.z.11
+#Subscribe SensData.9.Target.NPPos.x.12 SensData.9.Target.NPPos.y.12 SensData.9.Target.NPPos.z.12
+#Subscribe SensData.9.Target.NPPos.x.13 SensData.9.Target.NPPos.y.13 SensData.9.Target.NPPos.z.13
+#Subscribe SensData.9.Target.NPPos.x.14 SensData.9.Target.NPPos.y.14 SensData.9.Target.NPPos.z.14
+#Subscribe SensData.9.Target.NPPos.x.15 SensData.9.Target.NPPos.y.15 SensData.9.Target.NPPos.z.15
+#Subscribe SensData.9.Target.NPPos.x.16 SensData.9.Target.NPPos.y.16 SensData.9.Target.NPPos.z.16
+#Subscribe SensData.9.Target.NPPos.x.17 SensData.9.Target.NPPos.y.17 SensData.9.Target.NPPos.z.17
+#Subscribe SensData.9.Target.NPPos.x.18 SensData.9.Target.NPPos.y.18 SensData.9.Target.NPPos.z.18
+#Subscribe SensData.9.Target.NPPos.x.19 SensData.9.Target.NPPos.y.19 SensData.9.Target.NPPos.z.19
+#Subscribe SensData.9.Target.NPPos.x.20 SensData.9.Target.NPPos.y.20 SensData.9.Target.NPPos.z.20
+#Subscribe SensData.9.Target.NPPos.x.21 SensData.9.Target.NPPos.y.21 SensData.9.Target.NPPos.z.21
+#Subscribe SensData.9.Target.NPPos.x.22 SensData.9.Target.NPPos.y.22 SensData.9.Target.NPPos.z.22
+#Subscribe SensData.9.Target.NPPos.x.23 SensData.9.Target.NPPos.y.23 SensData.9.Target.NPPos.z.23
+#Subscribe SensData.9.Target.NPPos.x.24 SensData.9.Target.NPPos.y.24 SensData.9.Target.NPPos.z.24
+#Subscribe SensData.10.Target.NPPos.x.0 SensData.10.Target.NPPos.y.0 SensData.10.Target.NPPos.z.0
+#Subscribe SensData.10.Target.NPPos.x.1 SensData.10.Target.NPPos.y.1 SensData.10.Target.NPPos.z.1
+#Subscribe SensData.10.Target.NPPos.x.2 SensData.10.Target.NPPos.y.2 SensData.10.Target.NPPos.z.2
+#Subscribe SensData.10.Target.NPPos.x.3 SensData.10.Target.NPPos.y.3 SensData.10.Target.NPPos.z.3
+#Subscribe SensData.10.Target.NPPos.x.4 SensData.10.Target.NPPos.y.4 SensData.10.Target.NPPos.z.4
+#Subscribe SensData.10.Target.NPPos.x.5 SensData.10.Target.NPPos.y.5 SensData.10.Target.NPPos.z.5
+#Subscribe SensData.10.Target.NPPos.x.6 SensData.10.Target.NPPos.y.6 SensData.10.Target.NPPos.z.6
+#Subscribe SensData.10.Target.NPPos.x.7 SensData.10.Target.NPPos.y.7 SensData.10.Target.NPPos.z.7
+#Subscribe SensData.10.Target.NPPos.x.8 SensData.10.Target.NPPos.y.8 SensData.10.Target.NPPos.z.8
+#Subscribe SensData.10.Target.NPPos.x.9 SensData.10.Target.NPPos.y.9 SensData.10.Target.NPPos.z.9
+#Subscribe SensData.10.Target.NPPos.x.10 SensData.10.Target.NPPos.y.10 SensData.10.Target.NPPos.z.10
+#Subscribe SensData.10.Target.NPPos.x.11 SensData.10.Target.NPPos.y.11 SensData.10.Target.NPPos.z.11
+#Subscribe SensData.10.Target.NPPos.x.12 SensData.10.Target.NPPos.y.12 SensData.10.Target.NPPos.z.12
+#Subscribe SensData.10.Target.NPPos.x.13 SensData.10.Target.NPPos.y.13 SensData.10.Target.NPPos.z.13
+#Subscribe SensData.10.Target.NPPos.x.14 SensData.10.Target.NPPos.y.14 SensData.10.Target.NPPos.z.14
+#Subscribe SensData.10.Target.NPPos.x.15 SensData.10.Target.NPPos.y.15 SensData.10.Target.NPPos.z.15
+#Subscribe SensData.10.Target.NPPos.x.16 SensData.10.Target.NPPos.y.16 SensData.10.Target.NPPos.z.16
+#Subscribe SensData.10.Target.NPPos.x.17 SensData.10.Target.NPPos.y.17 SensData.10.Target.NPPos.z.17
+#Subscribe SensData.10.Target.NPPos.x.18 SensData.10.Target.NPPos.y.18 SensData.10.Target.NPPos.z.18
+#Subscribe SensData.10.Target.NPPos.x.19 SensData.10.Target.NPPos.y.19 SensData.10.Target.NPPos.z.19
+#Subscribe SensData.10.Target.NPPos.x.20 SensData.10.Target.NPPos.y.20 SensData.10.Target.NPPos.z.20
+#Subscribe SensData.10.Target.NPPos.x.21 SensData.10.Target.NPPos.y.21 SensData.10.Target.NPPos.z.21
+#Subscribe SensData.10.Target.NPPos.x.22 SensData.10.Target.NPPos.y.22 SensData.10.Target.NPPos.z.22
+#Subscribe SensData.10.Target.NPPos.x.23 SensData.10.Target.NPPos.y.23 SensData.10.Target.NPPos.z.23
+#Subscribe SensData.10.Target.NPPos.x.24 SensData.10.Target.NPPos.y.24 SensData.10.Target.NPPos.z.24
+#Subscribe SensData.11.Target.NPPos.x.0 SensData.11.Target.NPPos.y.0 SensData.11.Target.NPPos.z.0
+#Subscribe SensData.11.Target.NPPos.x.1 SensData.11.Target.NPPos.y.1 SensData.11.Target.NPPos.z.1
+#Subscribe SensData.11.Target.NPPos.x.2 SensData.11.Target.NPPos.y.2 SensData.11.Target.NPPos.z.2
+#Subscribe SensData.11.Target.NPPos.x.3 SensData.11.Target.NPPos.y.3 SensData.11.Target.NPPos.z.3
+#Subscribe SensData.11.Target.NPPos.x.4 SensData.11.Target.NPPos.y.4 SensData.11.Target.NPPos.z.4
+#Subscribe SensData.11.Target.NPPos.x.5 SensData.11.Target.NPPos.y.5 SensData.11.Target.NPPos.z.5
+#Subscribe SensData.11.Target.NPPos.x.6 SensData.11.Target.NPPos.y.6 SensData.11.Target.NPPos.z.6
+#Subscribe SensData.11.Target.NPPos.x.7 SensData.11.Target.NPPos.y.7 SensData.11.Target.NPPos.z.7
+#Subscribe SensData.11.Target.NPPos.x.8 SensData.11.Target.NPPos.y.8 SensData.11.Target.NPPos.z.8
+#Subscribe SensData.11.Target.NPPos.x.9 SensData.11.Target.NPPos.y.9 SensData.11.Target.NPPos.z.9
+#Subscribe SensData.11.Target.NPPos.x.10 SensData.11.Target.NPPos.y.10 SensData.11.Target.NPPos.z.10
+#Subscribe SensData.11.Target.NPPos.x.11 SensData.11.Target.NPPos.y.11 SensData.11.Target.NPPos.z.11
+#Subscribe SensData.11.Target.NPPos.x.12 SensData.11.Target.NPPos.y.12 SensData.11.Target.NPPos.z.12
+#Subscribe SensData.11.Target.NPPos.x.13 SensData.11.Target.NPPos.y.13 SensData.11.Target.NPPos.z.13
+#Subscribe SensData.11.Target.NPPos.x.14 SensData.11.Target.NPPos.y.14 SensData.11.Target.NPPos.z.14
+#Subscribe SensData.11.Target.NPPos.x.15 SensData.11.Target.NPPos.y.15 SensData.11.Target.NPPos.z.15
+#Subscribe SensData.11.Target.NPPos.x.16 SensData.11.Target.NPPos.y.16 SensData.11.Target.NPPos.z.16
+#Subscribe SensData.11.Target.NPPos.x.17 SensData.11.Target.NPPos.y.17 SensData.11.Target.NPPos.z.17
+#Subscribe SensData.11.Target.NPPos.x.18 SensData.11.Target.NPPos.y.18 SensData.11.Target.NPPos.z.18
+#Subscribe SensData.11.Target.NPPos.x.19 SensData.11.Target.NPPos.y.19 SensData.11.Target.NPPos.z.19
+#Subscribe SensData.11.Target.NPPos.x.20 SensData.11.Target.NPPos.y.20 SensData.11.Target.NPPos.z.20
+#Subscribe SensData.11.Target.NPPos.x.21 SensData.11.Target.NPPos.y.21 SensData.11.Target.NPPos.z.21
+#Subscribe SensData.11.Target.NPPos.x.22 SensData.11.Target.NPPos.y.22 SensData.11.Target.NPPos.z.22
+#Subscribe SensData.11.Target.NPPos.x.23 SensData.11.Target.NPPos.y.23 SensData.11.Target.NPPos.z.23
+#Subscribe SensData.11.Target.NPPos.x.24 SensData.11.Target.NPPos.y.24 SensData.11.Target.NPPos.z.24
+#Subscribe SensData.0.SensPos.x SensData.0.SensPos.y SensData.0.SensPos.z
+#Subscribe SensData.1.SensPos.x SensData.1.SensPos.y SensData.1.SensPos.z
+#Subscribe SensData.2.SensPos.x SensData.2.SensPos.y SensData.2.SensPos.z
+#Subscribe SensData.3.SensPos.x SensData.3.SensPos.y SensData.3.SensPos.z
+#Subscribe SensData.4.SensPos.x SensData.4.SensPos.y SensData.4.SensPos.z
+#Subscribe SensData.5.SensPos.x SensData.5.SensPos.y SensData.5.SensPos.z
+#Subscribe SensData.6.SensPos.x SensData.6.SensPos.y SensData.6.SensPos.z
+#Subscribe SensData.7.SensPos.x SensData.7.SensPos.y SensData.7.SensPos.z
+#Subscribe SensData.8.SensPos.x SensData.8.SensPos.y SensData.8.SensPos.z
+#Subscribe SensData.9.SensPos.x SensData.9.SensPos.y SensData.9.SensPos.z
+#Subscribe SensData.10.SensPos.x SensData.10.SensPos.y SensData.10.SensPos.z
+#Subscribe SensData.11.SensPos.x SensData.11.SensPos.y SensData.11.SensPos.z
+
+#Subscribe AP.uspPointListOutput.numberOfPoints
+#Subscribe AP.uspPointListOutput.points[0].xPosition_m AP.uspPointListOutput.points[0].yPosition_m AP.uspPointListOutput.points[0].sensorMask
+#Subscribe AP.uspPointListOutput.points[1].xPosition_m AP.uspPointListOutput.points[1].yPosition_m AP.uspPointListOutput.points[1].sensorMask
+#Subscribe AP.uspPointListOutput.points[2].xPosition_m AP.uspPointListOutput.points[2].yPosition_m AP.uspPointListOutput.points[2].sensorMask
+#Subscribe AP.uspPointListOutput.points[3].xPosition_m AP.uspPointListOutput.points[3].yPosition_m AP.uspPointListOutput.points[3].sensorMask
+#Subscribe AP.uspPointListOutput.points[4].xPosition_m AP.uspPointListOutput.points[4].yPosition_m AP.uspPointListOutput.points[4].sensorMask
+#Subscribe AP.uspPointListOutput.points[5].xPosition_m AP.uspPointListOutput.points[5].yPosition_m AP.uspPointListOutput.points[5].sensorMask
+#Subscribe AP.uspPointListOutput.points[6].xPosition_m AP.uspPointListOutput.points[6].yPosition_m AP.uspPointListOutput.points[6].sensorMask
+#Subscribe AP.uspPointListOutput.points[7].xPosition_m AP.uspPointListOutput.points[7].yPosition_m AP.uspPointListOutput.points[7].sensorMask
+#Subscribe AP.uspPointListOutput.points[8].xPosition_m AP.uspPointListOutput.points[8].yPosition_m AP.uspPointListOutput.points[8].sensorMask
+#Subscribe AP.uspPointListOutput.points[9].xPosition_m AP.uspPointListOutput.points[9].yPosition_m AP.uspPointListOutput.points[9].sensorMask
+#Subscribe AP.uspPointListOutput.points[10].xPosition_m AP.uspPointListOutput.points[10].yPosition_m AP.uspPointListOutput.points[10].sensorMask
+#Subscribe AP.uspPointListOutput.points[11].xPosition_m AP.uspPointListOutput.points[11].yPosition_m AP.uspPointListOutput.points[11].sensorMask
+#Subscribe AP.uspPointListOutput.points[12].xPosition_m AP.uspPointListOutput.points[12].yPosition_m AP.uspPointListOutput.points[12].sensorMask
+#Subscribe AP.uspPointListOutput.points[13].xPosition_m AP.uspPointListOutput.points[13].yPosition_m AP.uspPointListOutput.points[13].sensorMask
+#Subscribe AP.uspPointListOutput.points[14].xPosition_m AP.uspPointListOutput.points[14].yPosition_m AP.uspPointListOutput.points[14].sensorMask
+#Subscribe AP.uspPointListOutput.points[15].xPosition_m AP.uspPointListOutput.points[15].yPosition_m AP.uspPointListOutput.points[15].sensorMask
+#Subscribe AP.uspPointListOutput.points[16].xPosition_m AP.uspPointListOutput.points[16].yPosition_m AP.uspPointListOutput.points[16].sensorMask
+#Subscribe AP.uspPointListOutput.points[17].xPosition_m AP.uspPointListOutput.points[17].yPosition_m AP.uspPointListOutput.points[17].sensorMask
+#Subscribe AP.uspPointListOutput.points[18].xPosition_m AP.uspPointListOutput.points[18].yPosition_m AP.uspPointListOutput.points[18].sensorMask
+#Subscribe AP.uspPointListOutput.points[19].xPosition_m AP.uspPointListOutput.points[19].yPosition_m AP.uspPointListOutput.points[19].sensorMask
+#Subscribe AP.uspPointListOutput.points[20].xPosition_m AP.uspPointListOutput.points[20].yPosition_m AP.uspPointListOutput.points[20].sensorMask
+#Subscribe AP.uspPointListOutput.points[21].xPosition_m AP.uspPointListOutput.points[21].yPosition_m AP.uspPointListOutput.points[21].sensorMask
+#Subscribe AP.uspPointListOutput.points[22].xPosition_m AP.uspPointListOutput.points[22].yPosition_m AP.uspPointListOutput.points[22].sensorMask
+#Subscribe AP.uspPointListOutput.points[23].xPosition_m AP.uspPointListOutput.points[23].yPosition_m AP.uspPointListOutput.points[23].sensorMask
+#Subscribe AP.uspPointListOutput.points[24].xPosition_m AP.uspPointListOutput.points[24].yPosition_m AP.uspPointListOutput.points[24].sensorMask
+#Subscribe AP.uspPointListOutput.points[25].xPosition_m AP.uspPointListOutput.points[25].yPosition_m AP.uspPointListOutput.points[25].sensorMask
+#Subscribe AP.uspPointListOutput.points[26].xPosition_m AP.uspPointListOutput.points[26].yPosition_m AP.uspPointListOutput.points[26].sensorMask
+#Subscribe AP.uspPointListOutput.points[27].xPosition_m AP.uspPointListOutput.points[27].yPosition_m AP.uspPointListOutput.points[27].sensorMask
+#Subscribe AP.uspPointListOutput.points[28].xPosition_m AP.uspPointListOutput.points[28].yPosition_m AP.uspPointListOutput.points[28].sensorMask
+#Subscribe AP.uspPointListOutput.points[29].xPosition_m AP.uspPointListOutput.points[29].yPosition_m AP.uspPointListOutput.points[29].sensorMask
+#Subscribe AP.uspPointListOutput.points[30].xPosition_m AP.uspPointListOutput.points[30].yPosition_m AP.uspPointListOutput.points[30].sensorMask
+#Subscribe AP.uspPointListOutput.points[31].xPosition_m AP.uspPointListOutput.points[31].yPosition_m AP.uspPointListOutput.points[31].sensorMask
+#Subscribe AP.uspPointListOutput.points[32].xPosition_m AP.uspPointListOutput.points[32].yPosition_m AP.uspPointListOutput.points[32].sensorMask
+#Subscribe AP.uspPointListOutput.points[33].xPosition_m AP.uspPointListOutput.points[33].yPosition_m AP.uspPointListOutput.points[33].sensorMask
+#Subscribe AP.uspPointListOutput.points[34].xPosition_m AP.uspPointListOutput.points[34].yPosition_m AP.uspPointListOutput.points[34].sensorMask
+#Subscribe AP.uspPointListOutput.points[35].xPosition_m AP.uspPointListOutput.points[35].yPosition_m AP.uspPointListOutput.points[35].sensorMask
+#Subscribe AP.uspPointListOutput.points[36].xPosition_m AP.uspPointListOutput.points[36].yPosition_m AP.uspPointListOutput.points[36].sensorMask
+#Subscribe AP.uspPointListOutput.points[37].xPosition_m AP.uspPointListOutput.points[37].yPosition_m AP.uspPointListOutput.points[37].sensorMask
+#Subscribe AP.uspPointListOutput.points[38].xPosition_m AP.uspPointListOutput.points[38].yPosition_m AP.uspPointListOutput.points[38].sensorMask
+#Subscribe AP.uspPointListOutput.points[39].xPosition_m AP.uspPointListOutput.points[39].yPosition_m AP.uspPointListOutput.points[39].sensorMask
+#Subscribe AP.uspPointListOutput.points[40].xPosition_m AP.uspPointListOutput.points[40].yPosition_m AP.uspPointListOutput.points[40].sensorMask
+#Subscribe AP.uspPointListOutput.points[41].xPosition_m AP.uspPointListOutput.points[41].yPosition_m AP.uspPointListOutput.points[41].sensorMask
+#Subscribe AP.uspPointListOutput.points[42].xPosition_m AP.uspPointListOutput.points[42].yPosition_m AP.uspPointListOutput.points[42].sensorMask
+#Subscribe AP.uspPointListOutput.points[43].xPosition_m AP.uspPointListOutput.points[43].yPosition_m AP.uspPointListOutput.points[43].sensorMask
+#Subscribe AP.uspPointListOutput.points[44].xPosition_m AP.uspPointListOutput.points[44].yPosition_m AP.uspPointListOutput.points[44].sensorMask
+#Subscribe AP.uspPointListOutput.points[45].xPosition_m AP.uspPointListOutput.points[45].yPosition_m AP.uspPointListOutput.points[45].sensorMask
+#Subscribe AP.uspPointListOutput.points[46].xPosition_m AP.uspPointListOutput.points[46].yPosition_m AP.uspPointListOutput.points[46].sensorMask
+#Subscribe AP.uspPointListOutput.points[47].xPosition_m AP.uspPointListOutput.points[47].yPosition_m AP.uspPointListOutput.points[47].sensorMask
+#Subscribe AP.uspPointListOutput.points[48].xPosition_m AP.uspPointListOutput.points[48].yPosition_m AP.uspPointListOutput.points[48].sensorMask
+#Subscribe AP.uspPointListOutput.points[49].xPosition_m AP.uspPointListOutput.points[49].yPosition_m AP.uspPointListOutput.points[49].sensorMask
+#Subscribe AP.uspPointListOutput.points[50].xPosition_m AP.uspPointListOutput.points[50].yPosition_m AP.uspPointListOutput.points[50].sensorMask
+#Subscribe AP.uspPointListOutput.points[51].xPosition_m AP.uspPointListOutput.points[51].yPosition_m AP.uspPointListOutput.points[51].sensorMask
+#Subscribe AP.uspPointListOutput.points[52].xPosition_m AP.uspPointListOutput.points[52].yPosition_m AP.uspPointListOutput.points[52].sensorMask
+#Subscribe AP.uspPointListOutput.points[53].xPosition_m AP.uspPointListOutput.points[53].yPosition_m AP.uspPointListOutput.points[53].sensorMask
+#Subscribe AP.uspPointListOutput.points[54].xPosition_m AP.uspPointListOutput.points[54].yPosition_m AP.uspPointListOutput.points[54].sensorMask
+#Subscribe AP.uspPointListOutput.points[55].xPosition_m AP.uspPointListOutput.points[55].yPosition_m AP.uspPointListOutput.points[55].sensorMask
+#Subscribe AP.uspPointListOutput.points[56].xPosition_m AP.uspPointListOutput.points[56].yPosition_m AP.uspPointListOutput.points[56].sensorMask
+#Subscribe AP.uspPointListOutput.points[57].xPosition_m AP.uspPointListOutput.points[57].yPosition_m AP.uspPointListOutput.points[57].sensorMask
+#Subscribe AP.uspPointListOutput.points[58].xPosition_m AP.uspPointListOutput.points[58].yPosition_m AP.uspPointListOutput.points[58].sensorMask
+#Subscribe AP.uspPointListOutput.points[59].xPosition_m AP.uspPointListOutput.points[59].yPosition_m AP.uspPointListOutput.points[59].sensorMask
+#Subscribe AP.uspPointListOutput.points[60].xPosition_m AP.uspPointListOutput.points[60].yPosition_m AP.uspPointListOutput.points[60].sensorMask
+#Subscribe AP.uspPointListOutput.points[61].xPosition_m AP.uspPointListOutput.points[61].yPosition_m AP.uspPointListOutput.points[61].sensorMask
+#Subscribe AP.uspPointListOutput.points[62].xPosition_m AP.uspPointListOutput.points[62].yPosition_m AP.uspPointListOutput.points[62].sensorMask
+#Subscribe AP.uspPointListOutput.points[63].xPosition_m AP.uspPointListOutput.points[63].yPosition_m AP.uspPointListOutput.points[63].sensorMask
+#Subscribe AP.uspPointListOutput.points[64].xPosition_m AP.uspPointListOutput.points[64].yPosition_m AP.uspPointListOutput.points[64].sensorMask
+#Subscribe AP.uspPointListOutput.points[65].xPosition_m AP.uspPointListOutput.points[65].yPosition_m AP.uspPointListOutput.points[65].sensorMask
+#Subscribe AP.uspPointListOutput.points[66].xPosition_m AP.uspPointListOutput.points[66].yPosition_m AP.uspPointListOutput.points[66].sensorMask
+#Subscribe AP.uspPointListOutput.points[67].xPosition_m AP.uspPointListOutput.points[67].yPosition_m AP.uspPointListOutput.points[67].sensorMask
+#Subscribe AP.uspPointListOutput.points[68].xPosition_m AP.uspPointListOutput.points[68].yPosition_m AP.uspPointListOutput.points[68].sensorMask
+#Subscribe AP.uspPointListOutput.points[69].xPosition_m AP.uspPointListOutput.points[69].yPosition_m AP.uspPointListOutput.points[69].sensorMask
+#Subscribe AP.uspPointListOutput.points[70].xPosition_m AP.uspPointListOutput.points[70].yPosition_m AP.uspPointListOutput.points[70].sensorMask
+#Subscribe AP.uspPointListOutput.points[71].xPosition_m AP.uspPointListOutput.points[71].yPosition_m AP.uspPointListOutput.points[71].sensorMask
+#Subscribe AP.uspPointListOutput.points[72].xPosition_m AP.uspPointListOutput.points[72].yPosition_m AP.uspPointListOutput.points[72].sensorMask
+#Subscribe AP.uspPointListOutput.points[73].xPosition_m AP.uspPointListOutput.points[73].yPosition_m AP.uspPointListOutput.points[73].sensorMask
+#Subscribe AP.uspPointListOutput.points[74].xPosition_m AP.uspPointListOutput.points[74].yPosition_m AP.uspPointListOutput.points[74].sensorMask
+#Subscribe AP.uspPointListOutput.points[75].xPosition_m AP.uspPointListOutput.points[75].yPosition_m AP.uspPointListOutput.points[75].sensorMask
+#Subscribe AP.uspPointListOutput.points[76].xPosition_m AP.uspPointListOutput.points[76].yPosition_m AP.uspPointListOutput.points[76].sensorMask
+#Subscribe AP.uspPointListOutput.points[77].xPosition_m AP.uspPointListOutput.points[77].yPosition_m AP.uspPointListOutput.points[77].sensorMask
+#Subscribe AP.uspPointListOutput.points[78].xPosition_m AP.uspPointListOutput.points[78].yPosition_m AP.uspPointListOutput.points[78].sensorMask
+#Subscribe AP.uspPointListOutput.points[79].xPosition_m AP.uspPointListOutput.points[79].yPosition_m AP.uspPointListOutput.points[79].sensorMask
+#Subscribe AP.uspPointListOutput.points[80].xPosition_m AP.uspPointListOutput.points[80].yPosition_m AP.uspPointListOutput.points[80].sensorMask
+#Subscribe AP.uspPointListOutput.points[81].xPosition_m AP.uspPointListOutput.points[81].yPosition_m AP.uspPointListOutput.points[81].sensorMask
+#Subscribe AP.uspPointListOutput.points[82].xPosition_m AP.uspPointListOutput.points[82].yPosition_m AP.uspPointListOutput.points[82].sensorMask
+#Subscribe AP.uspPointListOutput.points[83].xPosition_m AP.uspPointListOutput.points[83].yPosition_m AP.uspPointListOutput.points[83].sensorMask
+#Subscribe AP.uspPointListOutput.points[84].xPosition_m AP.uspPointListOutput.points[84].yPosition_m AP.uspPointListOutput.points[84].sensorMask
+#Subscribe AP.uspPointListOutput.points[85].xPosition_m AP.uspPointListOutput.points[85].yPosition_m AP.uspPointListOutput.points[85].sensorMask
+#Subscribe AP.uspPointListOutput.points[86].xPosition_m AP.uspPointListOutput.points[86].yPosition_m AP.uspPointListOutput.points[86].sensorMask
+#Subscribe AP.uspPointListOutput.points[87].xPosition_m AP.uspPointListOutput.points[87].yPosition_m AP.uspPointListOutput.points[87].sensorMask
+#Subscribe AP.uspPointListOutput.points[88].xPosition_m AP.uspPointListOutput.points[88].yPosition_m AP.uspPointListOutput.points[88].sensorMask
+#Subscribe AP.uspPointListOutput.points[89].xPosition_m AP.uspPointListOutput.points[89].yPosition_m AP.uspPointListOutput.points[89].sensorMask
+#Subscribe AP.uspPointListOutput.points[90].xPosition_m AP.uspPointListOutput.points[90].yPosition_m AP.uspPointListOutput.points[90].sensorMask
+#Subscribe AP.uspPointListOutput.points[91].xPosition_m AP.uspPointListOutput.points[91].yPosition_m AP.uspPointListOutput.points[91].sensorMask
+#Subscribe AP.uspPointListOutput.points[92].xPosition_m AP.uspPointListOutput.points[92].yPosition_m AP.uspPointListOutput.points[92].sensorMask
+#Subscribe AP.uspPointListOutput.points[93].xPosition_m AP.uspPointListOutput.points[93].yPosition_m AP.uspPointListOutput.points[93].sensorMask
+#Subscribe AP.uspPointListOutput.points[94].xPosition_m AP.uspPointListOutput.points[94].yPosition_m AP.uspPointListOutput.points[94].sensorMask
+#Subscribe AP.uspPointListOutput.points[95].xPosition_m AP.uspPointListOutput.points[95].yPosition_m AP.uspPointListOutput.points[95].sensorMask
+#Subscribe AP.uspPointListOutput.points[96].xPosition_m AP.uspPointListOutput.points[96].yPosition_m AP.uspPointListOutput.points[96].sensorMask
+#Subscribe AP.uspPointListOutput.points[97].xPosition_m AP.uspPointListOutput.points[97].yPosition_m AP.uspPointListOutput.points[97].sensorMask
+#Subscribe AP.uspPointListOutput.points[98].xPosition_m AP.uspPointListOutput.points[98].yPosition_m AP.uspPointListOutput.points[98].sensorMask
+#Subscribe AP.uspPointListOutput.points[99].xPosition_m AP.uspPointListOutput.points[99].yPosition_m AP.uspPointListOutput.points[99].sensorMask
+
+#Subscribe AP.variant_identifier_nu
+#Subscribe AP.vedodoActive_nu
+#Subscribe AP.odoEstimationPort.xPosition_m AP.odoEstimationPort.yPosition_m AP.odoEstimationPort.yawAngle_rad
+#Subscribe AP.odoEstimationPortCM.xPosition_m AP.odoEstimationPortCM.yPosition_m AP.odoEstimationPortCM.yawAngle_rad
+
+### END IPG-MOVIE-INFO
+
+
+proc DrawBackground {} {
+    global Qu
+
+    set ContiOrange 	{1 0.647 0 2}
+	
+	set red				{1 0 0}
+	set green			{0 0.502 0}
+	set blue			{0 0 1}
+	set yellow			{1 1 0}
+	set orange		 	{1 0.647 0}
+	set cyan			{0 1 1}
+	set pink			{1 0.753 0.796}
+	set magenta			{1 0 1}
+
+	foreach SensNo [list 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11] TrafNo [list 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24] {
+		if {$Qu(SensData.$SensNo.Target.NPPos.x.$TrafNo) != 0 && $Qu(SensData.$SensNo.Target.NPPos.y.$TrafNo) != 0} {
+			glDisableLighting
+			
+			switch $SensNo {
+				0 {gl color {*}$red;}
+				1 {gl color {*}$green;}
+				2 {gl color {*}$blue;}
+				3 {gl color {*}$yellow;}
+				4 {gl color {*}$orange;}
+				5 {gl color {*}$cyan;}
+				6 {gl color {*}$pink;}
+				7 {gl color {*}$red;}
+				8 {gl color {*}$green;}
+				9 {gl color {*}$yellow;}
+				10 {gl color {*}$cyan;}
+				11 {gl color {*}$magenta;}
+			}
+			
+			gl linewidth 1;
+			gl begin line_strip
+			
+			gl vertex $Qu(SensData.$SensNo.SensPos.x) $Qu(SensData.$SensNo.SensPos.y) $Qu(SensData.$SensNo.SensPos.z)
+			gl vertex $Qu(SensData.$SensNo.Target.NPPos.x.$TrafNo) $Qu(SensData.$SensNo.Target.NPPos.y.$TrafNo) $Qu(SensData.$SensNo.Target.NPPos.z.$TrafNo)
+			
+			gl end
+			glEnableLighting
+		}
+	}
+	
+	# set SensNo 2
+	# if {$Qu(SensData.$SensNo.Target.NPPos.x.0) != 0 && $Qu(SensData.$SensNo.Target.NPPos.y.0) != 0} {
+		# glDisableLighting
+		# gl color {*}$ContiOrange; #choose the color of trajectory
+		# gl linewidth 1; #change the width of trajectory
+		# gl begin line_strip
+		
+		# gl vertex $Qu(SensData.$SensNo.SensPos.x) $Qu(SensData.$SensNo.SensPos.y) $Qu(SensData.$SensNo.SensPos.z)
+		# gl vertex $Qu(SensData.$SensNo.Target.NPPos.x.0) $Qu(SensData.$SensNo.Target.NPPos.y.0) $Qu(SensData.$SensNo.SensPos.z)
+
+		# gl end
+		# glEnableLighting
+    # }
+
+    for {set i 0} {$i < $Qu(AP.uspPointListOutput.numberOfPoints)} {incr i} {
+        if {$i < 100} {
+            set x $Qu(AP.uspPointListOutput.points\[$i\].xPosition_m)
+            set y $Qu(AP.uspPointListOutput.points\[$i\].yPosition_m)
+            
+			# # Old version for p2p setup
+			# set sensorMask "AP.uspPointListOutput.points\[$i\].sensorMask"
+			# set tx_id [expr (($Qu($sensorMask) & 0xFF00) >> 8) + 1]
+            # set rx_id [expr ($Qu($sensorMask) & 0x00FF) + 1]
+            
+            # if not entry/cus_only variant, transform usp points to global coordinates
+            if { !($Qu(AP.variant_identifier_nu)) } {
+                set ego_x $Qu(AP.odoEstimationPortCM.xPosition_m)
+                set ego_y $Qu(AP.odoEstimationPortCM.yPosition_m)
+                set ego_yaw $Qu(AP.odoEstimationPortCM.yawAngle_rad)
+                if { $Qu(AP.vedodoActive_nu) } {
+                    set ego_x $Qu(AP.odoEstimationPort.xPosition_m)
+                    set ego_y $Qu(AP.odoEstimationPort.yPosition_m)
+                    set ego_yaw $Qu(AP.odoEstimationPort.yawAngle_rad)
+                }
+                set x_tmp [expr ($x * cos($ego_yaw)) - ($y * sin($ego_yaw)) ]
+                set y_tmp [expr ($x * sin($ego_yaw)) + ($y * cos($ego_yaw)) ]
+                set x [expr $x_tmp + $ego_x]
+                set y [expr $y_tmp + $ego_y]
+            }
+
+
+			gl pushmatrix
+			glDisableLighting
+			gl color {*}$red;
+			gl translate [expr {$x}] [expr {$y}] 0.5
+			gl Cylinder 0.005 0.1 0.01 10 1
+			glEnableLighting
+			gl popmatrix
+
+        }
+    }
+}
+
+return -1

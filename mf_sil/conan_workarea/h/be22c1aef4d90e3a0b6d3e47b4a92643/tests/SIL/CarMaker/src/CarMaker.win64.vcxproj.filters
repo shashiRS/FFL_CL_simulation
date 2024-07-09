@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CM_Main.c">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CM_Vehicle.c">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\User.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\tests\SIL\CarMaker\src\app_tmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\mdl_APCtrl.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\VehTurnCntr.c">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\mdl_RearSteering.c">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CemSurrogate.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\PmdSurrogate.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\PmdConfigReader.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\SiUtility.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\SICoordinateTransformer.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\lowSpeedLateralDMC.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\lowSpeedLongDMC.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\wheelSpeedSensorSim.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Init_Clean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Reflection_Generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\ReflectionFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\Sensor_Mapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\vCUS_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\contrib\vCUS-Phen-Mod\vCUS_Phen_CM\src_PhenDevel\USS_PhenoModel\vCUS_Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\TestEvaluation.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\TestRunWrapper.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\OdometryDataManager.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CarMakerLogger.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CarMakerSystemServices.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\SiLowWrapper.cpp">
+      <Filter>TREE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\CMakeFiles\803a78e9d65d2a553657b82c95b6369f\app_tmp.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\FFL_Closed_loop\mf_sil\tests\SIL\CarMaker\src\CMakeLists.txt">
+      <Filter>TREE</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF458D53-5B6A-3E72-8391-70EA1D1925A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EDC47494-B971-3D20-B4FA-36D25AD7971B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TREE">
+      <UniqueIdentifier>{4BC76A68-164C-3C9C-9652-12484F895E17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

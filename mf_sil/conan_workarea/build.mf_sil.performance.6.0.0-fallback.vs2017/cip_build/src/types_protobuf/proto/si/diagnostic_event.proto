@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "eco/diagnosis_event_status.proto";
+
+package pb.si.diagnostic_event;
+
+message DiagnosticEvent{
+  optional uint32 diagnosisEventID = 3237;
+  optional pb.eco.diagnosis_event_status.DiagnosisEventStatus diagnosisEventStatus = 870;
+}
+
+message DiagnosticEvent_array_port{
+   repeated pb.si.diagnostic_event.DiagnosticEvent data = 1456;
+}

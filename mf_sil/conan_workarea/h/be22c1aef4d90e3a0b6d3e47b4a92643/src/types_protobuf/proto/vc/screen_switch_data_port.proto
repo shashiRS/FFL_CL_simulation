@@ -1,0 +1,24 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_hmitoap/screen_types.proto";
+import "vc/blind_spot_view_status.proto";
+import "vc/transparency_preset.proto";
+
+package pb.vc.screen_switch_data_port;
+
+message ScreenSwitchDataPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.ap_hmitoap.screen_types.ScreenTypes HmiOutUserActScreenReq_u8 = 626;
+  optional pb.vc.blind_spot_view_status.BlindSpotViewStatus blindSpotViewType = 883;
+  optional pb.ap_hmitoap.screen_types.ScreenTypes currentViewMode = 2805;
+  optional uint32 ClusterScreenResponse_nu_u8 = 3156;
+  optional bool deactivateView = 3791;
+  optional pb.vc.transparency_preset.TransparencyPreset transparencyPreset = 366;
+}
+
+message ScreenSwitchDataPort_array_port{
+   repeated pb.vc.screen_switch_data_port.ScreenSwitchDataPort data = 3959;
+}

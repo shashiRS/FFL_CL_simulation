@@ -1,0 +1,88 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_common/traffic_side.proto";
+
+package pb.ap_common.fc_trjpla_sys_func_params;
+
+message FC_TRJPLA_Sys_Func_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float AP_G_MAX_DECEL_COMFORTABLE_MPS2 = 4016;
+  optional float AP_G_MAX_CURV_STEP_VEL_RED_1PM = 1296;
+  optional float AP_G_DIST_MIN_DEFAULT_M = 3776;
+  optional float AP_G_DIST_MIN_NO_DELIMITER_M = 366;
+  optional float AP_G_DIST_MIN_LSIDE_HIGH_OBST_PERP_M = 2912;
+  optional float AP_G_DIST_CMF_LSIDE_HIGH_OBST_PERP_M = 3872;
+  optional float AP_G_DIST_MIN_SSIDE_HIGH_OBST_M = 3519;
+  optional float AP_G_DIST_CMF_FRONT_HIGH_OBST_M = 1303;
+  optional float AP_G_DIST_CMF_REAR_HIGH_OBST_M = 3309;
+  optional float AP_G_DIST_MIN_LSIDE_DOOR_OPEN_PERP_M = 4029;
+  optional float AP_G_DIST_CMF_LSIDE_DOOR_OPEN_PERP_M = 3069;
+  optional float AP_G_DIST_MIN_LSIDE_TRAV_PERP_M = 1260;
+  optional float AP_G_DIST_CMF_LSIDE_TRAV_PERP_M = 286;
+  optional float AP_G_DIST_MIN_SSIDE_TRAV_M = 121;
+  optional float AP_G_DIST_CMF_FRONT_TRAV_M = 1638;
+  optional float AP_G_DIST_CMF_REAR_TRAV_M = 2491;
+  optional float AP_G_DIST_MIN_LSIDE_CURB_DOWN_PERP_M = 786;
+  optional float AP_G_DIST_MIN_FRONT_CURB_DOWN_M = 188;
+  optional float AP_G_DIST_MIN_REAR_CURB_DOWN_M = 1495;
+  optional float AP_G_DIST_CMF_LSIDE_CURB_DOWN_PERP_M = 1874;
+  optional float AP_G_DIST_CMF_SSIDE_CURB_DOWN_M = 2068;
+  optional float AP_G_DIST_MIN_LANE_M = 1162;
+  optional float AP_G_DIST_CMF_LANE_M = 3915;
+  optional float AP_G_DIST_MIN_PARKSLOT_MARKER_M = 1300;
+  optional float AP_G_DIST_CMF_PARKSLOT_MARKER_M = 230;
+  optional float AP_G_PAR_MAX_DEVIATION_LONG_M = 1817;
+  optional float AP_G_PAR_MAX_DEVIATION_LAT_M = 2481;
+  optional float AP_G_PAR_MAX_DEVIATION_ANGL_RAD = 289;
+  optional float AP_G_PER_MAX_DEVIATION_LONG_M = 788;
+  optional float AP_G_PER_MAX_DEVIATION_LAT_M = 3824;
+  optional float AP_G_PER_MAX_DEVIATION_ANGL_RAD = 2000;
+  optional pb.ap_common.traffic_side.TrafficSide AP_G_TRAFFIC_SIDE_NU = 741;
+  optional float AP_G_PAR_MAX_ORI_ANGLE_RAD = 2235;
+  optional float AP_G_PERP_MAX_ORI_ANGLE_RAD = 475;
+  optional bool AP_G_FREEZE_AP_EM_INPUT_NU = 3799;
+  optional float AP_G_DIST_CMF_NO_DELIMITER_M = 744;
+  optional float AP_G_WHEEL_DIST_ROAD_LVL_PAR_M = 3324;
+  optional float AP_G_WHEEL_DIST_CURB_LVL_PAR_M = 1401;
+  optional float AP_G_WHEEL_DIST_ROAD_LVL_PERP_M = 4030;
+  optional float AP_G_WHEEL_DIST_CURB_LVL_PERP_M = 1721;
+  optional float AP_G_PARK_OUT_PAR_MIN_ANG_RAD = 2340;
+  optional float AP_G_LONG_SLOT_REL_LENGTH_M = 664;
+  optional float AP_G_MAX_DEVIATION_LONG_SLOT_M = 3710;
+  optional float AP_G_WIDE_SLOT_REL_WIDTH_M = 3502;
+  optional float AP_G_MAX_DEVIATION_WIDE_SLOT_M = 694;
+  optional float AP_G_DIST_MIN_GP_ENTRANCE_CLR_M = 258;
+  optional float AP_G_DIST_CMF_GP_ENTRANCE_CLR_M = 1264;
+  optional float AP_G_DIST_CMF_GP_DRIVER_M = 3938;
+  optional float AP_G_DIST_CMF_GP_PASSENGER_M = 2637;
+  optional float AP_G_PAR_MAX_LAT_MISALIGNMENT_M = 3687;
+  optional float AP_G_PAR_LON_PLAN_DEV_RATIO_NU = 1022;
+  optional float AP_G_PAR_LAT_PLAN_DEV_RATIO_NU = 3985;
+  optional float AP_G_PAR_YAW_PLAN_DEV_RATIO_NU = 273;
+  optional float AP_G_PER_LON_PLAN_DEV_RATIO_NU = 4082;
+  optional float AP_G_PER_LAT_PLAN_DEV_RATIO_NU = 925;
+  optional float AP_G_PER_YAW_PLAN_DEV_RATIO_NU = 3357;
+  optional float AP_G_POUT_PERP_LAT_PLAN_DEV_RATIO_NU = 201;
+  optional float AP_G_POUT_PERP_YAW_PLAN_DEV_RATIO_NU = 3657;
+  optional float AP_G_PERP_MAX_LONG_MISALIGNMENT_M = 3261;
+  optional float AP_G_ANGLED_MAX_LONG_MISALIGNMENT_M = 3832;
+  optional float AP_G_DIST_MIN_LSIDE_HIGH_OBST_PAR_M = 843;
+  optional float AP_G_DIST_CMF_LSIDE_HIGH_OBST_PAR_M = 1799;
+  optional float AP_G_DIST_MIN_LSIDE_DOOR_OPEN_PAR_M = 2368;
+  optional float AP_G_DIST_CMF_LSIDE_DOOR_OPEN_PAR_M = 3340;
+  optional float AP_G_DIST_MIN_LSIDE_TRAV_PAR_M = 3861;
+  optional float AP_G_DIST_CMF_LSIDE_TRAV_PAR_M = 1654;
+  optional float AP_G_DIST_MIN_LSIDE_CURB_DOWN_PAR_M = 709;
+  optional float AP_G_DIST_CMF_LSIDE_CURB_DOWN_PAR_M = 1673;
+  optional float AP_G_DIST_MIN_LSIDE_HIGH_OBST_FB_M = 1335;
+  optional float AP_G_DIST_MIN_SSIDE_HIGH_OBST_FB_M = 3012;
+  optional float AP_G_DIST_STATIC_OBJ_ROAD_SHIFT_PERP_M = 761;
+  optional float AP_G_DIST_STATIC_OBJ_ROAD_SHIFT_PAR_M = 453;
+}
+
+message FC_TRJPLA_Sys_Func_Params_array_port{
+   repeated pb.ap_common.fc_trjpla_sys_func_params.FC_TRJPLA_Sys_Func_Params data = 2275;
+}

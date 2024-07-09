@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.mf_lvmd.lvmdwarning_trigger;
+
+enum LVMDWarningTrigger {
+  LVMD_Trigger_NONE = 0;
+  LVMD_Trigger_VISUAL = 1;
+  LVMD_Trigger_VISUAL_AUDIO = 2;
+}

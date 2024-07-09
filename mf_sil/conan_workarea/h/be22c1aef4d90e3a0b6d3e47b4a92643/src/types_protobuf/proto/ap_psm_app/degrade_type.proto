@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.degrade_type;
+
+enum DegradeType {
+  NO_DEGRADATION = 0;
+  INCREASE_SAFETY_MARGIN = 1;
+  LONG_CTRL_ONLY = 2;
+}

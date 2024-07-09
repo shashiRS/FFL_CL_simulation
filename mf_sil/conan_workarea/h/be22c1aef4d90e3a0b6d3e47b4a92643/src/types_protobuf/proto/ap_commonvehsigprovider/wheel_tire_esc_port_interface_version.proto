@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.wheel_tire_esc_port_interface_version;
+
+message WheelTireEscPort_InterfaceVersion{
+  optional uint32 WheelTireEscPort_VERSION = 3924;
+}
+
+message WheelTireEscPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_tire_esc_port_interface_version.WheelTireEscPort_InterfaceVersion data = 2882;
+}

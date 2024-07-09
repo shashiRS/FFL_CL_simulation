@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.driver_in_out_request_type;
+
+enum DriverInOutRequestType {
+  AP_DRIVER_IN_MANEUVER = 0;
+  AP_DRIVER_OUT_MANEUVER = 1;
+}

@@ -1,0 +1,22 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.parking_situation_sides;
+
+message ParkingSituationSides{
+  optional uint32 egoRelativePos_nu = 2953;
+  optional bool perpendicularParkingSpaces_nu = 934;
+  optional bool parallelParkingSpaces_nu = 3684;
+  optional bool angledStandardSpaces_nu = 2927;
+  optional bool angledReverseSpaces_nu = 3110;
+  optional bool street_nu = 2447;
+  optional bool uncertainSituation_nu = 3465;
+  optional bool parallelParkingOut_nu = 1144;
+  optional bool notAvailable_nu = 1182;
+  repeated bool placeholder_nu = 3607;
+}
+
+message ParkingSituationSides_array_port{
+   repeated pb.mf_hmih.parking_situation_sides.ParkingSituationSides data = 3838;
+}

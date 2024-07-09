@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+import "mf_hmih/pdcsector_info.proto";
+
+package pb.mf_hmih.pdcsectors;
+
+message PDCSectors{
+  repeated pb.mf_hmih.pdcsector_info.PDCSectorInfo left = 114;
+  repeated pb.mf_hmih.pdcsector_info.PDCSectorInfo right = 776;
+  repeated pb.mf_hmih.pdcsector_info.PDCSectorInfo front = 2283;
+  repeated pb.mf_hmih.pdcsector_info.PDCSectorInfo rear = 222;
+  repeated float PDC_P_SECTOR_INNER_COORDS_X_M = 178;
+  repeated float PDC_P_SECTOR_INNER_COORDS_Y_M = 1922;
+  repeated float PDC_P_SECTOR_OUTER_COORDS_X_M = 445;
+  repeated float PDC_P_SECTOR_OUTER_COORDS_Y_M = 1677;
+}
+
+message PDCSectors_array_port{
+   repeated pb.mf_hmih.pdcsectors.PDCSectors data = 3105;
+}

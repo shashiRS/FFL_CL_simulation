@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_drv.us_drv_debug_port_interface_version;
+
+message UsDrvDebugPort_InterfaceVersion{
+  optional uint32 UsDrvDebugPort_VERSION = 782;
+}
+
+message UsDrvDebugPort_InterfaceVersion_array_port{
+   repeated pb.us_drv.us_drv_debug_port_interface_version.UsDrvDebugPort_InterfaceVersion data = 3582;
+}

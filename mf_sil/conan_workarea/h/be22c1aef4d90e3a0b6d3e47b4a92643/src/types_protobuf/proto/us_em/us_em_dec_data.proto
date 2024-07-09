@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_dec_data;
+
+message UsEmDecData{
+  optional float objDecFactors = 1259;
+  optional float alphaProj = 917;
+  optional uint32 sensorId = 1529;
+  optional uint32 visibility = 2879;
+}
+
+message UsEmDecData_array_port{
+   repeated pb.us_em.us_em_dec_data.UsEmDecData data = 1844;
+}

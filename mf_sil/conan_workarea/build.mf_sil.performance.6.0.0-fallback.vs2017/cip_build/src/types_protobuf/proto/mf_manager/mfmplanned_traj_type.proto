@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package pb.mf_manager.mfmplanned_traj_type;
+
+enum MFMPlannedTrajType {
+  MFM_PERP_PARK_IN_TRAJ = 0;
+  MFM_PAR_PARK_IN_TRAJ = 1;
+  MFM_PERP_PARK_OUT_TRAJ = 2;
+  MFM_PAR_PARK_OUT_TRAJ = 3;
+  MFM_REMOTE_MAN_TRAJ = 4;
+  MFM_UNDO_TRAJ = 5;
+  MFM_MAX_NUM_PLANNED_TRAJ_TYPES = 6;
+}

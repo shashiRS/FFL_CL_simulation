@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "mf_mempark/localization_status.proto";
+import "mf_mempark/gpssilent_offering_enabled.proto";
+
+package pb.mf_mempark.memorized_slot;
+
+message MemorizedSlot{
+  optional uint32 ID = 3354;
+  optional pb.mf_mempark.localization_status.LocalizationStatus relocalizationStatus = 2813;
+  optional pb.mf_mempark.gpssilent_offering_enabled.GPSSilentOfferingEnabled gpsSilentOfferingEnabled = 1883;
+  optional uint32 roadWidth = 3717;
+}
+
+message MemorizedSlot_array_port{
+   repeated pb.mf_mempark.memorized_slot.MemorizedSlot data = 3896;
+}

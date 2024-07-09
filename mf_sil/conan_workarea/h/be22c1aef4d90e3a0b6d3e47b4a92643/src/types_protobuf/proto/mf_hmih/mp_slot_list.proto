@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.mp_slot_list;
+
+message MpSlotList{
+  optional uint32 slotId = 1202;
+  optional float roadWidth = 350;
+  optional bool relocalizationStatus = 181;
+  optional bool gpsSilentOfferingEnabled = 3385;
+}
+
+message MpSlotList_array_port{
+   repeated pb.mf_hmih.mp_slot_list.MpSlotList data = 3262;
+}

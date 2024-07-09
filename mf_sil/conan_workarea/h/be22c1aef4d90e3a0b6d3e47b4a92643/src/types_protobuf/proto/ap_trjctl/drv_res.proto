@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "ap_trjctl/drv_res_type.proto";
+
+package pb.ap_trjctl.drv_res;
+
+message DrvRes{
+  optional float distance_m = 1302;
+  optional pb.ap_trjctl.drv_res_type.DrvResType type_nu = 2847;
+}
+
+message DrvRes_array_port{
+   repeated pb.ap_trjctl.drv_res.DrvRes data = 1890;
+}

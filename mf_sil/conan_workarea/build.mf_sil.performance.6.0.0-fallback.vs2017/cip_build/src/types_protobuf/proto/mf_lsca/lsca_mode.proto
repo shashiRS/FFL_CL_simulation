@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.mf_lsca.lsca_mode;
+
+enum LSCA_MODE {
+  LSCA_MODE_OFF = 0;
+  LSCA_MODE_FREEDRIVE = 1;
+  LSCA_MODE_BACKUP = 2;
+  LSCA_MODE_SECURE = 3;
+}

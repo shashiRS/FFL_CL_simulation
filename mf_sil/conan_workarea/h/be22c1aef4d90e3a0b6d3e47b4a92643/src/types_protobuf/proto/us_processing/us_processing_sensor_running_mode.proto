@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.us_processing.us_processing_sensor_running_mode;
+
+enum UsProcessingSensorRunningMode {
+  US_SENSOR_MODE_NONE = 0;
+  US_SENSOR_MODE_ERROR = 1;
+  US_SENSOR_MODE_NFD = 2;
+  US_SENSOR_MODE_FFD = 3;
+  US_SENSOR_MODE_SWITCHING = 4;
+}

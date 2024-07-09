@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_drvwarnsm/whl_warning_type.proto";
+import "mf_drvwarnsm/drv_tube_display_req.proto";
+
+package pb.mf_drvwarnsm.logic_to_proc_port;
+
+message LogicToProcPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated pb.mf_drvwarnsm.whl_warning_type.WhlWarningType whlWarningType_nu = 1322;
+  repeated bool sideResetReq_nu = 620;
+  optional pb.mf_drvwarnsm.drv_tube_display_req.DrvTubeDisplayReq drvTubeDisplayReq_nu = 3285;
+}
+
+message LogicToProcPort_array_port{
+   repeated pb.mf_drvwarnsm.logic_to_proc_port.LogicToProcPort data = 2185;
+}

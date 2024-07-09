@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.avga_swc.automated_vehicle_guidance_state_type;
+
+enum AutomatedVehicleGuidanceStateType {
+  AVGA_UNAVAILABLE = 0;
+  AVGA_AVAILABLE = 1;
+  AVGA_USED = 2;
+  AVGA_GRANTED = 3;
+  AVGA_OVERRULED = 4;
+}

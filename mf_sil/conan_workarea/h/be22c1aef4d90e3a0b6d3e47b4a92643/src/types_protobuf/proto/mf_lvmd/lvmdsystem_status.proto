@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.mf_lvmd.lvmdsystem_status;
+
+enum LVMDSystemStatus {
+  LVMD_Status_OFF = 0;
+  LVMD_Status_IDLE = 1;
+  LVMD_Status_INACTIVE = 2;
+  LVMD_Status_ACTIVE = 3;
+  LVMD_Status_FAILURE = 4;
+}

@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+import "si/slot_dimension.proto";
+
+package pb.si.core_slot_prototype;
+
+message CoreSlotPrototype{
+  optional bool enabled_nu = 1063;
+  optional pb.si.slot_dimension.SlotDimension length_m = 2099;
+  optional pb.si.slot_dimension.SlotDimension width_m = 1681;
+}
+
+message CoreSlotPrototype_array_port{
+   repeated pb.si.core_slot_prototype.CoreSlotPrototype data = 2178;
+}

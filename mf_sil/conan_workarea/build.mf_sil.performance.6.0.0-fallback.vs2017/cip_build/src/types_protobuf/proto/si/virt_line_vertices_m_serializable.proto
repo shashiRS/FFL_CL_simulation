@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "cml/vec2_df_pod.proto";
+
+package pb.si.virt_line_vertices_m_serializable;
+
+message VirtLineVertices_mSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD array = 3129;
+}
+
+message VirtLineVertices_mSerializable_array_port{
+   repeated pb.si.virt_line_vertices_m_serializable.VirtLineVertices_mSerializable data = 2489;
+}

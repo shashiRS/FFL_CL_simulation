@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.apfinish_type;
+
+enum APFinishType {
+  AP_NOT_FINISHED = 0;
+  AP_SUCCESS = 1;
+  AP_SUCCESS_FALLBACK = 2;
+  AP_CANCELED = 3;
+}

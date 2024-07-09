@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/quadrilateral_serializable.proto";
+
+package pb.si.quadrilateral_serializable_array;
+
+message QuadrilateralSerializableArray{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.quadrilateral_serializable.QuadrilateralSerializable array = 1734;
+}
+
+message QuadrilateralSerializableArray_array_port{
+   repeated pb.si.quadrilateral_serializable_array.QuadrilateralSerializableArray data = 1942;
+}

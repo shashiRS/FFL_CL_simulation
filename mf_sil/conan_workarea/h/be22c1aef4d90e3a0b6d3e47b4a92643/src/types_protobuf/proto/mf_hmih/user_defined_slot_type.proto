@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.user_defined_slot_type;
+
+enum UserDefinedSlotType {
+  USER_DEF_TYPE_CURRENT_EGO = 0;
+  USER_DEF_TYPE_PAR = 1;
+  USER_DEF_TYPE_PERP_BWD = 2;
+  USER_DEF_TYPE_PERP_FWD = 3;
+  USER_DEF_TYPE_ANGL_BWD = 4;
+  USER_DEF_TYPE_NOT_VALID = 5;
+}

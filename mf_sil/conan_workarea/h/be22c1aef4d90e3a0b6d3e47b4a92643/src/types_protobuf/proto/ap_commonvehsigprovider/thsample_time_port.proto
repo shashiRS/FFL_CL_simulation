@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_commonvehsigprovider.thsample_time_port;
+
+message THSampleTimePort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint64 thSampleTime_us = 3064;
+}
+
+message THSampleTimePort_array_port{
+   repeated pb.ap_commonvehsigprovider.thsample_time_port.THSampleTimePort data = 868;
+}

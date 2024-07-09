@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_trjctl.lodmc_handshake_failed_status;
+
+enum LodmcHandshakeFailedStatus {
+  LODMC_NO_HANDSHAKE_FAILURE = 0;
+  LODMC_LSCA_HANDSHAKE_FAILURE = 1;
+  LODMC_MSP_HANDSHAKE_FAILURE = 2;
+  LODMC_AUP_HANDSHAKE_FAILURE = 3;
+  LODMC_REMOTE_HANDSHAKE_FAILURE = 4;
+}

@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.eco.trace_data;
+
+message TraceData{
+  optional pb.eco.signal_header.SignalHeader sigHeader = 1450;
+  repeated uint32 rangeCheckFailures = 3047;
+}
+
+message TraceData_array_port{
+   repeated pb.eco.trace_data.TraceData data = 2725;
+}

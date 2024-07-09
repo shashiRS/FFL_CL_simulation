@@ -1,0 +1,23 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_crm_mode_errors;
+
+message UsDrvCrmModeErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus crmCmdFailure = 575;
+  optional uint32 crmCmdFailureDetails = 1337;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dataEarlyError = 3182;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dataLateError = 288;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus symbolCountError = 2547;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus crcError = 291;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus spiCmdSequenceFailure = 362;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus symbolCodingError = 2292;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsiPinUndervoltage = 764;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus clkRefError = 3027;
+}
+
+message UsDrvCrmModeErrors_array_port{
+   repeated pb.us_drv.us_drv_crm_mode_errors.UsDrvCrmModeErrors data = 1493;
+}

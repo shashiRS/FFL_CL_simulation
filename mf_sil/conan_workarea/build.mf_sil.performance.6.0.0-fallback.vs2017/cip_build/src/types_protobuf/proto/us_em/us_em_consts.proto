@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_consts;
+
+message US_EM_Consts{
+  optional uint32 US_EM_MAX_NUM_MAP_POINTS = 1368;
+  optional uint32 US_EM_MAX_NUM_STATIC_OBJ_PTS = 2265;
+  optional uint32 US_EM_MAX_NUM_STATIC_OBJ = 1486;
+  optional uint32 US_EM_MAX_NUM_DYN_OBJ_PTS = 999;
+  optional uint32 US_EM_MAX_NUM_DYN_OBJ = 2043;
+  optional uint32 US_EM_MAX_NUM_OF_SENSORS = 3230;
+}
+
+message US_EM_Consts_array_port{
+   repeated pb.us_em.us_em_consts.US_EM_Consts data = 1689;
+}

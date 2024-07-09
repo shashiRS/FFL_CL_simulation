@@ -1,0 +1,23 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_psm/driving_mode_trc.proto";
+import "ap_psm/motion_control_request_type.proto";
+import "ap_psm/driver_in_out_request_type.proto";
+
+package pb.ap_psm.traj_ctrl_request_port;
+
+message TrajCtrlRequestPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.ap_psm.driving_mode_trc.DrivingModeTRC drivingModeReq_nu = 434;
+  optional bool trajCtrlActive_nu = 1240;
+  optional bool emergencyBrakeRequest = 3143;
+  optional pb.ap_psm.motion_control_request_type.MotionControlRequestType MotionControlRequestType_nu = 2154;
+  optional pb.ap_psm.driver_in_out_request_type.DriverInOutRequestType driverInOutRequestType_nu = 601;
+}
+
+message TrajCtrlRequestPort_array_port{
+   repeated pb.ap_psm.traj_ctrl_request_port.TrajCtrlRequestPort data = 2597;
+}

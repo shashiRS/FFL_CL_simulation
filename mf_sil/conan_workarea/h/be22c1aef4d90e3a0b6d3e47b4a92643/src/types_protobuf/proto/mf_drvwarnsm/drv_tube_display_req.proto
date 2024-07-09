@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.mf_drvwarnsm.drv_tube_display_req;
+
+enum DrvTubeDisplayReq {
+  PDW_DRV_TUBE_REQ_NONE = 0;
+  PDW_DRV_TUBE_REQ_FRONT = 1;
+  PDW_DRV_TUBE_REQ_REAR = 2;
+}

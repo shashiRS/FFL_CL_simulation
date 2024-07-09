@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.eco.diagnosis_event_status;
+
+enum DiagnosisEventStatus {
+  DIAGNOSIS_EVENT_STATUS_PASSED = 0;
+  DIAGNOSIS_EVENT_STATUS_FAILED = 1;
+  DIAGNOSIS_EVENT_STATUS_PREPASSED = 2;
+  DIAGNOSIS_EVENT_STATUS_PREFAILED = 3;
+}

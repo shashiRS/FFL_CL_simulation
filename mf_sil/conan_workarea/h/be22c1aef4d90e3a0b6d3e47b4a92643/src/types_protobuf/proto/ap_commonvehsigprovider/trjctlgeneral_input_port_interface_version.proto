@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.trjctlgeneral_input_port_interface_version;
+
+message TRJCTLGeneralInputPort_InterfaceVersion{
+  optional uint32 TRJCTLGeneralInputPort_VERSION = 506;
+}
+
+message TRJCTLGeneralInputPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.trjctlgeneral_input_port_interface_version.TRJCTLGeneralInputPort_InterfaceVersion data = 790;
+}

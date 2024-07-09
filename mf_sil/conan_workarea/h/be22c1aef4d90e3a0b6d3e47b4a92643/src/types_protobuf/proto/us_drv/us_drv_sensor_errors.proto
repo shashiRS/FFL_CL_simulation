@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_sensor_diag_errors.proto";
+import "us_drv/us_drv_sensor_sw_errors.proto";
+
+package pb.us_drv.us_drv_sensor_errors;
+
+message UsDrvSensorErrors{
+  optional pb.us_drv.us_drv_sensor_diag_errors.UsDrvSensorDiagErrors sensorDiagErrors = 4059;
+  optional pb.us_drv.us_drv_sensor_sw_errors.UsDrvSensorSwErrors sensorSwErrors = 3379;
+}
+
+message UsDrvSensorErrors_array_port{
+   repeated pb.us_drv.us_drv_sensor_errors.UsDrvSensorErrors data = 1340;
+}

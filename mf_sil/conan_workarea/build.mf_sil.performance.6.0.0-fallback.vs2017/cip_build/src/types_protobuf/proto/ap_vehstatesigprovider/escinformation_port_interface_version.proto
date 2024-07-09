@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.escinformation_port_interface_version;
+
+message ESCInformationPort_InterfaceVersion{
+  optional uint32 ESCInformationPort_VERSION = 223;
+}
+
+message ESCInformationPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.escinformation_port_interface_version.ESCInformationPort_InterfaceVersion data = 39;
+}

@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_commonvehsigprovider/gear_information.proto";
+import "ap_commonvehsigprovider/gear_lever_information.proto";
+
+package pb.ap_commonvehsigprovider.gearbox_ctrl_status_port;
+
+message GearboxCtrlStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.ap_commonvehsigprovider.gear_information.GearInformation gearInformation = 1426;
+  optional pb.ap_commonvehsigprovider.gear_lever_information.GearLeverInformation gearLeverInformation = 3204;
+}
+
+message GearboxCtrlStatusPort_array_port{
+   repeated pb.ap_commonvehsigprovider.gearbox_ctrl_status_port.GearboxCtrlStatusPort data = 3624;
+}

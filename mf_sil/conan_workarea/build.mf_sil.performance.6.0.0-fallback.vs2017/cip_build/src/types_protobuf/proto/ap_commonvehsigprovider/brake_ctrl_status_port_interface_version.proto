@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.brake_ctrl_status_port_interface_version;
+
+message BrakeCtrlStatusPort_InterfaceVersion{
+  optional uint32 BrakeCtrlStatusPort_VERSION = 3185;
+}
+
+message BrakeCtrlStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.brake_ctrl_status_port_interface_version.BrakeCtrlStatusPort_InterfaceVersion data = 3933;
+}

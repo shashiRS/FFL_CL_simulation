@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_whlprotectproc/whl_warning_level.proto";
+
+package pb.mf_whlprotectproc.whpproc_output_port;
+
+message WHPProcOutputPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated pb.mf_whlprotectproc.whl_warning_level.WhlWarningLevel whlWarningLevel_nu = 3392;
+  optional bool whlWarningPresent_nu = 480;
+  optional bool processingError_nu = 2689;
+}
+
+message WHPProcOutputPort_array_port{
+   repeated pb.mf_whlprotectproc.whpproc_output_port.WHPProcOutputPort data = 232;
+}

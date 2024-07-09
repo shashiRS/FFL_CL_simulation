@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_drv.us_drv_runtime_configuration_interface_version;
+
+message UsDrvRuntimeConfiguration_InterfaceVersion{
+  optional uint32 UsDrvRuntimeConfiguration_VERSION = 1223;
+}
+
+message UsDrvRuntimeConfiguration_InterfaceVersion_array_port{
+   repeated pb.us_drv.us_drv_runtime_configuration_interface_version.UsDrvRuntimeConfiguration_InterfaceVersion data = 3172;
+}

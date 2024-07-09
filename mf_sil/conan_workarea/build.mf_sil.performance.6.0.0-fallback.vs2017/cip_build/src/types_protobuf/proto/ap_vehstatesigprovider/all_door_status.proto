@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "ap_vehstatesigprovider/door_status.proto";
+
+package pb.ap_vehstatesigprovider.all_door_status;
+
+message AllDoorStatus{
+  optional pb.ap_vehstatesigprovider.door_status.DoorStatus frontPsgr_nu = 2622;
+  optional pb.ap_vehstatesigprovider.door_status.DoorStatus driver_nu = 2023;
+  optional pb.ap_vehstatesigprovider.door_status.DoorStatus rearRight_nu = 1159;
+  optional pb.ap_vehstatesigprovider.door_status.DoorStatus rearLeft_nu = 1813;
+}
+
+message AllDoorStatus_array_port{
+   repeated pb.ap_vehstatesigprovider.all_door_status.AllDoorStatus data = 2758;
+}

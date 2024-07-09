@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_tp.planning_fail_reason;
+
+enum PlanningFailReason {
+  PFR_NONE = 0;
+  PFR_TARGET_POSE_LOST = 1;
+  PFR_PARKING_BOX_LOST = 2;
+  PFR_INPUT_CORRUPTED = 3;
+  PFR_REPLAN_FAIL = 4;
+  MAX_NUM_PLANNING_FAIL_TYPES = 5;
+}

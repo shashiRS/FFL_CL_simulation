@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+
+package pb.ap_psm_app.bcmreq;
+
+message BCMReq{
+  optional bool dirIndLeftReq_nu = 3851;
+  optional bool dirIndRightReq_nu = 2133;
+  optional bool hazardWarning_nu = 3218;
+  optional bool environmentLightReq_nu = 275;
+  optional bool lowBeamLightReq_nu = 707;
+  optional bool backUpLightReq_nu = 775;
+  optional bool foldMirrors_nu = 1850;
+  optional bool unFoldMirrors_nu = 2118;
+  optional bool blockConvTopActivation_nu = 2390;
+}
+
+message BCMReq_array_port{
+   repeated pb.ap_psm_app.bcmreq.BCMReq data = 2276;
+}

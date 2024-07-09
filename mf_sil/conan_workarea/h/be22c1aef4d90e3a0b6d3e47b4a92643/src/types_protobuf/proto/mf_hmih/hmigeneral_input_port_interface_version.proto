@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.hmigeneral_input_port_interface_version;
+
+message HMIGeneralInputPort_InterfaceVersion{
+  optional uint32 HMIGeneralInputPort_VERSION = 1954;
+}
+
+message HMIGeneralInputPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.hmigeneral_input_port_interface_version.HMIGeneralInputPort_InterfaceVersion data = 2745;
+}

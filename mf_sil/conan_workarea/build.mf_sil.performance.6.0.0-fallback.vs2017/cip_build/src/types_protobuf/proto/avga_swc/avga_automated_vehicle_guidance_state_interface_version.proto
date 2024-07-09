@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.avga_swc.avga_automated_vehicle_guidance_state_interface_version;
+
+message AVGA_AutomatedVehicleGuidanceState_InterfaceVersion{
+  optional uint32 AVGA_AutomatedVehicleGuidanceState_VERSION = 1848;
+}
+
+message AVGA_AutomatedVehicleGuidanceState_InterfaceVersion_array_port{
+   repeated pb.avga_swc.avga_automated_vehicle_guidance_state_interface_version.AVGA_AutomatedVehicleGuidanceState_InterfaceVersion data = 1548;
+}

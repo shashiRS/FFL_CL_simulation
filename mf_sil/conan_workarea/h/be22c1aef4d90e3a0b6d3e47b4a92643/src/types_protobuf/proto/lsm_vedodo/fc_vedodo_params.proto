@@ -1,0 +1,44 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.lsm_vedodo.fc_vedodo_params;
+
+message FC_VEDODO_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float LSM_O_SAMPLE_TIME_S = 1723;
+  optional float LSM_O_MSE_MOTION_STATUS_TIMER_S = 31;
+  optional float LSM_O_YOC_MAX_STRWHL_VEL_RADPS = 754;
+  optional uint32 LSM_O_MAX_WHEEL_PULSE_VALUE_NU = 647;
+  optional float LSM_O_MAX_POS_X_VALUE_M = 2183;
+  optional float LSM_O_MAX_POS_Y_VALUE_M = 932;
+  optional float LSM_O_MAX_POS_PHI_VALUE_RAD = 876;
+  optional uint32 LSM_O_USE_STEER_WHEEL_ANG_FILT = 2140;
+  optional uint32 LSM_O_USE_YAW_STANDSTILL_CORR = 1388;
+  optional uint32 LSM_O_DRIVING_DIRECTION_METHOD = 1396;
+  optional float LSM_O_SIGNAL_LATENCY_S = 135;
+  optional float LSM_O_WS_STRAIGHT_THRESH_MPS = 1207;
+  optional float LSM_O_GYRO_LINEAR_ERR_FACTOR = 789;
+  optional float LSM_O_YAW_RATE_SIGNAL_LATENCY_S = 2360;
+  optional float LSM_O_WHEELBASE_M = 536;
+  optional uint32 LSM_O_WHEEL_NUMBER_OF_TEETH_NU = 2447;
+  optional float LSM_O_TYRE_CIRCUMFERENCE_FR_M = 3725;
+  optional float LSM_O_TYRE_CIRCUMFERENCE_RE_M = 2344;
+  optional float LSM_O_TRACK_FRONT_M = 1324;
+  optional float LSM_O_TRACK_REAR_M = 3690;
+  optional float LSM_O_STEER_ANG_TO_YAW_ANG_NU = 3607;
+  repeated float LSM_O_STEER_POLY_CTR_WHL_RAD = 2561;
+  optional float LSM_O_TYRE_CIRCUMFERENCE_IN_ESC = 2905;
+  optional float LSM_O_REAR_AXLE_TO_COR_1_M = 3822;
+  optional float LSM_O_REAR_AXLE_TO_COR_2_M = 1982;
+  optional float LSM_O_REAR_AXLE_TO_COR_3_M = 142;
+  optional float LSM_O_SIDE_SLIP_ANGLE_GRADIENT_RADS2PM = 2424;
+  repeated float LSM_O_IMU_MOUNTING_POS_TRANSLATION_M = 555;
+  repeated float LSM_O_IMU_MOUNTING_POS_ROTATION_RAD = 3066;
+}
+
+message FC_VEDODO_Params_array_port{
+   repeated pb.lsm_vedodo.fc_vedodo_params.FC_VEDODO_Params data = 1264;
+}

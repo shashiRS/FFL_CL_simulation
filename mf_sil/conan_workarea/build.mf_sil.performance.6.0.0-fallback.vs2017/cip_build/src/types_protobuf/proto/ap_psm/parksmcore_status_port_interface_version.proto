@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_psm.parksmcore_status_port_interface_version;
+
+message PARKSMCoreStatusPort_InterfaceVersion{
+  optional uint32 PARKSMCoreStatusPort_VERSION = 602;
+}
+
+message PARKSMCoreStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_psm.parksmcore_status_port_interface_version.PARKSMCoreStatusPort_InterfaceVersion data = 616;
+}

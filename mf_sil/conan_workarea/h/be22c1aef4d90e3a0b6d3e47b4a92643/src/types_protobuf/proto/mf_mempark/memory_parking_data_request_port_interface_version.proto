@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_mempark.memory_parking_data_request_port_interface_version;
+
+message MemoryParkingDataRequestPort_InterfaceVersion{
+  optional uint32 MemoryParkingDataRequestPort_VERSION = 2786;
+}
+
+message MemoryParkingDataRequestPort_InterfaceVersion_array_port{
+   repeated pb.mf_mempark.memory_parking_data_request_port_interface_version.MemoryParkingDataRequestPort_InterfaceVersion data = 603;
+}

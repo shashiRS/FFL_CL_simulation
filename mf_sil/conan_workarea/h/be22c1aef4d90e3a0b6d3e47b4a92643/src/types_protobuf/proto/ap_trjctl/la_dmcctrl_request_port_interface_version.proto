@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_trjctl.la_dmcctrl_request_port_interface_version;
+
+message LaDMCCtrlRequestPort_InterfaceVersion{
+  optional uint32 LaDMCCtrlRequestPort_VERSION = 1661;
+}
+
+message LaDMCCtrlRequestPort_InterfaceVersion_array_port{
+   repeated pb.ap_trjctl.la_dmcctrl_request_port_interface_version.LaDMCCtrlRequestPort_InterfaceVersion data = 1667;
+}

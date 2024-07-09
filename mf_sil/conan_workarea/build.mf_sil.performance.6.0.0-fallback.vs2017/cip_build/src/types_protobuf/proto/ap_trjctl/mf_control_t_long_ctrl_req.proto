@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_trjctl/mf_control_te_long_ctrl_mode.proto";
+
+package pb.ap_trjctl.mf_control_t_long_ctrl_req;
+
+message MF_CONTROL_t_LongCtrlReq{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float distanceToStopReq_m = 3322;
+  optional float veloLimMax_mps = 1919;
+  optional float accelReq_mps2 = 2960;
+  optional pb.ap_trjctl.mf_control_te_long_ctrl_mode.MF_CONTROL_te_LongCtrlMode longCtrlMode_nu = 10;
+}
+
+message MF_CONTROL_t_LongCtrlReq_array_port{
+   repeated pb.ap_trjctl.mf_control_t_long_ctrl_req.MF_CONTROL_t_LongCtrlReq data = 3600;
+}

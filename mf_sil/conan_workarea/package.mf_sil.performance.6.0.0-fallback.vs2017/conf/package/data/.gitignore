@@ -1,0 +1,19 @@
+# ignore all package configuration files that are copied during Bricks build
+appdemo_drvwarnsm
+appdemo_hmih
+appdemo_parksm
+appdemo_tonh
+mf_common
+mf_drvwarnsm_core
+mf_lsca
+mf_manager
+mf_parksm_core
+mf_pdwarnproc
+mf_trjctl
+mf_trjpla
+mf_vedodo
+mf_whlprotectproc
+si_core
+tce
+mf_memory_parking
+mf_lvmd

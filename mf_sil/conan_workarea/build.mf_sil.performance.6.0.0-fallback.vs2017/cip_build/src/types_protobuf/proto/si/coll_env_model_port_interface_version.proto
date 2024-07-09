@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.coll_env_model_port_interface_version;
+
+message CollEnvModelPort_InterfaceVersion{
+  optional uint32 CollEnvModelPort_VERSION = 2484;
+}
+
+message CollEnvModelPort_InterfaceVersion_array_port{
+   repeated pb.si.coll_env_model_port_interface_version.CollEnvModelPort_InterfaceVersion data = 2220;
+}

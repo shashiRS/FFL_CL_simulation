@@ -1,0 +1,238 @@
+
+Cobolt 2.0 - Template based code generation (JAR version from 07.12.23 13:07)
+
+09:52:26.312: Info: Processing config: D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\config\config_types.xml
+09:52:26.328: Info: -- Running Workstep 1/2() --
+
+09:52:26.379: Info: Schema validation agains schema 'D:\.bbs_conan\c029a0\1\codegen\xsd\xmi.xsd'
+09:52:26.406: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\framework_types.xmi': OK
+09:52:26.422: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\com_includes.xmi': OK
+09:52:26.437: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\cfg_mgr_includes.xmi': OK
+09:52:26.437: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\cml_includes.xmi': OK
+09:52:26.453: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\ecu_ctrl_includes.xmi': OK
+09:52:26.453: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\lsm_geoml_includes.xmi': OK
+09:52:26.453: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_COMMON_includes.xmi': OK
+09:52:26.469: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_CommonVehSigProvider_includes.xmi': OK
+09:52:26.484: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_HMIHUD_includes.xmi': OK
+09:52:26.484: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_HMIREM_includes.xmi': OK
+09:52:26.500: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_LADMC_includes.xmi': OK
+09:52:26.500: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_LODMC_includes.xmi': OK
+09:52:26.515: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_VehStateSigProvider_includes.xmi': OK
+09:52:26.533: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\PDCP_includes.xmi': OK
+09:52:26.545: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\DrvWarnSM_includes.xmi': OK
+09:52:26.570: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_PARKSM_includes.xmi': OK
+09:52:26.594: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\SI_includes.xmi': OK
+09:52:26.594: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_PARKSM_Core_includes.xmi': OK
+09:52:26.610: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_TRJPLA_includes.xmi': OK
+09:52:26.641: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\AP_TRJCTL_includes.xmi': OK
+09:52:26.656: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\LSM_VEDODO_includes.xmi': OK
+09:52:26.656: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\tce_includes.xmi': OK
+09:52:26.656: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_Manager_includes.xmi': OK
+09:52:26.672: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_LSCA_includes.xmi': OK
+09:52:26.672: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_LVMD_includes.xmi': OK
+09:52:26.730: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MFHMIHandler_includes.xmi': OK
+09:52:26.733: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\DrvWarnSMCore_includes.xmi': OK
+09:52:26.736: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_ToneHandler_includes.xmi': OK
+09:52:26.740: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MemPark_includes.xmi': OK
+09:52:26.744: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\Viewcontroller_includes.xmi': OK
+09:52:26.746: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\MF_WhlProtectProc_includes.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\US_DRV_includes.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\US_PROCESSING_includes.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\US_EM_includes.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\plp_hpsd.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_0\avga_swc_includes.xmi': OK
+09:52:26.750: Info:   'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\xmi\chunk_1\framework_types.xmi': OK
+09:52:26.750: Info: Input validation took  0.422 sec
+
+09:52:28.154: Info: Execution took  1.404 sec
+
+09:52:28.154: Info: -- Workstep 1/2() finished --
+09:52:28.154: Info: -- Running Workstep 2/2() --
+
+09:52:28.281: Info: Schema validation: 'D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\temporary\types_aggregate_ecal.xmi'
+                      complies to schema 'D:\.bbs_conan\c029a0\1\codegen\xsd\xmi.xsd'
+09:52:28.281: Info: Input validation took  0.127 sec
+
+09:52:28.281: Info: Processing 19 templates
+09:52:28.281: Info: Working with 8 threads
+
+----------------------------------------------------------------
+09:52:28.719: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\typedef.h.template
+09:52:28.750: Info: Parsing done (took  0.31 sec)
+
+09:52:28.750: Info: Generating
+09:52:29.047: Info: Generation (5 files) done (took  0.297 sec)
+
+09:52:29.047: Info: 181 of 692 (26.16 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:29.047: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\constants.cpp.template
+09:52:29.063: Info: Parsing done (took  0.16 sec)
+
+09:52:29.063: Info: Generating
+09:52:29.314: Info: Generation (1 files) done (took  0.251 sec)
+
+09:52:29.314: Info: 218 of 635 (34.33 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:29.250: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\constantcmake.template
+09:52:29.250: Info: Parsing done (took  0 sec)
+
+09:52:29.250: Info: Generating
+09:52:29.391: Info: Generation (1 files) done (took  0.141 sec)
+
+09:52:29.391: Info: 24 of 132 (18.18 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:30.004: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_c\typedef.h.template
+09:52:30.036: Info: Parsing done (took  0.32 sec)
+
+09:52:30.036: Info: Generating
+09:52:30.297: Info: Generation (5 files) done (took  0.261 sec)
+
+09:52:30.297: Info: 171 of 684 (25.00 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:30.226: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_c\generated_types.h.template
+09:52:30.231: Info: Parsing done (took  0.05 sec)
+
+09:52:30.231: Info: Generating
+09:52:32.547: Info: Generation (35 files) done (took  2.316 sec)
+
+09:52:32.547: Info: 69 of 216 (31.94 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:28.891: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\generated_types.h.template
+09:52:28.896: Info: Parsing done (took  0.05 sec)
+
+09:52:28.896: Info: Generating
+09:52:32.562: Info: Generation (35 files) done (took  3.666 sec)
+
+09:52:32.562: Info: 68 of 216 (31.48 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:32.845: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_14\typedef.h.template
+09:52:32.872: Info: Parsing done (took  0.27 sec)
+
+09:52:32.872: Info: Generating
+09:52:33.041: Info: Generation (5 files) done (took  0.169 sec)
+
+09:52:33.042: Info: 181 of 692 (26.16 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:33.186: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_14\generated_types_14.h.template
+09:52:33.192: Info: Parsing done (took  0.05 sec)
+
+09:52:33.192: Info: Generating
+09:52:35.062: Info: Generation (35 files) done (took  1.870 sec)
+
+09:52:35.062: Info: 69 of 216 (31.94 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:28.594: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\enum.h.template
+09:52:28.609: Info: Parsing done (took  0.15 sec)
+
+09:52:28.609: Info: Generating
+09:52:47.266: Info: Generation (227 files) done (took  18.657 sec)
+
+09:52:47.266: Info: 210 of 653 (32.16 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:29.594: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_c\enum.h.template
+09:52:29.610: Info: Parsing done (took  0.16 sec)
+
+09:52:29.610: Info: Generating
+09:52:48.582: Info: Generation (227 files) done (took  18.971 sec)
+
+09:52:48.582: Info: 192 of 646 (29.72 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:30.743: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_14\enum.h.template
+09:52:30.768: Info: Parsing done (took  0.25 sec)
+
+09:52:30.768: Info: Generating
+09:52:49.203: Info: Generation (227 files) done (took  18.435 sec)
+
+09:52:49.203: Info: 188 of 644 (29.19 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:48.719: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\CMakeLists.txt.template
+09:52:48.734: Info: Parsing done (took  0.15 sec)
+
+09:52:48.734: Info: Generating
+09:52:49.391: Info: Generation (1 files) done (took  0.657 sec)
+
+09:52:49.391: Info: 113 of 636 (17.77 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:47.406: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\enum.proto.template
+09:52:47.422: Info: Parsing done (took  0.16 sec)
+
+09:52:47.422: Info: Generating
+09:53:04.081: Info: Generation (227 files) done (took  16.659 sec)
+
+09:53:04.081: Info: 171 of 646 (26.47 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:49.344: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\cmake.txt.template
+09:52:49.359: Info: Parsing done (took  0.15 sec)
+
+09:52:49.359: Info: Generating
+09:53:04.185: Info: Generation (35 files) done (took  14.826 sec)
+
+09:53:04.185: Info: 146 of 635 (22.99 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:29.406: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\utils\data_type_report.template
+09:52:29.437: Info: Parsing done (took  0.31 sec)
+
+09:52:29.437: Info: Generating
+09:53:29.586: Info: Generation (1 files) done (took  1 min 0.149 sec)
+
+09:53:29.586: Info: 343 of 668 (51.35 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:29.849: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_c\struct.h.template
+09:52:29.862: Info: Parsing done (took  0.13 sec)
+
+09:52:29.862: Info: Generating
+09:53:34.219: Info: Generation (618 files) done (took  1 min 4.357 sec)
+
+09:53:34.219: Info: 374 of 711 (52.60 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:32.701: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_14\struct.h.template
+09:52:32.719: Info: Parsing done (took  0.18 sec)
+
+09:52:32.719: Info: Generating
+09:53:34.891: Info: Generation (618 files) done (took  1 min 2.172 sec)
+
+09:53:34.891: Info: 390 of 717 (54.39 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:28.464: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types\struct.h.template
+09:52:28.531: Info: Parsing done (took  0.68 sec)
+
+09:52:28.531: Info: Generating
+09:53:35.109: Info: Generation (618 files) done (took  1 min 6.578 sec)
+
+09:53:35.109: Info: 394 of 718 (54.87 %) Elements were used in Generation
+----------------------------------------------------------------
+09:52:35.203: Info: Parsing D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\struct.proto.template
+09:52:35.234: Info: Parsing done (took  0.31 sec)
+
+09:52:35.234: Info: Generating
+09:52:36.339: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(18) 'optional uint32 AP_G_MAX_NUM_P_BOX_DELIMITERS_NU': zero hash detected. Replacement hash: 3995821
+09:52:36.340: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional uint32 COLL_G_MAX_NUM_DYN_OBJECTS_NU': hash collision detected. Replacement hash: 8568595
+09:52:39.317: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional pb.ap_ladmc.la_dmcsystem_state.LaDMCSystemState laDMCSystemState_nu': hash collision detected. Replacement hash: 8304796
+09:52:48.469: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float maxDrivenRotationParallel_rad': hash collision detected. Replacement hash: 1962442
+09:52:48.484: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float curbObjectEvaluationRoiDepthDelta_m': hash collision detected. Replacement hash: 15294138
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional bool vlUseMaxAngleToParkingBoxEdge': hash collision detected. Replacement hash: 522962
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float slotExpMaxAngleDiff_rad': hash collision detected. Replacement hash: 11519704
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float ocSecZoneAngSideToCurb_m': hash collision detected. Replacement hash: 8701776
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float ocSecZoneParSideToRoad_m': hash collision detected. Replacement hash: 1493409
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional bool useAreaCriteria': hash collision detected. Replacement hash: 14368221
+09:52:48.500: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional bool delZonesUseHighComplexityGetScore': hash collision detected. Replacement hash: 16563677
+09:52:48.516: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float maxMemParkRotAdj_rad': hash collision detected. Replacement hash: 12895248
+09:52:48.516: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float developerGenericFloat4': hash collision detected. Replacement hash: 4286347
+09:52:56.750: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float AP_T_MAX_DEV_UPDATE_LONG_GP_M': hash collision detected. Replacement hash: 1723759
+09:52:58.404: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float AP_P_BEST_PATH_LENGTH_THR_M': hash collision detected. Replacement hash: 11680804
+09:52:58.405: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float AP_P_PERP_STRAIGHT_MIN_BWD_DIST_FWD_STRK_M': hash collision detected. Replacement hash: 14945121
+09:52:58.406: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float AP_P_MAX_DISTANCE_SHORTEN_FIRST_STRK_FWD': hash collision detected. Replacement hash: 2716735
+09:52:58.414: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float MP_P_ROI_CORNER_X_PAR_IN_M': hash collision detected. Replacement hash: 8258625
+09:52:58.415: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float MP_P_ROI_CORNER_X_PRPB_IN_M': hash collision detected. Replacement hash: 10939324
+09:52:58.416: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float MP_P_ROI_CORNER_Y_ANGR_IN_M': hash collision detected. Replacement hash: 3222586
+09:53:05.052: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional uint32 TCE_WHEEL_NUMBER_OF_TEETH_NU': hash collision detected. Replacement hash: 13005021
+09:53:07.531: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional pb.mf_lsca.lsca_steer_mode.LSCA_STEER_MODE requestMode': hash collision detected. Replacement hash: 3392987
+09:53:08.922: Info: D:\.bbs_conan\c029a0\1\codegen\templates\types_protobuf\proto_value_checker.ctin(25) 'optional float overrideDistance_m': hash collision detected. Replacement hash: 3439220
+09:53:36.364: Info: Generation (618 files) done (took  1 min 1.130 sec)
+
+09:53:36.364: Info: 352 of 720 (48.89 %) Elements were used in Generation
+09:53:36.365: Info: Execution took  1 min 8.84 sec
+
+09:53:36.365: Info: -- Workstep 2/2() finished --
+09:53:36.365: Info: -- All worksteps done --
+

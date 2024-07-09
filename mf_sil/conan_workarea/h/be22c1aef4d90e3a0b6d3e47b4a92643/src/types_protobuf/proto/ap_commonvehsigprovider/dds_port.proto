@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_commonvehsigprovider.dds_port;
+
+message DdsPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional bool Dds_warning_active = 988;
+  optional bool Tire_change_reset_button = 3550;
+}
+
+message DdsPort_array_port{
+   repeated pb.ap_commonvehsigprovider.dds_port.DdsPort data = 1028;
+}

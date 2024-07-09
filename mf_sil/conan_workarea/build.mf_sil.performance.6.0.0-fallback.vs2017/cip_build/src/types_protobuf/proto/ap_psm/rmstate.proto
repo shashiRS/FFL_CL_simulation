@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.rmstate;
+
+enum RMState {
+  RM_INACTIVE = 0;
+  RM_SCANNING = 1;
+  RM_AVG_ACTIVE = 2;
+  RM_AVG_PAUSED = 3;
+  RM_AVG_FINISHED = 4;
+}

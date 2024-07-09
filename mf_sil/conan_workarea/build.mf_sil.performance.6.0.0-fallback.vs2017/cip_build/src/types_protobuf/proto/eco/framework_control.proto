@@ -1,0 +1,29 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "eco/op_mode.proto";
+import "eco/comp_op_state.proto";
+import "eco/first_last_component_execution.proto";
+
+package pb.eco.framework_control;
+
+message FrameworkControl{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.eco.op_mode.OpMode opMode = 2269;
+  optional uint64 cemCycleInitTimeStamp = 3366;
+  optional uint64 endCycleEstimatedTimeStamp = 346;
+  optional pb.eco.comp_op_state.CompOpState opState = 3951;
+  optional uint64 opModeExecTime = 1118;
+  optional uint64 errorCode = 551;
+  repeated uint64 functionalErrorCode = 1340;
+  optional uint64 windowsCycleStart = 3964;
+  optional uint64 rawCycleStart = 3429;
+  optional pb.eco.first_last_component_execution.FirstLastComponentExecution firstLastExecution = 2778;
+  optional bool oseMode = 1953;
+}
+
+message FrameworkControl_array_port{
+   repeated pb.eco.framework_control.FrameworkControl data = 3870;
+}

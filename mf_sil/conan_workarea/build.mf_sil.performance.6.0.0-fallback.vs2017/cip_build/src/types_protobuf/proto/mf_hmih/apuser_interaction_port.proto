@@ -1,0 +1,23 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_hmih/remote_device_interaction.proto";
+import "mf_hmih/head_unit_interaction.proto";
+
+package pb.mf_hmih.apuser_interaction_port;
+
+message APUserInteractionPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.mf_hmih.remote_device_interaction.RemoteDeviceInteraction remoteDeviceInteraction = 2507;
+  optional pb.mf_hmih.head_unit_interaction.HeadUnitInteraction headUnitInteraction = 1757;
+  optional uint32 selectedTPID_nu = 2153;
+  optional uint32 selectedMemorySlotID_nu = 2502;
+  optional bool saveRequest_nu = 2587;
+  optional bool deleteRequest_nu = 2363;
+}
+
+message APUserInteractionPort_array_port{
+   repeated pb.mf_hmih.apuser_interaction_port.APUserInteractionPort data = 111;
+}

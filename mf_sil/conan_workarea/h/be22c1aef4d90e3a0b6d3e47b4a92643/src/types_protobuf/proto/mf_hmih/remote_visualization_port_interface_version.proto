@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.remote_visualization_port_interface_version;
+
+message RemoteVisualizationPort_InterfaceVersion{
+  optional uint32 RemoteVisualizationPort_VERSION = 2838;
+}
+
+message RemoteVisualizationPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.remote_visualization_port_interface_version.RemoteVisualizationPort_InterfaceVersion data = 1302;
+}

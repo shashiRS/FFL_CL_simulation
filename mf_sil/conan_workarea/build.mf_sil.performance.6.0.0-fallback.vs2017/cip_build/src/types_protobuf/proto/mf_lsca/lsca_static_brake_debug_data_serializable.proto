@@ -1,0 +1,31 @@
+
+syntax = "proto2";
+
+import "mf_lsca/lsca_static_object_list_brake_serializable.proto";
+import "mf_lsca/lsca_ego_body_shape_serializable.proto";
+import "mf_lsca/lsca_ego_wheel_shape_serializable.proto";
+import "mf_lsca/lsca_ego_hitch_shape_serializable.proto";
+import "mf_lsca/lsca_ego_mirror_shape_serializable.proto";
+import "cml/vec2_df_pod.proto";
+import "mf_lsca/lsca_ego_static_roi_shape_serializable.proto";
+
+package pb.mf_lsca.lsca_static_brake_debug_data_serializable;
+
+message LscaStaticBrakeDebugDataSerializable{
+  optional pb.mf_lsca.lsca_static_object_list_brake_serializable.LscaStaticObjectListBrakeSerializable objectsInRoi = 2069;
+  optional pb.mf_lsca.lsca_ego_body_shape_serializable.LscaEgoBodyShapeSerializable bodyShape = 731;
+  optional pb.mf_lsca.lsca_ego_wheel_shape_serializable.LscaEgoWheelShapeSerializable wheelFrontLeftShape = 472;
+  optional pb.mf_lsca.lsca_ego_wheel_shape_serializable.LscaEgoWheelShapeSerializable wheelFrontRightShape = 1351;
+  optional pb.mf_lsca.lsca_ego_wheel_shape_serializable.LscaEgoWheelShapeSerializable wheelRearLeftShape = 3041;
+  optional pb.mf_lsca.lsca_ego_wheel_shape_serializable.LscaEgoWheelShapeSerializable wheelRearRightShape = 2040;
+  optional pb.mf_lsca.lsca_ego_hitch_shape_serializable.LscaEgoHitchShapeSerializable hitchShape = 1766;
+  optional pb.mf_lsca.lsca_ego_mirror_shape_serializable.LscaEgoMirrorShapeSerializable mirrorLeftShape = 3102;
+  optional pb.mf_lsca.lsca_ego_mirror_shape_serializable.LscaEgoMirrorShapeSerializable mirrorRightShape = 1672;
+  optional float rotationAngleToBrake = 1268;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD icr = 3251;
+  optional pb.mf_lsca.lsca_ego_static_roi_shape_serializable.LscaEgoStaticRoiShapeSerializable roi = 1848;
+}
+
+message LscaStaticBrakeDebugDataSerializable_array_port{
+   repeated pb.mf_lsca.lsca_static_brake_debug_data_serializable.LscaStaticBrakeDebugDataSerializable data = 2617;
+}

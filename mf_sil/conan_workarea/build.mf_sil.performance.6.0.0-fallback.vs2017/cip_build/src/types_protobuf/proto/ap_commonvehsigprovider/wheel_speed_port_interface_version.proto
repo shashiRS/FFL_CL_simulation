@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.wheel_speed_port_interface_version;
+
+message WheelSpeedPort_InterfaceVersion{
+  optional uint32 WheelSpeedPort_VERSION = 2860;
+}
+
+message WheelSpeedPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_speed_port_interface_version.WheelSpeedPort_InterfaceVersion data = 3094;
+}

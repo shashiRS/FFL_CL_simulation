@@ -1,0 +1,22 @@
+
+syntax = "proto2";
+
+package pb.si.relative_location_to_parking_box;
+
+enum RelativeLocationToParkingBox {
+  UNDEFINED_EDGE = 0;
+  ROAD_SIDE_EDGE = 1;
+  RIGHT_EDGE = 2;
+  CURB_SIDE_EDGE = 3;
+  LEFT_EDGE = 4;
+  INSIDE_ROAD_SIDE_EDGE = 5;
+  INSIDE_RIGHT_EDGE = 6;
+  INSIDE_CURB_SIDE_EDGE = 7;
+  INSIDE_LEFT_EDGE = 8;
+  CORNER_LEFT_AT_OPENING = 9;
+  CORNER_RIGHT_AT_OPENING = 10;
+  CORNER_LEFT_AT_CURB = 11;
+  CORNER_RIGHT_AT_CURB = 12;
+  RELATED_OTHERWISE = 13;
+  MAX_NUM_PARKING_BOX_EDGE_TYPES = 14;
+}

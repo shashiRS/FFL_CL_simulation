@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.ebastatus;
+
+enum EBAStatus {
+  EBA_OFF = 0;
+  EBA_PASSIVE = 1;
+  EBA_ACTIVE_PREWARNING = 2;
+  EBA_ACTIVE_ACUTE_WARNING = 3;
+  EBA_ACTIVE_BRAKING = 4;
+  EBA_ERROR = 5;
+}

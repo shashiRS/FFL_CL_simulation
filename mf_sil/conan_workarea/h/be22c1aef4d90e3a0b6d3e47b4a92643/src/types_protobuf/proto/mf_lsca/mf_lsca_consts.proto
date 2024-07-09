@@ -1,0 +1,25 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lsca.mf_lsca_consts;
+
+message MF_LSCA_Consts{
+  optional uint32 MAX_BODY_SHAPE_SIZE = 2233;
+  optional uint32 MAX_BODY_INDICES_SIZE = 1726;
+  optional uint32 MAX_WHEEL_SHAPE_SIZE = 1981;
+  optional uint32 MAX_HITCH_SHAPE_SIZE = 3192;
+  optional uint32 MAX_MIRROR_SHAPE_SIZE = 2661;
+  optional uint32 MAX_SIMPLE_BODY_SHAPE_SIZE = 1541;
+  optional uint32 MAX_STATIC_OBJECT_SIZE_NU = 1758;
+  optional uint32 MAX_DYNAMIC_OBJECT_SIZE_NU = 1393;
+  optional uint32 MAX_DYNAMIC_OBJECT_PREDICTION_SIZE_NU = 3114;
+  optional uint32 MAX_STATIC_OBJECTS_BRAKE_NU = 1949;
+  optional uint32 MAX_DYNAMIC_OBJECTS_BRAKE_NU = 1290;
+  optional uint32 STATIC_BRAKE_ROI_SIZE = 2852;
+  optional uint32 DYNAMIC_BRAKE_ROI_SIZE = 2912;
+}
+
+message MF_LSCA_Consts_array_port{
+   repeated pb.mf_lsca.mf_lsca_consts.MF_LSCA_Consts data = 2405;
+}

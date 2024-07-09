@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.drv_warn_smcore_sample_time_port_interface_version;
+
+message DrvWarnSMCoreSampleTimePort_InterfaceVersion{
+  optional uint32 DrvWarnSMCoreSampleTimePort_VERSION = 3360;
+}
+
+message DrvWarnSMCoreSampleTimePort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.drv_warn_smcore_sample_time_port_interface_version.DrvWarnSMCoreSampleTimePort_InterfaceVersion data = 3598;
+}

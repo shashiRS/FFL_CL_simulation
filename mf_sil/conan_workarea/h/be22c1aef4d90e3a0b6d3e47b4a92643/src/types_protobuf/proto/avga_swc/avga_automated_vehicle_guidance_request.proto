@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+import "avga_swc/automated_vehicle_guidance_request_type.proto";
+
+package pb.avga_swc.avga_automated_vehicle_guidance_request;
+
+message AVGA_AutomatedVehicleGuidanceRequest{
+  optional pb.avga_swc.automated_vehicle_guidance_request_type.AutomatedVehicleGuidanceRequestType automatedVehicleGuidanceRequest = 3651;
+}
+
+message AVGA_AutomatedVehicleGuidanceRequest_array_port{
+   repeated pb.avga_swc.avga_automated_vehicle_guidance_request.AVGA_AutomatedVehicleGuidanceRequest data = 2066;
+}

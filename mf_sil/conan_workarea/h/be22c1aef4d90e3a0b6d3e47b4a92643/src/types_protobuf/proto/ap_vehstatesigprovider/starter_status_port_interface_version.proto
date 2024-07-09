@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.starter_status_port_interface_version;
+
+message StarterStatusPort_InterfaceVersion{
+  optional uint32 StarterStatusPort_VERSION = 63;
+}
+
+message StarterStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.starter_status_port_interface_version.StarterStatusPort_InterfaceVersion data = 2827;
+}

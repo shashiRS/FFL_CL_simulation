@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_mempark.maps_to_meta_maps_interface_version;
+
+message MapsToMetaMaps_InterfaceVersion{
+  optional uint32 MapsToMetaMaps_VERSION = 2667;
+}
+
+message MapsToMetaMaps_InterfaceVersion_array_port{
+   repeated pb.mf_mempark.maps_to_meta_maps_interface_version.MapsToMetaMaps_InterfaceVersion data = 3964;
+}

@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "us_processing/us_processing_object.proto";
+import "us_processing/us_processing_vertex.proto";
+
+package pb.us_processing.us_processing_object_list;
+
+message UsProcessingObjectList{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 numberOfObjects = 2304;
+  repeated pb.us_processing.us_processing_object.UsProcessingObject objects = 674;
+  repeated pb.us_processing.us_processing_vertex.UsProcessingVertex vertices = 1795;
+}
+
+message UsProcessingObjectList_array_port{
+   repeated pb.us_processing.us_processing_object_list.UsProcessingObjectList data = 14;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:LocalProfile="http://schemas/LocalProfile" xmlns:uml="http://schema.omg.org/spec/UML/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.1">
+    <xmi:Documentation xmi:exporter="PlantUML" xmi:exporterVersion="1.2022.1"/>
+    <uml:Model name="PlantUML" xmi:type="uml:Model">
+        <packagedElement name="boolean" xmi:id="type.boolean" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint8" xmi:id="type.uint8" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint8" xmi:id="type.sint8" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint16" xmi:id="type.uint16" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint16" xmi:id="type.sint16" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint32" xmi:id="type.uint32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint32" xmi:id="type.sint32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint64" xmi:id="type.uint64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint64" xmi:id="type.sint64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="float32" xmi:id="type.float32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="float64" xmi:id="type.float64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="LSM_GEOML" xmi:id="LSM_GEOML" xmi:type="uml:Package">
+            <packagedElement client="type.LSM_GEOML.size_type" supplier="type.uint32" xmi:id="type.uint32:type.LSM_GEOML.size_type" xmi:type="uml:Dependency"/>
+            <packagedElement name="size_type" xmi:id="type.LSM_GEOML.size_type" xmi:type="uml:DataType"/>
+            <packagedElement name="Pose_POD" xmi:id="type.LSM_GEOML.Pose_POD" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.LSM_GEOML.Pose_POD" xmi:id="type.LSM_GEOML.Pose_POD.0.comment" xmi:type="uml:Comment">
+                    <body>Vehicle pose as float</body>
+                </ownedComment>
+                <ownedAttribute name="x_dir" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="y_dir" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="yaw_rad" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+    </uml:Model>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.boolean"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint8"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint8"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint16"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint16"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint64"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint64"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.float32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.float64"/>
+    <LocalProfile:DataType base_DataType="type.LSM_GEOML.size_type"/>
+    <LocalProfile:PODStruct base_Class="type.LSM_GEOML.Pose_POD"/>
+</xmi:XMI>

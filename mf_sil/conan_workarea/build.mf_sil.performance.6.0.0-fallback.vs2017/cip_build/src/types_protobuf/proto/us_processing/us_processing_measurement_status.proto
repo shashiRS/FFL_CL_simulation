@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.us_processing.us_processing_measurement_status;
+
+enum UsProcessingMeasurementStatus {
+  US_PROCESSING_MEASUREMENT_INVALID = 0;
+  US_PROCESSING_MEASUREMENT_NEW = 1;
+  US_PROCESSING_MEASUREMENT_UPDATED = 2;
+  US_PROCESSING_MEASUREMENT_PREDICTED = 3;
+}

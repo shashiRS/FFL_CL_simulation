@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.applanning_specification;
+
+enum APPlanningSpecification {
+  APPS_INVALID = 0;
+  APPS_NONE = 1;
+  APPS_PARK_IN_FULL_MANEUVERING_AREA = 2;
+  APPS_PARK_IN_RESTRICTED_MANEUVERING_AREA = 3;
+  APPS_PARK_OUT_UNTIL_CRITICAL_POINT_REACHED = 4;
+  APPS_PARK_OUT_TO_TARGET_POSE = 5;
+}

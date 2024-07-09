@@ -1,0 +1,32 @@
+
+syntax = "proto2";
+
+import "cfg_mgr/ecu_coding_state.proto";
+import "cfg_mgr/us_sensor_degradation_type.proto";
+
+package pb.cfg_mgr.ecu_coding_port;
+
+message EcuCodingPort{
+  optional uint64 timestamp_us_u64 = 3650;
+  optional pb.cfg_mgr.ecu_coding_state.EcuCodingState codingState_e = 1681;
+  optional bool isUsSupported = 3095;
+  optional uint32 numOfUsSensors = 1471;
+  optional pb.cfg_mgr.us_sensor_degradation_type.UsSensorDegradationType UsDegradationMode_e = 3869;
+  optional bool isPdwFrontOnlySupported = 3470;
+  optional bool isPdwRearOnlySupported = 1789;
+  optional bool isPdw360Supported = 452;
+  optional bool isBrakingFrontOnlySupported = 855;
+  optional bool isBrakingRearOnlySupported = 60;
+  optional bool isBraking360Supported = 2191;
+  optional bool isSteeringSuggestSupported = 447;
+  optional bool isSteeringProtectSupported = 1570;
+  optional bool isWhlProtectSupported = 3024;
+  optional bool isSemiAuParkSupported = 4044;
+  optional bool isFullAuParkSupported = 890;
+  optional bool isRemoteParkSupported = 335;
+  optional bool isBasicGarageParkSupported = 3800;
+}
+
+message EcuCodingPort_array_port{
+   repeated pb.cfg_mgr.ecu_coding_port.EcuCodingPort data = 1714;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.vehicle_occupancy_status_port_interface_version;
+
+message VehicleOccupancyStatusPort_InterfaceVersion{
+  optional uint32 VehicleOccupancyStatusPort_VERSION = 355;
+}
+
+message VehicleOccupancyStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.vehicle_occupancy_status_port_interface_version.VehicleOccupancyStatusPort_InterfaceVersion data = 2031;
+}

@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.us_drv.us_drv_request_meas_mode;
+
+enum UsDrvRequestMeasMode {
+  US_MEASMODE_NEAR_RANGE_FIELD = 0;
+  US_MEASMODE_FAR_RANGE_FIELD = 1;
+  US_MEASMODE_COUNT = 2;
+}

@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.reset_origin_type;
+
+enum ResetOriginType {
+  RRT_NONE = 0;
+  RRT_RESET_XY = 1;
+  RRT_RESET_PSI = 2;
+  RRT_RESET_XY_PSI = 3;
+  RRT_RESET_CUSTOM = 4;
+}

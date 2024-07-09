@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_sensor_parameter_intern;
+
+message UsEmSensorParameterIntern{
+  optional float posX_m = 287;
+  optional float posY_m = 1583;
+  optional float posZ_m = 3967;
+  optional float horRot_deg = 3400;
+  optional float verRot_deg = 4018;
+  optional uint32 associatedTx = 2003;
+}
+
+message UsEmSensorParameterIntern_array_port{
+   repeated pb.us_em.us_em_sensor_parameter_intern.UsEmSensorParameterIntern data = 744;
+}

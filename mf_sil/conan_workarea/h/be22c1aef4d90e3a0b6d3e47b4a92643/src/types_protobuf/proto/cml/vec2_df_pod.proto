@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.cml.vec2_df_pod;
+
+message Vec2Df_POD{
+  optional float x_dir = 1650;
+  optional float y_dir = 3107;
+}
+
+message Vec2Df_POD_array_port{
+   repeated pb.cml.vec2_df_pod.Vec2Df_POD data = 3375;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.vc.error_code_data_port_interface_version;
+
+message ErrorCodeDataPort_InterfaceVersion{
+  optional uint32 ErrorCodeDataPort_VERSION = 2117;
+}
+
+message ErrorCodeDataPort_InterfaceVersion_array_port{
+   repeated pb.vc.error_code_data_port_interface_version.ErrorCodeDataPort_InterfaceVersion data = 2290;
+}

@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_position;
+
+message UsEmPosition{
+  optional float xPosition_m = 415;
+  optional float yPosition_m = 2518;
+}
+
+message UsEmPosition_array_port{
+   repeated pb.us_em.us_em_position.UsEmPosition data = 2316;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.avga_swc.avga_stop_request_port;
+
+message AvgaStopRequestPort{
+  optional bool stopRequest = 436;
+}
+
+message AvgaStopRequestPort_array_port{
+   repeated pb.avga_swc.avga_stop_request_port.AvgaStopRequestPort data = 365;
+}

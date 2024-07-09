@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.head_unit_visualization_port_interface_version;
+
+message HeadUnitVisualizationPort_InterfaceVersion{
+  optional uint32 HeadUnitVisualizationPort_VERSION = 3766;
+}
+
+message HeadUnitVisualizationPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.head_unit_visualization_port_interface_version.HeadUnitVisualizationPort_InterfaceVersion data = 3645;
+}

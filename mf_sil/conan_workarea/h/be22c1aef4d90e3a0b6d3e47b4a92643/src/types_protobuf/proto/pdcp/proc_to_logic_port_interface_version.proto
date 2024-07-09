@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.pdcp.proc_to_logic_port_interface_version;
+
+message ProcToLogicPort_InterfaceVersion{
+  optional uint32 ProcToLogicPort_VERSION = 2342;
+}
+
+message ProcToLogicPort_InterfaceVersion_array_port{
+   repeated pb.pdcp.proc_to_logic_port_interface_version.ProcToLogicPort_InterfaceVersion data = 454;
+}

@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.mf_drvwarnsm.whl_warning_type;
+
+enum WhlWarningType {
+  WHP_SUPPRESS_WARNING = 0;
+  WHP_REDUCE_WARNING = 1;
+  WHP_FULL_WARNING = 2;
+}

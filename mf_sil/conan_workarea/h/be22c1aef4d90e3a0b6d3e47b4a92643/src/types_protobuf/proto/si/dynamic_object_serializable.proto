@@ -1,0 +1,22 @@
+
+syntax = "proto2";
+
+import "si/dynamic_obj_shape_serializable.proto";
+import "cml/vec2_df_pod.proto";
+import "si/obj_measurement_state.proto";
+
+package pb.si.dynamic_object_serializable;
+
+message DynamicObjectSerializable{
+  optional uint32 existenceProb_perc = 2424;
+  optional pb.si.dynamic_obj_shape_serializable.DynamicObjShapeSerializable objShape_m = 2729;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD vel_mps = 3009;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD accel_mps2 = 1603;
+  optional float headingAngle_rad = 748;
+  optional pb.si.obj_measurement_state.ObjMeasurementState measurementState_nu = 3154;
+  optional uint32 refObjID_nu = 3288;
+}
+
+message DynamicObjectSerializable_array_port{
+   repeated pb.si.dynamic_object_serializable.DynamicObjectSerializable data = 2295;
+}

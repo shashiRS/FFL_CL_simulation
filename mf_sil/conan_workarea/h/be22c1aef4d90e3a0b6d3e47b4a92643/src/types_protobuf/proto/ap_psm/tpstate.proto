@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.tpstate;
+
+enum TPState {
+  TP_INACTIVE = 0;
+  TP_TRAIN_SCAN = 1;
+  TP_TRAIN_AVG = 2;
+  TP_TRAIN_FINISHED = 3;
+  TP_SILENT_MAP_LOC = 4;
+  TP_RECALL_SCAN = 5;
+  TP_RECALL_AVG = 6;
+  TP_RECALL_FINISHED = 7;
+  TP_PAUSE = 8;
+}

@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.us_drv.us_drv_envelope_signal_path;
+
+message UsDrvEnvelopeSignalPath{
+  optional uint32 rxSensorId = 1752;
+  optional uint32 txSensorId = 1383;
+  optional uint32 signalPathId = 1577;
+  optional uint32 startSample = 3941;
+  optional uint32 numSamples = 993;
+  optional uint64 timestamp_us = 3864;
+}
+
+message UsDrvEnvelopeSignalPath_array_port{
+   repeated pb.us_drv.us_drv_envelope_signal_path.UsDrvEnvelopeSignalPath data = 135;
+}

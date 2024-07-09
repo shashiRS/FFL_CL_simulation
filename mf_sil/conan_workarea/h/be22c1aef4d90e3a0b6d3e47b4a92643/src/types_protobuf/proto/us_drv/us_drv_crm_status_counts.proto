@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+
+package pb.us_drv.us_drv_crm_status_counts;
+
+message UsDrvCrmStatusCounts{
+  optional uint32 dataOk = 367;
+  optional uint32 overWritten = 230;
+  optional uint32 crmError = 1391;
+  optional uint32 reserved = 600;
+  optional uint32 lengthError = 3286;
+  optional uint32 timingError = 3704;
+  optional uint32 timeoutError = 809;
+  optional uint32 crcError = 1484;
+}
+
+message UsDrvCrmStatusCounts_array_port{
+   repeated pb.us_drv.us_drv_crm_status_counts.UsDrvCrmStatusCounts data = 135;
+}

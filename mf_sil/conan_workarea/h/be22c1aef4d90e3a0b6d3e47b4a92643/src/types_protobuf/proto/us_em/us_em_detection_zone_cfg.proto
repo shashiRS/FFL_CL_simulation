@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+
+package pb.us_em.us_em_detection_zone_cfg;
+
+message UsEmDetectionZoneCfg{
+  optional float detZoneFrontLeftX = 3952;
+  optional float detZoneFrontLeftY = 3921;
+  optional float detZoneFrontRightX = 4088;
+  optional float detZoneFrontRightY = 4057;
+  optional float detZoneBackLeftX = 1184;
+  optional float detZoneBackLeftY = 1153;
+  optional float detZoneBackRightX = 396;
+  optional float detZoneBackRightY = 429;
+}
+
+message UsEmDetectionZoneCfg_array_port{
+   repeated pb.us_em.us_em_detection_zone_cfg.UsEmDetectionZoneCfg data = 3007;
+}

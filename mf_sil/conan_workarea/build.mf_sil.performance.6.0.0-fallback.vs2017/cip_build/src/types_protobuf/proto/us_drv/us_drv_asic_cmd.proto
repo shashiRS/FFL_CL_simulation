@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.us_drv.us_drv_asic_cmd;
+
+message UsDrvAsicCmd{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 sequence = 94;
+  optional uint32 flags = 1199;
+  optional uint32 length = 3467;
+  repeated uint32 rawSpiData = 3255;
+}
+
+message UsDrvAsicCmd_array_port{
+   repeated pb.us_drv.us_drv_asic_cmd.UsDrvAsicCmd data = 788;
+}

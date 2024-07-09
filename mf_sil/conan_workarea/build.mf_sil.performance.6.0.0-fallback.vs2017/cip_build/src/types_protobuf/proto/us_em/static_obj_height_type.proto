@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+package pb.us_em.static_obj_height_type;
+
+enum StaticObjHeightType {
+  SO_HI_UNKNOWN = 0;
+  SO_HI_WHEEL_TRAVERSABLE = 1;
+  SO_HI_BODY_TRAVERSABLE = 2;
+  SO_HI_DOOR_OPENABLE = 3;
+  SO_HI_HIGH_OBSTACLE = 4;
+  SO_HI_HANGING_OBJECT = 5;
+  SO_HI_LOWER_BUMPER_HEIGHT = 6;
+  MAX_NUM_HEIGHT_TYPES = 7;
+}

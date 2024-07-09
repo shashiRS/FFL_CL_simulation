@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.tce.debug_constants;
+
+message DebugConstants{
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_TCE = 1908;
+}
+
+message DebugConstants_array_port{
+   repeated pb.tce.debug_constants.DebugConstants data = 2458;
+}

@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_sensor_parameter;
+
+message UsProcessingSensorParameter{
+  optional float posX_m = 287;
+  optional float posY_m = 1583;
+  optional float posZ_m = 3967;
+  optional float horRot_deg = 3400;
+  optional float verRot_deg = 4018;
+  optional uint32 associatedTx = 2003;
+}
+
+message UsProcessingSensorParameter_array_port{
+   repeated pb.us_processing.us_processing_sensor_parameter.UsProcessingSensorParameter data = 3572;
+}

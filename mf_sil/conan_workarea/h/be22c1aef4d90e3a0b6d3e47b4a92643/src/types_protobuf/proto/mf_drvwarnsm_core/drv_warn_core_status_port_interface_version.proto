@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_drvwarnsm_core.drv_warn_core_status_port_interface_version;
+
+message DrvWarnCoreStatusPort_InterfaceVersion{
+  optional uint32 DrvWarnCoreStatusPort_VERSION = 3668;
+}
+
+message DrvWarnCoreStatusPort_InterfaceVersion_array_port{
+   repeated pb.mf_drvwarnsm_core.drv_warn_core_status_port_interface_version.DrvWarnCoreStatusPort_InterfaceVersion data = 1520;
+}

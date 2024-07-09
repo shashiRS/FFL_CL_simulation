@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.steer_ctrl_status_port_interface_version;
+
+message SteerCtrlStatusPort_InterfaceVersion{
+  optional uint32 SteerCtrlStatusPort_VERSION = 471;
+}
+
+message SteerCtrlStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.steer_ctrl_status_port_interface_version.SteerCtrlStatusPort_InterfaceVersion data = 4029;
+}

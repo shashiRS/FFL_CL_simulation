@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_tp.pos_def_approach;
+
+enum PosDefApproach {
+  ATTACH_EGO_TO_EDGE = 0;
+  CENTERING = 1;
+  ROAD_SIDE_CENTERING = 2;
+  SHORT_SIDE_CENTERING = 3;
+}

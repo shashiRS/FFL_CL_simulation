@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.com.ebool_t;
+
+enum ebool_t {
+  FALSE_e = 0;
+  TRUE_e = 1;
+}

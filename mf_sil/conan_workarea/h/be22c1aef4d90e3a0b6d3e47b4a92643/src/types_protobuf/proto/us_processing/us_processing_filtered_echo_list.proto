@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "us_processing/us_processing_filtered_echo.proto";
+
+package pb.us_processing.us_processing_filtered_echo_list;
+
+message UsProcessingFilteredEchoList{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 numEchoes = 1749;
+  repeated pb.us_processing.us_processing_filtered_echo.UsProcessingFilteredEcho echoes = 3417;
+}
+
+message UsProcessingFilteredEchoList_array_port{
+   repeated pb.us_processing.us_processing_filtered_echo_list.UsProcessingFilteredEchoList data = 2034;
+}

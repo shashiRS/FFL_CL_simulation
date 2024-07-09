@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.si.simotion_state;
+
+enum SIMotionState {
+  SI_ODO_STANDSTILL = 0;
+  SI_ODO_NO_STANDSTILL = 1;
+}

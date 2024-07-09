@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.thsample_time_port_interface_version;
+
+message THSampleTimePort_InterfaceVersion{
+  optional uint32 THSampleTimePort_VERSION = 3706;
+}
+
+message THSampleTimePort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.thsample_time_port_interface_version.THSampleTimePort_InterfaceVersion data = 3422;
+}

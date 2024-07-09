@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.tce.fc_tce_params_interface_version;
+
+message FC_TCE_Params_InterfaceVersion{
+  optional uint32 FC_TCE_Params_VERSION = 2699;
+}
+
+message FC_TCE_Params_InterfaceVersion_array_port{
+   repeated pb.tce.fc_tce_params_interface_version.FC_TCE_Params_InterfaceVersion data = 2923;
+}

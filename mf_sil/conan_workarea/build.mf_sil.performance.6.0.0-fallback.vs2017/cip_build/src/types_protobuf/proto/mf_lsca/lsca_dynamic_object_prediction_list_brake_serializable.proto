@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "mf_lsca/lsca_dynamic_object_prediction_shape_serializable.proto";
+
+package pb.mf_lsca.lsca_dynamic_object_prediction_list_brake_serializable;
+
+message LscaDynamicObjectPredictionListBrakeSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.mf_lsca.lsca_dynamic_object_prediction_shape_serializable.LscaDynamicObjectPredictionShapeSerializable rois = 3957;
+}
+
+message LscaDynamicObjectPredictionListBrakeSerializable_array_port{
+   repeated pb.mf_lsca.lsca_dynamic_object_prediction_list_brake_serializable.LscaDynamicObjectPredictionListBrakeSerializable data = 1131;
+}

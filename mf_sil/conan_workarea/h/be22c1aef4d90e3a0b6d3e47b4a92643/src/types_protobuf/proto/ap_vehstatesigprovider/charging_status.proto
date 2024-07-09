@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "ap_vehstatesigprovider/charging_connector_status.proto";
+
+package pb.ap_vehstatesigprovider.charging_status;
+
+message ChargingStatus{
+  optional bool ev_charging_is_installed_nu = 1425;
+  optional pb.ap_vehstatesigprovider.charging_connector_status.ChargingConnectorStatus chargingConnectorStatus_nu = 1062;
+}
+
+message ChargingStatus_array_port{
+   repeated pb.ap_vehstatesigprovider.charging_status.ChargingStatus data = 3831;
+}

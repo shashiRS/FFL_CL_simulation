@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "eco/sensor_mounting_position_detailed.proto";
+
+package pb.eco.sensor_mount_position;
+
+message SensorMountPosition{
+  optional pb.eco.signal_header.SignalHeader sigHeader = 1450;
+  optional uint32 sensorId = 1529;
+  optional pb.eco.sensor_mounting_position_detailed.SensorMountingPositionDetailed sensorMountPos = 2549;
+  optional bool isSensorMountPosAvailable = 502;
+}
+
+message SensorMountPosition_array_port{
+   repeated pb.eco.sensor_mount_position.SensorMountPosition data = 1758;
+}

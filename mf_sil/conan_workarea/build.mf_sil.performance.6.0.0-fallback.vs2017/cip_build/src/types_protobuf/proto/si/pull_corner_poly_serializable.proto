@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/pull_corner_poly.proto";
+
+package pb.si.pull_corner_poly_serializable;
+
+message PullCornerPolySerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.pull_corner_poly.PullCornerPoly array = 417;
+}
+
+message PullCornerPolySerializable_array_port{
+   repeated pb.si.pull_corner_poly_serializable.PullCornerPolySerializable data = 962;
+}

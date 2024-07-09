@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.core_plot_data_interface_version;
+
+message CorePlotData_InterfaceVersion{
+  optional uint32 CorePlotData_VERSION = 2747;
+}
+
+message CorePlotData_InterfaceVersion_array_port{
+   repeated pb.si.core_plot_data_interface_version.CorePlotData_InterfaceVersion data = 2412;
+}

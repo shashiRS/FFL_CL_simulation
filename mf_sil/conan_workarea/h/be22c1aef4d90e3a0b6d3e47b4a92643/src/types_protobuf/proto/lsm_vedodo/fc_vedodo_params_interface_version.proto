@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_vedodo.fc_vedodo_params_interface_version;
+
+message FC_VEDODO_Params_InterfaceVersion{
+  optional uint32 FC_VEDODO_Params_VERSION = 2566;
+}
+
+message FC_VEDODO_Params_InterfaceVersion_array_port{
+   repeated pb.lsm_vedodo.fc_vedodo_params_interface_version.FC_VEDODO_Params_InterfaceVersion data = 3685;
+}

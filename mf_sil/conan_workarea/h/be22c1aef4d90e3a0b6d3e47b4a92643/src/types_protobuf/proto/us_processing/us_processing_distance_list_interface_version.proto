@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_distance_list_interface_version;
+
+message UsProcessingDistanceList_InterfaceVersion{
+  optional uint32 UsProcessingDistanceList_VERSION = 3183;
+}
+
+message UsProcessingDistanceList_InterfaceVersion_array_port{
+   repeated pb.us_processing.us_processing_distance_list_interface_version.UsProcessingDistanceList_InterfaceVersion data = 3177;
+}

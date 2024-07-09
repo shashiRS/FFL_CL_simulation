@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "ap_vehstatesigprovider/ignition_source_status.proto";
+
+package pb.ap_vehstatesigprovider.ignition;
+
+message Ignition{
+  optional bool ignitionOn_nu = 2794;
+  optional pb.ap_vehstatesigprovider.ignition_source_status.IgnitionSourceStatus ignitionSource_nu = 3057;
+}
+
+message Ignition_array_port{
+   repeated pb.ap_vehstatesigprovider.ignition.Ignition data = 3561;
+}

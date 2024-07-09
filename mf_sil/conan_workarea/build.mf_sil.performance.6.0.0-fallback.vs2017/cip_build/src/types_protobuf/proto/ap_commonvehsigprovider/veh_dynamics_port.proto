@@ -1,0 +1,33 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_commonvehsigprovider.veh_dynamics_port;
+
+message VehDynamicsPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float yawRate_radps = 349;
+  optional float yawRateOffset_radps = 3529;
+  optional float pitchRate_radps = 110;
+  optional float pitchRateOffset_radps = 3701;
+  optional float rollRate_radps = 1892;
+  optional float rollRateOffset_radps = 2978;
+  optional float lateralAcceleration_mps2 = 1730;
+  optional float lateralAccelerationOffset_mps2 = 2647;
+  optional float longitudinalAcceleration_mps2 = 3584;
+  optional float longitudinalAccelerationOffset_mps2 = 262;
+  optional float verticalAcceleration_mps2 = 3944;
+  optional float verticalAccelerationOffset_mps2 = 499;
+  optional bool yawRate_QF_nu = 378;
+  optional bool pitchRate_QF_nu = 2458;
+  optional bool rollRate_QF_nu = 652;
+  optional bool lateralAcceleration_QF_nu = 2635;
+  optional bool longitudinalAcceleration_QF_nu = 3388;
+  optional bool verticalAcceleration_QF_nu = 557;
+}
+
+message VehDynamicsPort_array_port{
+   repeated pb.ap_commonvehsigprovider.veh_dynamics_port.VehDynamicsPort data = 658;
+}

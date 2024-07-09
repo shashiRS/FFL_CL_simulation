@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.max_speed10_kphwarning;
+
+enum MaxSpeed10KPHwarning {
+  OFF = 0;
+  CONTINUOUS = 1;
+  BLINKING = 2;
+}

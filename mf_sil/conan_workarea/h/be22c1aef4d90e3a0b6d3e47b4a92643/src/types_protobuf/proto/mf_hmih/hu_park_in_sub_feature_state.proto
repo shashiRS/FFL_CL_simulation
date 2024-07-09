@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hu_park_in_sub_feature_state;
+
+enum HuParkInSubFeatureState {
+  UNUSED = 0;
+  PARK_IN_ACTIVE = 1;
+}

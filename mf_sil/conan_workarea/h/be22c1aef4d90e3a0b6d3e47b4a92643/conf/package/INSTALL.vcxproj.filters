@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\CMakeFiles\47364cd1e0088f5cd45f0353824897cd\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF458D53-5B6A-3E72-8391-70EA1D1925A7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

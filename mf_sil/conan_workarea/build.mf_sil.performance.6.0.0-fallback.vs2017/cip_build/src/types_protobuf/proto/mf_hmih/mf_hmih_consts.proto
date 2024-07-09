@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.mf_hmih_consts;
+
+message MF_HMIH_Consts{
+  optional uint32 AP_H_MAX_NUM_SLOTS_SIDE_NU = 3780;
+  optional uint32 AP_H_MAX_NUM_PLACEHOLDER_NU = 1626;
+  optional uint32 AP_H_MAX_NUM_PARKING_POSES_NU = 2410;
+  optional uint32 AP_H_MAX_NUM_VISIBILITY_TAGS_NU = 2634;
+  optional uint32 MAX_NUM_SECTORS_PER_SIDE_HMIH = 3725;
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_HMIH = 3742;
+}
+
+message MF_HMIH_Consts_array_port{
+   repeated pb.mf_hmih.mf_hmih_consts.MF_HMIH_Consts data = 145;
+}

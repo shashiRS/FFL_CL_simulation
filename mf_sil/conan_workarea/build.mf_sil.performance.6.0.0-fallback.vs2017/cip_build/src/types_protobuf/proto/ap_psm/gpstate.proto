@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.gpstate;
+
+enum GPState {
+  GP_INACTIVE = 0;
+  GP_SCAN_IN = 1;
+  GP_SCAN_OUT = 2;
+  GP_AVG_ACTIVE_IN = 3;
+  GP_AVG_ACTIVE_OUT = 4;
+  GP_AVG_PAUSE = 5;
+  GP_AVG_UNDO = 6;
+  GP_AVG_FINISHED = 7;
+}

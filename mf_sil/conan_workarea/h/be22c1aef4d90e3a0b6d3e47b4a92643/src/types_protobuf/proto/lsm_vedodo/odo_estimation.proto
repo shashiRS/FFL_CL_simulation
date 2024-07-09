@@ -1,0 +1,50 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "lsm_vedodo/motion_state.proto";
+import "lsm_vedodo/direction.proto";
+
+package pb.lsm_vedodo.odo_estimation;
+
+message OdoEstimation{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float longiVelocity_mps = 3083;
+  optional float lateralVelocity_mps = 1539;
+  optional float longiAcceleration_mps2 = 589;
+  optional float lateralAcceleration_mps2 = 1730;
+  optional float verticalAcceleration_mps2 = 3944;
+  optional float xPosition_m = 415;
+  optional float yPosition_m = 2518;
+  optional float xVelocity_mps = 1443;
+  optional float yVelocity_mps = 192;
+  optional float xPositionVar_m2 = 2237;
+  optional float yPositionVar_m2 = 1601;
+  optional float xyPositionVar_m2 = 1630;
+  optional float yxPositionVar_m2 = 134;
+  optional float rollAngle_rad = 2755;
+  optional float pitchAngle_rad = 1165;
+  optional float yawAngle_rad = 566;
+  optional float rollAngleVar_rad2 = 3810;
+  optional float pitchAngleVar_rad2 = 1160;
+  optional float yawAngleVar_rad2 = 2084;
+  optional float rollRate_radps = 1892;
+  optional float pitchRate_radps = 110;
+  optional float yawRate_radps = 349;
+  optional float steerAngFrontAxle_rad = 2578;
+  optional float steerAngRearAxle_rad = 1108;
+  optional float wheelAngleFR_rad = 726;
+  optional float wheelAngleFL_rad = 2340;
+  optional float sideSlipAngle_rad = 148;
+  optional float suspPitch_rad = 3089;
+  optional float suspRoll_rad = 1440;
+  optional float suspHeight_m = 3343;
+  optional float drivenDistance_m = 1548;
+  optional pb.lsm_vedodo.motion_state.MotionState motionStatus_nu = 395;
+  optional pb.lsm_vedodo.direction.Direction drivingDirection_nu = 1444;
+}
+
+message OdoEstimation_array_port{
+   repeated pb.lsm_vedodo.odo_estimation.OdoEstimation data = 1958;
+}

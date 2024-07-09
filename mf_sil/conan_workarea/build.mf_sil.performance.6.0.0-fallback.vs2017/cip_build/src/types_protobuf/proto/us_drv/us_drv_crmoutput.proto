@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "us_drv/us_drv_crmdata.proto";
+
+package pb.us_drv.us_drv_crmoutput;
+
+message UsDrvCRMOutput{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 sequence = 94;
+  optional uint32 flags = 1199;
+  optional uint32 bus = 3767;
+  optional pb.us_drv.us_drv_crmdata.UsDrvCRMData crmResponse = 2617;
+}
+
+message UsDrvCRMOutput_array_port{
+   repeated pb.us_drv.us_drv_crmoutput.UsDrvCRMOutput data = 13;
+}

@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.us_drv.us_drv_sensor_mode;
+
+enum UsDrvSensorMode {
+  US_SENSOR_MODE_OFF = 0;
+  US_SENSOR_MODE_STANDBY = 1;
+  US_SENSOR_MODE_NORMAL = 2;
+  US_SENSOR_MODE_DIAGNOSTIC = 3;
+}

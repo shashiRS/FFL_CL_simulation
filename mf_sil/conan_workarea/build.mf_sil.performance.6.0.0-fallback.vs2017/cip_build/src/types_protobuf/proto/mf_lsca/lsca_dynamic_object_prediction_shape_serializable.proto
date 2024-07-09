@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "cml/vec2_df_pod.proto";
+
+package pb.mf_lsca.lsca_dynamic_object_prediction_shape_serializable;
+
+message LscaDynamicObjectPredictionShapeSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD points = 3855;
+}
+
+message LscaDynamicObjectPredictionShapeSerializable_array_port{
+   repeated pb.mf_lsca.lsca_dynamic_object_prediction_shape_serializable.LscaDynamicObjectPredictionShapeSerializable data = 3862;
+}

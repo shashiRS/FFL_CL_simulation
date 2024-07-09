@@ -1,0 +1,14 @@
+ADD_LIBRARY(codegen_interface INTERFACE)
+
+IF(CIP_BUILD_SYSTEM_VERSION)
+    TARGET_INCLUDE_DIRECTORIES(codegen_interface
+        INTERFACE
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    )
+
+ELSE()
+    TARGET_INCLUDE_DIRECTORIES(codegen_interface
+        INTERFACE
+            ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+ENDIF()

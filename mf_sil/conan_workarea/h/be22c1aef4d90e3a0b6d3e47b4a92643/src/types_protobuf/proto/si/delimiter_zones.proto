@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "si/quadrilateral_serializable.proto";
+
+package pb.si.delimiter_zones;
+
+message DelimiterZones{
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable curbZone = 3525;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable roadZone = 2678;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable leftZone = 1670;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable rightZone = 408;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable insideZone = 2791;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable all = 2879;
+  optional uint32 slotId_nu = 3547;
+}
+
+message DelimiterZones_array_port{
+   repeated pb.si.delimiter_zones.DelimiterZones data = 3950;
+}

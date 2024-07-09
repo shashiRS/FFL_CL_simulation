@@ -1,0 +1,43 @@
+
+syntax = "proto2";
+
+
+package pb.hpsd.health_vector;
+
+message HealthVector{
+  optional bool hostTemperatureWarning = 396;
+  optional bool vehicleCommunicationError = 2473;
+  optional bool onlySafetyCoreAvailable = 474;
+  optional bool hmiCommunicationError = 2533;
+  optional bool odometryUnreliable = 1953;
+  optional bool frontCamPreProcUnreliable = 3919;
+  optional bool rearCamPreProcUnreliable = 3978;
+  optional bool leftCamPreProcUnreliable = 2229;
+  optional bool rightCamPreProcUnreliable = 2015;
+  optional bool frontCamVisionUnreliable = 399;
+  optional bool rearCamVisionUnreliable = 723;
+  optional bool leftCamVisionUnreliable = 175;
+  optional bool rightCamVisionUnreliable = 2133;
+  optional bool frontCamBlockage = 308;
+  optional bool rearCamBlockage = 2919;
+  optional bool leftCamBlockage = 1525;
+  optional bool rightCamBlockage = 3078;
+  optional bool frontUltrasonicsUnreliable = 1168;
+  optional bool rearUltrasonicsUnreliable = 400;
+  optional bool envModelStaticObjsUnreliable = 3532;
+  optional bool envModelTrafficParticiapantsUnreliable = 3438;
+  optional bool envModelParkingFeaturesUnreliable = 1973;
+  optional bool localizationUnreliable = 580;
+  optional bool pdwUnreliable = 4076;
+  optional bool lscaUnreliable = 2649;
+  optional bool aupUnreliable = 419;
+  optional bool raUnreliable = 228;
+  optional bool hvUnreliable = 1654;
+  optional bool avgaFailed = 2767;
+  optional bool mfManagerFailed = 318;
+  optional bool mocoFailed = 374;
+}
+
+message HealthVector_array_port{
+   repeated pb.hpsd.health_vector.HealthVector data = 3166;
+}

@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ecu_ctrl.comm_state;
+
+enum CommState {
+  COMM_STATE_INIT = 0;
+  COMM_STATE_BUS_OFF = 1;
+  COMM_STATE_NO_COMM = 2;
+  COMM_STATE_FULL_COMM = 3;
+  COMM_STATE_UNKNOWN = 128;
+}

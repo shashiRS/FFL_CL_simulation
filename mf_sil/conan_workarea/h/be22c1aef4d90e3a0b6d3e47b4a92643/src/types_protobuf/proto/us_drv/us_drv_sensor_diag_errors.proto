@@ -1,0 +1,35 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_sensor_diag_errors;
+
+message UsDrvSensorDiagErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus burstErrorFlag = 1312;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus burstPeakVoltageError = 3495;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus ringingTimeTooShort = 1308;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus ringingFreqMeasNotPossible = 796;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus ringingFreqOutOfRange = 3678;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus tempOutOfRange = 429;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus transducerVoltageLimitation = 3921;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus rawSignalOutOfToleranceDuringBurst = 592;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus burstLengthOutOfTolerance = 1381;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus driverVoltageMonitoringError = 3469;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus overvoltageErrorDrv1Drv2DrvsVdrv = 1317;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus vdrvUndervoltageError = 1811;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus vdrvOvervoltageError = 4065;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus vsupUndervoltageError = 3746;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus vsupOvervoltageError = 1850;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus scodeIncorrect = 3795;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus firingSchemeMissing = 840;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus receivingSchemeMissing = 4032;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus pdcmPulseInvalid = 1070;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus commandCrcError = 789;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsi3FccFailed = 668;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsi3SyncCrmCommandFailed = 1397;
+}
+
+message UsDrvSensorDiagErrors_array_port{
+   repeated pb.us_drv.us_drv_sensor_diag_errors.UsDrvSensorDiagErrors data = 27;
+}

@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_vehstatesigprovider.starter_status_port;
+
+message StarterStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional bool starterLocked_nu = 2246;
+}
+
+message StarterStatusPort_array_port{
+   repeated pb.ap_vehstatesigprovider.starter_status_port.StarterStatusPort data = 243;
+}

@@ -1,0 +1,20 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_commonvehsigprovider/wheel_driving_direction.proto";
+
+package pb.ap_commonvehsigprovider.wheel_driving_directions_port;
+
+message WheelDrivingDirectionsPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.ap_commonvehsigprovider.wheel_driving_direction.WheelDrivingDirection wheelDrivingDirection_FL_nu = 3108;
+  optional pb.ap_commonvehsigprovider.wheel_driving_direction.WheelDrivingDirection wheelDrivingDirection_FR_nu = 1497;
+  optional pb.ap_commonvehsigprovider.wheel_driving_direction.WheelDrivingDirection wheelDrivingDirection_RL_nu = 376;
+  optional pb.ap_commonvehsigprovider.wheel_driving_direction.WheelDrivingDirection wheelDrivingDirection_RR_nu = 2181;
+}
+
+message WheelDrivingDirectionsPort_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_driving_directions_port.WheelDrivingDirectionsPort data = 90;
+}

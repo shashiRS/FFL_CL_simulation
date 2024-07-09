@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lsca.config_steer_propose_t;
+
+message configSteerPropose_t{
+  optional float minDiffToAct_deg = 1917;
+  optional float maxEffort_deg = 1954;
+  optional float debounceDist_m = 1283;
+}
+
+message configSteerPropose_t_array_port{
+   repeated pb.mf_lsca.config_steer_propose_t.configSteerPropose_t data = 1465;
+}

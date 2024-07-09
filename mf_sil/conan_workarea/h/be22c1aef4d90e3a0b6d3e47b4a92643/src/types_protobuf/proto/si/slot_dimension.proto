@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.si.slot_dimension;
+
+message SlotDimension{
+  optional float min_m = 291;
+  optional float typical_m = 1219;
+  optional float max_m = 1315;
+}
+
+message SlotDimension_array_port{
+   repeated pb.si.slot_dimension.SlotDimension data = 2810;
+}

@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_vedodo.odo_estimation_prediction;
+
+message OdoEstimationPrediction{
+  optional float longiVelocity_mps = 3083;
+  optional float xPosition_m = 415;
+  optional float yPosition_m = 2518;
+  optional float yawAngle_rad = 566;
+}
+
+message OdoEstimationPrediction_array_port{
+   repeated pb.lsm_vedodo.odo_estimation_prediction.OdoEstimationPrediction data = 361;
+}

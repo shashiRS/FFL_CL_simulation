@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FFL_Closed_loop\mf_sil\conan_workarea\h\be22c1aef4d90e3a0b6d3e47b4a92643\.bricks\d\dbuild\CMakeFiles\25b0899c57bf49eb602826f61350a714\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5F6089F4-A43C-3F38-BD3B-77B2BA857735}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

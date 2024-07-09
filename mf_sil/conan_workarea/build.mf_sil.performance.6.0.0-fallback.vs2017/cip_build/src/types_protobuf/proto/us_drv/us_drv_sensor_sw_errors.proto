@@ -1,0 +1,23 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_sensor_sw_errors;
+
+message UsDrvSensorSwErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorInitTimeout = 3192;
+  optional uint32 sensorInitTimeoutDetails = 1498;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorFwVersionIncompatible = 106;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorHwVersionIncompatible = 874;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorInitFiringSchemeSendFail = 2539;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorInitReceivingSchemeSendFail = 824;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorInitBusError = 511;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorInitScodeIncorrect = 1291;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus sensorPdcmCommTimeout = 2090;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus unexpectedMeasModeRecfg = 2087;
+}
+
+message UsDrvSensorSwErrors_array_port{
+   repeated pb.us_drv.us_drv_sensor_sw_errors.UsDrvSensorSwErrors data = 1001;
+}

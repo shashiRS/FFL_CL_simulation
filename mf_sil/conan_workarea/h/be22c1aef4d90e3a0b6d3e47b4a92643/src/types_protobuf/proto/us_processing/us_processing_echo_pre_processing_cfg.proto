@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_echo_pre_processing_cfg;
+
+message UsProcessingEchoPreProcessingCfg{
+  optional uint64 echo_filter_timestamp_threshold = 3941;
+  optional float echo_filter_distance_threshold = 2386;
+  optional float echo_filter_distance_correction_factor = 1302;
+  optional float echo_filter_distance_correction_weight_1 = 662;
+  optional float echo_filter_distance_correction_weight_2 = 757;
+  optional float echo_filter_delta_min = 3592;
+  optional float echo_filter_delta_max = 1366;
+}
+
+message UsProcessingEchoPreProcessingCfg_array_port{
+   repeated pb.us_processing.us_processing_echo_pre_processing_cfg.UsProcessingEchoPreProcessingCfg data = 3214;
+}

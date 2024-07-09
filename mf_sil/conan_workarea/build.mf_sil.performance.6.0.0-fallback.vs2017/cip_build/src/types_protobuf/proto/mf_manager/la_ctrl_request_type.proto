@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.mf_manager.la_ctrl_request_type;
+
+enum LaCtrlRequestType {
+  LACTRL_OFF = 0;
+  LACTRL_BY_TRAJECTORY = 1;
+  LACTRL_BY_ANGLE_FRONT = 2;
+  LACTRL_BY_ANGLE_REAR = 3;
+  LACTRL_BY_ANGLE_FRONT_REAR = 4;
+  LACTRL_BY_TORQUE = 5;
+  LACTRL_BY_CURVATURE = 6;
+  LACTRL_COMF_ANGLE_ADJUSTMENT = 7;
+  MAX_NUM_LA_REQUEST_TYPES = 8;
+}

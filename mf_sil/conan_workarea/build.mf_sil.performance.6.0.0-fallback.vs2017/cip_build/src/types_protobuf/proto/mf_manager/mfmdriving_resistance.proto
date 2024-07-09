@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "mf_manager/mfmdriving_resistance_type.proto";
+
+package pb.mf_manager.mfmdriving_resistance;
+
+message MFMDrivingResistance{
+  optional float distance_m = 1302;
+  optional pb.mf_manager.mfmdriving_resistance_type.MFMDrivingResistanceType type_nu = 1551;
+}
+
+message MFMDrivingResistance_array_port{
+   repeated pb.mf_manager.mfmdriving_resistance.MFMDrivingResistance data = 190;
+}

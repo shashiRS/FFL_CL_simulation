@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.eco.component_execution_mode;
+
+message ComponentExecutionMode{
+  optional uint32 configurationID = 1030;
+  optional uint32 subConfigurationID = 116;
+}
+
+message ComponentExecutionMode_array_port{
+   repeated pb.eco.component_execution_mode.ComponentExecutionMode data = 3335;
+}

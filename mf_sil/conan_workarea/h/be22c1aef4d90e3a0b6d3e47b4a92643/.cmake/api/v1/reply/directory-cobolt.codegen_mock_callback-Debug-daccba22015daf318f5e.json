@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "cobolt/codegen_mock_callback",
+		"source" : "conan_workarea/h/be22c1aef4d90e3a0b6d3e47b4a92643/src/mock/callback"
+	}
+}

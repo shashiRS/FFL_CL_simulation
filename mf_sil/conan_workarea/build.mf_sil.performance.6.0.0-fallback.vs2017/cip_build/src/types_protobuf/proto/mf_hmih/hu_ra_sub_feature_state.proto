@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hu_ra_sub_feature_state;
+
+enum HuRaSubFeatureState {
+  UNUSED = 0;
+  REVERSE_ASSIST_ACTIVE = 1;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_filtered_echo_list_interface_version;
+
+message UsProcessingFilteredEchoList_InterfaceVersion{
+  optional uint32 UsProcessingFilteredEchoList_VERSION = 1116;
+}
+
+message UsProcessingFilteredEchoList_InterfaceVersion_array_port{
+   repeated pb.us_processing.us_processing_filtered_echo_list_interface_version.UsProcessingFilteredEchoList_InterfaceVersion data = 2962;
+}

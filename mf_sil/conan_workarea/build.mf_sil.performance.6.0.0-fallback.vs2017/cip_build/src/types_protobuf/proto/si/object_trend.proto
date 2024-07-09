@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.si.object_trend;
+
+enum ObjectTrend {
+  OBJ_TRND_UNKNOWN = 0;
+  OBJ_TRND_APPROACHING = 1;
+  OBJ_TRND_MOVING_AWAY = 2;
+  OBJ_TRND_FIXED_DIST = 3;
+  OBJ_TRND_MAX_NUM = 4;
+}

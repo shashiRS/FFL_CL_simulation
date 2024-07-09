@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+import "ap_tp/pose_box_data.proto";
+
+package pb.ap_tp.pose_box_dataset;
+
+message PoseBoxDataset{
+  repeated pb.ap_tp.pose_box_data.PoseBoxData data = 3903;
+}
+
+message PoseBoxDataset_array_port{
+   repeated pb.ap_tp.pose_box_dataset.PoseBoxDataset data = 1686;
+}

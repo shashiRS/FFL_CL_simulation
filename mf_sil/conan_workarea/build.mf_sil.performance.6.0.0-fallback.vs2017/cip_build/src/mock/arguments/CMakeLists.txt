@@ -1,0 +1,14 @@
+ADD_LIBRARY(codegen_mock_arguments INTERFACE)
+
+IF(CIP_BUILD_SYSTEM_VERSION)
+    TARGET_INCLUDE_DIRECTORIES(codegen_mock_arguments
+        INTERFACE
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    )
+
+ELSE()
+    TARGET_INCLUDE_DIRECTORIES(codegen_mock_arguments
+        INTERFACE
+            ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+ENDIF()

@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ecu_ctrl.voltage_state;
+
+enum VoltageState {
+  VOLT_STATE_INIT = 0;
+  VOLT_STATE_NORMAL = 1;
+  VOLT_STATE_OVER_VOLTAGE = 2;
+  VOLT_STATE_UNDER_VOLTAGE = 3;
+  VOLT_STATE_UNKNOWN = 128;
+}

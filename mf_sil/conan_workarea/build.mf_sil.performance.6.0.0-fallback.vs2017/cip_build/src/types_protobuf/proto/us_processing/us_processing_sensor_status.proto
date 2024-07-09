@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.us_processing.us_processing_sensor_status;
+
+enum UsProcessingSensorStatus {
+  US_PROCESSING_SNS_INIT = 0;
+  US_PROCESSING_SNS_ERROR = 1;
+  US_PROCESSING_SNS_FAILSAFE = 2;
+  US_PROCESSING_SNS_RUNNING = 3;
+}

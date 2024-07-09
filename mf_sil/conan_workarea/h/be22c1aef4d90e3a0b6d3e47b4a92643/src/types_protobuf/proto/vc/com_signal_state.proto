@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.vc.com_signal_state;
+
+enum ComSignalState {
+  option allow_alias = true;
+  COMSIGSTATE_INIT = 0;
+  COMSIGSTATE_VALID = 1;
+  COMSIGSTATE_INVALID = 2;
+  COMSIGSTATE_TIMEOUT = 3;
+  COMSIGSTATE_ERROR = 0;
+}

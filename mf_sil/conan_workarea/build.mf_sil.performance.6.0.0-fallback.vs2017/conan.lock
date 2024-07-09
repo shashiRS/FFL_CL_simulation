@@ -1,0 +1,878 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "ref": "mf_sil.entry/6.0.0-fallback",
+    "options": "",
+    "requires": [
+     "1",
+     "2",
+     "14",
+     "12",
+     "3",
+     "5",
+     "10",
+     "17",
+     "9",
+     "8",
+     "18",
+     "16",
+     "15",
+     "20",
+     "13",
+     "7",
+     "11",
+     "6",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29",
+     "30",
+     "31",
+     "33",
+     "32",
+     "34",
+     "35",
+     "36",
+     "38",
+     "37",
+     "39",
+     "40",
+     "41",
+     "42",
+     "43",
+     "44",
+     "45",
+     "46",
+     "47",
+     "48",
+     "49",
+     "50",
+     "51",
+     "52",
+     "53",
+     "54"
+    ],
+    "build_requires": [
+     "19",
+     "4",
+     "55",
+     "56",
+     "57",
+     "58",
+     "59",
+     "60",
+     "61",
+     "62",
+     "63"
+    ],
+    "path": "conanfile.py",
+    "context": "host"
+   },
+   "1": {
+    "ref": "appdemo_tonh_types.generic/6.1.1@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "2": {
+    "ref": "mf_plot.cus_only/4.1.0@cip/releases",
+    "options": "",
+    "package_id": "f1de2cfd73837a1354afa8ca9dc35c7f9eff1fea",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "16",
+     "17",
+     "18",
+     "8",
+     "9",
+     "10",
+     "11",
+     "20",
+     "12",
+     "13",
+     "14",
+     "15",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "appdemo_drvwarnsm_types.generic/6.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "5"
+    ],
+    "context": "host"
+   },
+   "4": {
+    "ref": "appl_srv_layer_types.generic/5.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "5": {
+    "ref": "vehicle_types.generic/7.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "6": {
+    "ref": "appdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "3",
+     "7",
+     "4",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "5"
+    ],
+    "context": "host"
+   },
+   "7": {
+    "ref": "appdemo_parksm_types.cus_only/7.2.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "8",
+     "5"
+    ],
+    "context": "host"
+   },
+   "8": {
+    "ref": "mf_common_types.cus_only/6.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "9": {
+    "ref": "mf_lsca_types.cus_only/6.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "8"
+    ],
+    "context": "host"
+   },
+   "10": {
+    "ref": "mf_lvmd_types.generic/3.0.3@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "11": {
+    "ref": "mf_memory_parking_types.generic/4.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "5"
+    ],
+    "context": "host"
+   },
+   "12": {
+    "ref": "mf_pdwarnproc_types.generic/7.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "13": {
+    "ref": "mf_trjpla_types.cus_only/12.2.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "8"
+    ],
+    "context": "host"
+   },
+   "14": {
+    "ref": "mf_whlprotectproc_types.generic/5.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "15": {
+    "ref": "parking_hmi_types.generic/1.1.4@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "16": {
+    "ref": "eco.generic/10.4.1-rc9@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "17": {
+    "ref": "geoml.generic/4.2.3@cip/releases",
+    "options": "",
+    "package_id": "b466582dfd8730a54c280dafc04cf95d87211337",
+    "prev": "0",
+    "context": "host"
+   },
+   "18": {
+    "ref": "mf_common.cus_only/6.6.0@cip/releases",
+    "options": "",
+    "package_id": "acca07d2c1f1ef51d266fadfaca3969e7a26b673",
+    "prev": "0",
+    "requires": [
+     "16",
+     "17",
+     "19",
+     "8",
+     "5"
+    ],
+    "context": "host"
+   },
+   "19": {
+    "ref": "jsoncpp.generic/1.9.7@cip/releases",
+    "options": "",
+    "package_id": "b466582dfd8730a54c280dafc04cf95d87211337",
+    "prev": "0",
+    "context": "host"
+   },
+   "20": {
+    "ref": "mf_parksm_core_types.generic/7.1.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4"
+    ],
+    "context": "host"
+   },
+   "21": {
+    "ref": "si_types.cus_only/12.2.1@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "8"
+    ],
+    "context": "host"
+   },
+   "22": {
+    "ref": "mf_whlprotectproc.cus_only/4.0.4@cip/releases",
+    "options": "",
+    "package_id": "0827cf9ed157a17b76e272b7d19e9049d524df23",
+    "prev": "0",
+    "requires": [
+     "3",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "14",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "23": {
+    "ref": "plp_log.generic/1.0.7@cip/releases",
+    "options": "",
+    "package_id": "b466582dfd8730a54c280dafc04cf95d87211337",
+    "prev": "0",
+    "context": "host"
+   },
+   "24": {
+    "ref": "relocalization_types.generic/3.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "4",
+     "5"
+    ],
+    "context": "host"
+   },
+   "25": {
+    "ref": "mf_pdwarnproc.cus_only/7.1.3@cip/releases",
+    "options": "",
+    "package_id": "f8a0da4cf50dbae5cb984eca1012d2f703675cad",
+    "prev": "0",
+    "requires": [
+     "3",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "12",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "26": {
+    "ref": "mf_parksm_core.cus_only/9.3.0-rc1@cip/releases",
+    "options": "",
+    "package_id": "50498ffeaf77d636397d6a690a1301e79f077771",
+    "prev": "0",
+    "requires": [
+     "7",
+     "4",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "20",
+     "27",
+     "13",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "27": {
+    "ref": "mf_trjctl_types.generic/8.1.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "5"
+    ],
+    "context": "host"
+   },
+   "28": {
+    "ref": "plp_hpsd_types.generic/1.0.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "29": {
+    "ref": "appdemo_drvwarnsm.cus_only/5.1.3@cip/releases",
+    "options": "",
+    "package_id": "f2c7c1c95fed864b91224cd264bd71de969cb102",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "30",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "9",
+     "10",
+     "11",
+     "20",
+     "12",
+     "13",
+     "14",
+     "15",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "30": {
+    "ref": "dmc_types.generic/2.0.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "31": {
+    "ref": "mf_trjpla.cus_only/8.0.2@cip/releases",
+    "options": "",
+    "package_id": "3b2c285b22e9e1cc25db1c5d2a960769451f5ef4",
+    "prev": "0",
+    "requires": [
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "32",
+     "20",
+     "33",
+     "27",
+     "13",
+     "23",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "32": {
+    "ref": "mf_manager_types.generic/7.1.1@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "33": {
+    "ref": "mf_taposd.cus_only/12.0.3@cip/releases",
+    "options": "",
+    "package_id": "4bb2c65c367db4bf2354c21be70ca8f41d3a218d",
+    "prev": "0",
+    "requires": [
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "20",
+     "13",
+     "23",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "34": {
+    "ref": "avga_swc_types.generic/2.0.3@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "35": {
+    "ref": "mf_vedodo_types.generic/6.2.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "36": {
+    "ref": "appdemo_hmih.cus_only/8.0.3-pre6@cip/releases",
+    "options": "",
+    "package_id": "98d9c5aa5871d29a983f7a69293910bdde0f3e2e",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "4",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "37",
+     "9",
+     "10",
+     "11",
+     "20",
+     "12",
+     "27",
+     "13",
+     "35",
+     "14",
+     "15",
+     "21",
+     "5",
+     "38"
+    ],
+    "context": "host"
+   },
+   "37": {
+    "ref": "mf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "38": {
+    "ref": "viewcontroller_types.cus_only/8.2.7@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "4",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "5"
+    ],
+    "context": "host"
+   },
+   "39": {
+    "ref": "mf_vedodo.cus_only/6.1.8-pre1@cip/releases",
+    "options": "",
+    "package_id": "e6b834f78bec2228105e5c4173d3f5cbe9f45427",
+    "prev": "0",
+    "requires": [
+     "16",
+     "17",
+     "35",
+     "40",
+     "5"
+    ],
+    "context": "host"
+   },
+   "40": {
+    "ref": "tce_types.generic/5.1.1@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "41": {
+    "ref": "us_em_types.generic/4.1.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "42": {
+    "ref": "appdemo_parksm.cus_only/7.1.3@cip/releases",
+    "options": "",
+    "package_id": "c4bcc024659cb8439a1af181b9d35e3503024b29",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "4",
+     "30",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "37",
+     "9",
+     "10",
+     "11",
+     "26",
+     "20",
+     "12",
+     "27",
+     "13",
+     "14",
+     "15",
+     "28",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "43": {
+    "ref": "mf_trjctl.cus_only/9.2.0@cip/releases",
+    "options": "",
+    "package_id": "d049e2bccfc93193e2b5cc8c1b8230ed525d4a34",
+    "prev": "0",
+    "requires": [
+     "4",
+     "30",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "32",
+     "27",
+     "35",
+     "23",
+     "5"
+    ],
+    "context": "host"
+   },
+   "44": {
+    "ref": "si_core.cus_only/14.2.0-jd1@cip/releases",
+    "options": "",
+    "package_id": "875d0adc21ce486a77b839849bf0ca4fb05a2551",
+    "prev": "0",
+    "requires": [
+     "3",
+     "6",
+     "7",
+     "4",
+     "16",
+     "17",
+     "8",
+     "9",
+     "10",
+     "11",
+     "20",
+     "12",
+     "13",
+     "35",
+     "14",
+     "15",
+     "23",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "45": {
+    "ref": "appdemo_tonh.cus_only/5.0.3-pre5@cip/releases",
+    "options": "",
+    "package_id": "3a8967d65f001cd6256b25753a639beb85a5e241",
+    "prev": "0",
+    "requires": [
+     "3",
+     "1",
+     "4",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "37",
+     "9",
+     "10",
+     "12",
+     "14",
+     "5"
+    ],
+    "context": "host"
+   },
+   "46": {
+    "ref": "tce.cus_only/5.1.4@cip/releases",
+    "options": "",
+    "package_id": "db2f53afd40e9f2816bb7380e6b2a9f5725e8612",
+    "prev": "0",
+    "requires": [
+     "16",
+     "17",
+     "40",
+     "5"
+    ],
+    "context": "host"
+   },
+   "47": {
+    "ref": "us_drv_types.generic/3.6.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "48": {
+    "ref": "avga_swc.cus_only/2.0.3-dev1@cip/releases",
+    "options": "",
+    "package_id": "391a3d22af93397b4aa9a32adaf523193ed0188e",
+    "prev": "0",
+    "requires": [
+     "3",
+     "4",
+     "34",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "9",
+     "5"
+    ],
+    "context": "host"
+   },
+   "49": {
+    "ref": "mf_lsca.cus_only/4.0.2-rc3@cip/releases",
+    "options": "",
+    "package_id": "1a2af81c38c6f4c75e1193ed89166dcff07333b8",
+    "prev": "0",
+    "requires": [
+     "7",
+     "4",
+     "30",
+     "16",
+     "17",
+     "8",
+     "9",
+     "20",
+     "27",
+     "28",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "50": {
+    "ref": "us_processing.cus_only/9.7.8-pre@cip/releases",
+    "options": "",
+    "package_id": "93e7af87af84a6ef21c0648ad23be69a0bc75338",
+    "prev": "0",
+    "requires": [
+     "4",
+     "16",
+     "17",
+     "35",
+     "47",
+     "51",
+     "5"
+    ],
+    "context": "host"
+   },
+   "51": {
+    "ref": "us_processing_types.cus_only/8.5.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "52": {
+    "ref": "mf_manager.cus_only/5.0.6-dev2@cip/releases",
+    "options": "",
+    "package_id": "ed56449255f924797c236a500b54b8e4387b4777",
+    "prev": "0",
+    "requires": [
+     "34",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "9",
+     "32",
+     "20",
+     "13",
+     "5"
+    ],
+    "context": "host"
+   },
+   "53": {
+    "ref": "mf_drvwarnsm_core.cus_only/5.1.3@cip/releases",
+    "options": "",
+    "package_id": "d7f09512077b39c533a3ca3a1a98431eaf127cf6",
+    "prev": "0",
+    "requires": [
+     "3",
+     "16",
+     "17",
+     "19",
+     "18",
+     "8",
+     "37",
+     "21",
+     "5"
+    ],
+    "context": "host"
+   },
+   "54": {
+    "ref": "us_em.generic/6.3.5-pre@cip/releases",
+    "options": "",
+    "package_id": "92299af56cf5765f214b927531be852c7521f642",
+    "prev": "0",
+    "requires": [
+     "4",
+     "16",
+     "17",
+     "35",
+     "41",
+     "51"
+    ],
+    "context": "host"
+   },
+   "55": {
+    "ref": "adas_platforms.generic/6.0.54@cip/releases",
+    "options": "",
+    "package_id": "b466582dfd8730a54c280dafc04cf95d87211337",
+    "prev": "0",
+    "context": "host"
+   },
+   "56": {
+    "ref": "protobuf/3.11.4-tb1@3rdparty/releases",
+    "options": "",
+    "package_id": "b466582dfd8730a54c280dafc04cf95d87211337",
+    "prev": "0",
+    "context": "host"
+   },
+   "57": {
+    "ref": "carmaker_build_dep/8.1.1@3rdparty/release",
+    "options": "",
+    "package_id": "ca33edce272a279b24f87dc0d4cf5bbdcffbc187",
+    "prev": "0",
+    "context": "host"
+   },
+   "58": {
+    "ref": "cmake/3.25.0@3rdparty/releases",
+    "options": "",
+    "package_id": "60b04a80ac4dd5c23f1acffacc679e9902e636e5",
+    "prev": "0",
+    "context": "host"
+   },
+   "59": {
+    "ref": "bricks_cmake_groups.__system/1.12.2@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "60": {
+    "ref": "cip_build_system_platforms.__system/3.55.14@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "61": {
+    "ref": "make/4.4.1@3rdparty/releases",
+    "options": "",
+    "package_id": "60b04a80ac4dd5c23f1acffacc679e9902e636e5",
+    "prev": "0",
+    "context": "host"
+   },
+   "62": {
+    "ref": "bricks_cmake_checks.__system/1.8.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   },
+   "63": {
+    "ref": "bricks_cmake_core.__system/1.4.0@cip/releases",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "0",
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbricks_platform_name=vs2017_debug\nbuild_type=Debug\ncompiler=Visual Studio\ncompiler.runtime=MDd\ncompiler.version=15\nos=Windows\nos_build=Windows\nadas_platforms.generic/6.0.54@cip/releases:arch=x86_64\nadas_platforms.generic/6.0.54@cip/releases:arch_build=x86_64\nadas_platforms.generic/6.0.54@cip/releases:bricks_platform_name=vs2017_debug\nadas_platforms.generic/6.0.54@cip/releases:build_type=Debug\nadas_platforms.generic/6.0.54@cip/releases:compiler=Visual Studio\nadas_platforms.generic/6.0.54@cip/releases:compiler.runtime=MDd\nadas_platforms.generic/6.0.54@cip/releases:compiler.version=15\nadas_platforms.generic/6.0.54@cip/releases:os=Windows\nadas_platforms.generic/6.0.54@cip/releases:os_build=Windows\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:arch=x86_64\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:arch_build=x86_64\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:build_type=Debug\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:compiler=Visual Studio\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:compiler.runtime=MDd\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:compiler.version=15\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:os=Windows\nappdemo_drvwarnsm.cus_only/5.1.3@cip/releases:os_build=Windows\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:arch=x86_64\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:arch_build=x86_64\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:build_type=Debug\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:compiler=gcc\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:compiler.libcxx=libstdc++\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:compiler.version=9.3.0\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:os=Linux\nappdemo_drvwarnsm_types.generic/6.1.0@cip/releases:os_build=Linux\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:arch=x86_64\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:arch_build=x86_64\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:build_type=Debug\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:compiler=Visual Studio\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:compiler.runtime=MDd\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:compiler.version=15\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:os=Windows\nappdemo_hmih.cus_only/8.0.3-pre6@cip/releases:os_build=Windows\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:arch=x86_64\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:arch_build=x86_64\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:build_type=Debug\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:compiler=Visual Studio\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:compiler.runtime=MDd\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:compiler.version=15\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:os=Windows\nappdemo_hmih_types.cus_only/8.2.0-rc1@cip/releases:os_build=Windows\nappdemo_parksm.cus_only/7.1.3@cip/releases:arch=x86_64\nappdemo_parksm.cus_only/7.1.3@cip/releases:arch_build=x86_64\nappdemo_parksm.cus_only/7.1.3@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_parksm.cus_only/7.1.3@cip/releases:build_type=Debug\nappdemo_parksm.cus_only/7.1.3@cip/releases:compiler=Visual Studio\nappdemo_parksm.cus_only/7.1.3@cip/releases:compiler.runtime=MDd\nappdemo_parksm.cus_only/7.1.3@cip/releases:compiler.version=15\nappdemo_parksm.cus_only/7.1.3@cip/releases:os=Windows\nappdemo_parksm.cus_only/7.1.3@cip/releases:os_build=Windows\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:arch=x86_64\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:arch_build=x86_64\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:build_type=Debug\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:compiler=Visual Studio\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:compiler.runtime=MDd\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:compiler.version=15\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:os=Windows\nappdemo_parksm_types.cus_only/7.2.2@cip/releases:os_build=Windows\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:arch=x86_64\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:arch_build=x86_64\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:build_type=Debug\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:compiler=Visual Studio\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:compiler.runtime=MDd\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:compiler.version=15\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:os=Windows\nappdemo_tonh.cus_only/5.0.3-pre5@cip/releases:os_build=Windows\nappdemo_tonh_types.generic/6.1.1@cip/releases:arch=x86_64\nappdemo_tonh_types.generic/6.1.1@cip/releases:arch_build=x86_64\nappdemo_tonh_types.generic/6.1.1@cip/releases:bricks_platform_name=vs2017_debug\nappdemo_tonh_types.generic/6.1.1@cip/releases:build_type=Debug\nappdemo_tonh_types.generic/6.1.1@cip/releases:compiler=Visual Studio\nappdemo_tonh_types.generic/6.1.1@cip/releases:compiler.runtime=MDd\nappdemo_tonh_types.generic/6.1.1@cip/releases:compiler.version=15\nappdemo_tonh_types.generic/6.1.1@cip/releases:os=Windows\nappdemo_tonh_types.generic/6.1.1@cip/releases:os_build=Windows\nappl_srv_layer_types.generic/5.1.0@cip/releases:arch=x86_64\nappl_srv_layer_types.generic/5.1.0@cip/releases:arch_build=x86_64\nappl_srv_layer_types.generic/5.1.0@cip/releases:bricks_platform_name=vs2017_debug\nappl_srv_layer_types.generic/5.1.0@cip/releases:build_type=Debug\nappl_srv_layer_types.generic/5.1.0@cip/releases:compiler=Visual Studio\nappl_srv_layer_types.generic/5.1.0@cip/releases:compiler.runtime=MDd\nappl_srv_layer_types.generic/5.1.0@cip/releases:compiler.version=15\nappl_srv_layer_types.generic/5.1.0@cip/releases:os=Windows\nappl_srv_layer_types.generic/5.1.0@cip/releases:os_build=Windows\navga_swc.cus_only/2.0.3-dev1@cip/releases:arch=x86_64\navga_swc.cus_only/2.0.3-dev1@cip/releases:arch_build=x86_64\navga_swc.cus_only/2.0.3-dev1@cip/releases:bricks_platform_name=vs2017_debug\navga_swc.cus_only/2.0.3-dev1@cip/releases:build_type=Debug\navga_swc.cus_only/2.0.3-dev1@cip/releases:compiler=Visual Studio\navga_swc.cus_only/2.0.3-dev1@cip/releases:compiler.runtime=MDd\navga_swc.cus_only/2.0.3-dev1@cip/releases:compiler.version=15\navga_swc.cus_only/2.0.3-dev1@cip/releases:os=Windows\navga_swc.cus_only/2.0.3-dev1@cip/releases:os_build=Windows\navga_swc_types.generic/2.0.3@cip/releases:arch=x86_64\navga_swc_types.generic/2.0.3@cip/releases:arch_build=x86_64\navga_swc_types.generic/2.0.3@cip/releases:bricks_platform_name=vs2017\navga_swc_types.generic/2.0.3@cip/releases:build_type=Release\navga_swc_types.generic/2.0.3@cip/releases:compiler=Visual Studio\navga_swc_types.generic/2.0.3@cip/releases:compiler.runtime=MD\navga_swc_types.generic/2.0.3@cip/releases:compiler.version=15\navga_swc_types.generic/2.0.3@cip/releases:os=Windows\navga_swc_types.generic/2.0.3@cip/releases:os_build=Windows\nbricks_cmake_checks.__system/1.8.0@cip/releases:arch=x86_64\nbricks_cmake_checks.__system/1.8.0@cip/releases:arch_build=x86_64\nbricks_cmake_checks.__system/1.8.0@cip/releases:bricks_platform_name=vs2017\nbricks_cmake_checks.__system/1.8.0@cip/releases:build_type=Release\nbricks_cmake_checks.__system/1.8.0@cip/releases:compiler=Visual Studio\nbricks_cmake_checks.__system/1.8.0@cip/releases:compiler.runtime=MD\nbricks_cmake_checks.__system/1.8.0@cip/releases:compiler.version=15\nbricks_cmake_checks.__system/1.8.0@cip/releases:os=Windows\nbricks_cmake_checks.__system/1.8.0@cip/releases:os_build=Windows\nbricks_cmake_core.__system/1.4.0@cip/releases:arch=x86_64\nbricks_cmake_core.__system/1.4.0@cip/releases:arch_build=x86_64\nbricks_cmake_core.__system/1.4.0@cip/releases:bricks_platform_name=vs2017\nbricks_cmake_core.__system/1.4.0@cip/releases:build_type=Release\nbricks_cmake_core.__system/1.4.0@cip/releases:compiler=Visual Studio\nbricks_cmake_core.__system/1.4.0@cip/releases:compiler.runtime=MD\nbricks_cmake_core.__system/1.4.0@cip/releases:compiler.version=15\nbricks_cmake_core.__system/1.4.0@cip/releases:os=Windows\nbricks_cmake_core.__system/1.4.0@cip/releases:os_build=Windows\nbricks_cmake_groups.__system/1.12.2@cip/releases:arch=x86_64\nbricks_cmake_groups.__system/1.12.2@cip/releases:arch_build=x86_64\nbricks_cmake_groups.__system/1.12.2@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nbricks_cmake_groups.__system/1.12.2@cip/releases:build_type=Debug\nbricks_cmake_groups.__system/1.12.2@cip/releases:compiler=gcc\nbricks_cmake_groups.__system/1.12.2@cip/releases:compiler.libcxx=libstdc++\nbricks_cmake_groups.__system/1.12.2@cip/releases:compiler.version=9.3.0\nbricks_cmake_groups.__system/1.12.2@cip/releases:os=Linux\nbricks_cmake_groups.__system/1.12.2@cip/releases:os_build=Linux\ncip_build_system_platforms.__system/3.55.14@cip/releases:arch=x86_64\ncip_build_system_platforms.__system/3.55.14@cip/releases:arch_build=x86_64\ncip_build_system_platforms.__system/3.55.14@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\ncip_build_system_platforms.__system/3.55.14@cip/releases:build_type=Debug\ncip_build_system_platforms.__system/3.55.14@cip/releases:compiler=gcc\ncip_build_system_platforms.__system/3.55.14@cip/releases:compiler.libcxx=libstdc++\ncip_build_system_platforms.__system/3.55.14@cip/releases:compiler.version=9.3.0\ncip_build_system_platforms.__system/3.55.14@cip/releases:os=Linux\ncip_build_system_platforms.__system/3.55.14@cip/releases:os_build=Linux\ndmc_types.generic/2.0.0@cip/releases:arch=x86_64\ndmc_types.generic/2.0.0@cip/releases:arch_build=x86_64\ndmc_types.generic/2.0.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64-release\ndmc_types.generic/2.0.0@cip/releases:build_type=Release\ndmc_types.generic/2.0.0@cip/releases:compiler=gcc\ndmc_types.generic/2.0.0@cip/releases:compiler.libcxx=libstdc++\ndmc_types.generic/2.0.0@cip/releases:compiler.version=9.3.0\ndmc_types.generic/2.0.0@cip/releases:os=Linux\ndmc_types.generic/2.0.0@cip/releases:os_build=Linux\neco.generic/10.4.1-rc9@cip/releases:arch=x86_64\neco.generic/10.4.1-rc9@cip/releases:arch_build=x86_64\neco.generic/10.4.1-rc9@cip/releases:bricks_platform_name=vs2017\neco.generic/10.4.1-rc9@cip/releases:build_type=Release\neco.generic/10.4.1-rc9@cip/releases:compiler=Visual Studio\neco.generic/10.4.1-rc9@cip/releases:compiler.runtime=MD\neco.generic/10.4.1-rc9@cip/releases:compiler.version=15\neco.generic/10.4.1-rc9@cip/releases:os=Windows\neco.generic/10.4.1-rc9@cip/releases:os_build=Windows\ngeoml.generic/4.2.3@cip/releases:arch=x86_64\ngeoml.generic/4.2.3@cip/releases:arch_build=x86_64\ngeoml.generic/4.2.3@cip/releases:bricks_platform_name=vs2017_debug\ngeoml.generic/4.2.3@cip/releases:build_type=Debug\ngeoml.generic/4.2.3@cip/releases:compiler=Visual Studio\ngeoml.generic/4.2.3@cip/releases:compiler.runtime=MDd\ngeoml.generic/4.2.3@cip/releases:compiler.version=15\ngeoml.generic/4.2.3@cip/releases:os=Windows\ngeoml.generic/4.2.3@cip/releases:os_build=Windows\njsoncpp.generic/1.9.7@cip/releases:arch=x86_64\njsoncpp.generic/1.9.7@cip/releases:arch_build=x86_64\njsoncpp.generic/1.9.7@cip/releases:bricks_platform_name=vs2017_debug\njsoncpp.generic/1.9.7@cip/releases:build_type=Debug\njsoncpp.generic/1.9.7@cip/releases:compiler=Visual Studio\njsoncpp.generic/1.9.7@cip/releases:compiler.runtime=MDd\njsoncpp.generic/1.9.7@cip/releases:compiler.version=15\njsoncpp.generic/1.9.7@cip/releases:os=Windows\njsoncpp.generic/1.9.7@cip/releases:os_build=Windows\nmf_common.cus_only/6.6.0@cip/releases:arch=x86_64\nmf_common.cus_only/6.6.0@cip/releases:arch_build=x86_64\nmf_common.cus_only/6.6.0@cip/releases:bricks_platform_name=vs2017_debug\nmf_common.cus_only/6.6.0@cip/releases:build_type=Debug\nmf_common.cus_only/6.6.0@cip/releases:compiler=Visual Studio\nmf_common.cus_only/6.6.0@cip/releases:compiler.runtime=MDd\nmf_common.cus_only/6.6.0@cip/releases:compiler.version=15\nmf_common.cus_only/6.6.0@cip/releases:os=Windows\nmf_common.cus_only/6.6.0@cip/releases:os_build=Windows\nmf_common_types.cus_only/6.1.0@cip/releases:arch=x86_64\nmf_common_types.cus_only/6.1.0@cip/releases:arch_build=x86_64\nmf_common_types.cus_only/6.1.0@cip/releases:bricks_platform_name=vs2017_debug\nmf_common_types.cus_only/6.1.0@cip/releases:build_type=Debug\nmf_common_types.cus_only/6.1.0@cip/releases:compiler=Visual Studio\nmf_common_types.cus_only/6.1.0@cip/releases:compiler.runtime=MDd\nmf_common_types.cus_only/6.1.0@cip/releases:compiler.version=15\nmf_common_types.cus_only/6.1.0@cip/releases:os=Windows\nmf_common_types.cus_only/6.1.0@cip/releases:os_build=Windows\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:arch=x86_64\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:arch_build=x86_64\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:bricks_platform_name=vs2017_debug\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:build_type=Debug\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:compiler=Visual Studio\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:compiler.runtime=MDd\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:compiler.version=15\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:os=Windows\nmf_drvwarnsm_core.cus_only/5.1.3@cip/releases:os_build=Windows\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:arch=x86_64\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:arch_build=x86_64\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:bricks_platform_name=vs2017_debug\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:build_type=Debug\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:compiler=Visual Studio\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:compiler.runtime=MDd\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:compiler.version=15\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:os=Windows\nmf_drvwarnsm_core_types.cus_only/6.1.0@cip/releases:os_build=Windows\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:arch=x86_64\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:arch_build=x86_64\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:bricks_platform_name=vs2017_debug\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:build_type=Debug\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:compiler=Visual Studio\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:compiler.runtime=MDd\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:compiler.version=15\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:os=Windows\nmf_lsca.cus_only/4.0.2-rc3@cip/releases:os_build=Windows\nmf_lsca_types.cus_only/6.1.0@cip/releases:arch=x86_64\nmf_lsca_types.cus_only/6.1.0@cip/releases:arch_build=x86_64\nmf_lsca_types.cus_only/6.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_lsca_types.cus_only/6.1.0@cip/releases:build_type=Debug\nmf_lsca_types.cus_only/6.1.0@cip/releases:compiler=gcc\nmf_lsca_types.cus_only/6.1.0@cip/releases:compiler.libcxx=libstdc++\nmf_lsca_types.cus_only/6.1.0@cip/releases:compiler.version=9.3.0\nmf_lsca_types.cus_only/6.1.0@cip/releases:os=Linux\nmf_lsca_types.cus_only/6.1.0@cip/releases:os_build=Linux\nmf_lvmd_types.generic/3.0.3@cip/releases:arch=x86_64\nmf_lvmd_types.generic/3.0.3@cip/releases:arch_build=x86_64\nmf_lvmd_types.generic/3.0.3@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_lvmd_types.generic/3.0.3@cip/releases:build_type=Debug\nmf_lvmd_types.generic/3.0.3@cip/releases:compiler=gcc\nmf_lvmd_types.generic/3.0.3@cip/releases:compiler.libcxx=libstdc++\nmf_lvmd_types.generic/3.0.3@cip/releases:compiler.version=9.3.0\nmf_lvmd_types.generic/3.0.3@cip/releases:os=Linux\nmf_lvmd_types.generic/3.0.3@cip/releases:os_build=Linux\nmf_manager.cus_only/5.0.6-dev2@cip/releases:arch=x86_64\nmf_manager.cus_only/5.0.6-dev2@cip/releases:arch_build=x86_64\nmf_manager.cus_only/5.0.6-dev2@cip/releases:bricks_platform_name=vs2017_debug\nmf_manager.cus_only/5.0.6-dev2@cip/releases:build_type=Debug\nmf_manager.cus_only/5.0.6-dev2@cip/releases:compiler=Visual Studio\nmf_manager.cus_only/5.0.6-dev2@cip/releases:compiler.runtime=MDd\nmf_manager.cus_only/5.0.6-dev2@cip/releases:compiler.version=15\nmf_manager.cus_only/5.0.6-dev2@cip/releases:os=Windows\nmf_manager.cus_only/5.0.6-dev2@cip/releases:os_build=Windows\nmf_manager_types.generic/7.1.1@cip/releases:arch=x86_64\nmf_manager_types.generic/7.1.1@cip/releases:arch_build=x86_64\nmf_manager_types.generic/7.1.1@cip/releases:bricks_platform_name=vs2017_debug\nmf_manager_types.generic/7.1.1@cip/releases:build_type=Debug\nmf_manager_types.generic/7.1.1@cip/releases:compiler=Visual Studio\nmf_manager_types.generic/7.1.1@cip/releases:compiler.runtime=MDd\nmf_manager_types.generic/7.1.1@cip/releases:compiler.version=15\nmf_manager_types.generic/7.1.1@cip/releases:os=Windows\nmf_manager_types.generic/7.1.1@cip/releases:os_build=Windows\nmf_memory_parking_types.generic/4.1.0@cip/releases:arch=x86_64\nmf_memory_parking_types.generic/4.1.0@cip/releases:arch_build=x86_64\nmf_memory_parking_types.generic/4.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_memory_parking_types.generic/4.1.0@cip/releases:build_type=Debug\nmf_memory_parking_types.generic/4.1.0@cip/releases:compiler=gcc\nmf_memory_parking_types.generic/4.1.0@cip/releases:compiler.libcxx=libstdc++\nmf_memory_parking_types.generic/4.1.0@cip/releases:compiler.version=9.3.0\nmf_memory_parking_types.generic/4.1.0@cip/releases:os=Linux\nmf_memory_parking_types.generic/4.1.0@cip/releases:os_build=Linux\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:arch=x86_64\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:arch_build=x86_64\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:bricks_platform_name=vs2017_debug\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:build_type=Debug\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:compiler=Visual Studio\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:compiler.runtime=MDd\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:compiler.version=15\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:os=Windows\nmf_parksm_core.cus_only/9.3.0-rc1@cip/releases:os_build=Windows\nmf_parksm_core_types.generic/7.1.2@cip/releases:arch=x86_64\nmf_parksm_core_types.generic/7.1.2@cip/releases:arch_build=x86_64\nmf_parksm_core_types.generic/7.1.2@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_parksm_core_types.generic/7.1.2@cip/releases:build_type=Debug\nmf_parksm_core_types.generic/7.1.2@cip/releases:compiler=gcc\nmf_parksm_core_types.generic/7.1.2@cip/releases:compiler.libcxx=libstdc++\nmf_parksm_core_types.generic/7.1.2@cip/releases:compiler.version=9.3.0\nmf_parksm_core_types.generic/7.1.2@cip/releases:os=Linux\nmf_parksm_core_types.generic/7.1.2@cip/releases:os_build=Linux\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:arch=x86_64\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:arch_build=x86_64\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:bricks_platform_name=vs2017_debug\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:build_type=Debug\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:compiler=Visual Studio\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:compiler.runtime=MDd\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:compiler.version=15\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:os=Windows\nmf_pdwarnproc.cus_only/7.1.3@cip/releases:os_build=Windows\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:arch=x86_64\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:arch_build=x86_64\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:build_type=Debug\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:compiler=gcc\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:compiler.libcxx=libstdc++\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:compiler.version=9.3.0\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:os=Linux\nmf_pdwarnproc_types.generic/7.1.0@cip/releases:os_build=Linux\nmf_plot.cus_only/4.1.0@cip/releases:arch=x86_64\nmf_plot.cus_only/4.1.0@cip/releases:arch_build=x86_64\nmf_plot.cus_only/4.1.0@cip/releases:bricks_platform_name=vs2017_debug\nmf_plot.cus_only/4.1.0@cip/releases:build_type=Debug\nmf_plot.cus_only/4.1.0@cip/releases:compiler=Visual Studio\nmf_plot.cus_only/4.1.0@cip/releases:compiler.runtime=MDd\nmf_plot.cus_only/4.1.0@cip/releases:compiler.version=15\nmf_plot.cus_only/4.1.0@cip/releases:os=Windows\nmf_plot.cus_only/4.1.0@cip/releases:os_build=Windows\nmf_taposd.cus_only/12.0.3@cip/releases:arch=x86_64\nmf_taposd.cus_only/12.0.3@cip/releases:arch_build=x86_64\nmf_taposd.cus_only/12.0.3@cip/releases:bricks_platform_name=vs2017_debug\nmf_taposd.cus_only/12.0.3@cip/releases:build_type=Debug\nmf_taposd.cus_only/12.0.3@cip/releases:compiler=Visual Studio\nmf_taposd.cus_only/12.0.3@cip/releases:compiler.runtime=MDd\nmf_taposd.cus_only/12.0.3@cip/releases:compiler.version=15\nmf_taposd.cus_only/12.0.3@cip/releases:os=Windows\nmf_taposd.cus_only/12.0.3@cip/releases:os_build=Windows\nmf_trjctl.cus_only/9.2.0@cip/releases:arch=x86_64\nmf_trjctl.cus_only/9.2.0@cip/releases:arch_build=x86_64\nmf_trjctl.cus_only/9.2.0@cip/releases:bricks_platform_name=vs2017_debug\nmf_trjctl.cus_only/9.2.0@cip/releases:build_type=Debug\nmf_trjctl.cus_only/9.2.0@cip/releases:compiler=Visual Studio\nmf_trjctl.cus_only/9.2.0@cip/releases:compiler.runtime=MDd\nmf_trjctl.cus_only/9.2.0@cip/releases:compiler.version=15\nmf_trjctl.cus_only/9.2.0@cip/releases:os=Windows\nmf_trjctl.cus_only/9.2.0@cip/releases:os_build=Windows\nmf_trjctl_types.generic/8.1.2@cip/releases:arch=x86_64\nmf_trjctl_types.generic/8.1.2@cip/releases:arch_build=x86_64\nmf_trjctl_types.generic/8.1.2@cip/releases:bricks_platform_name=vs2017\nmf_trjctl_types.generic/8.1.2@cip/releases:build_type=Release\nmf_trjctl_types.generic/8.1.2@cip/releases:compiler=Visual Studio\nmf_trjctl_types.generic/8.1.2@cip/releases:compiler.runtime=MD\nmf_trjctl_types.generic/8.1.2@cip/releases:compiler.version=15\nmf_trjctl_types.generic/8.1.2@cip/releases:os=Windows\nmf_trjctl_types.generic/8.1.2@cip/releases:os_build=Windows\nmf_trjpla.cus_only/8.0.2@cip/releases:arch=x86_64\nmf_trjpla.cus_only/8.0.2@cip/releases:arch_build=x86_64\nmf_trjpla.cus_only/8.0.2@cip/releases:bricks_platform_name=vs2017_debug\nmf_trjpla.cus_only/8.0.2@cip/releases:build_type=Debug\nmf_trjpla.cus_only/8.0.2@cip/releases:compiler=Visual Studio\nmf_trjpla.cus_only/8.0.2@cip/releases:compiler.runtime=MDd\nmf_trjpla.cus_only/8.0.2@cip/releases:compiler.version=15\nmf_trjpla.cus_only/8.0.2@cip/releases:os=Windows\nmf_trjpla.cus_only/8.0.2@cip/releases:os_build=Windows\nmf_trjpla_types.cus_only/12.2.2@cip/releases:arch=x86_64\nmf_trjpla_types.cus_only/12.2.2@cip/releases:arch_build=x86_64\nmf_trjpla_types.cus_only/12.2.2@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_trjpla_types.cus_only/12.2.2@cip/releases:build_type=Debug\nmf_trjpla_types.cus_only/12.2.2@cip/releases:compiler=gcc\nmf_trjpla_types.cus_only/12.2.2@cip/releases:compiler.libcxx=libstdc++\nmf_trjpla_types.cus_only/12.2.2@cip/releases:compiler.version=9.3.0\nmf_trjpla_types.cus_only/12.2.2@cip/releases:os=Linux\nmf_trjpla_types.cus_only/12.2.2@cip/releases:os_build=Linux\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:arch=x86_64\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:arch_build=x86_64\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:bricks_platform_name=vs2017_debug\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:build_type=Debug\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:compiler=Visual Studio\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:compiler.runtime=MDd\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:compiler.version=15\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:os=Windows\nmf_vedodo.cus_only/6.1.8-pre1@cip/releases:os_build=Windows\nmf_vedodo_types.generic/6.2.2@cip/releases:arch=x86_64\nmf_vedodo_types.generic/6.2.2@cip/releases:arch_build=x86_64\nmf_vedodo_types.generic/6.2.2@cip/releases:bricks_platform_name=vs2017_debug\nmf_vedodo_types.generic/6.2.2@cip/releases:build_type=Debug\nmf_vedodo_types.generic/6.2.2@cip/releases:compiler=Visual Studio\nmf_vedodo_types.generic/6.2.2@cip/releases:compiler.runtime=MDd\nmf_vedodo_types.generic/6.2.2@cip/releases:compiler.version=15\nmf_vedodo_types.generic/6.2.2@cip/releases:os=Windows\nmf_vedodo_types.generic/6.2.2@cip/releases:os_build=Windows\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:arch=x86_64\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:arch_build=x86_64\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:bricks_platform_name=vs2017_debug\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:build_type=Debug\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:compiler=Visual Studio\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:compiler.runtime=MDd\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:compiler.version=15\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:os=Windows\nmf_whlprotectproc.cus_only/4.0.4@cip/releases:os_build=Windows\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:arch=x86_64\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:arch_build=x86_64\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:build_type=Debug\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:compiler=gcc\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:compiler.libcxx=libstdc++\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:compiler.version=9.3.0\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:os=Linux\nmf_whlprotectproc_types.generic/5.1.0@cip/releases:os_build=Linux\nparking_hmi_types.generic/1.1.4@cip/releases:arch=x86_64\nparking_hmi_types.generic/1.1.4@cip/releases:arch_build=x86_64\nparking_hmi_types.generic/1.1.4@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64-release\nparking_hmi_types.generic/1.1.4@cip/releases:build_type=Release\nparking_hmi_types.generic/1.1.4@cip/releases:compiler=gcc\nparking_hmi_types.generic/1.1.4@cip/releases:compiler.libcxx=libstdc++\nparking_hmi_types.generic/1.1.4@cip/releases:compiler.version=9.3.0\nparking_hmi_types.generic/1.1.4@cip/releases:os=Linux\nparking_hmi_types.generic/1.1.4@cip/releases:os_build=Linux\nplp_hpsd_types.generic/1.0.0@cip/releases:arch=x86_64\nplp_hpsd_types.generic/1.0.0@cip/releases:arch_build=x86_64\nplp_hpsd_types.generic/1.0.0@cip/releases:bricks_platform_name=vs2017\nplp_hpsd_types.generic/1.0.0@cip/releases:build_type=Release\nplp_hpsd_types.generic/1.0.0@cip/releases:compiler=Visual Studio\nplp_hpsd_types.generic/1.0.0@cip/releases:compiler.runtime=MD\nplp_hpsd_types.generic/1.0.0@cip/releases:compiler.version=15\nplp_hpsd_types.generic/1.0.0@cip/releases:os=Windows\nplp_hpsd_types.generic/1.0.0@cip/releases:os_build=Windows\nplp_log.generic/1.0.7@cip/releases:arch=x86_64\nplp_log.generic/1.0.7@cip/releases:arch_build=x86_64\nplp_log.generic/1.0.7@cip/releases:bricks_platform_name=vs2017_debug\nplp_log.generic/1.0.7@cip/releases:build_type=Debug\nplp_log.generic/1.0.7@cip/releases:compiler=Visual Studio\nplp_log.generic/1.0.7@cip/releases:compiler.runtime=MDd\nplp_log.generic/1.0.7@cip/releases:compiler.version=15\nplp_log.generic/1.0.7@cip/releases:os=Windows\nplp_log.generic/1.0.7@cip/releases:os_build=Windows\nrelocalization_types.generic/3.1.0@cip/releases:arch=x86_64\nrelocalization_types.generic/3.1.0@cip/releases:arch_build=x86_64\nrelocalization_types.generic/3.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64-release\nrelocalization_types.generic/3.1.0@cip/releases:build_type=Release\nrelocalization_types.generic/3.1.0@cip/releases:compiler=gcc\nrelocalization_types.generic/3.1.0@cip/releases:compiler.libcxx=libstdc++\nrelocalization_types.generic/3.1.0@cip/releases:compiler.version=9.3.0\nrelocalization_types.generic/3.1.0@cip/releases:os=Linux\nrelocalization_types.generic/3.1.0@cip/releases:os_build=Linux\nsi_core.cus_only/14.2.0-jd1@cip/releases:arch=x86_64\nsi_core.cus_only/14.2.0-jd1@cip/releases:arch_build=x86_64\nsi_core.cus_only/14.2.0-jd1@cip/releases:bricks_platform_name=vs2017_debug\nsi_core.cus_only/14.2.0-jd1@cip/releases:build_type=Debug\nsi_core.cus_only/14.2.0-jd1@cip/releases:compiler=Visual Studio\nsi_core.cus_only/14.2.0-jd1@cip/releases:compiler.runtime=MDd\nsi_core.cus_only/14.2.0-jd1@cip/releases:compiler.version=15\nsi_core.cus_only/14.2.0-jd1@cip/releases:os=Windows\nsi_core.cus_only/14.2.0-jd1@cip/releases:os_build=Windows\nsi_types.cus_only/12.2.1@cip/releases:arch=x86_64\nsi_types.cus_only/12.2.1@cip/releases:arch_build=x86_64\nsi_types.cus_only/12.2.1@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nsi_types.cus_only/12.2.1@cip/releases:build_type=Debug\nsi_types.cus_only/12.2.1@cip/releases:compiler=gcc\nsi_types.cus_only/12.2.1@cip/releases:compiler.libcxx=libstdc++\nsi_types.cus_only/12.2.1@cip/releases:compiler.version=9.3.0\nsi_types.cus_only/12.2.1@cip/releases:os=Linux\nsi_types.cus_only/12.2.1@cip/releases:os_build=Linux\ntce.cus_only/5.1.4@cip/releases:arch=x86_64\ntce.cus_only/5.1.4@cip/releases:arch_build=x86_64\ntce.cus_only/5.1.4@cip/releases:bricks_platform_name=vs2017_debug\ntce.cus_only/5.1.4@cip/releases:build_type=Debug\ntce.cus_only/5.1.4@cip/releases:compiler=Visual Studio\ntce.cus_only/5.1.4@cip/releases:compiler.runtime=MDd\ntce.cus_only/5.1.4@cip/releases:compiler.version=15\ntce.cus_only/5.1.4@cip/releases:os=Windows\ntce.cus_only/5.1.4@cip/releases:os_build=Windows\ntce_types.generic/5.1.1@cip/releases:arch=x86_64\ntce_types.generic/5.1.1@cip/releases:arch_build=x86_64\ntce_types.generic/5.1.1@cip/releases:bricks_platform_name=vs2017\ntce_types.generic/5.1.1@cip/releases:build_type=Release\ntce_types.generic/5.1.1@cip/releases:compiler=Visual Studio\ntce_types.generic/5.1.1@cip/releases:compiler.runtime=MD\ntce_types.generic/5.1.1@cip/releases:compiler.version=15\ntce_types.generic/5.1.1@cip/releases:os=Windows\ntce_types.generic/5.1.1@cip/releases:os_build=Windows\nus_drv_types.generic/3.6.0@cip/releases:arch=x86_64\nus_drv_types.generic/3.6.0@cip/releases:arch_build=x86_64\nus_drv_types.generic/3.6.0@cip/releases:bricks_platform_name=vs2017\nus_drv_types.generic/3.6.0@cip/releases:build_type=Release\nus_drv_types.generic/3.6.0@cip/releases:compiler=Visual Studio\nus_drv_types.generic/3.6.0@cip/releases:compiler.runtime=MD\nus_drv_types.generic/3.6.0@cip/releases:compiler.version=15\nus_drv_types.generic/3.6.0@cip/releases:os=Windows\nus_drv_types.generic/3.6.0@cip/releases:os_build=Windows\nus_em.generic/6.3.5-pre@cip/releases:arch=x86_64\nus_em.generic/6.3.5-pre@cip/releases:arch_build=x86_64\nus_em.generic/6.3.5-pre@cip/releases:bricks_platform_name=vs2017_debug\nus_em.generic/6.3.5-pre@cip/releases:build_type=Debug\nus_em.generic/6.3.5-pre@cip/releases:compiler=Visual Studio\nus_em.generic/6.3.5-pre@cip/releases:compiler.runtime=MDd\nus_em.generic/6.3.5-pre@cip/releases:compiler.version=15\nus_em.generic/6.3.5-pre@cip/releases:os=Windows\nus_em.generic/6.3.5-pre@cip/releases:os_build=Windows\nus_em_types.generic/4.1.0@cip/releases:arch=x86_64\nus_em_types.generic/4.1.0@cip/releases:arch_build=x86_64\nus_em_types.generic/4.1.0@cip/releases:bricks_platform_name=ubuntu_20_04_x86_64\nus_em_types.generic/4.1.0@cip/releases:build_type=Debug\nus_em_types.generic/4.1.0@cip/releases:compiler=gcc\nus_em_types.generic/4.1.0@cip/releases:compiler.libcxx=libstdc++\nus_em_types.generic/4.1.0@cip/releases:compiler.version=9.3.0\nus_em_types.generic/4.1.0@cip/releases:os=Linux\nus_em_types.generic/4.1.0@cip/releases:os_build=Linux\nus_processing.cus_only/9.7.8-pre@cip/releases:arch=x86_64\nus_processing.cus_only/9.7.8-pre@cip/releases:arch_build=x86_64\nus_processing.cus_only/9.7.8-pre@cip/releases:bricks_platform_name=vs2017_debug\nus_processing.cus_only/9.7.8-pre@cip/releases:build_type=Debug\nus_processing.cus_only/9.7.8-pre@cip/releases:compiler=Visual Studio\nus_processing.cus_only/9.7.8-pre@cip/releases:compiler.runtime=MDd\nus_processing.cus_only/9.7.8-pre@cip/releases:compiler.version=15\nus_processing.cus_only/9.7.8-pre@cip/releases:os=Windows\nus_processing.cus_only/9.7.8-pre@cip/releases:os_build=Windows\nus_processing_types.cus_only/8.5.0@cip/releases:arch=x86_64\nus_processing_types.cus_only/8.5.0@cip/releases:arch_build=x86_64\nus_processing_types.cus_only/8.5.0@cip/releases:bricks_platform_name=vs2017\nus_processing_types.cus_only/8.5.0@cip/releases:build_type=Release\nus_processing_types.cus_only/8.5.0@cip/releases:compiler=Visual Studio\nus_processing_types.cus_only/8.5.0@cip/releases:compiler.runtime=MD\nus_processing_types.cus_only/8.5.0@cip/releases:compiler.version=15\nus_processing_types.cus_only/8.5.0@cip/releases:os=Windows\nus_processing_types.cus_only/8.5.0@cip/releases:os_build=Windows\nvehicle_types.generic/7.1.0@cip/releases:arch=x86_64\nvehicle_types.generic/7.1.0@cip/releases:arch_build=x86_64\nvehicle_types.generic/7.1.0@cip/releases:bricks_platform_name=vs2017_debug\nvehicle_types.generic/7.1.0@cip/releases:build_type=Debug\nvehicle_types.generic/7.1.0@cip/releases:compiler=Visual Studio\nvehicle_types.generic/7.1.0@cip/releases:compiler.runtime=MDd\nvehicle_types.generic/7.1.0@cip/releases:compiler.version=15\nvehicle_types.generic/7.1.0@cip/releases:os=Windows\nvehicle_types.generic/7.1.0@cip/releases:os_build=Windows\nviewcontroller_types.cus_only/8.2.7@cip/releases:arch=x86_64\nviewcontroller_types.cus_only/8.2.7@cip/releases:arch_build=x86_64\nviewcontroller_types.cus_only/8.2.7@cip/releases:bricks_platform_name=vs2017\nviewcontroller_types.cus_only/8.2.7@cip/releases:build_type=Release\nviewcontroller_types.cus_only/8.2.7@cip/releases:compiler=Visual Studio\nviewcontroller_types.cus_only/8.2.7@cip/releases:compiler.runtime=MD\nviewcontroller_types.cus_only/8.2.7@cip/releases:compiler.version=15\nviewcontroller_types.cus_only/8.2.7@cip/releases:os=Windows\nviewcontroller_types.cus_only/8.2.7@cip/releases:os_build=Windows\n[options]\n[build_requires]\n[env]\nCC=cl.exe\nCFLAGS=/ZI\nCXX=cl.exe\nCXXFLAGS=/ZI"
+}

@@ -1,0 +1,1733 @@
+### BEGIN IPG-MOVIE-INFO
+
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.leftTop_x
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.leftTop_y
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.rightTop_x
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.rightTop_y
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.leftBottom_x
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.leftBottom_y
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.rightBottom_x
+# Subscribe LSCA.staticSteering.virtWall.roiPlot.rightBottom_y
+
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_0.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_0.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_1.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_1.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_2.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_2.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_3.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_3.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_4.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_4.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_5.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_5.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_6.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_6.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_7.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_7.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_8.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_8.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_9.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_9.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_10.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_10.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_11.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_11.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_12.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_12.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_13.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_13.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_14.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_14.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_15.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_15.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_16.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_16.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_17.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_17.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_18.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_18.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_19.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_19.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_20.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_20.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_21.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_21.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_22.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_22.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_23.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_23.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_24.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_24.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_25.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_25.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_26.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_26.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_27.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_27.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_28.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_28.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_29.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_29.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_30.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_30.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_31.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_31.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_32.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_32.right
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_33.left
+# Subscribe LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_33.right
+
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_0.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_1.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_2.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_3.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_4.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_5.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_6.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_7.coordsActualSize
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_8.coordsActualSize
+
+
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_0.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_0.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_1.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_1.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_2.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_2.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_3.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_3.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_4.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_4.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_5.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_5.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_6.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_6.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_7.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_7.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_8.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_8.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_9.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_9.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_10.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_10.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_11.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_11.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_12.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_12.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_13.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_13.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_14.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_14.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_15.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_15.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_16.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_16.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_17.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_17.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_18.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_18.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_19.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_19.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_20.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_20.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_21.x
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coord_21.y
+# Subscribe LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_9.coordsActualSize
+
+# Subscribe LSCA.staticBraking.roi.leftBottom_x
+# Subscribe LSCA.staticBraking.roi.leftBottom_y
+# Subscribe LSCA.staticBraking.roi.leftTop_x
+# Subscribe LSCA.staticBraking.roi.leftTop_y
+# Subscribe LSCA.staticBraking.roi.rightBottom_x
+# Subscribe LSCA.staticBraking.roi.rightBottom_y
+# Subscribe LSCA.staticBraking.roi.rightTop_x
+# Subscribe LSCA.staticBraking.roi.rightTop_y
+
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.leftBottom_x
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.leftBottom_y
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.leftTop_x
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.leftTop_y
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.rightBottom_x
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.rightBottom_y
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.rightTop_x
+# Subscribe LSCA.staticSteering.steerProp.roiPlot.rightTop_y
+
+# Subscribe LSCA.staticBraking.EbaOn
+# Subscribe LSCA.staticBraking.EbaActive
+
+# Subscribe LSCA.staticSteering.steerProp.isOn_nu
+# Subscribe LSCA.staticSteering.steerProp.isActive_nu
+
+# Subscribe LSCA.staticSteering.virtWall.isOn_nu
+# Subscribe LSCA.staticSteering.virtWall.isActive_nu
+
+# Subscribe LSCA.staticSteering.steerProp.proposedSteering
+
+# Subscribe LSCA.staticSteering.currentSteering
+
+# Subscribe LSCA.staticSteering.virtWall.proposedSteering
+
+# Subscribe LSCA.staticSteering.steeringAngleLimits_upper
+# Subscribe LSCA.staticSteering.steeringAngleLimits_lower
+
+# Subscribe AP.planningCtrlPort.apStates.apAVGActive_nu
+
+# Subscribe LSCA.staticSteering.steeringTorqueRequestLsca
+### END IPG-MOVIE-INFO
+
+set tex_1		[LoadTexture2D V1 "s1.png"]
+set tex_2		[LoadTexture2D V2 "s2.png"]
+set tex_3		[LoadTexture2D V3 "s3.png"]
+
+set green		[LoadTexture2D C1 "greenbar.png"]
+set orange		[LoadTexture2D C2 "Orangebar.png"]
+
+proc DrawOverlay {} {
+ 
+     global Qu
+    ####################
+    # Text ##
+    ####################
+ 
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    #Screen is divided into 50x50 "points"#
+    gl ortho 0 50. 0 50. -1. 1. 
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+    gl enable texture_2d
+	
+
+    #EBA
+    gl color 1 1 0 1
+	OGL drawtex sans-bold "EBA" -left -pos 40 47 0 -dir 2 0 0 -up 0 2 0 
+	
+	#steerProp
+    gl color 1 1 0 1
+	OGL drawtex sans-bold "Steer Prop" -left -pos 0 47 0 -dir 2 0 0 -up 0 2 0 
+   
+	 #virtual Wall
+     gl color 1 1 0 1
+     OGL drawtex sans-bold "VirtWall" -left -pos 20 47 0 -dir 2 0 0 -up 0 2 0
+
+	 #AUP
+           gl color 1 1 0 1
+          OGL drawtex sans-bold "AUP" -left -pos 40 45 0 -dir 2 0 0 -up 0 2 0
+	
+     		 
+	# SteeringTorque
+		gl color 0.9 0.6 0.2 1
+		set strtrq [format %.2f $Qu(LSCA.staticSteering.steeringTorqueRequestLsca)]
+		OGL drawtex sans "SteerTrq = $strtrq Nm" -left -pos 17 43 0 -dir 2 0 0 -up 0 2 0 
+	
+		
+   gl disable texture_2d
+   gl popmatrix
+   gl matrixmode projection
+   gl popmatrix
+   gl matrixmode modelview
+
+    ####################
+    # Pictures ##
+    ####################
+
+    variable tex_1
+    variable tex_2
+    variable tex_3
+	
+	variable green
+	variable orange
+    
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    ##Screen is divided into 100*100 "points"##
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+
+    #default picture / Status 1
+    if {$Qu(LSCA.staticBraking.EbaOn) == 0 } {
+	gl bindtexture 2d $tex_1 }
+
+    if {$Qu(LSCA.staticBraking.EbaOn) > 0 && $Qu(LSCA.staticBraking.EbaActive) <= 0 } { 
+    gl bindtexture 2d $tex_2 }
+
+    if {$Qu(LSCA.staticBraking.EbaActive) > 0 } { 
+    gl bindtexture 2d $tex_3 }
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  88. 97. 0
+    gl   texcoord 1 1  vertex  91 97 0
+    gl   texcoord 1 0  vertex  91 94 0
+    gl   texcoord 0 0  vertex  88 94 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+	
+	#####Steer Prop######
+	
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    ##Screen is divided into 100*100 "points"##
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+
+   # default picture / Status 1
+     if {$Qu(LSCA.staticSteering.steerProp.isOn_nu) == 0 } {
+	gl bindtexture 2d $tex_1 }
+
+    if {$Qu(LSCA.staticSteering.steerProp.isOn_nu) > 0 && $Qu(LSCA.staticSteering.steerProp.isActive_nu) <= 0 } { 
+    gl bindtexture 2d $tex_2 }
+
+    if {$Qu(LSCA.staticSteering.steerProp.isActive_nu) > 0 } { 
+    gl bindtexture 2d $tex_3 }
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  20. 97. 0
+    gl   texcoord 1 1  vertex  23 97 0
+    gl   texcoord 1 0  vertex  23 94 0
+    gl   texcoord 0 0  vertex  20 94 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+	
+	#####VWall######
+	
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    #Screen is divided into 100*100 "points"#
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+
+   #default picture / Status 1#
+    if {$Qu(LSCA.staticSteering.virtWall.isOn_nu) == 0 } {
+	gl bindtexture 2d $tex_1  }
+
+    if {$Qu(LSCA.staticSteering.virtWall.isOn_nu) > 0 && $Qu(LSCA.staticSteering.virtWall.isActive_nu) <= 0 } { 
+    gl bindtexture 2d $tex_2 }
+
+    if {$Qu(LSCA.staticSteering.virtWall.isActive_nu) > 0 } { 
+    gl bindtexture 2d $tex_3 }
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  55. 97. 0
+    gl   texcoord 1 1  vertex  58 97 0
+    gl   texcoord 1 0  vertex  58 94 0
+    gl   texcoord 0 0  vertex  55 94 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+	
+	#####AUP######
+	
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    #Screen is divided into 100*100 "points"#
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+
+    #default picture / Status 1#
+   if {$Qu(AP.planningCtrlPort.apStates.apAVGActive_nu) <= 0 } { 
+	gl bindtexture 2d $tex_1 }
+
+    if {$Qu(AP.planningCtrlPort.apStates.apAVGActive_nu) > 0 } { 
+    gl bindtexture 2d $tex_3 }
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  88. 93. 0
+    gl   texcoord 1 1  vertex  91 93 0
+    gl   texcoord 1 0  vertex  91 90 0
+    gl   texcoord 0 0  vertex  88 90 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+	
+	#####StrTrqreq-base######
+	
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    #Screen is divided into 100*100 "points"#
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+  
+	gl bindtexture 2d $green
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  29. 95. 0
+    gl   texcoord 1 1  vertex  70 95 0
+    gl   texcoord 1 0  vertex  70 81 0
+    gl   texcoord 0 0  vertex  29 81 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+	
+	#####StrTrqreq-orange######
+	
+    gl matrixmode projection
+    gl pushmatrix
+    gl loadidentity
+    #Screen is divided into 100*100 "points"#
+    gl ortho 0 100. 0 100. -1. 1.
+    gl matrixmode modelview
+    gl pushmatrix
+    gl loadidentity
+
+    gl enable texture_2d
+  
+	gl bindtexture 2d $orange
+
+    ###########################
+    # Description texcoord:  ##
+    # 01 upper left corner   ##
+    # 11 upper right corner  ##
+    # 10 lower right corner  ##
+    # 00 lower left corner   ##
+    # Coord.Sys: x y z       ##
+    ###########################
+
+	if {$Qu(LSCA.staticSteering.steeringTorqueRequestLsca)>=0 && $Qu(LSCA.staticSteering.steeringTorqueRequestLsca)<= 8 } {
+	
+	set lx [expr {($Qu(LSCA.staticSteering.steeringTorqueRequestLsca)*1.125)+ 52}]
+	set rx [expr {($Qu(LSCA.staticSteering.steeringTorqueRequestLsca)*1.125)+ 45}]
+	
+	} elseif {$Qu(LSCA.staticSteering.steeringTorqueRequestLsca)<0 && $Qu(LSCA.staticSteering.steeringTorqueRequestLsca)>= -8} { 
+	
+	set slx [expr {($Qu(LSCA.staticSteering.steeringTorqueRequestLsca)*(-1.125))- 52}]
+	set srx [expr {($Qu(LSCA.staticSteering.steeringTorqueRequestLsca)*(-1.125))- 45}]
+	
+	set lx [expr abs($slx)]
+	set rx [expr abs($srx)]
+	
+	
+	} else {
+	set lx 52.00
+	set rx 45.00
+	}
+	
+	
+    gl texenv mode replace
+    gl begin quads
+    gl   texcoord 0 1  vertex  $lx 93. 0
+    gl   texcoord 1 1  vertex  $rx 93 0
+    gl   texcoord 1 0  vertex  $rx 88.5 0
+    gl   texcoord 0 0  vertex  $lx 88.5 0
+    gl end
+
+    gl popmatrix
+    gl matrixmode projection
+    gl popmatrix
+    gl matrixmode modelview
+}
+
+proc DrawVehicle {} {
+	global Qu Geo
+	
+	DrawObj
+	DrawROIVWall
+	DrawROIStrP
+	DrawROIBrake
+
+	CurrSteerTrajleft
+	CurrSteerTrajright
+	
+ if {$Qu(LSCA.staticSteering.steerProp.isActive_nu) > 0 } { 	
+	PropSteerTrajleft
+	PropSteerTrajright 
+	}
+		
+ if {$Qu(LSCA.staticSteering.virtWall.isActive_nu) > 0 } { 	
+	PropSteerVWallleft
+	PropSteerVWallright 
+	}	
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesActualSize)>0} {
+		LTracesPlotleft
+		LTracesPlotright
+		
+		RTracesPlotleft
+		RTracesPlotright
+	}
+}
+
+proc DrawObj {} {
+
+global Qu Geo
+
+for {set r 0} {$r < $Qu(LSCA.staticSteering.steerProp.Objects.objectsActualSize)} {incr r} {
+	
+	gl pushmatrix
+	gl disable lighting		
+	gl color 1.0 1.0 0.0 1.0
+	gl linewidth 3
+	gl begin line_loop
+	
+	for {set a 0} {$a< $Qu(LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_$r.coordsActualSize)} {incr a} {	
+		gl vertex [expr {1.067 + $Qu(LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_$r.coord_$a.x)}] $Qu(LSCA.staticSteering.steerProp.Objects.objectsAfterRoi_$r.coord_$a.y) 1.8
+	}
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+	}
+	
+	}
+
+proc DrawROIBrake {} {
+
+	global Qu Geo
+    gl pushmatrix
+    gl disable lighting
+	
+    gl color 1.0 0.0 0.0 1.0
+    gl linewidth 2
+	gl linestipple 1 0x00FF
+	gl enable line_stipple
+	gl begin line_strip
+    
+    gl vertex [expr $Qu(LSCA.staticBraking.roi.rightTop_x)+(1.067)] $Qu(LSCA.staticBraking.roi.rightTop_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticBraking.roi.rightBottom_x) - (-1.067)] $Qu(LSCA.staticBraking.roi.rightBottom_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticBraking.roi.leftBottom_x) - (-1.067)] $Qu(LSCA.staticBraking.roi.leftBottom_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticBraking.roi.leftTop_x)+ (1.067)] $Qu(LSCA.staticBraking.roi.leftTop_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticBraking.roi.rightTop_x)+(1.067)] $Qu(LSCA.staticBraking.roi.rightTop_y) 0.2
+	
+    gl end
+    gl enable lighting
+    gl popmatrix
+    gl disable polygon_offset_fill
+    gl disable polygon_offset_line
+	gl disable line_stipple
+
+}
+
+proc DrawROIStrP {} {
+
+	global Qu Geo
+    gl pushmatrix
+    gl disable lighting
+	
+    gl color 0.0 0.0 1.0 1.0
+    gl linewidth 2
+	gl linestipple 1 0x00FF
+	gl enable line_stipple
+	gl begin line_strip
+    
+	gl vertex [expr $Qu(LSCA.staticSteering.steerProp.roiPlot.rightTop_x)+(1.067)] $Qu(LSCA.staticSteering.steerProp.roiPlot.rightTop_y) 1.2
+    gl vertex [expr $Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x)+ (1.067)] $Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_y) 1.2
+	gl vertex [expr $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x) - (-1.067)] $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y) 1.2
+	gl vertex [expr $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_x) - (-1.067)] $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) 1.2
+    gl vertex [expr $Qu(LSCA.staticSteering.steerProp.roiPlot.rightTop_x)+(1.067)] $Qu(LSCA.staticSteering.steerProp.roiPlot.rightTop_y) 1.2
+	
+    gl end
+    gl enable lighting
+    gl popmatrix
+    gl disable polygon_offset_fill
+    gl disable polygon_offset_line
+	gl disable line_stipple
+
+}
+
+proc DrawROIVWall {} {
+
+    global Qu Geo
+    gl pushmatrix
+    gl disable lighting
+	
+    gl color 0.0 1.0 0.0 1.0
+    gl linewidth 2
+
+	gl begin line_strip
+    
+	gl vertex [expr $Qu(LSCA.staticSteering.virtWall.roiPlot.rightTop_x)+(1.067)] $Qu(LSCA.staticSteering.virtWall.roiPlot.rightTop_y) 0.2   
+	gl vertex [expr $Qu(LSCA.staticSteering.virtWall.roiPlot.rightBottom_x) - (-1.067)] $Qu(LSCA.staticSteering.virtWall.roiPlot.rightBottom_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticSteering.virtWall.roiPlot.leftBottom_x) - (-1.067)] $Qu(LSCA.staticSteering.virtWall.roiPlot.leftBottom_y) 0.2
+    gl vertex [expr $Qu(LSCA.staticSteering.virtWall.roiPlot.leftTop_x)+ (1.067)] $Qu(LSCA.staticSteering.virtWall.roiPlot.leftTop_y) 0.2
+	gl vertex [expr $Qu(LSCA.staticSteering.virtWall.roiPlot.rightTop_x)+(1.067)] $Qu(LSCA.staticSteering.virtWall.roiPlot.rightTop_y) 0.2  
+
+    gl end
+    gl enable lighting
+    gl popmatrix
+
+}
+
+proc CurrSteerTrajleft {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.currentSteering) >= 0} {
+	
+	set ref_x1 1.096
+	set ref_y1 0.890
+    
+	} else {
+	
+	set ref_x1 4.2
+	set ref_y1 0.85
+	
+	}
+		
+	if {$Qu(LSCA.staticSteering.currentSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 1.0 1.0 0.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+		
+   } else {	
+	
+	set Propsteer [expr $Qu(LSCA.staticSteering.currentSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+		
+	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_CL [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_CL]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 1.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+	
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+
+proc CurrSteerTrajright {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.currentSteering) > 0} {
+	
+	set ref_x1 4.2
+	set ref_y1 -0.85
+	
+	} else {
+	
+	set ref_x1 1.096
+	set ref_y1 -0.890
+	
+	}
+	
+	if {$Qu(LSCA.staticSteering.currentSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 1.0 1.0 0.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+	
+	} else {	
+			
+	set Propsteer [expr $Qu(LSCA.staticSteering.currentSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+	
+	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_CR [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_CR]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 1.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+
+
+proc PropSteerTrajleft {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.steerProp.proposedSteering) > 0} {
+	
+	set ref_x1 1.096
+	set ref_y1 0.890
+    
+	} else {
+	
+	set ref_x1 4.2
+	set ref_y1 0.85
+	
+	}
+	
+	if {$Qu(LSCA.staticSteering.steerProp.proposedSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 0.0 0.0 1.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+		
+    } else {
+	
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.proposedSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+	
+	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_SL [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_SL]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 0.0 0.0 1.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+
+proc PropSteerTrajright {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.steerProp.proposedSteering) > 0} {
+	
+	set ref_x1 4.2
+	set ref_y1 -0.85
+	
+	} else {
+	
+	set ref_x1 1.096
+	set ref_y1 -0.890
+	
+	}
+    
+	if {$Qu(LSCA.staticSteering.steerProp.proposedSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 0.0 0.0 1.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+	
+	} else {		
+		
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.proposedSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+	
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]	
+ 	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_SR [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_SR]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 0.0 0.0 1.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+	gl end
+	gl enable lighting
+	gl popmatrix
+}
+}
+
+proc PropSteerVWallleft {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.virtWall.proposedSteering) > 0} {
+	
+	set ref_x1 1.096
+	set ref_y1 0.890
+    
+	} else {
+	
+	set ref_x1 4.2
+	set ref_y1 0.85
+	
+	}
+	
+    if {$Qu(LSCA.staticSteering.virtWall.proposedSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 0.0 1.0 0.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+		
+    } else {	
+	
+		
+	set Propsteer [expr $Qu(LSCA.staticSteering.virtWall.proposedSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+
+	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_VL [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_VL]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 0.0 1.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }	
+		
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+
+proc PropSteerVWallright {} {
+
+	global Qu Geo
+	
+	if {$Qu(LSCA.staticSteering.virtWall.proposedSteering) > 0} {
+	
+	set ref_x1 4.2
+	set ref_y1 -0.85
+	
+	} else {
+	
+	set ref_x1 1.096
+	set ref_y1 -0.890
+	
+	}
+  	
+	if {$Qu(LSCA.staticSteering.virtWall.proposedSteering) == 0} {
+	
+	gl pushmatrix
+    gl disable lighting
+	gl color 0.0 1.0 0.0 1.0	
+	gl linewidth 3
+	gl begin line_strip	
+	
+	gl vertex $ref_x1 $ref_y1 1
+	gl vertex [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] $ref_y1 1
+	
+	gl end
+	gl enable lighting
+	gl popmatrix
+		
+    } else {	
+	
+	set Propsteer [expr $Qu(LSCA.staticSteering.virtWall.proposedSteering) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+	
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]	
+	
+		if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve_VR [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve_VR]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 0.0 1.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+	gl end
+	gl enable lighting
+	gl popmatrix
+}
+}
+
+proc LTracesPlotleft {} {
+
+	global Qu Geo
+ 
+	for {set t 0} {$t < $Qu(LSCA.staticSteering.steerProp.Traces.TracesActualSize)} {incr t} {
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) > 0} {
+	
+	set ref_x1 1.096
+	set ref_y1 0.890
+    
+	} else {
+	
+	set ref_x1 4.2
+	set ref_y1 0.85
+	
+	}
+  	
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) != 0 && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) < $Qu(LSCA.staticSteering.steeringAngleLimits_upper) && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) > $Qu(LSCA.staticSteering.steeringAngleLimits_lower) } {
+		
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) * 0.0174]
+
+	
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+	
+if {$x>= [expr (1.067) + ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))] && $x<= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y) } {	
+			
+	lappend Curve($t) [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve($t)]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 0.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 	
+	}
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+}
+
+proc LTracesPlotright {} {
+
+	global Qu Geo
+
+	for {set t 0} {$t < $Qu(LSCA.staticSteering.steerProp.Traces.TracesActualSize)} {incr t} {
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) > 0} {
+	
+	set ref_x1 4.2
+	set ref_y1 -0.85
+	
+	} else {
+	
+	set ref_x1 1.096
+	set ref_y1 -0.890
+	
+	}
+  	
+
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) != 0 && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) < $Qu(LSCA.staticSteering.steeringAngleLimits_upper) && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) > $Qu(LSCA.staticSteering.steeringAngleLimits_lower) } {
+		
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.left) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+	
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+		
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]	
+	
+	if {$x>= [expr (1.067) + ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))] && $x<= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y) } {
+	
+	lappend Curve($t) [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve($t)]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 0.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 	
+}	
+	gl end
+	gl enable lighting
+	gl popmatrix
+}
+}
+}
+
+proc RTracesPlotleft {} {
+
+	global Qu Geo
+ 
+	for {set t 0} {$t < $Qu(LSCA.staticSteering.steerProp.Traces.TracesActualSize)} {incr t} {
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) > 0} {
+	
+	set ref_x1 1.096
+	set ref_y1 0.890
+    
+	} else {
+	
+	set ref_x1 4.2
+	set ref_y1 0.85
+	}
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) != 0  && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) < $Qu(LSCA.staticSteering.steeringAngleLimits_upper) && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) > $Qu(LSCA.staticSteering.steeringAngleLimits_lower) } {
+
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+		
+	
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]
+	
+if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve($t) [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve($t)]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 0.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+
+		gl end
+		gl enable lighting
+		gl popmatrix
+}
+}
+}
+
+proc RTracesPlotright {} {
+
+	global Qu Geo
+
+	for {set t 0} {$t < $Qu(LSCA.staticSteering.steerProp.Traces.TracesActualSize)} {incr t} {
+	
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) > 0} {
+	
+	set ref_x1 4.2
+	set ref_y1 -0.85
+
+	} else {
+	
+	set ref_x1 1.096
+	set ref_y1 -0.890
+
+	}
+
+	if {$Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) != 0  && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) < $Qu(LSCA.staticSteering.steeringAngleLimits_upper) && $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) > $Qu(LSCA.staticSteering.steeringAngleLimits_lower) } {
+	
+	set Propsteer [expr $Qu(LSCA.staticSteering.steerProp.Traces.TracesToBePlotted_$t.right) * 0.0174]
+
+	set ICRx 0 	
+	set ICRy [expr 2.787/[expr {atan ($Propsteer)}]]
+	
+	 
+	set r [expr { sqrt ([expr {pow ($ref_x1,2)}] + [expr {pow ($ICRy - $ref_y1,2)}])}]
+	
+	for {set a 0} {$a <= 360} {incr a} {
+	
+	set theta [expr {(2*3.1415926*$a)/360}]
+	
+	set x [expr {$r * cos($theta)}]
+	set y [expr {$r * sin($theta)}]	
+	
+	if {$x >= [expr ($Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_x))+ (1.067)] && $x <= [expr {$Qu(LSCA.staticSteering.steerProp.roiPlot.rightBottom_x) + 1.067}] && [expr {$ICRy-$y}] <= $Qu(LSCA.staticSteering.steerProp.roiPlot.leftTop_y) && [expr {$ICRy-$y}] >=  $Qu(LSCA.staticSteering.steerProp.roiPlot.leftBottom_y)} {
+	
+	lappend Curve($t) [concat $x [expr ($ICRy-$y)]]
+
+	set c1 [lsort -real -index 0 $Curve($t)]
+	set m [lsort -real -index 1 $c1] 
+
+	}
+	}
+	
+	foreach elm $m {
+			gl pushmatrix
+			gl disable lighting	
+			gl begin line_strip
+			gl linewidth 2
+			gl color 1.0 0.0 0.0 1.0
+			gl vertex [lindex $elm 0] [lindex $elm 1] 0.8 
+    }
+
+	gl end
+	gl enable lighting
+	gl popmatrix
+}
+}
+}
+
+return 0

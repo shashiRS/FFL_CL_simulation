@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.delimiter_distances;
+
+message DelimiterDistances{
+  repeated float minDistance_m = 2193;
+  repeated float comfDistance_m = 3462;
+}
+
+message DelimiterDistances_array_port{
+   repeated pb.ap_tp.delimiter_distances.DelimiterDistances data = 1774;
+}

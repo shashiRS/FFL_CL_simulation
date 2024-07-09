@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.selected_direction;
+
+enum SelectedDirection {
+  SEL_DIR_FORWARDS = 0;
+  SEL_DIR_BACKWARDS = 1;
+}

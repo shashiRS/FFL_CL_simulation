@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.mf_mempark.memorized_parking_status;
+
+enum MemorizedParkingStatus {
+  MEMORIZED_PARKING_STATE_INIT = 0;
+  MEMORIZED_PARKING_STATE_IDLE = 1;
+  MEMORIZED_PARKING_STATE_ACTIVE = 2;
+  MEMORIZED_PARKING_STATE_ERROR = 3;
+}

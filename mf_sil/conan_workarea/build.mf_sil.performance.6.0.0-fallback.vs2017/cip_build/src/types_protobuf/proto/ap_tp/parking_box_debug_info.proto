@@ -1,0 +1,24 @@
+
+syntax = "proto2";
+
+import "ap_tp/simple_debug_parking_box.proto";
+import "ap_tp/delimiter_distances.proto";
+
+package pb.ap_tp.parking_box_debug_info;
+
+message ParkingBoxDebugInfo{
+  optional pb.ap_tp.simple_debug_parking_box.SimpleDebugParkingBox maxParkingBox = 2943;
+  optional pb.ap_tp.simple_debug_parking_box.SimpleDebugParkingBox comfParkingBox = 2471;
+  optional pb.ap_tp.delimiter_distances.DelimiterDistances delimiterDistances = 3359;
+  optional float yawAngle_rad = 566;
+  optional float targetPosX_m = 3428;
+  optional float targetPosY_m = 2644;
+  optional bool leftEdgeIsFront_nu = 2311;
+  optional bool isResized_nu = 600;
+  optional bool hasAngle_nu = 1713;
+  optional bool hasPosition_nu = 651;
+}
+
+message ParkingBoxDebugInfo_array_port{
+   repeated pb.ap_tp.parking_box_debug_info.ParkingBoxDebugInfo data = 3459;
+}

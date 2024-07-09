@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.ap_tp.target_side;
+
+enum TargetSide {
+  TS_RIGHT_SIDE = 0;
+  TS_LEFT_SIDE = 1;
+  TS_IN_FRONT_RIGHT = 2;
+  TS_IN_FRONT_CENTER = 3;
+  TS_IN_FRONT_LEFT = 4;
+  TS_IN_REAR_RIGHT = 5;
+  TS_IN_REAR_CENTER = 6;
+  TS_IN_REAR_LEFT = 7;
+  TS_UNDEFINED_SIDE = 8;
+}

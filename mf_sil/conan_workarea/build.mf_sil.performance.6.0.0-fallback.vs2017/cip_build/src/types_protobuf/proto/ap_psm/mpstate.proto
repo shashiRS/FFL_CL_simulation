@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.mpstate;
+
+enum MPState {
+  MP_INACTIVE = 0;
+  MP_TRAIN_SCAN = 1;
+  MP_TRAIN_AVG = 2;
+  MP_TRAIN_FINISHED = 3;
+  MP_SILENT_MAP_LOC = 4;
+  MP_RECALL_SCAN = 5;
+  MP_RECALL_AVG = 6;
+  MP_RECALL_FINISHED = 7;
+  MP_PAUSE = 8;
+}

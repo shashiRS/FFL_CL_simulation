@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "eco/comp_op_state.proto";
+
+package pb.eco.component_response;
+
+message ComponentResponse{
+  optional pb.eco.signal_header.SignalHeader sigHeader = 1450;
+  optional uint64 errorCode = 551;
+  repeated uint64 functionalErrorCode = 1340;
+  optional pb.eco.comp_op_state.CompOpState opState = 3951;
+}
+
+message ComponentResponse_array_port{
+   repeated pb.eco.component_response.ComponentResponse data = 1093;
+}

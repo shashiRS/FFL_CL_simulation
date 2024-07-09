@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.eco.algo_signal_state;
+
+enum AlgoSignalState {
+  AL_SIG_STATE_INIT = 0;
+  AL_SIG_STATE_OK = 1;
+  AL_SIG_STATE_INVALID = 2;
+}

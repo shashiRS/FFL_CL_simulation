@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.triangle_serializable_interface_version;
+
+message TriangleSerializable_InterfaceVersion{
+  optional uint32 TriangleSerializable_VERSION = 1483;
+}
+
+message TriangleSerializable_InterfaceVersion_array_port{
+   repeated pb.si.triangle_serializable_interface_version.TriangleSerializable_InterfaceVersion data = 1093;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_commonvehsigprovider.wheel_driving_directions_port_interface_version;
+
+message WheelDrivingDirectionsPort_InterfaceVersion{
+  optional uint32 WheelDrivingDirectionsPort_VERSION = 2488;
+}
+
+message WheelDrivingDirectionsPort_InterfaceVersion_array_port{
+   repeated pb.ap_commonvehsigprovider.wheel_driving_directions_port_interface_version.WheelDrivingDirectionsPort_InterfaceVersion data = 3792;
+}

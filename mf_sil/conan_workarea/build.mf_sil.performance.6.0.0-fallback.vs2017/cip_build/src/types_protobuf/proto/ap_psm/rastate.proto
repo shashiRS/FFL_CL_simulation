@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.rastate;
+
+enum RAState {
+  RA_INACTIVE = 0;
+  RA_RECORD = 1;
+  RA_AVG_ACTIVE = 2;
+  RA_AVG_PAUSE = 3;
+  RA_AVG_FINISHED = 4;
+}

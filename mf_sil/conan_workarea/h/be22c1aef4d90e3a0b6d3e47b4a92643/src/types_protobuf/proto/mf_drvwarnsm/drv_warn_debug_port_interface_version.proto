@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_drvwarnsm.drv_warn_debug_port_interface_version;
+
+message DrvWarnDebugPort_InterfaceVersion{
+  optional uint32 DrvWarnDebugPort_VERSION = 1635;
+}
+
+message DrvWarnDebugPort_InterfaceVersion_array_port{
+   repeated pb.mf_drvwarnsm.drv_warn_debug_port_interface_version.DrvWarnDebugPort_InterfaceVersion data = 3265;
+}

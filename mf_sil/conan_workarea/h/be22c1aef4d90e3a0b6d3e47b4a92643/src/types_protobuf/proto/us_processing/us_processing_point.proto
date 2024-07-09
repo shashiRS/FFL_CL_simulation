@@ -1,0 +1,31 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_point;
+
+message UsProcessingPoint{
+  optional uint64 timestamp_us = 3864;
+  optional float xPosition_m = 415;
+  optional float yPosition_m = 2518;
+  optional float varXposition_m = 2054;
+  optional float varYposition_m = 79;
+  optional float xyPositionCovar_m = 2578;
+  optional float direction = 2157;
+  optional float directionVariance = 2220;
+  optional float trackCurvature = 4029;
+  optional float varTrackCurvature = 1550;
+  optional float probabilityHigh = 2890;
+  optional float heightConfidence = 2006;
+  optional float xSensorPos_m = 2698;
+  optional float ySensorPos_m = 2559;
+  optional float sensorDirection = 629;
+  optional uint32 sensorMask = 1763;
+  optional float rawMeasRange_m = 2913;
+  optional uint32 trackId = 1297;
+  optional uint32 pointCountInTrack = 3660;
+}
+
+message UsProcessingPoint_array_port{
+   repeated pb.us_processing.us_processing_point.UsProcessingPoint data = 3930;
+}

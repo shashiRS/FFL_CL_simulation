@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+package pb.mf_manager.lo_ctrl_request_type;
+
+enum LoCtrlRequestType {
+  LOCTRL_OFF = 0;
+  LOCTRL_BY_TRAJECTORY = 1;
+  LOCTRL_BY_DISTANCE = 2;
+  LOCTRL_BY_VELOCITY = 3;
+  LOCTRL_BY_DISTANCE_VELOCITY = 4;
+  LOCTRL_BY_ACCELERATION = 5;
+  LOCTRL_VELOCITY_LIMITATION = 6;
+  LOCTRL_EMERGENCY_STOP = 7;
+  MAX_NUM_LO_REQUEST_TYPES = 8;
+}

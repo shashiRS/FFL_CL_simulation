@@ -1,0 +1,88 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_trjctl/fc_trjctl_vehicle_params.proto";
+import "ap_trjctl/fc_trjctl_sys_func_params.proto";
+
+package pb.ap_trjctl.fc_trjctl_params;
+
+message FC_TRJCTL_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float AP_C_MANEUV_FINISHED_TIME_DRV_S = 1359;
+  optional float AP_C_MANEUV_FINISHED_LIMIT_M = 1147;
+  optional float AP_C_MANEUV_V_THRESH_RESET_MPS = 2057;
+  optional float AP_C_MANEUV_D_THRESH_RESET_M = 722;
+  optional float AP_C_MANEUV_FINISHED_TIME_S = 2086;
+  optional uint32 AP_C_PC_NUM_CONTROL_GAINS_NU = 1772;
+  repeated float AP_C_PC_GAIN_VELVEC_MPS = 2333;
+  repeated float AP_C_PC_GAIN_YAW_DEVIATION_NU = 3806;
+  repeated float AP_C_PC_GAIN_LAT_DEVIATION_NU = 2177;
+  optional float AP_C_PC_FAIL_MAX_LAT_ERROR_M = 365;
+  optional float AP_C_PC_FAIL_MAX_YAW_ERROR_RAD = 717;
+  optional float AP_C_PC_STEER_ANGLE_T_FILT_S = 822;
+  optional float AP_C_PI_YAW_DEVIATION_T_FILT_S = 3076;
+  optional float AP_C_PC_FILT_FACTOR_MAX_NU = 1882;
+  optional float AP_C_PC_FILT_FAC_VEL_LIMIT_MPS = 2115;
+  optional float AP_C_PC_ORIENT_CTRL_END_DIST_M = 3435;
+  optional float AP_C_PC_ORIENT_CTRL_INIT_DIST_M = 2389;
+  optional float AP_C_PC_FIRST_STEER_ACCUR_RAD = 3467;
+  optional float AP_C_PC_FIRST_STEER_VEL_RADPS = 2388;
+  optional float AP_C_PC_FIRST_STEER_ACC_RADPS2 = 1208;
+  optional float AP_C_PC_CURV_PREVIEW_FACTOR_NU = 470;
+  optional float AP_C_PC_CURV_PREVIEW_MIN_M = 1419;
+  optional float AP_C_SECURE_FINISHED_TIME_S = 480;
+  optional bool AP_C_STEER_INTERV_ACTIVE_NU = 2501;
+  optional float AP_C_STEER_INTERV_FILT_TIME_S = 2179;
+  optional float AP_C_STEER_INTERV_RISE_NU = 1975;
+  optional float AP_C_STEER_INTERV_FALL_NU = 3740;
+  optional float AP_C_PC_FILT_FAC_TRAJ_STEP_NU = 785;
+  optional float AP_C_ACTIVE_CONTROL_MIN_TIME_S = 1165;
+  optional bool AP_C_VL_RAMP_UP_VEL_NU = 4078;
+  optional float AP_C_VL_VEL_RAMP_LIMIT_MPS2 = 1121;
+  optional bool AP_C_VL_RAMP_UP_DIST_NU = 3114;
+  optional float AP_C_MIN_PARKING_VEL_MPS = 1245;
+  optional float AP_C_PC_MIN_STEER_VEL_RADPS = 2558;
+  optional bool AP_C_DRV_RESIST_FAKE_DATA_NU = 232;
+  optional uint32 AP_C_DRV_RESIST_FL_TYPE_NU = 3986;
+  optional float AP_C_DRV_RESIST_FL_RED_DIST_M = 1523;
+  optional uint32 AP_C_DRV_RESIST_RL_TYPE_NU = 1585;
+  optional float AP_C_DRV_RESIST_RL_RED_DIST_M = 1770;
+  optional uint32 AP_C_DRV_RESIST_RR_TYPE_NU = 1720;
+  optional float AP_C_DRV_RESIST_RR_RED_DIST_M = 300;
+  optional uint32 AP_C_DRV_RESIST_FR_TYPE_NU = 3867;
+  optional float AP_C_DRV_RESIST_FR_RED_DIST_M = 565;
+  optional float AP_C_STEER_SATURATE_THRESH_RAD = 2278;
+  optional float AP_C_STEER_SATURATE_RATE_RADPS = 2803;
+  optional float AP_C_PC_MAX_STEER_ACC_RADPS2 = 2886;
+  optional float AP_C_PC_RATE_LIMIT_FACTOR_NU = 391;
+  optional float AP_C_PC_CURV_PREV_FACTOR_ADD_NU = 278;
+  optional bool AP_C_PC_CURV_PREV_REDUCED_NU = 1199;
+  optional float AP_C_FAIL_MAX_LONG_OVERSHOOT_M = 2963;
+  optional float AP_C_COMP_TIRE_DEF_FACTOR_NU = 2306;
+  optional float AP_C_MANEUV_FINISHED_HYST_M = 842;
+  optional float AP_C_MIN_DIST_REQ_M = 2098;
+  optional bool AP_C_FEAT_WAIT_FOR_CONTACT_NU = 1858;
+  optional float AP_C_WFC_OVERSHOOT_LENGTH_M = 2442;
+  optional float AP_C_WFC_OVERSHOOT_DIST_THRES_M = 2209;
+  optional float AP_C_WFC_VDY_DIST_THRES_M = 3941;
+  optional float AP_C_WFC_VDY_DRIVE_OFF_THRES_M = 3598;
+  optional bool AP_C_FEAT_WS_VEL_REDUCED_NU = 902;
+  optional float AP_C_WFC_WS_VEL_DIST_THRESH_M = 2458;
+  optional float AP_C_WFC_WS_VEL_LIMIT_MPS = 580;
+  optional bool AP_C_HACK_WS_LAST_STROKE_NU = 3;
+  optional float AP_C_NO_COMF_STEER_WS_THRES_M = 1684;
+  optional float AP_C_DRIVE_OFF_DISTANCE_THRES_M = 646;
+  optional float AP_C_DRIVE_OFF_VELO_THRES_MPS = 3072;
+  optional float AP_C_HANDSHAKE_WAIT_THRES_TIME_S = 2835;
+  optional float AP_C_PC_VELO_PREVIEW_TIME_S = 881;
+  optional float AP_C_LEAVING_PATH_BEFORE_M = 2074;
+  optional float AP_C_LEAVING_PATH_BEHIND_M = 1689;
+  optional pb.ap_trjctl.fc_trjctl_vehicle_params.FC_TRJCTL_Vehicle_Params vehicleParams = 3431;
+  optional pb.ap_trjctl.fc_trjctl_sys_func_params.FC_TRJCTL_Sys_Func_Params sysFuncParams = 1458;
+}
+
+message FC_TRJCTL_Params_array_port{
+   repeated pb.ap_trjctl.fc_trjctl_params.FC_TRJCTL_Params data = 965;
+}

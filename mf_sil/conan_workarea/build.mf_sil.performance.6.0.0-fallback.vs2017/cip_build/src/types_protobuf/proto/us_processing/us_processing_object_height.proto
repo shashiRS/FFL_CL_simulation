@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.us_processing.us_processing_object_height;
+
+enum UsProcessingObjectHeight {
+  US_PROCESSING_OBJ_HT_UNKOWN = 0;
+  US_PROCESSING_OBJ_HT_LOWER_BUMPER_HEIGHT = 1;
+  US_PROCESSING_OBJ_HT_AT_BUMPER_HEIGHT = 2;
+}

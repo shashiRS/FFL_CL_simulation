@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+package pb.ap_common.vehicle_bounding_shape_corners;
+
+enum VehicleBoundingShapeCorners {
+  FRONT_LEFT_INNER = 0;
+  FRONT_LEFT_OUTER = 1;
+  AXIS_LEFT = 2;
+  REAR_LEFT_OUTER = 3;
+  REAR_LEFT_INNER = 4;
+  REAR_RIGHT_INNER = 5;
+  REAR_RIGHT_OUTER = 6;
+  AXIS_RIGHT = 7;
+  FRONT_RIGHT_OUTER = 8;
+  FRONT_RIGHT_INNER = 9;
+  NUM_RELEVANT_CORNERS = 10;
+}

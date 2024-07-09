@@ -1,0 +1,49 @@
+
+syntax = "proto2";
+
+import "cml/vec2_df_pod.proto";
+
+package pb.mf_lsca.config_general_t;
+
+message configGeneral_t{
+  optional uint32 simpleShapeActualSize_nu = 2053;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD simpleShape = 1549;
+  optional uint32 forwardLeftIndicesActualSize_nu = 2903;
+  repeated uint32 forwardLeftIndices = 1768;
+  optional uint32 forwardRightIndicesActualSize_nu = 1459;
+  repeated uint32 forwardRightIndices = 3160;
+  optional uint32 backwardLeftIndicesActualSize_nu = 329;
+  repeated uint32 backwardLeftIndices = 3935;
+  optional uint32 backwardRightIndicesActualSize_nu = 2929;
+  repeated uint32 backwardRightIndices = 3498;
+  optional uint32 bodyIndexLocationFrontActualSize_nu = 3793;
+  repeated uint32 bodyIndexLocationFront = 1415;
+  optional uint32 bodyIndexLocationBackActualSize_nu = 2165;
+  repeated uint32 bodyIndexLocationBack = 147;
+  optional uint32 bodyIndexLocationLeftActualSize_nu = 1327;
+  repeated uint32 bodyIndexLocationLeft = 546;
+  optional uint32 bodyIndexLocationRightActualSize_nu = 848;
+  repeated uint32 bodyIndexLocationRight = 3684;
+  optional uint32 bodyIndexLocationFrontLeftActualSize_nu = 2634;
+  repeated uint32 bodyIndexLocationFrontLeft = 2255;
+  optional uint32 bodyIndexLocationFrontRightActualSize_nu = 2208;
+  repeated uint32 bodyIndexLocationFrontRight = 3377;
+  optional uint32 bodyIndexLocationBackLeftActualSize_nu = 3422;
+  repeated uint32 bodyIndexLocationBackLeft = 1984;
+  optional uint32 bodyIndexLocationBackRightActualSize_nu = 2972;
+  repeated uint32 bodyIndexLocationBackRight = 990;
+  optional bool LscaActive_nu = 41;
+  optional bool onlyBackupMode = 2969;
+  optional bool proposalActive_nu = 2867;
+  optional bool resistanceActive_nu = 436;
+  optional bool brakeStaticActive_nu = 1182;
+  optional bool brakeDynamicActive_nu = 548;
+  optional bool doorProtectionStatActive_nu = 1039;
+  optional bool doorProtectionDynActive_nu = 3529;
+  optional bool reverseAssistDynActive_nu = 2431;
+  optional bool pedalMisapplicationActive_nu = 1448;
+}
+
+message configGeneral_t_array_port{
+   repeated pb.mf_lsca.config_general_t.configGeneral_t data = 38;
+}

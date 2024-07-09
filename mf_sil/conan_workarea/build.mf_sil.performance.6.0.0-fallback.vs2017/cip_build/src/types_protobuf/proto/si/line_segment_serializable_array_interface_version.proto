@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.line_segment_serializable_array_interface_version;
+
+message LineSegmentSerializableArray_InterfaceVersion{
+  optional uint32 LineSegmentSerializableArray_VERSION = 854;
+}
+
+message LineSegmentSerializableArray_InterfaceVersion_array_port{
+   repeated pb.si.line_segment_serializable_array_interface_version.LineSegmentSerializableArray_InterfaceVersion data = 863;
+}

@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_lsca/lsca_static_brake_debug_data_serializable.proto";
+import "mf_lsca/lsca_dynamic_brake_debug_data_serializable.proto";
+import "mf_lsca/lsca_general_debug_data_serializable.proto";
+
+package pb.mf_lsca.lsca_debug_data_port;
+
+message LscaDebugDataPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.mf_lsca.lsca_static_brake_debug_data_serializable.LscaStaticBrakeDebugDataSerializable staticBraking = 1356;
+  optional pb.mf_lsca.lsca_dynamic_brake_debug_data_serializable.LscaDynamicBrakeDebugDataSerializable dynamicBraking = 1204;
+  optional pb.mf_lsca.lsca_general_debug_data_serializable.LscaGeneralDebugDataSerializable generalInfo = 1592;
+}
+
+message LscaDebugDataPort_array_port{
+   repeated pb.mf_lsca.lsca_debug_data_port.LscaDebugDataPort data = 1216;
+}

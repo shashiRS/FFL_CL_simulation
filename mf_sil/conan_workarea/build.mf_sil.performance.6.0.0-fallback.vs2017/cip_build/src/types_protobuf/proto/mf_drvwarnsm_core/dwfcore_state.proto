@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.mf_drvwarnsm_core.dwfcore_state;
+
+enum DWFCoreState {
+  DWF_CORE_INIT = 0;
+  DWF_CORE_OFF = 1;
+  DWF_CORE_INACTIVE = 2;
+  DWF_CORE_ACTIVE = 3;
+  DWF_CORE_FAILURE = 4;
+  DWF_CORE_NUM_STATES = 5;
+}

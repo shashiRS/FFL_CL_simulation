@@ -1,0 +1,26 @@
+
+syntax = "proto2";
+
+import "lsm_geoml/pose_pod.proto";
+import "ap_tp/pose_type.proto";
+import "ap_tp/target_side.proto";
+import "ap_tp/pose_reachable_status.proto";
+import "ap_tp/pose_fail_reason.proto";
+import "ap_tp/pose_obstacle_dist.proto";
+
+package pb.ap_tp.target_pose;
+
+message TargetPose{
+  optional pb.lsm_geoml.pose_pod.Pose_POD pose = 1513;
+  optional uint32 pose_ID = 2647;
+  optional uint32 relatedParkingBoxID = 215;
+  optional pb.ap_tp.pose_type.PoseType type = 3764;
+  optional pb.ap_tp.target_side.TargetSide targetSide = 1274;
+  optional pb.ap_tp.pose_reachable_status.PoseReachableStatus reachableStatus = 1758;
+  optional pb.ap_tp.pose_fail_reason.PoseFailReason poseFailReason = 2452;
+  optional pb.ap_tp.pose_obstacle_dist.PoseObstacleDist poseObstacleDist = 706;
+}
+
+message TargetPose_array_port{
+   repeated pb.ap_tp.target_pose.TargetPose data = 3775;
+}

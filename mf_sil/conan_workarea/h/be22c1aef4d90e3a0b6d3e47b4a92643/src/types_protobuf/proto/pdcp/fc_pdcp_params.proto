@@ -1,0 +1,32 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.pdcp.fc_pdcp_params;
+
+message FC_PDCP_Params{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated float PDC_P_SECTOR_INNER_COORDS_X_M = 178;
+  repeated float PDC_P_SECTOR_INNER_COORDS_Y_M = 1922;
+  repeated float PDC_P_SECTOR_OUTER_COORDS_X_M = 445;
+  repeated float PDC_P_SECTOR_OUTER_COORDS_Y_M = 1677;
+  optional float PDC_P_SECTOR_LENGTH_M = 3333;
+  optional float PDC_P_DIST_HYST_PERCENTAGE_NU = 2294;
+  optional uint32 PDC_P_NUM_FRONT_SECTORS_NU = 583;
+  optional uint32 PDC_P_NUM_RIGHT_SECTORS_NU = 3957;
+  optional uint32 PDC_P_NUM_REAR_SECTORS_NU = 2161;
+  optional uint32 PDC_P_NUM_LEFT_SECTORS_NU = 1763;
+  optional uint32 PDC_P_NUM_CRITICALITY_LEVELS_NU = 405;
+  optional uint32 PDC_P_NUM_SLICES_PER_LEVEL_NU = 38;
+  optional uint32 PDC_P_LOW_OBSTACLE_MIN_CONFIDENCE_NU = 3244;
+  optional uint32 PDC_P_MIN_EXISTANCE_PROB_STATIC_OBJ_NU = 332;
+  optional uint32 PDC_P_MIN_EXISTANCE_PROB_DYNAMIC_OBJ_NU = 2221;
+  optional bool PDC_P_WARN_ON_LOW_OBSTACLE_NU = 3656;
+  optional bool PDC_P_ACTIVATE_INTERNAL_ROI_NU = 1665;
+}
+
+message FC_PDCP_Params_array_port{
+   repeated pb.pdcp.fc_pdcp_params.FC_PDCP_Params data = 489;
+}

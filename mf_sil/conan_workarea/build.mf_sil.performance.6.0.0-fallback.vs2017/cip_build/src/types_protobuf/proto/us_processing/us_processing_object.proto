@@ -1,0 +1,28 @@
+
+syntax = "proto2";
+
+import "us_processing/us_processing_measurement_status.proto";
+import "us_processing/us_processing_object_type.proto";
+import "us_processing/us_processing_object_height.proto";
+import "us_processing/us_processing_object_kinematic.proto";
+
+package pb.us_processing.us_processing_object;
+
+message UsProcessingObject{
+  optional uint64 timestamp_us = 3864;
+  optional float xRelativeVelocity_mps = 557;
+  optional float yRelativeVelocity_mps = 2011;
+  optional float heightEstimation_m = 1765;
+  optional float confidenceLevel = 2594;
+  optional uint32 objectId = 594;
+  optional uint32 vertexStartIndex = 2608;
+  optional uint32 numOfVertices = 1186;
+  optional pb.us_processing.us_processing_measurement_status.UsProcessingMeasurementStatus measurementStatus = 3666;
+  optional pb.us_processing.us_processing_object_type.UsProcessingObjectType objectType = 3391;
+  optional pb.us_processing.us_processing_object_height.UsProcessingObjectHeight heightClassificationLevel = 3035;
+  optional pb.us_processing.us_processing_object_kinematic.UsProcessingObjectKinematic kinematicClassificationGuess = 798;
+}
+
+message UsProcessingObject_array_port{
+   repeated pb.us_processing.us_processing_object.UsProcessingObject data = 176;
+}

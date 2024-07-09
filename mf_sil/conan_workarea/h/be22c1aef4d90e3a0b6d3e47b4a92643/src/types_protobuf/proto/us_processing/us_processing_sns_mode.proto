@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.us_processing.us_processing_sns_mode;
+
+enum UsProcessingSnsMode {
+  US_PROCESSING_SNS_MODE_ACTIVATE = 0;
+  US_PROCESSING_SNS_MODE_DEACTIVATE = 1;
+}

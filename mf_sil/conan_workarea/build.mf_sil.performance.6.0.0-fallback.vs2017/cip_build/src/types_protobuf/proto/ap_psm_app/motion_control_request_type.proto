@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.motion_control_request_type;
+
+enum MotionControlRequestType {
+  AP_MCRT_NORMAL_REQUEST = 0;
+  AP_MCRT_OVERRIDE_REQUEST = 1;
+  AP_MCRT_DEGRADATION_REQUEST = 2;
+}

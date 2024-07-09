@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.trunk_lid_status_port_interface_version;
+
+message TrunkLidStatusPort_InterfaceVersion{
+  optional uint32 TrunkLidStatusPort_VERSION = 118;
+}
+
+message TrunkLidStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.trunk_lid_status_port_interface_version.TrunkLidStatusPort_InterfaceVersion data = 1495;
+}

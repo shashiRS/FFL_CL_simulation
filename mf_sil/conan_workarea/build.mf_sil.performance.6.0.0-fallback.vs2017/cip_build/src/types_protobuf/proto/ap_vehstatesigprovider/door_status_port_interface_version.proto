@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.door_status_port_interface_version;
+
+message DoorStatusPort_InterfaceVersion{
+  optional uint32 DoorStatusPort_VERSION = 3130;
+}
+
+message DoorStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.door_status_port_interface_version.DoorStatusPort_InterfaceVersion data = 1942;
+}

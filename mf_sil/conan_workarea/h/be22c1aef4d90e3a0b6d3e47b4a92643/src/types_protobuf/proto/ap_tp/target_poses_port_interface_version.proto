@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.target_poses_port_interface_version;
+
+message TargetPosesPort_InterfaceVersion{
+  optional uint32 TargetPosesPort_VERSION = 510;
+}
+
+message TargetPosesPort_InterfaceVersion_array_port{
+   repeated pb.ap_tp.target_poses_port_interface_version.TargetPosesPort_InterfaceVersion data = 3300;
+}

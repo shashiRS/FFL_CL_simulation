@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/slot_surrounding_lines.proto";
+
+package pb.si.slot_surrounding_lines_serializable;
+
+message SlotSurroundingLinesSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.slot_surrounding_lines.SlotSurroundingLines array = 1383;
+}
+
+message SlotSurroundingLinesSerializable_array_port{
+   repeated pb.si.slot_surrounding_lines_serializable.SlotSurroundingLinesSerializable data = 3791;
+}

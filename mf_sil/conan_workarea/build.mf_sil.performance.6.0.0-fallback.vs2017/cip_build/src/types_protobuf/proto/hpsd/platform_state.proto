@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.hpsd.platform_state;
+
+enum PlatformState {
+  STARTUP = 0;
+  FAST_PDW = 1;
+  NORMAL_OPERATION = 2;
+  SHUTDOWN = 3;
+}

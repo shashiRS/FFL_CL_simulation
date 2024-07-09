@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_common.sys_func_params_interface_version;
+
+message Sys_Func_Params_InterfaceVersion{
+  optional uint32 Sys_Func_Params_VERSION = 227;
+}
+
+message Sys_Func_Params_InterfaceVersion_array_port{
+   repeated pb.ap_common.sys_func_params_interface_version.Sys_Func_Params_InterfaceVersion data = 1538;
+}

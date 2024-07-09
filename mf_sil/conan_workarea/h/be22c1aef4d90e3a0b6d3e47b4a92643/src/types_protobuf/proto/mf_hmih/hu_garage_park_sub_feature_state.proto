@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hu_garage_park_sub_feature_state;
+
+enum HuGarageParkSubFeatureState {
+  UNUSED = 0;
+  GARAGE_PARKING = 1;
+}

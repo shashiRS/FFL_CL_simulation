@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.mfhmi_hdebug_port_interface_version;
+
+message MFHmiHDebugPort_InterfaceVersion{
+  optional uint32 MFHmiHDebugPort_VERSION = 282;
+}
+
+message MFHmiHDebugPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.mfhmi_hdebug_port_interface_version.MFHmiHDebugPort_InterfaceVersion data = 3719;
+}

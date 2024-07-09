@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.mf_mempark.localization_status;
+
+enum LocalizationStatus {
+  LOCALIZE_STATUS_INIT = 0;
+  LOCALIZE_STATUS_UNAVAIL_OUTSIDE_ZONE = 1;
+  LOCALIZE_STATUS_ACTIVE = 2;
+  LOCALIZE_STATUS_SUCCESS_OFFER = 3;
+  LOCALIZE_STATUS_SUCCESS_NO_OFFER = 4;
+  LOCALIZE_STATUS_FAILED = 5;
+}

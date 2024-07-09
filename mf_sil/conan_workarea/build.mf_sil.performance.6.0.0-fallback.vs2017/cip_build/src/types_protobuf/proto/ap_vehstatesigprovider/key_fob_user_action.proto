@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.key_fob_user_action;
+
+enum KeyFobUserAction {
+  AP_KEY_NO_USER_ACTION = 0;
+  AP_KEY_TAP_ON_START_PARKING = 1;
+  AP_KEY_TAP_ON_INTERRUPT = 2;
+  AP_KEY_TAP_ON_CONTINUE = 3;
+  AP_KEY_TAP_ON_UNDO = 4;
+  AP_KEY_TAP_ON_CANCEL = 5;
+  AP_KEY_TAP_ON_REDO = 6;
+  AP_KEY_FOB_MANEUVER_AUTHORIZED = 7;
+  AP_KEY_FOB_MANEUVER_ABORT = 8;
+  AP_KEY_FOB_MANEUVER_PAUSED = 9;
+  AP_KEY_FOB_ACTIVATED = 10;
+}

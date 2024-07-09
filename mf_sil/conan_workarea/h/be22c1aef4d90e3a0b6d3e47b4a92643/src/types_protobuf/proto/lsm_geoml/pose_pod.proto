@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_geoml.pose_pod;
+
+message Pose_POD{
+  optional float x_dir = 1650;
+  optional float y_dir = 3107;
+  optional float yaw_rad = 2289;
+}
+
+message Pose_POD_array_port{
+   repeated pb.lsm_geoml.pose_pod.Pose_POD data = 2097;
+}

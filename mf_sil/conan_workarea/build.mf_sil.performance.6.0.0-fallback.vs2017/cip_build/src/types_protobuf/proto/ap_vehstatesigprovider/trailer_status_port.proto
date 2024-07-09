@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_vehstatesigprovider/trailer_hitch_status.proto";
+
+package pb.ap_vehstatesigprovider.trailer_status_port;
+
+message TrailerStatusPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional bool trailerAttached_nu = 52;
+  optional pb.ap_vehstatesigprovider.trailer_hitch_status.TrailerHitchStatus trailerHitchStatus_nu = 124;
+}
+
+message TrailerStatusPort_array_port{
+   repeated pb.ap_vehstatesigprovider.trailer_status_port.TrailerStatusPort data = 1579;
+}

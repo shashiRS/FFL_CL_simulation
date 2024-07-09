@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hu_svs_sub_feature_state;
+
+enum HuSVsSubFeatureState {
+  UNUSED = 0;
+  SVS_2D_ACTIVE = 1;
+  SVS_3D_ACTIVE = 2;
+  SVS_FRONT_CORNER_ACTIVE = 3;
+  SVS_REAR_CORNER_ACTIVE = 4;
+}

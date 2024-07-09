@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ecu_ctrl.ecu_state;
+
+enum EcuState {
+  ECU_STATE_INIT = 0;
+  ECU_STATE_STARTUP = 1;
+  ECU_STATE_RUNNING = 2;
+  ECU_STATE_SHUTDOWN = 3;
+  ECU_STATE_UNKNOWN = 128;
+}

@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.us_processing.us_processing_func_input;
+
+message UsProcessingFuncInput{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional bool errorSuppressionReq = 2097;
+  repeated uint32 usSnsGrpModeReq = 1399;
+}
+
+message UsProcessingFuncInput_array_port{
+   repeated pb.us_processing.us_processing_func_input.UsProcessingFuncInput data = 2517;
+}

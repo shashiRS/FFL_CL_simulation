@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.avga_swc.avga_consts;
+
+message AVGA_consts{
+  optional uint32 DUMMY_CONST = 1622;
+}
+
+message AVGA_consts_array_port{
+   repeated pb.avga_swc.avga_consts.AVGA_consts data = 2604;
+}

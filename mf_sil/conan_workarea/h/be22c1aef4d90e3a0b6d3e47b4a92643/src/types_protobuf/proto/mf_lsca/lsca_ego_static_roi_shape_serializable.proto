@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "cml/vec2_df_pod.proto";
+
+package pb.mf_lsca.lsca_ego_static_roi_shape_serializable;
+
+message LscaEgoStaticRoiShapeSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.cml.vec2_df_pod.Vec2Df_POD points = 3855;
+}
+
+message LscaEgoStaticRoiShapeSerializable_array_port{
+   repeated pb.mf_lsca.lsca_ego_static_roi_shape_serializable.LscaEgoStaticRoiShapeSerializable data = 2329;
+}

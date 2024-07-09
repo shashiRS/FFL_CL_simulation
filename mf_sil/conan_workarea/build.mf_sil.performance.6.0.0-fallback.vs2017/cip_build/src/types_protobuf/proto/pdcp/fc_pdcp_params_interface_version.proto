@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.pdcp.fc_pdcp_params_interface_version;
+
+message FC_PDCP_Params_InterfaceVersion{
+  optional uint32 FC_PDCP_Params_VERSION = 2720;
+}
+
+message FC_PDCP_Params_InterfaceVersion_array_port{
+   repeated pb.pdcp.fc_pdcp_params_interface_version.FC_PDCP_Params_InterfaceVersion data = 2413;
+}

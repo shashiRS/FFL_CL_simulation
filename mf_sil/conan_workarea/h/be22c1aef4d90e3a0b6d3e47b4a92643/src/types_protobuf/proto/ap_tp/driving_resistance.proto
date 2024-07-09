@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "ap_tp/driving_resistance_type.proto";
+
+package pb.ap_tp.driving_resistance;
+
+message DrivingResistance{
+  optional float distance_m = 1302;
+  optional pb.ap_tp.driving_resistance_type.DrivingResistanceType type_nu = 726;
+}
+
+message DrivingResistance_array_port{
+   repeated pb.ap_tp.driving_resistance.DrivingResistance data = 221;
+}

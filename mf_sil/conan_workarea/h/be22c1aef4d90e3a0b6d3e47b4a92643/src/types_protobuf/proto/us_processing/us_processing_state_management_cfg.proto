@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.us_processing.us_processing_state_management_cfg;
+
+message UsProcessingStateManagementCfg{
+  optional float check1 = 2541;
+}
+
+message UsProcessingStateManagementCfg_array_port{
+   repeated pb.us_processing.us_processing_state_management_cfg.UsProcessingStateManagementCfg data = 2718;
+}

@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "mf_hmih/parking_space.proto";
+
+package pb.mf_hmih.parking_spaces;
+
+message ParkingSpaces{
+  optional pb.mf_hmih.parking_space.ParkingSpace left = 1090;
+  optional pb.mf_hmih.parking_space.ParkingSpace right = 53;
+  optional pb.mf_hmih.parking_space.ParkingSpace front = 3030;
+  optional pb.mf_hmih.parking_space.ParkingSpace rear = 1262;
+}
+
+message ParkingSpaces_array_port{
+   repeated pb.mf_hmih.parking_spaces.ParkingSpaces data = 250;
+}

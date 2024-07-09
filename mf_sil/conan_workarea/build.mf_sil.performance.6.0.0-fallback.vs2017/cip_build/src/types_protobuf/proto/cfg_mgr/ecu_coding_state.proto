@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.cfg_mgr.ecu_coding_state;
+
+enum EcuCodingState {
+  CODING_STATE_INIT = 0;
+  CODING_STATE_VALID = 1;
+  CODING_STATE_DEFAULT = 2;
+  CODING_STATE_UNKNOWN = 128;
+}

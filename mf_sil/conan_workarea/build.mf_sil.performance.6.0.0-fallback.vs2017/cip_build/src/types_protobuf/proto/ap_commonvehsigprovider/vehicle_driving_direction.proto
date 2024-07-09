@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_commonvehsigprovider.vehicle_driving_direction;
+
+enum VehicleDrivingDirection {
+  VEHICLE_DIRECTION_REVERSE = -1;
+  VEHICLE_DIRECTION_INIT_INVALID = 0;
+  VEHICLE_DIRECTION_FORWARD = 1;
+  VEHICLE_DIRECTION_STANDSTILL = 2;
+}

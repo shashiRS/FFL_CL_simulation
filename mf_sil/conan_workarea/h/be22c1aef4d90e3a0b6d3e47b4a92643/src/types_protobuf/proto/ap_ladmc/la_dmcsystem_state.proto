@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_ladmc.la_dmcsystem_state;
+
+enum LaDMCSystemState {
+  LADMC_NOT_AVAILABLE = 0;
+  LADMC_INITIALISATION = 1;
+  LADMC_AVAILABLE = 2;
+  LADMC_CTRL_ACTIVE = 3;
+  LADMC_CANCEL_BY_DRIVER = 4;
+  LADMC_ERROR = 7;
+}

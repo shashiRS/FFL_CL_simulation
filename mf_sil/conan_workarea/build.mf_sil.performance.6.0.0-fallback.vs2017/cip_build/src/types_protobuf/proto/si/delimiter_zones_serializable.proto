@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/delimiter_zones.proto";
+
+package pb.si.delimiter_zones_serializable;
+
+message DelimiterZonesSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.delimiter_zones.DelimiterZones array = 1079;
+}
+
+message DelimiterZonesSerializable_array_port{
+   repeated pb.si.delimiter_zones_serializable.DelimiterZonesSerializable data = 1536;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.vc.user_event_data_port_interface_version;
+
+message UserEventDataPort_InterfaceVersion{
+  optional uint32 UserEventDataPort_VERSION = 266;
+}
+
+message UserEventDataPort_InterfaceVersion_array_port{
+   repeated pb.vc.user_event_data_port_interface_version.UserEventDataPort_InterfaceVersion data = 3096;
+}

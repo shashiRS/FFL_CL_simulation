@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_commonvehsigprovider.hemisphere;
+
+enum Hemisphere {
+  ODO_GPS_NO_SIGNAL = 0;
+  ODO_GPS_NORTH = 1;
+  ODO_GPS_SOUTH = 2;
+  ODO_GPS_EAST = 3;
+  ODO_GPS_WEST = 4;
+}

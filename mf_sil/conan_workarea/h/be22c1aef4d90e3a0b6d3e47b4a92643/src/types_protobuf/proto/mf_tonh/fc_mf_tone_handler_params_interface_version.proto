@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_tonh.fc_mf_tone_handler_params_interface_version;
+
+message FC_MF_ToneHandler_Params_InterfaceVersion{
+  optional uint32 FC_MF_ToneHandler_Params_VERSION = 2674;
+}
+
+message FC_MF_ToneHandler_Params_InterfaceVersion_array_port{
+   repeated pb.mf_tonh.fc_mf_tone_handler_params_interface_version.FC_MF_ToneHandler_Params_InterfaceVersion data = 1769;
+}

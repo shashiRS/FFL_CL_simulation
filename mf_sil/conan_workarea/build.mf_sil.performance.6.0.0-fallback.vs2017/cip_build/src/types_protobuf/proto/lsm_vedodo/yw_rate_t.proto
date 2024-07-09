@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_vedodo.yw_rate_t;
+
+message YwRate_t{
+  optional float ZeroRate = 1282;
+  optional float ZeroRateMin = 793;
+  optional float ZeroRateMax = 2119;
+  optional uint32 CalStatus = 735;
+}
+
+message YwRate_t_array_port{
+   repeated pb.lsm_vedodo.yw_rate_t.YwRate_t data = 2919;
+}

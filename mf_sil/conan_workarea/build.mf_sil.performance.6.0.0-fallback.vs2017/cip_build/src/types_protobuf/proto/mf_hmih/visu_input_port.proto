@@ -1,0 +1,25 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_hmih/visu_hmidata.proto";
+import "ap_hmitoap/screen_types.proto";
+import "ap_tp/traj_plan_visu_port.proto";
+import "mf_hmih/parking_target_poses.proto";
+
+package pb.mf_hmih.visu_input_port;
+
+message VisuInputPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float distanceToStopReq_m = 3322;
+  optional pb.mf_hmih.visu_hmidata.VisuHMIData visuHMIData = 1305;
+  optional pb.ap_hmitoap.screen_types.ScreenTypes HmiOutUserActScreenReq_u8 = 626;
+  optional pb.ap_tp.traj_plan_visu_port.TrajPlanVisuPort trajPlanVisuPort_nu = 189;
+  optional pb.mf_hmih.parking_target_poses.ParkingTargetPoses parkingPosesVisu = 2704;
+  optional bool driverSelection_nu = 1140;
+}
+
+message VisuInputPort_array_port{
+   repeated pb.mf_hmih.visu_input_port.VisuInputPort data = 1761;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_whlprotectproc.whpproc_output_port_interface_version;
+
+message WHPProcOutputPort_InterfaceVersion{
+  optional uint32 WHPProcOutputPort_VERSION = 3066;
+}
+
+message WHPProcOutputPort_InterfaceVersion_array_port{
+   repeated pb.mf_whlprotectproc.whpproc_output_port_interface_version.WHPProcOutputPort_InterfaceVersion data = 17;
+}

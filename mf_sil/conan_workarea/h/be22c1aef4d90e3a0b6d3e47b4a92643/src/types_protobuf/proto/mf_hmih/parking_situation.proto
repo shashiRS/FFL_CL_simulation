@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "mf_hmih/parking_situation_sides.proto";
+import "mf_hmih/parking_situation_front_rear.proto";
+
+package pb.mf_hmih.parking_situation;
+
+message ParkingSituation{
+  optional pb.mf_hmih.parking_situation_sides.ParkingSituationSides left = 861;
+  optional pb.mf_hmih.parking_situation_sides.ParkingSituationSides right = 3555;
+  optional pb.mf_hmih.parking_situation_front_rear.ParkingSituationFrontRear front = 982;
+  optional pb.mf_hmih.parking_situation_front_rear.ParkingSituationFrontRear rear = 1174;
+}
+
+message ParkingSituation_array_port{
+   repeated pb.mf_hmih.parking_situation.ParkingSituation data = 3577;
+}

@@ -1,0 +1,16 @@
+
+syntax = "proto2";
+
+import "lsm_geoml/pose_pod.proto";
+
+package pb.mf_mempark.redetection_request;
+
+message RedetectionRequest{
+  optional uint32 mapID = 1752;
+  optional pb.lsm_geoml.pose_pod.Pose_POD startPose = 3278;
+  optional bool initialLocalizationRequest = 3409;
+}
+
+message RedetectionRequest_array_port{
+   repeated pb.mf_mempark.redetection_request.RedetectionRequest data = 1424;
+}

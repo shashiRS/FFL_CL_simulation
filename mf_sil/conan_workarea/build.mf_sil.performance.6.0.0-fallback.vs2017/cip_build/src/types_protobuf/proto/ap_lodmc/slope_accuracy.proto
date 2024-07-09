@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_lodmc.slope_accuracy;
+
+enum SlopeAccuracy {
+  HIGH = 0;
+  MID = 1;
+  LOW = 2;
+  UNDEFINED = 3;
+}

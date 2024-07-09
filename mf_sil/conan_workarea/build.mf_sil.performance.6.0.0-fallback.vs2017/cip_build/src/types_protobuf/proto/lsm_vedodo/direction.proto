@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.lsm_vedodo.direction;
+
+enum Direction {
+  DIRECTION_REVERSE = -1;
+  DIRECTION_UNDEFINED = 0;
+  DIRECTION_FORWARD = 1;
+}

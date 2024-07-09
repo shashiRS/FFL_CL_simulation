@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "si/core_plot_data.proto";
+import "si/low_plot_data.proto";
+import "si/high_plot_data.proto";
+
+package pb.si.plot_data;
+
+message PlotData{
+  optional pb.si.core_plot_data.CorePlotData core = 1842;
+  optional pb.si.low_plot_data.LowPlotData low = 3055;
+  optional pb.si.high_plot_data.HighPlotData high = 2868;
+}
+
+message PlotData_array_port{
+   repeated pb.si.plot_data.PlotData data = 210;
+}

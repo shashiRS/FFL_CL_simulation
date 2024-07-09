@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.std_request;
+
+enum StdRequest {
+  STD_REQ_NO_REQUEST = 0;
+  STD_REQ_INIT = 1;
+  STD_REQ_SCAN = 2;
+  STD_REQ_PREPARE = 3;
+  STD_REQ_DEGRADE = 4;
+  STD_REQ_START = 5;
+  STD_REQ_PAUSE = 6;
+  STD_REQ_SECURE = 7;
+  STD_REQ_FINISH = 8;
+  STD_REQ_ERROR = 9;
+}

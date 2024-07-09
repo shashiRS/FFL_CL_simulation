@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.si.parking_scenario_confidence;
+
+message ParkingScenarioConfidence{
+  optional uint32 perpendicular_perc = 1725;
+  optional uint32 parallel_perc = 1701;
+  optional uint32 angled_perc = 520;
+}
+
+message ParkingScenarioConfidence_array_port{
+   repeated pb.si.parking_scenario_confidence.ParkingScenarioConfidence data = 1030;
+}

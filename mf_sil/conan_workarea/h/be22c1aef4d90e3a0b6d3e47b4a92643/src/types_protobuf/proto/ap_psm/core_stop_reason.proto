@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_psm.core_stop_reason;
+
+enum CoreStopReason {
+  CORE_STOP_REASON_NOT_VALID = 0;
+  PARKING_FAILED_TPD_LOST = 1;
+  PARKING_FAILED_PATH_LOST = 2;
+  PARKING_SUCCESS = 3;
+  INPUT_CORRUPTED = 4;
+}

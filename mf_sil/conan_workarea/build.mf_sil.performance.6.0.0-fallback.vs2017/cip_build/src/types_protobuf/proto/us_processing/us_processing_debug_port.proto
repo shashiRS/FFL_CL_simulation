@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "us_processing/us_processing_errors_and_warnings.proto";
+
+package pb.us_processing.us_processing_debug_port;
+
+message UsProcessingDebugPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.us_processing.us_processing_errors_and_warnings.UsProcessingErrorsAndWarnings uspErrAndWarnings = 3478;
+}
+
+message UsProcessingDebugPort_array_port{
+   repeated pb.us_processing.us_processing_debug_port.UsProcessingDebugPort data = 52;
+}

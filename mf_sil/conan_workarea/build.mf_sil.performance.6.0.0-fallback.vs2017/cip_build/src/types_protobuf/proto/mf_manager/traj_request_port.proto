@@ -1,0 +1,27 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_manager/mfmplanned_traj.proto";
+import "mf_manager/mfmplanned_traj_type.proto";
+import "mf_manager/mfmdriving_resistance.proto";
+
+package pb.mf_manager.traj_request_port;
+
+message TrajRequestPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated pb.mf_manager.mfmplanned_traj.MFMPlannedTraj plannedTraj = 3536;
+  optional pb.mf_manager.mfmplanned_traj_type.MFMPlannedTrajType trajType_nu = 1674;
+  optional uint32 numValidCtrlPoints_nu = 850;
+  optional bool drivingForwardReq_nu = 3147;
+  optional bool trajValid_nu = 125;
+  optional bool newSegmentStarted_nu = 1375;
+  optional bool isLastSegment_nu = 1592;
+  optional uint32 stepInTrajAfterIdx_nu = 1359;
+  repeated pb.mf_manager.mfmdriving_resistance.MFMDrivingResistance drivingResistance = 3027;
+}
+
+message TrajRequestPort_array_port{
+   repeated pb.mf_manager.traj_request_port.TrajRequestPort data = 399;
+}

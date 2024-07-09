@@ -1,0 +1,28 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_commonvehsigprovider.suspension_port;
+
+message SuspensionPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float suspensionTravelFL_m = 734;
+  optional float suspensionTravelFR_m = 2748;
+  optional float suspensionTravelRL_m = 904;
+  optional float suspensionTravelRR_m = 3050;
+  optional float suspensionTravelFL_pct = 3656;
+  optional float suspensionTravelFR_pct = 1466;
+  optional float suspensionTravelRL_pct = 621;
+  optional float suspensionTravelRR_pct = 2463;
+  optional bool isSuspensionCalibrated = 2519;
+  optional bool suspensionTravelFL_QF = 2271;
+  optional bool suspensionTravelFR_QF = 290;
+  optional bool suspensionTravelRL_QF = 1411;
+  optional bool suspensionTravelRR_QF = 3198;
+}
+
+message SuspensionPort_array_port{
+   repeated pb.ap_commonvehsigprovider.suspension_port.SuspensionPort data = 1300;
+}

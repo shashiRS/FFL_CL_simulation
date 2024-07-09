@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lsca.lsca_general_debug_data_serializable;
+
+message LscaGeneralDebugDataSerializable{
+  optional bool gasPedalOverride = 2512;
+}
+
+message LscaGeneralDebugDataSerializable_array_port{
+   repeated pb.mf_lsca.lsca_general_debug_data_serializable.LscaGeneralDebugDataSerializable data = 1567;
+}

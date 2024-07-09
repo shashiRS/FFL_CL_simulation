@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/cnn_based_parking_slot.proto";
+
+package pb.si.cnn_based_parking_slot_serializable;
+
+message CnnBasedParkingSlotSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.cnn_based_parking_slot.CnnBasedParkingSlot array = 430;
+}
+
+message CnnBasedParkingSlotSerializable_array_port{
+   repeated pb.si.cnn_based_parking_slot_serializable.CnnBasedParkingSlotSerializable data = 2212;
+}

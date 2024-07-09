@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "us_processing/us_processing_sensor_status.proto";
+
+package pb.us_processing.us_processing_diag_output;
+
+message UsProcessingDiagOutput{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated pb.us_processing.us_processing_sensor_status.UsProcessingSensorStatus sensorStatus = 403;
+}
+
+message UsProcessingDiagOutput_array_port{
+   repeated pb.us_processing.us_processing_diag_output.UsProcessingDiagOutput data = 2599;
+}

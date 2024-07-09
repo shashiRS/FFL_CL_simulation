@@ -1,0 +1,9 @@
+
+syntax = "proto2";
+
+package pb.lsm_vedodo.motion_state;
+
+enum MotionState {
+  ODO_STANDSTILL = 0;
+  ODO_NO_STANDSTILL = 1;
+}

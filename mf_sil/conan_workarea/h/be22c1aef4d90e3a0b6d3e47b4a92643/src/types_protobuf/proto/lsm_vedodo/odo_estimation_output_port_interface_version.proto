@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.lsm_vedodo.odo_estimation_output_port_interface_version;
+
+message OdoEstimationOutputPort_InterfaceVersion{
+  optional uint32 OdoEstimationOutputPort_VERSION = 298;
+}
+
+message OdoEstimationOutputPort_InterfaceVersion_array_port{
+   repeated pb.lsm_vedodo.odo_estimation_output_port_interface_version.OdoEstimationOutputPort_InterfaceVersion data = 446;
+}

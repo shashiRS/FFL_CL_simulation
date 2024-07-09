@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.ap_tp.vlorientation_approach;
+
+enum VLOrientationApproach {
+  FRONT_VL_ORIENTATION = 0;
+  REAR_VL_ORIENTATION = 1;
+  VL_ORIENTATION_AVERAGE = 2;
+  USE_BOTH_VL_PTS_NEAR_SLOT = 3;
+  MAX_NUM_VL_ORIENT_APPROACHES = 4;
+}

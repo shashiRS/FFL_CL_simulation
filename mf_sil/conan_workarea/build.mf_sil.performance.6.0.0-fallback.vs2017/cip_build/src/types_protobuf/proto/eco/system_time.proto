@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.eco.system_time;
+
+message SystemTime{
+  optional pb.eco.signal_header.SignalHeader sigHeader = 1450;
+  optional uint64 systemTime = 3595;
+}
+
+message SystemTime_array_port{
+   repeated pb.eco.system_time.SystemTime data = 403;
+}

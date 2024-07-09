@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.apctrl_status_port_interface_version;
+
+message APCtrlStatusPort_InterfaceVersion{
+  optional uint32 APCtrlStatusPort_VERSION = 1905;
+}
+
+message APCtrlStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.apctrl_status_port_interface_version.APCtrlStatusPort_InterfaceVersion data = 813;
+}

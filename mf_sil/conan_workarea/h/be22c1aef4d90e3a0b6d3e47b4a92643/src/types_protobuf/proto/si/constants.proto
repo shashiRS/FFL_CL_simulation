@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.constants;
+
+message Constants{
+  optional uint32 MAX_NUM_OF_DIAGNOSTIC_EVENT_IDS = 546;
+}
+
+message Constants_array_port{
+   repeated pb.si.constants.Constants data = 1561;
+}

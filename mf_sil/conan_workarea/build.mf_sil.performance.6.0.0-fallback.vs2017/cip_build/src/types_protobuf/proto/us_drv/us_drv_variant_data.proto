@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.us_drv.us_drv_variant_data;
+
+message UsDrvVariantData{
+  optional uint32 usedAsicNum = 233;
+  optional uint32 usedSensorNum = 1854;
+}
+
+message UsDrvVariantData_array_port{
+   repeated pb.us_drv.us_drv_variant_data.UsDrvVariantData data = 2918;
+}

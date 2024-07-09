@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.ap_tp.simple_debug_parking_box;
+
+message SimpleDebugParkingBox{
+  optional uint32 numValidPoints_nu = 2711;
+  repeated float posX_m = 1137;
+  repeated float posY_m = 833;
+}
+
+message SimpleDebugParkingBox_array_port{
+   repeated pb.ap_tp.simple_debug_parking_box.SimpleDebugParkingBox data = 2791;
+}

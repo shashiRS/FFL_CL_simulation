@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package pb.com.com_state;
+
+enum ComState {
+  COMSTATE_UNDEFINED = 0;
+  COMSTATE_OFF = 1;
+  COMSTATE_INITIALISING = 2;
+  COMSTATE_READY = 3;
+  COMSTATE_RUNNING = 4;
+  COMSTATE_FAILSAFE = 5;
+  COMSTATE_DEINITIALISING = 6;
+}

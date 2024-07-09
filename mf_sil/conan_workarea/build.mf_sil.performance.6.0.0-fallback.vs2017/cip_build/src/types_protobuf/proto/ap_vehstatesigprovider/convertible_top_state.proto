@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.convertible_top_state;
+
+enum ConvertibleTopState {
+  LOCKED_OPEN = 0;
+  LOCKED_CLOSED = 1;
+  UNLOCKED = 2;
+}

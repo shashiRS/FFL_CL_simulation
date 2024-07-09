@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package pb.mf_manager.la_ctrl_request_source;
+
+enum laCtrlRequestSource {
+  LADMC_REQ_SRC_NO_REQEUESTER = 0;
+  LADMC_REQ_SRC_AUP = 1;
+  LADMC_REQ_SRC_AUP_WITH_REMOTE = 6;
+  LADMC_REQ_SRC_LSCA = 2;
+  LADMC_REQ_SRC_REMOTE_MANEUVERING = 3;
+  LADMC_REQ_SRC_MSP = 4;
+  LADMC_REQ_SRC_SAFBAR = 5;
+}

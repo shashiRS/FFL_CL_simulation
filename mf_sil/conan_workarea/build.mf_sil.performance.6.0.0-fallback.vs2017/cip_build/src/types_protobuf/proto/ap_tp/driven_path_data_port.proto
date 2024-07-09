@@ -1,0 +1,22 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "ap_tp/stored_waypoint_data.proto";
+
+package pb.ap_tp.driven_path_data_port;
+
+message DrivenPathDataPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional uint32 saveCounter = 2002;
+  optional bool hasValidData = 2506;
+  repeated pb.ap_tp.stored_waypoint_data.StoredWaypointData storedDrivenPath = 647;
+  optional uint32 numElementsInDrivenPath = 1772;
+  repeated pb.ap_tp.stored_waypoint_data.StoredWaypointData buffer = 2818;
+  optional uint32 numElementsInBuffer = 1546;
+}
+
+message DrivenPathDataPort_array_port{
+   repeated pb.ap_tp.driven_path_data_port.DrivenPathDataPort data = 3266;
+}

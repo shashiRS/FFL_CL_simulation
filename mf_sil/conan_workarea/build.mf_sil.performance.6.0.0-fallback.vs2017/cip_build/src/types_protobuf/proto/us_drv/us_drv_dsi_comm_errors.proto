@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_error_status.proto";
+
+package pb.us_drv.us_drv_dsi_comm_errors;
+
+message UsDrvDsiCommErrors{
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus discoverWrongSensorCount = 3766;
+  optional uint32 discoverWrongSensorCountDetails = 735;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsiUndervoltage = 1448;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsiCmdOverrun = 3254;
+  optional pb.us_drv.us_drv_error_status.UsDrvErrorStatus dsiCrcBistFailed = 149;
+}
+
+message UsDrvDsiCommErrors_array_port{
+   repeated pb.us_drv.us_drv_dsi_comm_errors.UsDrvDsiCommErrors data = 1939;
+}

@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:LocalProfile="http://schemas/LocalProfile" xmlns:uml="http://schema.omg.org/spec/UML/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.1">
+    <xmi:Documentation xmi:exporter="PlantUML" xmi:exporterVersion="1.2022.1"/>
+    <uml:Model name="PlantUML" xmi:type="uml:Model">
+        <packagedElement name="boolean" xmi:id="type.boolean" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint8" xmi:id="type.uint8" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint8" xmi:id="type.sint8" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint16" xmi:id="type.uint16" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint16" xmi:id="type.sint16" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint32" xmi:id="type.uint32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint32" xmi:id="type.sint32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="uint64" xmi:id="type.uint64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="sint64" xmi:id="type.sint64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="float32" xmi:id="type.float32" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="float64" xmi:id="type.float64" xmi:type="uml:PrimitiveType"/>
+        <packagedElement name="LSM_GEOML" xmi:id="LSM_GEOML" xmi:type="uml:Package">
+            <packagedElement client="type.LSM_GEOML.size_type" supplier="type.uint32" xmi:id="type.uint32:type.LSM_GEOML.size_type" xmi:type="uml:Dependency"/>
+            <packagedElement name="size_type" xmi:id="type.LSM_GEOML.size_type" xmi:type="uml:DataType"/>
+            <packagedElement name="Pose_POD" xmi:id="type.LSM_GEOML.Pose_POD" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.LSM_GEOML.Pose_POD" xmi:id="type.LSM_GEOML.Pose_POD.0.comment" xmi:type="uml:Comment">
+                    <body>Vehicle pose as float</body>
+                </ownedComment>
+                <ownedAttribute name="x_dir" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="y_dir" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="yaw_rad" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+        <packagedElement name="eco" xmi:id="eco" xmi:type="uml:Package">
+            <packagedElement client="type.eco.AlgoDataTimeStamp" supplier="type.uint64" xmi:id="type.uint64:type.eco.AlgoDataTimeStamp" xmi:type="uml:Dependency"/>
+            <packagedElement name="AlgoDataTimeStamp" xmi:id="type.eco.AlgoDataTimeStamp" xmi:type="uml:DataType">
+                <ownedComment annotatedElement="type.eco.AlgoDataTimeStamp" xmi:id="type.eco.AlgoDataTimeStamp.0.comment" xmi:type="uml:Comment">
+                    <body>Algo data time-stamp type (64 bit variant)</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.AlgoDataTimeStamp" xmi:id="type.eco.AlgoDataTimeStamp.1.comment" xmi:type="uml:Comment">
+                    <body>@unit{us}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.AlgoDataTimeStamp" xmi:id="type.eco.AlgoDataTimeStamp.2.comment" xmi:type="uml:Comment">
+                    <body>@range{0,18446744073709551615}</body>
+                </ownedComment>
+                <defaultValue value="0" xmi:type="uml:LiteralString"/>
+            </packagedElement>
+            <packagedElement client="type.eco.AlgoCycleCounter" supplier="type.uint16" xmi:id="type.uint16:type.eco.AlgoCycleCounter" xmi:type="uml:Dependency"/>
+            <packagedElement name="AlgoCycleCounter" xmi:id="type.eco.AlgoCycleCounter" xmi:type="uml:DataType">
+                <ownedComment annotatedElement="type.eco.AlgoCycleCounter" xmi:id="type.eco.AlgoCycleCounter.0.comment" xmi:type="uml:Comment">
+                    <body>Algo cycle counter</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.AlgoCycleCounter" xmi:id="type.eco.AlgoCycleCounter.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,65535}</body>
+                </ownedComment>
+                <defaultValue value="0" xmi:type="uml:LiteralString"/>
+            </packagedElement>
+            <packagedElement name="AlgoSignalState" xmi:id="type.eco.AlgoSignalState" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.AlgoSignalState" xmi:id="type.eco.AlgoSignalState.0.comment" xmi:type="uml:Comment">
+                    <body>Algo signal state enumeration  values: enum { AL_SIG_STATE_INIT=0\n,AL_SIG_STATE_OK=1,AL_SIG_STATE_INVALID=2,}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.AlgoSignalState" xmi:id="type.eco.AlgoSignalState.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,2}</body>
+                </ownedComment>
+                <defaultValue value="AL_SIG_STATE_INIT" xmi:type="uml:LiteralString"/>
+                <ownedAttribute name="AL_SIG_STATE_INIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="AL_SIG_STATE_OK" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="AL_SIG_STATE_INVALID" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="SignalHeader" xmi:id="type.eco.SignalHeader" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.SignalHeader" xmi:id="type.eco.SignalHeader.0.comment" xmi:type="uml:Comment">
+                    <body>Common header for all structured data types</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SignalHeader.uiTimeStamp" xmi:id="type.eco.SignalHeader.uiTimeStamp.0.tips" xmi:type="uml:Comment">
+                    <body>Time stamp of the signal (for SIP: T0 timestamp of input signal\n, otherwise: T7 timestamp to which signal has been adjusted)</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SignalHeader.uiMeasurementCounter" xmi:id="type.eco.SignalHeader.uiMeasurementCounter.1.tips" xmi:type="uml:Comment">
+                    <body>Deprecated, not used. Should be set to 0.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SignalHeader.uiCycleCounter" xmi:id="type.eco.SignalHeader.uiCycleCounter.2.tips" xmi:type="uml:Comment">
+                    <body>Rolling counter of source component. Will be incremented in every\ncall to the exec method of the component.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SignalHeader.eSigStatus" xmi:id="type.eco.SignalHeader.eSigStatus.3.tips" xmi:type="uml:Comment">
+                    <body>Validity status of the signal. If not set to AL_SIG_STATE_OK,\nthen do not evaluate the content of the associated signal!</body>
+                </ownedComment>
+                <ownedAttribute name="uiTimeStamp" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="uiMeasurementCounter" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoCycleCounter"/>
+                </ownedAttribute>
+                <ownedAttribute name="uiCycleCounter" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoCycleCounter"/>
+                </ownedAttribute>
+                <ownedAttribute name="eSigStatus" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoSignalState"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ComponentExecutionMode" xmi:id="type.eco.ComponentExecutionMode" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.ComponentExecutionMode" xmi:id="type.eco.ComponentExecutionMode.0.comment" xmi:type="uml:Comment">
+                    <body>The execution mode of the components. It contains the configuration and sub-configuration id.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ComponentExecutionMode.configurationID" xmi:id="type.eco.ComponentExecutionMode.configurationID.0.tips" xmi:type="uml:Comment">
+                    <body>The component execution configuration id.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ComponentExecutionMode.subConfigurationID" xmi:id="type.eco.ComponentExecutionMode.subConfigurationID.1.tips" xmi:type="uml:Comment">
+                    <body>The component execution sub-configuration id.</body>
+                </ownedComment>
+                <ownedAttribute name="configurationID" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="subConfigurationID" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="CompOpState" xmi:id="type.eco.CompOpState" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.CompOpState" xmi:id="type.eco.CompOpState.0.comment" xmi:type="uml:Comment">
+                    <body>Represents the operation state of components updated by\nthe framework\nthrough shell with return provided by the components.\nvalues: enum { OPS_INIT=0,OPS_SCHEDULED=1,OPS_RUNNING=2,OPS_DONE=3\n,OPS_CANCELED=4,OPS_UNDEFINED=255,}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.CompOpState" xmi:id="type.eco.CompOpState.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,255}</body>
+                </ownedComment>
+                <ownedAttribute name="OPS_INIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPS_SCHEDULED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPS_RUNNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPS_DONE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPS_CANCELED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPS_UNDEFINED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="TraceData" xmi:id="type.eco.TraceData" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.TraceData.sigHeader" xmi:id="type.eco.TraceData.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>Signal header indicating data validity</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.TraceData.rangeCheckFailures" xmi:id="type.eco.TraceData.rangeCheckFailures.1.tips" xmi:type="uml:Comment">
+                    <body>Stores range check failures for trace ports</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute isOrdered="true" name="rangeCheckFailures" visibility="public" xmi:type="uml:Property">
+                    <lowerValue value="256" xmi:type="uml:LiteralInteger"/>
+                    <upperValue value="256" xmi:type="uml:LiteralUnlimitedNatural"/>
+                    <type xmi:idref="type.uint16"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="VehicleParam" xmi:id="type.eco.VehicleParam" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.VehicleParam" xmi:id="type.eco.VehicleParam.0.comment" xmi:type="uml:Comment">
+                    <body>Parameters specific to the ego vehicle</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.vehicleMass" xmi:id="type.eco.VehicleParam.vehicleMass.1.comment" xmi:type="uml:Comment">
+                    <body>@unit{kg}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.length" xmi:id="type.eco.VehicleParam.length.2.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.width" xmi:id="type.eco.VehicleParam.width.3.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelbase" xmi:id="type.eco.VehicleParam.wheelbase.4.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.trackWidthFront" xmi:id="type.eco.VehicleParam.trackWidthFront.5.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.trackWidthRear" xmi:id="type.eco.VehicleParam.trackWidthRear.6.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.overhangFront" xmi:id="type.eco.VehicleParam.overhangFront.7.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.overhangRear" xmi:id="type.eco.VehicleParam.overhangRear.8.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelCircumferenceFront" xmi:id="type.eco.VehicleParam.wheelCircumferenceFront.9.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelCircumferenceRear" xmi:id="type.eco.VehicleParam.wheelCircumferenceRear.10.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityX" xmi:id="type.eco.VehicleParam.centerOfGravityX.11.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityY" xmi:id="type.eco.VehicleParam.centerOfGravityY.12.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityZ" xmi:id="type.eco.VehicleParam.centerOfGravityZ.13.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.sigHeader" xmi:id="type.eco.VehicleParam.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>General information about the signal</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.vehicleMass" xmi:id="type.eco.VehicleParam.vehicleMass.1.tips" xmi:type="uml:Comment">
+                    <body>information about the mass of the vehicle in kg</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.axisLoadDistr" xmi:id="type.eco.VehicleParam.axisLoadDistr.2.tips" xmi:type="uml:Comment">
+                    <body>overall axis load distribution of the vehicle</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.length" xmi:id="type.eco.VehicleParam.length.3.tips" xmi:type="uml:Comment">
+                    <body>Length of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.width" xmi:id="type.eco.VehicleParam.width.4.tips" xmi:type="uml:Comment">
+                    <body>Width of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelbase" xmi:id="type.eco.VehicleParam.wheelbase.5.tips" xmi:type="uml:Comment">
+                    <body>Absolute distance in longitudinal direction between front axle and rear axle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.trackWidthFront" xmi:id="type.eco.VehicleParam.trackWidthFront.6.tips" xmi:type="uml:Comment">
+                    <body>Absolute distance between the wheel mounting positions on the front axle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.trackWidthRear" xmi:id="type.eco.VehicleParam.trackWidthRear.7.tips" xmi:type="uml:Comment">
+                    <body>Absolute distance between the wheel mounting positions on the rear axle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.overhangFront" xmi:id="type.eco.VehicleParam.overhangFront.8.tips" xmi:type="uml:Comment">
+                    <body>Absolute distance in longitudinal direction between front axle and front most point of the chassis in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.overhangRear" xmi:id="type.eco.VehicleParam.overhangRear.9.tips" xmi:type="uml:Comment">
+                    <body>Absolute distance in longitudinal direction between rear axle and rear most point of the chassis in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelCircumferenceFront" xmi:id="type.eco.VehicleParam.wheelCircumferenceFront.10.tips" xmi:type="uml:Comment">
+                    <body>Rear wheel Circumference of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.wheelCircumferenceRear" xmi:id="type.eco.VehicleParam.wheelCircumferenceRear.11.tips" xmi:type="uml:Comment">
+                    <body>Front wheel Circumference of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityX" xmi:id="type.eco.VehicleParam.centerOfGravityX.12.tips" xmi:type="uml:Comment">
+                    <body>Center of gravity X of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityY" xmi:id="type.eco.VehicleParam.centerOfGravityY.13.tips" xmi:type="uml:Comment">
+                    <body>Center of gravity Y of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.centerOfGravityZ" xmi:id="type.eco.VehicleParam.centerOfGravityZ.14.tips" xmi:type="uml:Comment">
+                    <body>Center of gravity Z of the ego vehicle in meters</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isVehicleMassAvailable" xmi:id="type.eco.VehicleParam.isVehicleMassAvailable.15.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle VehicleMass parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isAxisLoadDistrAvailable" xmi:id="type.eco.VehicleParam.isAxisLoadDistrAvailable.16.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle AxisLoadDistr parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isLengthAvailable" xmi:id="type.eco.VehicleParam.isLengthAvailable.17.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle length parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isWidthAvailable" xmi:id="type.eco.VehicleParam.isWidthAvailable.18.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle width parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isWheelbaseAvailable" xmi:id="type.eco.VehicleParam.isWheelbaseAvailable.19.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle wheel base parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isTrackWidthFrontAvailable" xmi:id="type.eco.VehicleParam.isTrackWidthFrontAvailable.20.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle track width front parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isTrackWidthRearAvailable" xmi:id="type.eco.VehicleParam.isTrackWidthRearAvailable.21.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle track width rear parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isOverhangFrontAvailable" xmi:id="type.eco.VehicleParam.isOverhangFrontAvailable.22.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle overhang front parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isOverhangRearAvailable" xmi:id="type.eco.VehicleParam.isOverhangRearAvailable.23.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle overhang rear parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isWheelCircumferenceFrontAvailable" xmi:id="type.eco.VehicleParam.isWheelCircumferenceFrontAvailable.24.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle front wheel circumference parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isWheelCircumferenceRearAvailable" xmi:id="type.eco.VehicleParam.isWheelCircumferenceRearAvailable.25.tips" xmi:type="uml:Comment">
+                    <body>Specifies if vehicle rear wheel circumference parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isCenterOfGravityXAvailable" xmi:id="type.eco.VehicleParam.isCenterOfGravityXAvailable.26.tips" xmi:type="uml:Comment">
+                    <body>Specifies if center of gravity X parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isCenterOfGravityYAvailable" xmi:id="type.eco.VehicleParam.isCenterOfGravityYAvailable.27.tips" xmi:type="uml:Comment">
+                    <body>Specifies if center of gravity Y parameter is available or not</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.VehicleParam.isCenterOfGravityZAvailable" xmi:id="type.eco.VehicleParam.isCenterOfGravityZAvailable.28.tips" xmi:type="uml:Comment">
+                    <body>Specifies if center of gravity Z parameter is available or not</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="vehicleMass" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="axisLoadDistr" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="length" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="width" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="wheelbase" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="trackWidthFront" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="trackWidthRear" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="overhangFront" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="overhangRear" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="wheelCircumferenceFront" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="wheelCircumferenceRear" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="centerOfGravityX" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="centerOfGravityY" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="centerOfGravityZ" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="isVehicleMassAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isAxisLoadDistrAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isLengthAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isWidthAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isWheelbaseAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isTrackWidthFrontAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isTrackWidthRearAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isOverhangFrontAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isOverhangRearAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isWheelCircumferenceFrontAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isWheelCircumferenceRearAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isCenterOfGravityXAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isCenterOfGravityYAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isCenterOfGravityZAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="SensorMountPosition" xmi:id="type.eco.SensorMountPosition" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.SensorMountPosition" xmi:id="type.eco.SensorMountPosition.0.comment" xmi:type="uml:Comment">
+                    <body>Sensor mount position and sensor ID</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountPosition.sigHeader" xmi:id="type.eco.SensorMountPosition.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>General information about the signal</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountPosition.sensorMountPos" xmi:id="type.eco.SensorMountPosition.sensorMountPos.1.tips" xmi:type="uml:Comment">
+                    <body>Mounting position details of the sensor relative to the environment model\ncoordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountPosition.sensorId" xmi:id="type.eco.SensorMountPosition.sensorId.2.tips" xmi:type="uml:Comment">
+                    <body>Sensor ID of the related sensor</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountPosition.isSensorMountPosAvailable" xmi:id="type.eco.SensorMountPosition.isSensorMountPosAvailable.3.tips" xmi:type="uml:Comment">
+                    <body>Specifies if sensor mount position is available or not</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="sensorId" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SensorID"/>
+                </ownedAttribute>
+                <ownedAttribute name="sensorMountPos" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SensorMountingPositionDetailed"/>
+                </ownedAttribute>
+                <ownedAttribute name="isSensorMountPosAvailable" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="SensorMountingPositionDetailed" xmi:id="type.eco.SensorMountingPositionDetailed" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed" xmi:id="type.eco.SensorMountingPositionDetailed.0.comment" xmi:type="uml:Comment">
+                    <body>Mounting position details of the sensor relative to the environment model\ncoordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.roll" xmi:id="type.eco.SensorMountingPositionDetailed.roll.1.comment" xmi:type="uml:Comment">
+                    <body>@unit{rad}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.pitch" xmi:id="type.eco.SensorMountingPositionDetailed.pitch.2.comment" xmi:type="uml:Comment">
+                    <body>@unit{rad}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.yaw" xmi:id="type.eco.SensorMountingPositionDetailed.yaw.3.comment" xmi:type="uml:Comment">
+                    <body>@unit{rad}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.x" xmi:id="type.eco.SensorMountingPositionDetailed.x.4.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.y" xmi:id="type.eco.SensorMountingPositionDetailed.y.5.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.z" xmi:id="type.eco.SensorMountingPositionDetailed.z.6.comment" xmi:type="uml:Comment">
+                    <body>@unit{meters}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.roll" xmi:id="type.eco.SensorMountingPositionDetailed.roll.0.tips" xmi:type="uml:Comment">
+                    <body>Rolling angle of the sensor in environment model coordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.pitch" xmi:id="type.eco.SensorMountingPositionDetailed.pitch.1.tips" xmi:type="uml:Comment">
+                    <body>Pitch angle of the sensor in environment model coordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.yaw" xmi:id="type.eco.SensorMountingPositionDetailed.yaw.2.tips" xmi:type="uml:Comment">
+                    <body>Yaw angle of the sensorin environment model coordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.x" xmi:id="type.eco.SensorMountingPositionDetailed.x.3.tips" xmi:type="uml:Comment">
+                    <body>X-coordinate position of the sensor in environment model coordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.y" xmi:id="type.eco.SensorMountingPositionDetailed.y.4.tips" xmi:type="uml:Comment">
+                    <body>Y-coordinate position of the sensor in environment model coordinate system</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SensorMountingPositionDetailed.z" xmi:id="type.eco.SensorMountingPositionDetailed.z.5.tips" xmi:type="uml:Comment">
+                    <body>Z-coordinate position of the sensor in environment model coordinate system</body>
+                </ownedComment>
+                <ownedAttribute name="roll" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="pitch" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="yaw" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="x" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="y" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="z" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement client="type.eco.SensorID" supplier="type.uint16" xmi:id="type.uint16:type.eco.SensorID" xmi:type="uml:Dependency"/>
+            <packagedElement name="SensorID" xmi:id="type.eco.SensorID" xmi:type="uml:DataType">
+                <ownedComment annotatedElement="type.eco.SensorID" xmi:id="type.eco.SensorID.0.comment" xmi:type="uml:Comment">
+                    <body>ID provides the unique identification of the sensor</body>
+                </ownedComment>
+            </packagedElement>
+            <packagedElement name="ComponentResponse" xmi:id="type.eco.ComponentResponse" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.ComponentResponse.sigHeader" xmi:id="type.eco.ComponentResponse.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>Returned SignalHeader Common header for all structure.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ComponentResponse.errorCode" xmi:id="type.eco.ComponentResponse.errorCode.1.tips" xmi:type="uml:Comment">
+                    <body>Returned error code by the component</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ComponentResponse.functionalErrorCode" xmi:id="type.eco.ComponentResponse.functionalErrorCode.2.tips" xmi:type="uml:Comment">
+                    <body>Returned functional error codes (range check results) by the component</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="errorCode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+                <ownedAttribute isOrdered="true" name="functionalErrorCode" visibility="public" xmi:type="uml:Property">
+                    <lowerValue value="4" xmi:type="uml:LiteralInteger"/>
+                    <upperValue value="4" xmi:type="uml:LiteralUnlimitedNatural"/>
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+                <ownedAttribute name="opState" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.CompOpState"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="TimeServiceData" xmi:id="type.eco.TimeServiceData" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.TimeServiceData.sigHeader" xmi:id="type.eco.TimeServiceData.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>Returned SignalHeader Common header for all structure.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.TimeServiceData.cycleStart" xmi:id="type.eco.TimeServiceData.cycleStart.1.tips" xmi:type="uml:Comment">
+                    <body>cycle start time</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.TimeServiceData.estimatedCycleEnd" xmi:id="type.eco.TimeServiceData.estimatedCycleEnd.2.tips" xmi:type="uml:Comment">
+                    <body>Estimated Cycle End Time</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="cycleStart" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+                <ownedAttribute name="estimatedCycleEnd" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="BaseCtrlData" xmi:id="type.eco.BaseCtrlData" xmi:type="uml:Class">
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="eOpMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                </ownedAttribute>
+                <ownedAttribute name="eSchedulingMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="eSchedulingSubMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="AlgoCompState" xmi:id="type.eco.AlgoCompState" xmi:type="uml:Class">
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="uiAlgoVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                </ownedAttribute>
+                <ownedAttribute name="eCompState" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="eErrorCode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ExecutionMode" xmi:id="type.eco.ExecutionMode" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.ExecutionMode" xmi:id="type.eco.ExecutionMode.0.comment" xmi:type="uml:Comment">
+                    <body>Execution information needed to execute a component</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ExecutionMode.sigHeader" xmi:id="type.eco.ExecutionMode.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>ADAS signal header</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.ExecutionMode.mode" xmi:id="type.eco.ExecutionMode.mode.1.tips" xmi:type="uml:Comment">
+                    <body>The component execution mode and sub mode information</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="mode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.ComponentExecutionMode"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="SystemTime" xmi:id="type.eco.SystemTime" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.SystemTime.sigHeader" xmi:id="type.eco.SystemTime.sigHeader.0.tips" xmi:type="uml:Comment">
+                    <body>Returned SignalHeader Common header for all structure.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.SystemTime.systemTime" xmi:id="type.eco.SystemTime.systemTime.1.tips" xmi:type="uml:Comment">
+                    <body>System time by the component</body>
+                </ownedComment>
+                <ownedAttribute name="sigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="systemTime" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement client="type.eco.AlgoInterfaceVersionNumber" supplier="type.uint32" xmi:id="type.uint32:type.eco.AlgoInterfaceVersionNumber" xmi:type="uml:Dependency"/>
+            <packagedElement name="AlgoInterfaceVersionNumber" xmi:id="type.eco.AlgoInterfaceVersionNumber" xmi:type="uml:DataType">
+                <ownedComment annotatedElement="type.eco.AlgoInterfaceVersionNumber" xmi:id="type.eco.AlgoInterfaceVersionNumber.0.comment" xmi:type="uml:Comment">
+                    <body>Algo interface version nummbers</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.AlgoInterfaceVersionNumber" xmi:id="type.eco.AlgoInterfaceVersionNumber.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,4294967295}</body>
+                </ownedComment>
+            </packagedElement>
+            <packagedElement name="CompState_t" xmi:id="type.eco.CompState_t" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.CompState_t" xmi:id="type.eco.CompState_t.0.comment" xmi:type="uml:Comment">
+                    <body>The state of the algo  values: enum { COMP_STATE_NOT_INITIALIZED=0\n,COMP_STATE_RUNNING=1,COMP_STATE_TEMPORARY_ERROR=2,COMP_STATE_PERMANENT_ERROR=3\n,COMP_STATE_SUCCESS=4,COMP_STATE_REDUCED_AVAILABILITY=5,COMP_STATE_NOT_RUNNING=6\n,}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.CompState_t" xmi:id="type.eco.CompState_t.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,6}</body>
+                </ownedComment>
+                <ownedAttribute name="COMP_STATE_NOT_INITIALIZED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_RUNNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_TEMPORARY_ERROR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_PERMANENT_ERROR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_SUCCESS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_REDUCED_AVAILABILITY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMP_STATE_NOT_RUNNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="OpMode" xmi:id="type.eco.OpMode" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.OpMode" xmi:id="type.eco.OpMode.0.comment" xmi:type="uml:Comment">
+                    <body>Represents the component execution mode context  which is provided\nby the Framework to all components.  values: enum { OPM_INIT=0\n,OPM_EXEC1=1,OPM_EXEC2=2,OPM_EXEC3=3,OPM_EXEC4=4,OPM_EXEC5=5,\nOPM_EXEC6=6,OPM_NOP=254,OPM_UNDEF=255,}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.OpMode" xmi:id="type.eco.OpMode.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,255}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.OpMode.firstExecutionOpMode" xmi:id="type.eco.OpMode.firstExecutionOpMode.0.tips" xmi:type="uml:Comment">
+                    <body>The operation mode of the first execution of the component within the cycle.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.OpMode.lastExecutionOpMode" xmi:id="type.eco.OpMode.lastExecutionOpMode.1.tips" xmi:type="uml:Comment">
+                    <body>The operation mode of the last execution of the component within the cycle.</body>
+                </ownedComment>
+                <ownedAttribute name="OPM_INIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC1" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC2" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC3" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC4" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC5" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_EXEC6" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_NOP" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="254" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OPM_UNDEF" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="FirstLastComponentExecution" xmi:id="type.eco.FirstLastComponentExecution" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.FirstLastComponentExecution" xmi:id="type.eco.FirstLastComponentExecution.0.comment" xmi:type="uml:Comment">
+                    <body>Represents the operation mode of the first and last execution of the component within a cycle.\nIf the operation mode for first and last execution are equal the component is triggered only once.\nThe data is undefined if both operation modes are set to 'OPM_UNDEF'.</body>
+                </ownedComment>
+                <ownedAttribute name="firstExecutionOpMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.OpMode"/>
+                </ownedAttribute>
+                <ownedAttribute name="lastExecutionOpMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.OpMode"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="FrameworkControl" xmi:id="type.eco.FrameworkControl" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.eco.FrameworkControl.opModeExecTime" xmi:id="type.eco.FrameworkControl.opModeExecTime.0.comment" xmi:type="uml:Comment">
+                    <body>@unit{us}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.uiVersionNumber" xmi:id="type.eco.FrameworkControl.uiVersionNumber.0.tips" xmi:type="uml:Comment">
+                    <body>Version number of interface</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.sSigHeader" xmi:id="type.eco.FrameworkControl.sSigHeader.1.tips" xmi:type="uml:Comment">
+                    <body>Signal header with common signal information</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.opMode" xmi:id="type.eco.FrameworkControl.opMode.2.tips" xmi:type="uml:Comment">
+                    <body>Represents the component execution mode context  which is provided\nby the Framework to all components.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.cemCycleInitTimeStamp" xmi:id="type.eco.FrameworkControl.cemCycleInitTimeStamp.3.tips" xmi:type="uml:Comment">
+                    <body>Represents the time stamp at the begin of the cycle.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.endCycleEstimatedTimeStamp" xmi:id="type.eco.FrameworkControl.endCycleEstimatedTimeStamp.4.tips" xmi:type="uml:Comment">
+                    <body>Represents the time stamp at the end of the cycle.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.opState" xmi:id="type.eco.FrameworkControl.opState.5.tips" xmi:type="uml:Comment">
+                    <body>Represents the operation state of components updated by\nthe framework\nthrough shell with return provided by the components.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.opModeExecTime" xmi:id="type.eco.FrameworkControl.opModeExecTime.6.tips" xmi:type="uml:Comment">
+                    <body>Represents the execution time, of the last operation mode of components (exec1() .. exec6()).</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.errorCode" xmi:id="type.eco.FrameworkControl.errorCode.7.tips" xmi:type="uml:Comment">
+                    <body>Returned error code by the component</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.functionalErrorCode" xmi:id="type.eco.FrameworkControl.functionalErrorCode.8.tips" xmi:type="uml:Comment">
+                    <body>Returned functional error codes (range check results) by the component</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.windowsCycleStart" xmi:id="type.eco.FrameworkControl.windowsCycleStart.9.tips" xmi:type="uml:Comment">
+                    <body>Used for computing the time offset of the recorded data to the windows time. This reports the windows time at the\nstart of the cycle.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.rawCycleStart" xmi:id="type.eco.FrameworkControl.rawCycleStart.10.tips" xmi:type="uml:Comment">
+                    <body>Used for computing the time offset of the recorded data to the windows time. This reports the recorded time at the\nstart of the cycle without the latency compensation.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.firstLastExecution" xmi:id="type.eco.FrameworkControl.firstLastExecution.11.tips" xmi:type="uml:Comment">
+                    <body>Used to determine if the execution is the first or last or both execution in the current cycle.</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.FrameworkControl.oseMode" xmi:id="type.eco.FrameworkControl.oseMode.12.tips" xmi:type="uml:Comment">
+                    <body>Used to determine if the system mode is ose mode or not.</body>
+                </ownedComment>
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoInterfaceVersionNumber"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="opMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.OpMode"/>
+                </ownedAttribute>
+                <ownedAttribute name="cemCycleInitTimeStamp" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="endCycleEstimatedTimeStamp" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="opState" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.CompOpState"/>
+                </ownedAttribute>
+                <ownedAttribute name="opModeExecTime" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="errorCode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+                <ownedAttribute isOrdered="true" name="functionalErrorCode" visibility="public" xmi:type="uml:Property">
+                    <lowerValue value="4" xmi:type="uml:LiteralInteger"/>
+                    <upperValue value="4" xmi:type="uml:LiteralUnlimitedNatural"/>
+                    <type xmi:idref="type.uint64"/>
+                </ownedAttribute>
+                <ownedAttribute name="windowsCycleStart" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="rawCycleStart" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoDataTimeStamp"/>
+                </ownedAttribute>
+                <ownedAttribute name="firstLastExecution" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.FirstLastComponentExecution"/>
+                </ownedAttribute>
+                <ownedAttribute name="oseMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="CompStage" xmi:id="type.eco.CompStage" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.CompStage" xmi:id="type.eco.CompStage.0.comment" xmi:type="uml:Comment">
+                    <body>values: enum { INIT=0,SUSPEND=1,RESUME=2,SHUTDOWN=3\n,STAGE_UNDEFINED=255,}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.CompStage" xmi:id="type.eco.CompStage.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,255}</body>
+                </ownedComment>
+                <ownedAttribute name="STAGE_INIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STAGE_SUSPEND" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STAGE_RESUME" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STAGE_SHUTDOWN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STAGE_UNDEFINED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="DiagnosisEventStatus" xmi:id="type.eco.DiagnosisEventStatus" xmi:type="uml:Enumeration">
+                <ownedComment annotatedElement="type.eco.DiagnosisEventStatus" xmi:id="type.eco.DiagnosisEventStatus.0.comment" xmi:type="uml:Comment">
+                    <body>values: enum { DIAGNOSIS_EVENT_STATUS_PASSED=0,DIAGNOSIS_EVENT_STATUS_FAILED=1,\nDIAGNOSIS_EVENT_STATUS_PREPASSED=2,DIAGNOSIS_EVENT_STATUS_PREFAILED=3}</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.eco.DiagnosisEventStatus" xmi:id="type.eco.DiagnosisEventStatus.1.comment" xmi:type="uml:Comment">
+                    <body>@range{0,255}</body>
+                </ownedComment>
+                <ownedAttribute name="DIAGNOSIS_EVENT_STATUS_PASSED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DIAGNOSIS_EVENT_STATUS_FAILED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DIAGNOSIS_EVENT_STATUS_PREPASSED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DIAGNOSIS_EVENT_STATUS_PREFAILED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+        <packagedElement name="AP_HMIToAP" xmi:id="AP_HMIToAP" xmi:type="uml:Package">
+            <packagedElement name="ScreenTypes" xmi:id="type.AP_HMIToAP.ScreenTypes" xmi:type="uml:Enumeration">
+                <ownedAttribute name="BLANK_SCREEN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_1" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_2" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_3" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_4" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_5" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_6" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_7" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="7" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_8" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="8" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_9" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="9" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_10" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="10" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_11" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="11" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_12" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="12" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_13" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="13" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_14" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="14" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BOWL_VIEW_MODIFIED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="15" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="FRONT_VIEW_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="16" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="FRONT_VIEW_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="17" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PANORAMIC_FRONT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="18" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BLACK_SCREEN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="19" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="FRONT_TOP_ZOOM" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="20" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_FRONT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="30" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="31" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TOP_VIEW_SFM" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="32" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TOP_VIEW_PSD" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="33" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TOP_VIEW_PMD" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="34" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="45" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="REAR_VIEW_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="46" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="REAR_VIEW_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="47" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PANORAMIC_REAR_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="48" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRAILER_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="49" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="REAR_TOP_ZOOM" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="50" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_REAR_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="60" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="KERB_VIEW_FRONT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="61" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="KERB_VIEW_REAR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="62" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_KERB_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="75" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ARA_REAR_NORMAL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="76" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ARA_REAR_IRREGULAR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="77" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ARA_PANORAMIC_NORMAL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="78" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ARA_PANORAMIC_IRREGULAR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="79" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LEFT_VIEW_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="80" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LEFT_VIEW_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="81" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PANORAMIC_LEFT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="82" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="RIGHT_VIEW_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="83" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="RIGHT_VIEW_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="84" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PANORAMIC_RIGHT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="85" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_ARA_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="90" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="IPA_FRONT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="91" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="IPA_REAR_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="92" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="IPA_TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="93" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_FRONT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="94" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_REAR_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="95" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="96" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_SPACES_TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="97" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_WARN_TOP_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="98" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARK_TRANSPARENT_PDW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="99" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_IPA_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="105" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="MORPH_FRONT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="106" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="MORPH_FRONT_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="107" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_MORPH_FRONT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="120" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="MORPH_REAR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="121" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="MORPH_REAR_FULL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="122" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="MORPH_ARA" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="123" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_MORPH_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="135" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="SMARTPHONE_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="151" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BLIND_SPOT_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="152" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BLIND_SPOT_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="153" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="LAST_SPECIAL_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="165" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_HOOD" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="166" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_ALPHA" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="167" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_GHOST" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="168" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_TRUNK" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="169" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_ALPHA_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="170" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_HOOD_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="171" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT_TRUNK_SPLIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="172" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ADAPTIVE_FULL_BOWL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="173" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STATIC_BOWL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="174" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ADAPTIVE_SPLIT_BOWL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="175" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="STATIC_SPLIT_BOWL" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="176" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="RAW_CAMERAS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="181" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="RAW_CAMERAS_SFM" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="182" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_FRONT_CAMERA_EXTERN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="200" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_FRONT_CAMERA_VECTORS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="201" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_FRONT_CAMERA_EDGES" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="202" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_FRONT_CAMERA_CLEANING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="203" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_REAR_CAMERA_EXTERN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="204" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_REAR_CAMERA_VECTORS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="205" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_REAR_CAMERA_EDGES" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="206" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_REAR_CAMERA_CLEANING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="207" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_LEFT_CAMERA_EXTERN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="208" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_LEFT_CAMERA_VECTORS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="209" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_LEFT_CAMERA_EDGES" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="210" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_LEFT_CAMERA_CLEANING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="211" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RIGHT_CAMERA_EXTERN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="212" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RIGHT_CAMERA_VECTORS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="213" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RIGHT_CAMERA_EDGES" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="214" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RIGHT_CAMERA_CLEANING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="215" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_CALIBRATION_FLMC_QUAD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="216" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_CALIBRATION_PGM_QUAD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="217" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_TESTSCREEN_4_CAMS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="218" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_CALIBRATION_OLMC_QUAD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="219" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_COLOUR_BARS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="220" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RAW_CAMERAS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="221" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_RAW_CAMERAS_SFM" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="222" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_CURB_MESH_DEMO" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="223" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_HEIGHT_MAP" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="224" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_PGM_QUAD_OVERLAY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="225" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DEBUG_IMAGE_HARMONIZATION" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="226" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_SLOT_SELECTION_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="227" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_SLOT_CONFIRMATION_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="228" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_MANEUVER_PHASE_FORWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="229" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_MANEUVER_PHASE_BACKWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="230" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_MANEUVER_APPROACH_PHASE_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="231" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_MANEUVER_APPROACH_WHEELSTOPPER_PHASE_FORWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="232" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_IN_MANEUVER_APPROACH_WHEELSTOPPER_PHASE_BACKWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="233" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_OUT_DIRECTION_SELECTION_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="234" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_OUT_MANEUVER_FORWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="235" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_OUT_MANEUVER_BACKWARD_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="236" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PARKING_OUT_MANEUVER_FINISH_PHASE_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="237" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="NO_STREAM_CHANGE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="SIZE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="256" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+        <packagedElement name="MF_HMIH" xmi:id="MF_HMIH" xmi:type="uml:Package">
+            <packagedElement name="MF_HMIH_Consts" xmi:id="type.MF_HMIH.MF_HMIH_Consts" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.MF_HMIH.MF_HMIH_Consts" xmi:id="type.MF_HMIH.MF_HMIH_Consts.0.comment" xmi:type="uml:Comment">
+                    <body>MHMIH consts</body>
+                </ownedComment>
+                <ownedAttribute isStatic="true" name="AP_H_MAX_NUM_SLOTS_SIDE_NU" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isStatic="true" name="AP_H_MAX_NUM_PLACEHOLDER_NU" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="9" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isStatic="true" name="AP_H_MAX_NUM_PARKING_POSES_NU" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="20" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isStatic="true" name="AP_H_MAX_NUM_VISIBILITY_TAGS_NU" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="35" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isStatic="true" name="MAX_NUM_SECTORS_PER_SIDE_HMIH" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isStatic="true" name="NUM_MTS_DEBUG_FREESPACE_HMIH" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="10" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ParkingTargetPose" xmi:id="type.MF_HMIH.ParkingTargetPose" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose" xmi:id="type.MF_HMIH.ParkingTargetPose.0.comment" xmi:type="uml:Comment">
+                    <body>Target pose information to be displayed by Visu</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.id_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.id_nu.0.tips" xmi:type="uml:Comment">
+                    <body>ID of target pose</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.isFree_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.isFree_nu.1.tips" xmi:type="uml:Comment">
+                    <body>Parking slot free</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.isScanned_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.isScanned_nu.2.tips" xmi:type="uml:Comment">
+                    <body>Parking slot was scanned</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.isSelected_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.isSelected_nu.3.tips" xmi:type="uml:Comment">
+                    <body>Parking slot selected</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.isSwitchable_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.isSwitchable_nu.4.tips" xmi:type="uml:Comment">
+                    <body>Parking slot switchable</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPose.pose_nu" xmi:id="type.MF_HMIH.ParkingTargetPose.pose_nu.5.tips" xmi:type="uml:Comment">
+                    <body>A pose defined by an x and y coordinate as well as a yaw angle</body>
+                </ownedComment>
+                <ownedAttribute name="id_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="isFree_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isScanned_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isSelected_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="isSwitchable_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="pose_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.LSM_GEOML.Pose_POD"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ParkingTargetPoses" xmi:id="type.MF_HMIH.ParkingTargetPoses" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPoses" xmi:id="type.MF_HMIH.ParkingTargetPoses.0.comment" xmi:type="uml:Comment">
+                    <body>Target poses information for Visu</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPoses.numValidParkingPoses_nu" xmi:id="type.MF_HMIH.ParkingTargetPoses.numValidParkingPoses_nu.0.tips" xmi:type="uml:Comment">
+                    <body>Number of poses that are valid (does not need to be reachable)</body>
+                </ownedComment>
+                <ownedComment annotatedElement="type.MF_HMIH.ParkingTargetPoses.parkingPoses" xmi:id="type.MF_HMIH.ParkingTargetPoses.parkingPoses.1.tips" xmi:type="uml:Comment">
+                    <body>All information related to a possible target pose</body>
+                </ownedComment>
+                <ownedAttribute name="numValidParkingPoses_nu" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                    <defaultValue value="255" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute isOrdered="true" name="parkingPoses" visibility="public" xmi:type="uml:Property">
+                    <lowerValue value="MF_HMIH.MF_HMIH_Consts.AP_H_MAX_NUM_PARKING_POSES_NU" xmi:type="uml:LiteralInteger"/>
+                    <upperValue value="MF_HMIH.MF_HMIH_Consts.AP_H_MAX_NUM_PARKING_POSES_NU" xmi:type="uml:LiteralUnlimitedNatural"/>
+                    <type xmi:idref="type.MF_HMIH.ParkingTargetPose"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+        <packagedElement name="vc" xmi:id="vc" xmi:type="uml:Package">
+            <packagedElement name="OverlayTag" xmi:id="type.vc.OverlayTag" xmi:type="uml:Enumeration">
+                <ownedAttribute name="OVERLAY_TAG_UNDEFINED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_DISTANCE_BAR_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_DISTANCE_BAR_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CARPET" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_FRONT_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_TRAILER_TARGET" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_REAR_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_HITCH_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="7" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_TAILGATE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="8" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_DETECTED_PARK_SLOT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="9" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_GLOW_FRONT_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="10" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_GLOW_FRONT_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="11" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_GLOW_REAR_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="12" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_GLOW_REAR_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="13" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_LEFT_N_A" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="14" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_RIGHT_N_A" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="15" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_FRONT_N_A" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="16" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_REAR_N_A" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="17" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_LEFT_DEFECT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="18" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_RIGHT_DEFECT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="19" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_FRONT_DEFECT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="20" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CAM_REAR_DEFECT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="21" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_DOOR_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="22" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_DOOR_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="23" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_MIRROR_LEFT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="24" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_MIRROR_RIGHT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="25" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_PARK_MARKER_DETECTION" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="26" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_TRUNK" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="27" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_EARLY_BITMAP" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="28" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_POLYGON" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="29" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_PLANNED_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="30" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_AUP_FRONT_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="31" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_AUP_REAR_TRAJECTORY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="32" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_CLIPPING_MASK" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="33" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_PDW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="34" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_GHOST_CAR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="35" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_REVERSE_ASSIST_ICON" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="36" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_REVERSE_ASSIST_DISTANCE_MARKER" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="37" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="OVERLAY_TAG_RIM_WARNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="38" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="NUM_OVERLAY_TAGS" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="39" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="SelectedTargetPose" xmi:id="type.vc.SelectedTargetPose" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.vc.SelectedTargetPose" xmi:id="type.vc.SelectedTargetPose.0.comment" xmi:type="uml:Comment">
+                    <body>This struct will be provided by visu component actually. But because visu is\nnot yet a GitHub component, we made a compromise and declared it here.\nThe port will be consumed by HMI Handler.</body>
+                </ownedComment>
+                <ownedAttribute name="selected_pose_id" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="switch_pose_orientation" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="BlindSpotViewStatus" xmi:id="type.vc.BlindSpotViewStatus" xmi:type="uml:Enumeration">
+                <ownedAttribute name="LEFT_BLIND_SPOT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="RIGHT_BLIND_SPOT_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BLIND_SPOT_VIEW_OFF" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="TransparencyPreset" xmi:id="type.vc.TransparencyPreset" xmi:type="uml:Enumeration">
+                <ownedAttribute name="OPAQUE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRANSPARENT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="WHEELS_FRAME" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ErrorCode" xmi:id="type.vc.ErrorCode" xmi:type="uml:Enumeration">
+                <ownedAttribute name="VIS_ERRORCODE_OK" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_FAILURE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_OVERLAY_FAILED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_VIDEO_FAILED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_INVALID_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_NOTACTIVATED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_DEACTIVATED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_COUNT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="7" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="VIS_ERRORCODE_MAX" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="256" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="HMIWarningMessage" xmi:id="type.vc.HMIWarningMessage" xmi:type="uml:Enumeration">
+                <ownedAttribute name="COLLISION_WARNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="CAMERA_UNAVAILABLE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="CAMERA_CLEANING_REQUIRED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="DOOR_OPEN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRUNK_OPEN" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="ORVM_FOLDED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="5" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="BSV_NOT_ACTIVE_HAZARD_LIGHT_ON" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="6" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="CAMERA_NOT_CALIBRATED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="7" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PLEASE_DRIVE_CAREFULLY" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="8" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PART_OF_IMAGE_IS_NOT_LIVE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="9" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="SPEED_WARNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="10" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="TRAILER_CONNECTED" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="11" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="NO_WARNING" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="12" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="HMIInstructionSet" xmi:id="type.vc.HMIInstructionSet" xmi:type="uml:Enumeration">
+                <ownedAttribute name="PLEASE_DRIVE_FORWARD" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="PLEASE_DRIVE_BACKWARD" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="SWIPE_OR_DRAG_TO_VISUALIZE_360_VIEW" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="SELECT_PRESET_OF_YOUR_CHOICE" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="NO_INSTRUCTION" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="4" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ComSignalState" xmi:id="type.vc.ComSignalState" xmi:type="uml:Enumeration">
+                <ownedAttribute name="COMSIGSTATE_INIT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMSIGSTATE_VALID" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMSIGSTATE_INVALID" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMSIGSTATE_TIMEOUT" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="3" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+                <ownedAttribute name="COMSIGSTATE_ERROR" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                    <defaultValue value="0" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="UserEventDataPort" xmi:id="type.vc.UserEventDataPort" xmi:type="uml:Class">
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoInterfaceVersionNumber"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="deltaPolarAngle_u16" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                </ownedAttribute>
+                <ownedAttribute name="deltaAzimuthAngle_u16" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                </ownedAttribute>
+                <ownedAttribute name="GestureFinger_nu_u8" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="gestureCounter" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="deltaZoom" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint16"/>
+                </ownedAttribute>
+                <ownedAttribute name="isSequence" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="clickEventX_px" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+                <ownedAttribute name="clickEventY_px" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.float32"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="UserEventDataPort_InterfaceVersion" xmi:id="type.vc.UserEventDataPort_InterfaceVersion" xmi:type="uml:Class">
+                <ownedAttribute isStatic="true" name="UserEventDataPort_VERSION" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ScreenSwitchDataPort" xmi:id="type.vc.ScreenSwitchDataPort" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.vc.ScreenSwitchDataPort.screen" xmi:id="type.vc.ScreenSwitchDataPort.screen.0.tips" xmi:type="uml:Comment">
+                    <body>Requested screen by name according to hmi_display_config.json</body>
+                </ownedComment>
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoInterfaceVersionNumber"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="HmiOutUserActScreenReq_u8" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.AP_HMIToAP.ScreenTypes"/>
+                </ownedAttribute>
+                <ownedAttribute name="blindSpotViewType" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.BlindSpotViewStatus"/>
+                </ownedAttribute>
+                <ownedAttribute name="currentViewMode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.AP_HMIToAP.ScreenTypes"/>
+                </ownedAttribute>
+                <ownedAttribute name="ClusterScreenResponse_nu_u8" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint8"/>
+                </ownedAttribute>
+                <ownedAttribute name="deactivateView" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="transparencyPreset" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.TransparencyPreset"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ScreenSwitchDataPort_InterfaceVersion" xmi:id="type.vc.ScreenSwitchDataPort_InterfaceVersion" xmi:type="uml:Class">
+                <ownedAttribute isStatic="true" name="ScreenSwitchDataPort_VERSION" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="OverlayRequestDataPort" xmi:id="type.vc.OverlayRequestDataPort" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.vc.OverlayRequestDataPort" xmi:id="type.vc.OverlayRequestDataPort.0.comment" xmi:type="uml:Comment">
+                    <body>Requested overlay by name according to hmi_overlay_config.json</body>
+                </ownedComment>
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoInterfaceVersionNumber"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute isOrdered="true" name="visibilityTags" visibility="public" xmi:type="uml:Property">
+                    <lowerValue value="35" xmi:type="uml:LiteralInteger"/>
+                    <upperValue value="35" xmi:type="uml:LiteralUnlimitedNatural"/>
+                    <type xmi:idref="type.boolean"/>
+                </ownedAttribute>
+                <ownedAttribute name="parkingPosesVC" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.MF_HMIH.ParkingTargetPoses"/>
+                </ownedAttribute>
+                <ownedAttribute name="selectedParkingPose" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.SelectedTargetPose"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="OverlayRequestDataPort_InterfaceVersion" xmi:id="type.vc.OverlayRequestDataPort_InterfaceVersion" xmi:type="uml:Class">
+                <ownedAttribute isStatic="true" name="OverlayRequestDataPort_VERSION" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                    <defaultValue value="2" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ErrorCodeDataPort" xmi:id="type.vc.ErrorCodeDataPort" xmi:type="uml:Class">
+                <ownedComment annotatedElement="type.vc.ErrorCodeDataPort" xmi:id="type.vc.ErrorCodeDataPort.0.comment" xmi:type="uml:Comment">
+                    <body>Error code has been displayed on HMI</body>
+                </ownedComment>
+                <ownedAttribute name="uiVersionNumber" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.AlgoInterfaceVersionNumber"/>
+                </ownedAttribute>
+                <ownedAttribute name="sSigHeader" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.eco.SignalHeader"/>
+                </ownedAttribute>
+                <ownedAttribute name="errorCode" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.ErrorCode"/>
+                </ownedAttribute>
+                <ownedAttribute name="hmiWarningMessage" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.HMIWarningMessage"/>
+                </ownedAttribute>
+                <ownedAttribute name="hmiInstructionSet" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.vc.HMIInstructionSet"/>
+                </ownedAttribute>
+            </packagedElement>
+            <packagedElement name="ErrorCodeDataPort_InterfaceVersion" xmi:id="type.vc.ErrorCodeDataPort_InterfaceVersion" xmi:type="uml:Class">
+                <ownedAttribute isStatic="true" name="ErrorCodeDataPort_VERSION" visibility="public" xmi:type="uml:Property">
+                    <type xmi:idref="type.uint32"/>
+                    <defaultValue value="1" xmi:type="uml:LiteralString"/>
+                </ownedAttribute>
+            </packagedElement>
+        </packagedElement>
+    </uml:Model>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.boolean"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint8"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint8"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint16"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint16"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.uint64"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.sint64"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.float32"/>
+    <LocalProfile:PrimitiveType base_PrimitiveType="type.float64"/>
+    <LocalProfile:DataType base_DataType="type.LSM_GEOML.size_type"/>
+    <LocalProfile:PODStruct base_Class="type.LSM_GEOML.Pose_POD"/>
+    <LocalProfile:DataType base_DataType="type.eco.AlgoDataTimeStamp"/>
+    <LocalProfile:DataType base_DataType="type.eco.AlgoCycleCounter"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.AlgoSignalState"/>
+    <LocalProfile:PODStruct base_Class="type.eco.SignalHeader"/>
+    <LocalProfile:PODStruct base_Class="type.eco.ComponentExecutionMode"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.CompOpState"/>
+    <LocalProfile:PODStruct base_Class="type.eco.TraceData"/>
+    <LocalProfile:PODStruct base_Class="type.eco.VehicleParam"/>
+    <LocalProfile:PODStruct base_Class="type.eco.SensorMountPosition"/>
+    <LocalProfile:PODStruct base_Class="type.eco.SensorMountingPositionDetailed"/>
+    <LocalProfile:DataType base_DataType="type.eco.SensorID"/>
+    <LocalProfile:PODStruct base_Class="type.eco.ComponentResponse"/>
+    <LocalProfile:PODStruct base_Class="type.eco.TimeServiceData"/>
+    <LocalProfile:PODStruct base_Class="type.eco.BaseCtrlData"/>
+    <LocalProfile:PODStruct base_Class="type.eco.AlgoCompState"/>
+    <LocalProfile:PODStruct base_Class="type.eco.ExecutionMode"/>
+    <LocalProfile:PODStruct base_Class="type.eco.SystemTime"/>
+    <LocalProfile:DataType base_DataType="type.eco.AlgoInterfaceVersionNumber"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.CompState_t"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.OpMode"/>
+    <LocalProfile:PODStruct base_Class="type.eco.FirstLastComponentExecution"/>
+    <LocalProfile:PODStruct base_Class="type.eco.FrameworkControl"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.CompStage"/>
+    <LocalProfile:Enumeration base_Enumeration="type.eco.DiagnosisEventStatus"/>
+    <LocalProfile:Enumeration base_Enumeration="type.AP_HMIToAP.ScreenTypes"/>
+    <LocalProfile:PODStruct base_Class="type.MF_HMIH.MF_HMIH_Consts"/>
+    <LocalProfile:PODStruct base_Class="type.MF_HMIH.ParkingTargetPose"/>
+    <LocalProfile:PODStruct base_Class="type.MF_HMIH.ParkingTargetPoses"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.OverlayTag"/>
+    <LocalProfile:PODStruct base_Class="type.vc.SelectedTargetPose"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.BlindSpotViewStatus"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.TransparencyPreset"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.ErrorCode"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.HMIWarningMessage"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.HMIInstructionSet"/>
+    <LocalProfile:Enumeration base_Enumeration="type.vc.ComSignalState"/>
+    <LocalProfile:PODStruct base_Class="type.vc.UserEventDataPort"/>
+    <LocalProfile:InterfaceVersion base_Class="type.vc.UserEventDataPort_InterfaceVersion"/>
+    <LocalProfile:PODStruct base_Class="type.vc.ScreenSwitchDataPort"/>
+    <LocalProfile:InterfaceVersion base_Class="type.vc.ScreenSwitchDataPort_InterfaceVersion"/>
+    <LocalProfile:PODStruct base_Class="type.vc.OverlayRequestDataPort"/>
+    <LocalProfile:InterfaceVersion base_Class="type.vc.OverlayRequestDataPort_InterfaceVersion"/>
+    <LocalProfile:PODStruct base_Class="type.vc.ErrorCodeDataPort"/>
+    <LocalProfile:InterfaceVersion base_Class="type.vc.ErrorCodeDataPort_InterfaceVersion"/>
+</xmi:XMI>

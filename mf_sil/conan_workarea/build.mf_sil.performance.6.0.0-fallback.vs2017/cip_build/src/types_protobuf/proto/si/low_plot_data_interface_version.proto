@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.si.low_plot_data_interface_version;
+
+message LowPlotData_InterfaceVersion{
+  optional uint32 LowPlotData_VERSION = 2265;
+}
+
+message LowPlotData_InterfaceVersion_array_port{
+   repeated pb.si.low_plot_data_interface_version.LowPlotData_InterfaceVersion data = 1085;
+}

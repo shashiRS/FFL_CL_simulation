@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+
+package pb.mf_tonh.mf_tonh_consts;
+
+message MF_TONH_Consts{
+  optional uint32 NUM_SPEAKERS = 691;
+  optional uint32 NUM_MTS_DEBUG_FREESPACE_TONH = 3580;
+}
+
+message MF_TONH_Consts_array_port{
+   repeated pb.mf_tonh.mf_tonh_consts.MF_TONH_Consts data = 1264;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package pb.ap_psm_app.dmstate;
+
+enum DMState {
+  DM_INACTIVE = 0;
+  DM_DRIVER_MANEUVERING = 1;
+  DM_DRIVER_ASSISTS_AP_MANEUVER = 2;
+  DM_DRIVER_NOT_MANEUVERING = 3;
+  DM_PASSENGER_IN_VEHICLE = 4;
+  DM_NOONE_IN_VEHICLE = 5;
+}

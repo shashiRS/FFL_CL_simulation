@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_vehstatesigprovider.steering_col_switches_status_port_interface_version;
+
+message SteeringColSwitchesStatusPort_InterfaceVersion{
+  optional uint32 SteeringColSwitchesStatusPort_VERSION = 2317;
+}
+
+message SteeringColSwitchesStatusPort_InterfaceVersion_array_port{
+   repeated pb.ap_vehstatesigprovider.steering_col_switches_status_port_interface_version.SteeringColSwitchesStatusPort_InterfaceVersion data = 3255;
+}

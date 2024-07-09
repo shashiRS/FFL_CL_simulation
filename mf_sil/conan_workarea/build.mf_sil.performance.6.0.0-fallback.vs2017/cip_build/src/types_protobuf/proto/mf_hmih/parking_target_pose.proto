@@ -1,0 +1,19 @@
+
+syntax = "proto2";
+
+import "lsm_geoml/pose_pod.proto";
+
+package pb.mf_hmih.parking_target_pose;
+
+message ParkingTargetPose{
+  optional uint32 id_nu = 111;
+  optional bool isFree_nu = 1388;
+  optional bool isScanned_nu = 230;
+  optional bool isSelected_nu = 61;
+  optional bool isSwitchable_nu = 387;
+  optional pb.lsm_geoml.pose_pod.Pose_POD pose_nu = 151;
+}
+
+message ParkingTargetPose_array_port{
+   repeated pb.mf_hmih.parking_target_pose.ParkingTargetPose data = 3660;
+}

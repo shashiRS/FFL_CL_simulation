@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_tp.traj_plan_debug_port;
+
+message TrajPlanDebugPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated sint32 debugInt = 1230;
+  repeated float debugFloat = 2041;
+  optional uint32 mNumOfReplanCalls = 1717;
+  optional uint32 mTrajPlanState = 3141;
+  optional bool mReplanSuccessful_nu = 699;
+  optional bool mStateEntry_nu = 2547;
+}
+
+message TrajPlanDebugPort_array_port{
+   repeated pb.ap_tp.traj_plan_debug_port.TrajPlanDebugPort data = 2697;
+}

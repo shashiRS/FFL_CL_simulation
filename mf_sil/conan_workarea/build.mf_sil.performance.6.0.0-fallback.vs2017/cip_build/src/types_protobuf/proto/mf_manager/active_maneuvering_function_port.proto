@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+import "mf_manager/active_maneuvering_function.proto";
+
+package pb.mf_manager.active_maneuvering_function_port;
+
+message ActiveManeuveringFunctionPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional pb.mf_manager.active_maneuvering_function.ActiveManeuveringFunction loCtrlRequestOrigin = 1406;
+  optional pb.mf_manager.active_maneuvering_function.ActiveManeuveringFunction laCtrlRequestOrigin = 1269;
+}
+
+message ActiveManeuveringFunctionPort_array_port{
+   repeated pb.mf_manager.active_maneuvering_function_port.ActiveManeuveringFunctionPort data = 1543;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.ap_hmitoap.visu_input_data_interface_version;
+
+message VisuInputData_InterfaceVersion{
+  optional uint32 VisuInputData_VERSION = 2362;
+}
+
+message VisuInputData_InterfaceVersion_array_port{
+   repeated pb.ap_hmitoap.visu_input_data_interface_version.VisuInputData_InterfaceVersion data = 3953;
+}

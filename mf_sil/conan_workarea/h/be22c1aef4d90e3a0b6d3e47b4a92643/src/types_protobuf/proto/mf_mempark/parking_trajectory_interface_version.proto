@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_mempark.parking_trajectory_interface_version;
+
+message ParkingTrajectory_InterfaceVersion{
+  optional uint32 ParkingTrajectory_VERSION = 535;
+}
+
+message ParkingTrajectory_InterfaceVersion_array_port{
+   repeated pb.mf_mempark.parking_trajectory_interface_version.ParkingTrajectory_InterfaceVersion data = 1619;
+}

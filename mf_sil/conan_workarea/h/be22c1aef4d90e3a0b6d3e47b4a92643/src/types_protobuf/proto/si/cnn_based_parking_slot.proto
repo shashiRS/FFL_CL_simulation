@@ -1,0 +1,18 @@
+
+syntax = "proto2";
+
+import "si/quadrilateral_serializable.proto";
+import "si/parking_scenario_confidence.proto";
+
+package pb.si.cnn_based_parking_slot;
+
+message CnnBasedParkingSlot{
+  optional uint32 slotId_nu = 3547;
+  optional pb.si.quadrilateral_serializable.QuadrilateralSerializable slotShape_m = 2967;
+  optional uint32 existenceProb_perc = 2424;
+  optional pb.si.parking_scenario_confidence.ParkingScenarioConfidence parkingScenarioConfidence_perc = 564;
+}
+
+message CnnBasedParkingSlot_array_port{
+   repeated pb.si.cnn_based_parking_slot.CnnBasedParkingSlot data = 3548;
+}

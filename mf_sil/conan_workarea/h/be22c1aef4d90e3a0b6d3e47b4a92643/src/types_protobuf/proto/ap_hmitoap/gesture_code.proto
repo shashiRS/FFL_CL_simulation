@@ -1,0 +1,21 @@
+
+syntax = "proto2";
+
+package pb.ap_hmitoap.gesture_code;
+
+enum GestureCode {
+  NO_ACTION = 0;
+  PRESS = 1;
+  LONGPRESS = 2;
+  RELEASE = 3;
+  CLICK = 4;
+  RIGHTCLICK = 5;
+  DRAG = 6;
+  ZOOM = 7;
+  ROTATE = 8;
+  RAW = 9;
+  DOUBLECLICK = 10;
+  TRIPLECLICK = 11;
+  FLICK = 12;
+  INVALID = 31;
+}

@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+import "si/virtual_line_info.proto";
+
+package pb.si.virtual_line_info_serializable;
+
+message VirtualLineInfoSerializable{
+  optional uint32 actualSize = 3009;
+  repeated pb.si.virtual_line_info.VirtualLineInfo array = 1205;
+}
+
+message VirtualLineInfoSerializable_array_port{
+   repeated pb.si.virtual_line_info_serializable.VirtualLineInfoSerializable data = 2171;
+}

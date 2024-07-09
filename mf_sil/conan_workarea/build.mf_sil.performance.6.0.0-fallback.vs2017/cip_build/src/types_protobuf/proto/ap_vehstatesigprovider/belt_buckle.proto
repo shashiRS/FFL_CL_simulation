@@ -1,0 +1,11 @@
+
+syntax = "proto2";
+
+package pb.ap_vehstatesigprovider.belt_buckle;
+
+enum BeltBuckle {
+  BELT_STATUS_NOT_INSTALLED = 0;
+  BELT_STATUS_NOT_AVAILABLE = 1;
+  BELT_STATUS_OPEN = 2;
+  BELT_STATUS_LOCKED = 3;
+}

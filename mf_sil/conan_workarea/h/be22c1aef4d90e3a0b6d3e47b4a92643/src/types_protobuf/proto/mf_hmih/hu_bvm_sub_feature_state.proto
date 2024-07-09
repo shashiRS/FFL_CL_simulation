@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package pb.mf_hmih.hu_bvm_sub_feature_state;
+
+enum HuBvmSubFeatureState {
+  UNUSED = 0;
+  BVM_IN_IVI_LEFT_ACTIVE = 1;
+  BVM_IN_IVI_RIGHT_ACTIVE = 2;
+  BVM_IN_IC_LEFT_ACTIVE = 3;
+  BVM_IN_IC_RIGHT_ACTIVE = 4;
+}

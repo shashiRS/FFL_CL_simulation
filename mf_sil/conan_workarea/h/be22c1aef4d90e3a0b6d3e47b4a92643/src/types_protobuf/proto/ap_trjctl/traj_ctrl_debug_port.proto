@@ -1,0 +1,48 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.ap_trjctl.traj_ctrl_debug_port;
+
+message TrajCtrlDebugPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  repeated sint32 debugInt = 1230;
+  repeated float debugFloat = 2041;
+  optional float currentDeviation_m = 275;
+  optional float orientationError_rad = 288;
+  optional float velocityLimitReqInterpolTraj_mps = 1936;
+  optional float distanceToStopReqInterExtrapolTraj_m = 1927;
+  optional float xInterpolTraj_m = 1492;
+  optional float yInterpolTraj_m = 2856;
+  optional float curvatureInterpolTraj_1pm = 3245;
+  optional float curvaturePreviewed_1pm = 2690;
+  optional float filteredSteerIntervention_nu = 3148;
+  optional float trajIntermediateValueRaw_perc = 3332;
+  optional float steerAngReqRaw_rad = 3658;
+  optional float steerAngReqYawDeviation_rad = 2976;
+  optional float steerAngReqLateralDeviation_rad = 1656;
+  optional float steerAngReqCurvature_rad = 1998;
+  optional uint32 currentTrajectoryIndex_nu = 3781;
+  optional uint32 pathControlRequestMode_nu = 3162;
+  optional uint32 rawSteerAngleRequestMode_nu = 2356;
+  optional uint32 rateAndAccelerationLimitatMode = 2303;
+  optional uint32 comfStandStillSteeringMode_nu = 3748;
+  optional uint32 comfStandstillSteeringExtrapolationMode_nu = 495;
+  optional bool driverInterventionProcessed_nu = 3469;
+  optional bool driverInterventionDetected_nu = 1957;
+  optional bool free1 = 304;
+  optional bool free2 = 339;
+  optional bool gearCorrect_nu = 1631;
+  optional bool standstillSteeringDesired_nu = 3161;
+  optional bool distanceControlFinished_nu = 348;
+  optional bool standstillHoldCur_nu = 2401;
+  optional bool finalVehicleStateReached_nu = 880;
+  optional bool outsideTrajectoryStart_nu = 1122;
+  optional bool outsideTrajectoryEnd_nu = 2694;
+}
+
+message TrajCtrlDebugPort_array_port{
+   repeated pb.ap_trjctl.traj_ctrl_debug_port.TrajCtrlDebugPort data = 2703;
+}

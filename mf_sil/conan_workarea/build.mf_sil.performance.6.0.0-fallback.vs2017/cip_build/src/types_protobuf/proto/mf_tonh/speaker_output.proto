@@ -1,0 +1,15 @@
+
+syntax = "proto2";
+
+
+package pb.mf_tonh.speaker_output;
+
+message SpeakerOutput{
+  optional uint32 pitch_nu = 4064;
+  optional uint32 volume_nu = 2118;
+  optional bool soundOn_nu = 876;
+}
+
+message SpeakerOutput_array_port{
+   repeated pb.mf_tonh.speaker_output.SpeakerOutput data = 1988;
+}

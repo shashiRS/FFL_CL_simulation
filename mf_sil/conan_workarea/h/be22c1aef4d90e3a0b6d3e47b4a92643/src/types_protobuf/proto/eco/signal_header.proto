@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/algo_signal_state.proto";
+
+package pb.eco.signal_header;
+
+message SignalHeader{
+  optional uint64 uiTimeStamp = 2263;
+  optional uint32 uiMeasurementCounter = 3754;
+  optional uint32 uiCycleCounter = 1597;
+  optional pb.eco.algo_signal_state.AlgoSignalState eSigStatus = 722;
+}
+
+message SignalHeader_array_port{
+   repeated pb.eco.signal_header.SignalHeader data = 3179;
+}

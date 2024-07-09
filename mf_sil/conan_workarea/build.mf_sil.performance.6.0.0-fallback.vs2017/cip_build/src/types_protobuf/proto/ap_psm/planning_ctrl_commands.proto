@@ -1,0 +1,27 @@
+
+syntax = "proto2";
+
+import "ap_psm/apstate.proto";
+import "ap_psm/applanning_specification.proto";
+import "ap_psm/rmstate.proto";
+import "ap_psm/gpstate.proto";
+import "ap_psm/mpstate.proto";
+import "ap_psm/tpstate.proto";
+import "ap_psm/rastate.proto";
+
+package pb.ap_psm.planning_ctrl_commands;
+
+message PlanningCtrlCommands{
+  optional uint32 apChosenTargetPoseId_nu = 706;
+  optional pb.ap_psm.apstate.APState apState = 1885;
+  optional pb.ap_psm.applanning_specification.APPlanningSpecification apPlanningSpecification = 2631;
+  optional pb.ap_psm.rmstate.RMState rmState = 3203;
+  optional pb.ap_psm.gpstate.GPState gpState = 3592;
+  optional pb.ap_psm.mpstate.MPState mpState = 1527;
+  optional pb.ap_psm.tpstate.TPState tpState = 821;
+  optional pb.ap_psm.rastate.RAState raState = 2124;
+}
+
+message PlanningCtrlCommands_array_port{
+   repeated pb.ap_psm.planning_ctrl_commands.PlanningCtrlCommands data = 1528;
+}

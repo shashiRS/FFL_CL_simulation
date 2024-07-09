@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_lvmd.lvmd_status_port_interface_version;
+
+message LvmdStatusPort_InterfaceVersion{
+  optional uint32 LvmdStatusPort_VERSION = 2543;
+}
+
+message LvmdStatusPort_InterfaceVersion_array_port{
+   repeated pb.mf_lvmd.lvmd_status_port_interface_version.LvmdStatusPort_InterfaceVersion data = 12;
+}

@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.mf_hmih.user_defined_slot_port_interface_version;
+
+message UserDefinedSlotPort_InterfaceVersion{
+  optional uint32 UserDefinedSlotPort_VERSION = 843;
+}
+
+message UserDefinedSlotPort_InterfaceVersion_array_port{
+   repeated pb.mf_hmih.user_defined_slot_port_interface_version.UserDefinedSlotPort_InterfaceVersion data = 1026;
+}

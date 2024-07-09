@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+
+package pb.hpsd.platform_state_port_interface_version;
+
+message PlatformStatePort_InterfaceVersion{
+  optional uint32 PlatformStatePort_VERSION = 806;
+}
+
+message PlatformStatePort_InterfaceVersion_array_port{
+   repeated pb.hpsd.platform_state_port_interface_version.PlatformStatePort_InterfaceVersion data = 78;
+}

@@ -1,0 +1,17 @@
+
+syntax = "proto2";
+
+import "eco/signal_header.proto";
+
+package pb.pdcp.proc_to_logic_port;
+
+message ProcToLogicPort{
+  optional uint32 uiVersionNumber = 2124;
+  optional pb.eco.signal_header.SignalHeader sSigHeader = 1033;
+  optional float minimalDistance_m = 3794;
+  optional bool processingError_nu = 2689;
+}
+
+message ProcToLogicPort_array_port{
+   repeated pb.pdcp.proc_to_logic_port.ProcToLogicPort data = 840;
+}

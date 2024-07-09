@@ -1,0 +1,10 @@
+
+syntax = "proto2";
+
+package pb.ap_common.traffic_side;
+
+enum TrafficSide {
+  LEFT_HAND_TRAFFIC = 0;
+  RIGHT_HAND_TRAFFIC = 1;
+  MAX_NUM_TRAFFIC_SIDE_TYPES = 2;
+}

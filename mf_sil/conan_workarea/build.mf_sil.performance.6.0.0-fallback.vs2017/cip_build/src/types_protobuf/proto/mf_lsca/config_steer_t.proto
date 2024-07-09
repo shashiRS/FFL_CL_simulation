@@ -1,0 +1,53 @@
+
+syntax = "proto2";
+
+import "mf_lsca/config_steer_propose_t.proto";
+import "cml/vec2_df_pod.proto";
+import "mf_lsca/config_steer_resist_t.proto";
+
+package pb.mf_lsca.config_steer_t;
+
+message configSteer_t{
+  optional pb.mf_lsca.config_steer_propose_t.configSteerPropose_t proposalData = 3670;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD maxSteeringAngleLimits_deg = 336;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD maxSteeringAngleDelta_deg = 3987;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD maxSteeringTorqueLimits_Nm = 1822;
+  optional pb.cml.vec2_df_pod.Vec2Df_POD maxSteeringTorqueDelta_Nms = 2200;
+  optional pb.mf_lsca.config_steer_resist_t.configSteerResist_t resistanceData = 1940;
+  optional float roiLengthOffset_m = 3175;
+  optional float roiLength_s = 2236;
+  optional float roiWidthOffset_m = 3478;
+  optional float roiWidth_s = 707;
+  optional float roiTravelledDistOffsetProp_m = 2806;
+  optional float roiTravelledDistOffsetResist_m = 663;
+  optional float roiTravelledDistProp_s = 2008;
+  optional float roiTravelledDistResist_s = 1271;
+  optional float enlargementFront_m = 3610;
+  optional float enlargementRear_m = 1339;
+  optional float enlargementSide_m = 262;
+  optional float immediateOverrideTorque_Nm = 1533;
+  optional float timeBasedOverrideTorque_Nm = 3376;
+  optional float overrideTime_s = 688;
+  optional float overrideDistance_m = 3439220;
+  optional float lowerActivationSpeedForwards_ms = 1858;
+  optional float upperActivationSpeedForwards_ms = 3994;
+  optional float lowerDeactivationSpeedForwards_ms = 885;
+  optional float upperDeactivationSpeedForwards_ms = 1789;
+  optional float lowerActivationSpeedBackwards_ms = 2600;
+  optional float upperActivationSpeedBackwards_ms = 2668;
+  optional float lowerDeactivationSpeedBackwards_ms = 827;
+  optional float upperDeactivationSpeedBackwards_ms = 227;
+  optional float rearSteerAngleRatio = 1939;
+  optional uint32 minStaticObjectProbability_perc = 3245;
+  optional uint32 minDynamicObjectProbability_perc = 2440;
+  optional bool stopInterventionIfError_nu = 3855;
+  optional bool checkDoors_nu = 2707;
+  optional bool checkDriverSeatbelt_nu = 1677;
+  optional bool checkTrunk_nu = 1989;
+  optional bool checkSeat_nu = 3889;
+  optional bool torqueInterfaceActive_nu = 1116;
+}
+
+message configSteer_t_array_port{
+   repeated pb.mf_lsca.config_steer_t.configSteer_t data = 3770;
+}

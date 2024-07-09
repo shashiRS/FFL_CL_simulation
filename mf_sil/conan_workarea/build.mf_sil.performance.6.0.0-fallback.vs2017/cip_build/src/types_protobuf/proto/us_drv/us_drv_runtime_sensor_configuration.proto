@@ -1,0 +1,27 @@
+
+syntax = "proto2";
+
+import "us_drv/us_drv_sensor_mode.proto";
+
+package pb.us_drv.us_drv_runtime_sensor_configuration;
+
+message UsDrvRuntimeSensorConfiguration{
+  optional pb.us_drv.us_drv_sensor_mode.UsDrvSensorMode state = 3190;
+  repeated uint32 stochasticCodes_ms = 169;
+  repeated uint32 firingSchemes = 415;
+  optional uint32 firCoefficientSet = 2380;
+  optional uint32 receiveGain = 1890;
+  optional uint32 advancedPathConfiguration = 3571;
+  optional uint32 aatgConfiguration1 = 3436;
+  optional uint32 aatgConfiguration2 = 3343;
+  optional uint32 adaptiveThresholdGeneration = 2277;
+  optional uint32 swVersionMajor = 1453;
+  optional uint32 swVersionMinor = 3246;
+  optional uint32 hwVersionMajor = 1426;
+  optional uint32 hwVersionMinor = 3217;
+  optional uint32 serialNumber = 3003;
+}
+
+message UsDrvRuntimeSensorConfiguration_array_port{
+   repeated pb.us_drv.us_drv_runtime_sensor_configuration.UsDrvRuntimeSensorConfiguration data = 2022;
+}
