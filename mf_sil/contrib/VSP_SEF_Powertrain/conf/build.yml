@@ -1,0 +1,33 @@
+# general
+name: SEF_Powertrain
+type: project
+license: Continental Teves AG & Co. oHG; all rights reserved
+major_version: 1
+description: Powertrain surrogate model
+
+options:
+    CEM_PROJECT:
+        type: boolean
+        enum:
+            - true
+            - false
+
+# build variants
+variants:
+   generic:
+     build_platforms:
+       - vs2017
+       - vs2017_debug
+       #- ubuntu_20_04_x86_64
+       - ubuntu_20_04_x86_64-release
+     groups:
+       - TARGET_COMPONENT
+     options:
+       CEM_PROJECT: false
+     uses:
+       carmaker:
+         release: 10.2.1-release8
+         variant: external
+         conan:
+           user: 3rdparty
+           channel: releases

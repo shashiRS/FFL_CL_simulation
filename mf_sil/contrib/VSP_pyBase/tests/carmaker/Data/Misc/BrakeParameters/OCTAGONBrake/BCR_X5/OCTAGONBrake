@@ -1,0 +1,23 @@
+FileIdent = CarMaker-Brake-OCTAGONBrake 1
+# BMW X5 parameter based on system identification
+
+OCTAGONBrake.UseABS = 1 # ABS torque limitation to physical possible value 1:=yes 0:=no
+OCTAGONBrake.UseMode = 1 # Use 0 for Ramp, 1 for PT1 behavior and 2 for PT2 behavior for torque ramping
+OCTAGONBrake.InputKind = 2 # Use 0 for Acceleration (-), 1 for PMC (+) and 2 for Torque (-) (ATTENTION: Please adjust RampGradient_EBA accordingly!!)
+OCTAGONBrake.PedalAct2pMC = 150
+OCTAGONBrake.pWB2Trq = 40
+OCTAGONBrake.DeadTime_CAN = 	0.15 # request to activation delay (CAN, Gateway etc.) only for algo braking
+OCTAGONBrake.DeadTime_init = 	0.080 # physical delay only for first activation from zero torque
+OCTAGONBrake.TimeConstPT1_Driver = 	0.015 # s
+OCTAGONBrake.TimeConstPT1_EBA = 	0.013 # s
+OCTAGONBrake.RampGradient_Driver_Nm/s = 60000 # Nm/s
+OCTAGONBrake.RampGradient_EBA = 	100 # InputKind 0 := m/s³, InputKind 1 := bar/s, InputKind 2:= Nm/s
+OCTAGONBrake.TrqDistrib.FL = 	0.35
+OCTAGONBrake.TrqDistrib.FR = 	0.35
+OCTAGONBrake.TrqDistrib.RL = 	0.15
+OCTAGONBrake.TrqDistrib.RR = 	0.15
+OCTAGONBrake.PT2_Coeff_b0 = 1
+OCTAGONBrake.PT2_Coeff_a0 = 1
+OCTAGONBrake.PT2_Coeff_a1 = 0.121184210526316
+OCTAGONBrake.PT2_Coeff_a2 = 0.0100900277008310
+OCTAGONBrake.max_decel_mps2 = 9.3 # maximal deceleration possible for algo braking in m/s²

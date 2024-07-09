@@ -1,0 +1,40 @@
+FileIdent = CarMaker-Generic-MoCo_Brake_Autocode 1
+
+GenericPlugin.MoCo_Brake_Autocode.AbsPlace = BC
+GenericPlugin.MoCo_Brake_Autocode.Reload  = Always
+
+# Brake Model for INCREASE of brake torque (equivalent to pressing brake pedal)
+
+# PT2-Model Parameter for set-torque to measured acceleration:
+MoCoBrake.K_brk = 0.0020
+MoCoBrake.w0_brkinit = 5 # Frequency of first PT2 increase model used for blending
+MoCoBrake.w0_brk = 10 # Frequency of second PT2 increase model used for blending
+MoCoBrake.D_brk = 0.6
+MoCoBrake.brake_pres_exist_threshold = -0.1 # Brake threshold to switch delays during brake pressure build
+MoCoBrake.delay_brake_inc = 0.08 # Delay in brake increase model when there is considerable pressure in system (sec)
+MoCoBrake.delay_brake_inc_init = 0.3 # Delay in brake increase model when there is no considerable pressure in system (sec)
+MoCoBrake.brakeBlendStrt = 0.02 # Deceleration by brake at which blending of pt2 models starts during increase phase
+MoCoBrake.brakeBlendRange = 0.1 # Range of deceleration by brake in which blending of pt2 models happens during increase phase
+
+# Brake Model for DECREASE of brake torque (equivalent to releasing brake pedal)
+
+# PT1-Model Parameter for set-torque to measured torque:
+MoCoBrake.K_brk_trq_dec = 1
+MoCoBrake.T_brk_trq_dec = 0.17
+
+# PT1-Model Parameter for measured torque to acceleration:
+MoCoBrake.K_brk_accel_dec = 0.0019467
+MoCoBrake.T_brk_accel_dec = 0.13
+
+#Torque Distribution
+MoCoBrake.Trq_Distrib_FL = 0.3
+MoCoBrake.Trq_Distrib_FR = 0.3
+MoCoBrake.Trq_Distrib_RL = 0.2
+MoCoBrake.Trq_Distrib_RR = 0.2
+
+MoCoBrake.accel_to_trq = 510 # approximately vehicle_mass * tire_radius
+
+# SSM Functionality
+MoCoBrake.Brk_SSM_Decel_Lim = -2 #m/s^2
+MoCoBrake.Brk_SSM_Hold_Grd_Lim = -8 #m/s^3
+MoCoBrake.Brk_SSM_Release_Grd_Lim = 8 #m/s^3

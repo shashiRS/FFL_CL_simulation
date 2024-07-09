@@ -1,0 +1,49 @@
+// Documentation for the Bricks Jenkins Pipeline is available at https://readthedocs.cmo.conti.de/docs/cip-pipeline-lib-user/en/latest/
+import groovy.io.FileType
+import groovy.xml.*
+
+@Library('bricks_pipeline_lib') _
+
+addTask(
+    name : "read_smoketest_results",
+    onSameNode: true,
+	match: [
+          platform: "vs2017",
+          variant: "SMOKE_TEST",
+          target: "build",
+      ]
+){  
+
+    
+    def files = findFiles(glob: '**/TestReport.xml')
+	if (files) {
+		def fileContents = readFile(files[0].path)
+ 
+        def xmlData = new XmlSlurper().parseText(fileContents)
+		
+		def errorMessages = []
+		xmlData.test_case.each { testCase ->
+			def testResult = testCase.test_result.text()
+			if (testResult == "Failed") {
+				if (testCase.test_instuctions) {
+					testCase.test_instuctions.test_eval_detail.each { testEvalDetail ->
+						if (testEvalDetail.result.text() == "Failed") {
+							def errorMessage = testEvalDetail.message.text()
+							errorMessages.add(errorMessage)
+						}
+					}
+				}
+			}
+		}
+
+		if (errorMessages) {
+			println "The following errors occurred:"
+			errorMessages.each { errorMessage ->
+				throw new Exception(errorMessage)
+			}
+		} else {
+			println "All test cases passed"
+		}
+    }
+}
+bricks()

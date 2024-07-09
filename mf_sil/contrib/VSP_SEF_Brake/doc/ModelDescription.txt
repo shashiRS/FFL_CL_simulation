@@ -1,0 +1,21 @@
+This brake model builds upon the previously Rampedbrake model.
+
+When the driver is applying the brakes, the brake torque is calculated based on the equations of the similar to CarMaker Pressure Distibution model: pedal actuation to master cylinder pressure
+
+BrakeTorque[FL, FR, RL, RR] = Brake_pedal * pedal2MasterCylinder * TrqDistrib[Fl, FR, RL, RR] * MasterCylinder2Trq ---------------------- (1)
+
+The build up of this torque is based on a PT1 delay element with a user adjustable time constant
+
+When the brake model receives a target deceleration, using a PT1 delay element, the build up of the deceleration is calculated. This PT1 element has its own time constant parameter
+
+From this build-up deceleration, the brake torque is calculated as follows:
+
+BrakeTorque[FL, FR, RL, RR] = aReq * VehicleMass * TireRadius * TrqDistrib[Fl, FR, RL, RR] --------------------- (2)
+
+The higher of the torque values from (1) and (2) is passed on to CarMaker
+
+If the EBA is active and the brake torque is generated due to EBA, then the IPGDriver's longitudinal controller is turned off and the cluch pedal is pressed
+
+The time constant for PT1 element for the driver braking has to be higher than the time constant for PT1 element for braking via target deceleration. The time constants for the driver braking and algo braking reduce by 250ms and 200ms respectively when the vehicle longitudinal deceleration goes beyond 1 m/s^2 to account for pre-load/pre-fill effects
+
+Additionally, there is a DeadTime parameter which accounts for the time between the actuation of the brake pedal/reception of target deceleration and generation of brake torque

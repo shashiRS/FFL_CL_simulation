@@ -1,0 +1,65 @@
+cmake_minimum_required(VERSION 3.5)
+project(OCTAGONBrake)
+
+# Both path settings will result in the same output folder structure. cmake behaves differently in Windows and Linux
+IF(WIN32)
+   set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+ELSE()
+   set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE})
+   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE})
+   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE})
+ENDIF()
+
+SET(CARMAKER_INC_DIR ${CARMAKER_DIR}/include)
+
+IF(WIN32)
+	ADD_COMPILE_DEFINITIONS(WIN32 WIN64 CM_NUMVER=${CM_NUMVER})
+	ADD_LINK_OPTIONS(-SAFESEH:NO)
+ELSEIF(UNIX)
+	ADD_COMPILE_DEFINITIONS(LINUX LINUX64 _GNU_SOURCE _FILE_OFFSET_BITS=64 CM_NUMVER=${CM_NUMVER})
+	ADD_COMPILE_OPTIONS(-O3 -m64 -fPIC -march=native)
+	ADD_LINK_OPTIONS(-m64 -fPIC)
+ENDIF()
+
+# source files of the executable
+add_library(${PROJECT_NAME} STATIC
+	OCTAGONBrake.h
+    OCTAGONBrake.cpp
+)
+
+# Specify path to internal CarMaker interfaces
+TARGET_INCLUDE_DIRECTORIES(${PROJECT_NAME}
+	PUBLIC
+		$<BUILD_INTERFACE:${CARMAKER_DIR}/include/>
+)
+ 
+# group source files for IDE generation
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR})
+
+install(
+	FILES "${CMAKE_CURRENT_SOURCE_DIR}/OCTAGONBrake.h"
+	COMPONENT TARGET_COMPONENT
+	DESTINATION include
+)
+
+# install build target to destination directory
+install(
+    TARGETS ${PROJECT_NAME}
+    COMPONENT TARGET_COMPONENT
+    DESTINATION lib
+    INCLUDES DESTINATION include
+)
+
+if (CIP_BUILD_SYSTEM_VERSION)
+	if (DEFINED CMAKE_BUILD_TYPE)
+		if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+			install(
+				FILES "${CMAKE_BINARY_DIR}/src/package/${PROJECT_NAME}/${PROJECT_NAME}.dir/Debug/${PROJECT_NAME}.pdb"
+				COMPONENT TARGET_COMPONENT
+				DESTINATION lib
+			)
+		endif()
+	endif()
+endif()

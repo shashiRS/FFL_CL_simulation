@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test_cases>
+	<test_case>
+		<test_spec_path>SmokeTestSpec_SEF_Brake.xlsx</test_spec_path>
+		<test_spec_sheet>ID_01</test_spec_sheet>
+	</test_case>
+	<test_case>
+		<test_spec_path>SmokeTestSpec_SEF_Brake.xlsx</test_spec_path>
+		<test_spec_sheet>ID_02</test_spec_sheet>
+	</test_case>
+	<test_case>
+		<test_spec_path>SmokeTestSpec_SEF_Brake.xlsx</test_spec_path>
+		<test_spec_sheet>ID_03</test_spec_sheet>
+	</test_case>
+</test_cases>

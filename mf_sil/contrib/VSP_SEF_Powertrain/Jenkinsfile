@@ -1,0 +1,3 @@
+// Documentation for the Bricks Jenkins Pipeline is available at https://readthedocs.cmo.conti.de/docs/cip-pipeline-lib-user/en/latest/
+@Library('bricks_pipeline_lib') _
+bricks()

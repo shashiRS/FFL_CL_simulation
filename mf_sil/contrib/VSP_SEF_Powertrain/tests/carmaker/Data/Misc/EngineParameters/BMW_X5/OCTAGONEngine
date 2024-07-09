@@ -1,0 +1,49 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-PTEngine-OCTAGONEngine 1
+FileCreator = CarMaker 10.2.1
+
+
+
+## Modelclass-specific Parameters ########################################
+PowerTrain.Engine.rotv_idle = 790.57
+PowerTrain.Engine.rotv_off = 500
+PowerTrain.Engine.rotv_max = 6875
+PowerTrain.Engine.rotv_opt = 2100
+PowerTrain.Engine.TrqFull:
+	474.34	0.0
+	632.46	151.03
+	790.57	265.38
+	955.28	350.15
+	1120.0	405.0
+	1280.0	434.95
+	1440.0	447.69
+	1600.0	450.0
+	3925.0	450.0
+	5475.0	444.25
+	6250.0	374.33
+	6458.3	309.39
+	6666.7	195.43
+	6875.0	0.0
+PowerTrain.Engine.TrqDrag:
+	474.34	-8.523
+	632.46	-8.523
+	790.57	-14.205
+	955.28	-17.165
+	1120.0	-20.124
+	1280.0	-22.999
+	1440.0	-25.874
+	1600.0	-28.749
+	3925.0	-70.524
+	5475.0	-98.375
+	6250.0	-112.3
+	6458.3	-116.04
+	6666.7	-119.79
+	6875.0	-123.53
+
+
+## Additional Parameters #################################################
+PowerTrain.Engine.BuildUpTime = 0.25
+PowerTrain.Engine.DeadTime = 0.265
+PowerTrain.Engine.I = 0.189
+PowerTrain.Engine.TrqKl15Off = -80.0
+PowerTrain.Engine.rotv_min = 475

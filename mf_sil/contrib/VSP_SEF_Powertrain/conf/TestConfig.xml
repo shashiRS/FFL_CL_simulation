@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test_cases>
+	<test_case>
+		<test_spec_path>SmokeTestSpec.xlsx</test_spec_path>
+		<test_spec_sheet>OCTAGONEngine_Braking</test_spec_sheet>
+	</test_case>
+	<test_case>
+		<test_spec_path>SmokeTestSpec.xlsx</test_spec_path>
+		<test_spec_sheet>DVA_Tests</test_spec_sheet>
+	</test_case>
+	<test_case>
+		<test_spec_path>SmokeTestSpec.xlsx</test_spec_path>
+		<test_spec_sheet>PT1_IPGDriver_Tests</test_spec_sheet>
+	</test_case>
+</test_cases>
