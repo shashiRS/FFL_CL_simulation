@@ -6,6 +6,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+import pandas as pd
 import plotly.graph_objects as go
 from tsf.core.results import NAN
 from tsf.core.testcase import (
@@ -78,31 +79,31 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
+
+            # calculate standstill/
+            df["calculated_standstill"] = df.apply(
+                lambda row: is_vehicle_in_standstill(
+                    row["standstillHoldCur_nu"], row["standstillSecureCur_nu"], row["motionStatus_nu"]
+                ),
+                axis=1,
+            )
+            df["lateralControlFinished_nu_new"] = df["lateralControlFinished_nu"].astype(bool)
+            #comfortable standstill
+            df["calculated_comfortable_standstill"] = (
+                df["calculated_standstill"] & ~df["lateralControlFinished_nu_new"] & (df["activateLaCtrl"] == 1) & (df["activateLoCtrl"] == 1)
+
+            )
+
+            df = calculate_comfortable_standstill_steering_duration(df)
+            df["calculated_standstill"] = df["calculated_standstill"].map({True: 1, False: 0})
+            df["calculated_comfortable_standstill"] = df["calculated_comfortable_standstill"].map({True: 1, False: 0})
 
             "Filter data by lateral control request and lateral operation mode control by path"
             df_filtered = df[(df["activateLaCtrl"] == 1) & (df["activateLoCtrl"] == 1)]
 
+
             if not df_filtered.empty:
-                # calculate standstill
-                df_filtered["calculated_standstill"] = df_filtered.apply(
-                    lambda row: is_vehicle_in_standstill(
-                        row["standstillHoldCur_nu"], row["standstillSecureCur_nu"], row["motionStatus_nu"]
-                    ),
-                    axis=1,
-                )
-                df_filtered["lateralControlFinished_nu"] = df_filtered["lateralControlFinished_nu"].astype(bool)
-
-                # comfortable standstill
-                df_filtered["calculated_comfortable_standstill"] = (
-                    df_filtered["calculated_standstill"] & ~df_filtered["lateralControlFinished_nu"]
-                )
-                df_filtered = calculate_comfortable_standstill_steering_duration(df_filtered)
-
                 # Ensure that the maximum standstill time caused by Comfortable standstill steering is less than or equal
                 # AP_C_KPI_STANDSTILL_TIME_S
                 df_filtered["is_below_threshold"] = (
@@ -115,11 +116,62 @@ class Step1(TestStep):
                 if assertion > 0:
                     self.result.measured_result = Result(numerator=0, denominator=1, unit="= 0 %")
                     test_result = fc.FAIL
+                    eval_text = " ".join(
+                        f"Maximum standstill time caused by Comfortable standstill steering > "
+                        f"AP_C_KPI_STANDSTILL_TIME_S({constants.MoCo.Parameter.AP_C_KPI_STANDSTILL_TIME_S})"
+                        f"Conditions: {test_result}.".split()
+                    )
+                    eval_0 = " ".join(
+                        f"MFControl shall ensure, that the maximum standstill time caused by comfortable standstill steering is less than or equal AP_C_KPI_STANDSTILL_TIME_S({constants.MoCo.Parameter.AP_C_KPI_STANDSTILL_TIME_S}).".split()
+                    )
+
+                    # Set table dataframe
+                    signal_summary = pd.DataFrame(
+                        {
+                            "Evaluation": {
+                                "1": eval_0,
+                            },
+                            "Result": {
+                                "1": eval_text,
+                            },
+                        }
+                    )
+                    sig_sum = fh.build_html_table(signal_summary)
+                    plot_titles.append("")
+                    plots.append(sig_sum)
+                    remarks.append("")
                 else:
                     self.result.measured_result = Result(numerator=100, denominator=1, unit="= 100 %")
                     test_result = fc.PASS
+                    eval_text = " ".join(
+                        f"Maximum standstill time caused by Comfortable standstill steering <= "
+                        f"AP_C_KPI_STANDSTILL_TIME_S({constants.MoCo.Parameter.AP_C_KPI_STANDSTILL_TIME_S})"
+                        f"Conditions: {test_result}.".split()
+                    )
 
+                    eval_0 = " ".join(
+                        f"MFControl shall ensure, that the maximum standstill time caused by comfortable standstill steering is less than or equal AP_C_KPI_STANDSTILL_TIME_S({constants.MoCo.Parameter.AP_C_KPI_STANDSTILL_TIME_S}).".split()
+                    )
+
+                    # Set table dataframe
+                    signal_summary = pd.DataFrame(
+                        {
+                            "Evaluation": {
+                                "1": eval_0,
+                            },
+                            "Result": {
+                                "1": eval_text,
+                            },
+                        }
+                    )
+                    sig_sum = fh.build_html_table(signal_summary)
+                    plot_titles.append("")
+                    plots.append(sig_sum)
+                    remarks.append("")
+
+                #fig = get_plot_signals(df)
                 fig = get_plot_signals(df)
+                fig.update_layout(constants.PlotlyTemplate.lgt_tmplt)
                 plot_titles.append("Graphical Overview")
                 plots.append(fig)
                 remarks.append("")
@@ -143,12 +195,35 @@ class Step1(TestStep):
                 self.result.details["Additional_results"] = additional_results_dict
             else:
                 test_result = fc.NOT_ASSESSED
+                eval_text = "Lateral control request not active"
                 self.result.measured_result = NAN
+
+                eval_0 = " ".join(
+                    f"MFControl shall ensure, that the maximum standstill time caused by comfortable standstill steering is less than or equal AP_C_KPI_STANDSTILL_TIME_S({constants.MoCo.Parameter.AP_C_KPI_STANDSTILL_TIME_S}).".split()
+                )
+                # Set table dataframe
+                signal_summary = pd.DataFrame(
+                    {
+                        "Evaluation": {
+                            "1": eval_0,
+                        },
+                        "Result": {
+                            "1": eval_text,
+                        },
+                    }
+                )
+                sig_sum = fh.build_html_table(signal_summary)
+
+                plot_titles.append("")
+                plots.append(sig_sum)
+                remarks.append("")
                 self.result.details["Step_result"] = test_result
+
                 additional_results_dict = {
                     "Verdict": {"value": test_result.title(), "color": fh.get_color(test_result)},
                     "Percent match [%]": {"value": "n/a"},
                 }
+
                 fig = get_plot_signals(df)
                 plot_titles.append("Graphical Overview")
                 plots.append(fig)
@@ -191,9 +266,41 @@ def get_plot_signals(df):
     fig.add_trace(
         go.Scatter(
             x=df.index.values.tolist(),
+            y=df["calculated_standstill"].values.tolist(),
+            mode="lines",
+            name="calculated_standstill",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df.index.values.tolist(),
+            y=df["calculated_comfortable_standstill"].values.tolist(),
+            mode="lines",
+            name="calculated_comfortable_standstill",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df.index.values.tolist(),
+            y=df["frontSteerAngReq_rad"].values.tolist(),
+            mode="lines",
+            name="frontSteerAngReq_rad",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df.index.values.tolist(),
             y=df["lateralControlFinished_nu"].values.tolist(),
             mode="lines",
             name="lateralControlFinished_nu",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=df.index.values.tolist(),
+            y=df["comfortable_active_time"].values.tolist(),
+            mode="lines",
+            name="comfortable_active_time_S",
         )
     )
     fig.add_trace(

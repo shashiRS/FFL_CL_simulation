@@ -440,17 +440,21 @@ def calculate_comfortable_standstill_steering_duration(df):
         first occurrence to just before it deactivate.
 
     """
-    # identify consecutive blocks of True
-    df["block"] = (df["calculated_comfortable_standstill"] != df["calculated_comfortable_standstill"].shift(1)).cumsum()
-
-    active_periods = df[int(df["calculated_comfortable_standstill"]) == 1]
-    # calculate the duration for each active block
-    durations = active_periods.groupby("block").apply(lambda x: (x["ts"].max() - x["ts"].min()))
-
-    # mapping the active blocks durations
-    df["comfortable_active_time"] = df["block"].map(durations)
-    df["comfortable_active_time"] = df["comfortable_active_time"].fillna(0)
-    # convert from microseconds to seconds
-    df["comfortable_active_time"] = df["comfortable_active_time"] / 1_000_000
+    df["calculated_comfortable_standstill_check"]=df["calculated_comfortable_standstill"].astype(bool)
+    if df["calculated_comfortable_standstill_check"].any():
+        # # identify consecutive blocks of True
+        df["block"] = ((df["calculated_comfortable_standstill"] != df["calculated_comfortable_standstill"].shift(1)).cumsum())
+        #
+        active_periods = df[(df["calculated_comfortable_standstill"].astype(int)) == 1]
+        #calculate the duration for each active block
+        durations = active_periods.groupby("block").apply(lambda x: (x["timestamp"].max() - x["timestamp"].min())
+                                                if (x["timestamp"].max())!= (x["timestamp"].min()) else 1_000_000_000)
+        # mapping the active blocks durations
+        df["comfortable_active_time"] = df["block"].map(durations)
+        df["comfortable_active_time"] = df["comfortable_active_time"].fillna(0)
+        # convert from microseconds to seconds
+        df["comfortable_active_time"] = df["comfortable_active_time"] / 1_000_000_000
+    else:
+        df["comfortable_active_time"] = 0
 
     return df

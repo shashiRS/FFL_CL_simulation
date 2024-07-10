@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>report.html</title>
+
+<style type="text/css">
+body {
+border-style: none;
+border-color: #fb9d00;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 12px;
+line-height: normal;
+color: white;
+background-color: #666666;
+}
+.niceTable table {
+margin: 0px;
+padding: 0px;
+border-collapse: collapse;
+width: 100%;
+height: 100%;
+}
+.niceTable td {
+border: 1px solid black;
+padding: 1px 4px;
+background-color: #333333;
+font-weight: normal;
+font-size: 12px;
+color: white;
+}
+.niceTable tr:first-child td {
+border: 1px solid #000000;
+padding: 2px 10px;
+text-align: center;
+font-family: Arial;
+color: white;
+font-size: 12px;
+font-weight: bold;
+background-color: #bf7300;
+}
+h1 {
+border-style: none;
+font-family: Arial,Helvetica,sans-serif;
+font-weight: bold;
+text-transform: capitalize;
+background-color: #333333;
+color: #cccccc;
+text-align: left;
+bottom: 1px;
+position: absolute;
+z-index: 9;
+right: 0px;
+padding-left: 400px;
+height: 100px;
+font-size: 40px;
+left: 10px;
+margin-left: 100px;
+top: 25px;
+padding-top: 110px;
+width: 600px;
+}
+h2 {
+border-bottom: 1px solid #fb9d00;
+color: white;
+padding-left: 10px;
+}
+.reportImg {
+border: 1px solid black;
+}
+#seal {
+border-style: none;
+background-image: url(gfx/conti_seal.png);
+background-repeat: no-repeat;
+background-position: left top;
+float: none;
+position: absolute;
+bottom: 1px;
+top: 0px;
+right: 1px;
+z-index: 10;
+height: 250px;
+width: 450px;
+left: 60px;
+}
+#paddingtop {
+height: 270px;
+}
+</style>
+<script src="scripts/jquery-2.1.1.min.js"></script>
+<script src="scripts/dygraph-combined.js"></script>
+</head>
+<body>
+<div id="seal"></div>
+<h1><br>
+</h1>
+<h1>Test Report</h1>
+<div id="paddingtop"></div>
+<script>
+jQuery(function(){
+$("#imgExpander001").click(function(){
+$("#divSection001").toggle();
+if($("#divSection001").is(":visible"))
+{
+$("#imgExpander001").attr('src',"gfx/toggle_minus.png");
+}
+else
+{
+$("#imgExpander001").attr('src',"gfx/toggle_plus.png");
+}
+});
+});
+</script>
+<h2><img id="imgExpander001" style="width: 16px; height: 16px; float: left;" alt="" src="gfx/toggle_minus.png"> &nbsp;Test 001</h2>
+<div id="divSection001">
+<div style="margin-left: 100px;">Results of Test 001 are
+promising. Here is a table to prove it:</div>
+<br>
+<table class="niceTable" style="margin-left: 100px;">
+<caption align="bottom">My savings</caption><tbody>
+<tr>
+<td>Check ID</td>
+<td>Value Name</td>
+<td>Result</td>
+</tr>
+<tr>
+<td style="background-color: rgb(0, 102, 0); font-weight: bold; text-align: center; color: rgb(80, 71, 255);">0</td>
+<td>Car.Fr1.DistX</td>
+<td>Value in Range</td>
+</tr>
+<tr>
+<td style="background-color: rgb(0, 102, 0);">1</td>
+<td>QVA.HypProbCollision.Debug.MitigationFactorLeft</td>
+<td>Value ok</td>
+</tr>
+<tr>
+<td style="background-color: rgb(135, 0, 0);">2</td>
+<td>QVA.HypProbCollision.Debug.MitigationFactorLeft</td>
+<td>Value too big</td>
+</tr>
+<tr>
+<td style="background-color: rgb(0, 102, 0);">3</td>
+<td>Car.Fr1.DistY</td>
+<td>Value ok</td>
+</tr>
+</tbody>
+</table>
+<br>
+</div>
+<h2 style="margin-left: 50px;"><img style="width: 16px; height: 16px; float: left;" alt="" src="gfx/toggle_minus.png"> &nbsp;Test 002</h2>
+Results of Test 002 are the worst thing I've ever seen. Here is a table
+to prove it:<br>
+<br>
+<table class="niceTable" style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td>Check ID</td>
+<td>Value Name</td>
+<td>Result</td>
+</tr>
+<tr>
+<td style="background-color: rgb(135, 0, 0);">0</td>
+<td>Car.Fr1.DistX</td>
+<td>Value in Range</td>
+</tr>
+<tr>
+<td style="background-color: rgb(0, 102, 0);">1</td>
+<td>QVA.HypProbCollision.Debug.MitigationFactorLeft</td>
+<td>Value ok</td>
+</tr>
+<tr>
+<td style="background-color: rgb(135, 0, 0);">2</td>
+<td>QVA.HypProbCollision.Debug.MitigationFactorLeft</td>
+<td>Value too big</td>
+</tr>
+<tr>
+<td style="background-color: rgb(135, 0, 0);">3</td>
+<td>Car.Fr1.DistY</td>
+<td>Value ok</td>
+</tr>
+</tbody>
+</table>
+<br>
+Here is an image to prove our good work!<br>
+<br>
+<img class="reportImg" style="width: 654px; height: 268px;" alt="" src="gfx/image_example.png"><br>
+<br>
+And here is a graph:<br>
+<br>
+<br>
+<script type="text/javascript">
+var blockRedraw = false;
+</script>
+<div style="margin-left: 150px;" id="graphdiv1"></div>
+<script type="text/javascript">
+if (typeof syncGroup001 == 'undefined')
+{syncGroup001 = [];}
+syncGroup001.push(new Dygraph(document.getElementById("graphdiv1"), [
+[1,10,100],
+[2,20,80],
+[3,50,60],
+[4,70,80]
+],
+{
+title: "This is a bar chart showing my favorite pies",
+labels: [ "x", "A", "B" ],
+dateWindow: [-1,5],
+valueRange: [-20,120],
+colors: ["rgb(191,115,0)","rgb(226,135,0)"],
+'B': {strokePattern: Dygraph.DOTTED_LINE, strokeWidth: 5 },
+drawCallback: function(me, initial) {
+if (blockRedraw || initial) return;
+blockRedraw = true;
+var range = me.xAxisRange();
+var yrange = me.yAxisRange();
+for (var j = 0; j < syncGroup001.length; j++) {
+if (syncGroup001[j] == me) continue;
+syncGroup001[j].updateOptions( {
+dateWindow: range,
+valueRange: yrange
+} );
+}
+blockRedraw = false;
+}
+}));
+</script>
+<div style="margin-left: 150px;" id="graphdiv2"></div>
+<script type="text/javascript">
+if (typeof syncGroup001 == 'undefined')
+{syncGroup001 = [];}
+syncGroup001.push(new Dygraph(document.getElementById("graphdiv2"), [
+[1,50,90],
+[2,60,60],
+[3,20,60],
+[4,10,40]
+],
+{
+title: "This is a pie chart showing my favorite bars",
+labels: [ "x", "A", "B" ],
+dateWindow: [-1,5],
+valueRange: [-20,120],
+colors: ["rgb(191,115,0)","rgb(226,135,0)"],
+'B': {strokePattern: Dygraph.DOTTED_LINE, strokeWidth: 5 },
+drawCallback: function(me, initial) {
+if (blockRedraw || initial) return;
+blockRedraw = true;
+var range = me.xAxisRange();
+var yrange = me.yAxisRange();
+for (var j = 0; j < syncGroup001.length; j++) {
+if (syncGroup001[j] == me) continue;
+syncGroup001[j].updateOptions( {
+dateWindow: range,
+valueRange: yrange
+} );
+}
+blockRedraw = false;
+}
+}));
+</script>
+<div style="margin-left: 150px;" id="graphdiv3"></div>
+<script type="text/javascript">
+if (typeof syncGroup002 == 'undefined')
+{syncGroup002 = [];}
+syncGroup002.push(new Dygraph(document.getElementById("graphdiv3"), [
+[1,50,90],
+[2,60,60],
+[3,20,60],
+[4,10,40]
+],
+{
+title: "This is a pie chart showing my favorite bars",
+labels: [ "x", "A", "B" ],
+dateWindow: [-1,5],
+valueRange: [-20,120],
+colors: ["rgb(191,115,0)","rgb(226,135,0)"],
+'B': {strokePattern: Dygraph.DOTTED_LINE, strokeWidth: 5 },
+drawCallback: function(me, initial) {
+if (blockRedraw || initial) return;
+blockRedraw = true;
+var range = me.xAxisRange();
+var yrange = me.yAxisRange();
+for (var j = 0; j < syncGroup002.length; j++) {
+if (syncGroup002[j] == me) continue;
+syncGroup002[j].updateOptions( {
+dateWindow: range,
+valueRange: yrange
+} );
+}
+blockRedraw = false;
+}
+}));
+</script>
+<div style="margin-left: 150px;" id="graphdiv4"></div>
+<script type="text/javascript">
+if (typeof syncGroup002 == 'undefined')
+{syncGroup002 = [];}
+syncGroup002.push(new Dygraph(document.getElementById("graphdiv4"), [
+[1,10,100],
+[2,20,80],
+[3,50,60],
+[4,70,80]
+],
+{
+title: "This is a bar chart showing my favorite pies",
+labels: [ "x", "A", "B" ],
+dateWindow: [-1,5],
+valueRange: [-20,120],
+colors: ["rgb(191,115,0)","rgb(226,135,0)"],
+'B': {strokePattern: Dygraph.DOTTED_LINE, strokeWidth: 5 },
+drawCallback: function(me, initial) {
+if (blockRedraw || initial) return;
+blockRedraw = true;
+var range = me.xAxisRange();
+var yrange = me.yAxisRange();
+for (var j = 0; j < syncGroup002.length; j++) {
+if (syncGroup002[j] == me) continue;
+syncGroup002[j].updateOptions( {
+dateWindow: range,
+valueRange: yrange
+} );
+}
+blockRedraw = false;
+}
+}));
+</script>
+</body></html>

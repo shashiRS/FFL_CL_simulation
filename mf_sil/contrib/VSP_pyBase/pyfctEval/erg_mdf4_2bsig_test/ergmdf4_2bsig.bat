@@ -1,0 +1,3 @@
+python ..\erg_mdf4_2bsig.py --ergmf4PathFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\LaneChange_MultiObj_5Lanes_143552.mf4 --mapFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\Signals_Map.xlsx --outputFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\laneChange_mf4.bsig --samplefrq 20
+python ..\erg_mdf4_2bsig.py --ergmf4PathFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\PAD21_Release_R55_FCTA_Ego_0kph_Target1_45kph_Target2_45kph_leftcrossing_173627.erg --mapFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\Signals_Map.xlsx --outputFile d:\VSP_pyBase\pyfctEval\erg_mdf4_2bsig_test\PAD21_erg.bsig --samplefrq 1000
+pause

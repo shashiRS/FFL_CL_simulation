@@ -1,49 +1,52 @@
-// Documentation for the Bricks Jenkins Pipeline is available at https://readthedocs.cmo.conti.de/docs/cip-pipeline-lib-user/en/latest/
-import groovy.io.FileType
-import groovy.xml.*
+#!/usr/bin/env groovy
 
-@Library('bricks_pipeline_lib') _
+pipeline {
+    agent { label 'windows' }
+    stages {
+        stage("Init environment"){
+            steps {
+                script {
+                    bat(
+                        script: """C:/Python37/python.exe -m venv .venv
+                            call .venv/Scripts/activate
+                            python -m pip install --upgrade pip
+                            python -m pip install -r requirements_dev.txt
+                        """
+                    )
+                }
+            }
+        }
 
-addTask(
-    name : "read_smoketest_results",
-    onSameNode: true,
-	match: [
-          platform: "vs2017",
-          variant: "SMOKE_TEST",
-          target: "build",
-      ]
-){  
+     	stage('Build Wheel') {
+            steps {
+                script {
+                    bat(
+                        script: """call scripts/build_wheel.bat
+                        """
+                    )
+                }
+            }
+        }
 
-    
-    def files = findFiles(glob: '**/TestReport.xml')
-	if (files) {
-		def fileContents = readFile(files[0].path)
- 
-        def xmlData = new XmlSlurper().parseText(fileContents)
-		
-		def errorMessages = []
-		xmlData.test_case.each { testCase ->
-			def testResult = testCase.test_result.text()
-			if (testResult == "Failed") {
-				if (testCase.test_instuctions) {
-					testCase.test_instuctions.test_eval_detail.each { testEvalDetail ->
-						if (testEvalDetail.result.text() == "Failed") {
-							def errorMessage = testEvalDetail.message.text()
-							errorMessages.add(errorMessage)
-						}
-					}
-				}
-			}
-		}
+        stage('Upload Python Wheel to Artifactory') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: "artifactory_pypi", usernameVariable: "PYPI_USER", passwordVariable: "PYPI_TOKEN")]) {
+                        if(env.TAG_NAME) {
+                            bat('call .venv/Scripts/activate && twine upload --repository-url https://eu.artifactory.conti.de/artifactory/api/pypi/c_adas_cip_pypi_l -u %PYPI_USER% -p %PYPI_TOKEN% dist/*.whl')
+                        } else {
+                            echo("Not a tag! Wheel locally saved!")
+                            archiveArtifacts(artifacts: 'dist/*.whl', followSymlinks: false)
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-		if (errorMessages) {
-			println "The following errors occurred:"
-			errorMessages.each { errorMessage ->
-				throw new Exception(errorMessage)
-			}
-		} else {
-			println "All test cases passed"
-		}
+    post {
+        cleanup {
+            cleanWs()
+        }
     }
 }
-bricks()

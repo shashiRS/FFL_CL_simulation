@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.ap_psm.driver_in_out_request_type;
-
-enum DriverInOutRequestType {
-  PSM_DRIVER_IN_REQUEST = 0;
-  PSM_DRIVER_OUT_REQUEST = 1;
-}

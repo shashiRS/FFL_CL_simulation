@@ -1,0 +1,13 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = GUI-Config 10.0
+CM.Exe = d:/Sandboxes/ADAS_VSP/Utils_pyBase/test/cm_prj_8.1.1/src/CarMaker.win64.exe
+CM.Args =
+CM.Exe.History:
+	d:/Sandboxes/ADAS_VSP/Utils_pyBase/test/cm_prj_8.1.1/src/CarMaker.win64.exe
+	src/CarMaker.win64.exe
+	test/CarMaker.win64.exe
+	../cm_prj/src/CarMaker.win64.exe
+	CarMaker.win64.exe
+CM.Args.History:
+	""
+GPUParameters.FName =

@@ -1,0 +1,64 @@
+Logfile - Project update to CarMaker 8.1.1
+===============================================================================
+
+Start: 2024-07-09 15:53:31
+
+Cleaning up temporary files...
+  >> Finished.
+
+Creating backup ...
+  -  Copy source code files...
+  >> Finished.
+
+Deleting old template files...
+  >> Finished.
+
+Copying new files to project directory...
+  >> Finished.
+
+Searching for old files in project directory...
+  >> Finished.
+
+Converting FMUs...
+  Plugins/MyBattery_FMU.pluginfo
+  -  Info: Target configuration: Entry 'Description' updated
+  -  Info: Target configuration: Entry 'TemplateMakefile' updated
+  Plugins/MyBatteryCU_FMU.pluginfo
+  Plugins/MyBrake_FMU.pluginfo
+  Plugins/MyBrakeSrc_FMU.pluginfo
+  Plugins/MyClutch_FMU.pluginfo
+  Plugins/MyDriveLine_FMU.pluginfo
+  Plugins/MyDriveLineXWD_FMU.pluginfo
+  Plugins/MyEngine_FMU.pluginfo
+  Plugins/MyEngineCU_FMU.pluginfo
+  Plugins/MyEnvironment_FMU.pluginfo
+  Plugins/MyGearBox_FMU.pluginfo
+  Plugins/MyGeneric_FMU.pluginfo
+  Plugins/MyMotor_FMU.pluginfo
+  Plugins/MyMotorCU_FMU.pluginfo
+  Plugins/MyPowerSupply_FMU.pluginfo
+  Plugins/MyPowerTrain_FMU.pluginfo
+  Plugins/MyPowerTrainXWD_FMU.pluginfo
+  Plugins/MyPTControl_FMU.pluginfo
+  Plugins/MyPTControlOSM_FMU.pluginfo
+  Plugins/MyPTGenCoupling_FMU.pluginfo
+  Plugins/MySteering_FMU.pluginfo
+  Plugins/MySteeringSrc_FMU.pluginfo
+  Plugins/MySuspExtForces_FMU.pluginfo
+  Plugins/MyTire_FMU.pluginfo
+  Plugins/MyTireCPMod_FMU.pluginfo
+  Plugins/MyTransmCU_FMU.pluginfo
+  Plugins/MyVehicleControl_FMU.pluginfo
+  Plugins/MyVhclOperator_FMU.pluginfo
+  >> Finished.
+
+Converting TestRuns and TestSeries...
+  Data/TestRun/DWF/PDW/01_Manual/PDW_pingPongSound
+  Data/TestRun/DWF/PDW/01_Manual/PDW_roiBoundingBox
+  >> Finished.
+
+-------------------------------------------------------------------------------
+Update finished successfully. No errors occured
+-------------------------------------------------------------------------------
+
+End: 2024-07-09 15:54:01

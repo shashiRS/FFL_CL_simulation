@@ -75,11 +75,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             "TestStep"
             "Calculate frontSteerAngReq_rad  at wheels"

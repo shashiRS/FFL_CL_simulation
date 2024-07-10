@@ -1,0 +1,444 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>4. cmpyglue &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. cm_eval_erg_calculator" href="cm_eval_erg_calculator.html" />
+    <link rel="prev" title="3. Simulation modes" href="simulation_modes.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cm_eval_erg_calculator.html" title="5. cm_eval_erg_calculator"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="simulation_modes.html" title="3. Simulation modes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>cmpyglue</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cmpyglue">
+<h1><span class="section-number">4. </span>cmpyglue<a class="headerlink" href="#cmpyglue" title="Permalink to this headline">¶</a></h1>
+<section id="cmrc">
+<h2><span class="section-number">4.1. </span>CMRC<a class="headerlink" href="#cmrc" title="Permalink to this headline">¶</a></h2>
+<p>CMRC is the <strong>C</strong>ar<strong>M</strong>aker <strong>R</strong>emote <strong>C</strong>ontrol.
+There is a class (CMRC) to control the Carmaker GUI via a telnet connection and so control the execution of testruns. <br />
+In this case an usual office license per instance is needed.</p>
+<dl class="py class">
+<dt id="pycmCommon.cmpyglue.CMRC">
+<em class="property">class </em><code class="sig-prename descclassname">pycmCommon.cmpyglue.</code><code class="sig-name descname">CMRC</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">host</span><span class="o">=</span><span class="default_value">'localhost'</span></em>, <em class="sig-param"><span class="n">port</span><span class="o">=</span><span class="default_value">2327</span></em>, <em class="sig-param"><span class="n">startCM</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cmGuiPath</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">safeMode</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">image_extraction</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">video_extraction</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">CMprojectDir</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">CMprojectExe</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sim_output</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">worker</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">MDF</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">currTestRunName</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>”
+Class to remote-control Carmaker via telnet connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – IP address of machine where Carmaker shall be started.</p></li>
+<li><p><strong>port</strong> – Port for CM instance.</p></li>
+<li><p><strong>startCM</strong> – If true it starts a new instance of Carmaker. If false, it connects to an already running instance. If the connection fails it will raise an exception.</p></li>
+<li><p><strong>cmGuiPath</strong> – Absolute path to Carmaker GUI executable (CM.exe) in the installation directory</p></li>
+<li><p><strong>safeMode</strong> – If true it will output more information about an error occured in Carmaker if there is any</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.AppExecute">
+<code class="sig-name descname">AppExecute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.AppExecute" title="Permalink to this definition">¶</a></dt>
+<dd><p>start application with a give pre-compiled binary path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>app_path</strong> – Full path to compiled binary application of carmaker</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Close">
+<code class="sig-name descname">Close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the connected Carmaker.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Close_IPGControl">
+<code class="sig-name descname">Close_IPGControl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Close_IPGControl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close IPG control</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Close_IPGMovie">
+<code class="sig-name descname">Close_IPGMovie</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Close_IPGMovie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close IPG Movie</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Connect">
+<code class="sig-name descname">Connect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect function of Carmaker</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.CreateScenarioVideo">
+<code class="sig-name descname">CreateScenarioVideo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rec_batch</span></em>, <em class="sig-param"><span class="n">sim_output</span></em>, <em class="sig-param"><span class="n">projectDir</span></em>, <em class="sig-param"><span class="n">testrun</span></em>, <em class="sig-param"><span class="n">output_dir</span></em>, <em class="sig-param"><span class="n">framerate</span></em>, <em class="sig-param"><span class="n">width</span></em>, <em class="sig-param"><span class="n">height</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.CreateScenarioVideo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a video from the simulation in avi format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>testrun</strong> – cmTestRun instance (see pycmEval.cm_testrun)</p></li>
+<li><p><strong>output_dir</strong> – Absolute path of the output directory</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Disconnect">
+<code class="sig-name descname">Disconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Disconnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disconnect function of Carmaker</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Exec">
+<code class="sig-name descname">Exec</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em>, <em class="sig-param"><span class="n">fireAndForget</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">waitForResponse</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Exec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a command in Carmaker.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cmd</strong> – Command string</p></li>
+<li><p><strong>fireAndForget</strong> – If true, the method does not wait for a response from Carmaker. If false, it waits for a response.</p></li>
+<li><p><strong>waitForResponse</strong> – Waiting time after the command is sent, until the response is checked</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.GetCMExePID">
+<code class="sig-name descname">GetCMExePID</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.GetCMExePID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the info abou the Carmaker exe</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.GetSimStatus">
+<code class="sig-name descname">GetSimStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.GetSimStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start application with a give pre-compiled binary path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Current simulation status (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Launch_IPGMovie">
+<code class="sig-name descname">Launch_IPGMovie</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">launch_IPG</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Launch_IPGMovie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch IPG Movie</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.LoadTestRun">
+<code class="sig-name descname">LoadTestRun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathToConfig</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.LoadTestRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a testrun.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pathToConfig</strong> – Path to testrun file relative to TestRun folder in the Carmaker project directory.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.RetrieveQuantities">
+<code class="sig-name descname">RetrieveQuantities</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ignoreErrors</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.RetrieveQuantities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all quanitites from Carmaker</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ignoreErrors</strong> – If true, errors while retrieving are ignored. If true, in case of an error an exeption is thrown</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.RetrieveQuantity">
+<code class="sig-name descname">RetrieveQuantity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.RetrieveQuantity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a single quanitity from Carmaker</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>quantityName</strong> – Name of the quantity to retrieve</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetDVARelease">
+<code class="sig-name descname">SetDVARelease</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetDVARelease" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set DVA release mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – Value for DVA release mode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetOutputQuantitiesFormatERG">
+<code class="sig-name descname">SetOutputQuantitiesFormatERG</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetOutputQuantitiesFormatERG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the output file format to ERG.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetOutputQuantitiesFormatMDF">
+<code class="sig-name descname">SetOutputQuantitiesFormatMDF</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetOutputQuantitiesFormatMDF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the output file format to MDF.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetOutputSamplePeriod">
+<code class="sig-name descname">SetOutputSamplePeriod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">samplePeriod</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetOutputSamplePeriod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the samplePeriod for data in the result (erg) file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>samplePeriod</strong> – Sample period (in seconds)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetProjectDir">
+<code class="sig-name descname">SetProjectDir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">projectDir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetProjectDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the Carmaker project directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>projectDir</strong> – Absolute path to Carmaker project directory to be set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetResultFileName">
+<code class="sig-name descname">SetResultFileName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relResultFilePath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetResultFileName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the result file name for a testrun</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>relResultFilePath</strong> – File name for the erg file of the testrun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetSaveMode">
+<code class="sig-name descname">SetSaveMode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">safeMode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetSaveMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Carmaker save mode.
+Available modes: “all”, “collectonly”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>safeMode</strong> – Safe mode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SetSimSpeed">
+<code class="sig-name descname">SetSimSpeed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">simSpeed</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SetSimSpeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set simulation speed.
+Available modes: “real”, “double”, “max”, “paused”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>simSpeed</strong> – Simulation speed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">maxTimeInSimulationSeconds</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">currTestRunName</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">maxExecTimeSeconds</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts the execution of the simulation.
+If a testrun is paused while its execution, all timeouts are deactivated an have no effect. They will be considered again for
+the next testrun.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>maxTimeInSimulationSeconds</strong> – Maximum simulation time for a testrun to finish until the testrun is aborted and skipped (seconds)</p></li>
+<li><p><strong>maxExecTimeSeconds</strong> – Maximum (wall clock) time for a testrun to finish until the testrun is aborted and skipped (seconds)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.StartAndConnect">
+<code class="sig-name descname">StartAndConnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.StartAndConnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>StartAndConnect function of Carmaker</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.StopSim">
+<code class="sig-name descname">StopSim</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.StopSim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop the simulation and exit the application.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.SubscribeToQuantities">
+<code class="sig-name descname">SubscribeToQuantities</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityList</span></em>, <em class="sig-param"><span class="n">ignoreErrors</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.SubscribeToQuantities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to quanitites to export them to the result file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>quantityList</strong> – List of strings of quantities</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC.WaitForStatus">
+<code class="sig-name descname">WaitForStatus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">status</span></em>, <em class="sig-param"><span class="n">maxWaitTime</span><span class="o">=</span><span class="default_value">30.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC.WaitForStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes the script to wait until a given status is reveived. Raise an exception if status is not received within maximum wait time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status</strong> – Status on which shall be waited</p></li>
+<li><p><strong>maxWaitTime</strong> – Maximum time to wait for the status until an execption is thrown</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="cmrc-headlessinstance">
+<h2><span class="section-number">4.2. </span>CMRC_HeadlessInstance<a class="headerlink" href="#cmrc-headlessinstance" title="Permalink to this headline">¶</a></h2>
+<p>CMRC_HeadlessInstance means <strong>C</strong>ar<strong>M</strong>aker <strong>R</strong>emote <strong>C</strong>ontrol <strong>HeadlessInstance</strong> and is a class to control the Carmaker using a headless mode. <br />
+Optionally it allows to use a core license for the simulation. If you want to use a core license it has to be assigned to your user account. <br />
+See introduction page for further details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes the core license is named by its old term “runtime license”. The license was renamed by IPG to “core license”.</p>
+</aside>
+<dl class="py class">
+<dt id="pycmCommon.cmpyglue.CMRC_HeadlessInstance">
+<em class="property">class </em><code class="sig-prename descclassname">pycmCommon.cmpyglue.</code><code class="sig-name descname">CMRC_HeadlessInstance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prjPath</span></em>, <em class="sig-param"><span class="n">cmExePath</span></em>, <em class="sig-param"><span class="n">outputDir</span></em>, <em class="sig-param"><span class="n">useCoreLicense</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC_HeadlessInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to remote-control Carmaker in headless mode. Optionally it allows to use a core license for the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prjPath</strong> – Absolute path to the Carmaker project</p></li>
+<li><p><strong>cmExePath</strong> – Absolute path to the compiled binary application of Carmaker (carmaker.win64.exe)</p></li>
+<li><p><strong>outputDir</strong> – Path to output directory relative to SimOutput folder in Carmaker project</p></li>
+<li><p><strong>useCoreLicense</strong> – If True, it will use core licenses to simulate. If False, it will use usual office licenses.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pycmCommon.cmpyglue.CMRC_HeadlessInstance.execTestrun">
+<code class="sig-name descname">execTestrun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">testrunName</span></em>, <em class="sig-param"><span class="n">maxExecTimeSeconds</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmCommon.cmpyglue.CMRC_HeadlessInstance.execTestrun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a testrun</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>testrunName</strong> – Name of the testrun. The testrun must be located in the TestRun/{OutputDir} folder. OutputDir is the path given to the outputDir parameter.</p></li>
+<li><p><strong>maxExecTimeSeconds</strong> – Maximum (wall clock) time for a testrun to finish until the testrun is aborted and skipped (seconds)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Two values. First: True if the simulation was successful. False if not. Second: Reason for unsuccessful simulation, e.g. ‘TIMEOUT’, else None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. cmpyglue</a><ul>
+<li><a class="reference internal" href="#cmrc">4.1. CMRC</a></li>
+<li><a class="reference internal" href="#cmrc-headlessinstance">4.2. CMRC_HeadlessInstance</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="simulation_modes.html"
+                        title="previous chapter"><span class="section-number">3. </span>Simulation modes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cm_eval_erg_calculator.html"
+                        title="next chapter"><span class="section-number">5. </span>cm_eval_erg_calculator</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/cmpyglue.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cm_eval_erg_calculator.html" title="5. cm_eval_erg_calculator"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="simulation_modes.html" title="3. Simulation modes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>cmpyglue</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

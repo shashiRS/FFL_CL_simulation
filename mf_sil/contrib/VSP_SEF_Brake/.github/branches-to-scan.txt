@@ -1,0 +1,4 @@
+master
+feature/SIMEN-1326/CM10_Brake_SCP
+feature/SIMEN-877/Update_to_CM_10.2
+feature/SIMEN-1374/prepare_github_server_migration

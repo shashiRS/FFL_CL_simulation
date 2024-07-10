@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.ap_tp.short_side_angle_approach;
-
-enum ShortSideAngleApproach {
-  SAA_AVERAGE = 0;
-  SAA_ROAD_SIDE_ANGLE = 1;
-}

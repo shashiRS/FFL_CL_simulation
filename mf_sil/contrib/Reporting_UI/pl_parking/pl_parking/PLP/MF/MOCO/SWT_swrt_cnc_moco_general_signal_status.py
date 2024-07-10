@@ -75,11 +75,7 @@ class Step1(TestStep):
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
 
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             num_signal = count_e_signal_status_signal(df)
             """Checking if the signals are present"""

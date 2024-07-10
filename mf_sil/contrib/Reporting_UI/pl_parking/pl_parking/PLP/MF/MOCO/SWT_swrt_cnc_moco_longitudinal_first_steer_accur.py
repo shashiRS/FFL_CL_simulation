@@ -89,11 +89,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             self.result.measured_result = NAN
             test_result = fc.INPUT_MISSING
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             df["is_not_close_to_requested_steer_angle"] = df.apply(
                 lambda row: is_not_close_to_requested(
@@ -160,9 +156,11 @@ class Step1(TestStep):
                     if percent_match == 100:
                         observed_la_dmc_ctrl_request_nu = TRUE
                         test_result = fc.PASS
+                        eval_text = "Conditions are satisfied"
                     else:
                         observed_la_dmc_ctrl_request_nu = FALSE
                         test_result = fc.FAIL
+                        eval_text = "Conditions are not satisfied"
 
                     self.result.measured_result = observed_la_dmc_ctrl_request_nu
                     eval_0 = " ".join(
@@ -177,7 +175,7 @@ class Step1(TestStep):
                                 "1": eval_0,
                             },
                             "Result": {
-                                "1": "Signals matched in proportion of 100 %",
+                                "1": eval_text,
                             },
                         }
                     )
@@ -211,7 +209,7 @@ class Step1(TestStep):
                     self.result.details["Additional_results"] = additional_results_dict
                 else:
                     test_result = fc.NOT_ASSESSED
-                    eval_text = "Lateral control request not active"
+                    eval_text = "Preconditions are not met"
                     self.result.measured_result = NAN
 
                     eval_0 = " ".join(

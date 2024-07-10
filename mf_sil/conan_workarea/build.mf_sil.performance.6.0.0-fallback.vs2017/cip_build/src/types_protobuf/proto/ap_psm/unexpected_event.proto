@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.ap_psm.unexpected_event;
-
-enum UnexpectedEvent {
-  NO_EVENT = 0;
-  DRIVER_STEERING_INTERVENTION = 1;
-}

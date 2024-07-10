@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.mf_hmih.drv_tube_direction;
-
-enum DrvTubeDirection {
-  PDC_DRV_TUBE_RIGHT = 0;
-  PDC_DRV_TUBE_LEFT = 1;
-}

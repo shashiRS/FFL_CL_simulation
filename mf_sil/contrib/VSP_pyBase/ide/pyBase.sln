@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pycmCommon", "pycmCommon.pyproj", "{D7B61DB4-1E3F-4EB7-B35D-6F55FEB6058D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pycmEval", "pycmEval.pyproj", "{0260F41C-85C8-4C67-9A2C-9FCD6C7E0B19}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyHTMLReport", "pyHTMLReport.pyproj", "{FBE702C2-3694-4593-AA00-576AA7D6689B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyUtils", "pyUtils.pyproj", "{FE216746-FDEE-4B0A-9169-2E2C99048A34}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyfctEval", "pyfctEval.pyproj", "{1EDD686B-55A4-41E9-9FE2-3E81DEF8DC49}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "pyBaseTest", "pyBaseTest.pyproj", "{1EEF3D7B-34DA-452C-9E95-B150E962050D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B61DB4-1E3F-4EB7-B35D-6F55FEB6058D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B61DB4-1E3F-4EB7-B35D-6F55FEB6058D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0260F41C-85C8-4C67-9A2C-9FCD6C7E0B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0260F41C-85C8-4C67-9A2C-9FCD6C7E0B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE702C2-3694-4593-AA00-576AA7D6689B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE702C2-3694-4593-AA00-576AA7D6689B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE216746-FDEE-4B0A-9169-2E2C99048A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE216746-FDEE-4B0A-9169-2E2C99048A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDD686B-55A4-41E9-9FE2-3E81DEF8DC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDD686B-55A4-41E9-9FE2-3E81DEF8DC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEF3D7B-34DA-452C-9E95-B150E962050D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEF3D7B-34DA-452C-9E95-B150E962050D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63BB6721-8D2C-469C-B8C6-7A2ED9518330}
+	EndGlobalSection
+EndGlobal

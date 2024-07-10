@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.mf_hmih.wheel_ang_direction;
-
-enum WheelAngDirection {
-  WHL_ANG_DIR_LEFT = 0;
-  WHL_ANG_DIR_RIGHT = 1;
-}

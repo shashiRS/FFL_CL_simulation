@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.mf_hmih.hu_park_out_sub_feature_state;
-
-enum HuParkOutSubFeatureState {
-  UNUSED = 0;
-  PARK_OUT_ACTIVE = 1;
-}

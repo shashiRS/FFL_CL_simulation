@@ -1,0 +1,408 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5. cm_eval_erg_calculator &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6. cm_eval_erg_parser" href="cm_eval_erg_parser.html" />
+    <link rel="prev" title="4. cmpyglue" href="cmpyglue.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cm_eval_erg_parser.html" title="6. cm_eval_erg_parser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cmpyglue.html" title="4. cmpyglue"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">5. </span>cm_eval_erg_calculator</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cm-eval-erg-calculator">
+<h1><span class="section-number">5. </span>cm_eval_erg_calculator<a class="headerlink" href="#cm-eval-erg-calculator" title="Permalink to this headline">¶</a></h1>
+<section id="cergcalculator">
+<h2><span class="section-number">5.1. </span>cErgCalculator<a class="headerlink" href="#cergcalculator" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator">
+<em class="property">class </em><code class="sig-prename descclassname">pycmEval.cm_eval_erg_calculator.</code><code class="sig-name descname">cErgCalculator</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">currErgFilePath</span></em>, <em class="sig-param"><span class="n">signal_mapping</span></em>, <em class="sig-param"><span class="n">cacheWholeFile</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcCollisionOccured">
+<code class="sig-name descname">calcCollisionOccured</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">egoLength</span></em>, <em class="sig-param"><span class="n">egoWidth</span></em>, <em class="sig-param"><span class="n">targetLength</span></em>, <em class="sig-param"><span class="n">targetWidth</span></em>, <em class="sig-param"><span class="n">targetName</span></em>, <em class="sig-param"><span class="n">minTime</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcCollisionOccured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate if a collision happened between the ego vehicle and a target vehicle.
+Note: This function comes from a time when Carmaker did not have the CollisionSensor. It is recommended to use the signal of the CollisionSensor
+instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>egoLength</strong> – Length of the ego vehicle</p></li>
+<li><p><strong>egoWidth</strong> – Width of the ego vehicle</p></li>
+<li><p><strong>targetLength</strong> – Length of the target vehicle</p></li>
+<li><p><strong>targetWidth</strong> – Width of the target vehicle</p></li>
+<li><p><strong>targetName</strong> – Name of the target vehicle as defined in the testrun</p></li>
+<li><p><strong>minTime</strong> – Simulation time at which the evaluation for a collision starts, e.g. time &gt; 0.1s</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if collision occured, false if not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcCollision_coord">
+<code class="sig-name descname">calcCollision_coord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">egoLength</span></em>, <em class="sig-param"><span class="n">egoWidth</span></em>, <em class="sig-param"><span class="n">targetLength</span></em>, <em class="sig-param"><span class="n">targetWidth</span></em>, <em class="sig-param"><span class="n">targetName</span></em>, <em class="sig-param"><span class="n">timeOfColl</span></em>, <em class="sig-param"><span class="n">COM</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcCollision_coord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the collision time of the ego vehicle and a target vehicle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>egoLength</strong> – Length of the ego vehicle</p></li>
+<li><p><strong>egoWidth</strong> – Width of the ego vehicle</p></li>
+<li><p><strong>targetLength</strong> – Length of the target vehicle</p></li>
+<li><p><strong>targetWidth</strong> – Width of the target vehicle</p></li>
+<li><p><strong>targetName</strong> – Name of the target vehicle as defined in the testrun</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Collision time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcEgoRect">
+<code class="sig-name descname">calcEgoRect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">egoLength</span></em>, <em class="sig-param"><span class="n">egoWidth</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcEgoRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate ego rectangle and its shape points which is necessary e.g. for collision detection. Usually this function does not need to be called manually
+as every calculation function will call it implicitly if ego rectangle is not calculated yet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>egoLength</strong> – Length of the ego vehicle</p></li>
+<li><p><strong>egoWidth</strong> – Width of the ego vehicle</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcIdxAtTime">
+<code class="sig-name descname">calcIdxAtTime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">currValue</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcIdxAtTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the index of a specific time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>currValue</strong> – Time for that the index shall be returned</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index in time array for given time. If the given time is between two times in the array, the upper value is taken</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcIdxAtValue">
+<code class="sig-name descname">calcIdxAtValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue</span></em>, <em class="sig-param"><span class="n">condition</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcIdxAtValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the index when a condition is true for the first time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Quanitity name (str)</p></li>
+<li><p><strong>currValue</strong> – Value that shall be checked</p></li>
+<li><p><strong>condition</strong> – Condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index in quantity values array when the condition is true the first time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcMinDist">
+<code class="sig-name descname">calcMinDist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">egoLength</span></em>, <em class="sig-param"><span class="n">egoWidth</span></em>, <em class="sig-param"><span class="n">targetLength</span></em>, <em class="sig-param"><span class="n">targetWidth</span></em>, <em class="sig-param"><span class="n">targetName</span></em>, <em class="sig-param"><span class="n">minDistList</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcMinDist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate minimum distance between the ego vehicle and a target vehicle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>egoLength</strong> – Length of the ego vehicle</p></li>
+<li><p><strong>egoWidth</strong> – Width of the ego vehicle</p></li>
+<li><p><strong>targetLength</strong> – Length of the target vehicle</p></li>
+<li><p><strong>targetWidth</strong> – Width of the target vehicle</p></li>
+<li><p><strong>targetName</strong> – Name of the target vehicle as defined in the testrun</p></li>
+</ul>
+</dd>
+</dl>
+<p>return: Minimum distance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcOccurancesOfSignal">
+<code class="sig-name descname">calcOccurancesOfSignal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue</span></em>, <em class="sig-param"><span class="n">condition</span></em>, <em class="sig-param"><span class="n">startTime</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">Type</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcOccurancesOfSignal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the given condition is true and find all occurances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Name of the quantity (str)</p></li>
+<li><p><strong>currValue</strong> – Value that shall be checked</p></li>
+<li><p><strong>condition</strong> – Condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+<li><p><strong>startTime</strong> – Simulation time at which the evaluation for the condition shall start, e.g. time &gt; 0.1s</p></li>
+<li><p><strong>Type</strong> – Parameter that can be given that is written in the returned dictionary as additional information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of dictionaries of the occurances with start time, end time and type</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcQuantityMax">
+<code class="sig-name descname">calcQuantityMax</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcQuantityMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the maximum value of a quantity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>quantityName</strong> – Quanitity name (str)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Maximum value of the quantity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcQuantityMin">
+<code class="sig-name descname">calcQuantityMin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcQuantityMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the minimum value of a quantity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>quantityName</strong> – Quanitity name (str)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Minimum value of the quantity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTargetRects">
+<code class="sig-name descname">calcTargetRects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">targetLength</span></em>, <em class="sig-param"><span class="n">targetWidth</span></em>, <em class="sig-param"><span class="n">targetName</span></em>, <em class="sig-param"><span class="n">sections</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTargetRects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate target rectangle and its shape points which is necessary e.g. for collision detection. Usually this function does not need to be called manually
+as every calculation function will call it implicitly if target rectangle is not calculated yet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>targetLength</strong> – Length of the target vehicle</p></li>
+<li><p><strong>targetWidth</strong> – Width of the target vehicle</p></li>
+<li><p><strong>targetName</strong> – Name of the target vehicle as defined in the testrun</p></li>
+<li><p><strong>sections</strong> – Number of sections the target vehicle is separated in. May be useful for the detection with which part the of the target vehicle the         ego vehicle collides, e.g. hood, cabin, trunk. If this is not relevant, choose 1.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>target rectangle shape points (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTimeAtValue">
+<code class="sig-name descname">calcTimeAtValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue</span></em>, <em class="sig-param"><span class="n">condition</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTimeAtValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the time when a condition is true for the first time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Quanitity name (str)</p></li>
+<li><p><strong>currValue</strong> – Value that shall be checked</p></li>
+<li><p><strong>condition</strong> – Condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Time when the condition is true the first time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTimeAtValueMultipleCond">
+<code class="sig-name descname">calcTimeAtValueMultipleCond</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue1</span></em>, <em class="sig-param"><span class="n">condition1</span></em>, <em class="sig-param"><span class="n">currValue2</span></em>, <em class="sig-param"><span class="n">condition2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcTimeAtValueMultipleCond" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the time when both given conditions are true the first time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Name of the quantity (str)</p></li>
+<li><p><strong>currValue1</strong> – First value that shall be checked</p></li>
+<li><p><strong>condition1</strong> – Condition that shall be checked for first value: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+<li><p><strong>currValue2</strong> – Second value that shall be checked</p></li>
+<li><p><strong>condition2</strong> – Second condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Time when both conditions are true the first time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurred">
+<code class="sig-name descname">calcValueOccurred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue</span></em>, <em class="sig-param"><span class="n">condition</span></em>, <em class="sig-param"><span class="n">roundDeciamal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decimalPlace</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a condition of a quantity is true at any time.
+Ex: calcValueOccurred(“Car.vx”, “10”, “&gt;”) checks if Car.vx is grater than 10 any time in the testrun.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Quanitity name (str)</p></li>
+<li><p><strong>currValue</strong> – Value that shall be checked</p></li>
+<li><p><strong>condition</strong> – Condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+<li><p><strong>roundDeciamal</strong> – Boolean, specifying if values are to be rounded.</p></li>
+<li><p><strong>decimalPlace</strong> – Decimal places to which values are to be rounded.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True, if the condition is true at any time. False, if not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurredMultipleCond">
+<code class="sig-name descname">calcValueOccurredMultipleCond</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue1</span></em>, <em class="sig-param"><span class="n">condition1</span></em>, <em class="sig-param"><span class="n">currValue2</span></em>, <em class="sig-param"><span class="n">condition2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurredMultipleCond" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the two given conditions are true.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Name of the quantity (str)</p></li>
+<li><p><strong>currValue1</strong> – First value that shall be checked</p></li>
+<li><p><strong>condition1</strong> – Condition that shall be checked for first value: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+<li><p><strong>currValue2</strong> – Second value that shall be checked</p></li>
+<li><p><strong>condition2</strong> – Second condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if both conditions are true at any time, false if not.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurred_between_interval">
+<code class="sig-name descname">calcValueOccurred_between_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currValue</span></em>, <em class="sig-param"><span class="n">condition</span></em>, <em class="sig-param"><span class="n">interval</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.calcValueOccurred_between_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a condition of a quantity falls under particular interval.
+:param quantityToCalc: Quanitity name (str)
+:param currValue: By default 2
+:param condition:  Condition that shall be checked: “&gt;”, “&lt;”, “&gt;=”, “&lt;=”, “==”, “!=”
+:param interval: [Start Range, End Range] List with index 0 as start_time and index 1 as end_time
+:return: True, if the condition is true at any time. False, if not.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_calculator.cErgCalculator.getQuantityAtTime">
+<code class="sig-name descname">getQuantityAtTime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quantityToCalc</span></em>, <em class="sig-param"><span class="n">currTime</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_calculator.cErgCalculator.getQuantityAtTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a quantity at a certain time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quantityToCalc</strong> – Quanitity name (str)</p></li>
+<li><p><strong>currTime</strong> – Time at which the value of the quantity shall be given</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Value of the quantity</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">5. cm_eval_erg_calculator</a><ul>
+<li><a class="reference internal" href="#cergcalculator">5.1. cErgCalculator</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cmpyglue.html"
+                        title="previous chapter"><span class="section-number">4. </span>cmpyglue</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cm_eval_erg_parser.html"
+                        title="next chapter"><span class="section-number">6. </span>cm_eval_erg_parser</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/cm_eval_erg_calculator.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cm_eval_erg_parser.html" title="6. cm_eval_erg_parser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cmpyglue.html" title="4. cmpyglue"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">5. </span>cm_eval_erg_calculator</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

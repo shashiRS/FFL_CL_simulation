@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.mf_mempark.gpssilent_offering_enabled;
-
-enum GPSSilentOfferingEnabled {
-  GPS_OFFER_ENABLED = 0;
-  GPS_OFFER_DISABLED = 1;
-}

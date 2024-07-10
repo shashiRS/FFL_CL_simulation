@@ -1,0 +1,237 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>2. Getting Started &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Simulation modes" href="simulation_modes.html" />
+    <link rel="prev" title="1. Introduction" href="introduction.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="simulation_modes.html" title="3. Simulation modes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="1. Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>Getting Started</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="getting-started">
+<h1><span class="section-number">2. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This chapter describes how to use pyBase in a project.</p>
+<section id="preconditions">
+<h2><span class="section-number">2.1. </span>Preconditions<a class="headerlink" href="#preconditions" title="Permalink to this headline">¶</a></h2>
+<p>Please ensure to use the following software in the correct version:</p>
+<ul class="simple">
+<li><p>Python 3.7</p></li>
+<li><p>Carmaker 8.1.x or later</p></li>
+</ul>
+<p>Carmaker shall be installed in its default path, which is</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\L</span>egacyApp<span class="se">\I</span>PG
+</pre></div>
+</div>
+<p>In Bricks build system Carmaker is usually installed in</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\c</span>ip_tools<span class="se">\c</span>armaker<span class="se">\&lt;</span>version&gt;<span class="se">\I</span>PG
+</pre></div>
+</div>
+<p>Both paths are supported by pyBase. If your Carmaker is installed in a different location, pyBase may produce errors when executing a simulation while it tries to find the GUI executable in the installation path. This problem can occur when the office license mode is used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you installed a newer version of Carmaker on your machine in the standard installation directory, pyBase will detect and start the newer version automatically. As there is an example repository existing (introduced in a section below) that is set up with the version mentioned above, the example execution may fail since the example project is not compatible with newer Carmaker versions.
+To avoid the behavior starting always the newest version or starting Carmaker from a customized installation path, see the example below or the documentation of cm_eval_runner to specify a fixed version to be used.</p>
+</aside>
+</section>
+<section id="important-information">
+<h2><span class="section-number">2.2. </span>Important information<a class="headerlink" href="#important-information" title="Permalink to this headline">¶</a></h2>
+<p>pyBase can be treated like a library, but in comparison to a real library all the source code is visible.
+pyBase shall not be adapted or changed according to projects needs, but it is a common base for all projects. <br /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to change something in the source code of pyBase, please be aware that the VSP department cannot support in case of issues. There is no dedicated team and there are no dedicated people assigned to give support for customized versions of pyBase. <br />
+If you face an issue in a released version, you can contact team members from VSP.</p>
+</aside>
+</section>
+<section id="integrate-pybase-to-a-project">
+<h2><span class="section-number">2.3. </span>Integrate pyBase to a project<a class="headerlink" href="#integrate-pybase-to-a-project" title="Permalink to this headline">¶</a></h2>
+<p>There are two options to integrate pyBase to a project.</p>
+<section id="integrate-pybase-as-conan-package-via-build-yml-in-cip-bricks-build-system">
+<h3><span class="section-number">2.3.1. </span>Integrate pyBase as Conan package via build.yml in CIP Bricks build system<a class="headerlink" href="#integrate-pybase-as-conan-package-via-build-yml-in-cip-bricks-build-system" title="Permalink to this headline">¶</a></h3>
+<p>For each release of pyBase &gt;=2.0.3 there is a Conan package available in the CIP Artifactory.
+The package can be referenced in the build.yml file of the project’s repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please regard that the content of the folder pyfctEval is NOT part of the Conan package. This ensures the most relevant parts of pyBase for the CarMaker test automatization to be present with a minimum of memory consumption.</p>
+</aside>
+</section>
+<section id="integrate-pybase-as-git-submodule">
+<h3><span class="section-number">2.3.2. </span>Integrate pyBase as git submodule<a class="headerlink" href="#integrate-pybase-as-git-submodule" title="Permalink to this headline">¶</a></h3>
+<p>As pyBase is treated like a library, no project specific changes are made within pyBase.
+To use the classes and methods pyBase provides, you can link a specific released commit to your project in Git as submodule.
+An example how your testing repository may look like, can be found here in the <strong>VSP_cmEval_Example</strong> repository: <a class="reference external" href="https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example">https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example</a> <br /></p>
+</section>
+</section>
+<section id="run-an-example-simulation">
+<h2><span class="section-number">2.4. </span>Run an example simulation<a class="headerlink" href="#run-an-example-simulation" title="Permalink to this headline">¶</a></h2>
+<p>There is an example repository that executes a simulation and generates a report: <a class="reference external" href="https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example">https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example</a> <br />
+It can be cloned and executed if the preconditions mentioned above are fulfilled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember to use the recursive option when cloning the repository as it contains submodules: <br />
+git clone <a class="reference external" href="https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example">https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example</a> –recursive (two dashes before recursive option!)</p>
+</aside>
+<p>As pyBase uses python site-packages that do not come along with the standard python installation, there is a <em>requirements.txt</em> file on the top level in pyBase’s repository. <br />
+To not harm your global python installation on your machine, it is recommended to use python virtual environments to resolve missing dependencies. This approach is compatible with CIP Bricks build system. If you are not familiar with python virtual environments, see the example batch file in the example repository: <a class="reference external" href="https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example/blob/master/run/runEvaluation.bat">https://github-am.geo.conti.de/ADAS/VSP_cmEval_Example/blob/master/run/runEvaluation.bat</a> <br />
+This batch file creates a virtual environment, installs the necessary site-packages, runs an example simulation and generates a simulation report. After the simulation ends the report will show automatically. <br /></p>
+</section>
+<section id="create-your-own-simulation-execution">
+<h2><span class="section-number">2.5. </span>Create your own simulation execution<a class="headerlink" href="#create-your-own-simulation-execution" title="Permalink to this headline">¶</a></h2>
+<p>To create your own execution script you can use the example mentioned above as a template. As the example consists of large script files, here is some guidance. <br />
+The most important parts of the execution scripts are following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Retrieve all TestCases and TestRuns</span>
+<span class="k">global</span> <span class="n">testCasesBase</span>
+<span class="n">testCasesBase</span> <span class="o">=</span> <span class="n">testcases</span><span class="o">.</span><span class="n">GetTestCases</span><span class="p">(</span><span class="n">testCaseSetName</span><span class="p">,</span> <span class="n">CMPrjDir</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">testCasesAE</span>   <span class="o">=</span> <span class="n">testcases</span><span class="o">.</span><span class="n">GetTestCases</span><span class="p">(</span><span class="n">testCaseSetName</span><span class="p">,</span> <span class="n">CMPrjDir</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">testRunsBase</span>
+<span class="n">testRunsBase</span> <span class="o">=</span> <span class="p">[</span><span class="n">currTestCase</span><span class="p">[</span><span class="s2">&quot;cmTestRun&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">currTestCase</span> <span class="ow">in</span> <span class="n">testCasesBase</span><span class="p">]</span>
+<span class="n">testRunsAE</span>   <span class="o">=</span> <span class="p">[</span><span class="n">currTestCase</span><span class="p">[</span><span class="s2">&quot;cmTestRun&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">currTestCase</span> <span class="ow">in</span> <span class="n">testCasesAE</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>In above mentioned code a list of testruns is created. The lists testRunsBase and testRunsAE contain objects of class cmTestRun. All testruns in these lists shall be simulated. <br />
+In the following code you can see the execution of the simulation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run all TestRuns</span>
+<span class="n">testRunner</span>   <span class="o">=</span> <span class="n">cCMEvalTestRunner</span><span class="p">(</span><span class="n">CMPrjDir</span><span class="p">,</span> <span class="n">export_quantities</span><span class="p">,</span> <span class="n">numberOfCarMakerInstances</span><span class="p">,</span> <span class="n">sampleRate</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">cmGuiPath</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\LegacyApp\IPG\carmaker\win64-8.1.1\bin\CM.exe&quot;</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">ergFilePaths</span>
+<span class="n">ergFilePaths</span> <span class="o">=</span> <span class="n">testRunner</span><span class="o">.</span><span class="n">runEvaluations</span><span class="p">(</span><span class="n">testCaseSetName</span><span class="p">,</span> <span class="n">testRunsBase</span> <span class="o">+</span> <span class="n">testRunsAE</span><span class="p">,</span> <span class="n">maxTimeInSimulationSeconds</span><span class="p">,</span>
+                                           <span class="n">headlessMode</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">useCoreLicense</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">nRetries</span> <span class="o">=</span> <span class="n">N_RETRIES</span><span class="p">,</span> <span class="n">executable</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CMPrjDir</span><span class="p">,</span> <span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="s2">&quot;CarMaker.win64.exe&quot;</span><span class="p">),</span>
+                                           <span class="n">ignoreExistingResFile</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After the method runEvaluations(..) finished, the simulation happened. All the execution logic is “hidden” behind this method. <br />
+The example files are quite longer as it shows that we parallel the erg file parsing for a better performance.
+After the simulation finished, a report can be generated as shown in the example. <br />
+As pyBase uses python’s logging class the output status or error messages, please ensure you initialize the logging library in your scripts. If you do not, you cannot see messages coming from pyBase.
+For initialization you can use your own output format or use the example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="c1">### Enable Logging</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">datefmt</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-%m-%Y %H:%M:%S&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For further details about the execution parameters or report generation, please have a look in the corresponding documentation section.</p>
+</section>
+<section id="typical-issues">
+<h2><span class="section-number">2.6. </span>Typical issues<a class="headerlink" href="#typical-issues" title="Permalink to this headline">¶</a></h2>
+<p><strong>When I clone the example repository, the pyBase folder is empty.</strong> <br />
+Reason: You did not clone recursively as pyBase is shared as a submodule. <br />
+Solution: See the example section above. <br />
+<br />
+<strong>When I try to start the simulation pyBase outputs the error message “CarMaker Telnet Connection Timeout.”</strong> <br />
+Reason: This may happen on machines with a slow system performance or on machines with high work load. Carmaker does not respond within a given time. <br />
+Solution: The time is configured in <em>cmpyglue.py</em> in variable <em>TELNET_CONNECTION_TIMEOUT</em>. Adapt it and try it again. <br />
+Note: Please report this issue to a VSP member as the timeout may be adapted in the pyBase in general if this issue occurs frequently for many users.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. Getting Started</a><ul>
+<li><a class="reference internal" href="#preconditions">2.1. Preconditions</a></li>
+<li><a class="reference internal" href="#important-information">2.2. Important information</a></li>
+<li><a class="reference internal" href="#integrate-pybase-to-a-project">2.3. Integrate pyBase to a project</a><ul>
+<li><a class="reference internal" href="#integrate-pybase-as-conan-package-via-build-yml-in-cip-bricks-build-system">2.3.1. Integrate pyBase as Conan package via build.yml in CIP Bricks build system</a></li>
+<li><a class="reference internal" href="#integrate-pybase-as-git-submodule">2.3.2. Integrate pyBase as git submodule</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#run-an-example-simulation">2.4. Run an example simulation</a></li>
+<li><a class="reference internal" href="#create-your-own-simulation-execution">2.5. Create your own simulation execution</a></li>
+<li><a class="reference internal" href="#typical-issues">2.6. Typical issues</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter"><span class="section-number">1. </span>Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="simulation_modes.html"
+                        title="next chapter"><span class="section-number">3. </span>Simulation modes</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/getting_started.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="simulation_modes.html" title="3. Simulation modes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="1. Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>Getting Started</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

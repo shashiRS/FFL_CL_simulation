@@ -1,72 +1,137 @@
-# Ignore everything in this directory
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Except this file
-!.gitignore
-!TestRun/*/
+# C extensions
+*.so
 
-**/Debug/
-**/build/
-**/tests/carmaker/src/MoCo_Brake/MoCo_Brake_CMcoder_CarMaker_rtw/**
-**/tests/carmaker/src/MoCo_Brake/slprj/**
-**/src/package/MoCo_Brake/slprj/_sfprj/**
-**/src/package/MoCo_Brake/slprj/_jitprj/**
-tests/carmaker/Movie
-tests/carmaker/bin
-*/Plugins
-*/SimInput/
-*/SimOutput/
-**/Chassis
-**/Config
-**/Pic
-*/Sensor/
-**/Tire
-**/Vehicle
-*/Trailer/
-*/UserDriver/
-*/VehicleControl/
-*.tmp*
-.road_cache/
-*.tcl
-*.autosave
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+vsp_pybase
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
 *.log
-*.info
-*.IPGControl.sessions
-*.sln
+local_settings.py
+db.sqlite3
 
-*.props
-*.tlog
-*.version*
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+ide/.vs/pyBase/v15/.suo
+
+# test outputs
+pyHTMLReport/test_output/
+
+# Visual Studio
 *.suo
-*.project
-*.depend
-*.cproject
-*.twm
-app_tmp.c
-*.*db*
-*.dll
-*.lib
-*.exe
-*.dmr
-*.defs
-*.dict
-*.ipch
-*.mat
-*.tmw
-*.target*
-*.slxc
-*.prefs
-*.obj
-*.o
-*.a
-*.mk
-*.filters
-*.vcx*
-**/conan_workarea/
-**/venv/
 
-modelsources.txt
-defines.txt
+# Sphinx Documentation
+docs/doctrees/*
+docs/sources/*
+docs/.buildinfo
 
-# Intermediate products of the smoke tests
-tests/.venv/
-tests/carmaker/Data/TestRun/SEF_BRAKE/
+# Carmaker
+test/cm_prj*/*/*.tmp*
+test/cm_prj*/Movie/.road_cache/*
+test/cm_prj*/Movie/Camera.cfg*
+*.erg
+*.erg.info
+test/cm_prj*/SimOutput/*
+test/cm_prj*/Data/TestRun/.*
+test/cm_prj*/Data/Road/.*
+
+# VS Code
+.vscode/*
+
+# Test Framework
+test/cm_prj*/Data/Config/TF_OutputQuantities
+test/cm_prj*/Data/TestRun/smokeTest/startTime.txt
+
+# CIP Bricks
+conan_workarea/*

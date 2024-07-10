@@ -1,0 +1,209 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = IPGRoad 5.0
+FileCreator = roadutil 5.1.2, 2016-05-08 11:24:48 TEMPLATE
+
+#### bottom lane
+Junction.0.Knot = 7.00000 0.00000 0.0000
+Junction.0.ArmAlpha = 0.0000 90.0000 270.000
+Junction.0.ArmRadius = 5 5 5 
+Junction.0.MainArms = 1 2
+Junction.0.RST = urban
+Junction.0.Friction = 1
+
+####right lane
+Junction.1.Knot = 0.00000 7.00000 0.0000
+Junction.1.ArmAlpha = 0.0000 90.0000 180.0000
+Junction.1.ArmRadius = 5 5 5
+Junction.1.MainArms = 0 2
+Junction.1.RST = urban
+Junction.1.Friction = 1
+
+###top lane
+Junction.2.Knot = -7.00000 0.00000 0.0000 
+Junction.2.ArmAlpha = 90.000 180.0000 270.0000
+Junction.2.ArmRadius = 5 5 5
+Junction.2.MainArms = 0 1
+Junction.2.RST = urban
+Junction.2.Friction = 1
+
+### left lane
+Junction.3.Knot = 0.00000 -7.00000 0.0000
+Junction.3.ArmAlpha = 0.0000 180.000 270.0000
+Junction.3.ArmRadius = 5 5 5
+Junction.3.MainArms = 0 1
+Junction.3.RST = urban
+Junction.3.Friction = 1
+
+
+Link.0.Junctions = 0 1 1 0
+Link.0.RST = roundabout
+Link.0.Movie = 0.2 0.2 0.02 0 0 0 0
+Link.0.Friction = 1
+Link.0.Seg.0.Type = Connect
+Link.0.Seg.0.Param = 0 0 0 0 0 0 0 0
+Link.0.LaneSection.0.Start = 0
+Link.0.LaneSection.0.LaneR.0 = 0 3 3 0 7 1 1
+Link.0.RoadMarking.0 = 0 2 0 3 0 0 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.0.RoadMarking.1 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+
+
+
+Link.1.Junctions = 1 2 2 0
+Link.1.RST = roundabout
+Link.1.Movie = 0.2 0.2 0.02 0 0 0 0
+Link.1.Friction = 1
+Link.1.Seg.0.Type = Connect
+Link.1.Seg.0.Param = 0 0 0 0 0 0 0 0
+Link.1.LaneSection.0.Start = 0
+Link.1.LaneSection.0.LaneR.0 = 0 3 3 0 7 1 1
+Link.1.RoadMarking.0 = 0 2 0 3 0 0 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.1.RoadMarking.1 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+
+Link.2.Junctions = 2 2 3 1
+Link.2.RST = roundabout
+Link.2.Movie = 0.2 0.2 0.02 0 0 0 0
+Link.2.Friction = 1
+Link.2.Seg.0.Type = Connect
+Link.2.Seg.0.Param = 0 0 0 0 0 0 0 0
+Link.2.LaneSection.0.Start = 0
+Link.2.LaneSection.0.LaneR.0 = 0 3 3 0 7 1 1
+Link.2.RoadMarking.0 = 0 2 0 3 0 0 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.2.RoadMarking.1 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+
+
+Link.3.Junctions = 3 0 0 2
+Link.3.RST = roundabout
+Link.3.Movie = 0.2 0.2 0.02 0 0 0 0
+Link.3.Friction = 1
+Link.3.Seg.0.Type = Connect
+Link.3.Seg.0.Param = 0 0 0 0 0 0 0 0
+Link.3.LaneSection.0.Start = 0
+Link.3.LaneSection.0.LaneR.0 = 0 3 3 0 7 1 1
+Link.3.RoadMarking.0 = 0 2 0 3 0 0 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.3.RoadMarking.1 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+
+
+Link.4.Junctions = 3 2 -1 -1
+Link.4.Seg.0.Type = Straight
+Link.4.Seg.0.Param = 100 0 0 0 0 0 0 0
+Link.4.RoadMarking.0 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.4.RoadMarking.1 = 0 2 0 3 0 -2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.4.RoadMarking.2 = 0 2 0 3 0 0 0.1 0 2 0 0 3 4 1 1 2 ""
+Link.4.RoadMarking.3 = 496.0 0 496.0 0 0 2 0.3 0 2 1 0 0.3 0.3 1 1 2 ""
+Link.4.RoadMarking.3.PointList:
+	0 -1.2
+	0 -3.2
+Link.4.LaneSection.0.Start = 0
+Link.4.LaneSection.0.LaneL.0 = 0 2.5 2.5 0 7 1 1
+Link.4.LaneSection.0.LaneL.1 = 0 0.2 0.2 4 7 1 1
+Link.4.LaneSection.0.LaneR.0 = 0 2.5 2.5 0 7 1 1
+Link.4.LaneSection.0.LaneR.1 = 0 0.2 0.2 4 7 1 1
+
+Link.5.Junctions = 2 1 -1 -1
+Link.5.Seg.0.Type = Straight
+Link.5.Seg.0.Param = 100 0 0 0 0 0 0 0
+Link.5.RoadMarking.0 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.5.RoadMarking.1 = 0 2 0 3 0 -2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.5.RoadMarking.2 = 0 2 0 3 0 0 0.1 0 2 0 0 3 4 1 1 2 ""
+Link.5.RoadMarking.3 = 496.0 0 496.0 0 0 2 0.3 0 2 1 0 0.3 0.3 1 1 2 ""
+Link.5.RoadMarking.3.PointList:
+	0 -1.2
+	0 -3.2
+Link.5.LaneSection.0.Start = 0
+Link.5.LaneSection.0.LaneL.0 = 0 2.5 2.5 0 7 1 1
+Link.5.LaneSection.0.LaneL.1 = 0 0.2 0.2 4 7 1 1
+Link.5.LaneSection.0.LaneR.0 = 0 2.5 2.5 0 7 1 1
+Link.5.LaneSection.0.LaneR.1 = 0 0.2 0.2 4 7 1 1
+
+Link.6.Junctions = 1 1 -1 -1
+Link.6.Seg.0.Type = Straight
+Link.6.Seg.0.Param = 100 0 0 0 0 0 0 0
+Link.6.RoadMarking.0 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.6.RoadMarking.1 = 0 2 0 3 0 -2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.6.RoadMarking.2 = 0 2 0 3 0 0 0.1 0 2 0 0 3 4 1 1 2 ""
+Link.6.RoadMarking.3 = 496.0 0 496.0 0 0 2 0.3 0 2 1 0 0.3 0.3 1 1 2 ""
+Link.6.RoadMarking.3.PointList:
+	0 -1.2
+	0 -3.2
+Link.6.LaneSection.0.Start = 0
+Link.6.LaneSection.0.LaneL.0 = 0 2.5 2.5 0 7 1 1
+Link.6.LaneSection.0.LaneL.1 = 0 0.2 0.2 4 7 1 1
+Link.6.LaneSection.0.LaneR.0 = 0 2.5 2.5 0 7 1 1
+Link.6.LaneSection.0.LaneR.1 = 0 0.2 0.2 4 7 1 1
+
+Link.7.Junctions = 0 0 -1 -1
+Link.7.Seg.0.Type = Straight
+Link.7.Seg.0.Param = 100 0 0 0 0 0 0 0
+Link.7.RoadMarking.0 = 0 2 0 3 0 2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.7.RoadMarking.1 = 0 2 0 3 0 -2 0.1 0 1 0 0 3 4 1 1 2 ""
+Link.7.RoadMarking.2 = 0 2 0 3 0 0 0.1 0 2 0 0 3 4 1 1 2 ""
+Link.7.RoadMarking.3 = 496.0 0 496.0 0 0 2 0.3 0 2 1 0 0.3 0.3 1 1 2 ""
+Link.7.RoadMarking.3.PointList:
+	0 -1.2
+	0 -3.2
+Link.7.LaneSection.0.Start = 0
+Link.7.LaneSection.0.LaneL.0 = 0 2.5 2.5 0 7 1 1
+Link.7.LaneSection.0.LaneL.1 = 0 0.2 0.2 4 7 1 1
+Link.7.LaneSection.0.LaneR.0 = 0 2.5 2.5 0 7 1 1
+Link.7.LaneSection.0.LaneR.1 = 0 0.2 0.2 4 7 1 1
+
+
+
+
+Route.0:
+	0
+	1
+	2
+	3
+Route.0.Path.0:
+	0.0000 2 0
+Route.0.Path.1:
+	0.0000 2 0
+Route.0.Path.2:
+	0.0000 2 0
+Route.0.Path.3:
+	0.0000 2 0
+Route.0.Name = CircleLeftLane
+
+Route.1:
+	0
+	1
+	2
+	3
+Route.1.Path.0:
+	0.0000 -2 0
+Route.1.Path.1:
+	0.0000 -2 0
+Route.1.Path.2:
+	0.0000 -2 0
+Route.1.Path.3:
+	0.0000 -2 0
+Route.1.Name = CircleRightLane
+
+Route.2:
+	3
+	0
+	6
+Route.2.Path.0:
+	0.0000 -2 0
+Route.2.Path.1:
+	0.0000 -2 0
+	40.0000 -2 0
+Route.2.Path.2:
+	0.0000 -2 0
+	3.0000 -2 0
+Route.2.Name = RightLaneTurnRight
+
+Route.3:
+	7
+	0
+	6
+Route.3.Path.0:
+	0.0000 -2 0
+Route.3.Path.1:
+	0.0000 -2 0
+	20.0000 -2.5 0
+Route.3.Path.2:
+	0.0000 -0.5 0
+	3.0000 -2.3 0
+Route.3.Name = BottomRightLaneTurnRight

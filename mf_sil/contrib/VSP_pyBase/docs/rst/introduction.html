@@ -1,0 +1,167 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Introduction &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Getting Started" href="getting_started.html" />
+    <link rel="prev" title="Welcome to VSP_pyBase’s documentation!" href="../index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="2. Getting Started"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to VSP_pyBase’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Introduction</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="introduction">
+<h1><span class="section-number">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<section id="scope-of-pybase">
+<h2><span class="section-number">1.1. </span>Scope of pyBase<a class="headerlink" href="#scope-of-pybase" title="Permalink to this headline">¶</a></h2>
+<p>The scope of pyBase is to automatize the execution and evaluation of regression tests. This shall enable Carmaker to be used in CI/CT systems for nightly tests or tests that are executed for every commit. Additionally pyBase shall enable developer to perform regression tests of their software, which is integrated in Carmaker, locally and fast on their local machines. <br />
+<br />
+Usecases of pyBase:</p>
+<ul class="simple">
+<li><p>Regression tests and nightly tests locally on a developers machine and in CI/CT systems (like CIP Bricks)</p></li>
+<li><p>Common scripts for all driving function projects to execute their simulations in Carmaker</p></li>
+<li><p>Enable developers to perform testing-driven development with fast feedback loops on their own machines</p></li>
+<li><p>Support of latest Carmaker versions and its interfaces</p></li>
+<li><p>Provide a straight forward approach for executing Carmaker simulation and report generation</p></li>
+</ul>
+<p>Out of scope for pyBase:</p>
+<ul class="simple">
+<li><p>KPI testing framework with the help of pre-defined classes to define KPIs (as this is covered by TSF framework)</p></li>
+<li><p>Connection to tools like IMS, Github, Doors, Rhapsody or test databases (as this is covered by TSF framework)</p></li>
+<li><p>Generation of a large number of testcase/testrun with statistical methods like classification tree method (as this is covered by the VSP ScenarioGenerator)</p></li>
+</ul>
+</section>
+<section id="pycmcommon">
+<h2><span class="section-number">1.2. </span>pycmCommon<a class="headerlink" href="#pycmcommon" title="Permalink to this headline">¶</a></h2>
+<p>In pycmCommon there is cmpyglue. cmpyglue is the <strong>C</strong>ar<strong>M</strong>aker <strong>Py</strong>thon <strong>glue</strong>. It enables a developer to control the Carmaker via python.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please ensure your user account has a valid Carmaker license assigned to use these methods. Especially when you try to use core licenses instead of usual office licenses there are restricted as they are intended to be used for CI/CT activities. <br />
+If you did not request a license but you need one, for an usual office license please request a Carmaker installation in SSP7.
+After your request is closed, a license is assigned to your Windows user account by the IT. <br />
+If you need a core license, please contact Thomas Meissner (<a class="reference external" href="mailto:thomas&#46;meissner&#37;&#52;&#48;continental-corporation&#46;com">thomas<span>&#46;</span>meissner<span>&#64;</span>continental-corporation<span>&#46;</span>com</a>) from VSP (Virtual Simulation Platform) team.</p>
+</aside>
+</section>
+<section id="pycmeval">
+<h2><span class="section-number">1.3. </span>pycmEval<a class="headerlink" href="#pycmeval" title="Permalink to this headline">¶</a></h2>
+<p>pycmEval is <strong>py</strong>thon <strong>C</strong>ar<strong>M</strong>aker <strong>Eval</strong>uation and is an abstraction layer that provides classes and functions that can be used to control Carmaker simulations without caring about a telnet connection or the erg file format. <br />
+Additionally it provides most commonly used evaluation functions for the evaluation of the results after the simulation. <br />
+<strong>cm_eval_runner</strong> is a class to configure and run a Carmaker simulation in an automated manner. <br />
+<strong>cm_eval_erg_parser</strong> is a class providing methods to read data from erg files. <br />
+<strong>cm_eval_erg_calculator</strong> is a class providing commonly used methods for the result evaluation like calculating the minimum distance between the ego and a traffic vehicle or calculate the time of collision.</p>
+</section>
+<section id="pyhtmlreport">
+<h2><span class="section-number">1.4. </span>pyHTMLReport<a class="headerlink" href="#pyhtmlreport" title="Permalink to this headline">¶</a></h2>
+<p>pyHTMLReport is <strong>py</strong>thon <strong>HTML Report</strong> and provides classes and methods to write an evaluation report in html format without writing html code. <br />
+It includes javascript applets for creating tables, drawing graphs with zoom options and a lazy load mechanism to create a performant web page to visualize simulation results.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommended to use Chrome or Firefox to open the web page. There may be issues with Internet Explorer or Edge in regards to the javascript applets.</p>
+</aside>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. Introduction</a><ul>
+<li><a class="reference internal" href="#scope-of-pybase">1.1. Scope of pyBase</a></li>
+<li><a class="reference internal" href="#pycmcommon">1.2. pycmCommon</a></li>
+<li><a class="reference internal" href="#pycmeval">1.3. pycmEval</a></li>
+<li><a class="reference internal" href="#pyhtmlreport">1.4. pyHTMLReport</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Welcome to VSP_pyBase’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="getting_started.html"
+                        title="next chapter"><span class="section-number">2. </span>Getting Started</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="getting_started.html" title="2. Getting Started"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to VSP_pyBase’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Introduction</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

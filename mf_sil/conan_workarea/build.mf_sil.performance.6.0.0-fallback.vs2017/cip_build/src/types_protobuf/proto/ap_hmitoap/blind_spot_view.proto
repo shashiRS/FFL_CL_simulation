@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.ap_hmitoap.blind_spot_view;
-
-enum BlindSpotView {
-  BLIND_SPOT_VIEW_ACTIVE_HMI = 0;
-  BLIND_SPOT_VIEW_ACTIVE_IC = 1;
-}

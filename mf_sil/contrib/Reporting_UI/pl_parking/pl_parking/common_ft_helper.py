@@ -6028,6 +6028,8 @@ class MoCoSignals(SignalDefinition):
         acceleration_interface = "acceleration_interface"
         drivingForwardReq_nu = "drivingForwardReq_nu"
         TimeStamp = "TimeStamp"
+        lateralControlFinished_nu = "lateralControlFinished_nu"
+        lateralPathControlFailed_nu = "lateralPathControlFailed_nu"
 
         xTrajRAReq_m_0 = "xTrajRAReq_m_0"
         yTrajRAReq_m_0 = "yTrajRAReq_m_0"
@@ -6101,6 +6103,9 @@ class MoCoSignals(SignalDefinition):
             (self.Columns.yawReq_rad_2, ".plannedTrajPort.plannedTraj_2.yawReq_rad"),
             (self.Columns.distanceToStopReq_m_2, ".plannedTrajPort.plannedTraj_2.distanceToStopReq_m"),
             (self.Columns.velocityLimitReq_mps_2, ".plannedTrajPort.plannedTraj_2.velocityLimitReq_mps"),
+            (self.Columns.lateralControlFinished_nu, ".mfControlStatusPort.lateralControlFinished_nu"),
+            (self.Columns.lateralPathControlFailed_nu, ".mfControlStatusPort.lateralPathControlFailed_nu"),
+
         }
 
 

@@ -1,0 +1,183 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>3. Simulation modes &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. cmpyglue" href="cmpyglue.html" />
+    <link rel="prev" title="2. Getting Started" href="getting_started.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cmpyglue.html" title="4. cmpyglue"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="getting_started.html" title="2. Getting Started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Simulation modes</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="simulation-modes">
+<h1><span class="section-number">3. </span>Simulation modes<a class="headerlink" href="#simulation-modes" title="Permalink to this headline">¶</a></h1>
+<p>This chapter describes which simulation modes are available for CarMaker simulations. <br />
+It will show how a CarMaker simulation can be started with pyBase using a specific mode.</p>
+<section id="preconditions">
+<h2><span class="section-number">3.1. </span>Preconditions<a class="headerlink" href="#preconditions" title="Permalink to this headline">¶</a></h2>
+<p>In order to use a specific simulation mode, please be aware that it may be necessary to activate your user account for the specific license. In the following explanations this hint will be given for each license model individually. <br />
+Before the testrun starts, pyBase will display the chosen simulation mode as a log message. <br />
+<strong>If you are not sure which simulation mode you shall choose, please contact a member of VSP.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommended to NOT use the GUI / Office mode if you want to run more than one CarMaker instance in parallel as the overall simulation performance decreases. In this case, choose a different mode.</p>
+</aside>
+</section>
+<section id="gui-office-mode">
+<h2><span class="section-number">3.2. </span>GUI / Office mode<a class="headerlink" href="#gui-office-mode" title="Permalink to this headline">¶</a></h2>
+<p><strong>Running a CarMaker simulation in GUI mode requires a usual office license which can be requested via SSP7. Once a license is assigned to your user account, you can simulate with any version of CarMaker Office.</strong></p>
+<p>By default pyBase executes a CarMaker simulation in the GUI mode. Therefore the communication between pyBase and CarMaker is controlled via telnet. CarMaker will simulate one TestRun after another. If you choose a higher number of CarMaker instances in the cmEvalRunner, multiple instances of CarMaker will run in parallel. Each instance blocks one CarMaker office license. <br /> <br />
+This mode is activated by passing a list of TestRuns (of type cmTestRun) to the runEvaluations function of the cmEvalRunner. pyBase will ensure a proper execution of all TestRuns. <br />
+This is the classical simulation mode that has been used for years. <br />
+As the GUI needs to be started and remote-controlled, this mode consumes a few more processing time for the startup. <br />
+Choose a higher number of parallel simulations in the cmEvalRunner:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">testRunner</span> <span class="o">=</span> <span class="n">cCMEvalTestRunner</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">numberOfCarMakerInstances</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="headless-mode">
+<h2><span class="section-number">3.3. </span>Headless mode<a class="headerlink" href="#headless-mode" title="Permalink to this headline">¶</a></h2>
+<p><strong>Running a CarMaker simulation in headless mode requires a usual office license which can be requested via SSP7. Once a license is assigned to your user account, you can simulate with any version of CarMaker Office &gt;=8.1.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not mix up this mode with the continuous testing / core license mode!</p>
+</aside>
+<p>This mode is similar to the GUI mode. More than one simulation can be started as described in the GUI mode. The license usage is the same as in GUI mode.  In this mode no GUI is started for the execution of TestRuns. The simulation is performed headless. This feature is available for CarMaker &gt;=8.1. <br />
+Choose the headless mode in the runEvalutions function of the cmEvalRunner:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ergFilePaths</span> <span class="o">=</span> <span class="n">testRunner</span><span class="o">.</span><span class="n">runEvaluations</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">headlessMode</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="hpc-light-mode">
+<h2><span class="section-number">3.4. </span>HPC light mode<a class="headerlink" href="#hpc-light-mode" title="Permalink to this headline">¶</a></h2>
+<p><strong>Running a CarMaker simulation in HPC light mode mode requires a usual office license which can be requested via SSP7. Once a license is assigned to your user account, you can simulate with any version of CarMaker Office &gt;=8.1.</strong></p>
+<p>This mode is similar to the GUI mode. Only one instance of CarMaker per machine can be started when using this mode. This mode enables to execute four CarMaker TestRuns in parallel by blocking only one office license. The parallel execution of the TestRuns is handled by CarMaker itself. pyBase cannot control the execution and CarMaker introduces its own naming convention for result files. Thus pyBase cannot distribute TestRuns to different instances and does not support running more than one instance of CarMaker when using this mode. <br />
+HPC light mode is chosen automatically, if a testscript file (*.ts) of the CarMaker simulation manager is passed in the runEvaluations function of the cmEvalRunner instead of a list of TestRuns:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ergFilePaths</span> <span class="o">=</span> <span class="n">testRunner</span><span class="o">.</span><span class="n">runEvaluations</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="s1">&#39;smokeTests.ts&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The ts file has to be placed in the TestRun folder of the chosen CarMaker project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only to use the HPC light mode a testscript file is passed to the cmEvalRunner. In all other modes, a list of objects of type cmTestRun is required to give pyBase the execution control!</p>
+</aside>
+</section>
+<section id="continuous-testing-core-license-mode">
+<h2><span class="section-number">3.5. </span>Continuous testing / Core license mode<a class="headerlink" href="#continuous-testing-core-license-mode" title="Permalink to this headline">¶</a></h2>
+<p><strong>Running a CarMaker simulation in Continuous testing / Core license mode requires a core license which is assigned to your user account whenever you request an usual office license via SSP7. Once a license is assigned to your user account, you can simulate with any version of CarMaker Office &gt;=8.1.</strong></p>
+<p>This mode is used for continuous testing and high parallelization purposes. At the moment it is used in the ADAS CIP Bricks build system for continuous testing activities.
+The simulation will be performed in a headless mode using a core license. Multiple instances can be started per machine. Each instance blocks one core license. <br />
+Choose the continuous testing / core license mode and the number of instances in the constructor of cmEvalRunner class and its runEvaluations method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">testRunner</span> <span class="o">=</span> <span class="n">cCMEvalTestRunner</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">numberOfCarMakerInstances</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<span class="n">ergFilePaths</span> <span class="o">=</span> <span class="n">testRunner</span><span class="o">.</span><span class="n">runEvaluations</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">useCoreLicense</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. Simulation modes</a><ul>
+<li><a class="reference internal" href="#preconditions">3.1. Preconditions</a></li>
+<li><a class="reference internal" href="#gui-office-mode">3.2. GUI / Office mode</a></li>
+<li><a class="reference internal" href="#headless-mode">3.3. Headless mode</a></li>
+<li><a class="reference internal" href="#hpc-light-mode">3.4. HPC light mode</a></li>
+<li><a class="reference internal" href="#continuous-testing-core-license-mode">3.5. Continuous testing / Core license mode</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="getting_started.html"
+                        title="previous chapter"><span class="section-number">2. </span>Getting Started</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cmpyglue.html"
+                        title="next chapter"><span class="section-number">4. </span>cmpyglue</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/simulation_modes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cmpyglue.html" title="4. cmpyglue"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="getting_started.html" title="2. Getting Started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Simulation modes</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

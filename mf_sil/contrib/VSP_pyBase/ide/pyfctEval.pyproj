@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1edd686b-55a4-41e9-9fe2-3e81def8dc49}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>..\pyfctEval\fct_bsig_runner_test\fct_bsig_runner_test.py</StartupFile>
+    <SearchPath>..\pyfctEval\;..\pyfctEval\fct_bsig_runner_test\;..\..\..\03_Source;..\..\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>pyfctEval</Name>
+    <RootNamespace>pyfctEval</RootNamespace>
+    <InterpreterId>Global|PythonCore|2.7-32</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|2.7-32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\pyfctEval\fct_bsig_runner.py">
+      <Link>fct_bsig_runner.py</Link>
+    </Compile>
+    <Compile Include="..\pyfctEval\fct_bsig_runner_test\fct_bsig_runner_test.py">
+      <Link>fct_bsig_runner_test\fct_bsig_runner_test.py</Link>
+    </Compile>
+    <Compile Include="..\pyfctEval\fct_bsig_runner_test\fct_data_types.py">
+      <Link>fct_bsig_runner_test\fct_data_types.py</Link>
+    </Compile>
+    <Compile Include="..\pyfctEval\mtsRunner.py">
+      <Link>mtsRunner.py</Link>
+    </Compile>
+    <Compile Include="..\pyfctEval\rec2mp4.py">
+      <Link>rec2mp4.py</Link>
+    </Compile>
+    <Compile Include="..\pyfctEval\stk\io\signalwriter.py">
+      <Link>signalwriter.py</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fct_bsig_runner_test\" />
+  </ItemGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

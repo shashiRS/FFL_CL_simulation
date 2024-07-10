@@ -74,17 +74,13 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             # TODO temporary solution for extracting data from csf
             # future implementation will use ERG files
-            # df_from_csv = pd.read_csv(r'D:\MOCO\mf_trjctl\tests\algotest\functional_testcases\data\observed\exported_file__D2023_10_31_T08_10_22.csv')
-            # df_planned_traj = read_data_from_multiples_trajectories(r"D:\tsf\TSF_3\workspace\pl_parking\pl_parking\PLP\MF\MOCO\observed_signals.yaml",
-            #                                                   r'D:\MOCO\mf_trjctl\tests\algotest\functional_testcases\data\observed\exported_file__D2023_10_31_T08_10_22.csv')
+            # df_from_csv = pd.read_csv(r".\absolute_directory_path_to_your_measurement\file.csv")
+            # df_planned_traj = read_data_from_multiples_trajectories(r".\absolute_directory_path_to_your_measurement\file.yaml",
+            #                                                   r".\absolute_directory_path_to_your_measurement\file.csv")
             assertion_dict = {}
 
             "TestStep"
@@ -131,7 +127,7 @@ class Step1(TestStep):
                     self.result.measured_result = FALSE
                     test_result = fc.FAIL
                     eval_text = " ".join(
-                        f"absolute lateral deviation from planned path is greater than "
+                        f"absolute lateral deviation from planned path is less than "
                         f"AP_C_FAIL_MAX_LAT_ERROR_M({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_LAT_ERROR_M})"
                         f"Conditions: {test_result}.".split()
                     )

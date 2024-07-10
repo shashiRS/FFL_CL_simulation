@@ -1,8 +1,9 @@
 #INFOFILE1.1 - Do not remove this line!
 FileIdent = GUI-Config 8.0
-CM.Exe = bin/CarMaker.win64.exe
+CM.Exe = D:/JenkinsServer_Main/workspace/FFL_CL_Simulation/mf_sil/conan_workarea/package.mf_sil.performance.6.0.0-fallback.vs2017/bin/CarMaker.win64.exe
 CM.Args =
 CM.Exe.History:
+	D:/JenkinsServer_Main/workspace/FFL_CL_Simulation/mf_sil/conan_workarea/package.mf_sil.performance.6.0.0-fallback.vs2017/bin/CarMaker.win64.exe
 	bin/CarMaker.win64.exe
 	../../../conan_workarea/package.mf_sil.generic.4.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe
 	../../../conan_workarea/package.mf_sil.cus_only.4.0.0-fallback.vs2017_debug/bin/CarMaker.win64.exe

@@ -1,0 +1,55 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Tire-RTTire 3
+FileCreator = CarMaker for Simulink 2013-12-04 14:14:00
+Description:
+	Tire parameters based on file 'DT_195_65R15.tdx'
+	""
+	#   Load:      32 points [ 0 N  to  10614.3 N ]
+	#   Slip:     128 points [ -0.15   to  0.15 ]
+	#   Alpha:    128 points [ -12.12 deg  to  12.13 deg ]
+
+
+## General ###############################################################
+Side = left
+StandStill.cLong = 0.01
+StandStill.cSide = 0.2
+StandStill.vMax = 0.25
+
+
+## Visualization #########################################################
+FLoadMax = 10000
+NomWidth = 0.195
+AspectRatio = 0.65
+RimRadius = 0.191
+
+
+## RT-Tire ###############################################################
+muRoad = 1
+KinRollRadius = 0.293
+NomRadius = 0.318
+Radial.Stiffness = 350000
+Radial.Damping = 1000
+
+RollResist.Kind = TrqLoad
+RollResist.Factor = 0.01
+
+LongFrc.Length = 0.05
+SideFrc.Length = 0.1
+AlignTrq.Length = 0.05
+LongFrc.Stiffness = 1.2
+SideFrc.Stiffness = 1.0
+AlignTrq.Stiffness = 1.0
+
+InclinAngle2OffsetFy = 0.0
+InclinAngle2OffsetMz = 0.0
+InclinAngle2Alpha = 0.0
+
+TurnSlip.MzMax = 0.0
+TurnSlip.cMz = 0.0
+TurnSlip.Alpha2Mz = 0.0
+
+BinFName = Mapping/RT_195_65R15.bin
+
+
+## Additional Parameters #################################################
+StandStill.cAlign = 0.01

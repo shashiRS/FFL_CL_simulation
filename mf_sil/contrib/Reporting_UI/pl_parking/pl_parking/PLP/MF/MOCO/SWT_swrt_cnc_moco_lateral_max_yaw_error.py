@@ -70,11 +70,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             assertion_dict = {}
 
@@ -117,9 +113,9 @@ class Step1(TestStep):
 
                 for _, car_pos_row in df_filtered.iterrows():
 
-                    orientation_deviation_from_path = car_pos_row["orientationError_rad"]
+                    orientationError_deg = car_pos_row["orientationError_rad"]
 
-                    if abs(orientation_deviation_from_path) > constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD:
+                    if abs(orientationError_deg) > constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD:
                         calculated_hold_req_nu = constants.MoCo.LoDMCHoldRequestType.LODMC_HOLD_REQ_ON
                         if car_pos_row["holdReq_nu"] != calculated_hold_req_nu:
                             assertion_dict[_] = car_pos_row["holdReq_nu"]
@@ -133,12 +129,12 @@ class Step1(TestStep):
                     self.result.measured_result = FALSE
                     test_result = fc.FAIL
                     eval_text = " ".join(
-                        f"absolute orientation deviation from planned path <= AP_C_FAIL_MAX_YAW_ERROR_RAD({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}) "
+                        f"absolute orientation deviation from planned path <= AP_C_PC_FAIL_MAX_YAW_ERROR_RAD({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}) "
                         f"and loDMCCtrlRequestPort.holdReq_nu = 1".split()
                     )
                     eval_0 = " ".join(
-                        f" The absolute orientation deviation from planned path is greater "
-                        f"than {constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}.".split()
+                        f" The absolute orientation deviation from planned path should be greater "
+                        f"than AP_C_PC_FAIL_MAX_YAW_ERROR_RAD ({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}).".split()
                     )
 
                     # Set table dataframe
@@ -160,12 +156,12 @@ class Step1(TestStep):
                     self.result.measured_result = TRUE
                     test_result = fc.PASS
                     eval_text = " ".join(
-                        f"absolute orientation deviation from planned path <= AP_C_FAIL_MAX_YAW_ERROR_RAD({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}) "
-                        f"and loDMCCtrlRequestPort.holdReq_nu = 0".split()
+                        f"absolute orientation deviation from planned path > AP_C_PC_FAIL_MAX_YAW_ERROR_RAD({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}) "
+                        f"and loDMCCtrlRequestPort.holdReq_nu = 1".split()
                     )
                     eval_0 = " ".join(
-                        f" The absolute orientation deviation from planned path is greater "
-                        f"than {constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}.".split()
+                        f" The absolute orientation deviation from planned path should be greater "
+                        f"than AP_C_PC_FAIL_MAX_YAW_ERROR_RAD ({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}).".split()
                     )
 
                     # Set table dataframe
@@ -205,12 +201,12 @@ class Step1(TestStep):
                 self.result.details["Additional_results"] = additional_results_dict
             else:
                 test_result = fc.NOT_ASSESSED
-                eval_text = f"The absolute orientation deviation from planned path is not greater than {constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}"
                 self.result.measured_result = NAN
 
+                eval_text = " ".join(" Lateral control request not sent.".split())
                 eval_0 = " ".join(
-                    f" The absolute orientation deviation from planned path is greater "
-                    f"than {constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}.".split()
+                    f" Lateral control request should be sent and the absolute orientation deviation from planned path should be greater "
+                    f"than AP_C_PC_FAIL_MAX_YAW_ERROR_RAD ({constants.MoCo.Parameter.AP_C_PC_FAIL_MAX_YAW_ERROR_RAD}).".split()
                 )
                 # Set table dataframe
                 signal_summary = pd.DataFrame(
@@ -291,9 +287,9 @@ def get_plot_signals(df):
     fig.add_trace(
         go.Scatter(
             x=df.index.values.tolist(),
-            y=df["orientationError_rad"].values.tolist(),
+            y=(abs(df["orientationError_rad"]).values.tolist()),
             mode="lines",
-            name="orientationError_rad",
+            name="abs(orientationError_rad)",
         )
     )
     fig.add_trace(

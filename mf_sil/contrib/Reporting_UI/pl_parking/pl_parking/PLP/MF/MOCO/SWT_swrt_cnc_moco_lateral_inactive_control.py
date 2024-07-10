@@ -74,11 +74,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
             "Check inactive lateral control precondition"
             inactive_lateral_control = 0
             if inactive_lateral_control in df["activateLaCtrl"].to_list():
@@ -165,13 +161,18 @@ class Step1(TestStep):
                 test_result = fc.NOT_ASSESSED
                 self.result.measured_result = NAN
                 self.result.details["Step_result"] = test_result
-                eval_0 = " ".join("No signal activateLaCtrl = False in all measurement".split())
+                eval_text = " ".join("No signal activateLaCtrl = False in all measurement".split())
+                eval_0 = " ".join("Ensure that the component does not activate lateral control when the input request is set to false.".split()
+                )
 
                 # Set table dataframe
                 signal_summary = pd.DataFrame(
                     {
                         "Evaluation": {
                             "1": eval_0,
+                        },
+                        "Result": {
+                            "1": eval_text,
                         },
                     }
                 )

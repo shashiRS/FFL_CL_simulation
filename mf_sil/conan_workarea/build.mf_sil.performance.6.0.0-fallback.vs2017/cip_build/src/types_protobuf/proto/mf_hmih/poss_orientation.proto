@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.mf_hmih.poss_orientation;
-
-enum PossOrientation {
-  POSS_ORI_CERTAIN = 0;
-  POSS_ORI_UNCERTAIN = 1;
-}

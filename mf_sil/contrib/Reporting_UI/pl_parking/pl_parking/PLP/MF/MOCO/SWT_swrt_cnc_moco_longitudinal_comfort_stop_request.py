@@ -75,11 +75,7 @@ class Step1(TestStep):
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
 
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             if (df["comfortStopRequest"] == 1).any():
                 "Filter data by comfort stop request"

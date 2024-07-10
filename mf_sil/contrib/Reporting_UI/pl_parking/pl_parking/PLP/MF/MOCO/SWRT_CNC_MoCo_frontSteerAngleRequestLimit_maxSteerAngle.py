@@ -74,11 +74,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             "TestStep"
             "Calculate frontSteerAngReq_rad  at wheels"
@@ -129,7 +125,7 @@ class Step1(TestStep):
                     test_result = fc.FAIL
                     eval_text = " ".join(
                         f"Lateral request control is active and "
-                        f"The Front steer angle request is within "
+                        f"The Front steer angle request is not within "
                         f" +/- AP_V_MAX_STEER_ANG_RAD({constants.MoCo.Parameter.AP_V_MAX_STEER_ANG_RAD})"
                         f"Conditions: {test_result}.".split()
                     )

@@ -1,0 +1,165 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>10. Tool for transferring the erg/mf4 file to bsig file &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="9. pyHTMLReport" href="htmlReport.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="htmlReport.html" title="9. pyHTMLReport"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Tool for transferring the erg/mf4 file to bsig file</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="tool-for-transferring-the-erg-mf4-file-to-bsig-file">
+<h1><span class="section-number">10. </span>Tool for transferring the erg/mf4 file to bsig file<a class="headerlink" href="#tool-for-transferring-the-erg-mf4-file-to-bsig-file" title="Permalink to this headline">¶</a></h1>
+<section id="introduction">
+<h2><span class="section-number">10.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This tool takes the erg or mf4 file from CarMaker as input. Basing on a mapping file in Excel format, it generates a bsig file with the pre-defined signals in the mapping file. It can be execute in python command as following: <br /></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python erg_mdf4_2bsig.py --ergmf4PathFile xxx --mapFile xxx --outputFile xxx -- --samplefrq xx
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">The parameter <em>—ergmf4PathFile</em> defines the path of input erg/mf4 files and specified erg/mf4 file’ name. If only path or folder are given here, the tool can search for all the erg/mf4 in the folder.</div>
+<div class="line">The parameter <em>—mapFile</em> defines the path and the name of mapping file in xls or xlsx format.</div>
+<div class="line">The parameter <em>—outputFile</em> defines the output path and give the name of the output bsig name in bsig format.</div>
+<div class="line">The parameter <em>—samplefrq</em> defines the sample frequency of taking values from erg/mf4 file. If the frequency is higher than the erg/mf4 file, the original frequency of erg/mf4 will be taken.</div>
+</div>
+<p>For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python erg_mdf4_2bsig.py --ergmf4PathFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\L</span>aneChange_MultiObj_5Lanes_143552.mf4 --mapFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\S</span>ignals_Map.xlsx --outputFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\l</span>aneChange_mf4.bsig --samplefrq <span class="m">20</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python erg_mdf4_2bsig.py --ergmf4PathFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\ </span>--mapFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\S</span>ignals_Map.xlsx --outputFile d:<span class="se">\V</span>SP_pyBase<span class="se">\p</span>yfctEval<span class="se">\e</span>rg_mdf4_2bsig_test<span class="se">\l</span>aneChange_mf4.bsig --samplefrq <span class="m">1000</span>
+</pre></div>
+</div>
+</section>
+<section id="features-of-the-tool">
+<h2><span class="section-number">10.2. </span>Features of the Tool<a class="headerlink" href="#features-of-the-tool" title="Permalink to this headline">¶</a></h2>
+<section id="merge-erg-mf4-file-into-one-bsig-file">
+<h3><span class="section-number">10.2.1. </span>Merge erg/mf4 file into one bsig file<a class="headerlink" href="#merge-erg-mf4-file-into-one-bsig-file" title="Permalink to this headline">¶</a></h3>
+<p>Give the folder address which contains all the erg/mf4 files to be merged to the parameter <em>—ergmf4PathFile</em>. The tool will search all the erg/mf4 file in this folder and merge them into one bsig file as pre-defined in the parameter <em>—outputFile</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If erg/mf4 files have the same signals which need to be export to bsig, values of those signals only from <strong>last</strong> erg/mf4 file will be export to bsig file.</p>
+</aside>
+</section>
+<section id="automatic-replacement-of-id-to-numbers">
+<h3><span class="section-number">10.2.2. </span>Automatic Replacement of #ID to Numbers<a class="headerlink" href="#automatic-replacement-of-id-to-numbers" title="Permalink to this headline">¶</a></h3>
+<p>The tool can search for #ID in the signals names which defined in the Excel mapping file. It will automatically replace the #ID as 0, 1, 2, 3 … until this signal’s ID cannot be found in the erg/mf4 file any more. After that, the tool exports all the replaced signals into bsig file. Please define the signals with #ID like following picture in the Excel table.</p>
+<a class="reference internal image-reference" href="../_images/IDs.jpeg"><img alt="#ID replace picture" src="../_images/IDs.jpeg" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The tool can support maximum 3 #ID replacement in one signal at moment.</p>
+</aside>
+</section>
+<section id="more-signals-in-erg-mf4-file-merging-to-one-matrix-signal-in-bsig-file">
+<h3><span class="section-number">10.2.3. </span>More Signals in erg/mf4 File merging to one matrix Signal in bsig File<a class="headerlink" href="#more-signals-in-erg-mf4-file-merging-to-one-matrix-signal-in-bsig-file" title="Permalink to this headline">¶</a></h3>
+<p>It is also possible to merge the values from different signals in the erg/mf4 file into one matrix signal in the bsig file. This feature can be defined in the Excel table as following picture. Then a matix signal will be export to the bsig file.</p>
+<a class="reference internal image-reference" href="../_images/signal_merge.jpeg"><img alt="signal merger picture" src="../_images/signal_merge.jpeg" style="width: 800px;" /></a>
+</section>
+<section id="factor-and-offset-calculation">
+<h3><span class="section-number">10.2.4. </span>Factor and Offset Calculation<a class="headerlink" href="#factor-and-offset-calculation" title="Permalink to this headline">¶</a></h3>
+<p>Factor and offset can be defined in the Excel mapping file. Fill the factor in the column C and offset in the column D only to the related signals like the following picture. Those factor will be multiplied by the values from erg/mf4 and export the results to the bsig file. Those offset will be added to the values from the erg/mf4 file and export the result to the bsig file.</p>
+<a class="reference internal image-reference" href="../_images/factor_offset.jpeg"><img alt="factor offset picture" src="../_images/factor_offset.jpeg" style="width: 800px;" /></a>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">10. Tool for transferring the erg/mf4 file to bsig file</a><ul>
+<li><a class="reference internal" href="#introduction">10.1. Introduction</a></li>
+<li><a class="reference internal" href="#features-of-the-tool">10.2. Features of the Tool</a><ul>
+<li><a class="reference internal" href="#merge-erg-mf4-file-into-one-bsig-file">10.2.1. Merge erg/mf4 file into one bsig file</a></li>
+<li><a class="reference internal" href="#automatic-replacement-of-id-to-numbers">10.2.2. Automatic Replacement of #ID to Numbers</a></li>
+<li><a class="reference internal" href="#more-signals-in-erg-mf4-file-merging-to-one-matrix-signal-in-bsig-file">10.2.3. More Signals in erg/mf4 File merging to one matrix Signal in bsig File</a></li>
+<li><a class="reference internal" href="#factor-and-offset-calculation">10.2.4. Factor and Offset Calculation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="htmlReport.html"
+                        title="previous chapter"><span class="section-number">9. </span>pyHTMLReport</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/erg_mf4_2bsig.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="htmlReport.html" title="9. pyHTMLReport"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Tool for transferring the erg/mf4 file to bsig file</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

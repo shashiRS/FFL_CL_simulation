@@ -3,6 +3,7 @@
 #!/usr/bin/env python3
 
 import logging
+import math
 import os
 import sys
 import tempfile
@@ -80,11 +81,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             assertion_dict = {}
             passed_dict = {}
@@ -96,6 +93,8 @@ class Step1(TestStep):
                 (df["activateLaCtrl"] == 1)
                 & (df["laCtrlRequestType"] == constants.MoCo.LaCtrlRequestType.LACTRL_BY_TRAJECTORY)
             ]
+
+            df["orientationError_deg"] = df["orientationError_rad"].astype(float).apply(math.degrees)
 
             if not df_filtered.empty:
                 # for _, row in df.iterrows():
@@ -113,20 +112,20 @@ class Step1(TestStep):
                 "TestStep"
                 "Evaluate orientation deviation every cycle"
                 for _, car_pos_row in df_filtered.iterrows():
-                    orientation_deviation_from_path = car_pos_row["orientationError_rad"]
+                    orientationError_deg = math.degrees(car_pos_row["orientationError_rad"])
 
-                    if abs(orientation_deviation_from_path) > constants.MoCo.Parameter.AP_C_KPI_FAIL_MAX_YAW_ERROR_DEG:
+                    if abs(orientationError_deg) > constants.MoCo.Parameter.AP_C_KPI_FAIL_MAX_YAW_ERROR_DEG:
                         "Failed criteria"
-                        assertion_dict[_] = abs(orientation_deviation_from_path)
+                        assertion_dict[_] = abs(orientationError_deg)
 
                     elif constants.MoCo.Parameter.AP_C_KPI_PASS_MAX_YAW_ERROR_DEG < (
-                        abs(orientation_deviation_from_path) <= constants.MoCo.Parameter.AP_C_KPI_FAIL_MAX_YAW_ERROR_DEG
+                        abs(orientationError_deg) <= constants.MoCo.Parameter.AP_C_KPI_FAIL_MAX_YAW_ERROR_DEG
                     ):
                         "Passed Criteria"
-                        passed_dict[_] = abs(orientation_deviation_from_path)
+                        passed_dict[_] = abs(orientationError_deg)
                     else:
                         "Acceptable Criteria"
-                        acceptable_dict[_] = abs(orientation_deviation_from_path)
+                        acceptable_dict[_] = abs(orientationError_deg)
                 if assertion_dict:
                     self.result.measured_result = Result(numerator=0, denominator=1, unit="= 0 %")
                     test_result = fc.FAIL
@@ -159,7 +158,7 @@ class Step1(TestStep):
                     test_result = fc.PASS
 
                     eval_text = " ".join(
-                        f"Absolute Orientation deviation from path <= "
+                        f"Absolute Orientation deviation from path >"
                         f"AP_C_KPI_PASS_MAX_YAW_ERROR_DEG  ({constants.MoCo.Parameter.AP_C_KPI_PASS_MAX_YAW_ERROR_DEG :})"
                         f"Conditions: {test_result}.".split()
                     )
@@ -209,7 +208,7 @@ class Step1(TestStep):
                 self.result.details["Additional_results"] = additional_results_dict
             else:
                 test_result = fc.NOT_ASSESSED
-                eval_text = "Lateral control request not active"
+                eval_text = "Lateral control request is not active."
                 self.result.measured_result = NAN
 
                 eval_0 = " ".join(
@@ -295,9 +294,9 @@ def get_plot_signals(df):
     fig.add_trace(
         go.Scatter(
             x=df.index.values.tolist(),
-            y=df["orientationError_rad"].values.tolist(),
+            y=(abs(df["orientationError_deg"]).values.tolist()),
             mode="lines",
-            name="orientationError_rad",
+            name="abs(orientationError_deg)",
         )
     )
     fig.add_trace(
@@ -360,7 +359,7 @@ def main(data_folder: Path, temp_dir: Path = None, open_explorer=True):
     This is only meant to jump start testcase debugging.
     """
     # Define your directory path to your measurements for debugging purposes
-    test_bsigs = [r".\absolute_directory_path_to_your_measurement\file.erg"]
+    test_bsigs =[r".\absolute_directory_path_to_your_measurement\file.erg"]
 
     debug(
         SWT_swrt_cnc_moco_orientation_deviation_KPI,

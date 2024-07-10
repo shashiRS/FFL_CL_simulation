@@ -1,0 +1,30 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-TestSeries 10
+FileCreator = CarMaker 10.2.1
+Description:
+LastChange = 2022-01-12 16:12:34 uidj8550
+StartTime = 2022-01-12 16:12:28
+EndTime = 2022-01-12 16:12:32
+ReportTemplate =
+Step.0 = Settings
+Step.0.Name = Global Settings
+Step.1 = TestRun
+Step.1.Name = smokeTest/UseCases-001_TarStraight_vHost_20.00_vTar_50.00
+Step.1.Result = good
+Step.1.ResDate = 1642000351
+Step.1.ResFiles = SimOutput/20220112_161214_smokeTest/UseCases-001_TarStraight_vHost_20.00_vTar_50.00_000002.erg
+Step.2 = TestRun
+Step.2.Name = smokeTest/UseCases-001_TarStraight_vHost_20.00_vTar_60.00
+Step.2.Result = good
+Step.2.ResDate = 1642000351
+Step.2.ResFiles = SimOutput/20220112_161214_smokeTest/UseCases-001_TarStraight_vHost_20.00_vTar_60.00_000003.erg
+Step.3 = TestRun
+Step.3.Name = smokeTest/UseCases-001_TarStraight_vHost_30.00_vTar_50.00
+Step.3.Result = good
+Step.3.ResDate = 1642000351
+Step.3.ResFiles = SimOutput/20220112_161214_smokeTest/UseCases-001_TarStraight_vHost_30.00_vTar_50.00_000004.erg
+Step.4 = TestRun
+Step.4.Name = smokeTest/UseCases-001_TarStraight_vHost_30.00_vTar_60.00
+Step.4.Result = good
+Step.4.ResDate = 1642000352
+Step.4.ResFiles = SimOutput/20220112_161214_smokeTest/UseCases-001_TarStraight_vHost_30.00_vTar_60.00_000005.erg

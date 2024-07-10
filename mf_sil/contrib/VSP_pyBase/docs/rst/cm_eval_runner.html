@@ -1,0 +1,192 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>7. cm_eval_runner &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. cm_testrun" href="cm_testrun.html" />
+    <link rel="prev" title="6. cm_eval_erg_parser" href="cm_eval_erg_parser.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cm_testrun.html" title="8. cm_testrun"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cm_eval_erg_parser.html" title="6. cm_eval_erg_parser"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">7. </span>cm_eval_runner</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cm-eval-runner">
+<h1><span class="section-number">7. </span>cm_eval_runner<a class="headerlink" href="#cm-eval-runner" title="Permalink to this headline">¶</a></h1>
+<section id="ccmevaltestrunner">
+<h2><span class="section-number">7.1. </span>cCMEvalTestRunner<a class="headerlink" href="#ccmevaltestrunner" title="Permalink to this headline">¶</a></h2>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>As this class is used by a developer for executing a Carmaker simulation, see the example repository linked in the “Getting Started” section for more details.</p>
+</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In runEvaluations function the parameter returnErgPaths will be removed in the next versions. That means in next versions of pyBase the function will not return a list of absolute erg file paths anymore but a list of cmTestRun objects as it is passed in parameter testRuns. In this list the execution status and absolute path to the erg file is contained. <br />
+This is necessary as up to now TestRuns which are passed to runEvaluations and get an execution error, are not documented.
+Only in case of using the HPC light mode, it still returns a list of absolute paths to erg files.</p>
+</aside>
+<dl class="py class">
+<dt id="pycmEval.cm_eval_runner.cCMEvalTestRunner">
+<em class="property">class </em><code class="sig-prename descclassname">pycmEval.cm_eval_runner.</code><code class="sig-name descname">cCMEvalTestRunner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmPrjDir</span></em>, <em class="sig-param"><span class="n">cmQuantities</span></em>, <em class="sig-param"><span class="n">numberOfCarMakerInstances</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">MDF</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">sampleRate</span><span class="o">=</span><span class="default_value">'default'</span></em>, <em class="sig-param"><span class="n">cmGuiPath</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_runner.cCMEvalTestRunner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class that executes a Carmaker simulation.
+The CMEvalTestRunner ensures the proper execution of the simulation and handles errors if there are any.
+This class is intended to be used by a developer. It handles the telnet connection, remote control of the GUI or headless simulation until the result
+files are available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cmPrjDir</strong> – Absolute path Carmaker project directory</p></li>
+<li><p><strong>cmQuantities</strong> – List of strings with quantity names that shall be exported to the result file</p></li>
+<li><p><strong>numberOfCarMakerInstances</strong> – Number of parallel Carmaker instances to simulate given testruns.    Note that if you choose a number greater than 1, each instance uses and blocks one license from the world wide Carmaker license pool     that cannot be used by somebody else. Usually this mode is desired to be used for nightly tests. If you pass your testruns as ts file in runEvaluations function of this class     this parameter has no effect as Carmaker will use the hpc mode by default (four parallel simulations with one office license).</p></li>
+<li><p><strong>sampleRate</strong> – Sample rate for the data which get written to the result file. (“default”: 0.1s) Additional available options: “1000ms”, “100ms”, “10ms”, “1ms”     Note that the size of the result file increases with higher sample rate.</p></li>
+<li><p><strong>cmGuiPath</strong> – Absolute path to Carmaker GUI. If no is given, the latest Carmaker version in the standard installation path of Carmaker is used. If the headless     mode chosen in runEvaluations function of this class, this parameter has no effect.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pycmEval.cm_eval_runner.cCMEvalTestRunner.KillCEMNodes">
+<em class="property">static </em><code class="sig-name descname">KillCEMNodes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">CarmakerWin64path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_runner.cCMEvalTestRunner.KillCEMNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kill the CEM nodes after getting the node name from the exe name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_runner.cCMEvalTestRunner.outputAllLogFiles">
+<code class="sig-name descname">outputAllLogFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_runner.cCMEvalTestRunner.outputAllLogFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Output the content of all log files in the log directory {project_dir}/SimOutput/{hostname}/Log to logger.info.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_runner.cCMEvalTestRunner.runEvaluations">
+<code class="sig-name descname">runEvaluations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outputFolderName</span></em>, <em class="sig-param"><span class="n">testRuns</span></em>, <em class="sig-param"><span class="n">CMprojectexe</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extract</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rec_extract</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rec_video_extract</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">check_flag</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rec_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rec_bat_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">CMprojectwin64exe</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">signal_mapping</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rec_folders</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sim_output</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">worker</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxTimeInSimulationSeconds</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">init_per</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">total_runs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">statistics</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">MDF</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">simulation_count</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">cemvalues</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">nRetries</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">custom_test_run_folder</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">maxExecTimeSeconds</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">retryTimeSeconds</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">executable</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ignoreExistingResFile</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">cmGuiPath</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">headlessMode</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">useCoreLicense</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">dataPoolPath</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">signal_to_evaluate</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">returnErgPaths</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">raiseSimExecExceptions</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">returnExtendedInformation</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">showCMLogOutput</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_runner.cCMEvalTestRunner.runEvaluations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the execution of given testruns with given configuration. After the method finished and there were no errors while the simulation, the result files are
+available in configured location. The Carmaker binary is restarted after each testrun to ensure a proper execution and initialization without side effects to the
+test results from previous testruns.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>outputFolderName</strong> – Name of the output folder in that the result files are stored (will be a subfolder in SimOutput directory in the Carmaker project)</p></li>
+<li><p><strong>testRuns</strong> – Option 1: List of objects of class cmTestRun (defined in pyBase/pycmEval/cm_testrun.py). Option 2: Name of a Carmaker ts file with defined testruns         placed in the TestRun folder. In this case the parameters maxTimeInSimulationSeconds, maxExecTimeSeconds, useCoreLicense and ignoreExistingResFile are not used!         Setting them will not have an effect on the simulation!</p></li>
+<li><p><strong>maxTimeInSimulationSeconds</strong> – Maximum time a single testrun is allowed to simulate in simulated time.</p></li>
+<li><p><strong>headlessMode</strong> – If True, Carmaker will run in a headless mode. If False, the GUI will open for simulation. If you set useCoreLicense to True, headless mode is chosen         automatically and this parameter has no effect.</p></li>
+<li><p><strong>useCoreLicense</strong> – Use core license of Carmaker for simulation (True/False). Note that your user has to be approved to use the core licenses. If you are not approved         or you are not sure, choose False to use normal office license to simulate.</p></li>
+<li><p><strong>nRetries</strong> – Number of retries if something goes wrong while simulation, e.g. temporary loss of network connection and so no license checkout possible or         Carmaker does not react in configured timeouts due to high work load on the machine.</p></li>
+<li><p><strong>executable</strong> – Absolute path to Carmaker binary executable. If no is given, the configured path from the GUI file in the Carmaker project will be used.</p></li>
+<li><p><strong>ignoreExistingResFile</strong> – If True, always all testruns will be executed, regardless if a result file is already existing. If False, it will skip testruns with         an already existing result file.</p></li>
+<li><p><strong>returnErgPaths</strong> – If True, the function returns a list of paths to erg files as pyBase used to do it all the time. If False pyBase returns the given list of testRuns         and adds the paths to the erg file and an execution status. Note: The old functionality (in case the parameter is set to True) will be removed in further pyBase versions.         In case of using the HPC light mode, this parameter does not have an effect.</p></li>
+<li><p><strong>maxExecTimeSeconds</strong> – Maximum time a single testrun is allowed to simulate in wall-clock time.</p></li>
+<li><p><strong>retryTimeSeconds</strong> – Time to wait between retries if something goes wrong in the simulation.</p></li>
+<li><p><strong>raiseSimExecExceptions</strong> – Exceptions that occur while the simulation are written to the testrun object. If True exceptions will be raised. If False they will not.         Only has an effect for headless and core license mode.</p></li>
+<li><p><strong>showCMLogOutput</strong> – If True, the content from the latest log file created by CarMaker is shown in the logger. This option does not work if multiple         instances of the CarMaker are running in parallel, i.e. it effects only if numberOfCarMakerInstances in the class constructor is given as 1. Only works in headless and core         license mode.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of testrun objects as passed in parameter testRuns with updated attributes. If parameter returnErgPaths is True, list of absolute paths of all result files as         in older versions. Exception: If using the HPC light mode, it returns always a list of absolute paths to erg files.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">7. cm_eval_runner</a><ul>
+<li><a class="reference internal" href="#ccmevaltestrunner">7.1. cCMEvalTestRunner</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cm_eval_erg_parser.html"
+                        title="previous chapter"><span class="section-number">6. </span>cm_eval_erg_parser</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cm_testrun.html"
+                        title="next chapter"><span class="section-number">8. </span>cm_testrun</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/cm_eval_runner.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cm_testrun.html" title="8. cm_testrun"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cm_eval_erg_parser.html" title="6. cm_eval_erg_parser"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">7. </span>cm_eval_runner</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

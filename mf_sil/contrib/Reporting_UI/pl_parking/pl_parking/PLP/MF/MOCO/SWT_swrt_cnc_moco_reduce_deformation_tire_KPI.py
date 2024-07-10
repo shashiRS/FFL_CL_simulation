@@ -1,11 +1,13 @@
 """moco reduce deformation tire"""
 
 import logging
+import math
 import os
 import sys
 import tempfile
 from pathlib import Path
 
+import pandas as pd
 import plotly.graph_objects as go
 from tsf.core.results import NAN
 from tsf.core.testcase import (
@@ -77,36 +79,113 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
+
+            df["steerAngFrontAxle_deg"] = df["steerAngFrontAxle_rad"].astype(float).apply(math.degrees)
 
             if not df.empty:
                 # filter cases where the lateral control request was deactivated
                 filtered_df = df[df["activateLaCtrl"] == 0]
+
                 # calculate the steering wheel angle at the front axle and check against the threshold
-                filtered_df["steer_wheel_angle_deformation"] = (
-                    filtered_df["steerAngFrontAxle_rad"] * constants.MoCo.Parameter.AP_V_STEER_RATIO_NU
+                filtered_df["steer_wheel_angle_deformation_deg"] =(
+                    filtered_df["steerAngFrontAxle_deg"] * constants.MoCo.Parameter.AP_V_STEER_RATIO_NU
                 )
                 filtered_df["is_below_threshold"] = (
-                    filtered_df["steer_wheel_angle_deformation"]
+                    filtered_df["steer_wheel_angle_deformation_deg"]
                     < constants.MoCo.Parameter.AP_C_COMP_TIRE_DEF_STEER_WHEEL_ANGLE_DEG
                 )
 
                 passed = filtered_df["is_below_threshold"].sum()
                 assertion = filtered_df["is_below_threshold"].count() - passed
 
-                if assertion > 0:
+                filtered_df['isStatusChanged'] = filtered_df['activateLaCtrl'].diff()
+                df_filtered = filtered_df[filtered_df['isStatusChanged'] != 0]
+                if not df_filtered.empty:
+                    self.result.measured_result = NAN
+                    test_result = fc.NOT_ASSESSED
+                    eval_text = "Lateral control request is not deactivated"
+
+                    eval_0 = " ".join(
+                        "MFControl shall execute a requested comfortable standstill steering in a way that the deformation of the tire contact area is reduced.".split()
+                    )
+                    # Set table dataframe
+                    signal_summary = pd.DataFrame(
+                        {
+                            "Evaluation": {
+                                "1": eval_0,
+                            },
+                            "Result": {
+                                "1": eval_text,
+                            },
+                        }
+                    )
+                    sig_sum = fh.build_html_table(signal_summary)
+
+                    plot_titles.append("")
+                    plots.append(sig_sum)
+                    remarks.append("")
+                    self.result.details["Step_result"] = test_result
+
+                elif assertion > 0:
                     self.result.measured_result = Result(numerator=0, denominator=1, unit="= 0 %")
                     test_result = fc.FAIL
+                    eval_text = " ".join(
+                        f"Steering wheel angle deformation at the front axle > "
+                        f"AP_C_COMP_TIRE_DEF_STEER_WHEEL_ANGLE_DEG({constants.MoCo.Parameter.AP_C_COMP_TIRE_DEF_STEER_WHEEL_ANGLE_DEG})"
+                        f"Conditions: {test_result}.".split()
+                    )
+                    eval_0 = " ".join(
+                        "MFControl shall execute a requested comfortable standstill steering in a way that the deformation of the tire contact area is reduced.".split()
+                    )
+
+                    # Set table dataframe
+                    signal_summary = pd.DataFrame(
+                        {
+                            "Evaluation": {
+                                "1": eval_0,
+                            },
+                            "Result": {
+                                "1": eval_text,
+                            },
+                        }
+                    )
+                    sig_sum = fh.build_html_table(signal_summary)
+                    plot_titles.append("")
+                    plots.append(sig_sum)
+                    remarks.append("")
                 else:
                     self.result.measured_result = Result(numerator=100, denominator=1, unit="= 100 %")
                     test_result = fc.PASS
+                    eval_text = " ".join(
+                        f"Steering wheel angle deformation at the front axle <= "
+                        f"AP_C_COMP_TIRE_DEF_STEER_WHEEL_ANGLE_DEG({constants.MoCo.Parameter.AP_C_COMP_TIRE_DEF_STEER_WHEEL_ANGLE_DEG})"
+                        f"Conditions: {test_result}.".split()
+                    )
+
+                    eval_0 = " ".join(
+                        "MFControl shall execute a requested comfortable standstill steering in a way that the deformation of the tire contact area is reduced.".split()
+                    )
+
+                    # Set table dataframe
+                    signal_summary = pd.DataFrame(
+                        {
+                            "Evaluation": {
+                                "1": eval_0,
+                            },
+                            "Result": {
+                                "1": eval_text,
+                            },
+                        }
+                    )
+                    sig_sum = fh.build_html_table(signal_summary)
+                    plot_titles.append("")
+                    plots.append(sig_sum)
+                    remarks.append("")
+
                 # this line is for plot purposes only.
-                df["steer_wheel_angle_deformation"] = (
-                    df["steerAngFrontAxle_rad"] * constants.MoCo.Parameter.AP_V_STEER_RATIO_NU
+                df["steer_wheel_angle_deformation_deg"] = (
+                    df["steerAngFrontAxle_deg"] * constants.MoCo.Parameter.AP_V_STEER_RATIO_NU
                 )
 
                 fig = get_plot_signals(df)
@@ -133,12 +212,35 @@ class Step1(TestStep):
                 self.result.details["Additional_results"] = additional_results_dict
             else:
                 test_result = fc.NOT_ASSESSED
+                eval_text = "Lateral control request is not deactivated"
                 self.result.measured_result = NAN
+
+                eval_0 = " ".join(
+                    "MFControl shall execute a requested comfortable standstill steering in a way that the deformation of the tire contact area is reduced.".split()
+                )
+                # Set table dataframe
+                signal_summary = pd.DataFrame(
+                    {
+                        "Evaluation": {
+                            "1": eval_0,
+                        },
+                        "Result": {
+                            "1": eval_text,
+                        },
+                    }
+                )
+                sig_sum = fh.build_html_table(signal_summary)
+
+                plot_titles.append("")
+                plots.append(sig_sum)
+                remarks.append("")
                 self.result.details["Step_result"] = test_result
+
                 additional_results_dict = {
                     "Verdict": {"value": test_result.title(), "color": fh.get_color(test_result)},
                     "Percent match [%]": {"value": "n/a"},
                 }
+
                 fig = get_plot_signals(df)
                 plot_titles.append("Graphical Overview")
                 plots.append(fig)
@@ -173,17 +275,17 @@ def get_plot_signals(df):
     fig.add_trace(
         go.Scatter(
             x=df.index.values.tolist(),
-            y=df["steer_wheel_angle_deformation"].values.tolist(),
+            y=df["steer_wheel_angle_deformation_deg"].values.tolist(),
             mode="lines",
-            name="steer_wheel_angle_deformation",
+            name="steer_wheel_angle_deformation_deg",
         )
     )
     fig.add_trace(
         go.Scatter(
             x=df.index.values.tolist(),
-            y=df["steerAngFrontAxle_rad"].values.tolist(),
+            y=df["steerAngFrontAxle_deg"].values.tolist(),
             mode="lines",
-            name="current_steer_angle",
+            name="steerAngFrontAxle_deg",
         )
     )
     fig.add_trace(
@@ -210,8 +312,7 @@ def get_plot_signals(df):
 @testcase_definition(
     name="MOCO reduce deformation tire KPI",
     group="deformation kpi",
-    description="MFControl shall execute a requested comfortable standstill steering in a way that the deformation of"
-    " the tire contact area is reduced.",
+    description="MFControl shall execute a requested comfortable standstill steering in a way that the deformation of the tire contact area is reduced.",
 )
 @register_inputs("/Playground_2/TSF-Debug")
 # @register_inputs("/TSF_DEBUG/")

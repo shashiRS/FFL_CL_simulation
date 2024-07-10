@@ -1,0 +1,242 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>6. cm_eval_erg_parser &#8212; VSP_pyBase  documentation</title>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/bizstyle.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. cm_eval_runner" href="cm_eval_runner.html" />
+    <link rel="prev" title="5. cm_eval_erg_calculator" href="cm_eval_erg_calculator.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="cm_eval_runner.html" title="7. cm_eval_runner"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cm_eval_erg_calculator.html" title="5. cm_eval_erg_calculator"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">6. </span>cm_eval_erg_parser</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cm-eval-erg-parser">
+<h1><span class="section-number">6. </span>cm_eval_erg_parser<a class="headerlink" href="#cm-eval-erg-parser" title="Permalink to this headline">¶</a></h1>
+<section id="cergfile">
+<h2><span class="section-number">6.1. </span>cErgFile<a class="headerlink" href="#cergfile" title="Permalink to this headline">¶</a></h2>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>As this class is used by a developer for parsing a Carmaker simulation result file (erg), see the example repository linked in the “Getting Started” section for more details.</p>
+</aside>
+<dl class="py class">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile">
+<em class="property">class </em><code class="sig-prename descclassname">pycmEval.cm_eval_erg_parser.</code><code class="sig-name descname">cErgFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ergFilePath</span></em>, <em class="sig-param"><span class="n">cacheWholeFile</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class to read erg files (Carmaker result files).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ergFilePath</strong> – Absolute path to the erg file</p></li>
+<li><p><strong>cacheWholeFile</strong> – If true, reads the whole erg file once. If false, it reads each quantity if it is necessary. This may lead to worse performance.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.getArrayOfAvailableValues">
+<code class="sig-name descname">getArrayOfAvailableValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.getArrayOfAvailableValues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get array of available signals.
+:return: List of strings with all available values by name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.getCurrentRecordId">
+<code class="sig-name descname">getCurrentRecordId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.getCurrentRecordId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current Package id (floor the current byte-position)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Current package ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.getUnitOfValue">
+<code class="sig-name descname">getUnitOfValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">valueStr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.getUnitOfValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the unit of a value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String representation of the value’s unit. If no value found in erg file with the name valueStr, an empty string is returned!</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.jumpToRecordById">
+<code class="sig-name descname">jumpToRecordById</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recordId</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.jumpToRecordById" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current reading position of the erg data file to the package with the id recordId.
+Raise an exception if the recordID exceeds the total record count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if succeeded.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.readAllSignalValues">
+<code class="sig-name descname">readAllSignalValues</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">signalName</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.readAllSignalValues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read all signal values for a given signal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>signalName</strong> – Name of the signal</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of all values for the given signal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.readNextTimeStep">
+<code class="sig-name descname">readNextTimeStep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.readNextTimeStep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the next dataPackage in the erg-file.
+If the end of the erg-file is reached, the function returns an empty string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>values as a dict={‘ValueName’:’Value’,…} for this time step.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.readRecord">
+<code class="sig-name descname">readRecord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recordId</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.readRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the record for the given ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>recordId</strong> – Record ID</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The record</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.readSingleSignalValue">
+<code class="sig-name descname">readSingleSignalValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">signalName</span></em>, <em class="sig-param"><span class="n">recordId</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.readSingleSignalValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a single signal value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signalName</strong> – Name of the signal</p></li>
+<li><p><strong>recordId</strong> – Record ID</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Value of the signal for given record ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pycmEval.cm_eval_erg_parser.cErgFile.readWholeErgFile">
+<code class="sig-name descname">readWholeErgFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycmEval.cm_eval_erg_parser.cErgFile.readWholeErgFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the whole erg file.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">6. cm_eval_erg_parser</a><ul>
+<li><a class="reference internal" href="#cergfile">6.1. cErgFile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cm_eval_erg_calculator.html"
+                        title="previous chapter"><span class="section-number">5. </span>cm_eval_erg_calculator</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="cm_eval_runner.html"
+                        title="next chapter"><span class="section-number">7. </span>cm_eval_runner</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../sources/rst/cm_eval_erg_parser.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="cm_eval_runner.html" title="7. cm_eval_runner"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cm_eval_erg_calculator.html" title="5. cm_eval_erg_calculator"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">VSP_pyBase  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">6. </span>cm_eval_erg_parser</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Matthias Hillmann.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+# General project configuration
+# #############################################################
+[project]
+    name = "adas-vsp-pybase"
+    version = "2.0.9"
+    description = "Python automation scripts for IPG CarMaker"
+    readme = "README.md"
+    requires-python = ">=3.6"
+    dependencies = [
+        "numpy==1.18.1; python_version=='3.6'",
+        "Pillow==7.0.0; python_version=='3.6'",
+        "psutil==5.6.7; python_version=='3.6'",
+        "six==1.12.0; python_version=='3.6'",
+
+        "numpy; python_version>'3.6'",
+        "Pillow; python_version>'3.6'",
+        "psutil; python_version>'3.6'",
+        "six; python_version>'3.6'"
+    ]
+
+
+# Build System
+# #############################################################
+[build-system]
+    requires=["setuptools >= 61.0"]
+    build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+    packages = [
+        "vsp_pybase"
+    ]
+
+[tool.setuptools.exclude-package-data]
+    "vsp_pybase" = ["*.pyc", "*.erg", "*.erg.info", "*pycache*"]
+
+[tool.setuptools.package-data]
+   "vsp_pybase" = ["**/*"]
+
+
+# unittest/coverage
+# ################################################################
+[tool.coverage.run]
+    omit = [
+        "__pycache__/*",
+        "__pytest_cache__/*",
+        ".git/*",
+        ".venv/*",
+        "conf/*",
+        "doc/*",
+        "docs/*",
+        "ide/*",
+        "scripts/*",
+        "test/*",
+        ".coverage",
+        ".gitignore",
+        "CMakeLists.txt",
+        "Jenkinsfile",
+        "pyproject.toml",
+        "README.md",
+        "requirements_doc.txt",
+        "requirements.txt",
+        "version.txt"
+    ]
+    command_line = "-m xmlrunner discover -v -s . -p test_*.py --output-file ./work_dir/unittests_report.xml"
+
+[tool.coverage.html]
+    directory = "work_dir/unittests_coverage"
+
+[tool.coverage.xml]
+    output = "work_dir/unittests_coverage.xml"
+
+
+# isort
+# ################################################################
+[tool.isort]
+    profile = "black"
+    skip_glob = [
+        "__pycache__/*",
+        "__pytest_cache__/*",
+        ".git/*",
+        ".venv/*",
+        "doc/*",
+        "docs/*",
+        "ide/*",
+        "scripts/*",
+        "test/*",
+        ".coverage",
+        ".gitignore",
+        "Jenkinsfile",
+        "pyproject.toml",
+        "README.md",
+        "requirements_doc.txt",
+        "requirements.txt",
+        "version.txt"
+    ]
+    include_trailing_comma = true
+    line_length = 120
+    multi_line_output = 3
+
+
+# black
+# ################################################################
+[tool.black]
+    line-length = 120
+    include = '.pyi?$'
+    exclude = """/(
+        __pycache__
+        | __pytest_cache__
+        | .git
+        | .venv
+        | ide
+        | doc
+        | docs
+        | scripts
+        | test
+        | .coverage
+        | .gitignore
+        | CMakeLists.txt
+        | Jenkinsfile
+        | pyproject.toml
+        | README.md
+        | requirements_doc.txt
+        | requirements.txt
+        | version.txt
+    )/"""
+
+
+# pylint
+# ################################################################
+[tool.pylint.main]
+    ignore-paths = [
+        "^tests/.*$",
+        "^__pycache__/.*$",
+        "^__pytest_cache__/.*$",
+        "^.git/.*$",
+        "^.venv/.*$",
+        "^doc/.*$",
+        "^docs/.*$",
+        "^ide/.*$",
+        "^scripts/.*$",
+        "^test/.*$",
+        ".coverage",
+        ".gitignore",
+        "CMakeLists.txt",
+        "Jenkinsfile",
+        "pyproject.toml",
+        "README.md",
+        "requirements_doc.txt",
+        "requirements.txt",
+        "version.txt"
+    ]
+    exit-zero = true
+    max-line-length = 120
+    verbose = true
+    recursive = true
+
+[tool.pylint.reports]
+    output-format = "parseable"
+
+[tool.pylint."messages control"]
+    disable = "R"

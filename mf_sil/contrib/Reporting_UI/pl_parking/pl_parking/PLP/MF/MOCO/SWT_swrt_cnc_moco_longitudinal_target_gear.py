@@ -86,11 +86,7 @@ class Step1(TestStep):
             plot_titles, plots, remarks = fh.rep([], 3)
             test_result = fc.INPUT_MISSING
             self.result.measured_result = NAN
-            try:
-                df = self.readers[ALIAS].signals
-            except Exception as e:
-                print(str(e))
-                df = self.readers[ALIAS]
+            df = self.readers[ALIAS]
 
             assertion_dict = {}
             df["calculated_standstill"] = df.apply(
@@ -105,7 +101,10 @@ class Step1(TestStep):
 
             "TestStep"
             "Filter data by longitudinal control request"
-            df_filtered = df[(df["activateLoCtrl"] == 1)]
+            df_filtered =df[
+                (df["activateLoCtrl"] == 1)
+                & (df["loCtrlRequestType"] != constants.MoCo.LoCtrlRequestType.LOCTRL_EMERGENCY_STOP)
+            ]
 
             "Check precondition for all target gears"
             if check_target_gear(df_filtered) and not df_filtered.empty:
@@ -352,7 +351,7 @@ def main(data_folder: Path, temp_dir: Path = None, open_explorer=True):
     This is only meant to jump start testcase debugging.
     """
     # Define your directory path to your measurements for debugging purposes
-    test_bsigs = [r".\absolute_directory_path_to_your_measurement\file.erg"]
+    test_bsigs =[r".\absolute_directory_path_to_your_measurement\file.erg"]
 
     debug(
         SWT_swrt_cnc_moco_longitudinal_target_gear,

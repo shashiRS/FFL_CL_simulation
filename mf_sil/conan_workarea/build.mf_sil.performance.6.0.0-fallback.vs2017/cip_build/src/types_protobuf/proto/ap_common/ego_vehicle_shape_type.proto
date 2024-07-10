@@ -1,9 +1,0 @@
-
-syntax = "proto2";
-
-package pb.ap_common.ego_vehicle_shape_type;
-
-enum EgoVehicleShapeType {
-  EGO_VEH_SHAPE_STANDARD = 0;
-  EGO_VEH_SHAPE_BOUNDING = 1;
-}
